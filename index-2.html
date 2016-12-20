@@ -219,9 +219,12 @@ article: http://ogp.me/ns/article#
             <div class="body">
                 <div>
 <p>This post is transferred from my <a href="http://blogpengyin.herokuapp.com/">old Hexo blog site</a>, created on 2014.</p>
-<p _="%" images_posts_google_cse.png="images/posts/google_cse.PNG" img>You need a google account to use Google Custom Search Engine. Go to "www.google.com/cse" and sign in with your Google account.</p>
-<p _="%" images_posts_google_cse_create.png="images/posts/google_cse_create.PNG" img>In the console, click "New search engine" on left menu, then input the website url you want to search from. You also need a name for this new search engine. After finsih setup, click "CREATE" button.</p>
-<p _="%" images_posts_google_cse_id.png="images/posts/google_cse_id.PNG" img>You need to use <code>Search Engine ID</code> for creating RESTful service. To do this, select "Edit search engine" on left menu. In the dropdown, select your search engine. Select "Basics" panel on right, then click "Search engine ID" in details part. A pop up box will appears with your Search Engine ID.</p>
+<p>You need a google account to use Google Custom Search Engine. Go to "www.google.com/cse" and sign in with your Google account.
+images/posts/google_cse.PNG </p>
+<p>In the console, click "New search engine" on left menu, then input the website url you want to search from. You also need a name for this new search engine. After finsih setup, click "CREATE" button.
+images/posts/google_cse_create.PNG </p>
+<p>You need to use <code>Search Engine ID</code> for creating RESTful service. To do this, select "Edit search engine" on left menu. In the dropdown, select your search engine. Select "Basics" panel on right, then click "Search engine ID" in details part. A pop up box will appears with your Search Engine ID.
+images/posts/google_cse_id.PNG </p>
 <p>You also need your api key for creating RESTful service. To do this, you need a project and get its API key in <em>Google Developers Console</em>. You can do this by log in "console.developers.google.com" and select "Credentials" in "APIs &amp; auth" menu. You will see API key appearing on right panel.</p>
 <p>Then go back to your Custom Search panel. In "Details" part on right, click "Get Code" button (just near "Search Engine ID" button). Copy the code on this page and paste it into a '</p>
 <div>' where you want the Google search bar appears.
@@ -271,7 +274,7 @@ article: http://ogp.me/ns/article#
 <p>This note includes Chapter 22 in tutorial.</p>
 <h2>Spring Web MVC Framework</h2>
 <h3>The Dispacher Servlet</h3>
-<p>{% img images/posts/dispatcher_servlet.png %}</p>
+<p>images/posts/dispatcher_servlet.png </p>
 <h3>Required Configuration</h3>
 <p>XML:</p>
 <pre class="code literal-block"><span></span><span class="c">&lt;!--First: You set up dispacher servlet in web.xml--&gt;</span>
@@ -446,9 +449,12 @@ article: http://ogp.me/ns/article#
 </li>
 </ul>
 <h3>Spring Transaction Abstractions</h3>
-<p _="%" images_posts_platformtransactionmanager.png="images/posts/PlatformTransactionManager.png" img>The key to Spring transaction is: <code>org.springframework.transaction.PlatformTransactionManager</code> interface.</p>
-<p _="%" images_posts_transactiondefinition.png="images/posts/TransactionDefinition.png" img><code>TransactionDefinition</code> is the core interface of the transaction support in Spring.</p>
-<p _="%" images_posts_transactionstatus.png="images/posts/TransactionStatus.png" img><code>TransactionStatus</code> interface is used to control transaction execution and query transaction status.</p>
+<p>The key to Spring transaction is: <code>org.springframework.transaction.PlatformTransactionManager</code> interface.
+images/posts/PlatformTransactionManager.png </p>
+<p><code>TransactionDefinition</code> is the core interface of the transaction support in Spring.
+images/posts/TransactionDefinition.png </p>
+<p><code>TransactionStatus</code> interface is used to control transaction execution and query transaction status.
+images/posts/TransactionStatus.png </p>
 <h3>Programmatic Transaction Management</h3>
 <p>The generate process of <code>Programmatic Transaction Management</code> is:</p>
 <ul>
@@ -891,7 +897,8 @@ article: http://ogp.me/ns/article#
 <p>In Spring, the <code>ApplicatonContext</code> publishes certain types of <code>events</code> when loading the beans.</p>
 <p><code>ApplicationEvent</code> class and <code>ApplicationListener</code> interface is used in <code>ApplicationContext</code> to deal with event handling.</p>
 <p>If a bean implements <code>ApplicationListener</code>, then every time <code>ApplicatioContext</code> publish an <code>ApplicationEvent</code>, this bean will be notified.</p>
-<p _="%" images_posts_spring_events.png="images/posts/spring_events.png" img>Spring Events are following:</p>
+<p>Spring Events are following:
+images/posts/spring_events.png </p>
 <p>Spring event handling is <em>single-threaded</em>. So if an event is published, unless all receivers get the message, the processes are <em>blocked</em> and the flow will not continue.</p>
 <p>A bean can <em>implement</em> the <code>ApplicationListener</code> interface to listen a event. <code>ApplicationListener</code> only has one method, which is <code>onApplicationEvent()</code>.</p>
 <p>Example:</p>
@@ -984,9 +991,11 @@ article: http://ogp.me/ns/article#
 <h2>Chapter 19: AOP with Spring Framework</h2>
 <p><code>Aspect Oriented Programming (AOP)</code> entails <em>breaking down</em> program logic into distinct parts called <code>concerns</code>,or <code>crossing-cutting concerns</code>. These concerns are conceptually separate from the application's bussiness logic.</p>
 <p>Spring AOP modules provides interceptors to intercept an application. For example. when a method is executed, you can <em>add extra functionality</em> before or after the method execution.</p>
-<p _="%" images_posts_aop_term2.png="images/posts/AOP_Term2.png" img><em>AOP Terminologies</em>
-{% img images/posts/AOP_Term1.png %}</p>
-<p _="%" images_posts_aop_advice.png="images/posts/AOP_Advice.png" img><em>Type of Advice</em></p>
+<p><em>AOP Terminologies</em>
+images/posts/AOP_Term1.png 
+images/posts/AOP_Term2.png </p>
+<p><em>Type of Advice</em>
+images/posts/AOP_Advice.png </p>
 <h3>XML Schema Based Aspect Implementation</h3>
 <p>Use regular classes along with <code>xml</code> based configuration</p>
 <p><code>xml</code> needs to be configured:</p>
@@ -1237,10 +1246,12 @@ article: http://ogp.me/ns/article#
 
 <p>Spring can <em>auto-wire</em> relationships between beans without using <code>&lt;constructor-arg&gt;</code> or <code>&lt;property&gt;</code></p>
 <h3>Auto-wiring Modes</h3>
-<p _="%" images_posts_auto-wiring.png="images/posts/auto-wiring.png" img>You should be <code>autowire</code> attribute of the <code>&lt;bean/&gt;</code> element to specify autowire mode for a bean definition. There are four Auto-wiring modes, which are defined in this following table:</p>
+<p>You should be <code>autowire</code> attribute of the <code>&lt;bean/&gt;</code> element to specify autowire mode for a bean definition. There are four Auto-wiring modes, which are defined in this following table:
+images/posts/auto-wiring.png </p>
 <p><code>byType</code> or <code>constructor</code> autowiring mode can be used to wire <em>arrays</em> and other <em>typed-collections</em>.</p>
 <h3>Limitations with Autowiring</h3>
-<p _="%" images_posts_autowiring-limitation.png="images/posts/autowiring-limitation.png" img>Autowiring is great to use across a project. However, it do have limitations and you can override it:</p>
+<p>Autowiring is great to use across a project. However, it do have limitations and you can override it:
+images/posts/autowiring-limitation.png </p>
 <h3>Autowiring By Name*</h3>
 <p>Spring container looks at the beans on which has a <code>autowirte</code> attribute in <code>xml</code> configuration file.</p>
 <p>Then it will go to the java bean class for this bean, and find all attributes that have <code>setter</code> for this bean.</p>
@@ -1980,7 +1991,8 @@ public class Test{
 
 
 <h2>Chapter 13: Spring Injecting Collection</h2>
-<p _="%" images_posts_spring-di-collection.png="images/posts/spring-di-collection.png" img>Spring has data type so you can pass value groups in <code>xml</code> file. There are four types: List, Set, Map and Properties. Difference is following:</p>
+<p>Spring has data type so you can pass value groups in <code>xml</code> file. There are four types: List, Set, Map and Properties. Difference is following:
+images/posts/spring-di-collection.png </p>
 <p><em>You can use</em> <code>&lt;list&gt;</code> or <code>&lt;set&gt;</code> to wire any implementation of <code>java.util.Collection</code> or <code>Array</code>.</p>
 <p>Same as single value, value collection can be passed by <em>value</em> or <em>reference</em>.</p>
 <p>Example:</p>
@@ -2109,7 +2121,8 @@ public class Test{
 <p>This post is transferred from my <a href="http://blogpengyin.herokuapp.com/">old Hexo blog site</a>, created on 2014.</p>
 <p>This is a reading note from Spring Framework 3.1 Tutorial pdf, created by <a href="http://www.tutorialspoint.com/spring"><strong>tutorialspoint</strong></a>. This pdf contains information for Spring 3 Core Basics, which is very useful for understanding defination and practive in Spring programming.</p>
 <h2>Chapter 2: Spring Framework Architecture</h2>
-<p _="%" images_posts_spring-structure.png="images/posts/spring-structure.png" img>Spring is a modular framework, which means you can pick the modules that only fits your need. Basic structure of Spring framework is following. There are three <em>main</em> componets: <code>Core Container</code>, <code>Data Access Integration</code> and <code>Web (MVC/Remoting)</code>. Other important componets include <code>AOP</code>, <code>Aspects</code>, <code>Instrumentation</code> and <code>Test</code>:</p>
+<p>Spring is a modular framework, which means you can pick the modules that only fits your need. Basic structure of Spring framework is following. There are three <em>main</em> componets: <code>Core Container</code>, <code>Data Access Integration</code> and <code>Web (MVC/Remoting)</code>. Other important componets include <code>AOP</code>, <code>Aspects</code>, <code>Instrumentation</code> and <code>Test</code>:
+images/posts/spring-structure.png </p>
 <h3>Core Container</h3>
 <p><code>Core Container</code> contains: <code>Core</code> module, <code>Beans</code> module, <code>Context</code> module and <code>Expression Language</code> module:</p>
 <ul>
@@ -2180,7 +2193,8 @@ public class Test{
 <p>The main function of Spring IoC Container is to <em>create</em> objects, <em>wire</em> objects together, <em>configure</em> objects and <em>manage</em> objects in their lifecyle.</p>
 <p>Spring IoC containter uses <code>dependency injection/DI</code> to manage objects, which are called spring <code>beans</code>.</p>
 <p>Container gets information from the <code>metadata</code> in <code>xml</code>, <code>Java annotation</code> or <code>Java code</code>.</p>
-<p _="%" images_posts_spring-containers.png="images/posts/spring-containers.png" img>This is the process of Spring IoC container works:</p>
+<p>This is the process of Spring IoC container works:
+images/posts/spring-containers.png </p>
 <p>Spring has two distinct type of containers: <code>BeanFactory</code> and <code>ApplicationContext</code>:</p>
 <p><code>BeanFactory</code>: this is the <em>simplest</em> container from DI. Most commonly used implementation is <code>XmlBeanFactory</code> class. It reading the configuration metadata from <code>xml</code> file and use it.</p>
 <p>XML:</p>
@@ -2259,7 +2273,8 @@ public class Test{
 <p><code>Java-based</code> configuration</p>
 </li>
 </ul>
-<p _="%" images_posts_spring-configuration-metadata.png="images/posts/spring-configuration-metadata.png" img>Example of Bean Properties from book:</p>
+<p>Example of Bean Properties from book:
+images/posts/spring-configuration-metadata.png </p>
 <h2>Chapter 7: Spring Bean Scopes</h2>
 <p>You can declaring <em>scope</em> of beans when you creates <code>&lt;bean/&gt;</code> in xml file. There are five scopes that Spring support:</p>
 <p><code>singleton</code>: <em>Default</em>. Spring IoC container cretes <em>exactly one</em> instance of the object defined by that bean defination. This object is stored in a <em>cache</em> of such singletion beans. A request will return the cached object. Example:</p>

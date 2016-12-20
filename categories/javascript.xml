@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Pengyin's Note (JavaScript)</title><link>http://pengyin-shan.com/</link><description></description><atom:link href="http://pengyin-shan.com/categories/javascript.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 20 Dec 2016 03:33:22 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Frond End Data Storage</title><link>http://pengyin-shan.com/posts/2016/Front%20End/front-end-data-storage.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;[TOC]&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pengyin's Note (JavaScript)</title><link>http://pengyin-shan.com/</link><description></description><atom:link rel="self" href="http://pengyin-shan.com/categories/javascript.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 20 Dec 2016 03:52:16 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Frond End Data Storage</title><link>http://pengyin-shan.com/posts/2016/Front%20End/front-end-data-storage.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;[TOC]&lt;/p&gt;
 &lt;h2&gt;Reference List&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -375,7 +375,7 @@
 
 &lt;p&gt;&lt;code&gt;Scope Chain&lt;/code&gt;: any function defined within another function has a local scope with &lt;em&gt;linked to the outer function&lt;/em&gt;. This linking is the chain.&lt;/p&gt;
 &lt;p&gt;See graph from Diego Castorina below:&lt;/p&gt;
-&lt;p&gt;{% img img-responsive images/articles/2016/javascript/scope_chain.png %}&lt;/p&gt;
+&lt;p&gt;img-responsive images/articles/2016/javascript/scope_chain.png &lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;It’s always the position in the code that defines the scope. When resolving a variable, JavaScript starts at the innermost scope and searches outwards until it finds the variable/object/function it was looking for.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -677,7 +677,7 @@
 &lt;p&gt;It is a bad practice to extend &lt;code&gt;object.prototype&lt;/code&gt;/&lt;code&gt;_proto_&lt;/code&gt; or one of the other built-in prototypes. This is called &lt;code&gt;monkey&lt;/code&gt; patching and breaks &lt;code&gt;encapsulation&lt;/code&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;A graph from &lt;a href="https://www.toptal.com/javascript/javascript-prototypes-scopes-and-performance-what-you-need-to-know"&gt;JavaScript Prototype Chains, Scope Chains, and Performance: What You Need to Know&lt;/a&gt; written by DIEGO CASTORINA describe prototype chain very well:&lt;/p&gt;
-&lt;p&gt;{% img img-responsive images/articles/2016/javascript/prototype_chain.png %}&lt;/p&gt;
+&lt;p&gt;img-responsive images/articles/2016/javascript/prototype_chain.png &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Simply Construct&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Code Example:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;o&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nx"&gt;a&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;};&lt;/span&gt;
@@ -742,7 +742,7 @@
 
 
 &lt;p&gt;See graph example below:&lt;/p&gt;
-&lt;p&gt;{% img img-responsive images/articles/2016/javascript/prototype_chain_2.png %}&lt;/p&gt;
+&lt;p&gt;img-responsive images/articles/2016/javascript/prototype_chain_2.png &lt;/p&gt;
 &lt;p&gt;Note: &lt;code&gt;var g = new Graph()&lt;/code&gt; constructor above equals to following code:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;g&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nb"&gt;Object&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
 &lt;span class="nx"&gt;g&lt;/span&gt;&lt;span class="p"&gt;.[[&lt;/span&gt;&lt;span class="nx"&gt;Prototype&lt;/span&gt;&lt;span class="p"&gt;]]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;Graph&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;prototype&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
@@ -1933,7 +1933,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;A description graph from tutorialspoint.com:&lt;/p&gt;
-&lt;p&gt;{% img ../images/articles/2015/javascript/angularjs_concepts.jpg %}&lt;/p&gt;
+&lt;p&gt;../images/articles/2015/javascript/angularjs_concepts.jpg &lt;/p&gt;
 &lt;h3&gt;Three Major Parts&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;

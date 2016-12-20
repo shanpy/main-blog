@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Pengyin's Note (Hydra)</title><link>http://pengyin-shan.com/</link><description></description><atom:link href="http://pengyin-shan.com/categories/hydra.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 20 Dec 2016 03:33:21 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>A Journal of Playing with Hydra Data</title><link>http://pengyin-shan.com/posts/2015/Others/play-with-hydra-data.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3&gt;Data Immigration&lt;/h3&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pengyin's Note (Hydra)</title><link>http://pengyin-shan.com/</link><description></description><atom:link rel="self" href="http://pengyin-shan.com/categories/hydra.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 20 Dec 2016 03:52:13 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>A Journal of Playing with Hydra Data</title><link>http://pengyin-shan.com/posts/2015/Others/play-with-hydra-data.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3&gt;Data Immigration&lt;/h3&gt;
 &lt;p&gt;&lt;em&gt;This part is based on the &lt;a href="https://github.com/projecthydra/hydra/wiki/Dive-into-Hydra"&gt;dive-into-hydra&lt;/a&gt; tutorial project.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;What should I do to immigrate Hydra Data (Fedora files, Solr documents and indexes, etc) from one Hydra project to another project?&lt;/p&gt;
 &lt;p&gt;To figure out a way, I have explored following items:&lt;/p&gt;
@@ -118,7 +118,7 @@ tput sgr0
 &lt;p&gt;Well, I'm working on solution now :) To figure out a way I did lots of experiments (and made a big mess) in my Hydra project. I started a new post about it &lt;a href="http://pengyin-shan.com/blog/play-with-hydra-data"&gt;here&lt;/a&gt;.&lt;/p&gt;&lt;/div&gt;</description><category>Hydra</category><category>Linux</category><category>Ruby on Rails</category><category>Ubuntu</category><guid>http://pengyin-shan.com/posts/2015/Web%20Development%20Tips/setting-up-ror-hydra-environment-problems-and-solutions.html</guid><pubDate>Wed, 12 Aug 2015 04:00:00 GMT</pubDate></item><item><title>Dive into Hydra and My Thoughts</title><link>http://pengyin-shan.com/posts/2015/Others/dive-into-hydra-and-my-thoughts.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;em&gt;This post is being updated while I'm learning more about Hydra&lt;/em&gt;&lt;/p&gt;
 &lt;h4&gt;Main Idea&lt;/h4&gt;
 &lt;p&gt;I used to create a small Spring MVC web app &lt;a href="https://github.com/shanpy/RDFExperiment"&gt;RDF Experiment&lt;/a&gt; to experiment the ideas behind Hydra. Following is a graph about my assumption of Hydra Idea:&lt;/p&gt;
-&lt;p&gt;{% img ../images/articles/2015/digital_library/ProjectHydra.png %}&lt;/p&gt;
+&lt;p&gt;../images/articles/2015/digital_library/ProjectHydra.png &lt;/p&gt;
 &lt;p&gt;Behind this large frame, there are lots of small classes/methods that will push through stages above.&lt;/p&gt;
 &lt;h5&gt;Key Concerns&lt;/h5&gt;
 &lt;p&gt;Following key concerns should be evaluated carefully during the processes above:&lt;/p&gt;
@@ -212,7 +212,7 @@ production: #...
 &lt;h4&gt;Index Process&lt;/h4&gt;
 &lt;p&gt;In Lucene, &lt;code&gt;IndexWriter&lt;/code&gt; is the most important and core component of the indexing process.&lt;/p&gt;
 &lt;p&gt;Process Chart for TutorialsPoint:&lt;/p&gt;
-&lt;p&gt;{% img images/articles/2015/data/indexing_process.jpg %}&lt;/p&gt;
+&lt;p&gt;images/articles/2015/data/indexing_process.jpg &lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;We add Document(s) containing Field(s) to IndexWriter which analyzes the Document(s) using the Analyzer and then creates/open/edit indexes as required and store/update them in a Directory. IndexWriter is used to &lt;em&gt;update or create&lt;/em&gt; indexes. It is not used to read indexes.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -456,7 +456,7 @@ production: #...
 &lt;p&gt;Searching process is one of the core functionality provided by Lucene.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;IndexSearcher&lt;/code&gt; is the most important and core component of the searching process.&lt;/p&gt;
 &lt;p&gt;Process Chart for TutorialsPoint:&lt;/p&gt;
-&lt;p&gt;{% img images/articles/2015/data/searching_process.jpg %}&lt;/p&gt;
+&lt;p&gt;images/articles/2015/data/searching_process.jpg &lt;/p&gt;
 &lt;p&gt;We first create &lt;code&gt;Directory&lt;/code&gt;(s) containing &lt;code&gt;index&lt;/code&gt;es and then pass it to &lt;code&gt;IndexSearcher&lt;/code&gt; which opens the &lt;code&gt;Directory&lt;/code&gt; using &lt;code&gt;IndexReader&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Then we create a &lt;code&gt;Query&lt;/code&gt; with a &lt;code&gt;Term&lt;/code&gt; and make a search using &lt;code&gt;IndexSearcher&lt;/code&gt; by passing the &lt;code&gt;Query&lt;/code&gt; to the searcher.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;IndexSearcher&lt;/code&gt; returns a &lt;code&gt;TopDocs&lt;/code&gt; object which contains the search details along with document &lt;code&gt;ID&lt;/code&gt;(s) of the Document which is the result of the search operation.&lt;/p&gt;

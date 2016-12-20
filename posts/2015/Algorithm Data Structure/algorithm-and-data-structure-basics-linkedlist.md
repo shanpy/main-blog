@@ -210,7 +210,7 @@ Recursively call the method above for first part(start from origin head) of link
 
 This is a question from the book *Programming Interview Exposed*. Following graph is a example of a doubly linked list, from <a href="http://www.geeksforgeeks.org/flatten-a-linked-list-with-next-and-child-pointers/">this post</a>:
 
-{% img ../images/articles/2015/algorithm/double_linkedlist.png %}
+../images/articles/2015/algorithm/double_linkedlist.png 
 
 ####Idea
 

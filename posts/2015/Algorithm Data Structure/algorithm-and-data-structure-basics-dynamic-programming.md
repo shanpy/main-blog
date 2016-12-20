@@ -66,11 +66,11 @@ We want to create a two-dimensional array `c[i][j]`. It is used to record the le
 
 The graph below is from <a href="http://blog.csdn.net/biangren/article/details/8038605">this post</a>, expressing the math idea and calculation process for this problem:
 
-{% img ../images/articles/2015/algorithm/lcs_math.png %}
+../images/articles/2015/algorithm/lcs_math.png 
 
 Using two input string `BDCABA` and `ABCBDAB`:
 
-{% img ../images/articles/2015/algorithm/lcs_graph.png %}
+../images/articles/2015/algorithm/lcs_graph.png 
 
 >You may notice only when we move to left-top direction, we can find a character for LCS. So we need to create another two-dimensional array to record moving direction
 

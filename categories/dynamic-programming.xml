@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Pengyin's Note (Dynamic Programming)</title><link>http://pengyin-shan.com/</link><description></description><atom:link href="http://pengyin-shan.com/categories/dynamic-programming.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 20 Dec 2016 03:33:24 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Algorithm and Data Structure Basics - Dynamic Programming</title><link>http://pengyin-shan.com/posts/2015/Algorithm%20Data%20Structure/algorithm-and-data-structure-basics-dynamic-programming.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h4&gt;Reference List&lt;/h4&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pengyin's Note (Dynamic Programming)</title><link>http://pengyin-shan.com/</link><description></description><atom:link rel="self" href="http://pengyin-shan.com/categories/dynamic-programming.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 20 Dec 2016 03:52:14 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Algorithm and Data Structure Basics - Dynamic Programming</title><link>http://pengyin-shan.com/posts/2015/Algorithm%20Data%20Structure/algorithm-and-data-structure-basics-dynamic-programming.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h4&gt;Reference List&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href="http://www.th7.cn/Program/java/2011-07-07/29801.shtml"&gt;Dynamic Programming (Chinese)&lt;/a&gt;&lt;/p&gt;
@@ -61,9 +61,9 @@ For example, you have two string: &lt;code&gt;BDCABA&lt;/code&gt; and &lt;code&g
 &lt;p&gt;Since we are calculating &lt;strong&gt;from bottom to top&lt;/strong&gt;, we already get &lt;code&gt;c[i-1][j-1]&lt;/code&gt;, &lt;code&gt;c[i-1][j]&lt;/code&gt; and &lt;code&gt;c[i][j-1]&lt;/code&gt; before we get &lt;code&gt;c[i][j]&lt;/code&gt;. Since we can know if &lt;code&gt;X[i]=Y[j]&lt;/code&gt; or not, we can calculate the value of &lt;code&gt;c[i][j]&lt;/code&gt; based on three rules above.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;The graph below is from &lt;a href="http://blog.csdn.net/biangren/article/details/8038605"&gt;this post&lt;/a&gt;, expressing the math idea and calculation process for this problem:&lt;/p&gt;
-&lt;p&gt;{% img ../images/articles/2015/algorithm/lcs_math.png %}&lt;/p&gt;
+&lt;p&gt;../images/articles/2015/algorithm/lcs_math.png &lt;/p&gt;
 &lt;p&gt;Using two input string &lt;code&gt;BDCABA&lt;/code&gt; and &lt;code&gt;ABCBDAB&lt;/code&gt;:&lt;/p&gt;
-&lt;p&gt;{% img ../images/articles/2015/algorithm/lcs_graph.png %}&lt;/p&gt;
+&lt;p&gt;../images/articles/2015/algorithm/lcs_graph.png &lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;You may notice only when we move to left-top direction, we can find a character for LCS. So we need to create another two-dimensional array to record moving direction&lt;/p&gt;
 &lt;/blockquote&gt;

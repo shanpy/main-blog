@@ -184,9 +184,6 @@ Some of most import DOM attributes are: `className`, `tagName`, `id`, `href`, `t
 
 *Apply Width and Height*: `.width(Number)` and `.height(Number)` can be used directly
 
-jQuery CSS Methods:
-{% img images/posts/jQuery-css-methods.png %}
-
 ##DOM Manipulation Methods
 
 *Content Manipulation*: `.html()`. Please refer <a href="/jquery-reading-note-I">Reading Note I</a> for usage.
@@ -196,9 +193,6 @@ jQuery CSS Methods:
 *DOM Remove*: `XXX.empty()` remove all child elements from XXX elements. `XXX.remove(selector)` remove all matched elemetns from DOM.
 
 *DOM Insert*: `XXX.before(content)` or `XXX.after(content)`.
-
-Other DOM Manipulation Methods:
-{% img images/posts/DOM-Manipulation-Methods.png %}
 
 ##Event Handling
 
@@ -220,10 +214,6 @@ Other DOM Manipulation Methods:
 
 `handler`: the handler that you want to remove
 
-###Event Types
-
-{% img images/posts/event-type.png %}
-
 ###Event Object and Attributes
 
 `event` can be used as a parameter in handler callback function. There are several attributes that can be retrived by using `event.attributeName`. These attribute name returns useful values.
@@ -237,28 +227,21 @@ Example:
     });
 
 List of Attributes:
-{% img images/posts/event-attributes.png %}
+images/posts/event-attributes.png 
 
 ###Event Methods
 
 `event` parameter can also run some methods to perform specific function. To use it, just do `event.XXX();` in callback function. Here is a list of event methods:
-{% img images/posts/event-methods.png %}
+images/posts/event-methods.png 
 
 Please note `preventDefault()` is to prevent current function function working on current element, but `stopPropagation()` is to prevent *parent element's function* working on current element.
-
-###Event Manipulation Methods
-
-There are other methods besides `bind()`, which can be used for jQuery events. Here is a list of them:
-{% img images/posts/event-manipulation-methods.png %}
-
-`hover(over, out)`: `over` and `out` can be replaced by two functions that you want to perform.
 
 ###Event Helper Methods
 
 To trigger an event function YY on XX element, just use `XX.YY();`
 
 There are some already defined methods that you can use `XX.YY()` format to add event to XX element. For example, `$("#testId").click(function(){ ... });`. Here is a list:
-{% img images/posts/binding-methods.png %}
+images/posts/binding-methods.png 
 
 #Part III : Ajax, Effects
 
@@ -294,7 +277,7 @@ You can use `data` parameter to pass data to server via any ajax call. For examp
 
 ###jQuery Ajax Methods and Events
 
-{% img images/posts/ajax_methods_events.png %}
+images/posts/ajax_methods_events.png 
 
 ##Events
 
@@ -311,7 +294,7 @@ You can use `data` parameter to pass data to server via any ajax call. For examp
 
 ###Other jQuery Events
 
-{% img images/posts/jquery_events.png %}
+images/posts/jquery_events.png 
 
 
 

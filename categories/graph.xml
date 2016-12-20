@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Pengyin's Note (Graph)</title><link>http://pengyin-shan.com/</link><description></description><atom:link href="http://pengyin-shan.com/categories/graph.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 20 Dec 2016 03:33:22 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>SVG Study Note</title><link>http://pengyin-shan.com/posts/2016/Front%20End/svg-study-note.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;[TOC]&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pengyin's Note (Graph)</title><link>http://pengyin-shan.com/</link><description></description><atom:link rel="self" href="http://pengyin-shan.com/categories/graph.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 20 Dec 2016 03:52:13 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>SVG Study Note</title><link>http://pengyin-shan.com/posts/2016/Front%20End/svg-study-note.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;[TOC]&lt;/p&gt;
 &lt;h2&gt;Reference List&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -22,7 +22,7 @@
 &lt;p&gt;&lt;code&gt;viewbox&lt;/code&gt; is a way of scaling svg view-able space. it has four attributes: &lt;code&gt;x-position&lt;/code&gt;, &lt;code&gt;y-position&lt;/code&gt;, &lt;code&gt;width&lt;/code&gt;, &lt;code&gt;height&lt;/code&gt;. &lt;strong&gt;Note a positive value in y-position meaning counting down from start point.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;The use of &lt;code&gt;viewbox&lt;/code&gt; is to expand item to full svg area, following the scale defined in &lt;code&gt;viewbox&lt;/code&gt;. For example, &lt;code&gt;&amp;lt;svg width="500" height="300" viewbox="0 0 150 300"&amp;gt;&amp;lt;/svg&amp;gt;&lt;/code&gt; means define a area width a width of 150 and height of 300 from zero-point, then &lt;strong&gt;expand it to full svg (width 500 height 300)&lt;/strong&gt;. Everything inside viewbox will be also re-scaled.&lt;/p&gt;
 &lt;p&gt;A great demo (Chinese) created by &lt;strong&gt;zhangxinyu&lt;/strong&gt; can be found &lt;a href="http://www.zhangxinxu.com/study/201408/svg-viewbox-explain.html"&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;{% img img-responsive images/articles/2016/frontend/viewbox.gif %}&lt;/p&gt;
+&lt;p&gt;img-responsive images/articles/2016/frontend/viewbox.gif &lt;/p&gt;
 &lt;h2&gt;&lt;code&gt;preserveAspectRatio&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;preserveAspectRatio&lt;/code&gt; has two attributes: &lt;code&gt;how viewBox align with viewport&lt;/code&gt;, &lt;code&gt;ratio of height and width&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;The first attribute has two parts: &lt;code&gt;x alignment&lt;/code&gt; and &lt;code&gt;y alignment&lt;/code&gt;. Options are:&lt;/p&gt;
@@ -58,15 +58,15 @@
 
 
 &lt;p&gt;Result from code above. Notice the rectangle is still in &lt;em&gt;2:3&lt;/em&gt; ratio for &lt;em&gt;width:height&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;{% img img-responsive images/articles/2016/frontend/ratio-meet %}&lt;/p&gt;
+&lt;p&gt;img-responsive images/articles/2016/frontend/ratio-meet &lt;/p&gt;
 &lt;h3&gt;&lt;code&gt;slice&lt;/code&gt;&lt;/h3&gt;
 &lt;p&gt;Keep current ratio, while expanding &lt;code&gt;viewbox&lt;/code&gt; till &lt;strong&gt;short slide&lt;/strong&gt; of &lt;code&gt;viewport&lt;/code&gt; is &lt;strong&gt;filled&lt;/strong&gt; (Even though the inner shape is smaller width/height than svg, the short side of svg is still be filled).&lt;/p&gt;
 &lt;p&gt;Result from code above. Note &lt;em&gt;height&lt;/em&gt; is filled first, since it's the shorter side:&lt;/p&gt;
-&lt;p&gt;{% img img-responsive images/articles/2016/frontend/ratio-slice %}&lt;/p&gt;
+&lt;p&gt;img-responsive images/articles/2016/frontend/ratio-slice &lt;/p&gt;
 &lt;h3&gt;&lt;code&gt;none&lt;/code&gt;&lt;/h3&gt;
 &lt;p&gt;Shapes inside &lt;code&gt;viewbox&lt;/code&gt; is hardly defined by its own width and height, without following any ratio.&lt;/p&gt;
 &lt;p&gt;Result from code above. :&lt;/p&gt;
-&lt;p&gt;{% img img-responsive images/articles/2016/frontend/ratio-slice %}&lt;/p&gt;
+&lt;p&gt;img-responsive images/articles/2016/frontend/ratio-slice &lt;/p&gt;
 &lt;p&gt;If no &lt;code&gt;preserveAspectRatio&lt;/code&gt; is market, following result should be seen:&lt;/p&gt;
-&lt;p&gt;{% img img-responsive images/articles/2016/frontend/ratio-no %}&lt;/p&gt;
+&lt;p&gt;img-responsive images/articles/2016/frontend/ratio-no &lt;/p&gt;
 &lt;p&gt;Also see this &lt;a href="http://www.zhangxinxu.com/study/201408/svg-preserveaspectratio-meet-slice-none.html"&gt;demo&lt;/a&gt; created by &lt;em&gt;zhangxinxu&lt;/em&gt;.&lt;/p&gt;&lt;/div&gt;</description><category>Graph</category><guid>http://pengyin-shan.com/posts/2016/Front%20End/svg-study-note.html</guid><pubDate>Mon, 01 Aug 2016 04:00:00 GMT</pubDate></item></channel></rss>

@@ -38,7 +38,7 @@
 
 A description graph from tutorialspoint.com:
 
-{% img ../images/articles/2015/javascript/angularjs_concepts.jpg %}
+../images/articles/2015/javascript/angularjs_concepts.jpg 
 
 ##Three Major Parts
 

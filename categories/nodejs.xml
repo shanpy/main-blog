@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Pengyin's Note (Node.js)</title><link>http://pengyin-shan.com/</link><description></description><atom:link href="http://pengyin-shan.com/categories/nodejs.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 20 Dec 2016 03:33:23 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Node.js Basics</title><link>http://pengyin-shan.com/posts/2016/JavaScript/node-js-basics.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;[TOC]&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pengyin's Note (Node.js)</title><link>http://pengyin-shan.com/</link><description></description><atom:link rel="self" href="http://pengyin-shan.com/categories/nodejs.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 20 Dec 2016 03:52:13 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Node.js Basics</title><link>http://pengyin-shan.com/posts/2016/JavaScript/node-js-basics.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;[TOC]&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;This is a reading note for node.js part on &lt;a href="http://www.tutorialspoint.com/nodejs/index.htm"&gt;tutorialspoint&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Node.js (MIT License) is a server-side framework built on Good V8 Engine. From Tutorialpoints.com, it has following features:&lt;/p&gt;
@@ -167,7 +167,7 @@
 &lt;p&gt;Node thread keeps an event loop and whenever any task get completed, it fires the corresponding event which signals the event listener function to get executed.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Image from tutorialspoint.com:&lt;/p&gt;
-&lt;p&gt;{% img images/articles/2016/javascript/node_js_events.png %}&lt;/p&gt;
+&lt;p&gt;images/articles/2016/javascript/node_js_events.png &lt;/p&gt;
 &lt;p&gt;This is the difference between callbacks and events. The &lt;code&gt;EventEmitter&lt;/code&gt; is used to bind events and event listeners.&lt;/p&gt;
 &lt;p&gt;EventEmitter Methods:&lt;/p&gt;
 &lt;ul&gt;

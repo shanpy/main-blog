@@ -74,7 +74,7 @@ article: http://ogp.me/ns/article#
 <p><code>viewbox</code> is a way of scaling svg view-able space. it has four attributes: <code>x-position</code>, <code>y-position</code>, <code>width</code>, <code>height</code>. <strong>Note a positive value in y-position meaning counting down from start point.</strong></p>
 <p>The use of <code>viewbox</code> is to expand item to full svg area, following the scale defined in <code>viewbox</code>. For example, <code>&lt;svg width="500" height="300" viewbox="0 0 150 300"&gt;&lt;/svg&gt;</code> means define a area width a width of 150 and height of 300 from zero-point, then <strong>expand it to full svg (width 500 height 300)</strong>. Everything inside viewbox will be also re-scaled.</p>
 <p>A great demo (Chinese) created by <strong>zhangxinyu</strong> can be found <a href="http://www.zhangxinxu.com/study/201408/svg-viewbox-explain.html">here</a>.</p>
-<p>{% img img-responsive images/articles/2016/frontend/viewbox.gif %}</p>
+<p>img-responsive images/articles/2016/frontend/viewbox.gif </p>
 <h2><code>preserveAspectRatio</code></h2>
 <p><code>preserveAspectRatio</code> has two attributes: <code>how viewBox align with viewport</code>, <code>ratio of height and width</code>.</p>
 <p>The first attribute has two parts: <code>x alignment</code> and <code>y alignment</code>. Options are:</p>
@@ -110,17 +110,17 @@ article: http://ogp.me/ns/article#
 
 
 <p>Result from code above. Notice the rectangle is still in <em>2:3</em> ratio for <em>width:height</em>.</p>
-<p>{% img img-responsive images/articles/2016/frontend/ratio-meet %}</p>
+<p>img-responsive images/articles/2016/frontend/ratio-meet </p>
 <h3><code>slice</code></h3>
 <p>Keep current ratio, while expanding <code>viewbox</code> till <strong>short slide</strong> of <code>viewport</code> is <strong>filled</strong> (Even though the inner shape is smaller width/height than svg, the short side of svg is still be filled).</p>
 <p>Result from code above. Note <em>height</em> is filled first, since it's the shorter side:</p>
-<p>{% img img-responsive images/articles/2016/frontend/ratio-slice %}</p>
+<p>img-responsive images/articles/2016/frontend/ratio-slice </p>
 <h3><code>none</code></h3>
 <p>Shapes inside <code>viewbox</code> is hardly defined by its own width and height, without following any ratio.</p>
 <p>Result from code above. :</p>
-<p>{% img img-responsive images/articles/2016/frontend/ratio-slice %}</p>
+<p>img-responsive images/articles/2016/frontend/ratio-slice </p>
 <p>If no <code>preserveAspectRatio</code> is market, following result should be seen:</p>
-<p>{% img img-responsive images/articles/2016/frontend/ratio-no %}</p>
+<p>img-responsive images/articles/2016/frontend/ratio-no </p>
 <p>Also see this <a href="http://www.zhangxinxu.com/study/201408/svg-preserveaspectratio-meet-slice-none.html">demo</a> created by <em>zhangxinxu</em>.</p>
 </div>
         </div>

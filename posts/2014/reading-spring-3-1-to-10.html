@@ -54,7 +54,8 @@ article: http://ogp.me/ns/article#
 <p>This post is transferred from my <a href="http://blogpengyin.herokuapp.com/">old Hexo blog site</a>, created on 2014.</p>
 <p>This is a reading note from Spring Framework 3.1 Tutorial pdf, created by <a href="http://www.tutorialspoint.com/spring"><strong>tutorialspoint</strong></a>. This pdf contains information for Spring 3 Core Basics, which is very useful for understanding defination and practive in Spring programming.</p>
 <h2>Chapter 2: Spring Framework Architecture</h2>
-<p _="%" images_posts_spring-structure.png="images/posts/spring-structure.png" img>Spring is a modular framework, which means you can pick the modules that only fits your need. Basic structure of Spring framework is following. There are three <em>main</em> componets: <code>Core Container</code>, <code>Data Access Integration</code> and <code>Web (MVC/Remoting)</code>. Other important componets include <code>AOP</code>, <code>Aspects</code>, <code>Instrumentation</code> and <code>Test</code>:</p>
+<p>Spring is a modular framework, which means you can pick the modules that only fits your need. Basic structure of Spring framework is following. There are three <em>main</em> componets: <code>Core Container</code>, <code>Data Access Integration</code> and <code>Web (MVC/Remoting)</code>. Other important componets include <code>AOP</code>, <code>Aspects</code>, <code>Instrumentation</code> and <code>Test</code>:
+images/posts/spring-structure.png </p>
 <h3>Core Container</h3>
 <p><code>Core Container</code> contains: <code>Core</code> module, <code>Beans</code> module, <code>Context</code> module and <code>Expression Language</code> module:</p>
 <ul>
@@ -125,7 +126,8 @@ article: http://ogp.me/ns/article#
 <p>The main function of Spring IoC Container is to <em>create</em> objects, <em>wire</em> objects together, <em>configure</em> objects and <em>manage</em> objects in their lifecyle.</p>
 <p>Spring IoC containter uses <code>dependency injection/DI</code> to manage objects, which are called spring <code>beans</code>.</p>
 <p>Container gets information from the <code>metadata</code> in <code>xml</code>, <code>Java annotation</code> or <code>Java code</code>.</p>
-<p _="%" images_posts_spring-containers.png="images/posts/spring-containers.png" img>This is the process of Spring IoC container works:</p>
+<p>This is the process of Spring IoC container works:
+images/posts/spring-containers.png </p>
 <p>Spring has two distinct type of containers: <code>BeanFactory</code> and <code>ApplicationContext</code>:</p>
 <p><code>BeanFactory</code>: this is the <em>simplest</em> container from DI. Most commonly used implementation is <code>XmlBeanFactory</code> class. It reading the configuration metadata from <code>xml</code> file and use it.</p>
 <p>XML:</p>
@@ -204,7 +206,8 @@ article: http://ogp.me/ns/article#
 <p><code>Java-based</code> configuration</p>
 </li>
 </ul>
-<p _="%" images_posts_spring-configuration-metadata.png="images/posts/spring-configuration-metadata.png" img>Example of Bean Properties from book:</p>
+<p>Example of Bean Properties from book:
+images/posts/spring-configuration-metadata.png </p>
 <h2>Chapter 7: Spring Bean Scopes</h2>
 <p>You can declaring <em>scope</em> of beans when you creates <code>&lt;bean/&gt;</code> in xml file. There are five scopes that Spring support:</p>
 <p><code>singleton</code>: <em>Default</em>. Spring IoC container cretes <em>exactly one</em> instance of the object defined by that bean defination. This object is stored in a <em>cache</em> of such singletion beans. A request will return the cached object. Example:</p>

@@ -44,7 +44,7 @@ In Lucene, `IndexWriter` is the most important and core component of the indexin
 
 Process Chart for TutorialsPoint:
 
-{% img images/articles/2015/data/indexing_process.jpg %}
+images/articles/2015/data/indexing_process.jpg 
 
 >We add Document(s) containing Field(s) to IndexWriter which analyzes the Document(s) using the Analyzer and then creates/open/edit indexes as required and store/update them in a Directory. IndexWriter is used to *update or create* indexes. It is not used to read indexes.
 
@@ -261,7 +261,7 @@ Searching process is one of the core functionality provided by Lucene.
 
 Process Chart for TutorialsPoint:
 
-{% img images/articles/2015/data/searching_process.jpg %}
+images/articles/2015/data/searching_process.jpg 
 
 We first create `Directory`(s) containing `index`es and then pass it to `IndexSearcher` which opens the `Directory` using `IndexReader`.
 

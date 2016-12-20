@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Pengyin Shan's Note</title><link>http://pengyin-shan.com/</link><description>Site for My Notes</description><atom:link type="application/rss+xml" rel="self" href="http://pengyin-shan.com/rss.xml"></atom:link><language>en</language><lastBuildDate>Mon, 19 Dec 2016 02:44:34 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Web Worker Study Note</title><link>http://pengyin-shan.com/posts/2016/JavaScript/web-worker-study-note/</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h2&gt;Reference List&lt;/h2&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pengyin's Note</title><link>http://pengyin-shan.com/</link><description>This is Pengyin Shan's Note</description><atom:link rel="self" href="http://pengyin-shan.com/rss.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 20 Dec 2016 03:52:14 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Web Worker Study Note</title><link>http://pengyin-shan.com/posts/2016/JavaScript/web-worker-study-note.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h2&gt;Reference List&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href="http://www.html5rocks.com/en/tutorials/workers/basics/"&gt;The Basics with Web Workers&lt;/a&gt; written by &lt;em&gt;Eric Bidelman&lt;/em&gt;, &lt;em&gt;www.html5rocks.com&lt;/em&gt;.&lt;/p&gt;
@@ -206,7 +206,7 @@
           &lt;span class="nx"&gt;self&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;postMessage&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'Unknown command: '&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nx"&gt;data&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;msg&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
       &lt;span class="p"&gt;};&lt;/span&gt;
     &lt;span class="p"&gt;},&lt;/span&gt; &lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</description><category>Web Worker</category><guid>http://pengyin-shan.com/posts/2016/JavaScript/web-worker-study-note/</guid><pubDate>Wed, 17 Aug 2016 04:00:00 GMT</pubDate></item><item><title>Frond End Data Storage</title><link>http://pengyin-shan.com/posts/2016/Front%20End/front-end-data-storage/</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;/pre&gt;&lt;/div&gt;</description><category>Web Worker</category><guid>http://pengyin-shan.com/posts/2016/JavaScript/web-worker-study-note.html</guid><pubDate>Wed, 17 Aug 2016 04:00:00 GMT</pubDate></item><item><title>Frond End Data Storage</title><link>http://pengyin-shan.com/posts/2016/Front%20End/front-end-data-storage.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;[TOC]&lt;/p&gt;
 &lt;h2&gt;Reference List&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -265,7 +265,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;Usage&lt;/h4&gt;
-&lt;p&gt;The way to use session storage is the same as the way to use local storage, except the object is now &lt;code&gt;window.sessionStorage&lt;/code&gt;.&lt;/p&gt;&lt;/div&gt;</description><category>HTML5</category><category>JavaScript</category><guid>http://pengyin-shan.com/posts/2016/Front%20End/front-end-data-storage/</guid><pubDate>Tue, 16 Aug 2016 04:00:00 GMT</pubDate></item><item><title>SVG Study Note</title><link>http://pengyin-shan.com/posts/2016/Front%20End/svg-study-note/</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;p&gt;The way to use session storage is the same as the way to use local storage, except the object is now &lt;code&gt;window.sessionStorage&lt;/code&gt;.&lt;/p&gt;&lt;/div&gt;</description><category>HTML5</category><category>JavaScript</category><guid>http://pengyin-shan.com/posts/2016/Front%20End/front-end-data-storage.html</guid><pubDate>Tue, 16 Aug 2016 04:00:00 GMT</pubDate></item><item><title>SVG Study Note</title><link>http://pengyin-shan.com/posts/2016/Front%20End/svg-study-note.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;[TOC]&lt;/p&gt;
 &lt;h2&gt;Reference List&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -288,7 +288,7 @@
 &lt;p&gt;&lt;code&gt;viewbox&lt;/code&gt; is a way of scaling svg view-able space. it has four attributes: &lt;code&gt;x-position&lt;/code&gt;, &lt;code&gt;y-position&lt;/code&gt;, &lt;code&gt;width&lt;/code&gt;, &lt;code&gt;height&lt;/code&gt;. &lt;strong&gt;Note a positive value in y-position meaning counting down from start point.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;The use of &lt;code&gt;viewbox&lt;/code&gt; is to expand item to full svg area, following the scale defined in &lt;code&gt;viewbox&lt;/code&gt;. For example, &lt;code&gt;&amp;lt;svg width="500" height="300" viewbox="0 0 150 300"&amp;gt;&amp;lt;/svg&amp;gt;&lt;/code&gt; means define a area width a width of 150 and height of 300 from zero-point, then &lt;strong&gt;expand it to full svg (width 500 height 300)&lt;/strong&gt;. Everything inside viewbox will be also re-scaled.&lt;/p&gt;
 &lt;p&gt;A great demo (Chinese) created by &lt;strong&gt;zhangxinyu&lt;/strong&gt; can be found &lt;a href="http://www.zhangxinxu.com/study/201408/svg-viewbox-explain.html"&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;{% img img-responsive images/articles/2016/frontend/viewbox.gif %}&lt;/p&gt;
+&lt;p&gt;img-responsive images/articles/2016/frontend/viewbox.gif &lt;/p&gt;
 &lt;h2&gt;&lt;code&gt;preserveAspectRatio&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;preserveAspectRatio&lt;/code&gt; has two attributes: &lt;code&gt;how viewBox align with viewport&lt;/code&gt;, &lt;code&gt;ratio of height and width&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;The first attribute has two parts: &lt;code&gt;x alignment&lt;/code&gt; and &lt;code&gt;y alignment&lt;/code&gt;. Options are:&lt;/p&gt;
@@ -324,18 +324,18 @@
 
 
 &lt;p&gt;Result from code above. Notice the rectangle is still in &lt;em&gt;2:3&lt;/em&gt; ratio for &lt;em&gt;width:height&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;{% img img-responsive images/articles/2016/frontend/ratio-meet %}&lt;/p&gt;
+&lt;p&gt;img-responsive images/articles/2016/frontend/ratio-meet &lt;/p&gt;
 &lt;h3&gt;&lt;code&gt;slice&lt;/code&gt;&lt;/h3&gt;
 &lt;p&gt;Keep current ratio, while expanding &lt;code&gt;viewbox&lt;/code&gt; till &lt;strong&gt;short slide&lt;/strong&gt; of &lt;code&gt;viewport&lt;/code&gt; is &lt;strong&gt;filled&lt;/strong&gt; (Even though the inner shape is smaller width/height than svg, the short side of svg is still be filled).&lt;/p&gt;
 &lt;p&gt;Result from code above. Note &lt;em&gt;height&lt;/em&gt; is filled first, since it's the shorter side:&lt;/p&gt;
-&lt;p&gt;{% img img-responsive images/articles/2016/frontend/ratio-slice %}&lt;/p&gt;
+&lt;p&gt;img-responsive images/articles/2016/frontend/ratio-slice &lt;/p&gt;
 &lt;h3&gt;&lt;code&gt;none&lt;/code&gt;&lt;/h3&gt;
 &lt;p&gt;Shapes inside &lt;code&gt;viewbox&lt;/code&gt; is hardly defined by its own width and height, without following any ratio.&lt;/p&gt;
 &lt;p&gt;Result from code above. :&lt;/p&gt;
-&lt;p&gt;{% img img-responsive images/articles/2016/frontend/ratio-slice %}&lt;/p&gt;
+&lt;p&gt;img-responsive images/articles/2016/frontend/ratio-slice &lt;/p&gt;
 &lt;p&gt;If no &lt;code&gt;preserveAspectRatio&lt;/code&gt; is market, following result should be seen:&lt;/p&gt;
-&lt;p&gt;{% img img-responsive images/articles/2016/frontend/ratio-no %}&lt;/p&gt;
-&lt;p&gt;Also see this &lt;a href="http://www.zhangxinxu.com/study/201408/svg-preserveaspectratio-meet-slice-none.html"&gt;demo&lt;/a&gt; created by &lt;em&gt;zhangxinxu&lt;/em&gt;.&lt;/p&gt;&lt;/div&gt;</description><category>Graph</category><guid>http://pengyin-shan.com/posts/2016/Front%20End/svg-study-note/</guid><pubDate>Mon, 01 Aug 2016 04:00:00 GMT</pubDate></item><item><title>Quick Note about Box-Sizing/Box-Shadow</title><link>http://pengyin-shan.com/posts/2016/Front%20End/quick-note-about-box-box-shadow/</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;p&gt;img-responsive images/articles/2016/frontend/ratio-no &lt;/p&gt;
+&lt;p&gt;Also see this &lt;a href="http://www.zhangxinxu.com/study/201408/svg-preserveaspectratio-meet-slice-none.html"&gt;demo&lt;/a&gt; created by &lt;em&gt;zhangxinxu&lt;/em&gt;.&lt;/p&gt;&lt;/div&gt;</description><category>Graph</category><guid>http://pengyin-shan.com/posts/2016/Front%20End/svg-study-note.html</guid><pubDate>Mon, 01 Aug 2016 04:00:00 GMT</pubDate></item><item><title>Quick Note about Box-Sizing/Box-Shadow</title><link>http://pengyin-shan.com/posts/2016/Front%20End/quick-note-about-box-box-shadow.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;[TOC]&lt;/p&gt;
 &lt;h2&gt;&lt;code&gt;box-sizing&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;box-sizing&lt;/code&gt; is used to tell the browser what the sizing properties (&lt;code&gt;width&lt;/code&gt; and &lt;code&gt;height&lt;/code&gt;) should include.&lt;/p&gt;
 &lt;p&gt;It has following properties:&lt;/p&gt;
@@ -384,7 +384,7 @@
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;color&lt;/code&gt;: &lt;em&gt;Optional&lt;/em&gt;. Any color code. &lt;code&gt;rgba&lt;/code&gt; is a good option to includes opacity for shadow. Such as &lt;code&gt;rgba(0,0,0,0.75);&lt;/code&gt;.&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;</description><category>CSS3</category><guid>http://pengyin-shan.com/posts/2016/Front%20End/quick-note-about-box-box-shadow/</guid><pubDate>Wed, 27 Jul 2016 04:00:00 GMT</pubDate></item><item><title>Learning Note - CSS Transitions and Transforms (Lynda.com)</title><link>http://pengyin-shan.com/posts/2016/Front%20End/learning-note-css-transitions-and-transforms/</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;/ul&gt;&lt;/div&gt;</description><category>CSS3</category><guid>http://pengyin-shan.com/posts/2016/Front%20End/quick-note-about-box-box-shadow.html</guid><pubDate>Wed, 27 Jul 2016 04:00:00 GMT</pubDate></item><item><title>Learning Note - CSS Transitions and Transforms (Lynda.com)</title><link>http://pengyin-shan.com/posts/2016/Front%20End/learning-note-css-transitions-and-transforms.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;[TOC]&lt;/p&gt;
 &lt;h2&gt;Reference List&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -397,10 +397,10 @@
 &lt;h2&gt;Online Tools&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href="http://pengyin-shan.com/posts/2016/Front%20End/learning-note-css-transitions-and-transforms/matthewlein.com/ceaser"&gt;test a great variety of transitions&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://pengyin-shan.com/posts/2016/Front%20End/matthewlein.com/ceaser"&gt;test a great variety of transitions&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href="http://pengyin-shan.com/posts/2016/Front%20End/learning-note-css-transitions-and-transforms/www.css3maker.com"&gt;CSS 3.0 Maker&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://pengyin-shan.com/posts/2016/Front%20End/www.css3maker.com"&gt;CSS 3.0 Maker&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Basics&lt;/h2&gt;
@@ -477,10 +477,10 @@
 &lt;h4&gt;cubic-bezier&lt;/h4&gt;
 &lt;p&gt;Another &lt;code&gt;transition-timing-function&lt;/code&gt; value is &lt;code&gt;cubic-besier(x1,y1,x2,y2)&lt;/code&gt;. &lt;code&gt;0&amp;lt;x&amp;lt;1&lt;/code&gt;, when &lt;code&gt;x&amp;gt;1&lt;/code&gt; cubic-besier will lose its effect. There is no rule for &lt;code&gt;y&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Jovey created following graph in her blog post &lt;a href="http://www.jianshu.com/p/d999f090d333"&gt;cubic-bezier&lt;/a&gt; to show cubic-bezier:&lt;/p&gt;
-&lt;p&gt;{% img img-responsive images/articles/2016/frontend/cubic-bezier.png %}&lt;/p&gt;
+&lt;p&gt;img-responsive images/articles/2016/frontend/cubic-bezier.png &lt;/p&gt;
 &lt;p&gt;The curve from cubic-bezier is used to decide the speed of animation. We can view this as a straight line being dragged by point &lt;code&gt;(x1, y1)&lt;/code&gt; and point &lt;code&gt;(x2, y2)&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Jovey gave following example for the value of cubic-basier of &lt;code&gt;ease-out&lt;/code&gt; and &lt;code&gt;ease-in-out&lt;/code&gt;:&lt;/p&gt;
-&lt;p&gt;{% img img-responsive images/articles/2016/frontend/cubic-bezier2.png %}&lt;/p&gt;
+&lt;p&gt;img-responsive images/articles/2016/frontend/cubic-bezier2.png &lt;/p&gt;
 &lt;p&gt;&lt;code&gt;transition-delay&lt;/code&gt; is used to hold transition for a period of time.&lt;/p&gt;
 &lt;h3&gt;Transforms&lt;/h3&gt;
 &lt;p&gt;Basic Syntax:&lt;/p&gt;
@@ -742,7 +742,7 @@
 &lt;span class="nc"&gt;.no-csstransform3d&lt;/span&gt; &lt;span class="nn"&gt;#carousel&lt;/span&gt; &lt;span class="nt"&gt;figure&lt;/span&gt;&lt;span class="nc"&gt;.showFig&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="nb"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</description><category>CSS3</category><guid>http://pengyin-shan.com/posts/2016/Front%20End/learning-note-css-transitions-and-transforms/</guid><pubDate>Mon, 18 Jul 2016 04:00:00 GMT</pubDate></item><item><title>Reading Note - JavaScript Scoping, Hoisting and Others</title><link>http://pengyin-shan.com/posts/2016/JavaScript/reading-note-javascript-scoping-hoisting-and-others/</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;During the process of learning TypeScript, I read an old blog article about JavaScript Scoping and Hoisting from &lt;a href="http://www.adequatelygood.com/about.html"&gt;Ben Cherry&lt;/a&gt;, and I like it. From this blog I go through more blog posts to extend my understanding about JavaScript scoping, hoisting, prototype, etc. This is a study note for all of these knowledges.&lt;/p&gt;
+&lt;/pre&gt;&lt;/div&gt;</description><category>CSS3</category><guid>http://pengyin-shan.com/posts/2016/Front%20End/learning-note-css-transitions-and-transforms.html</guid><pubDate>Mon, 18 Jul 2016 04:00:00 GMT</pubDate></item><item><title>Reading Note - JavaScript Scoping, Hoisting and Others</title><link>http://pengyin-shan.com/posts/2016/JavaScript/reading-note-javascript-scoping-hoisting-and-others.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;During the process of learning TypeScript, I read an old blog article about JavaScript Scoping and Hoisting from &lt;a href="http://www.adequatelygood.com/about.html"&gt;Ben Cherry&lt;/a&gt;, and I like it. From this blog I go through more blog posts to extend my understanding about JavaScript scoping, hoisting, prototype, etc. This is a study note for all of these knowledges.&lt;/p&gt;
 &lt;h2&gt;Reference List&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -1059,7 +1059,7 @@
 
 &lt;p&gt;&lt;code&gt;Scope Chain&lt;/code&gt;: any function defined within another function has a local scope with &lt;em&gt;linked to the outer function&lt;/em&gt;. This linking is the chain.&lt;/p&gt;
 &lt;p&gt;See graph from Diego Castorina below:&lt;/p&gt;
-&lt;p&gt;{% img img-responsive images/articles/2016/javascript/scope_chain.png %}&lt;/p&gt;
+&lt;p&gt;img-responsive images/articles/2016/javascript/scope_chain.png &lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;It’s always the position in the code that defines the scope. When resolving a variable, JavaScript starts at the innermost scope and searches outwards until it finds the variable/object/function it was looking for.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1361,7 +1361,7 @@
 &lt;p&gt;It is a bad practice to extend &lt;code&gt;object.prototype&lt;/code&gt;/&lt;code&gt;_proto_&lt;/code&gt; or one of the other built-in prototypes. This is called &lt;code&gt;monkey&lt;/code&gt; patching and breaks &lt;code&gt;encapsulation&lt;/code&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;A graph from &lt;a href="https://www.toptal.com/javascript/javascript-prototypes-scopes-and-performance-what-you-need-to-know"&gt;JavaScript Prototype Chains, Scope Chains, and Performance: What You Need to Know&lt;/a&gt; written by DIEGO CASTORINA describe prototype chain very well:&lt;/p&gt;
-&lt;p&gt;{% img img-responsive images/articles/2016/javascript/prototype_chain.png %}&lt;/p&gt;
+&lt;p&gt;img-responsive images/articles/2016/javascript/prototype_chain.png &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Simply Construct&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Code Example:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;o&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nx"&gt;a&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;};&lt;/span&gt;
@@ -1426,7 +1426,7 @@
 
 
 &lt;p&gt;See graph example below:&lt;/p&gt;
-&lt;p&gt;{% img img-responsive images/articles/2016/javascript/prototype_chain_2.png %}&lt;/p&gt;
+&lt;p&gt;img-responsive images/articles/2016/javascript/prototype_chain_2.png &lt;/p&gt;
 &lt;p&gt;Note: &lt;code&gt;var g = new Graph()&lt;/code&gt; constructor above equals to following code:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;g&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nb"&gt;Object&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
 &lt;span class="nx"&gt;g&lt;/span&gt;&lt;span class="p"&gt;.[[&lt;/span&gt;&lt;span class="nx"&gt;Prototype&lt;/span&gt;&lt;span class="p"&gt;]]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;Graph&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;prototype&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
@@ -1513,7 +1513,7 @@
 &lt;span class="nx"&gt;foo&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Bar&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;prototype&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;prop1_&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="nx"&gt;foo&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Bar&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;prototype&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;prop2_&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="nx"&gt;foo&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Bar&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;prototype&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;prop4_&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'blah'&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</description><category>JavaScript</category><guid>http://pengyin-shan.com/posts/2016/JavaScript/reading-note-javascript-scoping-hoisting-and-others/</guid><pubDate>Wed, 22 Jun 2016 04:00:00 GMT</pubDate></item><item><title>TypeScript Basics</title><link>http://pengyin-shan.com/posts/2016/JavaScript/typescript-basics/</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;/pre&gt;&lt;/div&gt;</description><category>JavaScript</category><guid>http://pengyin-shan.com/posts/2016/JavaScript/reading-note-javascript-scoping-hoisting-and-others.html</guid><pubDate>Wed, 22 Jun 2016 04:00:00 GMT</pubDate></item><item><title>TypeScript Basics</title><link>http://pengyin-shan.com/posts/2016/JavaScript/typescript-basics.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;[TOC]&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;This is a brief reading note for TypeScript &lt;a href="http://www.typescriptlang.org/docs/handbook"&gt;official handbook&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
 &lt;h2&gt;Gulp Setup&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;Gulp&lt;/code&gt; can be used with TypeScript to provide powerful compiling process. See &lt;a href="http://www.typescriptlang.org/docs/handbook/gulp.html"&gt;here&lt;/a&gt; for a detailed description.&lt;/p&gt;
@@ -1688,7 +1688,7 @@
 &lt;span class="kd"&gt;let&lt;/span&gt; &lt;span class="nx"&gt;strlength2&lt;/span&gt;: &lt;span class="kt"&gt;number&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;typeassertion&lt;/span&gt; &lt;span class="kr"&gt;as&lt;/span&gt; &lt;span class="kt"&gt;string&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;length&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;strlength&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 &lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;strlength2&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</description><category>TypeScript</category><guid>http://pengyin-shan.com/posts/2016/JavaScript/typescript-basics/</guid><pubDate>Tue, 21 Jun 2016 04:00:00 GMT</pubDate></item><item><title>Node.js Basics</title><link>http://pengyin-shan.com/posts/2016/JavaScript/node-js-basics/</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;/pre&gt;&lt;/div&gt;</description><category>TypeScript</category><guid>http://pengyin-shan.com/posts/2016/JavaScript/typescript-basics.html</guid><pubDate>Tue, 21 Jun 2016 04:00:00 GMT</pubDate></item><item><title>Node.js Basics</title><link>http://pengyin-shan.com/posts/2016/JavaScript/node-js-basics.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;[TOC]&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;This is a reading note for node.js part on &lt;a href="http://www.tutorialspoint.com/nodejs/index.htm"&gt;tutorialspoint&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Node.js (MIT License) is a server-side framework built on Good V8 Engine. From Tutorialpoints.com, it has following features:&lt;/p&gt;
@@ -1856,7 +1856,7 @@
 &lt;p&gt;Node thread keeps an event loop and whenever any task get completed, it fires the corresponding event which signals the event listener function to get executed.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Image from tutorialspoint.com:&lt;/p&gt;
-&lt;p&gt;{% img images/articles/2016/javascript/node_js_events.png %}&lt;/p&gt;
+&lt;p&gt;images/articles/2016/javascript/node_js_events.png &lt;/p&gt;
 &lt;p&gt;This is the difference between callbacks and events. The &lt;code&gt;EventEmitter&lt;/code&gt; is used to bind events and event listeners.&lt;/p&gt;
 &lt;p&gt;EventEmitter Methods:&lt;/p&gt;
 &lt;ul&gt;
@@ -2268,7 +2268,7 @@ Error: Converted to exception. System will crash!
 &lt;span class="p"&gt;})&lt;/span&gt;
 
 &lt;span class="nx"&gt;app&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;listen&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;8081&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</description><category>Node.js</category><guid>http://pengyin-shan.com/posts/2016/JavaScript/node-js-basics/</guid><pubDate>Wed, 25 May 2016 04:00:00 GMT</pubDate></item><item><title>Reading Note - Asynchronous in jQuery and ECMAScript 6</title><link>http://pengyin-shan.com/posts/2016/JavaScript/reading_note_defer_in_jquery/</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;/pre&gt;&lt;/div&gt;</description><category>Node.js</category><guid>http://pengyin-shan.com/posts/2016/JavaScript/node-js-basics.html</guid><pubDate>Wed, 25 May 2016 04:00:00 GMT</pubDate></item><item><title>Reading Note - Asynchronous in jQuery and ECMAScript 6</title><link>http://pengyin-shan.com/posts/2016/JavaScript/reading_note_defer_in_jquery.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;[TOC]&lt;/p&gt;
 &lt;h2&gt;Reference List&lt;/h2&gt;
 &lt;p&gt;This is a &lt;strong&gt;reading note&lt;/strong&gt; for following articles/blogs:&lt;/p&gt;
 &lt;ul&gt;
@@ -2432,7 +2432,7 @@ Error: Converted to exception. System will crash!
 &lt;span class="nx"&gt;VM2454&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;77&lt;/span&gt; &lt;span class="nx"&gt;done&lt;/span&gt;
 &lt;span class="nx"&gt;VM2454&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;56&lt;/span&gt; &lt;span class="nx"&gt;deferred&lt;/span&gt; &lt;span class="nx"&gt;callback&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;
 &lt;span class="nx"&gt;VM2522&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;88&lt;/span&gt; &lt;span class="nx"&gt;finish&lt;/span&gt; &lt;span class="nx"&gt;loadingImage&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</description><category>JavaScript</category><category>jQuery</category><guid>http://pengyin-shan.com/posts/2016/JavaScript/reading_note_defer_in_jquery/</guid><pubDate>Tue, 17 May 2016 04:00:00 GMT</pubDate></item><item><title>Apache Velocity Language Basics</title><link>http://pengyin-shan.com/posts/2015/Java/apache-velocity-basics/</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3&gt;Syntax Basics&lt;/h3&gt;
+&lt;/pre&gt;&lt;/div&gt;</description><category>JavaScript</category><category>jQuery</category><guid>http://pengyin-shan.com/posts/2016/JavaScript/reading_note_defer_in_jquery.html</guid><pubDate>Tue, 17 May 2016 04:00:00 GMT</pubDate></item><item><title>Apache Velocity Language Basics</title><link>http://pengyin-shan.com/posts/2015/Java/apache-velocity-basics.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3&gt;Syntax Basics&lt;/h3&gt;
 &lt;p&gt;All VTL statements, begins with the &lt;code&gt;#&lt;/code&gt; character. For rendering process: the &lt;strong&gt;Velocity Templating Engine&lt;/strong&gt; will:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -2550,4 +2550,4 @@ Error: Converted to exception. System will crash!
 &lt;span class="c"&gt;@author&lt;/span&gt;
 &lt;span class="c"&gt;@version 5&lt;/span&gt;
 &lt;span class="c"&gt;*&lt;/span&gt;&lt;span class="cp"&gt;#&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</description><category>Java</category><category>Velocity</category><guid>http://pengyin-shan.com/posts/2015/Java/apache-velocity-basics/</guid><pubDate>Wed, 11 Nov 2015 05:00:00 GMT</pubDate></item></channel></rss>
+&lt;/pre&gt;&lt;/div&gt;</description><category>Java</category><category>Velocity</category><guid>http://pengyin-shan.com/posts/2015/Java/apache-velocity-basics.html</guid><pubDate>Wed, 11 Nov 2015 05:00:00 GMT</pubDate></item></channel></rss>

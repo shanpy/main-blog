@@ -15,23 +15,23 @@ This is a reading note for Appendix in the book of **Python for Data Analysis**,
 
 ##Basic Information
 
-{% notebook python-basics-basic-information.ipynb %}
+{% notebook python-basics-basic-information.ipynb 
 
 ##List
 
-{% notebook python-basics-list.ipynb %}
+{% notebook python-basics-list.ipynb 
 
 ##Tuple
 
-{% notebook python-basics-tuple.ipynb %}
+{% notebook python-basics-tuple.ipynb 
 
 ##Dictionary and Set
 
-{% notebook python-basics-dictionary-and-set.ipynb %}
+{% notebook python-basics-dictionary-and-set.ipynb 
 
 ##Function
 
-{% notebook python-basics-functions.ipynb %}
+{% notebook python-basics-functions.ipynb 
 
 ##IPython Basics
 
@@ -40,7 +40,7 @@ In IPython, `print` is used to print more *readable* result.
 Same as what's happening in terminal, `<tab>` button in IPython can do *auto-complete*.
 
 `object introspection`: `?variable_name` in IPython can provide information about this variable:
-{% img ../images/posts/?ipython.png %}
+../images/posts/?ipython.png 
 
 `function_name??` will show this function's source code if exists.
 

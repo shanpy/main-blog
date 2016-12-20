@@ -82,13 +82,13 @@ Another `transition-timing-function` value is `cubic-besier(x1,y1,x2,y2)`. `0<x<
 
 Jovey created following graph in her blog post <a href="http://www.jianshu.com/p/d999f090d333">cubic-bezier</a> to show cubic-bezier:
 
-{% img img-responsive images/articles/2016/frontend/cubic-bezier.png %}
+img-responsive images/articles/2016/frontend/cubic-bezier.png 
 
 The curve from cubic-bezier is used to decide the speed of animation. We can view this as a straight line being dragged by point `(x1, y1)` and point `(x2, y2)`.
 
 Jovey gave following example for the value of cubic-basier of `ease-out` and `ease-in-out`:
 
-{% img img-responsive images/articles/2016/frontend/cubic-bezier2.png %}
+img-responsive images/articles/2016/frontend/cubic-bezier2.png 
 
 `transition-delay` is used to hold transition for a period of time.
 

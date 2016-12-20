@@ -52,7 +52,7 @@ article: http://ogp.me/ns/article#
 <p><em>This post is being updated while I'm learning more about Hydra</em></p>
 <h4>Main Idea</h4>
 <p>I used to create a small Spring MVC web app <a href="https://github.com/shanpy/RDFExperiment">RDF Experiment</a> to experiment the ideas behind Hydra. Following is a graph about my assumption of Hydra Idea:</p>
-<p>{% img ../images/articles/2015/digital_library/ProjectHydra.png %}</p>
+<p>../images/articles/2015/digital_library/ProjectHydra.png </p>
 <p>Behind this large frame, there are lots of small classes/methods that will push through stages above.</p>
 <h5>Key Concerns</h5>
 <p>Following key concerns should be evaluated carefully during the processes above:</p>
@@ -1475,7 +1475,7 @@ String sql = "select * from table_test a, table_test2 b" +
 <h4>Index Process</h4>
 <p>In Lucene, <code>IndexWriter</code> is the most important and core component of the indexing process.</p>
 <p>Process Chart for TutorialsPoint:</p>
-<p>{% img images/articles/2015/data/indexing_process.jpg %}</p>
+<p>images/articles/2015/data/indexing_process.jpg </p>
 <blockquote>
 <p>We add Document(s) containing Field(s) to IndexWriter which analyzes the Document(s) using the Analyzer and then creates/open/edit indexes as required and store/update them in a Directory. IndexWriter is used to <em>update or create</em> indexes. It is not used to read indexes.</p>
 </blockquote>
@@ -1721,7 +1721,7 @@ String sql = "select * from table_test a, table_test2 b" +
 <p>Searching process is one of the core functionality provided by Lucene.</p>
 <p><code>IndexSearcher</code> is the most important and core component of the searching process.</p>
 <p>Process Chart for TutorialsPoint:</p>
-<p>{% img images/articles/2015/data/searching_process.jpg %}</p>
+<p>images/articles/2015/data/searching_process.jpg </p>
 <p>We first create <code>Directory</code>(s) containing <code>index</code>es and then pass it to <code>IndexSearcher</code> which opens the <code>Directory</code> using <code>IndexReader</code>.</p>
 <p>Then we create a <code>Query</code> with a <code>Term</code> and make a search using <code>IndexSearcher</code> by passing the <code>Query</code> to the searcher.</p>
 <p><code>IndexSearcher</code> returns a <code>TopDocs</code> object which contains the search details along with document <code>ID</code>(s) of the Document which is the result of the search operation.</p>

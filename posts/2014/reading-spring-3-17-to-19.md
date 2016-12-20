@@ -22,7 +22,7 @@ In Spring, the `ApplicatonContext` publishes certain types of `events` when load
 If a bean implements `ApplicationListener`, then every time `ApplicatioContext` publish an `ApplicationEvent`, this bean will be notified.
 
 Spring Events are following:
-{% img images/posts/spring_events.png %}
+images/posts/spring_events.png 
 
 Spring event handling is *single-threaded*. So if an event is published, unless all receivers get the message, the processes are *blocked* and the flow will not continue.
 
@@ -127,11 +127,11 @@ JAVA:
 Spring AOP modules provides interceptors to intercept an application. For example. when a method is executed, you can *add extra functionality* before or after the method execution.
 
 *AOP Terminologies*
-{% img images/posts/AOP_Term1.png %}
-{% img images/posts/AOP_Term2.png %}
+images/posts/AOP_Term1.png 
+images/posts/AOP_Term2.png 
 
 *Type of Advice*
-{% img images/posts/AOP_Advice.png %}
+images/posts/AOP_Advice.png 
 
 ##XML Schema Based Aspect Implementation
 

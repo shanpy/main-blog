@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Pengyin's Note (Data Structure)</title><link>http://pengyin-shan.com/</link><description></description><atom:link href="http://pengyin-shan.com/categories/data-structure.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 20 Dec 2016 03:33:18 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Algorithm and Data Structure Basics - Sorting</title><link>http://pengyin-shan.com/posts/2015/Algorithm%20Data%20Structure/algorithm-and-data-structure-basics-sorting.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h4&gt;Reference List&lt;/h4&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pengyin's Note (Data Structure)</title><link>http://pengyin-shan.com/</link><description></description><atom:link rel="self" href="http://pengyin-shan.com/categories/data-structure.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 20 Dec 2016 03:52:14 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Algorithm and Data Structure Basics - Sorting</title><link>http://pengyin-shan.com/posts/2015/Algorithm%20Data%20Structure/algorithm-and-data-structure-basics-sorting.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h4&gt;Reference List&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Introduction to Algorithms (Third Edition/Chinese Version)&lt;/strong&gt;, written by &lt;em&gt;Thomas H.Cormen&lt;/em&gt;, &lt;em&gt;Charles E.Leiserson&lt;/em&gt;, &lt;em&gt;Ronald L.Rivest&lt;/em&gt; and &lt;em&gt;Clifford Stein&lt;/em&gt;, and translated by &lt;em&gt;Jianping Yin&lt;/em&gt;, &lt;em&gt;Yun Xu&lt;/em&gt;, &lt;em&gt;Gang Wang&lt;/em&gt;, &lt;em&gt;Xiaoguang Liu&lt;/em&gt;, &lt;em&gt;Ming Su&lt;/em&gt;, &lt;em&gt;Hengming Zou&lt;/em&gt; and &lt;em&gt;HongZhi Wang&lt;/em&gt;.&lt;/p&gt;
@@ -126,7 +126,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Following is the graph for array implementation of heap, taken from &lt;em&gt;Data Structures and Algorithms in Java (Second Edition)&lt;/em&gt;:&lt;/p&gt;
-&lt;p&gt;{% img ../images/articles/2015/algorithm/heap_array.PNG %}&lt;/p&gt;
+&lt;p&gt;../images/articles/2015/algorithm/heap_array.PNG &lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;As you can see, if the index of a random element in array is &lt;code&gt;x&lt;/code&gt;, then the index of its parent node is &lt;code&gt;(x-1)/2&lt;/code&gt;. The index of its left child node is &lt;code&gt;2*x+1&lt;/code&gt;. The index of its right child node is &lt;code&gt;2*x+2&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -426,7 +426,7 @@
 
 &lt;h4&gt;Flatten a Doubly Linked List&lt;/h4&gt;
 &lt;p&gt;This is a question from the book &lt;em&gt;Programming Interview Exposed&lt;/em&gt;. Following graph is a example of a doubly linked list, from &lt;a href="http://www.geeksforgeeks.org/flatten-a-linked-list-with-next-and-child-pointers/"&gt;this post&lt;/a&gt;:&lt;/p&gt;
-&lt;p&gt;{% img ../images/articles/2015/algorithm/double_linkedlist.png %}&lt;/p&gt;
+&lt;p&gt;../images/articles/2015/algorithm/double_linkedlist.png &lt;/p&gt;
 &lt;h5&gt;Idea&lt;/h5&gt;
 &lt;p&gt;Generally, each child linked list can be flattened as a single linked list, which can be appended to the end of result linked list. Each time you encounter a node with a child, append the child (and thus the child list) to the &lt;strong&gt;end of the first level&lt;/strong&gt; and update the &lt;strong&gt;tail pointer&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;This is a description of algorithm:&lt;/p&gt;
@@ -612,7 +612,7 @@ While you are not at the end of the first level
 
 
 &lt;p&gt;To make code looks clear, I draw a draft of the sequence of recursion call for the code above. Note the purpose numbers are the sequence of call:&lt;/p&gt;
-&lt;p&gt;{% img ../images/articles/2015/algorithm/hanoi_graph.png %}&lt;/p&gt;
+&lt;p&gt;../images/articles/2015/algorithm/hanoi_graph.png &lt;/p&gt;
 &lt;h4&gt;Merge Sort&lt;/h4&gt;
 &lt;h5&gt;Code&lt;/h5&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cm"&gt;/*&lt;/span&gt;
@@ -1001,9 +1001,9 @@ For example, you have two string: &lt;code&gt;BDCABA&lt;/code&gt; and &lt;code&g
 &lt;p&gt;Since we are calculating &lt;strong&gt;from bottom to top&lt;/strong&gt;, we already get &lt;code&gt;c[i-1][j-1]&lt;/code&gt;, &lt;code&gt;c[i-1][j]&lt;/code&gt; and &lt;code&gt;c[i][j-1]&lt;/code&gt; before we get &lt;code&gt;c[i][j]&lt;/code&gt;. Since we can know if &lt;code&gt;X[i]=Y[j]&lt;/code&gt; or not, we can calculate the value of &lt;code&gt;c[i][j]&lt;/code&gt; based on three rules above.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;The graph below is from &lt;a href="http://blog.csdn.net/biangren/article/details/8038605"&gt;this post&lt;/a&gt;, expressing the math idea and calculation process for this problem:&lt;/p&gt;
-&lt;p&gt;{% img ../images/articles/2015/algorithm/lcs_math.png %}&lt;/p&gt;
+&lt;p&gt;../images/articles/2015/algorithm/lcs_math.png &lt;/p&gt;
 &lt;p&gt;Using two input string &lt;code&gt;BDCABA&lt;/code&gt; and &lt;code&gt;ABCBDAB&lt;/code&gt;:&lt;/p&gt;
-&lt;p&gt;{% img ../images/articles/2015/algorithm/lcs_graph.png %}&lt;/p&gt;
+&lt;p&gt;../images/articles/2015/algorithm/lcs_graph.png &lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;You may notice only when we move to left-top direction, we can find a character for LCS. So we need to create another two-dimensional array to record moving direction&lt;/p&gt;
 &lt;/blockquote&gt;

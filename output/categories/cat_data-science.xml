@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pengyin's Note (Data Science)</title><link>http://pengyin-shan.com/</link><description></description><atom:link rel="self" href="http://pengyin-shan.com/categories/cat_data-science.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 20 Dec 2016 03:52:14 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>SparkSQL Basics</title><link>http://pengyin-shan.com/posts/2015/Data%20Science/sparksql-basics.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3&gt;Resource List&lt;/h3&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pengyin's Note (Data Science)</title><link>http://pengyin-shan.com/</link><description></description><atom:link rel="self" type="application/rss+xml" href="http://pengyin-shan.com/categories/cat_data-science.xml"></atom:link><language>en</language><lastBuildDate>Tue, 20 Dec 2016 13:06:31 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>SparkSQL Basics</title><link>http://pengyin-shan.com/posts/2015/Data%20Science/sparksql-basics.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3&gt;Resource List&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://pengyin-shan.com/posts/2015/Data%20Science/www.sparkinchina.com"&gt;SparkSQL(Chinese)&lt;/a&gt;, written by Junhui Ma, www.sparkinchina.com (i.e. &lt;code&gt;SparkSQL book&lt;/code&gt; in my post)&lt;/li&gt;
 &lt;/ul&gt;
@@ -1582,7 +1582,28 @@ table using this technique:&lt;/p&gt;
 &lt;p&gt;../images/articles/2015/python/test_pyspark_notebook.png &lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Now, if your IPython Notebook show message: &lt;code&gt;NameError: name 'sc' is not defined&lt;/code&gt;, which means your IPython Notebook doesn't use PySpark profile. You can try typing &lt;code&gt;ipython --profile=pyspark&lt;/code&gt; in terminal to make PySpark as default IPython profile, then try &lt;code&gt;ipython notebook --profile=pyspark&lt;/code&gt; again. PySpark should be available now.&lt;/p&gt;
-&lt;/blockquote&gt;&lt;/div&gt;</description><category>Data Science</category><category>IPython</category><category>Python</category><category>Spark</category><guid>http://pengyin-shan.com/posts/2015/Data%20Science/ipython-notebook-pyspark.html</guid><pubDate>Wed, 10 Jun 2015 04:00:00 GMT</pubDate></item><item><title>Use Amazon EC2 to Host IPython Notebook</title><link>http://pengyin-shan.com/posts/2015/Data%20Science/use-amazon-ec2-to-host-ipython-notebook.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;Recentely I read a great article about &lt;a href="https://gist.github.com/iamatypeofwalrus/5183133"&gt;Hosting IPython Notebook on Amazon AWS Free Tier from Scratch&lt;/a&gt;. This tutorial explains the way to host IPython Notebook using a Amazon EC2 Micro Instance.&lt;/p&gt;
+&lt;/blockquote&gt;&lt;/div&gt;</description><category>Data Science</category><category>IPython</category><category>Python</category><category>Spark</category><guid>http://pengyin-shan.com/posts/2015/Data%20Science/ipython-notebook-pyspark.html</guid><pubDate>Wed, 10 Jun 2015 04:00:00 GMT</pubDate></item><item><title>Python Basics</title><link>http://pengyin-shan.com/posts/2015/Data%20Science/python-basics.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;p&gt;This post is transferred from my &lt;a href="http://pengyin-shan.com/posts/2015/Data%20Science/blogpengyin.herokuapp.com"&gt;old blog site&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This is a reading note for Appendix in the book of &lt;strong&gt;Python for Data Analysis&lt;/strong&gt;, published by &lt;em&gt;O'Reilly, 2012&lt;/em&gt;. The appendix of this book describes python basic syntax and information, which I think is very useful for python beginners like me.&lt;/p&gt;
+&lt;h3&gt;Basic Information&lt;/h3&gt;
+&lt;p&gt;{% notebook python-basics-basic-information.ipynb &lt;/p&gt;
+&lt;h3&gt;List&lt;/h3&gt;
+&lt;p&gt;{% notebook python-basics-list.ipynb &lt;/p&gt;
+&lt;h3&gt;Tuple&lt;/h3&gt;
+&lt;p&gt;{% notebook python-basics-tuple.ipynb &lt;/p&gt;
+&lt;h3&gt;Dictionary and Set&lt;/h3&gt;
+&lt;p&gt;{% notebook python-basics-dictionary-and-set.ipynb &lt;/p&gt;
+&lt;h3&gt;Function&lt;/h3&gt;
+&lt;p&gt;{% notebook python-basics-functions.ipynb &lt;/p&gt;
+&lt;h3&gt;IPython Basics&lt;/h3&gt;
+&lt;p&gt;In IPython, &lt;code&gt;print&lt;/code&gt; is used to print more &lt;em&gt;readable&lt;/em&gt; result.&lt;/p&gt;
+&lt;p&gt;Same as what's happening in terminal, &lt;code&gt;&amp;lt;tab&amp;gt;&lt;/code&gt; button in IPython can do &lt;em&gt;auto-complete&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;object introspection&lt;/code&gt;: &lt;code&gt;?variable_name&lt;/code&gt; in IPython can provide information about this variable:
+../images/posts/?ipython.png &lt;/p&gt;
+&lt;p&gt;&lt;code&gt;function_name??&lt;/code&gt; will show this function's source code if exists.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;*name*&lt;/code&gt; is &lt;em&gt;wildcard&lt;/em&gt; operation. It can list result that is combined by 'XXnameX' or 'nameXXX'&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;%paste&lt;/code&gt; and &lt;code&gt;%cpaste&lt;/code&gt; can takes code on clipboard then execute it in a single block in the shell&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;magic command&lt;/em&gt;: It is prefixed by the percentage symbol &lt;code&gt;%&lt;/code&gt;&lt;/p&gt;&lt;/div&gt;</description><category>Python</category><guid>http://pengyin-shan.com/posts/2015/Data%20Science/python-basics.html</guid><pubDate>Tue, 13 Jan 2015 05:00:00 GMT</pubDate></item><item><title>Use Amazon EC2 to Host IPython Notebook</title><link>http://pengyin-shan.com/posts/2015/Data%20Science/use-amazon-ec2-to-host-ipython-notebook.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;Recentely I read a great article about &lt;a href="https://gist.github.com/iamatypeofwalrus/5183133"&gt;Hosting IPython Notebook on Amazon AWS Free Tier from Scratch&lt;/a&gt;. This tutorial explains the way to host IPython Notebook using a Amazon EC2 Micro Instance.&lt;/p&gt;
 &lt;p&gt;I followed this tutorial and successfully hosted an IPython notebook on a Ubuntu 14 Guest AMI. I want to record some of important steps I took while following this tutorial:&lt;/p&gt;
 &lt;p&gt;Note: You can use &lt;strong&gt;nano&lt;/strong&gt; to edit &lt;code&gt;ipython_notebook_config.py&lt;/code&gt; file. It is located at &lt;code&gt;~/.ipython/profile_nbserver/&lt;/code&gt;.&lt;/p&gt;
 &lt;h3&gt;Security Group&lt;/h3&gt;
@@ -1724,25 +1745,4 @@ table using this technique:&lt;/p&gt;
 &lt;p&gt;On Jan 1st, 2015, the IP address of &lt;strong&gt;Github Project Page&lt;/strong&gt; are &lt;code&gt;192.30.252.153&lt;/code&gt; and &lt;code&gt;192.30.152.154&lt;/code&gt;. If you have A (Host), make sure your &lt;code&gt;@&lt;/code&gt; is pointing to these two IPs.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;If you finish these settings, you should be able to host your Nikola blog on Github Page. Please feel free to let me know if you have any comments.&lt;/p&gt;&lt;/div&gt;</description><category>Github</category><category>Nikola</category><category>Python</category><guid>http://pengyin-shan.com/posts/2015/Data%20Science/how-to-build-a-basic-nikola-blog-and-deloy-to-github-page.html</guid><pubDate>Tue, 13 Jan 2015 05:00:00 GMT</pubDate></item><item><title>Python Basics</title><link>http://pengyin-shan.com/posts/2015/Data%20Science/python-basics.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;[TOC]&lt;/p&gt;
-&lt;p&gt;This post is transferred from my &lt;a href="http://pengyin-shan.com/posts/2015/Data%20Science/blogpengyin.herokuapp.com"&gt;old blog site&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;This is a reading note for Appendix in the book of &lt;strong&gt;Python for Data Analysis&lt;/strong&gt;, published by &lt;em&gt;O'Reilly, 2012&lt;/em&gt;. The appendix of this book describes python basic syntax and information, which I think is very useful for python beginners like me.&lt;/p&gt;
-&lt;h3&gt;Basic Information&lt;/h3&gt;
-&lt;p&gt;{% notebook python-basics-basic-information.ipynb &lt;/p&gt;
-&lt;h3&gt;List&lt;/h3&gt;
-&lt;p&gt;{% notebook python-basics-list.ipynb &lt;/p&gt;
-&lt;h3&gt;Tuple&lt;/h3&gt;
-&lt;p&gt;{% notebook python-basics-tuple.ipynb &lt;/p&gt;
-&lt;h3&gt;Dictionary and Set&lt;/h3&gt;
-&lt;p&gt;{% notebook python-basics-dictionary-and-set.ipynb &lt;/p&gt;
-&lt;h3&gt;Function&lt;/h3&gt;
-&lt;p&gt;{% notebook python-basics-functions.ipynb &lt;/p&gt;
-&lt;h3&gt;IPython Basics&lt;/h3&gt;
-&lt;p&gt;In IPython, &lt;code&gt;print&lt;/code&gt; is used to print more &lt;em&gt;readable&lt;/em&gt; result.&lt;/p&gt;
-&lt;p&gt;Same as what's happening in terminal, &lt;code&gt;&amp;lt;tab&amp;gt;&lt;/code&gt; button in IPython can do &lt;em&gt;auto-complete&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;object introspection&lt;/code&gt;: &lt;code&gt;?variable_name&lt;/code&gt; in IPython can provide information about this variable:
-../images/posts/?ipython.png &lt;/p&gt;
-&lt;p&gt;&lt;code&gt;function_name??&lt;/code&gt; will show this function's source code if exists.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;*name*&lt;/code&gt; is &lt;em&gt;wildcard&lt;/em&gt; operation. It can list result that is combined by 'XXnameX' or 'nameXXX'&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;%paste&lt;/code&gt; and &lt;code&gt;%cpaste&lt;/code&gt; can takes code on clipboard then execute it in a single block in the shell&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;magic command&lt;/em&gt;: It is prefixed by the percentage symbol &lt;code&gt;%&lt;/code&gt;&lt;/p&gt;&lt;/div&gt;</description><category>Python</category><guid>http://pengyin-shan.com/posts/2015/Data%20Science/python-basics.html</guid><pubDate>Tue, 13 Jan 2015 05:00:00 GMT</pubDate></item></channel></rss>
+&lt;p&gt;If you finish these settings, you should be able to host your Nikola blog on Github Page. Please feel free to let me know if you have any comments.&lt;/p&gt;&lt;/div&gt;</description><category>Github</category><category>Nikola</category><category>Python</category><guid>http://pengyin-shan.com/posts/2015/Data%20Science/how-to-build-a-basic-nikola-blog-and-deloy-to-github-page.html</guid><pubDate>Tue, 13 Jan 2015 05:00:00 GMT</pubDate></item></channel></rss>

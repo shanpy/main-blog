@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="This post records all the ways I found online and tested in my job for creating/controlling dropdowns in web page. I'll update this post when I find more useful tips.">
+<meta name="viewport" content="width=device-width">
+<title>Collection of Tips for Creating/Controlling Dropdown on Web Page | Pengyin's Note</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
+<link rel="canonical" href="http://pengyin-shan.com/posts/2015/JavaScript/create-controll-dropdown.html">
+<!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="Pengyin Shan">
+<meta property="og:site_name" content="Pengyin's Note">
+<meta property="og:title" content="Collection of Tips for Creating/Controlling Dropdown on Web Page">
+<meta property="og:url" content="http://pengyin-shan.com/posts/2015/JavaScript/create-controll-dropdown.html">
+<meta property="og:description" content="This post records all the ways I found online and tested in my job for creating/controlling dropdowns in web page. I'll update this post when I find more useful tips.">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2015-06-04T00:00:00-04:00">
+<meta property="article:tag" content="Bootstrap3">
+<meta property="article:tag" content="CSS">
+<meta property="article:tag" content="Dropdown">
+<meta property="article:tag" content="HTML5">
+<meta property="article:tag" content="JavaScript">
+<meta property="article:tag" content="jQuery">
+</head>
+<body>
+    <section class="social"><ul>
+<li><a href="../../../index.html" title="Home"><i class="icon-home"></i></a></li>
+            <li><a href="../../../archive.html" title="Archives"><i class="icon-folder-open-alt"></i></a></li>
+            <li><a href="../../../categories/index.html" title="Tags"><i class="icon-tags"></i></a></li>
+            <li><a href="../../../rss.xml" title="RSS"><i class="icon-rss"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/pengyinshan" title="My LinkedIn"><i class="icon-linkedin"></i></a></li>
+            <li><a href="https://github.com/shanpy" title="My Github"><i class="icon-github"></i></a></li>
+
+        </ul></section><section class="page-content"><div class="content" rel="main">
+    <div class="post">
+        <h1 class="p-name entry-title" itemprop="headline name">Collection of Tips for Creating/Controlling Dropdown on Web Page</h1>
+
+        <div class="meta">
+            <div class="authordate">
+                <time class="timeago" datetime="2015-06-04T00:00:00-04:00">2015-06-04 00:00</time>
+            
+                      |  
+        <a href="create-controll-dropdown.md" id="sourcelink">Source</a>
+
+            </div>
+                    <div itemprop="keywords" class="tags">
+        <ul>
+        Tags : 
+           <li><a class="tag p-category" href="../../../categories/bootstrap3.html" rel="tag">Bootstrap3</a></li>
+           <li><a class="tag p-category" href="../../../categories/css.html" rel="tag">CSS</a></li>
+           <li><a class="tag p-category" href="../../../categories/dropdown.html" rel="tag">Dropdown</a></li>
+           <li><a class="tag p-category" href="../../../categories/html5.html" rel="tag">HTML5</a></li>
+           <li><a class="tag p-category" href="../../../categories/javascript.html" rel="tag">JavaScript</a></li>
+           <li><a class="tag p-category" href="../../../categories/jquery.html" rel="tag">jQuery</a></li>
+        </ul>
+</div>
+
+        </div>
+        <div class="body">
+            <div>
+<p>[TOC]</p>
+<p>In my job, I always counter problem of creating dropdowns for web development project. Sometimes I can use Bootstrap, jQuery. Sometimes I have to use pure JavaScript. I also need to perform control options to dropdowns ocationally.</p>
+<p>I want to write this post to record all ways and tips for creating dropdown, for future reference.</p>
+<h2>Pure JavaScript</h2>
+<h3>Simpliest Dropdown Option</h3>
+<p>The simplest dropdown is just created by <code>&lt;select&gt;</code> and <code>&lt;option&gt;</code> tag. Usually you wrap a few <code>&lt;option&gt;</code> blocks in a <code>&lt;select&gt;</code> block.</p>
+<p>For each <code>&lt;option&gt;</code>, You can assign <code>value</code> attribute to it. There are other attributes such as <code>selected</code> or <code>label</code>.</p>
+<p>For <code>&lt;select&gt;</code>, you can also set attributes such as <code>size</code> or <code>name</code>.</p>
+<blockquote>
+<p><code>autofocus</code>, <code>form</code> and <code>required</code> are attributes for HTML5. Please check browser support setting before use them.</p>
+</blockquote>
+<p>Example from W3Schools:</p>
+<pre class="code literal-block"><span></span><span class="p">&lt;</span><span class="nt">select</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">"1"</span><span class="p">&gt;</span>A<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">"2"</span><span class="p">&gt;</span>B<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">"3"</span><span class="p">&gt;</span>C<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span>
+</pre>
+
+
+<h3>Dropdown Menu (One or Multiple Level)</h3>
+<p>I found this <a href="http://javascript-array.com/scripts/simple_drop_down_menu/#">post</a> and this <a href="http://javascript-array.com/scripts/multi_level_drop_down_menu/?st">post</a> from <a href="http://javascript-array.com/">JavaScript Array</a> website are very classical. I've tested them and I highly recommend using them for pure dropdown menu.</p>
+<h4>Single Level</h4>
+<p>I have read through the code. Here are my explanations. You are free to add font or hover effects in real world.</p>
+<p>HTML Structure:</p>
+<pre class="code literal-block"><span></span><span class="c">&lt;!--Container of Many First Level Menus--&gt;</span>
+<span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
+        <span class="c">&lt;!--First Level Menu 1 --&gt;</span>
+        <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span> <span class="na">onmouseover</span><span class="o">=</span><span class="s">"mopen('m1')"</span> <span class="na">onmouseout</span><span class="o">=</span><span class="s">"mclosetime()"</span><span class="p">&gt;</span>First Level Menu 1<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+
+        <span class="c">&lt;!--Links of First Level Menu 1 --&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">"m1"</span> <span class="na">onmouseover</span><span class="o">=</span><span class="s">"mcancelclosetime()"</span> <span class="na">onmouseout</span><span class="o">=</span><span class="s">"mclosetime()"</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">'#'</span><span class="p">&gt;</span>Link1<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">'#'</span><span class="p">&gt;</span>Link1<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
+        <span class="c">&lt;!--First Level Menu 2 --&gt;</span>
+        <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span> <span class="na">onmouseover</span><span class="o">=</span><span class="s">"mopen('m2')"</span> <span class="na">onmouseout</span><span class="o">=</span><span class="s">"mclosetime()"</span><span class="p">&gt;</span>First Level Menu 2<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+
+        <span class="c">&lt;!--Links of First Level Menu 2 --&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">"m2"</span> <span class="na">onmouseover</span><span class="o">=</span><span class="s">"mcancelclosetime()"</span> <span class="na">onmouseout</span><span class="o">=</span><span class="s">"mclosetime()"</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">'#'</span><span class="p">&gt;</span>Link2<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">'#'</span><span class="p">&gt;</span>Link2<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</pre>
+
+
+<p>CSS Structure (You may need to some tags to id in real world):</p>
+<pre class="code literal-block"><span></span><span class="c">/* Outside Container */</span>
+<span class="nt">ul</span>
+<span class="p">{</span>   <span class="nb">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nb">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nb">z-index</span><span class="o">:</span> <span class="m">30</span>
+<span class="p">}</span>
+
+<span class="nt">ul</span> <span class="nt">li</span>
+<span class="p">{</span>   <span class="nb">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nb">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nb">list-style</span><span class="o">:</span> <span class="nb">none</span><span class="p">;</span>
+    <span class="nb">float</span><span class="o">:</span> <span class="nb">left</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* First Leval Menu */</span>
+<span class="nt">ul</span> <span class="nt">li</span> <span class="nt">a</span>
+<span class="p">{</span>   <span class="nb">display</span><span class="o">:</span> <span class="nb">block</span><span class="p">;</span>
+    <span class="nb">margin</span><span class="o">:</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span> <span class="c">/* adjust as you need */</span>
+    <span class="nb">padding</span><span class="o">:</span> <span class="m">4px</span> <span class="m">10px</span><span class="p">;</span> <span class="c">/* adjust as you need */</span>
+    <span class="nb">width</span><span class="o">:</span> <span class="m">60px</span><span class="p">;</span>
+    <span class="nb">text-align</span><span class="o">:</span> <span class="nb">center</span><span class="p">;</span>
+    <span class="nb">text-decoration</span><span class="o">:</span> <span class="nb">none</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">ul</span> <span class="nt">li</span> <span class="nt">a</span><span class="nd">:hover</span>
+<span class="p">{</span> <span class="p">}</span>
+
+<span class="nt">ul</span> <span class="nt">div</span>
+<span class="p">{</span>   <span class="nb">position</span><span class="o">:</span> <span class="nb">absolute</span><span class="p">;</span>
+    <span class="nb">visibility</span><span class="o">:</span> <span class="nb">hidden</span><span class="p">;</span>
+    <span class="nb">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nb">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+    <span class="nt">ul</span> <span class="nt">div</span> <span class="nt">a</span>
+    <span class="p">{</span>   <span class="nb">position</span><span class="o">:</span> <span class="nb">relative</span><span class="p">;</span>
+        <span class="nb">display</span><span class="o">:</span> <span class="nb">block</span><span class="p">;</span>
+        <span class="nb">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+        <span class="nb">padding</span><span class="o">:</span> <span class="m">5px</span> <span class="m">10px</span><span class="p">;</span> <span class="c">/* adjust as you need */</span>
+        <span class="nb">width</span><span class="o">:</span> <span class="nb">auto</span><span class="p">;</span>
+        <span class="nb">white-space</span><span class="o">:</span> <span class="nb">nowrap</span><span class="p">;</span> <span class="c">/* Specify that the text in &lt;p&gt; elements will never wrap */</span>
+        <span class="nb">text-align</span><span class="o">:</span> <span class="nb">left</span><span class="p">;</span> <span class="c">/* adjust as you need */</span>
+        <span class="nb">text-decoration</span><span class="o">:</span> <span class="nb">none</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nt">ul</span> <span class="nt">div</span> <span class="nt">a</span><span class="nd">:hover</span>
+    <span class="p">{</span>  <span class="p">}</span>
+</pre>
+
+
+<p>JavaScript Structure:</p>
+<pre class="code literal-block"><span></span><span class="c1">// Copyright 2006-2007 javascript-array.com</span>
+
+<span class="kd">var</span> <span class="nx">timeout</span> <span class="o">=</span> <span class="mi">500</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">closetimer</span>  <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">ddmenuitem</span>  <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+<span class="c1">// open hidden layer</span>
+<span class="kd">function</span> <span class="nx">mopen</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="c1">// cancel close timer</span>
+    <span class="nx">mcancelclosetime</span><span class="p">();</span>
+
+    <span class="c1">// close old layer</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">ddmenuitem</span><span class="p">)</span> <span class="nx">ddmenuitem</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">visibility</span> <span class="o">=</span> <span class="s1">'hidden'</span><span class="p">;</span>
+
+    <span class="c1">// get new layer and show it</span>
+    <span class="nx">ddmenuitem</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">id</span><span class="p">);</span>
+    <span class="nx">ddmenuitem</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">visibility</span> <span class="o">=</span> <span class="s1">'visible'</span><span class="p">;</span>
+
+<span class="p">}</span>
+<span class="c1">// close showed layer</span>
+<span class="kd">function</span> <span class="nx">mclose</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">ddmenuitem</span><span class="p">)</span> <span class="nx">ddmenuitem</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">visibility</span> <span class="o">=</span> <span class="s1">'hidden'</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// go close timer</span>
+<span class="kd">function</span> <span class="nx">mclosetime</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="nx">closetimer</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">setTimeout</span><span class="p">(</span><span class="nx">mclose</span><span class="p">,</span> <span class="nx">timeout</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// cancel close timer</span>
+<span class="kd">function</span> <span class="nx">mcancelclosetime</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">closetimer</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nb">window</span><span class="p">.</span><span class="nx">clearTimeout</span><span class="p">(</span><span class="nx">closetimer</span><span class="p">);</span>
+        <span class="nx">closetimer</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// close layer when click-out</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="nx">mclose</span><span class="p">;</span>
+</pre>
+
+
+<h4>Mutiple Level</h4>
+<h2>With jQuery</h2>
+<p>update coming soon...</p>
+<h2>With Bootstrap3 and jQuery</h2>
+<p>update coming soon...</p>
+</div>
+        </div>
+                <ul class="pager hidden-print">
+<li class="previous">
+                <a href="window-location-property.html" rel="prev" title="Window.Location Property">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="../Data%20Science/ipython-notebook-pyspark.html" rel="next" title="Install Apache Spark with IPython Notebook Configuration on Ubuntu 15">Next post</a>
+            </li>
+        </ul>
+<div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="pengyinsnotes",
+            disqus_url="http://pengyin-shan.com/posts/2015/JavaScript/create-controll-dropdown.html",
+        disqus_title="Collection of Tips for Creating/Controlling Dropdown on Web Page",
+        disqus_identifier="cache/posts/2015/JavaScript/create-controll-dropdown.html",
+        disqus_config = function () {
+            this.language = "en";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+    </div>
+                     <footer id="footer"><p>Contents © 2016         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+            
+        </footer>
+</div>
+    </section><script src="../../../assets/js/all-nocdn.js" type="text/javascript"></script><script type="text/javascript">
+            $(function(){
+                $('.timeago').timeago();
+            });
+        </script>
+</body>
+</html>

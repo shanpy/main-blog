@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="This is an old blog I created when I started to learn SASS on late 2014. I'll continue to update this post while I'm using Compass/SASS.">
+<meta name="viewport" content="width=device-width">
+<title>SASS Q&amp;A and Tips CONTINUALLY UPDATE | Pengyin's Note</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
+<link rel="canonical" href="http://pengyin-shan.com/posts/2015/Front%20End/sass-qa-and-tips.html">
+<!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="Pengyin Shan">
+<meta property="og:site_name" content="Pengyin's Note">
+<meta property="og:title" content="SASS Q&amp;A and Tips CONTINUALLY UPDATE">
+<meta property="og:url" content="http://pengyin-shan.com/posts/2015/Front%20End/sass-qa-and-tips.html">
+<meta property="og:description" content="This is an old blog I created when I started to learn SASS on late 2014. I'll continue to update this post while I'm using Compass/SASS.">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2015-01-13T00:00:00-05:00">
+<meta property="article:tag" content="Compass">
+<meta property="article:tag" content="CSS">
+<meta property="article:tag" content="SASS">
+</head>
+<body>
+    <section class="social"><ul>
+<li><a href="../../../index.html" title="Home"><i class="icon-home"></i></a></li>
+            <li><a href="../../../archive.html" title="Archives"><i class="icon-folder-open-alt"></i></a></li>
+            <li><a href="../../../categories/index.html" title="Tags"><i class="icon-tags"></i></a></li>
+            <li><a href="../../../rss.xml" title="RSS"><i class="icon-rss"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/pengyinshan" title="My LinkedIn"><i class="icon-linkedin"></i></a></li>
+            <li><a href="https://github.com/shanpy" title="My Github"><i class="icon-github"></i></a></li>
+
+        </ul></section><section class="page-content"><div class="content" rel="main">
+    <div class="post">
+        <h1 class="p-name entry-title" itemprop="headline name">SASS Q&amp;A and Tips CONTINUALLY UPDATE</h1>
+
+        <div class="meta">
+            <div class="authordate">
+                <time class="timeago" datetime="2015-01-13T00:00:00-05:00">2015-01-13 00:00</time>
+            
+                      |  
+        <a href="../Front%20End/sass-qa-and-tips.md" id="sourcelink">Source</a>
+
+            </div>
+                    <div itemprop="keywords" class="tags">
+        <ul>
+        Tags : 
+           <li><a class="tag p-category" href="../../../categories/compass.html" rel="tag">Compass</a></li>
+           <li><a class="tag p-category" href="../../../categories/css.html" rel="tag">CSS</a></li>
+           <li><a class="tag p-category" href="../../../categories/sass.html" rel="tag">SASS</a></li>
+        </ul>
+</div>
+
+        </div>
+        <div class="body">
+            <div>
+<p>[TOC]</p>
+<p>This post will serve as a Q&amp;A note during the process of learning Sass. I'm absolutely a new beginner so I'll keep questions and answers updating continously:)</p>
+<h3>Question: What is the syntax difference between sass and scss?</h3>
+<p>So far I've found following difference:</p>
+<ul>
+<li>
+<p>scss is similar to css style, requires "{" and ";"</p>
+</li>
+<li>
+<p>sass has none of these</p>
+</li>
+<li>
+<p>sass is white space recoginized while scss not</p>
+</li>
+</ul>
+<h3>Question: How Jekyll work with Sass?</h3>
+<p>Currently version of Jekyll (2.4.0) has native support for Sass and CoffeeScript. Official documentation is here: http://jekyllrb.com/docs/assets/</p>
+<p>I use official way for sass compile by following step:</p>
+<p>In home directory, create a folder called _sass. I decide to use this folder for sass files that I will import from.</p>
+<p>Add following lines in _config.yml to register _sass folder:</p>
+<blockquote>
+<p>sass:
+ sass_dir: _sass</p>
+</blockquote>
+<p>You can always modify it to your folder name.</p>
+<p>Create a folder called "css", then put all scss file there. Now website has:</p>
+<pre class="code literal-block"><span></span>/css
+    - default.scss
+    - header.scss
+    - page.scss
+/_sass
+    - _test.css
+</pre>
+
+
+<p>In scss file, first two lines needs to be '- - -'. You can use @import 'test' to import _test.sass file in _sass.</p>
+<blockquote>
+<p>Please make sure everything in <em>sass folder start with a '</em>'.</p>
+<p>You don't need to put '- - -' to files in _sass folder.</p>
+</blockquote>
+<p>In html page, add link to these scss file, using '.css' extension. For example: <code>&lt;link rel="stylesheet" type="text/css" href="/css/default.css"&gt;</code> pointing to default.scss in css folder. You can actually find default.css in _site/css folder</p>
+<p>Jeyll will automatically compile scss and sass file when you build your project.</p>
+<p>On Jekyll website, there are some websites that are built with Sass. You can refer them for folder structure on your own blog site.</p>
+</div>
+        </div>
+                <ul class="pager hidden-print">
+<li class="previous">
+                <a href="../Front%20End/html5-tips.html" rel="prev" title="HTML5 Tips">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="../Java/ajax-and-spring-mvc-controller.html" rel="next" title="Ajax and Spring MVC Controller">Next post</a>
+            </li>
+        </ul>
+<div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="pengyinsnotes",
+            disqus_url="http://pengyin-shan.com/posts/2015/Front%20End/sass-qa-and-tips.html",
+        disqus_title="SASS Q&A and Tips CONTINUALLY UPDATE",
+        disqus_identifier="cache/posts/2015/Front End/sass-qa-and-tips.html",
+        disqus_config = function () {
+            this.language = "en";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+    </div>
+                     <footer id="footer"><p>Contents © 2016         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+            
+        </footer>
+</div>
+    </section><script src="../../../assets/js/all-nocdn.js" type="text/javascript"></script><script type="text/javascript">
+            $(function(){
+                $('.timeago').timeago();
+            });
+        </script>
+</body>
+</html>

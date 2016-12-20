@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="During JavaScript development in my job, I found HTML5 has some interesting features. I want to make notes of these features for future usage. Till July 2015, following features has been updated: Canvas, Drag and Drop.">
+<meta name="viewport" content="width=device-width">
+<title>HTML5 Tips | Pengyin's Note</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
+<link rel="canonical" href="http://pengyin-shan.com/posts/2015/Front%20End/html5-tips.html">
+<!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="Pengyin Shan">
+<meta property="og:site_name" content="Pengyin's Note">
+<meta property="og:title" content="HTML5 Tips">
+<meta property="og:url" content="http://pengyin-shan.com/posts/2015/Front%20End/html5-tips.html">
+<meta property="og:description" content="During JavaScript development in my job, I found HTML5 has some interesting features. I want to make notes of these features for future usage. Till July 2015, following features has been updated: Canv">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2015-01-13T00:00:00-05:00">
+<meta property="article:tag" content="HTML5">
+<meta property="article:tag" content="JavaScript">
+<meta property="article:tag" content="jQuery">
+</head>
+<body>
+    <section class="social"><ul>
+<li><a href="../../../index.html" title="Home"><i class="icon-home"></i></a></li>
+            <li><a href="../../../archive.html" title="Archives"><i class="icon-folder-open-alt"></i></a></li>
+            <li><a href="../../../categories/index.html" title="Tags"><i class="icon-tags"></i></a></li>
+            <li><a href="../../../rss.xml" title="RSS"><i class="icon-rss"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/pengyinshan" title="My LinkedIn"><i class="icon-linkedin"></i></a></li>
+            <li><a href="https://github.com/shanpy" title="My Github"><i class="icon-github"></i></a></li>
+
+        </ul></section><section class="page-content"><div class="content" rel="main">
+    <div class="post">
+        <h1 class="p-name entry-title" itemprop="headline name">HTML5 Tips</h1>
+
+        <div class="meta">
+            <div class="authordate">
+                <time class="timeago" datetime="2015-01-13T00:00:00-05:00">2015-01-13 00:00</time>
+            
+                      |  
+        <a href="../Front%20End/html5-tips.md" id="sourcelink">Source</a>
+
+            </div>
+                    <div itemprop="keywords" class="tags">
+        <ul>
+        Tags : 
+           <li><a class="tag p-category" href="../../../categories/html5.html" rel="tag">HTML5</a></li>
+           <li><a class="tag p-category" href="../../../categories/javascript.html" rel="tag">JavaScript</a></li>
+           <li><a class="tag p-category" href="../../../categories/jquery.html" rel="tag">jQuery</a></li>
+        </ul>
+</div>
+
+        </div>
+        <div class="body">
+            <div>
+<h2>Canvas</h2>
+<h4>HTML</h4>
+<pre class="code literal-block"><span></span><span class="p">&lt;</span><span class="nt">canvas</span> <span class="na">style</span><span class="o">=</span><span class="s">"width:1000px; height:1000px;"</span> <span class="na">id</span><span class="o">=</span><span class="s">"thecanvas"</span><span class="p">&gt;&lt;/</span><span class="nt">canvas</span><span class="p">&gt;</span>
+</pre>
+
+
+<h4>JavaScript Operation</h4>
+<h5>Get Context (2d)</h5>
+<pre class="code literal-block"><span></span><span class="kd">var</span> <span class="nx">oCanvas</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"thecanvas"</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">oCtx</span> <span class="o">=</span> <span class="nx">oCanvas</span><span class="p">.</span><span class="nx">getContext</span><span class="p">(</span><span class="s2">"2d"</span><span class="p">);</span>
+</pre>
+
+
+<h5>Add Text and Edit Text Style</h5>
+<pre class="code literal-block"><span></span><span class="c1">//Example of Text Shadow. If you make them to 0, you can remove text shadow</span>
+<span class="nx">oCtx</span><span class="p">.</span><span class="nx">shadowColor</span> <span class="o">=</span> <span class="s2">"#000000"</span><span class="p">;</span>
+<span class="nx">oCtx</span><span class="p">.</span><span class="nx">shadowOffsetX</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">;</span>
+<span class="nx">oCtx</span><span class="p">.</span><span class="nx">shadowOffsetY</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">;</span>
+<span class="nx">oCtx</span><span class="p">.</span><span class="nx">shadowBlur</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">;</span>
+<span class="c1">//Example of Text Style</span>
+<span class="nx">oCtx</span><span class="p">.</span><span class="nx">font</span> <span class="o">=</span> <span class="s2">"normal 18px Arial"</span><span class="p">;</span>
+<span class="nx">oCtx</span><span class="p">.</span><span class="nx">fillStyle</span> <span class="o">=</span> <span class="s2">"#ccc"</span><span class="p">;</span>
+<span class="c1">//Draw Text</span>
+<span class="nx">oCtx</span><span class="p">.</span><span class="nx">fillText</span><span class="p">(</span><span class="s2">"Hello World"</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span> <span class="c1">//x-axis and y-axis</span>
+</pre>
+
+
+<h5>Draw Existing Image to Canvas</h5>
+<pre class="code literal-block"><span></span><span class="kd">var</span> <span class="nx">imageObj</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Image</span><span class="p">();</span>
+<span class="c1">//get src of existing image</span>
+<span class="nx">imageObj</span><span class="p">.</span><span class="nx">src</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'existing_image'</span><span class="p">).</span><span class="nx">src</span><span class="p">;</span>
+<span class="nx">oCtx</span><span class="p">.</span><span class="nx">drawImage</span><span class="p">(</span><span class="nx">imageObj</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span> <span class="c1">//x-axis and y-axis</span>
+</pre>
+
+
+<h5>Download Canvas as Image</h5>
+<pre class="code literal-block"><span></span><span class="cm">/**Create a (hidden) image to hold canvas data:</span>
+<span class="cm">&lt;img hidden src="" id="downloadCanvas" /&gt;</span>
+<span class="cm">**/</span>
+<span class="kd">var</span> <span class="nx">dataURL</span> <span class="o">=</span> <span class="nx">oCanvas</span><span class="p">.</span><span class="nx">toDataURL</span><span class="p">(</span><span class="s1">'image/png'</span><span class="p">);</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'downloadCanvas'</span><span class="p">).</span><span class="nx">width</span> <span class="o">=</span> <span class="nx">oCanvas</span><span class="p">.</span><span class="nx">width</span><span class="p">;</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'downloadCanvas'</span><span class="p">).</span><span class="nx">height</span> <span class="o">=</span> <span class="nx">oCanvas</span><span class="p">.</span><span class="nx">height</span><span class="p">;</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'downloadCanvas'</span><span class="p">).</span><span class="nx">src</span> <span class="o">=</span> <span class="nx">dataURL</span><span class="p">;</span>
+<span class="cm">/**</span>
+<span class="cm">If you want to have a download link to download canvas image, make sure you have HTML such as:</span>
+<span class="cm">&lt;a id="downloadBanner" href="#" class="button" download="banner_result.png"&gt;Download&lt;/a&gt;</span>
+<span class="cm">Note "download" attribute is able to re-name the downloadable image.</span>
+<span class="cm">**/</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'downloadBanner'</span><span class="p">).</span><span class="nx">href</span> <span class="o">=</span> <span class="nx">dataURL</span><span class="p">;</span>
+</pre>
+
+
+<h5>Clear Canvas</h5>
+<pre class="code literal-block"><span></span><span class="c1">//You may want to do this to remove unwanted elements from canvas</span>
+<span class="nx">oCtx</span><span class="p">.</span><span class="nx">clearRect</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">oCanvas</span><span class="p">.</span><span class="nx">width</span><span class="p">,</span> <span class="nx">oCanvas</span><span class="p">.</span><span class="nx">height</span><span class="p">);</span>
+</pre>
+
+
+<h2>Drag and Drop</h2>
+<p>Examples are taken from <a href="../Front%20End/www.w3schools.com/html/html5_draganddrop.asp">w3schools.com</a>.</p>
+<h4>General Process</h4>
+<p>Draable stuff has <code>draggable = 'true'</code> attribute; has <code>ondragstart</code> attribute, which takes a method.</p>
+<p>Destination stuff has <code>ondrop</code> and <code>ondragover</code> attribute. Both of them take method.</p>
+<h4>ondragstart</h4>
+<p>This attribute takes a JavaScript method. This method takes a <code>event</code> parameter and describe what will happen when you start to drag.</p>
+<p>You need to set the data to drag by using <code>event.dataTransfer.setData(format, event.target.id)</code>:</p>
+<blockquote>
+<p><code>format</code> above can be <code>text</code>, <code>text/plain</code>, <code>text/html</code> etc, or <code>URL</code> format.</p>
+<p>This function set up the data that is take via <code>event.target.id</code>, which is the <code>id</code> for draggable stuff, and temparary store it. Note <code>event.target</code> now pointing to draggable stuff.</p>
+</blockquote>
+<h4>ondragover</h4>
+<p>This attribute takes a JavaScript method. This method takes a <code>event</code> parameter and describe what will happen when you drag stuff over elements without drop the stuff.</p>
+<p>Basic set up is <code>event.preventDefault()</code>, which prevents browser asking elements doing default behavior.</p>
+<h4>ondrop</h4>
+<p>This attribute takes a JavaScript method. This method takes a <code>event</code> parameter and describe what will happen when you drop the draggable stuff.</p>
+<p>First, you should do <code>event.preventDefault()</code>, which prevents browser asking elements doing default behavior.</p>
+<p>Then, you need to get the data that you dragged by using <code>event.dataTransfer.getData(format)</code>. The format should corresponding what you had in <code>event.dataTransfer.setData()</code> method.</p>
+<blockquote>
+<p>The method will return all data that has same format.</p>
+</blockquote>
+<p>You can get current dropdown container by using <code>event.target</code> (instead of draggable element). You can choose to append your draggable stuff by using</p>
+<pre class="code literal-block"><span></span><span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">dataTransfer</span><span class="p">.</span><span class="nx">getData</span><span class="p">(</span><span class="nx">format</span><span class="p">))</span>
+</pre>
+
+
+<p>if you passed <code>id</code> in <code>ondragstart</code>'s method. Or you can do whatever you want.</p>
+</div>
+        </div>
+                <ul class="pager hidden-print">
+<li class="previous">
+                <a href="../Data%20Science/use-amazon-ec2-to-host-ipython-notebook.html" rel="prev" title="Use Amazon EC2 to Host IPython Notebook">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="../Front%20End/sass-qa-and-tips.html" rel="next" title="SASS Q&amp;A and Tips CONTINUALLY UPDATE">Next post</a>
+            </li>
+        </ul>
+<div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="pengyinsnotes",
+            disqus_url="http://pengyin-shan.com/posts/2015/Front%20End/html5-tips.html",
+        disqus_title="HTML5 Tips",
+        disqus_identifier="cache/posts/2015/Front End/html5-tips.html",
+        disqus_config = function () {
+            this.language = "en";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+    </div>
+                     <footer id="footer"><p>Contents © 2016         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+            
+        </footer>
+</div>
+    </section><script src="../../../assets/js/all-nocdn.js" type="text/javascript"></script><script type="text/javascript">
+            $(function(){
+                $('.timeago').timeago();
+            });
+        </script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="This is a brief introduction about &lt;a href=" https:>
+</head>
+<body>
+<p>bootstrap-datepicker, a date-picker that is built for Bootstrap including different functions. It is created by <a href="https://github.com/eternicode">eternicode</a>."&gt;
+    <meta name="viewport" content="width=device-width"></p>
+<title>Boostrap3 Date Picker | Pengyin's Note</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
+<link rel="canonical" href="http://pengyin-shan.com/posts/2015/JavaScript/bootstrap3-date-picker.html">
+<!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="Pengyin Shan">
+<meta property="og:site_name" content="Pengyin's Note">
+<meta property="og:title" content="Boostrap3 Date Picker">
+<meta property="og:url" content="http://pengyin-shan.com/posts/2015/JavaScript/bootstrap3-date-picker.html">
+<meta property="og:description" content='This is a brief introduction about &lt;a href="https://github.com/eternicode/bootstrap-datepicker"&gt;bootstrap-datepicker&lt;/a&gt;, a date-picker that is built for Bootstrap including different functions. It is'>
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2015-01-13T00:00:00-05:00">
+<meta property="article:tag" content="JavaScript">
+<section class="social"><ul>
+<li><a href="../../../index.html" title="Home"><i class="icon-home"></i></a></li>
+            <li><a href="../../../archive.html" title="Archives"><i class="icon-folder-open-alt"></i></a></li>
+            <li><a href="../../../categories/index.html" title="Tags"><i class="icon-tags"></i></a></li>
+            <li><a href="../../../rss.xml" title="RSS"><i class="icon-rss"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/pengyinshan" title="My LinkedIn"><i class="icon-linkedin"></i></a></li>
+            <li><a href="https://github.com/shanpy" title="My Github"><i class="icon-github"></i></a></li>
+
+        </ul></section><section class="page-content"><div class="content" rel="main">
+    <div class="post">
+        <h1 class="p-name entry-title" itemprop="headline name">Boostrap3 Date Picker</h1>
+
+        <div class="meta">
+            <div class="authordate">
+                <time class="timeago" datetime="2015-01-13T00:00:00-05:00">2015-01-13 00:00</time>
+            
+                      |  
+        <a href="bootstrap3-date-picker.md" id="sourcelink">Source</a>
+
+            </div>
+                    <div itemprop="keywords" class="tags">
+        <ul>
+        Tags : 
+           <li><a class="tag p-category" href="../../../categories/javascript.html" rel="tag">JavaScript</a></li>
+        </ul>
+</div>
+
+        </div>
+        <div class="body">
+            <div>
+<p>[TOC]</p>
+<h3>Usage</h3>
+<p>You can try a sandbox <a href="http://eternicode.github.io/bootstrap-datepicker/?markup=input&amp;format=&amp;weekStart=&amp;startDate=&amp;endDate=&amp;startView=0&amp;minViewMode=0&amp;todayBtn=false&amp;clearBtn=false&amp;language=en&amp;orientation=auto&amp;multidate=&amp;multidateSeparator=&amp;keyboardNavigation=on&amp;forceParse=on#sandbox">here</a> to expore more about bootstrap-datepicker.</p>
+<h4>General Usage</h4>
+<p>Generally everything is easy. After you refer source file (stylesheet and js) in code, create a <code>&lt;input type="input"&gt;</code> element. Then write following JavaScript code:</p>
+<pre class="code literal-block"><span></span><span class="nx">$</span><span class="p">(</span><span class="s2">"#your_container input"</span><span class="p">).</span><span class="nx">datepicker</span><span class="p">();</span>
+</pre>
+
+
+<p>Now when you click input box, a calendar will appear.</p>
+<h4>Embeded Full Calander</h4>
+<p>You may want a full calender instead of a input box. First you make a <code>&lt;div&gt;</code> with id/className, The do same JavaScript code as above:</p>
+<pre class="code literal-block"><span></span><span class="nx">$</span><span class="p">(</span><span class="s2">"#your_div"</span><span class="p">).</span><span class="nx">datepicker</span><span class="p">();</span>
+</pre>
+
+
+<h4>Disable Special Dates</h4>
+<p>One of the function I use very often is to disable some dates (Or only make a few dates available). You need <code>beforeShowDay</code> option to do this:</p>
+<pre class="code literal-block"><span></span><span class="kd">var</span> <span class="nx">avialableDates</span><span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">18</span><span class="p">,</span><span class="mi">20</span><span class="p">];</span>
+<span class="nx">$</span><span class="p">(</span><span class="s2">"#date_picker"</span><span class="p">).</span><span class="nx">datepicker</span><span class="p">({</span>
+    <span class="nx">beforeShowDay</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">date</span><span class="p">){</span>
+        <span class="k">if</span><span class="p">(</span><span class="nx">date</span><span class="p">.</span><span class="nx">getMonth</span><span class="p">()</span> <span class="o">==</span> <span class="p">(</span><span class="k">new</span> <span class="nb">Date</span><span class="p">()).</span><span class="nx">getMonth</span><span class="p">())</span>
+        <span class="c1">//This means date apply to any month, you can also set specific month if you need</span>
+
+        <span class="k">switch</span><span class="p">(</span><span class="kc">true</span><span class="p">){</span>
+            <span class="k">case</span><span class="p">(</span><span class="nx">availableDates</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">date</span><span class="p">.</span><span class="nx">getDate</span><span class="p">())</span><span class="o">==-</span><span class="mi">1</span><span class="p">)</span><span class="o">:</span>
+                <span class="c1">//Do something to unavailable date</span>
+                <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+
+                <span class="c1">//You can also set opearation to available date</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+</pre>
+
+
+<h4>Do Something after User Choose Date</h4>
+<p>You may want to perform something after user click on a date. Use <code>.change()</code> and <code>.on</code> to detect user's selection and assign function to it:</p>
+<pre class="code literal-block"><span></span><span class="nx">$</span><span class="p">(</span><span class="s2">"#your_div"</span><span class="p">).</span><span class="nx">datepicker</span><span class="p">({</span>
+  <span class="c1">//assign options, such as beforeShowDay</span>
+<span class="p">}).</span><span class="nx">change</span><span class="p">(</span><span class="nx">changeEvent</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">'changeDate'</span><span class="p">,</span><span class="nx">changeEvent</span><span class="p">);</span>
+
+
+<span class="kd">function</span> <span class="nx">changeEvent</span><span class="p">(</span><span class="nx">ev</span><span class="p">){</span>
+    <span class="kd">var</span> <span class="nx">nowDate</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="nx">ev</span><span class="p">.</span><span class="nb">Date</span><span class="p">).</span><span class="nx">getDate</span><span class="p">();</span>
+    <span class="c1">//This is the date that user choose. You are free to use .getFullYear(), .getMonth(), etc</span>
+
+    <span class="c1">//Do whatever you want to do</span>
+<span class="p">}</span>
+</pre>
+
+
+<h3>Problems and Solutions</h3>
+<h4>P1: "cannot call method 'split' of undefined" error</h4>
+<p>S1: I find following steps to solve this problem:</p>
+<ul>
+<li>
+<p>First, check if there is any repeat id/class name as the one that you are calling</p>
+</li>
+<li>
+<p>Second, try to add "format: 'dd.mm.yyyy'" in option list</p>
+</li>
+<li>
+<p>Third, check if your version is right: you can download a zip with both production version and full version <a href="http://eternicode.github.io/bootstrap-datepicker/?markup=input&amp;format=&amp;weekStart=&amp;startDate=&amp;endDate=&amp;startView=0&amp;minViewMode=0&amp;todayBtn=false&amp;clearBtn=false&amp;language=en&amp;orientation=auto&amp;multidate=&amp;multidateSeparator=&amp;keyboardNavigation=on&amp;forceParse=on#sandbox">here</a>. Try to replace your javascript file with another version, and check if problem disappears.</p>
+</li>
+</ul>
+</div>
+        </div>
+                <ul class="pager hidden-print">
+<li class="previous">
+                <a href="../Java/manning-ocp-java-se7-reading-note-chapter-1.html" rel="prev" title="Manning OCP Java SE 7 Reading Note: Chapter 1">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="javascript-library-experience-fullcalendar.html" rel="next" title="JavaScript Library Experience: FullCalendar">Next post</a>
+            </li>
+        </ul>
+<div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="pengyinsnotes",
+            disqus_url="http://pengyin-shan.com/posts/2015/JavaScript/bootstrap3-date-picker.html",
+        disqus_title="Boostrap3 Date Picker",
+        disqus_identifier="cache/posts/2015/JavaScript/bootstrap3-date-picker.html",
+        disqus_config = function () {
+            this.language = "en";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+    </div>
+                     <footer id="footer"><p>Contents © 2016         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+            
+        </footer>
+</div>
+    </section><script src="../../../assets/js/all-nocdn.js" type="text/javascript"></script><script type="text/javascript">
+            $(function(){
+                $('.timeago').timeago();
+            });
+        </script>
+</body>
+</html>

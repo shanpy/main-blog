@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="This post is a reading notes for &lt;a href=" http:>
+</head>
+<body>
+<p>Apache Velocity User Guide, with basic information about Apache Velocity's Template Language(**VTL**) information."&gt;
+    <meta name="viewport" content="width=device-width"></p>
+<title>Apache Velocity Language Basics | Pengyin's Note</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
+<link rel="canonical" href="http://pengyin-shan.com/posts/2015/Java/apache-velocity-basics.html">
+<!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="Pengyin Shan">
+<meta property="og:site_name" content="Pengyin's Note">
+<meta property="og:title" content="Apache Velocity Language Basics">
+<meta property="og:url" content="http://pengyin-shan.com/posts/2015/Java/apache-velocity-basics.html">
+<meta property="og:description" content="This post is a reading notes for &lt;a href=&quot;http://velocity.apache.org/engine/releases/velocity-1.7/user-guide.html&quot;&gt;Apache Velocity User Guide&lt;/a&gt;, with basic information about Apache Velocity's Templa">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2015-11-11T00:00:00-05:00">
+<meta property="article:tag" content="Java">
+<meta property="article:tag" content="Velocity">
+<section class="social"><ul>
+<li><a href="../../../index.html" title="Home"><i class="icon-home"></i></a></li>
+            <li><a href="../../../archive.html" title="Archives"><i class="icon-folder-open-alt"></i></a></li>
+            <li><a href="../../../categories/index.html" title="Tags"><i class="icon-tags"></i></a></li>
+            <li><a href="../../../rss.xml" title="RSS"><i class="icon-rss"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/pengyinshan" title="My LinkedIn"><i class="icon-linkedin"></i></a></li>
+            <li><a href="https://github.com/shanpy" title="My Github"><i class="icon-github"></i></a></li>
+
+        </ul></section><section class="page-content"><div class="content" rel="main">
+    <div class="post">
+        <h1 class="p-name entry-title" itemprop="headline name">Apache Velocity Language Basics</h1>
+
+        <div class="meta">
+            <div class="authordate">
+                <time class="timeago" datetime="2015-11-11T00:00:00-05:00">2015-11-11 00:00</time>
+            
+                      |  
+        <a href="apache-velocity-basics.md" id="sourcelink">Source</a>
+
+            </div>
+                    <div itemprop="keywords" class="tags">
+        <ul>
+        Tags : 
+           <li><a class="tag p-category" href="../../../categories/java.html" rel="tag">Java</a></li>
+           <li><a class="tag p-category" href="../../../categories/velocity.html" rel="tag">Velocity</a></li>
+        </ul>
+</div>
+
+        </div>
+        <div class="body">
+            <div>
+<h3>Syntax Basics</h3>
+<p>All VTL statements, begins with the <code>#</code> character. For rendering process: the <strong>Velocity Templating Engine</strong> will:</p>
+<ol>
+<li>
+<p><strong>search</strong> through your web page to find all <code>#</code> characters</p>
+</li>
+<li>
+<p>Then <strong>determine</strong> which mark the beginning of VTL statements, and which of the <code>#</code> characters that have nothing to do with VTL.</p>
+</li>
+</ol>
+<blockquote>
+<p>It is recommended to start each VTL statement on a <strong>new line</strong>.</p>
+</blockquote>
+<h4>References</h4>
+<p>There are <strong>three</strong> types of references in the VTL: <code>variables</code>, <code>properties</code> and <code>methods</code>.</p>
+<blockquote>
+<p>In VTL, References begin with $ and are used to <strong>get</strong> something. Directives begin with # and are used to <strong>do</strong> something.</p>
+</blockquote>
+<h5>Variables</h5>
+<p>All variables/references in VTL begins with the <code>$</code> character,followed by a <strong>VTL Identifier</strong>.</p>
+<ul>
+<li>A <strong>VTL Identifier</strong> must start with an alphabetic character (i.e. a to z case insensitive). The rest of the characters are limited to the following types of characters: alphabetic, numeric, <code>-</code> or <code>_</code>.</li>
+</ul>
+<p>In VTL, the variable can get its value from either a <strong>set directive</strong> in the template, or from the <strong>Java code</strong>. Example: for <code>#set( $foo = "bar" )</code>, <code>"bar"</code> will replace all <code>$foo</code> variables in VTL.</p>
+<p>Once a value has been assigned to a variable, you can reference the variable <strong>anywhere</strong> in your HTML document. Example:</p>
+<pre class="code literal-block"><span></span><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    #set( $foo = "Velocity" )
+    Hello $foo World!
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre>
+
+
+<h6>String</h6>
+<p>String values are always enclosed in <em>quotes</em>, either <em>single</em> or <em>double</em> quotes:</p>
+<ul>
+<li>
+<p>Single quotes will ensure that the quoted value will be <strong>assigned</strong> to the reference as is.</p>
+</li>
+<li>
+<p>Double quotes allow you to use <strong>velocity references and directives</strong> to interpolate</p>
+</li>
+<li>
+<p>Example: for <code>"Hello $name"</code>, the <code>$name</code> will be replaced by the referenced value.</p>
+</li>
+</ul>
+<h5>Properties</h5>
+<p>Properties have a distinctive format.</p>
+<p>The shorthand notation consists of a leading <code>$</code> character followed a <strong>VTL Identifier</strong>, followed by a dot character <code>.</code> and another <strong>VTL Identifier</strong></p>
+<p>Example: <code>$customer.Address</code> has <strong>two meanings</strong>:</p>
+<ol>
+<li>
+<p>VTL should look in the <strong>hashtable</strong> named as <code>customer</code>, then return the value associated with the <strong>key</strong> <code>Address</code>.</p>
+</li>
+<li>
+<p>VTL should find a referring to a <strong>method</strong> called <code>$customer.getAddress()</code>.</p>
+</li>
+</ol>
+<h5>Methods</h5>
+<p>Methods are references that consist of a leading <code>$</code> character followed a <strong>VTL Identifier</strong>, followed by a <strong>VTL Method Body</strong>.</p>
+<p>A <strong>VTL Method Body</strong> consists of a <strong>VTL Identifier</strong> followed by an left parenthesis character <code>(</code>, followed by an <strong>optional parameter list</strong>, followed by right parenthesis character <code>)</code>.</p>
+<p>Example:</p>
+<pre class="code literal-block"><span></span><span class="p">$</span><span class="nv">customer</span><span class="p">.</span><span class="nv">getAddress</span><span class="p">()</span><span class="x"></span>
+<span class="p">$</span><span class="nv">purchase</span><span class="p">.</span><span class="nv">getTotal</span><span class="p">()</span><span class="x"></span>
+<span class="p">$</span><span class="nv">page</span><span class="p">.</span><span class="nv">setTitle</span><span class="p">(</span> <span class="s2">"My Home Page"</span> <span class="p">)</span><span class="x"></span>
+<span class="p">$</span><span class="nv">person</span><span class="p">.</span><span class="nv">setAttributes</span><span class="p">(</span> <span class="p">[</span><span class="s2">"Strange"</span><span class="p">,</span> <span class="s2">"Weird"</span><span class="p">,</span> <span class="s2">"Excited"</span><span class="p">]</span> <span class="p">)</span><span class="x"></span>
+</pre>
+
+
+<h6>a <em>shorthand notation</em> for <strong>VTL Methods</strong>
+</h6>
+<p>In the example above, The <strong>property</strong> <code>$customer.Address</code> has the exact same effect as using the <strong>method</strong> <code>$customer.getAddress()</code>.</p>
+<p><em>It is generally <strong>preferable</strong> to use a <strong>Property</strong> when available.</em></p>
+<blockquote>
+<p>The main difference between Properties and Methods is that you can specify a <strong>parameter list</strong> to a Method.</p>
+</blockquote>
+<h6>Array as Lists</h6>
+<p>As of Velocity 1.6, all <strong>array</strong> references are treated as <strong>fixed-length lists</strong>. User can call <code>java.util.List</code> methods on array references. Example:</p>
+<pre class="code literal-block"><span></span><span class="p">$</span><span class="nv">myarray</span><span class="p">.</span><span class="nv">isEmpty</span><span class="p">()</span><span class="x"></span>
+<span class="p">$</span><span class="nv">myarray</span><span class="p">.</span><span class="nv">size</span><span class="p">()</span><span class="x"></span>
+<span class="p">$</span><span class="nv">myarray</span><span class="p">.</span><span class="nv">get</span><span class="p">(</span><span class="m">2</span><span class="p">)</span><span class="x"></span>
+<span class="p">$</span><span class="nv">myarray</span><span class="p">.</span><span class="nv">set</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="s1">'test'</span><span class="p">)</span><span class="x"></span>
+</pre>
+
+
+<h6>vararg methods</h6>
+<p>From Velocity 1.6, <strong>setter</strong> methods can have different parameter list:</p>
+<pre class="code literal-block"><span></span><span class="p">$</span><span class="nv">sun</span><span class="p">.</span><span class="nv">setPlanets</span><span class="p">(</span><span class="s1">'Earth'</span><span class="p">,</span> <span class="s1">'Mars'</span><span class="p">,</span> <span class="s1">'Neptune'</span><span class="p">)</span><span class="x"></span>
+<span class="p">$</span><span class="nv">sun</span><span class="p">.</span><span class="nv">setPlanets</span><span class="p">(</span><span class="s1">'Mercury'</span><span class="p">)</span><span class="x"></span>
+<span class="p">$</span><span class="nv">sun</span><span class="p">.</span><span class="nv">setPlanets</span><span class="p">()</span><span class="x"></span>
+<span class="cp">##</span><span class="c">  Will just pass in an empty, zero-length array</span><span class="x"></span>
+</pre>
+
+
+<h4>Other Syntax Information</h4>
+<h5>Comments</h5>
+<p>In VTL, A single line comment begins with <code>##</code> and finishes at the end of the line. Example: <code>## This is a single line comment.</code></p>
+<p><strong>Multi-line</strong> comments, which begin with <code>#*</code> and end with <code>*#</code>, are available to handle this scenario.</p>
+<pre class="code literal-block"><span></span><span class="x">This is text that is outside the multi-line comment.</span>
+<span class="x">Online visitors can see it.</span>
+<span class="x">*</span><span class="err">#</span><span class="x"></span>
+<span class="x"> Thus begins a multi-line comment. Online visitors won't</span>
+<span class="x"> see this text because the Velocity Templating Engine will</span>
+<span class="x"> ignore it.</span>
+<span class="x">*</span><span class="err">#</span><span class="x"></span>
+<span class="x">Here is text outside the multi-line comment; it is visible.</span>
+</pre>
+
+
+<p>User can also set <strong>javadoc-style</strong> annotation in VTL comment block:</p>
+<pre class="code literal-block"><span></span><span class="cp">#</span><span class="c">**</span>
+<span class="c">This is a VTL comment block and</span>
+<span class="c">may be used to store such information</span>
+<span class="c">as the document author and versioning</span>
+<span class="c">information:</span>
+<span class="c">@author</span>
+<span class="c">@version 5</span>
+<span class="c">*</span><span class="cp">#</span><span class="x"></span>
+</pre>
+</div>
+        </div>
+                <ul class="pager hidden-print">
+<li class="previous">
+                <a href="../JavaScript/number-precision-in-javascript.html" rel="prev" title="Number Precision in JavaScript">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="../../2016/JavaScript/reading_note_defer_in_jquery.html" rel="next" title="Reading Note - Asynchronous in jQuery and ECMAScript 6">Next post</a>
+            </li>
+        </ul>
+<div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="pengyinsnotes",
+            disqus_url="http://pengyin-shan.com/posts/2015/Java/apache-velocity-basics.html",
+        disqus_title="Apache Velocity Language Basics",
+        disqus_identifier="cache/posts/2015/Java/apache-velocity-basics.html",
+        disqus_config = function () {
+            this.language = "en";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+    </div>
+                     <footer id="footer"><p>Contents © 2016         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+            
+        </footer>
+</div>
+    </section><script src="../../../assets/js/all-nocdn.js" type="text/javascript"></script><script type="text/javascript">
+            $(function(){
+                $('.timeago').timeago();
+            });
+        </script>
+</body>
+</html>

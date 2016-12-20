@@ -1,0 +1,41 @@
+<h3>Installation</h3>
+<p><strong>Node.js</strong> has to be installed first. Then do <code>npm install -g less</code> to install LESS.</p>
+<p>After you have a LESS file, run <code>lessc your_file.less target_name.css</code> to generate corresponding CSS file.</p>
+<h3>Nested in LESS</h3>
+<p>Nested classes/directives can be used in LESS:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><pre class="code literal-block"><span></span><span class="nc">.container</span><span class="p">{</span>
+  <span class="n">h1</span><span class="p">{</span>
+    <span class="nb">color</span><span class="o">:</span> <span class="nb">black</span><span class="p">;</span>
+    <span class="o">@</span><span class="n">media</span><span class="p">(</span><span class="n">mid</span><span class="o">-</span><span class="nb">width</span><span class="o">:</span> <span class="m">769px</span><span class="p">){</span>
+      <span class="nb">color</span><span class="o">:</span> <span class="nb">pink</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="n">p</span><span class="p">{</span>
+    <span class="nb">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre>
+</td></tr></table>
+
+<h3>Operations in LESS</h3>
+<p>After declaring variables using <code>@</code>, LESS allows use to use <code>+</code>, <code>-</code>, <code>*</code> and <code>/</code> to do math operations.</p>
+<p>Make sure you always use <code>@</code> to refer variables:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><pre class="code literal-block"><span></span><span class="nv">@fontSize</span><span class="o">:</span> <span class="nt">10px</span><span class="o">;</span>
+<span class="nc">.testClass</span><span class="p">{</span>
+  <span class="nb">font-size</span><span class="o">:</span> <span class="o">@</span><span class="n">fontSize</span> <span class="o">*</span> <span class="m">1</span><span class="o">.</span><span class="m">5</span><span class="p">;</span>
+<span class="p">}</span>
+</pre>
+</td></tr></table>

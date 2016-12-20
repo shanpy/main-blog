@@ -39,7 +39,7 @@ Under RAM model, run time is measured by *counting up the number of steps* an al
 
 The book gave a graph to show three cases:
 
-{% img img-responsive images/articles/2016/algorithms/complexity1.png %}
+img-responsive images/articles/2016/algorithms/complexity1.png 
 
 The graph above shows that we can present each *input instance* as a point on a graph, where the $x-axis$ represents the *size* of the input problem and the $y-axis$ denotes the number of *steps* taken by the algorithm in this instance.
 
@@ -81,9 +81,9 @@ Following definitions are essential in Big $O$ Notation:
 
 See following graphs as example:
 
-{% img img-responsive images/articles/2016/algorithms/complexity2.png %}
+img-responsive images/articles/2016/algorithms/complexity2.png 
 
-{% img img-responsive images/articles/2016/algorithms/complexity3.png %}
+img-responsive images/articles/2016/algorithms/complexity3.png 
 
 > Each of definitions above assumes a constant $n_{0}$ **beyond which** they are always satisfied. We are not concerned about small values of $n$ (i.e. *anything to the left of $n_{0}$). It is best to read $=$ here as meaning *one of the functions are. For example, $n^2$ is one of the functions that are $O(n^3)$.
 

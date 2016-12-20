@@ -62,13 +62,13 @@ Spring supports two type of transaction management:
 ##Spring Transaction Abstractions
 
 The key to Spring transaction is: `org.springframework.transaction.PlatformTransactionManager` interface.
-{% img images/posts/PlatformTransactionManager.png %}
+images/posts/PlatformTransactionManager.png 
 
 `TransactionDefinition` is the core interface of the transaction support in Spring.
-{% img images/posts/TransactionDefinition.png %}
+images/posts/TransactionDefinition.png 
 
 `TransactionStatus` interface is used to control transaction execution and query transaction status.
-{% img images/posts/TransactionStatus.png %}
+images/posts/TransactionStatus.png 
 
 ##Programmatic Transaction Management
 

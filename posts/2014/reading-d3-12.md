@@ -20,7 +20,7 @@ code example for Chapter 12 is <a href="http://shanpy.github.io/Front-End-Playgr
 `GeoJSON` is a special format for `JSON`, which is used specially for geography. A typical `GeoJSON` file is an object with two attributes: `type` and `features`. The `features` attibute is an array of objects. Each objects have geography attributes, such as `type`,`id`,`properties`,`geometry`.
 
 `geometry` is a vary useful attributes. It can include `coordinate` attribue, which inludes `longitude,latitude` pairs. Note `longitude` is *vertical* on map, `latitude` is *horizontal* on map. Here is a sample:
-{% img images/posts/sampleGeoJSON.png %}
+images/posts/sampleGeoJSON.png 
 
 Step 1: transfer `GeoJSON` to `SVG path` code by using `d3.geo.path()`. Then load `GeoJSON` file and apply new path:
 

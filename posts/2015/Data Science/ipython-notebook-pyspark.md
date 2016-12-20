@@ -63,13 +63,13 @@ You can test your installation by doing following:
 
 >You need java jdk installed on your machine and JAVA_HOME has been set, otherwise PySpark will throw error for that, such as:
 
-{% img ../images/articles/2015/python/hadoop2.6_java_home_dir_problem.png %}
+../images/articles/2015/python/hadoop2.6_java_home_dir_problem.png 
 
 >Make sure your JAVA_HOME pointing to home folder of your desired JDK. For example, I want to use Oracle JDK 8. So I type `sudo update-alternatives --config java` in terminal to find preferred JDK path (JDK 8 in my case), then add`export JAVA_HOME=/usr/lib/jvm/java-8-oracle` in `.bashrc` file.
 
 You should see following in your terminal. Type `sc` and you should see output as `SparkContext`:
 
-{% img ../images/articles/2015/python/test_pyspark.png %}
+../images/articles/2015/python/test_pyspark.png 
 
 Configure PySpark and IPython Notebook
 -----------------------------------
@@ -86,6 +86,6 @@ In Jupyter interface, You can upload one existing IPython Notebook to test your 
 
 In IPython Notebook interface, create a new cell and type `sc`. When you run this cell, you should see `SparkContext` object, same as following:
 
-{% img ../images/articles/2015/python/test_pyspark_notebook.png %}
+../images/articles/2015/python/test_pyspark_notebook.png 
 
 >Now, if your IPython Notebook show message: `NameError: name 'sc' is not defined`, which means your IPython Notebook doesn't use PySpark profile. You can try typing `ipython --profile=pyspark` in terminal to make PySpark as default IPython profile, then try `ipython notebook --profile=pyspark` again. PySpark should be available now.

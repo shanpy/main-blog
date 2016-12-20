@@ -1,7 +1,10 @@
 <p>This post is transferred from my <a href="http://blogpengyin.herokuapp.com/">old Hexo blog site</a>, created on 2014.</p>
-<p _="%" images_posts_google_cse.PNG="images/posts/google_cse.PNG" img>You need a google account to use Google Custom Search Engine. Go to "www.google.com/cse" and sign in with your Google account.</p>
-<p _="%" images_posts_google_cse_create.PNG="images/posts/google_cse_create.PNG" img>In the console, click "New search engine" on left menu, then input the website url you want to search from. You also need a name for this new search engine. After finsih setup, click "CREATE" button.</p>
-<p _="%" images_posts_google_cse_id.PNG="images/posts/google_cse_id.PNG" img>You need to use <code>Search Engine ID</code> for creating RESTful service. To do this, select "Edit search engine" on left menu. In the dropdown, select your search engine. Select "Basics" panel on right, then click "Search engine ID" in details part. A pop up box will appears with your Search Engine ID.</p>
+<p>You need a google account to use Google Custom Search Engine. Go to "www.google.com/cse" and sign in with your Google account.
+images/posts/google_cse.PNG </p>
+<p>In the console, click "New search engine" on left menu, then input the website url you want to search from. You also need a name for this new search engine. After finsih setup, click "CREATE" button.
+images/posts/google_cse_create.PNG </p>
+<p>You need to use <code>Search Engine ID</code> for creating RESTful service. To do this, select "Edit search engine" on left menu. In the dropdown, select your search engine. Select "Basics" panel on right, then click "Search engine ID" in details part. A pop up box will appears with your Search Engine ID.
+images/posts/google_cse_id.PNG </p>
 <p>You also need your api key for creating RESTful service. To do this, you need a project and get its API key in <em>Google Developers Console</em>. You can do this by log in "console.developers.google.com" and select "Credentials" in "APIs &amp; auth" menu. You will see API key appearing on right panel.</p>
 <p>Then go back to your Custom Search panel. In "Details" part on right, click "Get Code" button (just near "Search Engine ID" button). Copy the code on this page and paste it into a '<div>' where you want the Google search bar appears.</p>
 <p>You may want to use RESTful api to get results from Google custom search engine. The format of requested url is: <code>https://www.googleapis.com/customsearch/v1?key=XXX&amp;cx=XXX&amp;q=XXX</code>. You should put your API key as <code>key</code> parameter, your search engine Id as <code>cx</code> paramter, and the string your want to search as <code>q</code> parameter.</p>

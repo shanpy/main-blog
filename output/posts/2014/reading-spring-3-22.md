@@ -17,7 +17,7 @@ This note includes Chapter 22 in tutorial.
 
 ##The Dispacher Servlet
 
-{% img images/posts/dispatcher_servlet.png %}
+images/posts/dispatcher_servlet.png 
 
 ##Required Configuration
 

@@ -111,7 +111,7 @@ Step 1: Assume you have a dataset which contains objects with attributes, you ne
 	];
 
 Step 2: similar to pie chart, use `d3.layout.stack(dataset)` to re-generate dataset. Note this will generate a `y0` value as *baseline* for each object, which equals to the *total* of all `y` value for its previous object / the minimum y-position of the value:
-{% img images/posts/stack chart data.png %}
+images/posts/stack chart data.png 
 
 Step 3: Assign `x`,`y`,`width`,`height` attribute to each rect. You need to use `d.y0` and `d.y` for `y` and `height`:
 

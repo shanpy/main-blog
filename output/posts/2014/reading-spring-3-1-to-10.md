@@ -14,7 +14,7 @@ This is a reading note from Spring Framework 3.1 Tutorial pdf, created by <a hre
 #Chapter 2: Spring Framework Architecture
 
 Spring is a modular framework, which means you can pick the modules that only fits your need. Basic structure of Spring framework is following. There are three *main* componets: `Core Container`, `Data Access Integration` and `Web (MVC/Remoting)`. Other important componets include `AOP`, `Aspects`, `Instrumentation` and `Test`:
-{% img images/posts/spring-structure.png %}
+images/posts/spring-structure.png 
 
 ##Core Container
 
@@ -73,7 +73,7 @@ Spring IoC containter uses `dependency injection/DI` to manage objects, which ar
 Container gets information from the `metadata` in `xml`, `Java annotation` or `Java code`.
 
 This is the process of Spring IoC container works:
-{% img images/posts/spring-containers.png %}
+images/posts/spring-containers.png 
 
 Spring has two distinct type of containers: `BeanFactory` and `ApplicationContext`:
 
@@ -163,7 +163,7 @@ JAVA:
 - `Java-based` configuration
 
 Example of Bean Properties from book:
-{% img images/posts/spring-configuration-metadata.png %}
+images/posts/spring-configuration-metadata.png 
 
 #Chapter 7: Spring Bean Scopes
 

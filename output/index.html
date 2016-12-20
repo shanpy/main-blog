@@ -390,7 +390,7 @@ article: http://ogp.me/ns/article#
 <p><code>viewbox</code> is a way of scaling svg view-able space. it has four attributes: <code>x-position</code>, <code>y-position</code>, <code>width</code>, <code>height</code>. <strong>Note a positive value in y-position meaning counting down from start point.</strong></p>
 <p>The use of <code>viewbox</code> is to expand item to full svg area, following the scale defined in <code>viewbox</code>. For example, <code>&lt;svg width="500" height="300" viewbox="0 0 150 300"&gt;&lt;/svg&gt;</code> means define a area width a width of 150 and height of 300 from zero-point, then <strong>expand it to full svg (width 500 height 300)</strong>. Everything inside viewbox will be also re-scaled.</p>
 <p>A great demo (Chinese) created by <strong>zhangxinyu</strong> can be found <a href="http://www.zhangxinxu.com/study/201408/svg-viewbox-explain.html">here</a>.</p>
-<p>{% img img-responsive images/articles/2016/frontend/viewbox.gif %}</p>
+<p>img-responsive images/articles/2016/frontend/viewbox.gif </p>
 <h2><code>preserveAspectRatio</code></h2>
 <p><code>preserveAspectRatio</code> has two attributes: <code>how viewBox align with viewport</code>, <code>ratio of height and width</code>.</p>
 <p>The first attribute has two parts: <code>x alignment</code> and <code>y alignment</code>. Options are:</p>
@@ -426,17 +426,17 @@ article: http://ogp.me/ns/article#
 
 
 <p>Result from code above. Notice the rectangle is still in <em>2:3</em> ratio for <em>width:height</em>.</p>
-<p>{% img img-responsive images/articles/2016/frontend/ratio-meet %}</p>
+<p>img-responsive images/articles/2016/frontend/ratio-meet </p>
 <h3><code>slice</code></h3>
 <p>Keep current ratio, while expanding <code>viewbox</code> till <strong>short slide</strong> of <code>viewport</code> is <strong>filled</strong> (Even though the inner shape is smaller width/height than svg, the short side of svg is still be filled).</p>
 <p>Result from code above. Note <em>height</em> is filled first, since it's the shorter side:</p>
-<p>{% img img-responsive images/articles/2016/frontend/ratio-slice %}</p>
+<p>img-responsive images/articles/2016/frontend/ratio-slice </p>
 <h3><code>none</code></h3>
 <p>Shapes inside <code>viewbox</code> is hardly defined by its own width and height, without following any ratio.</p>
 <p>Result from code above. :</p>
-<p>{% img img-responsive images/articles/2016/frontend/ratio-slice %}</p>
+<p>img-responsive images/articles/2016/frontend/ratio-slice </p>
 <p>If no <code>preserveAspectRatio</code> is market, following result should be seen:</p>
-<p>{% img img-responsive images/articles/2016/frontend/ratio-no %}</p>
+<p>img-responsive images/articles/2016/frontend/ratio-no </p>
 <p>Also see this <a href="http://www.zhangxinxu.com/study/201408/svg-preserveaspectratio-meet-slice-none.html">demo</a> created by <em>zhangxinxu</em>.</p>
 </div>
             </div>
@@ -629,10 +629,10 @@ article: http://ogp.me/ns/article#
 <h4>cubic-bezier</h4>
 <p>Another <code>transition-timing-function</code> value is <code>cubic-besier(x1,y1,x2,y2)</code>. <code>0&lt;x&lt;1</code>, when <code>x&gt;1</code> cubic-besier will lose its effect. There is no rule for <code>y</code>.</p>
 <p>Jovey created following graph in her blog post <a href="http://www.jianshu.com/p/d999f090d333">cubic-bezier</a> to show cubic-bezier:</p>
-<p>{% img img-responsive images/articles/2016/frontend/cubic-bezier.png %}</p>
+<p>img-responsive images/articles/2016/frontend/cubic-bezier.png </p>
 <p>The curve from cubic-bezier is used to decide the speed of animation. We can view this as a straight line being dragged by point <code>(x1, y1)</code> and point <code>(x2, y2)</code>.</p>
 <p>Jovey gave following example for the value of cubic-basier of <code>ease-out</code> and <code>ease-in-out</code>:</p>
-<p>{% img img-responsive images/articles/2016/frontend/cubic-bezier2.png %}</p>
+<p>img-responsive images/articles/2016/frontend/cubic-bezier2.png </p>
 <p><code>transition-delay</code> is used to hold transition for a period of time.</p>
 <h3>Transforms</h3>
 <p>Basic Syntax:</p>
@@ -1239,7 +1239,7 @@ article: http://ogp.me/ns/article#
 
 <p><code>Scope Chain</code>: any function defined within another function has a local scope with <em>linked to the outer function</em>. This linking is the chain.</p>
 <p>See graph from Diego Castorina below:</p>
-<p>{% img img-responsive images/articles/2016/javascript/scope_chain.png %}</p>
+<p>img-responsive images/articles/2016/javascript/scope_chain.png </p>
 <blockquote>
 <p>It’s always the position in the code that defines the scope. When resolving a variable, JavaScript starts at the innermost scope and searches outwards until it finds the variable/object/function it was looking for.</p>
 </blockquote>
@@ -1543,7 +1543,7 @@ article: http://ogp.me/ns/article#
 <p>It is a bad practice to extend <code>object.prototype</code>/<code>_proto_</code> or one of the other built-in prototypes. This is called <code>monkey</code> patching and breaks <code>encapsulation</code>.</p>
 </blockquote>
 <p>A graph from <a href="https://www.toptal.com/javascript/javascript-prototypes-scopes-and-performance-what-you-need-to-know">JavaScript Prototype Chains, Scope Chains, and Performance: What You Need to Know</a> written by DIEGO CASTORINA describe prototype chain very well:</p>
-<p>{% img img-responsive images/articles/2016/javascript/prototype_chain.png %}</p>
+<p>img-responsive images/articles/2016/javascript/prototype_chain.png </p>
 <p><strong>Simply Construct</strong></p>
 <p>Code Example:</p>
 <pre class="code literal-block"><span></span><span class="kd">var</span> <span class="nx">o</span> <span class="o">=</span> <span class="p">{</span><span class="nx">a</span><span class="o">:</span> <span class="mi">1</span><span class="p">};</span>
@@ -1608,7 +1608,7 @@ article: http://ogp.me/ns/article#
 
 
 <p>See graph example below:</p>
-<p>{% img img-responsive images/articles/2016/javascript/prototype_chain_2.png %}</p>
+<p>img-responsive images/articles/2016/javascript/prototype_chain_2.png </p>
 <p>Note: <code>var g = new Graph()</code> constructor above equals to following code:</p>
 <pre class="code literal-block"><span></span><span class="kd">var</span> <span class="nx">g</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Object</span><span class="p">();</span>
 <span class="nx">g</span><span class="p">.[[</span><span class="nx">Prototype</span><span class="p">]]</span> <span class="o">=</span> <span class="nx">Graph</span><span class="p">.</span><span class="nx">prototype</span><span class="p">;</span>
@@ -2088,7 +2088,7 @@ article: http://ogp.me/ns/article#
 <p>Node thread keeps an event loop and whenever any task get completed, it fires the corresponding event which signals the event listener function to get executed.</p>
 </blockquote>
 <p>Image from tutorialspoint.com:</p>
-<p>{% img images/articles/2016/javascript/node_js_events.png %}</p>
+<p>images/articles/2016/javascript/node_js_events.png </p>
 <p>This is the difference between callbacks and events. The <code>EventEmitter</code> is used to bind events and event listeners.</p>
 <p>EventEmitter Methods:</p>
 <ul>

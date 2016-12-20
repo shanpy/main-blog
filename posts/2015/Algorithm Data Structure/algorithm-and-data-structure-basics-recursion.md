@@ -78,7 +78,7 @@ Since system using **stack** to save return values from each callback, it's real
 
 To make code looks clear, I draw a draft of the sequence of recursion call for the code above. Note the purpose numbers are the sequence of call:
 
-{% img ../images/articles/2015/algorithm/hanoi_graph.png %}
+../images/articles/2015/algorithm/hanoi_graph.png 
 
 ###Merge Sort
 

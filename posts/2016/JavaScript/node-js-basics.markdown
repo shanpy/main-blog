@@ -184,7 +184,7 @@ Node.js use **observer pattern**, which means there exists dependency from one t
 
 Image from tutorialspoint.com:
 
-{% img images/articles/2016/javascript/node_js_events.png %}
+images/articles/2016/javascript/node_js_events.png 
 
 This is the difference between callbacks and events. The `EventEmitter` is used to bind events and event listeners.
 

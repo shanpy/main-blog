@@ -41,14 +41,14 @@ Spring can *auto-wire* relationships between beans without using `<constructor-a
 ##Auto-wiring Modes
 
 You should be `autowire` attribute of the `<bean/>` element to specify autowire mode for a bean definition. There are four Auto-wiring modes, which are defined in this following table:
-{% img images/posts/auto-wiring.png %}
+images/posts/auto-wiring.png 
 
 `byType` or `constructor` autowiring mode can be used to wire *arrays* and other *typed-collections*.
 
 ##Limitations with Autowiring
 
 Autowiring is great to use across a project. However, it do have limitations and you can override it:
-{% img images/posts/autowiring-limitation.png %}
+images/posts/autowiring-limitation.png 
 
 ##Autowiring By Name*
 

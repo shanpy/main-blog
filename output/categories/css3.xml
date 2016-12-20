@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Pengyin's Note (CSS3)</title><link>http://pengyin-shan.com/</link><description></description><atom:link href="http://pengyin-shan.com/categories/css3.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 20 Dec 2016 03:33:21 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Quick Note about Box-Sizing/Box-Shadow</title><link>http://pengyin-shan.com/posts/2016/Front%20End/quick-note-about-box-box-shadow.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;[TOC]&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pengyin's Note (CSS3)</title><link>http://pengyin-shan.com/</link><description></description><atom:link rel="self" href="http://pengyin-shan.com/categories/css3.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 20 Dec 2016 03:52:16 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Quick Note about Box-Sizing/Box-Shadow</title><link>http://pengyin-shan.com/posts/2016/Front%20End/quick-note-about-box-box-shadow.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;[TOC]&lt;/p&gt;
 &lt;h2&gt;&lt;code&gt;box-sizing&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;box-sizing&lt;/code&gt; is used to tell the browser what the sizing properties (&lt;code&gt;width&lt;/code&gt; and &lt;code&gt;height&lt;/code&gt;) should include.&lt;/p&gt;
 &lt;p&gt;It has following properties:&lt;/p&gt;
@@ -141,10 +141,10 @@
 &lt;h4&gt;cubic-bezier&lt;/h4&gt;
 &lt;p&gt;Another &lt;code&gt;transition-timing-function&lt;/code&gt; value is &lt;code&gt;cubic-besier(x1,y1,x2,y2)&lt;/code&gt;. &lt;code&gt;0&amp;lt;x&amp;lt;1&lt;/code&gt;, when &lt;code&gt;x&amp;gt;1&lt;/code&gt; cubic-besier will lose its effect. There is no rule for &lt;code&gt;y&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Jovey created following graph in her blog post &lt;a href="http://www.jianshu.com/p/d999f090d333"&gt;cubic-bezier&lt;/a&gt; to show cubic-bezier:&lt;/p&gt;
-&lt;p&gt;{% img img-responsive images/articles/2016/frontend/cubic-bezier.png %}&lt;/p&gt;
+&lt;p&gt;img-responsive images/articles/2016/frontend/cubic-bezier.png &lt;/p&gt;
 &lt;p&gt;The curve from cubic-bezier is used to decide the speed of animation. We can view this as a straight line being dragged by point &lt;code&gt;(x1, y1)&lt;/code&gt; and point &lt;code&gt;(x2, y2)&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Jovey gave following example for the value of cubic-basier of &lt;code&gt;ease-out&lt;/code&gt; and &lt;code&gt;ease-in-out&lt;/code&gt;:&lt;/p&gt;
-&lt;p&gt;{% img img-responsive images/articles/2016/frontend/cubic-bezier2.png %}&lt;/p&gt;
+&lt;p&gt;img-responsive images/articles/2016/frontend/cubic-bezier2.png &lt;/p&gt;
 &lt;p&gt;&lt;code&gt;transition-delay&lt;/code&gt; is used to hold transition for a period of time.&lt;/p&gt;
 &lt;h3&gt;Transforms&lt;/h3&gt;
 &lt;p&gt;Basic Syntax:&lt;/p&gt;

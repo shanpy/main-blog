@@ -60,9 +60,9 @@ For example, you have two string: <code>BDCABA</code> and <code>ABCBDAB</code>. 
 <p>Since we are calculating <strong>from bottom to top</strong>, we already get <code>c[i-1][j-1]</code>, <code>c[i-1][j]</code> and <code>c[i][j-1]</code> before we get <code>c[i][j]</code>. Since we can know if <code>X[i]=Y[j]</code> or not, we can calculate the value of <code>c[i][j]</code> based on three rules above.</p>
 </blockquote>
 <p>The graph below is from <a href="http://blog.csdn.net/biangren/article/details/8038605">this post</a>, expressing the math idea and calculation process for this problem:</p>
-<p>{% img ../images/articles/2015/algorithm/lcs_math.png %}</p>
+<p>../images/articles/2015/algorithm/lcs_math.png </p>
 <p>Using two input string <code>BDCABA</code> and <code>ABCBDAB</code>:</p>
-<p>{% img ../images/articles/2015/algorithm/lcs_graph.png %}</p>
+<p>../images/articles/2015/algorithm/lcs_graph.png </p>
 <blockquote>
 <p>You may notice only when we move to left-top direction, we can find a character for LCS. So we need to create another two-dimensional array to record moving direction</p>
 </blockquote>

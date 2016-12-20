@@ -13,7 +13,7 @@
 
 I used to create a small Spring MVC web app <a href='https://github.com/shanpy/RDFExperiment'>RDF Experiment</a> to experiment the ideas behind Hydra. Following is a graph about my assumption of Hydra Idea:
 
-{% img ../images/articles/2015/digital_library/ProjectHydra.png %}
+../images/articles/2015/digital_library/ProjectHydra.png 
 
 Behind this large frame, there are lots of small classes/methods that will push through stages above.
 

@@ -229,7 +229,7 @@ JAVA:
 #Chapter 13: Spring Injecting Collection
 
 Spring has data type so you can pass value groups in `xml` file. There are four types: List, Set, Map and Properties. Difference is following:
-{% img images/posts/spring-di-collection.png %}
+images/posts/spring-di-collection.png 
 
 *You can use* `<list>` or `<set>` to wire any implementation of `java.util.Collection` or `Array`.
 

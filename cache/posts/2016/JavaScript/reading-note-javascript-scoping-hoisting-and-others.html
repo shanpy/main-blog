@@ -315,7 +315,7 @@
 
 <p><code>Scope Chain</code>: any function defined within another function has a local scope with <em>linked to the outer function</em>. This linking is the chain.</p>
 <p>See graph from Diego Castorina below:</p>
-<p>{% img img-responsive images/articles/2016/javascript/scope_chain.png %}</p>
+<p>img-responsive images/articles/2016/javascript/scope_chain.png </p>
 <blockquote>
 <p>It’s always the position in the code that defines the scope. When resolving a variable, JavaScript starts at the innermost scope and searches outwards until it finds the variable/object/function it was looking for.</p>
 </blockquote>
@@ -617,7 +617,7 @@
 <p>It is a bad practice to extend <code>object.prototype</code>/<code>_proto_</code> or one of the other built-in prototypes. This is called <code>monkey</code> patching and breaks <code>encapsulation</code>.</p>
 </blockquote>
 <p>A graph from <a href="https://www.toptal.com/javascript/javascript-prototypes-scopes-and-performance-what-you-need-to-know">JavaScript Prototype Chains, Scope Chains, and Performance: What You Need to Know</a> written by DIEGO CASTORINA describe prototype chain very well:</p>
-<p>{% img img-responsive images/articles/2016/javascript/prototype_chain.png %}</p>
+<p>img-responsive images/articles/2016/javascript/prototype_chain.png </p>
 <p><strong>Simply Construct</strong></p>
 <p>Code Example:</p>
 <pre class="code literal-block"><span></span><span class="kd">var</span> <span class="nx">o</span> <span class="o">=</span> <span class="p">{</span><span class="nx">a</span><span class="o">:</span> <span class="mi">1</span><span class="p">};</span>
@@ -682,7 +682,7 @@
 
 
 <p>See graph example below:</p>
-<p>{% img img-responsive images/articles/2016/javascript/prototype_chain_2.png %}</p>
+<p>img-responsive images/articles/2016/javascript/prototype_chain_2.png </p>
 <p>Note: <code>var g = new Graph()</code> constructor above equals to following code:</p>
 <pre class="code literal-block"><span></span><span class="kd">var</span> <span class="nx">g</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Object</span><span class="p">();</span>
 <span class="nx">g</span><span class="p">.[[</span><span class="nx">Prototype</span><span class="p">]]</span> <span class="o">=</span> <span class="nx">Graph</span><span class="p">.</span><span class="nx">prototype</span><span class="p">;</span>

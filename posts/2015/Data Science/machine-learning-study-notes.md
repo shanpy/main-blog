@@ -17,4 +17,4 @@
 
 ##Study Notes IPython Notebook
 
-{% notebook machine-learning-study-notes.ipynb %}
+{% notebook machine-learning-study-notes.ipynb 

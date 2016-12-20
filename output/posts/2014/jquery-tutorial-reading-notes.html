@@ -206,13 +206,11 @@ article: http://ogp.me/ns/article#
 
 
 <p><em>Apply Width and Height</em>: <code>.width(Number)</code> and <code>.height(Number)</code> can be used directly</p>
-<p _="%" images_posts_jquery-css-methods.png="images/posts/jQuery-css-methods.png" img>jQuery CSS Methods:</p>
 <h3>DOM Manipulation Methods</h3>
 <p><em>Content Manipulation</em>: <code>.html()</code>. Please refer <a href="../../jquery-reading-note-I">Reading Note I</a> for usage.</p>
 <p><em>DOM Element Replacement</em>: <code>XXX.replaceWith(content)</code>. XXX DOM element is replaced by content.</p>
 <p><em>DOM Remove</em>: <code>XXX.empty()</code> remove all child elements from XXX elements. <code>XXX.remove(selector)</code> remove all matched elemetns from DOM.</p>
 <p><em>DOM Insert</em>: <code>XXX.before(content)</code> or <code>XXX.after(content)</code>.</p>
-<p _="%" images_posts_dom-manipulation-methods.png="images/posts/DOM-Manipulation-Methods.png" img>Other DOM Manipulation Methods:</p>
 <h3>Event Handling</h3>
 <h4>Binding Event Handlers</h4>
 <p><code>selector.bind(eventType, handler)</code> or <code>selector.bind(eventTpe, eventData, handler)</code></p>
@@ -223,8 +221,6 @@ article: http://ogp.me/ns/article#
 <p><code>selector.unbind(eventType, handler)</code> or <code>selector.unbind(eventType)</code></p>
 <p><code>eventType</code>: same as above</p>
 <p><code>handler</code>: the handler that you want to remove</p>
-<h4>Event Types</h4>
-<p>{% img images/posts/event-type.png %}</p>
 <h4>Event Object and Attributes</h4>
 <p><code>event</code> can be used as a parameter in handler callback function. There are several attributes that can be retrived by using <code>event.attributeName</code>. These attribute name returns useful values.</p>
 <p>Example:</p>
@@ -235,16 +231,16 @@ article: http://ogp.me/ns/article#
 </pre>
 
 
-<p _="%" images_posts_event-attributes.png="images/posts/event-attributes.png" img>List of Attributes:</p>
+<p>List of Attributes:
+images/posts/event-attributes.png </p>
 <h4>Event Methods</h4>
-<p _="%" images_posts_event-methods.png="images/posts/event-methods.png" img><code>event</code> parameter can also run some methods to perform specific function. To use it, just do <code>event.XXX();</code> in callback function. Here is a list of event methods:</p>
+<p><code>event</code> parameter can also run some methods to perform specific function. To use it, just do <code>event.XXX();</code> in callback function. Here is a list of event methods:
+images/posts/event-methods.png </p>
 <p>Please note <code>preventDefault()</code> is to prevent current function function working on current element, but <code>stopPropagation()</code> is to prevent <em>parent element's function</em> working on current element.</p>
-<h4>Event Manipulation Methods</h4>
-<p _="%" images_posts_event-manipulation-methods.png="images/posts/event-manipulation-methods.png" img>There are other methods besides <code>bind()</code>, which can be used for jQuery events. Here is a list of them:</p>
-<p><code>hover(over, out)</code>: <code>over</code> and <code>out</code> can be replaced by two functions that you want to perform.</p>
 <h4>Event Helper Methods</h4>
 <p>To trigger an event function YY on XX element, just use <code>XX.YY();</code></p>
-<p _="%" images_posts_binding-methods.png="images/posts/binding-methods.png" img>There are some already defined methods that you can use <code>XX.YY()</code> format to add event to XX element. For example, <code>$("#testId").click(function(){ ... });</code>. Here is a list:</p>
+<p>There are some already defined methods that you can use <code>XX.YY()</code> format to add event to XX element. For example, <code>$("#testId").click(function(){ ... });</code>. Here is a list:
+images/posts/binding-methods.png </p>
 <h2>Part III : Ajax, Effects</h2>
 <h3>Ajax</h3>
 <p>AJAX means <em>Asynchromous JavaScript and XML</em>. It can help load data from server without having to refresh whole page.</p>
@@ -281,7 +277,7 @@ article: http://ogp.me/ns/article#
 
 
 <h4>jQuery Ajax Methods and Events</h4>
-<p>{% img images/posts/ajax_methods_events.png %}</p>
+<p>images/posts/ajax_methods_events.png </p>
 <h3>Events</h3>
 <h4>Show or Hiding or Toggle Elements</h4>
 <p><code>XXX.show(speed,Optional:callback)</code> is used to show the elements. <code>speed</code> can be <code>slow</code>, <code>normal</code>, <code>fast</code> or any milliseconds. <code>callback</code> is optional. You run this function after the animation completes.</p>
@@ -292,7 +288,7 @@ article: http://ogp.me/ns/article#
 
 <p><code>XXX.toggle(Optional:speed, Optional: callback)</code> is used to toggel elements.</p>
 <h4>Other jQuery Events</h4>
-<p>{% img images/posts/jquery_events.png %}</p>
+<p>images/posts/jquery_events.png </p>
 </div>
         </div>
                 <ul class="pager hidden-print">

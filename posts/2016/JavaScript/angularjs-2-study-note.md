@@ -31,7 +31,7 @@ Based on official suggestion, an angular app should contains following parts:
 
 Other parts includes MetaData, Directives, etc. Angular website has a very clear graph which describe how things works together:
 
-{% img img-responsive images/articles/2016/javascript/angular-architecture.png %}
+img-responsive images/articles/2016/javascript/angular-architecture.png 
 
 #Module
 

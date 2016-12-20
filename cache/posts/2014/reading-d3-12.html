@@ -4,7 +4,8 @@
 <h1>Chapter 12 : Map</h1>
 <p>code example for Chapter 12 is <a href="http://shanpy.github.io/Front-End-Playground/D3/Reading-D3-VIII.html"><strong>here</strong></a>.</p>
 <p><code>GeoJSON</code> is a special format for <code>JSON</code>, which is used specially for geography. A typical <code>GeoJSON</code> file is an object with two attributes: <code>type</code> and <code>features</code>. The <code>features</code> attibute is an array of objects. Each objects have geography attributes, such as <code>type</code>,<code>id</code>,<code>properties</code>,<code>geometry</code>.</p>
-<p _="%" images_posts_sampleGeoJSON.png="images/posts/sampleGeoJSON.png" img><code>geometry</code> is a vary useful attributes. It can include <code>coordinate</code> attribue, which inludes <code>longitude,latitude</code> pairs. Note <code>longitude</code> is <em>vertical</em> on map, <code>latitude</code> is <em>horizontal</em> on map. Here is a sample:</p>
+<p><code>geometry</code> is a vary useful attributes. It can include <code>coordinate</code> attribue, which inludes <code>longitude,latitude</code> pairs. Note <code>longitude</code> is <em>vertical</em> on map, <code>latitude</code> is <em>horizontal</em> on map. Here is a sample:
+images/posts/sampleGeoJSON.png </p>
 <p>Step 1: transfer <code>GeoJSON</code> to <code>SVG path</code> code by using <code>d3.geo.path()</code>. Then load <code>GeoJSON</code> file and apply new path:</p>
 <pre class="code literal-block"><span></span><span class="c1">//set a path generator</span>
 <span class="kd">var</span> <span class="nx">path</span> <span class="o">=</span> <span class="nx">d3</span><span class="p">.</span><span class="nx">geo</span><span class="p">.</span><span class="nx">path</span><span class="p">();</span>

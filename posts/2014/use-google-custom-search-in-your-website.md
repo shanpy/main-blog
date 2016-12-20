@@ -10,13 +10,13 @@
 This post is transferred from my <a href="http://blogpengyin.herokuapp.com/">old Hexo blog site</a>, created on 2014.
 
 You need a google account to use Google Custom Search Engine. Go to "www.google.com/cse" and sign in with your Google account.
-{% img images/posts/google_cse.PNG %}
+images/posts/google_cse.PNG 
 
 In the console, click "New search engine" on left menu, then input the website url you want to search from. You also need a name for this new search engine. After finsih setup, click "CREATE" button.
-{% img images/posts/google_cse_create.PNG %}
+images/posts/google_cse_create.PNG 
 
 You need to use `Search Engine ID` for creating RESTful service. To do this, select "Edit search engine" on left menu. In the dropdown, select your search engine. Select "Basics" panel on right, then click "Search engine ID" in details part. A pop up box will appears with your Search Engine ID.
-{% img images/posts/google_cse_id.PNG %}
+images/posts/google_cse_id.PNG 
 
 You also need your api key for creating RESTful service. To do this, you need a project and get its API key in *Google Developers Console*. You can do this by log in "console.developers.google.com" and select "Credentials" in "APIs & auth" menu. You will see API key appearing on right panel.
 

@@ -77,10 +77,12 @@ article: http://ogp.me/ns/article#
 
 <p>Spring can <em>auto-wire</em> relationships between beans without using <code>&lt;constructor-arg&gt;</code> or <code>&lt;property&gt;</code></p>
 <h3>Auto-wiring Modes</h3>
-<p _="%" images_posts_auto-wiring.png="images/posts/auto-wiring.png" img>You should be <code>autowire</code> attribute of the <code>&lt;bean/&gt;</code> element to specify autowire mode for a bean definition. There are four Auto-wiring modes, which are defined in this following table:</p>
+<p>You should be <code>autowire</code> attribute of the <code>&lt;bean/&gt;</code> element to specify autowire mode for a bean definition. There are four Auto-wiring modes, which are defined in this following table:
+images/posts/auto-wiring.png </p>
 <p><code>byType</code> or <code>constructor</code> autowiring mode can be used to wire <em>arrays</em> and other <em>typed-collections</em>.</p>
 <h3>Limitations with Autowiring</h3>
-<p _="%" images_posts_autowiring-limitation.png="images/posts/autowiring-limitation.png" img>Autowiring is great to use across a project. However, it do have limitations and you can override it:</p>
+<p>Autowiring is great to use across a project. However, it do have limitations and you can override it:
+images/posts/autowiring-limitation.png </p>
 <h3>Autowiring By Name*</h3>
 <p>Spring container looks at the beans on which has a <code>autowirte</code> attribute in <code>xml</code> configuration file.</p>
 <p>Then it will go to the java bean class for this bean, and find all attributes that have <code>setter</code> for this bean.</p>

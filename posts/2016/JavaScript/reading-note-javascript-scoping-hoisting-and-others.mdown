@@ -328,7 +328,7 @@ There is `Global Scope` and `Local Scope`.
 
 See graph from Diego Castorina below:
 
-{% img img-responsive images/articles/2016/javascript/scope_chain.png %}
+img-responsive images/articles/2016/javascript/scope_chain.png 
 
 > It’s always the position in the code that defines the scope. When resolving a variable, JavaScript starts at the innermost scope and searches outwards until it finds the variable/object/function it was looking for.
 
@@ -649,7 +649,7 @@ When iterating over the properties of an object, every enumerable property that 
 
 A graph from <a href="https://www.toptal.com/javascript/javascript-prototypes-scopes-and-performance-what-you-need-to-know">JavaScript Prototype Chains, Scope Chains, and Performance: What You Need to Know</a> written by DIEGO CASTORINA describe prototype chain very well:
 
-{% img img-responsive images/articles/2016/javascript/prototype_chain.png %}
+img-responsive images/articles/2016/javascript/prototype_chain.png 
 
 
 **Simply Construct**
@@ -720,7 +720,7 @@ Another example:
 
 See graph example below:
 
-{% img img-responsive images/articles/2016/javascript/prototype_chain_2.png %}
+img-responsive images/articles/2016/javascript/prototype_chain_2.png 
 
 Note: `var g = new Graph()` constructor above equals to following code:
 

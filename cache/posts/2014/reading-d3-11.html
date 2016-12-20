@@ -106,7 +106,8 @@
 </pre>
 
 
-<p _="%" chart data.png images_posts_stack="images/posts/stack" img>Step 2: similar to pie chart, use <code>d3.layout.stack(dataset)</code> to re-generate dataset. Note this will generate a <code>y0</code> value as <em>baseline</em> for each object, which equals to the <em>total</em> of all <code>y</code> value for its previous object / the minimum y-position of the value:</p>
+<p>Step 2: similar to pie chart, use <code>d3.layout.stack(dataset)</code> to re-generate dataset. Note this will generate a <code>y0</code> value as <em>baseline</em> for each object, which equals to the <em>total</em> of all <code>y</code> value for its previous object / the minimum y-position of the value:
+images/posts/stack chart data.png </p>
 <p>Step 3: Assign <code>x</code>,<code>y</code>,<code>width</code>,<code>height</code> attribute to each rect. You need to use <code>d.y0</code> and <code>d.y</code> for <code>y</code> and <code>height</code>:</p>
 <pre class="code literal-block"><span></span><span class="kd">var</span> <span class="nx">rects</span> <span class="o">=</span> <span class="nx">groups</span><span class="p">.</span><span class="nx">selectAll</span><span class="p">(</span><span class="s1">&#39;rect&#39;</span><span class="p">).</span><span class="nx">data</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">d</span><span class="p">){</span>
     <span class="k">return</span> <span class="nx">d</span><span class="p">;</span>

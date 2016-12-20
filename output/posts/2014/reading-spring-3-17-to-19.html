@@ -58,7 +58,8 @@ article: http://ogp.me/ns/article#
 <p>In Spring, the <code>ApplicatonContext</code> publishes certain types of <code>events</code> when loading the beans.</p>
 <p><code>ApplicationEvent</code> class and <code>ApplicationListener</code> interface is used in <code>ApplicationContext</code> to deal with event handling.</p>
 <p>If a bean implements <code>ApplicationListener</code>, then every time <code>ApplicatioContext</code> publish an <code>ApplicationEvent</code>, this bean will be notified.</p>
-<p _="%" images_posts_spring_events.png="images/posts/spring_events.png" img>Spring Events are following:</p>
+<p>Spring Events are following:
+images/posts/spring_events.png </p>
 <p>Spring event handling is <em>single-threaded</em>. So if an event is published, unless all receivers get the message, the processes are <em>blocked</em> and the flow will not continue.</p>
 <p>A bean can <em>implement</em> the <code>ApplicationListener</code> interface to listen a event. <code>ApplicationListener</code> only has one method, which is <code>onApplicationEvent()</code>.</p>
 <p>Example:</p>
@@ -151,9 +152,11 @@ article: http://ogp.me/ns/article#
 <h2>Chapter 19: AOP with Spring Framework</h2>
 <p><code>Aspect Oriented Programming (AOP)</code> entails <em>breaking down</em> program logic into distinct parts called <code>concerns</code>,or <code>crossing-cutting concerns</code>. These concerns are conceptually separate from the application's bussiness logic.</p>
 <p>Spring AOP modules provides interceptors to intercept an application. For example. when a method is executed, you can <em>add extra functionality</em> before or after the method execution.</p>
-<p _="%" images_posts_aop_term2.png="images/posts/AOP_Term2.png" img><em>AOP Terminologies</em>
-{% img images/posts/AOP_Term1.png %}</p>
-<p _="%" images_posts_aop_advice.png="images/posts/AOP_Advice.png" img><em>Type of Advice</em></p>
+<p><em>AOP Terminologies</em>
+images/posts/AOP_Term1.png 
+images/posts/AOP_Term2.png </p>
+<p><em>Type of Advice</em>
+images/posts/AOP_Advice.png </p>
 <h3>XML Schema Based Aspect Implementation</h3>
 <p>Use regular classes along with <code>xml</code> based configuration</p>
 <p><code>xml</code> needs to be configured:</p>

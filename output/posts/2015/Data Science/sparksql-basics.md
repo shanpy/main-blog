@@ -14,7 +14,7 @@
 
 This is a graph of how traditional SQL query is processed, from SparkSQL book:
 
-{% img ../images/articles/2015/data_science/regular_query.png %}
+../images/articles/2015/data_science/regular_query.png 
 
 A traditional SQL query following this sequence: `Result` -> `Data Source` -> `Operation`.
 
@@ -24,13 +24,13 @@ Step 2: RDBMS will **bind** sql query to data source in database system, such as
 
 Execute tree graph from SparkSQL book:
 
-{% img ../images/articles/2015/data_science/sql_execute_tree.png %}
+../images/articles/2015/data_science/sql_execute_tree.png 
 
 During step2, RDBMS will also supply a few execution plan. RDBMS will choose the one with the best optimization.
 
 **When RDBMS parse sql, it will transfer the sql to tree structure:**
 
-{% img ../images/articles/2015/data_science/sql_tree.png %}
+../images/articles/2015/data_science/sql_tree.png 
 
 #SparkSQL
 
@@ -74,7 +74,7 @@ Rule can perform recursive operations by using `Once` and `FixedPoint`.
 
 Analyzer graph from SparkSQL book:
 
-{% img ../images/articles/2015/data_science/sparksql_analyzer.png %}
+../images/articles/2015/data_science/sparksql_analyzer.png 
 
 Face in `RuleExcutor` class for Analyzer:
 
@@ -103,13 +103,13 @@ Source Code:
 
 sqlContext Process Graph from SparkSQL book:
 
-{% img ../images/articles/2015/data_science/sqlcontext_process.png %}
+../images/articles/2015/data_science/sqlcontext_process.png 
 
 ##SparkSQL: catalyst
 
 Design of SparkSQL(1.1) from SparkSQL Book (dash line means future feature):
 
-{% img ../images/articles/2015/data_science/catalyst_design.png %}
+../images/articles/2015/data_science/catalyst_design.png 
 
 Main modules for Catalyst:
 

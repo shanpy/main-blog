@@ -37,7 +37,7 @@ The use of `viewbox` is to expand item to full svg area, following the scale def
 
 A great demo (Chinese) created by **zhangxinyu** can be found <a href="http://www.zhangxinxu.com/study/201408/svg-viewbox-explain.html">here</a>.
 
-{% img img-responsive images/articles/2016/frontend/viewbox.gif %}
+img-responsive images/articles/2016/frontend/viewbox.gif 
 
 #`preserveAspectRatio`
 
@@ -74,7 +74,7 @@ Example Code:
 
 Result from code above. Notice the rectangle is still in *2:3* ratio for *width:height*.
 
-{% img img-responsive images/articles/2016/frontend/ratio-meet %}
+img-responsive images/articles/2016/frontend/ratio-meet 
 
 ##`slice`
 
@@ -82,7 +82,7 @@ Keep current ratio, while expanding `viewbox` till **short slide** of `viewport`
 
 Result from code above. Note *height* is filled first, since it's the shorter side:
 
-{% img img-responsive images/articles/2016/frontend/ratio-slice %}
+img-responsive images/articles/2016/frontend/ratio-slice 
 
 ##`none`
 
@@ -90,11 +90,11 @@ Shapes inside `viewbox` is hardly defined by its own width and height, without f
 
 Result from code above. :
 
-{% img img-responsive images/articles/2016/frontend/ratio-slice %}
+img-responsive images/articles/2016/frontend/ratio-slice 
 
 If no `preserveAspectRatio` is market, following result should be seen:
 
-{% img img-responsive images/articles/2016/frontend/ratio-no %}
+img-responsive images/articles/2016/frontend/ratio-no 
 
 Also see this <a href="http://www.zhangxinxu.com/study/201408/svg-preserveaspectratio-meet-slice-none.html">demo</a> created by *zhangxinxu*.
 

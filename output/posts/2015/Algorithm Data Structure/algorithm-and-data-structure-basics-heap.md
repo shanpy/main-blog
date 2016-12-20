@@ -24,7 +24,7 @@ Heap has following features:
 
 Following is the graph for array implementation of heap, taken from *Data Structures and Algorithms in Java (Second Edition)*:
 
-{% img ../images/articles/2015/algorithm/heap_array.PNG %}
+../images/articles/2015/algorithm/heap_array.PNG 
 
 >As you can see, if the index of a random element in array is `x`, then the index of its parent node is `(x-1)/2`. The index of its left child node is `2*x+1`. The index of its right child node is `2*x+2`
 

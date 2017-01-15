@@ -11,7 +11,19 @@ article: http://ogp.me/ns/article#
 <link href="assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/index-5.html">
-<!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><style>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+    },
+    displayAlign: 'left', // Change this to 'center' to center equations.
+    "HTML-CSS": {
+        styles: {'.MathJax_Display': {"margin": 0}}
+    }
+});
+</script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><style>
     div.input_prompt {
       display: none;
     }
@@ -51,6 +63,58 @@ article: http://ogp.me/ns/article#
 
             </div>
             <div class="body">
+                <div>
+<p>You can view introduction page <a href="http://getbootstrap.com/2.3.2/examples/sticky-footer.html">here</a>.</p>
+<p>Generally A sticky footer is created just like the <code>fixed-nav</code> bar in Bootstrap3. This footer will always stay at the bottom of page, even though there isn't enough content.</p>
+<p>Martin Bean and Ryan Fait also have a Sticky Footer with Fixed Nav Bar page <a href="http://getbootstrap.com/2.3.2/examples/sticky-footer-navbar.html">here</a>.</p>
+<p>Following is part of basic code for Sticky Nav bar with my analysis (You need Bootstrap3 css library):</p>
+<blockquote>
+<p>In HTML, You have two big divs: <code>#wrap</code> and <code>#footer</code>. <code>#footer</code> contains everything you want to put in footer.</p>
+<p><code>#wrap</code> has two small divs: <code>.container</code> and <code>#push</code>. You put all main content in <code>.container</code> and nothing in <code>push</code></p>
+</blockquote>
+<pre class="code literal-block"><span></span>  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="c">&lt;!-- Part 1: Wrap all page content here --&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">"wrap"</span><span class="p">&gt;</span>
+      <span class="c">&lt;!-- Begin page content --&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"container"</span><span class="p">&gt;</span>
+        <span class="c">&lt;!-- Content --&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">"push"</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="c">&lt;!-- Park 2: Footer --&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">"footer"</span><span class="p">&gt;</span>
+      <span class="c">&lt;!-- Footer --&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+   <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</pre>
+
+
+<blockquote>
+<p><code>#wrap</code> takes full height of page. You set this by using <code>min-height</code>. Set <code>height</code> to <code>auto</code> to make sure small amount of content will not shrink <code>#wrap</code>. <code>#wrap</code> has a bottom margin <code>-60px</code>. This number can be changed, but it must be the same height as <code>#push</code> and <code>#footer</code>. This negative margin can allow <code>#footer</code> always stick to bottom of <code>#wrap</code>.</p>
+<p><code>#push</code> is used as a placeholder for <code>#footer</code>. <code>#footer</code> has same height as <code>#push</code>, so it <strong>covers</strong> <code>#push</code> because of the negative margin in <code>#wrap</code>. Items above <code>#push</code> will stay in distance from <code>#footer</code>, because since they have bottom margin to <code>#push</code>, they now have bottom margin to <code>#footer</code>.</p>
+</blockquote>
+<pre class="code literal-block"><span></span>  <span class="c">/* Sticky footer styles</span>
+<span class="c">  -------------------------------------------------- */</span>
+  <span class="nt">html</span><span class="o">,</span>
+  <span class="nt">body</span> <span class="p">{</span>
+    <span class="nb">height</span><span class="o">:</span> <span class="m">100%</span><span class="p">;</span>
+    <span class="c">/* The html and body elements cannot have any padding or margin. */</span>
+  <span class="p">}</span>
+  <span class="c">/* Wrapper for page content to push down footer */</span>
+  <span class="nn">#wrap</span> <span class="p">{</span>
+    <span class="nb">min-height</span><span class="o">:</span> <span class="m">100%</span><span class="p">;</span>
+    <span class="nb">height</span><span class="o">:</span> <span class="nb">auto</span> <span class="cp">!important</span><span class="p">;</span>
+    <span class="c">/* Negative indent footer by it's height */</span>
+    <span class="nb">margin</span><span class="o">:</span> <span class="m">0</span> <span class="nb">auto</span> <span class="m">-60px</span><span class="p">;</span>
+    <span class="c">/**In th</span>
+<span class="c">  }</span>
+<span class="c">  /* Set the fixed height of the footer here */</span>
+  <span class="m">#push</span><span class="o">,</span>
+  <span class="m">#footer</span> <span class="err">{</span>
+    <span class="nb">height</span><span class="o">:</span> <span class="m">60px</span><span class="p">;</span>
+  <span class="p">}</span>
+</pre>
+</div>
             </div>
         </div>
         <div class="post">
@@ -73,6 +137,53 @@ article: http://ogp.me/ns/article#
 
             </div>
             <div class="body">
+                <div>
+<h3>JavaScript Supporting Color Names</h3>
+<p>In JavaScript, there is a list of SAFE color name that you can use directly:</p>
+<ol>
+<li>
+<code>#00FFFF</code> aqua</li>
+<li>
+<code>#000000</code> black</li>
+<li>
+<code>#0000FF</code> blue</li>
+<li>
+<code>#FF00FF</code> fuchsia</li>
+<li>
+<code>#808080</code> gray</li>
+<li>
+<code>#008000</code> green</li>
+<li>
+<code>#00FF00</code> lime</li>
+<li>
+<code>#800000</code> maroon</li>
+<li>
+<code>#000080</code> navy</li>
+<li>
+<code>#808000</code> olive</li>
+<li>
+<code>#800080</code> purple</li>
+<li>
+<code>#FF0000</code> red</li>
+<li>
+<code>#C0C0C0</code> silver</li>
+<li>
+<code>#008080</code> teal</li>
+<li>
+<code>#FFFFFF</code> white</li>
+<li>
+<code>#FFFF00</code> yellow</li>
+</ol>
+<p>All the colors above can be set or retrive directly, using their name. For example:</p>
+<pre class="code literal-block"><span></span><span class="k">if</span><span class="p">(</span><span class="nx">value</span> <span class="o">==</span> <span class="s1">'teal'</span><span class="p">)</span>
+    <span class="nx">value</span> <span class="o">=</span> <span class="s1">'yellow'</span>
+<span class="k">else</span>
+    <span class="nx">value</span> <span class="o">=</span> <span class="s1">'purple'</span>
+</pre>
+
+
+<p>For other colors, you may need to use RBG value in JavaScript, such as 'rgb(0,2,2)'.</p>
+</div>
             </div>
         </div>
         <div class="post">
@@ -96,6 +207,930 @@ article: http://ogp.me/ns/article#
 
             </div>
             <div class="body">
+                <div>
+<h4>Reference List</h4>
+<ul>
+<li>
+<p><a href="https://en.wikibooks.org/wiki/Oracle_Programming/SQL_Cheatsheet">Oracle Programming/SQL Cheatsheet</a></p>
+</li>
+<li>
+<p><a href="http://www.tutorialspoint.com/sql/index.htm">SQL Tutorial on TutorialsPoint</a></p>
+</li>
+</ul>
+<h4>Basic SQL Commands</h4>
+<h6>DDL - Data Definition Language</h6>
+<ul>
+<li>
+<p><code>CREATE</code>: Creates a new table, a view of a table, or other object in database</p>
+</li>
+<li>
+<p><code>ALTER</code>: Modifies an existing database object, such as a table.</p>
+</li>
+<li>
+<p><code>DROP</code>: Deletes an entire table, a view of a table or other object in the database.</p>
+</li>
+</ul>
+<h6>DML - Data Manipulation Language</h6>
+<ul>
+<li>
+<p><code>INSERT</code>: Creates a record</p>
+</li>
+<li>
+<p><code>UPDATE</code>: Modifies records</p>
+</li>
+<li>
+<p><code>DELETE</code>: Deletes records</p>
+</li>
+</ul>
+<h6>DCL - Data Control Language</h6>
+<ul>
+<li>
+<p><code>GRANT</code>: Gives a privilege to user</p>
+</li>
+<li>
+<p><code>REVOKE</code>: Takes back privileges granted from user</p>
+</li>
+</ul>
+<h6>DQL - Data Query Language</h6>
+<ul>
+<li>
+<code>SELECT</code>: Retrieves certain records from one or more tables</li>
+</ul>
+<h4>Data Integrity</h4>
+<p>The following categories of the data integrity exist with each RDBMS:</p>
+<ul>
+<li>
+<p><code>Entity Integrity</code>: There are <strong>no duplicate rows</strong> in a table.</p>
+</li>
+<li>
+<p><code>Domain Integrity</code>: Enforces valid entries for a given column by <strong>restricting the type, the format, or the range of values</strong>.</p>
+</li>
+<li>
+<p><code>Referential Integrity</code>: Rows <strong>cannot be deleted</strong>, which are <strong>used by other records</strong>.</p>
+</li>
+<li>
+<p><code>User-Defined Integrity</code>: Enforces some specific business rules that do not fall into entity, domain or referential integrity.</p>
+</li>
+</ul>
+<h4>Database Normalization</h4>
+<p>Database normalization is the process of efficiently organizing data in a database.</p>
+<p>There are two reasons of the normalization process:</p>
+<ul>
+<li>
+<p>Eliminating redundant data, for example, storing the same data in more than one tables.</p>
+</li>
+<li>
+<p>Ensuring data dependencies make sense.</p>
+</li>
+</ul>
+<p>Normalization guidelines are divided into normal forms; The aim of normal forms is to organize the database structure so that it complies with the rules of <code>first normal form</code>, then <code>second normal form</code>, and finally <code>third normal form</code>.</p>
+<h6>First Normal Form (1NF)</h6>
+<p>First normal form (<code>1NF</code>) sets the very basic rules for an organized database:</p>
+<ul>
+<li>
+<p>Define the data items required, because they become the columns in a table. Place related data items in a table.</p>
+</li>
+<li>
+<p>Ensure that there are <em>no repeating groups of data</em>.</p>
+</li>
+<li>
+<p>Ensure that there is a <em>primary key</em>.</p>
+</li>
+</ul>
+<h6>First Rule of 1NF</h6>
+<p>You must define the data items.</p>
+<p>This means looking at the data to be stored, organizing the data into columns, defining what type of data each column contains, and finally putting related columns into their own table.</p>
+<h6>Second Rule of 1NF</h6>
+<p>Ensure that there are no repeating groups of data: you may need to <code>JOIN</code> tables.</p>
+<h6>Third Rule of 1NF</h6>
+<p>Create primary key: <code>CREATE TABLE CUSTOMERS(PRIMARY KEY (ID));</code></p>
+<h6>Second Normal Form (2NF)</h6>
+<p>Second normal form states that it should meet all the rules for 1NF and there must be no partial dependences of any of the columns on the primary key.</p>
+<p>Example:</p>
+<p>Consider a customer-order relation and you want to store customer ID, customer name, order ID and order detail, and date of purchase:</p>
+<pre class="code literal-block"><span></span><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">CUSTOMERS</span><span class="p">(</span>
+    <span class="n">CUST_ID</span> <span class="nb">INT</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+    <span class="n">CUST_NAME</span> <span class="nb">VARCHAR</span> <span class="p">(</span><span class="mi">20</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+    <span class="n">ORDER_ID</span> <span class="nb">INT</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+    <span class="n">ORDER_DETAIL</span> <span class="nb">VARCHAR</span> <span class="p">(</span><span class="mi">20</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+    <span class="n">SALE_DATE</span> <span class="n">DATETIME</span><span class="p">,</span>
+    <span class="k">PRIMARY</span> <span class="k">KEY</span> <span class="p">(</span><span class="n">CUST_ID</span><span class="p">,</span> <span class="n">ORDER_ID</span><span class="p">)</span> <span class="p">);</span>
+</pre>
+
+
+<p>This table is in first normal form, in that it obeys all the rules of first normal form.</p>
+<p>In this table, the primary key consists of <code>CUST_ID</code> and <code>ORDER_ID</code>. Combined, they are unique assuming same customer would hardly order same thing.</p>
+<p>However, the table is not in second normal form because there are partial dependencies of primary keys and columns:</p>
+<ul>
+<li>
+<p><code>CUST_NAME</code> is dependent on <code>CUST_ID</code>.</p>
+</li>
+<li>
+<p>Order detail and purchase date are dependent on <code>ORDER_ID</code>, but they are not dependent on <code>CUST_ID</code>, because there's no link between a CUST_ID and an ORDER_DETAIL or their SALE_DATE.</p>
+</li>
+<li>
+<p>No real link between a customer's name and what he purchased.</p>
+</li>
+</ul>
+<blockquote>
+<p>To make this table comply with second normal form, you need to separate the columns into three tables.</p>
+</blockquote>
+<h6>Third Normal Form (3NF)</h6>
+<p>A table is in third normal form when the following conditions are met:</p>
+<ul>
+<li>
+<p>It is in second normal form.</p>
+</li>
+<li>
+<p>All nonprimary fields are dependent on the primary key.</p>
+</li>
+</ul>
+<p>The dependency of nonprimary fields is between the data.</p>
+<p>Example:</p>
+<pre class="code literal-block"><span></span><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">CUSTOMERS</span><span class="p">(</span>
+    <span class="n">CUST_ID</span> <span class="nb">INT</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+    <span class="n">CUST_NAME</span> <span class="nb">VARCHAR</span> <span class="p">(</span><span class="mi">20</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+    <span class="n">DOB</span> <span class="nb">DATE</span><span class="p">,</span>
+    <span class="n">STREET</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">200</span><span class="p">),</span>
+    <span class="n">CITY</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">100</span><span class="p">),</span>
+    <span class="k">STATE</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">100</span><span class="p">),</span>
+    <span class="n">ZIP</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">12</span><span class="p">),</span>
+    <span class="n">EMAIL_ID</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">256</span><span class="p">),</span>
+    <span class="k">PRIMARY</span> <span class="k">KEY</span> <span class="p">(</span><span class="n">CUST_ID</span><span class="p">)</span> <span class="p">);</span>
+</pre>
+
+
+<p>The dependency between <code>zip code</code> and <code>address</code> is called a <strong>transitive dependency</strong>.</p>
+<p>To comply with third normal form, all you need to do is move the Street, City, and State fields into their own table.</p>
+<p>The advantages of removing transitive dependencies:
+- The amount of data duplication is reduced and therefore your database becomes smaller.</p>
+<ul>
+<li>Data integrity.</li>
+</ul>
+<blockquote>
+<p>When duplicated data changes, there's a big risk of updating only some of the data, especially if it's spread out in a number of different places in the database.</p>
+</blockquote>
+<h4>SELECT</h4>
+<p><code>SELECT INTO</code> can only retrieve <strong>one</strong> line of item. Empty line will get <em>NO_DATA_FOUND</em> error. Mutiple lines will get <em>TOO_MANY_ROWS</em> error.</p>
+<h4>LIKE</h4>
+<p>User <code>LIKE</code> to compare a value to similar values using wildcard operators.</p>
+<p>There are two wildcards used in conjunction with the LIKE operator:</p>
+<ul>
+<li>
+<p>The percent sign <code>%</code></p>
+</li>
+<li>
+<p>The underscore <code>_</code></p>
+</li>
+</ul>
+<p>Example:</p>
+<p><code>WHERE SALARY LIKE '2_%_%'</code>: Finds any values that start with 2 and are at least 3 characters in length</p>
+<h4>TOP</h4>
+<p>The SQL <code>TOP</code> clause is used to fetch a TOP N number or X percent records from a table.</p>
+<p>Note: All the databases do not support TOP clause. For example MySQL supports <code>LIMIT</code> clause to fetch limited number of records and Oracle uses <code>ROWNUM</code> to fetch limited number of records.</p>
+<p>Syntax:</p>
+<pre class="code literal-block"><span></span><span class="k">SELECT</span> <span class="n">TOP</span> <span class="nb">number</span><span class="o">|</span><span class="n">percent</span> <span class="k">column_name</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="k">FROM</span> <span class="k">table_name</span>
+<span class="k">WHERE</span> <span class="p">[</span><span class="n">condition</span><span class="p">]</span>
+</pre>
+
+
+<p>MySQL:</p>
+<pre class="code literal-block"><span></span><span class="k">SELECT</span> <span class="n">columns</span>
+<span class="k">FROM</span> <span class="k">table</span>
+<span class="k">LIMIT</span> <span class="p">[</span><span class="n">condition</span><span class="p">]</span>
+</pre>
+
+
+<p>Oracle Server:</p>
+<pre class="code literal-block"><span></span><span class="k">SELECT</span> <span class="n">columns</span>
+<span class="k">FROM</span> <span class="k">table</span>
+<span class="k">WHERE</span> <span class="p">[</span><span class="n">ROWNUM</span> <span class="n">condition</span><span class="p">]</span>
+</pre>
+
+
+<h4>ORDER BY</h4>
+<p>The SQL <code>ORDER BY</code> clause is used to sort the data in ascending or descending order, based on one or more columns.</p>
+<p>Some database sorts query results in ascending order by default.</p>
+<p>You can use more than one column in the <code>ORDER BY</code> clause. Make sure whatever column you are using to sort, that column should be in column-list.</p>
+<p>Syntax:</p>
+<pre class="code literal-block"><span></span><span class="k">SELECT</span> <span class="k">column</span><span class="o">-</span><span class="n">list</span>
+<span class="k">FROM</span> <span class="k">table_name</span>
+<span class="p">[</span><span class="k">WHERE</span> <span class="n">condition</span><span class="p">]</span>
+<span class="p">[</span><span class="k">ORDER</span> <span class="k">BY</span> <span class="n">column1</span><span class="p">,</span> <span class="n">column2</span><span class="p">,</span> <span class="p">..</span> <span class="n">columnN</span><span class="p">]</span> <span class="p">[</span><span class="k">ASC</span> <span class="o">|</span> <span class="k">DESC</span><span class="p">];</span>
+</pre>
+
+
+<h4>GROUP BY</h4>
+<p>The SQL <code>GROUP BY</code> clause is used in collaboration with the <code>SELECT</code> statement to arrange identical data into groups.</p>
+<p>The <code>GROUP BY</code> clause follows the <code>WHERE</code> clause in a <code>SELECT</code> statement and must precedes the <code>ORDER BY</code> clause.</p>
+<p>Syntax:</p>
+<pre class="code literal-block"><span></span><span class="k">SELECT</span> <span class="n">column1</span><span class="p">,</span> <span class="n">column2</span>
+<span class="k">FROM</span> <span class="k">table_name</span>
+<span class="k">WHERE</span> <span class="p">[</span> <span class="n">conditions</span> <span class="p">]</span>
+<span class="k">GROUP</span> <span class="k">BY</span> <span class="n">column1</span><span class="p">,</span> <span class="n">column2</span>
+<span class="k">ORDER</span> <span class="k">BY</span> <span class="n">column1</span><span class="p">,</span> <span class="n">column2</span>
+</pre>
+
+
+<h4>DISTINCT</h4>
+<p>The SQL <code>DISTINCT</code> keyword is used in conjunction with <code>SELECT</code> statement to eliminate all the duplicate records and fetching only unique records.</p>
+<p>Syntax:</p>
+<pre class="code literal-block"><span></span><span class="k">SELECT</span> <span class="k">DISTINCT</span> <span class="n">column1</span><span class="p">,</span> <span class="n">column2</span><span class="p">,.....</span><span class="n">columnN</span>
+<span class="k">FROM</span> <span class="k">table_name</span>
+<span class="k">WHERE</span> <span class="p">[</span><span class="n">condition</span><span class="p">]</span>
+</pre>
+
+
+<h4>SQL Constraints</h4>
+<p>Constraints could be column level or table level.</p>
+<p>Commonly used constraints:</p>
+<ul>
+<li>
+<p><code>NOT NULL</code> Constraint: Ensures that a column cannot have <code>NULL</code> value.</p>
+</li>
+<li>
+<p><code>DEFAULT</code> Constraint: Provides a default value for a column when none is specified.</p>
+</li>
+<li>
+<p><code>UNIQUE</code> Constraint: Ensures that all values in a column are different.</p>
+</li>
+<li>
+<p><code>PRIMARY</code> Key: Uniquely identified each rows/records in a database table.</p>
+</li>
+<li>
+<p><code>FOREIGN</code> Key: Uniquely identified a rows/records in any another database table.</p>
+</li>
+<li>
+<p><code>CHECK</code> Constraint: The <code>CHECK</code> constraint ensures that all values in a column <em>satisfy certain conditions</em>.</p>
+</li>
+<li>
+<p><code>INDEX</code>: Use to create and retrieve data from the database very quickly.</p>
+</li>
+</ul>
+<h6>NOT NULL</h6>
+<p>A NULL is not the same as no data, rather, it represents unknown data.</p>
+<p>Example: <code>CREATE TABLE CUSTOMERS( ID  INT  NOT NULL);</code></p>
+<h6>DEFAULT</h6>
+<p>In case <code>INSERT INTO</code> or <code>INSERT</code> statement does not provide a value for such column, then the column will have a default value.</p>
+<p>Example:</p>
+<ul>
+<li>
+<p><code>CREATE TABLE CUSTOMERS(ID  INT  NOT NULL)</code></p>
+</li>
+<li>
+<p><code>ALTER COLUMN SALARY DROP DEFAULT;</code></p>
+</li>
+</ul>
+<h6>PRIMARY KEY</h6>
+<p>A primary key is a field in a table which uniquely identifies each row/record in a database table.</p>
+<p>Primary keys must contain unique values. A primary key column cannot have <code>NULL</code> values.</p>
+<p>A table can have only one primary key. When multiple fields are used as a primary key, they are called a <code>composite key</code>.</p>
+<blockquote>
+<p>NOTE: If you use the <code>ALTER TABLE</code> statement to add a primary key, the primary key column(s) must already have been declared to not contain <code>NULL</code> values (when the table was first created).</p>
+</blockquote>
+<p>Example: <code>CREATE TABLE CUSTOMERS( PRIMARY KEY (ID, NAME) );</code></p>
+<h6>FOREIGN KEY</h6>
+<p>A <code>foreign key</code> is a key used to link two tables together. This is sometimes called a <code>referencing key</code>.</p>
+<p>Foreign Key is a column or a combination of columns whose values match a Primary Key in a different table.</p>
+<p>The relationship between 2 tables matches the Primary Key in one of the tables with a Foreign Key in the second table.</p>
+<p>Example:</p>
+<p><code>CREATE TABLE ORDERS (  CUSTOMER_ID INT references CUSTOMERS(ID) );</code></p>
+<pre class="code literal-block"><span></span><span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n">ORDERS</span>
+<span class="k">DROP</span> <span class="k">FOREIGN</span> <span class="k">KEY</span><span class="p">;</span>
+</pre>
+
+
+<p>If ORDERS table has already been created, and the foreign key has not yet been set, use the syntax for specifying a foreign key by altering a table:</p>
+<pre class="code literal-block"><span></span><span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n">ORDERS</span>
+<span class="k">ADD</span> <span class="k">FOREIGN</span> <span class="k">KEY</span> <span class="p">(</span><span class="n">Customer_ID</span><span class="p">)</span> <span class="k">REFERENCES</span> <span class="n">CUSTOMERS</span> <span class="p">(</span><span class="n">ID</span><span class="p">);</span>
+</pre>
+
+
+<h6>CHECK</h6>
+<p>The <code>CHECK</code> Constraint enables a condition to check the value being entered into a record. If the condition evaluates to false, the record violates the constraint and isn't entered into the table.</p>
+<p>Example:</p>
+<p><code>CREATE TABLE CUSTOMERS(AGE INT NOT NULL CHECK (AGE &gt;= 18));</code></p>
+<pre class="code literal-block"><span></span><span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n">CUSTOMERS</span>
+    <span class="k">MODIFY</span> <span class="n">AGE</span> <span class="nb">INT</span> <span class="k">NOT</span> <span class="k">NULL</span> <span class="k">CHECK</span> <span class="p">(</span><span class="n">AGE</span> <span class="o">&gt;=</span> <span class="mi">18</span> <span class="p">);</span>
+<span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n">CUSTOMERS</span>
+    <span class="k">ADD</span> <span class="k">CONSTRAINT</span> <span class="n">myCheckConstraint</span> <span class="k">CHECK</span><span class="p">(</span><span class="n">AGE</span> <span class="o">&gt;=</span> <span class="mi">18</span><span class="p">);</span>
+<span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n">CUSTOMERS</span>
+    <span class="k">DROP</span> <span class="k">CONSTRAINT</span> <span class="n">myCheckConstraint</span><span class="p">;</span>
+</pre>
+
+
+<h6>INDEX</h6>
+<p>The <code>INDEX</code> is used to create and retrieve data from the database very quickly.</p>
+<p>Index can be created by using single or group of columns in a table.</p>
+<p>When index is created, it is assigned a <code>ROWID</code> for each row before it sorts out the data.</p>
+<p>Example:</p>
+<pre class="code literal-block"><span></span><span class="k">CREATE</span> <span class="k">INDEX</span> <span class="n">index_name</span>
+    <span class="k">ON</span> <span class="k">table_name</span> <span class="p">(</span> <span class="n">column1</span><span class="p">,</span> <span class="n">column2</span><span class="p">.....);</span>
+<span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n">CUSTOMERS</span>
+    <span class="k">DROP</span> <span class="k">INDEX</span> <span class="n">idx_age</span><span class="p">;</span>
+</pre>
+
+
+<h4>JOIN</h4>
+<p>JOIN is performed in the WHERE clause. Several operators can be used to join tables, such as =, &lt;, &gt;, &lt;&gt;, &lt;=, &gt;=, !=, BETWEEN, LIKE, and NOT;</p>
+<p>There are different types of joins available in SQL:</p>
+<ul>
+<li>
+<p><code>INNER JOIN</code>: returns rows when there is a match in <strong>both tables</strong>.</p>
+</li>
+<li>
+<p><code>LEFT JOIN</code>: returns all rows from the <strong>left table</strong>, even if there are no matches in the right table.</p>
+</li>
+<li>
+<p><code>RIGHT JOIN</code>: returns all rows from the <strong>right table</strong>, even if there are no matches in the left table.</p>
+</li>
+<li>
+<p><code>FULL JOIN</code>: returns rows when there is a match <strong>in one of the tables</strong>.</p>
+</li>
+<li>
+<p><code>SELF JOIN</code>: is used to <strong>join a table to itself</strong> as if the table were two tables, temporarily renaming at least one table in the SQL statement.</p>
+</li>
+<li>
+<p><code>CARTESIAN JOIN</code>: returns the <strong>Cartesian product</strong> of the sets of records from the two or more joined tables.</p>
+</li>
+</ul>
+<h6>INNER JOIN</h6>
+<p>When the join-predicate is satisfied, column values for each matched pair of rows of A and B are combined into a result row.</p>
+<p>Example:</p>
+<pre class="code literal-block"><span></span><span class="k">SQL</span><span class="o">&gt;</span> <span class="k">SELECT</span>  <span class="n">ID</span><span class="p">,</span> <span class="n">NAME</span><span class="p">,</span> <span class="n">AMOUNT</span><span class="p">,</span> <span class="nb">DATE</span>
+ <span class="k">FROM</span> <span class="n">CUSTOMERS</span>
+ <span class="k">INNER</span> <span class="k">JOIN</span> <span class="n">ORDERS</span>
+ <span class="k">ON</span> <span class="n">CUSTOMERS</span><span class="p">.</span><span class="n">ID</span> <span class="o">=</span> <span class="n">ORDERS</span><span class="p">.</span><span class="n">CUSTOMER_ID</span><span class="p">;</span>
+</pre>
+
+
+<h6>LEFT JOIN</h6>
+<p>The SQL LEFT JOIN returns all rows from the left table, even if there are no matches in the right table.</p>
+<p>This means that if the ON clause matches 0 (zero) records in right table, the join will still return a row in the result, but with <code>NULL</code> in each column <strong>from right table</strong>.</p>
+<p>This means that a left join returns all the values from the left table, plus matched values from the right table or NULL in case of no matching join predicate.</p>
+<p>Syntax:</p>
+<pre class="code literal-block"><span></span><span class="k">SELECT</span> <span class="n">table1</span><span class="p">.</span><span class="n">column1</span><span class="p">,</span> <span class="n">table2</span><span class="p">.</span><span class="n">column2</span><span class="p">...</span>
+<span class="k">FROM</span> <span class="n">table1</span>
+<span class="k">LEFT</span> <span class="k">JOIN</span> <span class="n">table2</span>
+<span class="k">ON</span> <span class="n">table1</span><span class="p">.</span><span class="n">common_field</span> <span class="o">=</span> <span class="n">table2</span><span class="p">.</span><span class="n">common_field</span><span class="p">;</span>
+</pre>
+
+
+<p>RIGHT JOIN is similar.</p>
+<h6>FULL JOIN</h6>
+<p>The SQL FULL JOIN combines <strong>the results of both left and right outer joins</strong>.</p>
+<p>The joined table will contain all records from both tables, and fill in NULLs for missing matches on either side.</p>
+<h6>SELF JOIN</h6>
+<p>Syntax:</p>
+<pre class="code literal-block"><span></span><span class="k">SELECT</span> <span class="n">a</span><span class="p">.</span><span class="k">column_name</span><span class="p">,</span> <span class="n">b</span><span class="p">.</span><span class="k">column_name</span><span class="p">...</span>
+<span class="k">FROM</span> <span class="n">table1</span> <span class="n">a</span><span class="p">,</span> <span class="n">table1</span> <span class="n">b</span>
+<span class="k">WHERE</span> <span class="n">a</span><span class="p">.</span><span class="n">common_field</span> <span class="o">=</span> <span class="n">b</span><span class="p">.</span><span class="n">common_field</span><span class="p">;</span>
+</pre>
+
+
+<h6>CARTESIAN JOIN/CROSS JOIN</h6>
+<p>The <code>CARTESIAN JOIN</code> or <code>CROSS JOIN</code> returns the Cartesian product of the sets of records from the two or more joined tables.</p>
+<p>Thus, it equates to <em>an inner join where the join-condition always evaluates to True</em> or <em>where the join-condition is absent</em> from the statement.</p>
+<p>Syntax:</p>
+<pre class="code literal-block"><span></span><span class="k">SELECT</span> <span class="n">table1</span><span class="p">.</span><span class="n">column1</span><span class="p">,</span> <span class="n">table2</span><span class="p">.</span><span class="n">column2</span><span class="p">...</span>
+<span class="k">FROM</span>  <span class="n">table1</span><span class="p">,</span> <span class="n">table2</span> <span class="p">[,</span> <span class="n">table3</span> <span class="p">]</span>
+</pre>
+
+
+<h4>UNION</h4>
+<p>The SQL <code>UNION</code> clause/operator is used to combine the results of two or more SELECT statements <strong>without returning any duplicate rows</strong>.</p>
+<p>To use UNION, each SELECT must have <em>the same number of columns selected, the same number of column expressions, the same data type, and have them in the same order</em>, but they do not have to be the same length.</p>
+<p>Syntax:</p>
+<pre class="code literal-block"><span></span><span class="k">SELECT</span> <span class="n">column1</span> <span class="p">[,</span> <span class="n">column2</span> <span class="p">]</span>
+    <span class="k">FROM</span> <span class="n">table1</span> <span class="p">[,</span> <span class="n">table2</span> <span class="p">]</span>
+    <span class="p">[</span><span class="k">WHERE</span> <span class="n">condition</span><span class="p">]</span>
+<span class="k">UNION</span>
+<span class="k">SELECT</span> <span class="n">column1</span> <span class="p">[,</span> <span class="n">column2</span> <span class="p">]</span>
+    <span class="k">FROM</span> <span class="n">table1</span> <span class="p">[,</span> <span class="n">table2</span> <span class="p">]</span>
+    <span class="p">[</span><span class="k">WHERE</span> <span class="n">condition</span><span class="p">]</span>
+</pre>
+
+
+<p>The <code>UNION ALL</code> operator is used to combine the results of two SELECT statements <strong>including duplicate rows</strong>.</p>
+<p>There are two other clauses (i.e., operators), which are very similar to UNION clause:</p>
+<ul>
+<li>
+<p>SQL <code>INTERSECT</code> Clause</p>
+</li>
+<li>
+<p>SQL <code>EXCEPT</code> Clause</p>
+</li>
+</ul>
+<h6>INTERSECT</h6>
+<p>The SQL <code>INTERSECT</code> clause/operator is used to combine two SELECT statements, but returns rows only from the first SELECT statement that are identical to a row in the second SELECT statement.</p>
+<p>This means INTERSECT returns <em>only common rows returned by the two SELECT statements</em>.</p>
+<p>Syntax:</p>
+<pre class="code literal-block"><span></span><span class="k">SELECT</span> <span class="n">column1</span> <span class="p">[,</span> <span class="n">column2</span> <span class="p">]</span>
+    <span class="k">FROM</span> <span class="n">table1</span> <span class="p">[,</span> <span class="n">table2</span> <span class="p">]</span>
+    <span class="p">[</span><span class="k">WHERE</span> <span class="n">condition</span><span class="p">]</span>
+<span class="k">INTERSECT</span>
+<span class="k">SELECT</span> <span class="n">column1</span> <span class="p">[,</span> <span class="n">column2</span> <span class="p">]</span>
+    <span class="k">FROM</span> <span class="n">table1</span> <span class="p">[,</span> <span class="n">table2</span> <span class="p">]</span>
+    <span class="p">[</span><span class="k">WHERE</span> <span class="n">condition</span><span class="p">]</span>
+</pre>
+
+
+<h6>EXCEPT</h6>
+<p>The SQL <code>EXCEPT</code> clause/operator is used to combine two SELECT statements and returns rows from the first SELECT statement that are not returned by the second SELECT statement.</p>
+<p>This means EXCEPT returns only rows, which <em>are not available in second SELECT statement</em>.</p>
+<p>Syntax is similar to <code>INTERSECT</code>.</p>
+<h4>NULL VALUES</h4>
+<p>SQL NULL is the term used to represent <strong>no</strong> value.</p>
+<p>It is very important to understand that a NULL value is different than a zero value or a field that contains spaces.</p>
+<p>You must use the <code>IS NULL</code> or <code>IS NOT NULL</code> operators in order to check for a NULL value.</p>
+<h4>SQL Alias</h4>
+<p>User can rename a table or a column <strong>temporarily</strong> by giving another name known as <code>alias</code>.</p>
+<p>Syntax:</p>
+<pre class="code literal-block"><span></span><span class="k">SELECT</span> <span class="n">column1</span><span class="p">,</span> <span class="n">column2</span><span class="p">....</span>
+<span class="k">FROM</span> <span class="k">table_name</span> <span class="k">AS</span> <span class="n">alias_name</span>
+<span class="k">WHERE</span> <span class="p">[</span><span class="n">condition</span><span class="p">];</span>
+
+<span class="p">:::</span><span class="k">sql</span>
+<span class="k">SELECT</span> <span class="k">column_name</span> <span class="k">AS</span> <span class="n">alias_name</span>
+<span class="k">FROM</span> <span class="k">table_name</span>
+<span class="k">WHERE</span> <span class="p">[</span><span class="n">condition</span><span class="p">];</span>
+</pre>
+
+
+<p>Example:</p>
+<pre class="code literal-block"><span></span><span class="k">SQL</span><span class="o">&gt;</span> <span class="k">SELECT</span> <span class="k">C</span><span class="p">.</span><span class="n">ID</span><span class="p">,</span> <span class="k">C</span><span class="p">.</span><span class="n">NAME</span><span class="p">,</span> <span class="k">C</span><span class="p">.</span><span class="n">AGE</span><span class="p">,</span> <span class="n">O</span><span class="p">.</span><span class="n">AMOUNT</span>
+<span class="k">FROM</span> <span class="n">CUSTOMERS</span> <span class="k">AS</span> <span class="k">C</span><span class="p">,</span> <span class="n">ORDERS</span> <span class="k">AS</span> <span class="n">O</span>
+<span class="k">WHERE</span> <span class="k">C</span><span class="p">.</span><span class="n">ID</span> <span class="o">=</span> <span class="n">O</span><span class="p">.</span><span class="n">CUSTOMER_ID</span><span class="p">;</span>
+</pre>
+
+
+<h4>SQL INDEX</h4>
+<p><code>Index</code> is special lookup table that the database search engine can use to speed up data retrieval. i.e. an index is a <strong>pointer to data</strong> in a table.</p>
+<p>An index helps <strong>speed up</strong> <code>SELECT</code> queries and <code>WHERE</code> clauses, but it <strong>slows down</strong> data input, with <code>UPDATE</code> and <code>INSERT</code> statements. Indexes can be created or dropped with no effect on the data.</p>
+<h6>CREATE</h6>
+<p>Creating index involves the <code>CREATE INDEX</code> statement, which allows you to name the index, to specify the table and which column or columns to index, and to indicate whether the index is in ascending or descending
+order.</p>
+<p>Indexes can also be <strong>unique</strong>, similar to the UNIQUE constraint, in that the index prevents duplicate entries in the column or combination of columns on which there's an index.</p>
+<p>Syntax:</p>
+<pre class="code literal-block"><span></span><span class="k">CREATE</span> <span class="k">INDEX</span> <span class="n">index_name</span> <span class="k">ON</span> <span class="k">table_name</span><span class="p">;</span>
+</pre>
+
+
+<p>Single-Column Indexes:</p>
+<pre class="code literal-block"><span></span><span class="k">CREATE</span> <span class="k">INDEX</span> <span class="n">index_name</span>
+<span class="k">ON</span> <span class="k">table_name</span> <span class="p">(</span><span class="k">column_name</span><span class="p">);</span>
+</pre>
+
+
+<h6>Unique Indexes</h6>
+<p>A unique index does not allow any duplicate values to be inserted into the table.</p>
+<p>Syntax:</p>
+<pre class="code literal-block"><span></span><span class="k">CREATE</span> <span class="k">UNIQUE</span> <span class="k">INDEX</span> <span class="n">index_name</span> <span class="k">on</span> <span class="k">table_name</span><span class="p">(</span><span class="k">column_name</span><span class="p">);</span>
+</pre>
+
+
+<h6>Composite Indexes</h6>
+<p>Should there be only one column used, a single-column index should be the choice.</p>
+<p>Should there be two or more columns that are frequently used in the WHERE clause as filters, the composite index would be the best choice.</p>
+<pre class="code literal-block"><span></span><span class="k">CREATE</span> <span class="k">INDEX</span> <span class="n">index_name</span>
+<span class="k">on</span> <span class="k">table_name</span> <span class="p">(</span><span class="n">column1</span><span class="p">,</span> <span class="n">column2</span><span class="p">);</span>
+</pre>
+
+
+<h6>Implicit Indexed</h6>
+<p>Implicit indexes are indexes that are automatically created by the database server when an object is created.</p>
+<p>Indexes are automatically created for <strong>primary key constraints and unique constraints</strong>.</p>
+<h6>DROP</h6>
+<p>Syntax:</p>
+<pre class="code literal-block"><span></span><span class="k">DROP</span> <span class="k">INDEX</span> <span class="n">index_name</span><span class="p">;</span>
+</pre>
+
+
+<h6>WHEN TO AVOID INDEX</h6>
+<p>The following guidelines indicate when the use of an index should be reconsidered:</p>
+<ul>
+<li>
+<p>Indexes should not be used on <strong>small tables</strong>.</p>
+</li>
+<li>
+<p>Tables that have frequent, large <strong>batch update</strong> or <strong>insert</strong> operations.</p>
+</li>
+<li>
+<p>Indexes should not be used on columns that contain a high number of NULL values.</p>
+</li>
+<li>
+<p>Columns that are <strong>frequently manipulated</strong> should not be indexed.</p>
+</li>
+</ul>
+<h4>ALTER TABLE</h4>
+<p>SQL <code>ALTER TABLE</code> command is used to add, delete or modify columns in an existing table.</p>
+<p>Syntax:</p>
+<pre class="code literal-block"><span></span><span class="k">ALTER</span> <span class="k">TABLE</span> <span class="k">table_name</span>
+<span class="k">DO</span> <span class="n">SOMETHING</span>
+</pre>
+
+
+<h4>TRUNACTE TABLE</h4>
+<p>SQL <code>TRUNCATE TABLE</code> command is used to <strong>delete complete data</strong> from an existing table.</p>
+<p>Syntax:</p>
+<pre class="code literal-block"><span></span><span class="k">TRUNCATE</span> <span class="k">TABLE</span> <span class="k">table_name</span><span class="p">;</span>
+</pre>
+
+
+<h4>VIEWS</h4>
+<p>View is nothing more than a SQL statement that is stored in the database with an associated name.</p>
+<p>A view is actually a composition of a table in the form of a predefined SQL query.</p>
+<p>A view can contain all rows of a table or select rows from a table.</p>
+<p>A view can be created from one or many tables which depends on the written SQL query to create a view.</p>
+<h6>CREATING VIEW</h6>
+<p>Database views are created using the <code>CREATE VIEW</code> statement.</p>
+<p>Views can be created from a single table, multiple tables, or another view.</p>
+<pre class="code literal-block"><span></span><span class="k">CREATE</span> <span class="k">VIEW</span> <span class="n">view_name</span> <span class="k">AS</span>
+<span class="k">SELECT</span> <span class="n">column1</span><span class="p">,</span> <span class="n">column2</span><span class="p">.....</span>
+<span class="k">FROM</span> <span class="k">table_name</span>
+<span class="k">WHERE</span> <span class="p">[</span><span class="n">condition</span><span class="p">];</span>
+
+<span class="p">:::</span><span class="k">sql</span>
+<span class="k">SQL</span> <span class="o">&gt;</span> <span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">CUSTOMERS_VIEW</span><span class="p">;</span>
+</pre>
+
+
+<h6>WITH CHECK OPTION</h6>
+<p>The <code>WITH CHECK OPTION</code> is a <code>CREATE VIEW</code> statement option.</p>
+<p>The purpose of the WITH CHECK OPTION is to ensure that <strong>all UPDATE and INSERTs satisfy the condition(s) in the view definition</strong>.</p>
+<p>If they do not satisfy the condition(s), the UPDATE or INSERT returns an error.</p>
+<p>Example:</p>
+<pre class="code literal-block"><span></span><span class="k">CREATE</span> <span class="k">VIEW</span> <span class="n">CUSTOMERS_VIEW</span> <span class="k">AS</span>
+<span class="k">SELECT</span> <span class="n">name</span><span class="p">,</span> <span class="n">age</span>
+<span class="k">FROM</span> <span class="n">CUSTOMERS</span>
+<span class="k">WHERE</span> <span class="n">age</span> <span class="k">IS</span> <span class="k">NOT</span> <span class="k">NULL</span>
+<span class="k">WITH</span> <span class="k">CHECK</span> <span class="k">OPTION</span><span class="p">;</span>
+</pre>
+
+
+<p>The WITH CHECK OPTION in this case should deny the entry of any NULL values in the view's AGE column.</p>
+<h6>UPDATE VIEW</h6>
+<p>A VIEW can be updated in certain conditions:</p>
+<ul>
+<li>
+<p>The SELECT clause may not contain the keyword DISTINCT.</p>
+</li>
+<li>
+<p>The SELECT clause may not contain summary functions.</p>
+</li>
+<li>
+<p>The SELECT clause may not contain set functions.</p>
+</li>
+<li>
+<p>The SELECT clause may not contain set operators.</p>
+</li>
+<li>
+<p>The SELECT clause may not contain an ORDER BY clause.</p>
+</li>
+<li>
+<p>The FROM clause may not contain multiple tables.</p>
+</li>
+<li>
+<p>The WHERE clause may not contain subqueries.</p>
+</li>
+<li>
+<p>The query may not contain GROUP BY or HAVING.</p>
+</li>
+<li>
+<p>Calculated columns may not be updated.</p>
+</li>
+<li>
+<p>All NOT NULL columns from the base table must be included in the view in order for the INSERT query to function.</p>
+</li>
+</ul>
+<p>Example:</p>
+<pre class="code literal-block"><span></span><span class="k">SQL</span> <span class="o">&gt;</span> <span class="k">UPDATE</span> <span class="n">CUSTOMERS_VIEW</span>
+<span class="k">SET</span> <span class="n">AGE</span> <span class="o">=</span> <span class="mi">35</span>
+<span class="k">WHERE</span> <span class="n">name</span><span class="o">=</span><span class="s1">'Ramesh'</span><span class="p">;</span>
+</pre>
+
+
+<p>This would ultimately update the base table CUSTOMERS <strong>and</strong> same would reflect in the view itself.</p>
+<h6>INSERT OR DELETE ROWS</h6>
+<p>Rows of data can be inserted/deleted from a view.</p>
+<p>Example:</p>
+<pre class="code literal-block"><span></span><span class="k">SQL</span> <span class="o">&gt;</span> <span class="k">DELETE</span> <span class="k">FROM</span> <span class="n">CUSTOMERS_VIEW</span>
+<span class="k">WHERE</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">22</span><span class="p">;</span>
+</pre>
+
+
+<p>This would ultimately delete a row from the base table CUSTOMERS <strong>and</strong> same would reflect in the view itself.</p>
+<h6>DROP VIEW</h6>
+<p>Syntax:</p>
+<pre class="code literal-block"><span></span><span class="k">DROP</span> <span class="k">VIEW</span> <span class="n">view_name</span><span class="p">;</span>
+</pre>
+
+
+<h4>HAVING CLAUSE</h4>
+<p>HAVING clause enables you to specify conditions that filter which group results appear in the final results.</p>
+<p><code>HAVING</code> clause places conditions on groups created by the <code>GROUP BY</code> clause.</p>
+<p>Syntax:</p>
+<pre class="code literal-block"><span></span><span class="k">SELECT</span>
+<span class="k">FROM</span>
+<span class="k">WHERE</span>
+<span class="k">GROUP</span> <span class="k">BY</span>
+<span class="k">HAVING</span>
+<span class="k">ORDER</span> <span class="k">BY</span>
+</pre>
+
+
+<p>The <code>HAVING</code> clause must follow the <code>GROUP BY</code> clause in a query and must also precede the <code>ORDER BY</code> clause if used.</p>
+<p>Example:</p>
+<pre class="code literal-block"><span></span><span class="k">SELECT</span> <span class="n">column1</span><span class="p">,</span> <span class="n">column2</span>
+<span class="k">FROM</span> <span class="n">table1</span><span class="p">,</span> <span class="n">table2</span>
+<span class="k">WHERE</span> <span class="p">[</span> <span class="n">conditions</span> <span class="p">]</span>
+<span class="k">GROUP</span> <span class="k">BY</span> <span class="n">column1</span><span class="p">,</span> <span class="n">column2</span>
+<span class="k">HAVING</span> <span class="p">[</span> <span class="n">conditions</span> <span class="p">]</span>
+<span class="k">ORDER</span> <span class="k">BY</span> <span class="n">column1</span><span class="p">,</span> <span class="n">column2</span>
+</pre>
+
+
+<h4>TANSACTIONS</h4>
+<p>Transaction is a unit of work that is performed <strong>against a database</strong>.</p>
+<p>Transactions are <strong>units</strong> or <strong>sequences</strong> of work accomplished in a logical order, whether in a manual fashion by a user or automatically by some sort of a database program.</p>
+<p>A transaction is the propagation of one or more changes to the database.</p>
+<p>Practically, you will club many SQL queries into a group and you will execute all of them together as a part of a transaction.</p>
+<h6>PROPERTIES OF TRANSACTIONS</h6>
+<p>Transactions have the following four standard properties, usually referred to by the acronym <code>ACID</code>:</p>
+<ul>
+<li>
+<p><code>Atomicity</code>: ensures that all operations within the work unit are completed successfully; otherwise, the transaction is aborted at the point of failure, and previous operations are rolled back to their former state.</p>
+</li>
+<li>
+<p><code>Consistency</code>: ensures that the database properly changes states upon a successfully committed transaction.</p>
+</li>
+<li>
+<p><code>Isolation</code>: enables transactions to operate independently of and transparent to each other.</p>
+</li>
+<li>
+<p><code>Durability</code>: ensures that the result or effect of a committed transaction persists in case of a system failure.</p>
+</li>
+</ul>
+<h6>TRANSACTION CONTROL</h6>
+<p>There are following commands used to control transactions:</p>
+<ul>
+<li>
+<p><code>COMMIT</code>: to save the changes.</p>
+</li>
+<li>
+<p><code>ROLLBACK</code>: to rollback the changes.</p>
+</li>
+<li>
+<p><code>SAVEPOINT</code>: creates points within groups of transactions in which to ROLLBACK</p>
+</li>
+<li>
+<p><code>SET TRANSACTION</code>: Places a name on a transaction.</p>
+</li>
+</ul>
+<p>Transactional control commands are only used with the DML commands <code>INSERT</code>, <code>UPDATE</code> and <code>DELETE</code> only.</p>
+<p>They can not be used while creating tables or dropping them because these operations are automatically committed in the database.</p>
+<h6>COMMIT</h6>
+<p>The COMMIT command is the transactional command used to <strong>save changes</strong> invoked by a transaction to the database.</p>
+<p>The COMMIT command saves all transactions to the database since the last <code>COMMIT</code> or <code>ROLLBACK</code> command.</p>
+<p>The syntax for COMMIT command is as follows:</p>
+<pre class="code literal-block"><span></span><span class="k">COMMIT</span><span class="p">;</span>
+</pre>
+
+
+<h6>ROLLBACK</h6>
+<p>The ROLLBACK command is the transactional command used to <strong>undo transactions</strong> that <strong>have not already been saved</strong> to the database.</p>
+<p>The ROLLBACK command can only be used to undo transactions since the last <code>COMMIT</code> or <code>ROLLBACK</code> command was issued.</p>
+<p>The syntax for ROLLBACK command is as follows:</p>
+<pre class="code literal-block"><span></span><span class="k">ROLLBACK</span><span class="p">;</span>
+</pre>
+
+
+<h6>SAVEPOINT</h6>
+<p>A SAVEPOINT is a point in a transaction when you can roll the transaction back to a certain point without rolling back the entire transaction.</p>
+<p>The syntax for SAVEPOINT command is as follows:</p>
+<pre class="code literal-block"><span></span><span class="n">SAVEPOINT</span> <span class="n">SAVEPOINT_NAME</span><span class="p">;</span>
+</pre>
+
+
+<p>This command serves only in the creation of a SAVEPOINT among transactional statements.</p>
+<p>The ROLLBACK command is used to undo a group of transactions.</p>
+<p>The syntax for rolling back to a SAVEPOINT is as follows:</p>
+<pre class="code literal-block"><span></span><span class="k">ROLLBACK</span> <span class="k">TO</span> <span class="n">SAVEPOINT_NAME</span><span class="p">;</span>
+</pre>
+
+
+<h6>RELEASE SAVEPOINT</h6>
+<p>The RELEASE SAVEPOINT command is used to <strong>remove</strong> a <code>SAVEPOINT</code> that you have created.</p>
+<p>Syntax:</p>
+<pre class="code literal-block"><span></span><span class="n">RELEASE</span> <span class="n">SAVEPOINT</span> <span class="n">SAVEPOINT_NAME</span><span class="p">;</span>
+</pre>
+
+
+<h6>SET TRANSACTION</h6>
+<p>The SET TRANSACTION command can be used to <strong>initiate</strong> a database transaction.</p>
+<pre class="code literal-block"><span></span><span class="k">SET</span> <span class="n">TRANSACTION</span> <span class="p">[</span> <span class="k">READ</span> <span class="k">WRITE</span> <span class="o">|</span> <span class="k">READ</span> <span class="k">ONLY</span> <span class="p">];</span>
+</pre>
+
+
+<h4>WILDCARD IN SQL</h4>
+<h6>TYPES</h6>
+<ul>
+<li>
+<p><code>%</code>: Matches <strong>one or more</strong> characters. Note that MS Access uses the asterisk (<code>*</code>) wildcard character instead of the percent sign (<code>%</code>) wildcard character.</p>
+</li>
+<li>
+<p><code>_</code>: Matches <strong>one</strong> character. Note that MS Access uses a question mark (<code>?</code>) instead of the underscore (<code>_</code>) to match any one character.</p>
+</li>
+</ul>
+<p>The percent sign represents zero, one, or multiple characters. The underscore represents a single number or character. The symbols can be used in combinations.</p>
+<h6>Example</h6>
+<p><code>WHERE SALARY LIKE '2_%_%'</code>: Finds any values that start with 2 and are at least 3 characters in length</p>
+<h4>TEMPORARY TABLE</h4>
+<p>Temporary Tables are a great feature that lets you store and process intermediate results by using the same selection, update, and join capabilities that you can use with typical SQL Server tables.</p>
+<p>The temporary tables could be very useful in some cases to <strong>keep temporary data</strong>.</p>
+<blockquote>
+<p>Temporary tables will be deleted when the current client session terminates.</p>
+</blockquote>
+<p>Example:</p>
+<pre class="code literal-block"><span></span><span class="n">mysql</span><span class="o">&gt;</span> <span class="k">CREATE</span> <span class="k">TEMPORARY</span> <span class="k">TABLE</span> <span class="n">SALESSUMMARY</span> <span class="p">(</span>
+<span class="o">-&gt;</span> <span class="n">product_name</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span>
+<span class="o">-&gt;</span> <span class="p">,</span> <span class="n">total_sales</span> <span class="nb">DECIMAL</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span> <span class="k">DEFAULT</span> <span class="mi">0</span><span class="p">.</span><span class="mi">00</span>
+<span class="o">-&gt;</span> <span class="p">,</span> <span class="n">avg_unit_price</span> <span class="nb">DECIMAL</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span> <span class="k">DEFAULT</span> <span class="mi">0</span><span class="p">.</span><span class="mi">00</span>
+<span class="o">-&gt;</span> <span class="p">,</span> <span class="n">total_units_sold</span> <span class="nb">INT</span> <span class="n">UNSIGNED</span> <span class="k">NOT</span> <span class="k">NULL</span> <span class="k">DEFAULT</span> <span class="mi">0</span>
+<span class="p">);</span>
+<span class="n">Query</span> <span class="n">OK</span><span class="p">,</span> <span class="mi">0</span> <span class="k">rows</span> <span class="n">affected</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">00</span> <span class="n">sec</span><span class="p">)</span>
+</pre>
+
+
+<p>When you issue a <code>SHOW TABLES</code> command, then your temporary table <strong>would not be listed out</strong> in the list.</p>
+<p>Now if you will log out of the MySQL session and then you will issue a SELECT command, then you will find no data available in the database.</p>
+<p>Even your temporary table would also not exist.</p>
+<p>By default, all the temporary tables are deleted by MySQL when your database connection gets terminated.</p>
+<h4>SQL CLONE TABLES</h4>
+<p>If you are using MySQL RDBMS, you can handle this situation by the following steps:</p>
+<ul>
+<li>
+<p>Use <code>SHOW CREATE TABLE</code> command to get a <code>CREATE TABLE</code> statement that specifies the source table's structure, indexes and all.</p>
+</li>
+<li>
+<p>Modify the statement to change the table name to that of the clone table and execute the statement. This way you will have exact clone table.</p>
+</li>
+<li>
+<p>Optionally, if you need the table contents copied as well, issue an <code>INSERT INTO ... SELECT</code> statement, too.</p>
+</li>
+</ul>
+<h4>SQL SUBQUERY</h4>
+<p><code>Subquery</code> or <code>Inner query</code> or <code>Nested query</code> is a query within another SQL query and embedded within the WHERE clause.</p>
+<p>There are a few rules that subqueries must follow:</p>
+<ul>
+<li>
+<p>Subqueries must be enclosed within parentheses.</p>
+</li>
+<li>
+<p>A subquery can have only one column in the SELECT clause, unless multiple columns are in the main query for the subquery to compare its selected columns.</p>
+</li>
+<li>
+<p>An ORDER BY cannot be used in a subquery, although the main query can use an ORDER BY. The GROUP BY can be used to perform the same function as the ORDER BY in a subquery.</p>
+</li>
+<li>
+<p>Subqueries that return more than one row can only be used with multiple value operators, such as the IN operator.</p>
+</li>
+<li>
+<p>The SELECT list cannot include any references to values that evaluate to a BLOB, ARRAY, CLOB, or NCLOB.</p>
+</li>
+<li>
+<p>A subquery cannot be immediately enclosed in a set function.</p>
+</li>
+<li>
+<p>The BETWEEN operator cannot be used with a subquery; however, the BETWEEN operator can be used within the subquery.</p>
+</li>
+</ul>
+<h6>SELECT EXAMPLE</h6>
+<pre class="code literal-block"><span></span><span class="p">(</span><span class="k">SELECT</span> <span class="k">column_name</span> <span class="p">[,</span> <span class="k">column_name</span> <span class="p">]</span>
+<span class="k">FROM</span> <span class="n">table1</span> <span class="p">[,</span> <span class="n">table2</span> <span class="p">]</span>
+<span class="p">[</span><span class="k">WHERE</span><span class="p">])</span>
+</pre>
+
+
+<h6>INSERT EXAMPLE</h6>
+<pre class="code literal-block"><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="k">table_name</span> <span class="p">[</span> <span class="p">(</span><span class="n">column1</span> <span class="p">[,</span> <span class="n">column2</span> <span class="p">])</span> <span class="p">]</span>
+<span class="k">SELECT</span> <span class="p">[</span> <span class="o">*|</span><span class="n">column1</span> <span class="p">[,</span> <span class="n">column2</span> <span class="p">]</span>
+<span class="k">FROM</span> <span class="n">table1</span> <span class="p">[,</span> <span class="n">table2</span> <span class="p">]</span>
+<span class="p">[</span> <span class="k">WHERE</span> <span class="n">VALUE</span> <span class="k">OPERATOR</span> <span class="p">]</span>
+</pre>
+
+
+<h6>UPDATE EXAMPLE</h6>
+<pre class="code literal-block"><span></span><span class="k">UPDATE</span> <span class="k">table</span>
+<span class="k">SET</span> <span class="k">column_name</span> <span class="o">=</span> <span class="n">new_value</span>
+<span class="p">[</span> <span class="k">WHERE</span> <span class="k">OPERATOR</span> <span class="p">[</span> <span class="n">VALUE</span> <span class="p">]</span>
+<span class="p">(</span><span class="k">SELECT</span> <span class="k">COLUMN_NAME</span>
+<span class="k">FROM</span> <span class="k">TABLE_NAME</span><span class="p">)</span>
+<span class="p">[</span> <span class="k">WHERE</span><span class="p">)</span> <span class="p">]</span>
+</pre>
+
+
+<h6>DELETE EXAMPLE</h6>
+<pre class="code literal-block"><span></span><span class="k">DELETE</span> <span class="k">FROM</span> <span class="k">TABLE_NAME</span>
+<span class="p">[</span> <span class="k">WHERE</span> <span class="k">OPERATOR</span> <span class="p">[</span> <span class="n">VALUE</span> <span class="p">]</span>
+<span class="p">(</span><span class="k">SELECT</span> <span class="k">COLUMN_NAME</span>
+<span class="k">FROM</span> <span class="k">TABLE_NAME</span><span class="p">)</span>
+<span class="p">[</span> <span class="k">WHERE</span><span class="p">)</span> <span class="p">]</span>
+</pre>
+
+
+<h4>SEQUENCE</h4>
+<p>Sequence is <strong>a set of integers</strong> 1, 2, 3, ... that are generated in order on demand.</p>
+<h6>CREATING</h6>
+<p>The simplest way in MySQL to use sequences is to define a column as <code>AUTO_INCREMENT</code> and leave rest of the things to MySQL to take care.</p>
+<pre class="code literal-block"><span></span><span class="n">mysql</span><span class="o">&gt;</span> <span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">INSECT</span>
+<span class="o">-&gt;</span> <span class="p">(</span>
+<span class="o">-&gt;</span> <span class="n">id</span> <span class="nb">INT</span> <span class="n">UNSIGNED</span> <span class="k">NOT</span> <span class="k">NULL</span> <span class="n">AUTO_INCREMENT</span><span class="p">,</span>
+<span class="o">-&gt;</span> <span class="k">PRIMARY</span> <span class="k">KEY</span> <span class="p">(</span><span class="n">id</span><span class="p">),</span>
+<span class="o">-&gt;</span> <span class="n">name</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span> <span class="o">#</span> <span class="k">type</span> <span class="k">of</span> <span class="n">insect</span>
+<span class="o">-&gt;</span> <span class="nb">date</span> <span class="nb">DATE</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span> <span class="o">#</span> <span class="nb">date</span> <span class="n">collected</span>
+<span class="o">-&gt;</span> <span class="n">origin</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span> <span class="o">#</span> <span class="k">where</span> <span class="n">collected</span>
+<span class="p">);</span>
+<span class="n">Query</span> <span class="n">OK</span><span class="p">,</span> <span class="mi">0</span> <span class="k">rows</span> <span class="n">affected</span> <span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">02</span> <span class="n">sec</span><span class="p">)</span>
+</pre>
+
+
+<h6>RENUMBERING</h6>
+<p>There may be a case when you have deleted many records from a table and you want to resequence all the records.</p>
+<p>This can be done by using a simple trick but you should be very careful to do so if your table is having joins with other table.</p>
+<p>If you determine that resequencing an AUTO_INCREMENT column is unavoidable, the way to do it is to:</p>
+<ol>
+<li>
+<p>drop the column from the table</p>
+</li>
+<li>
+<p>add it again.</p>
+</li>
+</ol>
+<p>The following example shows how to renumber the id values in the insect
+table using this technique:</p>
+<pre class="code literal-block"><span></span><span class="n">mysql</span><span class="o">&gt;</span> <span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n">INSECT</span> <span class="k">DROP</span> <span class="n">id</span><span class="p">;</span>
+<span class="n">mysql</span><span class="o">&gt;</span> <span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n">insect</span>
+    <span class="o">-&gt;</span> <span class="k">ADD</span> <span class="n">id</span> <span class="nb">INT</span> <span class="n">UNSIGNED</span> <span class="k">NOT</span> <span class="k">NULL</span> <span class="n">AUTO_INCREMENT</span> <span class="k">FIRST</span><span class="p">,</span>
+    <span class="o">-&gt;</span> <span class="k">ADD</span> <span class="k">PRIMARY</span> <span class="k">KEY</span> <span class="p">(</span><span class="n">id</span><span class="p">);</span>
+</pre>
+
+
+<h6>ASSIGN START VALUE</h6>
+<p>By default, MySQL will start sequence from 1 but you can specify any other number as well at the time of table creation.</p>
+<pre class="code literal-block"><span></span><span class="n">id</span> <span class="nb">INT</span> <span class="n">UNSIGNED</span> <span class="k">NOT</span> <span class="k">NULL</span> <span class="n">AUTO_INCREMENT</span> <span class="o">=</span> <span class="mi">100</span>
+</pre>
+
+
+<p>Alternative:</p>
+<pre class="code literal-block"><span></span><span class="n">mysql</span><span class="o">&gt;</span> <span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n">t</span> <span class="n">AUTO_INCREMENT</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+</pre>
+
+
+<h4>DUPLICATES</h4>
+<p>The SQL <code>DISTINCT</code> keyword, which we already have discussed, is used in conjunction with <code>SELECT</code> statement to eliminate all the duplicate records and fetching only unique records.</p>
+<p>Syntax:</p>
+<pre class="code literal-block"><span></span><span class="k">SELECT</span> <span class="k">DISTINCT</span> <span class="n">column1</span><span class="p">,</span> <span class="n">column2</span><span class="p">,.....</span><span class="n">columnN</span>
+<span class="k">FROM</span> <span class="k">table_name</span>
+<span class="k">WHERE</span> <span class="p">[</span><span class="n">condition</span><span class="p">]</span>
+</pre>
+
+
+<h4>SQL USFUL FUNCTIONS</h4>
+<ul>
+<li>
+<p>SQL <code>COUNT</code> Function - The SQL COUNT aggregate function is used to count the number of rows in a database table.</p>
+</li>
+<li>
+<p>SQL <code>MAX</code> Function - The SQL MAX aggregate function allows us to select the highest (maximum) value for a certain column.</p>
+</li>
+<li>
+<p>SQL <code>MIN</code> Function - The SQL MIN aggregate function allows us to select the lowest (minimum) value for a certain column.</p>
+</li>
+<li>
+<p>SQL <code>AVG</code> Function - The SQL AVG aggregate function selects the average value for certain table column.</p>
+</li>
+<li>
+<p>SQL <code>SUM</code> Function - The SQL SUM aggregate function allows selecting the total for a numeric column.</p>
+</li>
+<li>
+<p>SQL <code>SQRT</code> Functions - This is used to generate a square root of a given number.</p>
+</li>
+<li>
+<p>SQL <code>RAND</code> Function - This is used to generate a random number using SQL command.</p>
+</li>
+<li>
+<p>SQL <code>CONCAT</code> Function - This is used to concatenate any string inside any SQL command.</p>
+</li>
+<li>
+<p>SQL <code>Numeric</code> Functions - Complete list of SQL functions required to manipulate numbers in SQL.</p>
+</li>
+<li>
+<p>SQL <code>String</code> Functions - Complete list of SQL functions required to manipulate strings in SQL.</p>
+</li>
+</ul>
+</div>
             </div>
         </div>
         <div class="post">
@@ -119,6 +1154,113 @@ article: http://ogp.me/ns/article#
 
             </div>
             <div class="body">
+                <div>
+<hr>
+<p>In Spring MVC, if AJAX pass back a <code>String</code>, use <code>JSON.parse()</code> to transfer it to JSON object first.</p>
+<hr>
+<h4>Use Session Object in Controller</h4>
+<p>Way1:</p>
+<pre class="code literal-block"><span></span><span class="err">\\</span><span class="o">...(...</span><span class="na">HttpSession</span> <span class="n">sessionObj</span><span class="o">){</span>
+    <span class="n">sessionobj</span><span class="o">.</span><span class="na">setAttribute</span><span class="o">(</span><span class="err">'</span><span class="n">name_of_attribute</span><span class="err">'</span><span class="o">,</span> <span class="n">attribute_object</span><span class="o">);</span>
+    <span class="k">return</span> <span class="s">"redirect:/..."</span><span class="o">;</span>
+<span class="o">}</span>
+</pre>
+
+
+<p>Way2:</p>
+<pre class="code literal-block"><span></span><span class="err">\\</span><span class="o">...(...</span><span class="na">HttpSevletRequest</span> <span class="n">req</span><span class="o">){</span>
+    <span class="n">HttpSession</span> <span class="n">session</span> <span class="o">=</span> <span class="n">req</span><span class="o">.</span><span class="na">getSession</span><span class="o">();</span>
+    <span class="n">Object_Type</span> <span class="n">obj</span> <span class="o">=</span> <span class="o">(</span><span class="n">Object_Type</span><span class="o">)</span><span class="n">session</span><span class="o">.</span><span class="na">getAttribute</span><span class="o">(</span><span class="s">"name_of_attribute"</span><span class="o">);</span>
+    <span class="c1">//Object_Type: int, String, float, etc</span>
+<span class="o">}</span>
+</pre>
+
+
+<p>Different from <code>flash attribute</code>, if we use session, attribute in front-end will not be erased after reloading.</p>
+<hr>
+<h3>Spring MVC Form Tips</h3>
+<h4>Spring Form Validation:</h4>
+<p>Way 1:</p>
+<pre class="code literal-block"><span></span><span class="p">&lt;</span><span class="nt">form:form</span> <span class="err">...</span> <span class="na">onsubmit</span><span class="o">=</span><span class="s">'return valid()'</span><span class="p">&gt;</span>
+    <span class="c">&lt;!--. Code... --&gt;</span>
+<span class="p">&lt;/</span><span class="nt">form:form</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="kd">function</span> <span class="nx">valid</span><span class="p">(){</span>
+    <span class="c1">//...return true;</span>
+    <span class="c1">//...return false;</span>
+<span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</pre>
+
+
+<p>Way 2:</p>
+<pre class="code literal-block"><span></span><span class="p">&lt;</span><span class="nt">form:form</span> <span class="err">...</span><span class="p">&gt;</span>
+    <span class="c">&lt;!--. Code... --&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">"valid(event)"</span><span class="p">&gt;</span>Submit<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="kd">function</span> <span class="nx">valid</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+    <span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();;</span>
+
+    <span class="c1">//...Add Validation JavaScript</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'#form_id'</span><span class="p">).</span><span class="nx">submit</span><span class="p">();</span>
+<span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</pre>
+
+
+<h4>Submit Spring Form in jQuery:</h4>
+<pre class="code literal-block"><span></span><span class="nx">$</span><span class="p">(</span><span class="s1">'#Form_ID'</span><span class="p">).</span><span class="nx">submit</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span>
+        <span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+        <span class="c1">//...</span>
+        <span class="nx">$</span><span class="p">.</span><span class="nx">each</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">i</span><span class="p">,</span><span class="nx">v</span><span class="p">){</span>
+                <span class="kd">var</span> <span class="nx">all_inputs</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="nx">v</span><span class="p">);</span> <span class="c1">//value of &lt;form:input&gt;</span>
+                <span class="c1">//The is a way of get Spring form input value in JavaScript</span>
+                <span class="c1">//i is index, v is value. You can use this method to iterate JSON object</span>
+            <span class="p">})</span>
+    <span class="p">});</span>
+</pre>
+
+
+<blockquote>
+<p>If you add <code>value</code> attribute for <code>&lt;form:input&gt;</code>, you may got <code>No Such Element</code> error</p>
+<p>If you are using Eclipse, comment your unwanted Spring code will not work! You should remove unwanted Spring code instead of commenting them, because Eclipse will compile Spring code anyway, and you may get error because of that.</p>
+</blockquote>
+<hr>
+<h3>Spring and AJAX</h3>
+<p>I wrote any post about Spring and AJAX <a href="http://pengyin-shan.com/ajax-and-spring-mvc-controller.html">here</a>.
+Post Method in jQuery:</p>
+<pre class="code literal-block"><span></span><span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
+        <span class="nx">contentType</span><span class="o">:</span> <span class="s2">"application/json; charset = urf-8;"</span>
+        <span class="nx">url</span><span class="o">:</span> <span class="s1">'...'</span><span class="p">,</span>
+        <span class="nx">type</span><span class="o">:</span> <span class="s1">'POST'</span><span class="p">,</span>
+        <span class="nx">data</span><span class="o">:</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">json_obj</span><span class="p">),</span>
+        <span class="nx">success</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">result</span><span class="p">,</span> <span class="nx">textStatus</span><span class="p">,</span> <span class="nx">jqXHR</span><span class="p">){</span>
+            <span class="c1">//...;</span>
+        <span class="p">},</span>
+        <span class="nx">error</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">jqXHR</span><span class="p">,</span> <span class="nx">textStatus</span><span class="p">,</span> <span class="nb">Error</span><span class="p">){</span>
+            <span class="c1">//...;</span>
+        <span class="p">}</span>
+    <span class="p">});</span>
+</pre>
+
+
+<p>Post Method in Spring Controller:</p>
+<pre class="code literal-block"><span></span><span class="nd">@RequestMapping</span><span class="o">(</span><span class="n">value</span><span class="o">=</span><span class="s">"/your_mapping_url"</span><span class="o">,</span> <span class="n">method</span><span class="o">={</span><span class="n">RequestMethod</span><span class="o">:</span> <span class="n">POST</span><span class="o">})</span>
+<span class="kd">public</span> <span class="nd">@ResponseBody</span> <span class="n">String</span><span class="o">/</span><span class="n">ModelAndView</span> <span class="o">(</span><span class="nd">@RequestBoday</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">json_obj</span><span class="o">){</span>
+    <span class="c1">//...You may want to parse json_obj to JSONObject</span>
+<span class="o">}</span>
+</pre>
+
+
+<blockquote>
+<p>In Java, a <code>Gson</code> library from <a href="https://code.google.com/p/google-gson/">Google</a> can transfer Java <code>Object</code> to <code>JSONObject</code> directly.</p>
+<p>Example:</p>
+</blockquote>
+<pre class="code literal-block"><span></span><span class="n">Gson</span> <span class="n">gson</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Gson</span><span class="o">();</span>
+<span class="n">String</span> <span class="n">json_str</span> <span class="o">=</span> <span class="n">gson</span><span class="o">.</span><span class="na">toJson</span><span class="o">(</span><span class="n">Object_Instance</span><span class="o">);</span>
+</pre>
+</div>
             </div>
         </div>
         <div class="post">
@@ -144,6 +1286,70 @@ article: http://ogp.me/ns/article#
 
             </div>
             <div class="body">
+                <div>
+<p>After reading a few useful posts and some debugging time, I successfully installed <strong>Apache Spark</strong> on my Ubuntu 15 machine. I also add <strong>PySpark</strong> in <strong>IPython Notebook</strong> for development purpose.</p>
+<p>Many thanks to author of these articles:</p>
+<p><a href="http://blog.cloudera.com/blog/2014/08/how-to-use-ipython-notebook-with-apache-spark/">How-to: Use IPython Notebook with Apache Spark</a>, written by Uri Laserson.</p>
+<p><a href="http://ramhiser.com/2015/02/01/configuring-ipython-notebook-support-for-pyspark/">Configuring IPython Notebook Support for PySpark</a>, written by John Ramey.</p>
+<p><a href="https://beingzy.github.io/tutorial/2014/10/13/spark-tutorial-Part-I-setting-up-spark-and-ipython-notebook-within-10-minutes.html">Spark Tutorial (Part I): Setting Up Spark and IPython Notebook within 10 minutes</a>, written by Yi Zhang.</p>
+<p><a href="https://ipython.org/ipython-doc/dev/config/intro.html">Introduction to IPython Configuration</a></p>
+<h3>Install Python and IPython Notebook</h3>
+<p>I highly recommend you using <a href="https://virtualenv.pypa.io/en/latest/">Virtualenv</a> or <a href="https://store.continuum.io/cshop/anaconda/">Anacona</a> for Python package control.</p>
+<p>You need to install <strong>Python</strong> and <strong>pip</strong> first (You can find installation documents through Google Search). Then in terminal, type following:</p>
+<pre class="code literal-block"><span></span><span class="gp">$</span>pip install <span class="s2">"ipython[notebook]"</span>
+</pre>
+
+
+<p>If you want to install everything for IPython, including Notebook, type following in terminal:</p>
+<pre class="code literal-block"><span></span><span class="gp">$</span>pip install <span class="s2">"ipython[all]"</span>
+</pre>
+
+
+<p>You can test your installation by type following command in terminal (Make sure you are in right environment):</p>
+<pre class="code literal-block"><span></span><span class="gp">$</span>ipython notebook
+</pre>
+
+
+<p>Your default browser should open a window with IPython Notebook interface.</p>
+<h3>Install Spark and PySpark</h3>
+<p>You can download Spark from <a href="https://spark.apache.org/downloads.html">here</a>. You can install either source code package, or a pre-build package. All packages can be installed and configured for IPython Notebook.</p>
+<p>Pre-build package can be extracted and being used directly. If you download source package, you need to do this after extracting:</p>
+<pre class="code literal-block"><span></span><span class="gp">$</span><span class="nb">cd</span> your_spark_source_folder
+<span class="gp">$</span>sbt/sbt assembly
+</pre>
+
+
+<blockquote>
+<p>This process may take a while :)</p>
+</blockquote>
+<p>You may need to install <strong>sbt</strong> first. For Linux user, please refer to this article: <a href="http://www.scala-sbt.org/0.13/tutorial/Installing-sbt-on-Linux.html">Installing sbt on Linux</a>.</p>
+<p>You can test your installation by doing following:</p>
+<pre class="code literal-block"><span></span><span class="gp">$</span><span class="nb">cd</span> your_spark_folder
+<span class="gp">$</span>./bin/pyspark
+</pre>
+
+
+<blockquote>
+<p>You need java jdk installed on your machine and JAVA_HOME has been set, otherwise PySpark will throw error for that, such as:</p>
+</blockquote>
+<p>../images/articles/2015/python/hadoop2.6_java_home_dir_problem.png </p>
+<blockquote>
+<p>Make sure your JAVA_HOME pointing to home folder of your desired JDK. For example, I want to use Oracle JDK 8. So I type <code>sudo update-alternatives --config java</code> in terminal to find preferred JDK path (JDK 8 in my case), then add<code>export JAVA_HOME=/usr/lib/jvm/java-8-oracle</code> in <code>.bashrc</code> file.</p>
+</blockquote>
+<p>You should see following in your terminal. Type <code>sc</code> and you should see output as <code>SparkContext</code>:</p>
+<p>../images/articles/2015/python/test_pyspark.png </p>
+<h3>Configure PySpark and IPython Notebook</h3>
+<p>Based on my experience, PySpark has good support for Python 2.7, but not Python 3. I recommend you use <strong>Python 2.7</strong> in this step.</p>
+<p><a href="http://ramhiser.com/2015/02/01/configuring-ipython-notebook-support-for-pyspark/">Configuring IPython Notebook Support for PySpark</a>, written by John Ramey, gave a very good description of steps you need to follow. However, you need to remember doing following:</p>
+<p>In <code>.bashrc</code> and <code>00-pyspark-setup.py</code>, make sure you have your own Spark folder name. Check your <code>your_spark_folder/python/lib</code> for py4j version.</p>
+<p>After you do <code>ipython notebook --profile=pyspark</code>, you will open Jupyter web interface in your default browser, using the <code>c.NotebookApp.port</code> in your <code>.bashrc</code> file.</p>
+<p>In Jupyter interface, You can upload one existing IPython Notebook to test your configuration by clicking <code>Upload</code> button, Or create a new IPython Notebook by clicking <code>new</code> button, then select <code>Python 2</code> or <code>Python 3</code> in drop-down menu.</p>
+<p>In IPython Notebook interface, create a new cell and type <code>sc</code>. When you run this cell, you should see <code>SparkContext</code> object, same as following:</p>
+<p>../images/articles/2015/python/test_pyspark_notebook.png </p>
+<blockquote>
+<p>Now, if your IPython Notebook show message: <code>NameError: name 'sc' is not defined</code>, which means your IPython Notebook doesn't use PySpark profile. You can try typing <code>ipython --profile=pyspark</code> in terminal to make PySpark as default IPython profile, then try <code>ipython notebook --profile=pyspark</code> again. PySpark should be available now.</p>
+</blockquote>
+</div>
             </div>
         </div>
         <div class="post">
@@ -171,6 +1377,163 @@ article: http://ogp.me/ns/article#
 
             </div>
             <div class="body">
+                <div>
+<p>In my job, I always counter problem of creating dropdowns for web development project. Sometimes I can use Bootstrap, jQuery. Sometimes I have to use pure JavaScript. I also need to perform control options to dropdowns ocationally.</p>
+<p>I want to write this post to record all ways and tips for creating dropdown, for future reference.</p>
+<h2>Pure JavaScript</h2>
+<h3>Simpliest Dropdown Option</h3>
+<p>The simplest dropdown is just created by <code>&lt;select&gt;</code> and <code>&lt;option&gt;</code> tag. Usually you wrap a few <code>&lt;option&gt;</code> blocks in a <code>&lt;select&gt;</code> block.</p>
+<p>For each <code>&lt;option&gt;</code>, You can assign <code>value</code> attribute to it. There are other attributes such as <code>selected</code> or <code>label</code>.</p>
+<p>For <code>&lt;select&gt;</code>, you can also set attributes such as <code>size</code> or <code>name</code>.</p>
+<blockquote>
+<p><code>autofocus</code>, <code>form</code> and <code>required</code> are attributes for HTML5. Please check browser support setting before use them.</p>
+</blockquote>
+<p>Example from W3Schools:</p>
+<pre class="code literal-block"><span></span><span class="p">&lt;</span><span class="nt">select</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">"1"</span><span class="p">&gt;</span>A<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">"2"</span><span class="p">&gt;</span>B<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">"3"</span><span class="p">&gt;</span>C<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span>
+</pre>
+
+
+<h3>Dropdown Menu (One or Multiple Level)</h3>
+<p>I found this <a href="http://javascript-array.com/scripts/simple_drop_down_menu/#">post</a> and this <a href="http://javascript-array.com/scripts/multi_level_drop_down_menu/?st">post</a> from <a href="http://javascript-array.com/">JavaScript Array</a> website are very classical. I've tested them and I highly recommend using them for pure dropdown menu.</p>
+<h4>Single Level</h4>
+<p>I have read through the code. Here are my explanations. You are free to add font or hover effects in real world.</p>
+<p>HTML Structure:</p>
+<pre class="code literal-block"><span></span><span class="c">&lt;!--Container of Many First Level Menus--&gt;</span>
+<span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
+        <span class="c">&lt;!--First Level Menu 1 --&gt;</span>
+        <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span> <span class="na">onmouseover</span><span class="o">=</span><span class="s">"mopen('m1')"</span> <span class="na">onmouseout</span><span class="o">=</span><span class="s">"mclosetime()"</span><span class="p">&gt;</span>First Level Menu 1<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+
+        <span class="c">&lt;!--Links of First Level Menu 1 --&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">"m1"</span> <span class="na">onmouseover</span><span class="o">=</span><span class="s">"mcancelclosetime()"</span> <span class="na">onmouseout</span><span class="o">=</span><span class="s">"mclosetime()"</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">'#'</span><span class="p">&gt;</span>Link1<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">'#'</span><span class="p">&gt;</span>Link1<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
+        <span class="c">&lt;!--First Level Menu 2 --&gt;</span>
+        <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span> <span class="na">onmouseover</span><span class="o">=</span><span class="s">"mopen('m2')"</span> <span class="na">onmouseout</span><span class="o">=</span><span class="s">"mclosetime()"</span><span class="p">&gt;</span>First Level Menu 2<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+
+        <span class="c">&lt;!--Links of First Level Menu 2 --&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">"m2"</span> <span class="na">onmouseover</span><span class="o">=</span><span class="s">"mcancelclosetime()"</span> <span class="na">onmouseout</span><span class="o">=</span><span class="s">"mclosetime()"</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">'#'</span><span class="p">&gt;</span>Link2<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">'#'</span><span class="p">&gt;</span>Link2<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</pre>
+
+
+<p>CSS Structure (You may need to some tags to id in real world):</p>
+<pre class="code literal-block"><span></span><span class="c">/* Outside Container */</span>
+<span class="nt">ul</span>
+<span class="p">{</span>   <span class="nb">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nb">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nb">z-index</span><span class="o">:</span> <span class="m">30</span>
+<span class="p">}</span>
+
+<span class="nt">ul</span> <span class="nt">li</span>
+<span class="p">{</span>   <span class="nb">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nb">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nb">list-style</span><span class="o">:</span> <span class="nb">none</span><span class="p">;</span>
+    <span class="nb">float</span><span class="o">:</span> <span class="nb">left</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* First Leval Menu */</span>
+<span class="nt">ul</span> <span class="nt">li</span> <span class="nt">a</span>
+<span class="p">{</span>   <span class="nb">display</span><span class="o">:</span> <span class="nb">block</span><span class="p">;</span>
+    <span class="nb">margin</span><span class="o">:</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span> <span class="c">/* adjust as you need */</span>
+    <span class="nb">padding</span><span class="o">:</span> <span class="m">4px</span> <span class="m">10px</span><span class="p">;</span> <span class="c">/* adjust as you need */</span>
+    <span class="nb">width</span><span class="o">:</span> <span class="m">60px</span><span class="p">;</span>
+    <span class="nb">text-align</span><span class="o">:</span> <span class="nb">center</span><span class="p">;</span>
+    <span class="nb">text-decoration</span><span class="o">:</span> <span class="nb">none</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">ul</span> <span class="nt">li</span> <span class="nt">a</span><span class="nd">:hover</span>
+<span class="p">{</span> <span class="p">}</span>
+
+<span class="nt">ul</span> <span class="nt">div</span>
+<span class="p">{</span>   <span class="nb">position</span><span class="o">:</span> <span class="nb">absolute</span><span class="p">;</span>
+    <span class="nb">visibility</span><span class="o">:</span> <span class="nb">hidden</span><span class="p">;</span>
+    <span class="nb">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="nb">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+    <span class="nt">ul</span> <span class="nt">div</span> <span class="nt">a</span>
+    <span class="p">{</span>   <span class="nb">position</span><span class="o">:</span> <span class="nb">relative</span><span class="p">;</span>
+        <span class="nb">display</span><span class="o">:</span> <span class="nb">block</span><span class="p">;</span>
+        <span class="nb">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+        <span class="nb">padding</span><span class="o">:</span> <span class="m">5px</span> <span class="m">10px</span><span class="p">;</span> <span class="c">/* adjust as you need */</span>
+        <span class="nb">width</span><span class="o">:</span> <span class="nb">auto</span><span class="p">;</span>
+        <span class="nb">white-space</span><span class="o">:</span> <span class="nb">nowrap</span><span class="p">;</span> <span class="c">/* Specify that the text in &lt;p&gt; elements will never wrap */</span>
+        <span class="nb">text-align</span><span class="o">:</span> <span class="nb">left</span><span class="p">;</span> <span class="c">/* adjust as you need */</span>
+        <span class="nb">text-decoration</span><span class="o">:</span> <span class="nb">none</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nt">ul</span> <span class="nt">div</span> <span class="nt">a</span><span class="nd">:hover</span>
+    <span class="p">{</span>  <span class="p">}</span>
+</pre>
+
+
+<p>JavaScript Structure:</p>
+<pre class="code literal-block"><span></span><span class="c1">// Copyright 2006-2007 javascript-array.com</span>
+
+<span class="kd">var</span> <span class="nx">timeout</span> <span class="o">=</span> <span class="mi">500</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">closetimer</span>  <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">ddmenuitem</span>  <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+<span class="c1">// open hidden layer</span>
+<span class="kd">function</span> <span class="nx">mopen</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="c1">// cancel close timer</span>
+    <span class="nx">mcancelclosetime</span><span class="p">();</span>
+
+    <span class="c1">// close old layer</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">ddmenuitem</span><span class="p">)</span> <span class="nx">ddmenuitem</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">visibility</span> <span class="o">=</span> <span class="s1">'hidden'</span><span class="p">;</span>
+
+    <span class="c1">// get new layer and show it</span>
+    <span class="nx">ddmenuitem</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">id</span><span class="p">);</span>
+    <span class="nx">ddmenuitem</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">visibility</span> <span class="o">=</span> <span class="s1">'visible'</span><span class="p">;</span>
+
+<span class="p">}</span>
+<span class="c1">// close showed layer</span>
+<span class="kd">function</span> <span class="nx">mclose</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">ddmenuitem</span><span class="p">)</span> <span class="nx">ddmenuitem</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">visibility</span> <span class="o">=</span> <span class="s1">'hidden'</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// go close timer</span>
+<span class="kd">function</span> <span class="nx">mclosetime</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="nx">closetimer</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">setTimeout</span><span class="p">(</span><span class="nx">mclose</span><span class="p">,</span> <span class="nx">timeout</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// cancel close timer</span>
+<span class="kd">function</span> <span class="nx">mcancelclosetime</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">closetimer</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nb">window</span><span class="p">.</span><span class="nx">clearTimeout</span><span class="p">(</span><span class="nx">closetimer</span><span class="p">);</span>
+        <span class="nx">closetimer</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// close layer when click-out</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="nx">mclose</span><span class="p">;</span>
+</pre>
+
+
+<h4>Mutiple Level</h4>
+<h2>With jQuery</h2>
+<p>update coming soon...</p>
+<h2>With Bootstrap3 and jQuery</h2>
+<p>update coming soon...</p>
+</div>
             </div>
         </div>
         <div class="post">
@@ -193,6 +1556,46 @@ article: http://ogp.me/ns/article#
 
             </div>
             <div class="body">
+                <div>
+<p><strong>window.location</strong> is a <strong>read-only</strong> property, but you can also sign a string to it. It has some commenly used properties:</p>
+<h3>location.hash</h3>
+<p>You can add <strong>anchor</strong> to URL, using a <strong>#</strong> character. For example: <code>www.example.com/blog.html#blog_1</code>.</p>
+<p>Use the example above, <code>window.console.log(location.hash) =&gt; #blog_1</code>. Returned value include <strong>#</strong>.</p>
+<p>When you set a hash, do not include <strong>#</strong>.</p>
+<h3>location.href</h3>
+<p>Return entire URL. When you assign it, you can assign whole URL, relative URL, anchor only or protocal, based on your need. Following examples all work well:
+<code>location.href="#blog_1"</code>
+<code>location.href="mailto:abc@example.com"</code>
+<code>location.href="test.html"</code>
+<code>location.href=ftp//test.com</code></p>
+<h3>location.origin</h3>
+<p><em>Not supported by IE</em></p>
+<p>Return protolcol.hostname and port number of a URL. An example is <code>httpw://www.example.com:1112</code></p>
+<p><em>Note</em> If the port number is not specified in URL, some browsers will not display port number.</p>
+<p>This is a <strong>read-only</strong> property, so you can not set it.</p>
+<h3>location.host</h3>
+<p>You can use this property to get/set <strong>hostname</strong> and <strong>port</strong> of URL. Normally should return "www.xyz.com".</p>
+<p><em>Note</em>: If the port number is not specified in URL, some browsers will not display port number.</p>
+<p>You can use <code>location.host = "hostname:port"</code> to set host.</p>
+<p><strong>location.hostname</strong> <strong>location.port</strong> <strong>location.protocal</strong></p>
+<p>Similar as above, these properties returns hostname/port/protocal of URL. Normally should return "www.xyz.com".</p>
+<p>You can do get/set for all of these properties.</p>
+<p>If a port is not specified in URL or is scheme's default port,such as <code>80</code> or <code>443</code>,some browser return 0 or nothing.</p>
+<h3>location.pathname</h3>
+<p>Return <strong>directoy path</strong> of a URL. For example: `/WEB-INF/Views/Test.jsp</p>
+<p>You can do get/set for this property.</p>
+<h3>location.search</h3>
+<p>Return the <strong>querying string</strong> part of a URL, which is normally the part <strong>?</strong> and string after it in URL.</p>
+<p>You can do get/set for it. For example, a possible result can be <code>?id=111</code>.</p>
+<h3>location.assign(URL)</h3>
+<p>Load a new document.</p>
+<h3>location.replace(URL)</h3>
+<p>Same as <code>location.assign()</code>, but <strong>you cannot use "back" button to go back to previous page</strong>.</p>
+<p>You can combine it with <strong>hash</strong>. For example: <code>location.replace("http://www.example.com/#" + location.pathname)</code></p>
+<h3>location.reload()</h3>
+<p>Same as the "reload" button in browser, reloading current document.</p>
+<p>Use <code>location.reload(true)</code> to force reloading document.</p>
+</div>
             </div>
         </div>
         <div class="post">
@@ -217,6 +1620,70 @@ article: http://ogp.me/ns/article#
 
             </div>
             <div class="body">
+                <div>
+<h3>First Impression and Basic Usage</h3>
+<p>I got a request in my work, asking me to research a open source JavaScript calendar library. The calendar should be able to do following:</p>
+<blockquote>
+<p>Add/Load/Delete Events, which needs a commucation with back-end. Event content can be configured, which means developer can over write event trigger function. Also developer can set up event time plot.</p>
+<p>Different views, as least have day,week,month view. Also user should have a way to view details in other years.</p>
+</blockquote>
+<p>So I check FullCalendar and the demo looks ok for me. I decide to try it. Official website gave a simple piece of code for basic usage:</p>
+<pre class="code literal-block"><span></span><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">'stylesheet'</span> <span class="na">href</span><span class="o">=</span><span class="s">'fullcalendar/fullcalendar.css'</span> <span class="p">/&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">'lib/jquery.min.js'</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">'lib/moment.min.js'</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">'fullcalendar/fullcalendar.js'</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+$(document).ready(function() {
+    $('#calendar').fullCalendar({
+    })
+});
+</pre>
+
+
+<p>It looks simple, but I encourted following problems and it takes a while to figure out solution:</p>
+<h3>Problem 1</h3>
+<p><strong>The confusion of CDNJS source</strong></p>
+<p>FullCalendar official website gives out <code>CDN</code> host source for <code>css</code> file and <code>javascript</code> file, which is the way I preferred, comparing to use local file. However, only three files are given with <code>CDN</code> url, which misleading me to thought <em>I only need these three files to run FullCalendar</em>, which is <strong>wrong</strong>.</p>
+<p>After I run code in browser, I got error message in console, telling that <strong>moment is not defined as function</strong>. This error remind me that I need other JavaScript file to provide basic functionality.</p>
+<h3>Answer 1</h3>
+<p>Make sure you have <code>fullcalendar.css</code>, <code>jquery.js</code>, <code>moment.js</code>, <code>fullcalendar.js</code> for basic setup.** <code>moment.js</code> needs to be put before <code>fullcalendar.js</code>.</p>
+<h3>Problem 2</h3>
+<p><strong>CSS Style Problem (Cause my headache :)</strong></p>
+<p>After I solve the problem above, I was able to see calendar data in browser, but <strong>no style has been applied</strong>. To solve the problem, I first try following solution:</p>
+<blockquote>
+<p>User console to compare my code and demo code. It turns out that we had same code/classes. The only problem is my classes in code didn't have style applied on.</p>
+<p>Change browser. <em>This is not a browser problem</em>.</p>
+<p>Re-check code to make sure if I miss any necessary stylesheet.<em>No</em></p>
+<p>First check if all <code>CDN</code>
+resources loading successfully. Then replace all <code>CDN</code> resource to local resource, and make sure all resources are in same version. <em>Not Work</em></p>
+<p>Use a old stable version for FullCalender. <em>Not Work</em></p>
+<p>Back to demo code and demo source code, make sure we have same JavaScript setting. <em>No difference between two codes.</em></p>
+<ul>
+<li>So I have to seek help on Google. A <a href="http://stackoverflow.com/questions/25178565/fullcalendar-layout-broken-because-css-loading-after-javascript-layout-calculati">post</a> in <em>StackOverflow</em> helps with this problem.</li>
+</ul>
+</blockquote>
+<h3>Answer2</h3>
+<p><strong>Load Stylesheet in JavaScript</strong></p>
+<p>I should adjust code as following:</p>
+<pre class="code literal-block"><span></span><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s2">"ready"</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">//This is the code to load stylesheet</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s2">"&lt;link rel='stylesheet' type='text/css' href='fullcalendar.css' /&gt;"</span><span class="p">).</span><span class="nx">appendTo</span><span class="p">(</span><span class="s2">"head"</span><span class="p">);</span>
+    <span class="nx">$</span><span class="p">(</span><span class="nb">window</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s2">"load"</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s1">'#calendar'</span><span class="p">).</span><span class="nx">fullCalendar</span><span class="p">({</span>
+        <span class="p">});</span>
+    <span class="p">});</span>
+<span class="p">});</span>
+</pre>
+
+
+<p>It turns out that different from normal file loading process in front-end development, I need to <strong>load source javascript file first, then after DOM is ready, loading stylesheet.</strong></p>
+<blockquote>
+<p>In this case, when <code>DOM</code> is ready, stylesheet is appending. The after DOM finish loading style sheet and begin to load <code>window</code>, my javascript code trigger.</p>
+</blockquote>
+<p><strong>Important Notes</strong>
+- <code>$(document).ready</code> triggers after <code>HTML</code> elements has been loaded.
+- <code>onload</code> event occurs later, after all content elements, such as <code>image</code>, has been loaded.
+- Next time I get this probelm, I should try to load stylesheet later, using <code>"&lt;link/&gt;".appendTo("head")</code>.</p>
+</div>
             </div>
         </div>
         <div class="post">
@@ -239,6 +1706,74 @@ article: http://ogp.me/ns/article#
 
             </div>
             <div class="body">
+                <div>
+<h3>Usage</h3>
+<p>You can try a sandbox <a href="http://eternicode.github.io/bootstrap-datepicker/?markup=input&amp;format=&amp;weekStart=&amp;startDate=&amp;endDate=&amp;startView=0&amp;minViewMode=0&amp;todayBtn=false&amp;clearBtn=false&amp;language=en&amp;orientation=auto&amp;multidate=&amp;multidateSeparator=&amp;keyboardNavigation=on&amp;forceParse=on#sandbox">here</a> to expore more about bootstrap-datepicker.</p>
+<h4>General Usage</h4>
+<p>Generally everything is easy. After you refer source file (stylesheet and js) in code, create a <code>&lt;input type="input"&gt;</code> element. Then write following JavaScript code:</p>
+<pre class="code literal-block"><span></span><span class="nx">$</span><span class="p">(</span><span class="s2">"#your_container input"</span><span class="p">).</span><span class="nx">datepicker</span><span class="p">();</span>
+</pre>
+
+
+<p>Now when you click input box, a calendar will appear.</p>
+<h4>Embeded Full Calander</h4>
+<p>You may want a full calender instead of a input box. First you make a <code>&lt;div&gt;</code> with id/className, The do same JavaScript code as above:</p>
+<pre class="code literal-block"><span></span><span class="nx">$</span><span class="p">(</span><span class="s2">"#your_div"</span><span class="p">).</span><span class="nx">datepicker</span><span class="p">();</span>
+</pre>
+
+
+<h4>Disable Special Dates</h4>
+<p>One of the function I use very often is to disable some dates (Or only make a few dates available). You need <code>beforeShowDay</code> option to do this:</p>
+<pre class="code literal-block"><span></span><span class="kd">var</span> <span class="nx">avialableDates</span><span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">18</span><span class="p">,</span><span class="mi">20</span><span class="p">];</span>
+<span class="nx">$</span><span class="p">(</span><span class="s2">"#date_picker"</span><span class="p">).</span><span class="nx">datepicker</span><span class="p">({</span>
+    <span class="nx">beforeShowDay</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">date</span><span class="p">){</span>
+        <span class="k">if</span><span class="p">(</span><span class="nx">date</span><span class="p">.</span><span class="nx">getMonth</span><span class="p">()</span> <span class="o">==</span> <span class="p">(</span><span class="k">new</span> <span class="nb">Date</span><span class="p">()).</span><span class="nx">getMonth</span><span class="p">())</span>
+        <span class="c1">//This means date apply to any month, you can also set specific month if you need</span>
+
+        <span class="k">switch</span><span class="p">(</span><span class="kc">true</span><span class="p">){</span>
+            <span class="k">case</span><span class="p">(</span><span class="nx">availableDates</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">date</span><span class="p">.</span><span class="nx">getDate</span><span class="p">())</span><span class="o">==-</span><span class="mi">1</span><span class="p">)</span><span class="o">:</span>
+                <span class="c1">//Do something to unavailable date</span>
+                <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+
+                <span class="c1">//You can also set opearation to available date</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+</pre>
+
+
+<h4>Do Something after User Choose Date</h4>
+<p>You may want to perform something after user click on a date. Use <code>.change()</code> and <code>.on</code> to detect user's selection and assign function to it:</p>
+<pre class="code literal-block"><span></span><span class="nx">$</span><span class="p">(</span><span class="s2">"#your_div"</span><span class="p">).</span><span class="nx">datepicker</span><span class="p">({</span>
+  <span class="c1">//assign options, such as beforeShowDay</span>
+<span class="p">}).</span><span class="nx">change</span><span class="p">(</span><span class="nx">changeEvent</span><span class="p">)</span>
+  <span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">'changeDate'</span><span class="p">,</span><span class="nx">changeEvent</span><span class="p">);</span>
+
+
+<span class="kd">function</span> <span class="nx">changeEvent</span><span class="p">(</span><span class="nx">ev</span><span class="p">){</span>
+    <span class="kd">var</span> <span class="nx">nowDate</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="nx">ev</span><span class="p">.</span><span class="nb">Date</span><span class="p">).</span><span class="nx">getDate</span><span class="p">();</span>
+    <span class="c1">//This is the date that user choose. You are free to use .getFullYear(), .getMonth(), etc</span>
+
+    <span class="c1">//Do whatever you want to do</span>
+<span class="p">}</span>
+</pre>
+
+
+<h3>Problems and Solutions</h3>
+<h4>P1: "cannot call method 'split' of undefined" error</h4>
+<p>S1: I find following steps to solve this problem:</p>
+<ul>
+<li>
+<p>First, check if there is any repeat id/class name as the one that you are calling</p>
+</li>
+<li>
+<p>Second, try to add "format: 'dd.mm.yyyy'" in option list</p>
+</li>
+<li>
+<p>Third, check if your version is right: you can download a zip with both production version and full version <a href="http://eternicode.github.io/bootstrap-datepicker/?markup=input&amp;format=&amp;weekStart=&amp;startDate=&amp;endDate=&amp;startView=0&amp;minViewMode=0&amp;todayBtn=false&amp;clearBtn=false&amp;language=en&amp;orientation=auto&amp;multidate=&amp;multidateSeparator=&amp;keyboardNavigation=on&amp;forceParse=on#sandbox">here</a>. Try to replace your javascript file with another version, and check if problem disappears.</p>
+</li>
+</ul>
+</div>
             </div>
         </div>
         <div class="post">
@@ -261,6 +1796,211 @@ article: http://ogp.me/ns/article#
 
             </div>
             <div class="body">
+                <div>
+<p>This is the reading note for <strong>OCP Java SE 7 Certification Guide</strong> from <strong>Manning</strong>. <em>Please note that all definations and examples in this post are taken from the book.</em></p>
+<h2>Chapter 1: Java Class Design*</h2>
+<h3>1.1 Java access modifiers</h3>
+<p>Java has four access modifiers:</p>
+<ul>
+<li>
+<p><code>public</code>: least restrictive</p>
+</li>
+<li>
+<p><code>protected</code></p>
+</li>
+<li>
+<p><code>default</code></p>
+</li>
+<li>
+<p><code>private</code>: most restrictive</p>
+</li>
+</ul>
+<p>Access modifier can be applied to classes, interfaces and their varibles and methods. <em>Can not</em> be applied to local variables and method parameters.</p>
+<p>Members of an interface are public in default. If you set it to <code>protected</code> or <code>private</code>, the interface <em>will not compile</em>.</p>
+<p><code>public</code> is the least restrictive access modifier. Classes and interfaces defined using the public modifier are accessisble across <em>all packages</em>, from <em>derived</em> to <em>unrelated</em> classes.</p>
+<p><code>protected</code> classes and interfaces are accessiable if <em>in same package</em>. Also, <em>All derived class</em> is accessable even in <em>different package</em> (i.e. <code>extends</code> is used in this class).</p>
+<p>A derived class can inherite and access protected memebers of its base class, regardless of the package it's defined. A derived class in a separate package can't access protected memebers of its base class using <code>reference variables</code>.</p>
+<pre class="code literal-block"><span></span><span class="kn">package</span> <span class="nn">library</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Book</span><span class="o">{</span>
+    <span class="kd">protected</span> <span class="n">String</span> <span class="n">author</span><span class="o">;</span>
+    <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">modifyTemplate</span><span class="o">(){};</span>
+<span class="o">}</span>
+<span class="cm">/*********************/</span>
+<span class="kn">package</span> <span class="nn">building</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">library.book</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">StoryBook</span> <span class="kd">extends</span> <span class="n">Book</span><span class="o">{</span>
+    <span class="kd">public</span> <span class="n">StoryBook</span><span class="o">{</span>
+        <span class="n">author</span><span class="o">=</span><span class="s">"ABC"</span><span class="o">;</span> <span class="c1">//Works Fine</span>
+        <span class="n">modifyTemplate</span><span class="o">();</span> <span class="c1">//Works Fine</span>
+
+        <span class="c1">//If you want to access memebers in book, a new instance of Book needs to be declared first to access inside.</span>
+        <span class="n">Book</span> <span class="n">book</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Book</span><span class="o">();</span>
+        <span class="n">String</span> <span class="n">v</span> <span class="o">=</span> <span class="n">book</span><span class="o">.</span><span class="na">author</span><span class="o">;</span>
+        <span class="n">book</span><span class="o">.</span><span class="na">modifyTemplate</span><span class="o">();</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre>
+
+
+<p>A class that has no access modifier marked always has <code>default access</code>, also called <code>package-private access</code>. Only memebers in same package can access it.</p>
+<pre class="code literal-block"><span></span><span class="kn">package</span> <span class="nn">library</span><span class="o">;</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Book</span><span class="o">{</span>
+    <span class="kt">int</span> <span class="n">issueCount</span><span class="o">;</span>
+    <span class="kt">void</span> <span class="nf">issueHistory</span><span class="o">(){};</span>
+<span class="o">}</span>
+
+<span class="kn">package</span> <span class="nn">building</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">library.Book</span><span class="o">;</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">House</span><span class="o">{</span>
+    <span class="kd">public</span> <span class="nf">House</span><span class="o">(){</span>
+        <span class="n">Book</span> <span class="n">b</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Book</span><span class="o">();</span> <span class="c1">//Works Fine</span>
+        <span class="kt">int</span> <span class="n">c</span> <span class="o">=</span> <span class="n">b</span><span class="o">.</span><span class="na">issueCount</span><span class="o">();</span> <span class="c1">//Compile Error</span>
+        <span class="n">b</span><span class="o">.</span><span class="na">issueHistory</span><span class="o">();</span> <span class="c1">//Compile Error</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kn">package</span> <span class="nn">library</span><span class="o">;</span>
+<span class="kd">class</span> <span class="nc">Book</span><span class="o">{</span>
+    <span class="kt">int</span> <span class="n">issueCount</span><span class="o">;</span>
+    <span class="kt">void</span> <span class="nf">issueHistory</span><span class="o">(){};</span>
+<span class="o">}</span>
+
+<span class="kn">package</span> <span class="nn">building</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">library.Book</span><span class="o">;</span> <span class="c1">//Compile Error. library.Book can not be accessed</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">House</span><span class="o">{</span>
+    <span class="kd">public</span> <span class="nf">House</span><span class="o">(){</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre>
+
+
+<p><code>private</code> means this member can only be accessed in its own class.</p>
+<p><code>private</code> and <code>protected</code> can not be applied to top level class/interface. Method parameter and local varaibels can only use <code>default access</code>. In these cases java will not compile.</p>
+<h3>1.2 Overloaded methods and constructors</h3>
+<p>Overloaded methods are mothods with the same name but different method parameter lists. Also, a derived class can overload its base class's methods</p>
+<pre class="code literal-block"><span></span><span class="kd">class</span> <span class="nf">Paper</span><span class="o">();</span>
+<span class="kd">class</span> <span class="nf">Laptop</span><span class="o">();</span>
+
+<span class="kd">class</span> <span class="nc">Lecture</span><span class="o">{</span>
+    <span class="kt">void</span> <span class="nf">takeNotes</span><span class="o">(</span><span class="n">Paper</span> <span class="n">paper</span><span class="o">);</span>
+    <span class="kt">void</span> <span class="nf">takeNotes</span><span class="o">(</span><span class="n">Laptop</span> <span class="n">laptop</span><span class="o">);</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nf">Pen</span><span class="o">();</span>
+<span class="kd">class</span> <span class="nc">newLecture</span> <span class="kd">extends</span> <span class="n">Lecture</span><span class="o">{</span>
+    <span class="kt">void</span> <span class="nf">takeNotes</span><span class="o">(</span><span class="n">Pen</span> <span class="n">pen</span><span class="o">);</span>
+<span class="o">}</span>
+</pre>
+
+
+<p>Overloaded method can accept:</p>
+<p>Different number of parameters</p>
+<p><em>Or</em> different type of parameters</p>
+<pre class="code literal-block"><span></span><span class="kd">public</span> <span class="n">Test</span><span class="o">{</span>
+
+<span class="kt">double</span> <span class="nf">Case</span><span class="o">(</span><span class="kt">double</span> <span class="n">test1</span><span class="o">,</span> <span class="kt">int</span> <span class="n">test2</span><span class="o">){</span>
+    <span class="k">return</span> <span class="mf">0.5</span><span class="o">;</span>
+<span class="o">}</span>
+<span class="kt">double</span> <span class="nf">Case</span><span class="o">(</span><span class="kt">int</span> <span class="n">test1</span><span class="o">,</span> <span class="kt">double</span> <span class="n">test2</span><span class="o">){</span>
+    <span class="k">return</span> <span class="mf">0.6</span><span class="o">;</span>
+<span class="o">}</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">..</span> <span class="n">args</span><span class="o">){</span>
+    <span class="n">Test</span> <span class="n">test</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Test</span><span class="o">();</span>
+    <span class="n">test</span><span class="o">.</span><span class="na">Case</span><span class="o">(</span><span class="mi">2</span><span class="o">,</span><span class="mi">3</span><span class="o">);</span>
+    <span class="cm">/*</span>
+<span class="cm">    This will get compile error.</span>
+<span class="cm">    Java compiler is unable to determine which overloaded method should be called.</span>
+<span class="cm">    */</span>
+<span class="o">}</span>
+
+<span class="c1">//Following will solve the problem</span>
+<span class="kt">double</span> <span class="nf">Case</span><span class="o">(</span><span class="kt">int</span> <span class="n">test1</span><span class="o">,</span> <span class="kt">int</span> <span class="n">test2</span><span class="o">){</span>
+    <span class="k">return</span> <span class="mf">0.7</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre>
+
+
+<p><em>Or</em> different positions of parameter, based on parameter type</p>
+<p>Overloaded method can not accept:</p>
+<ul>
+<li>
+<p>Only differ in return types becuase java compiler does not differentiates turn types.</p>
+</li>
+<li>
+<p>Only differ in access modifiers</p>
+</li>
+<li>
+<p>Only different in non-access modifiers such as <code>final</code>.</p>
+</li>
+</ul>
+<p>The overloaded methods are bound are <em>compile time</em> and not run time. To resolve the call to the overloaded methods, the complier consider the type of the variable that is used to <em>refer</em> to an object.</p>
+<pre class="code literal-block"><span></span><span class="kd">class</span> <span class="nc">Result</span><span class="o">{</span>
+    <span class="n">String</span> <span class="nf">getValue</span><span class="o">(</span><span class="n">Object</span> <span class="n">obj</span><span class="o">){</span>
+        <span class="k">return</span> <span class="s">"Object"</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="n">String</span> <span class="nf">getValue</span><span class="o">(</span><span class="n">String</span> <span class="n">str</span><span class="o">){</span>
+        <span class="k">return</span> <span class="s">"String"</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">TestResult</span><span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">...</span> <span class="n">args</span><span class="o">){</span>
+        <span class="n">Object</span> <span class="n">obj</span> <span class="o">=</span> <span class="k">new</span> <span class="n">String</span><span class="o">(</span><span class="s">"Harry"</span><span class="o">);</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="k">new</span> <span class="n">Result</span><span class="o">().</span><span class="na">getValue</span><span class="o">(</span><span class="n">obj</span><span class="o">));</span>
+
+        <span class="cm">/*</span>
+<span class="cm">        "Object" will be print out.</span>
+<span class="cm">        String is just a reference, pointing to the object obj.</span>
+<span class="cm">        So getValue will find type of the reference object obj, which is a object.</span>
+<span class="cm">        Note that obj here is a reference variable becuase we use obj to refer an instance of String, "Harry".</span>
+<span class="cm">        */</span>
+
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre>
+
+
+<p>Overloaded constructors can be defined by using a different argument list, but no a change of its access or nonaccess modifiers.</p>
+<pre class="code literal-block"><span></span><span class="kd">class</span> <span class="nc">Employee</span><span class="o">{</span>
+    <span class="n">String</span> <span class="n">name</span><span class="o">;</span>
+    <span class="kt">int</span> <span class="n">age</span><span class="o">;</span>
+
+    <span class="n">Employee</span><span class="o">(</span><span class="n">String</span> <span class="n">newName</span><span class="o">){</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="n">newName</span><span class="o">;</span>
+    <span class="n">age</span> <span class="o">=</span> <span class="mi">12</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="n">Employee</span><span class="o">(</span><span class="n">String</span> <span class="n">newName</span><span class="o">,</span> <span class="kt">int</span> <span class="n">newAge</span><span class="o">){</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="n">newName</span><span class="o">;</span>
+        <span class="n">age</span> <span class="o">=</span> <span class="n">newAge</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre>
+
+
+<p>Overloaded constructor can be called from another overloaded constructor. <code>this</code> keyword should be used to do this. Also, the class to another constructor must be the <em>first</em> statement in a constructor.
+    :::java
+    class Employee{
+        String name;
+        int age;</p>
+<pre class="code literal-block"><span></span>    Employee(){
+    /*
+    Note: if I add a "System.println.out..." here, there will be compile error.
+    Because this() must be the first statment here
+    */
+    this(null,0); //Invoke a constructor that takes two parameters
+    }
+
+    Employee(String newName, int newAge){
+        name = newName;
+        age = newAge;
+    }
+}
+</pre>
+</div>
             </div>
         </div>
             <nav class="postindexpager"><ul class="pager">

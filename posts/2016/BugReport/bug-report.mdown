@@ -7,9 +7,9 @@
 
 Recently I read a <a href="https://henrikwarne.com/2016/04/28/learning-from-your-bugs/">post aout Learning from Your Bugs</a>, written by *Henrik Warne*. This post mentions the importance of record and learning from the bug. I would like to follow it.
 
-<!-- PELICAN_END_SUMMARY -->
+<!-- TEASER_END -->
 
-[TOC]
+
 
 #Template
 

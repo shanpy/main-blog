@@ -7,7 +7,7 @@
 .. authors: Pengyin Shan
 .. description: This post describes my experience in using a JavaScript library - <a href="http://fullcalendar.io/">FullCalendar</a> to create calendar with events, using Java as back-end.
 
-[TOC]
+
 
 ##First Impression and Basic Usage
 

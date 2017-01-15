@@ -6,7 +6,7 @@
 .. authors: Pengyin Shan
 .. description: This is a quick reference note about box-sizing/box-shadow in CSS3
 
-[TOC]
+
 
 #`box-sizing`
 

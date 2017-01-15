@@ -6,7 +6,7 @@
 .. authors: Pengyin Shan
 .. description: Now most JavaScript packages been been integrated to npm. It is time to start exploring node.js and understand the best scansion to apply it.
 
-[TOC]
+
 
 *This is a reading note for node.js part on <a href="http://www.tutorialspoint.com/nodejs/index.htm">tutorialspoint</a>.*
 

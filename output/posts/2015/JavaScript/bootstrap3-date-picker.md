@@ -7,7 +7,7 @@
 .. authors: Pengyin Shan
 .. description: This is a brief introduction about <a href="https://github.com/eternicode/bootstrap-datepicker">bootstrap-datepicker</a>, a date-picker that is built for Bootstrap including different functions. It is created by <a href="https://github.com/eternicode">eternicode</a>.
 
-[TOC]
+
 
 ##Usage
 

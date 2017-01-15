@@ -7,7 +7,7 @@
 .. authors: Pengyin Shan
 .. description: This is a *old post* from my Nikola blog. I created it when I tried Nikola to learn Python. Current blog site is built by Pelican.
 
-[TOC]
+
 
 One of my goal for 2015 is to learn Python. To prepare for this, I decided to create a new blog site, based on Python.
 

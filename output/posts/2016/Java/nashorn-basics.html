@@ -10,7 +10,19 @@ article: http://ogp.me/ns/article#
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2016/Java/nashorn-basics.html">
-<!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="Pengyin Shan">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+    },
+    displayAlign: 'left', // Change this to 'center' to center equations.
+    "HTML-CSS": {
+        styles: {'.MathJax_Display': {"margin": 0}}
+    }
+});
+</script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
 <meta property="og:site_name" content="Pengyin's Note">
 <meta property="og:title" content="Nashorn Basics">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2016/Java/nashorn-basics.html">
@@ -52,9 +64,7 @@ article: http://ogp.me/ns/article#
         <div class="body">
             <div>
 <p>In HannonHill cascade server, since folders/files are organized in a virtual structured (based on database setting), it's hard to create reference between files. Nashorn with Rhino engine is useful in this case.</p>
-<!-- PELICAN_END_SUMMARY -->
-
-<p>[TOC]</p>
+<!-- TEASER_END -->
 </div>
         </div>
         

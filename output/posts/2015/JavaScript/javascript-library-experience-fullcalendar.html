@@ -14,7 +14,19 @@ article: http://ogp.me/ns/article#
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2015/JavaScript/javascript-library-experience-fullcalendar.html">
-<!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="Pengyin Shan">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+    },
+    displayAlign: 'left', // Change this to 'center' to center equations.
+    "HTML-CSS": {
+        styles: {'.MathJax_Display': {"margin": 0}}
+    }
+});
+</script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
 <meta property="og:site_name" content="Pengyin's Note">
 <meta property="og:title" content="JavaScript Library Experience: FullCalendar">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2015/JavaScript/javascript-library-experience-fullcalendar.html">
@@ -57,7 +69,6 @@ article: http://ogp.me/ns/article#
         </div>
         <div class="body">
             <div>
-<p>[TOC]</p>
 <h3>First Impression and Basic Usage</h3>
 <p>I got a request in my work, asking me to research a open source JavaScript calendar library. The calendar should be able to do following:</p>
 <blockquote>

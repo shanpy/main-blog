@@ -6,7 +6,7 @@
 .. authors: Pengyin Shan
 .. description: A recent project involves in using SVG (Scalable Vector Graphics) to create triangle borders. This is a quick study note of using SVG in web development.
 
-[TOC]
+
 
 #Reference List
 

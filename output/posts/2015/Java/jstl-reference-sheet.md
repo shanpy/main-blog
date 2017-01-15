@@ -7,7 +7,7 @@
 .. authors: Pengyin Shan
 .. description: This is a reference sheet I created for using JSP-Standard Tage Library/JSTL, based on my learning from <a href="http://www.tutorialspoint.com/cgi-bin/printpage.cgi">JSP tutorial on tutorialspoint.com</a>. All code examples and definations are taken from this website.
 
-[TOC]
+
 
 There are five types of JSTL tag Library:
 

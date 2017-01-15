@@ -7,7 +7,7 @@
 .. authors: Pengyin Shan
 .. description: This post introduces some common properties of **window.location**, based on introduction pages on <a href="https://developer.mozilla.org/en-US/docs/Web/API/window.location">MDN</a> and <a href="http://www.w3schools.com/jsref/obj_location.asp">w3schools</a>.
 
-[TOC]
+
 
 **window.location** is a **read-only** property, but you can also sign a string to it. It has some commenly used properties:
 

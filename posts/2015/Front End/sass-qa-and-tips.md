@@ -7,7 +7,7 @@
 .. authors: Pengyin Shan
 .. description: This is an old blog I created when I started to learn SASS on late 2014. I'll continue to update this post while I'm using Compass/SASS.
 
-[TOC]
+
 
 This post will serve as a Q&A note during the process of learning Sass. I'm absolutely a new beginner so I'll keep questions and answers updating continously:)
 

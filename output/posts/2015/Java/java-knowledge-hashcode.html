@@ -11,7 +11,19 @@ article: http://ogp.me/ns/article#
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2015/Java/java-knowledge-hashcode.html">
-<!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="Pengyin Shan">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+    },
+    displayAlign: 'left', // Change this to 'center' to center equations.
+    "HTML-CSS": {
+        styles: {'.MathJax_Display': {"margin": 0}}
+    }
+});
+</script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
 <meta property="og:site_name" content="Pengyin's Note">
 <meta property="og:title" content="Java Knowledge: HashCode">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2015/Java/java-knowledge-hashcode.html">
@@ -52,7 +64,6 @@ article: http://ogp.me/ns/article#
         </div>
         <div class="body">
             <div>
-<p>[TOC]</p>
 <p>I touched re-write <code>equal()</code> when I was doing work in Java Developement, then I learned these exists a <code>hashCode()</code> method that I must implement if I re-write <code>equal()</code> for objects.</p>
 <p>I found very useful posts: <a href="http://tutorials.jenkov.com/java-collections/hashcode-equals.html">Java Collections - hasCode() and equals()</a>, and <a href="http://eclipsesource.com/blogs/2012/09/04/the-3-things-you-should-know-about-hashcode/">The 3 things you should know about hashCode()</a>.</p>
 <p>Also refer to <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html#hashCode()">Oracle API</a> for <code>hashCode()</code>.</p>

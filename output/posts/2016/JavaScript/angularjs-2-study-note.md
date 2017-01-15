@@ -7,9 +7,9 @@
 
 While my recent project involving in processing data, I think this is a good chance for to touch AngularJS 2, and a little bit TypeScript. *This study note follows BASICS and DEVELOPER GUIDE part in official document*.
 
-<!-- PELICAN_END_SUMMARY -->
+<!-- TEASER_END -->
 
-[TOC]
+
 
 #Reference List
 

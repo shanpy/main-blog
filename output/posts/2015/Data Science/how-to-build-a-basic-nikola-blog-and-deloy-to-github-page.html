@@ -11,7 +11,19 @@ article: http://ogp.me/ns/article#
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2015/Data%20Science/how-to-build-a-basic-nikola-blog-and-deloy-to-github-page.html">
-<!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="Pengyin Shan">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+    },
+    displayAlign: 'left', // Change this to 'center' to center equations.
+    "HTML-CSS": {
+        styles: {'.MathJax_Display': {"margin": 0}}
+    }
+});
+</script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
 <meta property="og:site_name" content="Pengyin's Note">
 <meta property="og:title" content="How to Build A Basic Nikola Blog and Deploy to Github Page">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2015/Data%20Science/how-to-build-a-basic-nikola-blog-and-deloy-to-github-page.html">
@@ -56,7 +68,6 @@ article: http://ogp.me/ns/article#
         </div>
         <div class="body">
             <div>
-<p>[TOC]</p>
 <p>One of my goal for 2015 is to learn Python. To prepare for this, I decided to create a new blog site, based on Python.</p>
 <p>After doing some research, I decide to use <a href="http://getnikola.com/"><strong>Nikola</strong></a> to build my blog. One of the reason I choose Nikola is that it has great support to <strong>IPython Notebook</strong>.</p>
 <h5>Lots of Thanks to <a href="http://www.damian.oquanta.info/">Damian Avila</a>! Your blog is so useful and great for Nikola beginners like me!</h5>

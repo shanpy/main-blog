@@ -6,7 +6,7 @@
 .. authors: Pengyin Shan
 .. description: Recently I encountered a problem in my project: I need to load around 1,500 records from API and fill them in table. I tried to parse data and append them to DOM tree. While desktop browser working well, mobile browser had around 3 seconds freezing effect. To solve this problem, asynchronous in JS/jQuery will be useful. I read a few articles and wrote this blog post for future reference.
 
-[TOC]
+
 
 
 #Reference List

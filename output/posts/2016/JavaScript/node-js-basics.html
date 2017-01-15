@@ -11,7 +11,19 @@ article: http://ogp.me/ns/article#
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2016/JavaScript/node-js-basics.html">
-<!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="Pengyin Shan">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+    },
+    displayAlign: 'left', // Change this to 'center' to center equations.
+    "HTML-CSS": {
+        styles: {'.MathJax_Display': {"margin": 0}}
+    }
+});
+</script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
 <meta property="og:site_name" content="Pengyin's Note">
 <meta property="og:title" content="Node.js Basics">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2016/JavaScript/node-js-basics.html">
@@ -52,7 +64,6 @@ article: http://ogp.me/ns/article#
         </div>
         <div class="body">
             <div>
-<p>[TOC]</p>
 <p><em>This is a reading note for node.js part on <a href="http://www.tutorialspoint.com/nodejs/index.htm">tutorialspoint</a>.</em></p>
 <h2>Introduction</h2>
 <p>Node.js (MIT License) is a server-side framework built on Good V8 Engine. From Tutorialpoints.com, it has following features:</p>

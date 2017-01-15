@@ -11,7 +11,19 @@ article: http://ogp.me/ns/article#
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2015/Front%20End/sass-qa-and-tips.html">
-<!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="Pengyin Shan">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+    },
+    displayAlign: 'left', // Change this to 'center' to center equations.
+    "HTML-CSS": {
+        styles: {'.MathJax_Display': {"margin": 0}}
+    }
+});
+</script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
 <meta property="og:site_name" content="Pengyin's Note">
 <meta property="og:title" content="SASS Q&amp;A and Tips CONTINUALLY UPDATE">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2015/Front%20End/sass-qa-and-tips.html">
@@ -56,7 +68,6 @@ article: http://ogp.me/ns/article#
         </div>
         <div class="body">
             <div>
-<p>[TOC]</p>
 <p>This post will serve as a Q&amp;A note during the process of learning Sass. I'm absolutely a new beginner so I'll keep questions and answers updating continously:)</p>
 <h3>Question: What is the syntax difference between sass and scss?</h3>
 <p>So far I've found following difference:</p>

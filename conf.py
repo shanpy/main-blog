@@ -178,10 +178,18 @@ THEME_COLOR = '#ff4040'
 #
 
 POSTS = (
+	("posts/*.rst", "posts", "post.tmpl"),
     ("posts/*.md", "posts", "post.tmpl"),
     ("posts/*.mdown", "posts", "post.tmpl"),
     ("posts/*.markdown", "posts", "post.tmpl"),
     ("posts/*.ipynb", "posts", "post.tmpl"),
+)
+
+PAGES = (
+    ("pages/*.md", "stories", "story.tmpl"),
+    ("pages/*.ipynb", "stories", "story.tmpl"),
+    ("pages/*.txt", "stories", "story.tmpl"),
+    ("pages/*.rst", "stories", "story.tmpl"),
 )
 
 # Below this point, everything is optional
@@ -385,7 +393,7 @@ POSTS_SECTIONS = True
 # If you do not want to display a tag publicly, you can mark it as hidden.
 # The tag will not be displayed on the tag list page, the tag cloud and posts.
 # Tag pages will still be generated.
-HIDDEN_TAGS = ['mathjax']
+# HIDDEN_TAGS = ['mathjax']
 
 # Only include tags on the tag list/overview page if there are at least
 # TAGLIST_MINIMUM_POSTS number of posts or more with every tag. Every tag
@@ -790,7 +798,7 @@ IMAGE_FOLDERS = {'images': 'images'}
 # )
 
 # Show teasers (instead of full posts) in indexes? Defaults to False.
-# INDEX_TEASERS = True
+INDEX_TEASERS = True
 
 # HTML fragments with the Read more... links.
 # The following tags exist and are replaced for you:
@@ -939,27 +947,26 @@ PRETTY_URLS = False
 # MATHJAX_CONFIG = ""
 
 # If you are using the compile-ipynb plugin, just add this one:
-# MATHJAX_CONFIG = """
-# <script type="text/x-mathjax-config">
-# MathJax.Hub.Config({
-#     tex2jax: {
-#         inlineMath: [ ['$','$'], ["\\\(","\\\)"] ],
-#         displayMath: [ ['$$','$$'], ["\\\[","\\\]"] ],
-#         processEscapes: true
-#     },
-#     displayAlign: 'left', // Change this to 'center' to center equations.
-#     "HTML-CSS": {
-#         styles: {'.MathJax_Display': {"margin": 0}}
-#     }
-# });
-# </script>
-# """
+MATHJAX_CONFIG = """
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\\(","\\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\\[","\\\]"] ],
+        processEscapes: true
+    },
+    displayAlign: 'left', // Change this to 'center' to center equations.
+    "HTML-CSS": {
+        styles: {'.MathJax_Display': {"margin": 0}}
+    }
+});
+</script>
+"""
 
 # Want to use KaTeX instead of MathJax? While KaTeX is less featureful,
 # it's faster and the output looks better.
 # If you set USE_KATEX to True, you also need to add an extra CSS file
 # like this:
-# EXTRA_HEAD_DATA = """<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">"""
 # USE_KATEX = False
 
 # Do you want to customize the nbconversion of your IPython notebook?
@@ -1103,11 +1110,7 @@ INDEX_DISPLAY_POST_COUNT = 10
 # Extra things you want in the pages HEAD tag. This will be added right
 # before </head>
 # (translatable)
-# EXTRA_HEAD_DATA = ""
-# Google Analytics or whatever else you use. Added to the bottom of <body>
-# in the default template (base.tmpl).
-# (translatable)
-# BODY_END = ""
+EXTRA_HEAD_DATA = """<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>"""
 
 # The possibility to extract metadata from the filename by using a
 # regular expression.

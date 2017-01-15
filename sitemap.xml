@@ -7,19 +7,15 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://pengyin-shan.com/2014/index.html</loc>
-  <lastmod>2017-01-15T03:37:00Z</lastmod>
+  <lastmod>2017-01-15T03:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/2015/index.html</loc>
-  <lastmod>2017-01-15T03:37:00Z</lastmod>
+  <lastmod>2017-01-15T03:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/2016/index.html</loc>
   <lastmod>2017-01-15T03:30:00Z</lastmod>
- </url>
- <url>
-  <loc>http://pengyin-shan.com/2017/index.html</loc>
-  <lastmod>2017-01-15T03:34:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/archive.html</loc>
@@ -31,7 +27,7 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/algorithm.html</loc>
-  <lastmod>2017-01-15T03:34:00Z</lastmod>
+  <lastmod>2017-01-15T03:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/amazon-ec2.html</loc>
@@ -55,11 +51,11 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/cat_algorithm-data-structure.html</loc>
-  <lastmod>2017-01-15T03:34:00Z</lastmod>
+  <lastmod>2017-01-15T03:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/cat_data-science.html</loc>
-  <lastmod>2017-01-15T03:34:00Z</lastmod>
+  <lastmod>2017-01-15T03:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/cat_front-end.html</loc>
@@ -67,11 +63,11 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/cat_java.html</loc>
-  <lastmod>2017-01-15T03:37:00Z</lastmod>
+  <lastmod>2017-01-15T03:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/cat_javascript.html</loc>
-  <lastmod>2017-01-15T03:37:00Z</lastmod>
+  <lastmod>2017-01-15T03:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/cat_linux.html</loc>
@@ -79,10 +75,6 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/cat_others.html</loc>
-  <lastmod>2017-01-15T03:30:00Z</lastmod>
- </url>
- <url>
-  <loc>http://pengyin-shan.com/categories/cat_statistics.html</loc>
   <lastmod>2017-01-15T03:30:00Z</lastmod>
  </url>
  <url>
@@ -107,7 +99,7 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/d3js.html</loc>
-  <lastmod>2017-01-15T03:37:00Z</lastmod>
+  <lastmod>2017-01-15T03:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/data-science.html</loc>
@@ -115,7 +107,7 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/data-structure.html</loc>
-  <lastmod>2017-01-15T03:34:00Z</lastmod>
+  <lastmod>2017-01-15T03:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/data.html</loc>
@@ -183,15 +175,15 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/java.html</loc>
-  <lastmod>2017-01-15T03:37:00Z</lastmod>
+  <lastmod>2017-01-15T03:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/javascript.html</loc>
-  <lastmod>2017-01-15T03:37:00Z</lastmod>
+  <lastmod>2017-01-15T03:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/jquery.html</loc>
-  <lastmod>2017-01-15T03:37:00Z</lastmod>
+  <lastmod>2017-01-15T03:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/json.html</loc>
@@ -210,14 +202,6 @@
   <lastmod>2017-01-15T03:34:00Z</lastmod>
  </url>
  <url>
-  <loc>http://pengyin-shan.com/categories/math.html</loc>
-  <lastmod>2017-01-15T03:30:00Z</lastmod>
- </url>
- <url>
-  <loc>http://pengyin-shan.com/categories/mathjax.html</loc>
-  <lastmod>2017-01-15T03:30:00Z</lastmod>
- </url>
- <url>
   <loc>http://pengyin-shan.com/categories/nikola.html</loc>
   <lastmod>2017-01-15T03:30:00Z</lastmod>
  </url>
@@ -231,7 +215,7 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/python.html</loc>
-  <lastmod>2017-01-15T03:34:00Z</lastmod>
+  <lastmod>2017-01-15T03:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/recursion.html</loc>
@@ -287,10 +271,6 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/sql.html</loc>
-  <lastmod>2017-01-15T03:30:00Z</lastmod>
- </url>
- <url>
-  <loc>http://pengyin-shan.com/categories/statistics.html</loc>
   <lastmod>2017-01-15T03:30:00Z</lastmod>
  </url>
  <url>
@@ -680,9 +660,5 @@
  <url>
   <loc>http://pengyin-shan.com/posts/2016/JavaScript/web-worker-study-note.html</loc>
   <lastmod>2017-01-15T03:36:00Z</lastmod>
- </url>
- <url>
-  <loc>http://pengyin-shan.com/posts/2017/reading-note-introduction-to-mathematical-statistics-chapter-1.html</loc>
-  <lastmod>2017-01-15T03:31:00Z</lastmod>
  </url>
 </urlset>

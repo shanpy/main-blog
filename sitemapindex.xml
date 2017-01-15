@@ -62,10 +62,6 @@
   <lastmod>2016-12-22T20:25:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://pengyin-shan.com/categories/cat_statistics.xml</loc>
-  <lastmod>2017-01-15T03:30:00Z</lastmod>
- </sitemap>
- <sitemap>
   <loc>http://pengyin-shan.com/categories/cat_web-development-tips.xml</loc>
   <lastmod>2016-12-22T20:25:00Z</lastmod>
  </sitemap>
@@ -186,14 +182,6 @@
   <lastmod>2016-12-22T20:25:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://pengyin-shan.com/categories/math.xml</loc>
-  <lastmod>2017-01-15T03:30:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>http://pengyin-shan.com/categories/mathjax.xml</loc>
-  <lastmod>2017-01-15T03:30:00Z</lastmod>
- </sitemap>
- <sitemap>
   <loc>http://pengyin-shan.com/categories/nikola.xml</loc>
   <lastmod>2017-01-15T03:05:00Z</lastmod>
  </sitemap>
@@ -266,10 +254,6 @@
   <lastmod>2016-12-22T20:25:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://pengyin-shan.com/categories/statistics.xml</loc>
-  <lastmod>2017-01-15T03:30:00Z</lastmod>
- </sitemap>
- <sitemap>
   <loc>http://pengyin-shan.com/categories/typescript.xml</loc>
   <lastmod>2017-01-15T03:05:00Z</lastmod>
  </sitemap>
@@ -295,6 +279,6 @@
  </sitemap>
  <sitemap>
   <loc>http://pengyin-shan.com/sitemap.xml</loc>
-  <lastmod>2017-01-15T03:37:00Z</lastmod>
+  <lastmod>2017-01-15T03:38:00Z</lastmod>
  </sitemap>
 </sitemapindex>

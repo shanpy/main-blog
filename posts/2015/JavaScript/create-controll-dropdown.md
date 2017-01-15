@@ -6,7 +6,7 @@
 .. authors: Pengyin Shan
 .. description:  This post records all the ways I found online and tested in my job for creating/controlling dropdowns in web page. I'll update this post when I find more useful tips.
 
-[TOC]
+
 
 In my job, I always counter problem of creating dropdowns for web development project. Sometimes I can use Bootstrap, jQuery. Sometimes I have to use pure JavaScript. I also need to perform control options to dropdowns ocationally.
 

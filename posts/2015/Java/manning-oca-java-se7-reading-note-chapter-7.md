@@ -7,7 +7,7 @@
 .. authors: Pengyin Shan
 .. description: Manning OCA Java SE 7 Reading Note: Chapter 7
 
-[TOC]
+
 
 This is a post that I moved from <a href="blogpengyin.herokuapp.com"> my old blog site</a>. This is the reading note for **OCA Java SE 7 Certification Guide** from **Manning**. *Please note that all definations and examples in this post are taken from the book.*
 

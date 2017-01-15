@@ -7,7 +7,7 @@
 .. authors: Pengyin Shan
 .. description: This post contains the knowledge I just learned about hashCode().
 
-[TOC]
+
 
 I touched re-write `equal()` when I was doing work in Java Developement, then I learned these exists a `hashCode()` method that I must implement if I re-write `equal()` for objects.
 

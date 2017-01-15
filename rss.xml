@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Pengyin's Note</title><link>http://pengyin-shan.com/</link><description>This is Pengyin Shan's Note</description><atom:link href="http://pengyin-shan.com/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Tue, 20 Dec 2016 13:31:44 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Web Worker Study Note</title><link>http://pengyin-shan.com/posts/2016/JavaScript/web-worker-study-note.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h2&gt;Reference List&lt;/h2&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pengyin's Note</title><link>http://pengyin-shan.com/</link><description>This is Pengyin Shan's Note</description><atom:link rel="self" type="application/rss+xml" href="http://pengyin-shan.com/rss.xml"></atom:link><language>en</language><lastBuildDate>Sun, 15 Jan 2017 03:36:03 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Web Worker Study Note</title><link>http://pengyin-shan.com/posts/2016/JavaScript/web-worker-study-note.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h2&gt;Reference List&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href="http://www.html5rocks.com/en/tutorials/workers/basics/"&gt;The Basics with Web Workers&lt;/a&gt; written by &lt;em&gt;Eric Bidelman&lt;/em&gt;, &lt;em&gt;www.html5rocks.com&lt;/em&gt;.&lt;/p&gt;
@@ -206,8 +206,7 @@
           &lt;span class="nx"&gt;self&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;postMessage&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'Unknown command: '&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nx"&gt;data&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;msg&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
       &lt;span class="p"&gt;};&lt;/span&gt;
     &lt;span class="p"&gt;},&lt;/span&gt; &lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</description><category>Web Worker</category><guid>http://pengyin-shan.com/posts/2016/JavaScript/web-worker-study-note.html</guid><pubDate>Wed, 17 Aug 2016 04:00:00 GMT</pubDate></item><item><title>Frond End Data Storage</title><link>http://pengyin-shan.com/posts/2016/Front%20End/front-end-data-storage.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;[TOC]&lt;/p&gt;
-&lt;h2&gt;Reference List&lt;/h2&gt;
+&lt;/pre&gt;&lt;/div&gt;</description><category>Web Worker</category><guid>http://pengyin-shan.com/posts/2016/JavaScript/web-worker-study-note.html</guid><pubDate>Wed, 17 Aug 2016 04:00:00 GMT</pubDate></item><item><title>Frond End Data Storage</title><link>http://pengyin-shan.com/posts/2016/Front%20End/front-end-data-storage.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h2&gt;Reference List&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href="http://www.w3schools.com/html/html5_webstorage.asp"&gt;HTML Local Storage&lt;/a&gt; from &lt;em&gt;w3schools.com&lt;/em&gt;&lt;/p&gt;
@@ -265,8 +264,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;Usage&lt;/h4&gt;
-&lt;p&gt;The way to use session storage is the same as the way to use local storage, except the object is now &lt;code&gt;window.sessionStorage&lt;/code&gt;.&lt;/p&gt;&lt;/div&gt;</description><category>HTML5</category><category>JavaScript</category><guid>http://pengyin-shan.com/posts/2016/Front%20End/front-end-data-storage.html</guid><pubDate>Tue, 16 Aug 2016 04:00:00 GMT</pubDate></item><item><title>SVG Study Note</title><link>http://pengyin-shan.com/posts/2016/Front%20End/svg-study-note.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;[TOC]&lt;/p&gt;
-&lt;h2&gt;Reference List&lt;/h2&gt;
+&lt;p&gt;The way to use session storage is the same as the way to use local storage, except the object is now &lt;code&gt;window.sessionStorage&lt;/code&gt;.&lt;/p&gt;&lt;/div&gt;</description><category>HTML5</category><category>JavaScript</category><guid>http://pengyin-shan.com/posts/2016/Front%20End/front-end-data-storage.html</guid><pubDate>Tue, 16 Aug 2016 04:00:00 GMT</pubDate></item><item><title>SVG Study Note</title><link>http://pengyin-shan.com/posts/2016/Front%20End/svg-study-note.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h2&gt;Reference List&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;(Chinese) &lt;a href="http://waylau.com/svg-viewport-view-box/?utm_source=tuicool&amp;amp;utm_medium=referral"&gt;SVG Viewport and View Box&lt;/a&gt; written by &lt;em&gt;Way Lau&lt;/em&gt;.&lt;/p&gt;
@@ -335,8 +333,7 @@
 &lt;p&gt;img-responsive images/articles/2016/frontend/ratio-slice &lt;/p&gt;
 &lt;p&gt;If no &lt;code&gt;preserveAspectRatio&lt;/code&gt; is market, following result should be seen:&lt;/p&gt;
 &lt;p&gt;img-responsive images/articles/2016/frontend/ratio-no &lt;/p&gt;
-&lt;p&gt;Also see this &lt;a href="http://www.zhangxinxu.com/study/201408/svg-preserveaspectratio-meet-slice-none.html"&gt;demo&lt;/a&gt; created by &lt;em&gt;zhangxinxu&lt;/em&gt;.&lt;/p&gt;&lt;/div&gt;</description><category>Graph</category><guid>http://pengyin-shan.com/posts/2016/Front%20End/svg-study-note.html</guid><pubDate>Mon, 01 Aug 2016 04:00:00 GMT</pubDate></item><item><title>Quick Note about Box-Sizing/Box-Shadow</title><link>http://pengyin-shan.com/posts/2016/Front%20End/quick-note-about-box-box-shadow.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;[TOC]&lt;/p&gt;
-&lt;h2&gt;&lt;code&gt;box-sizing&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Also see this &lt;a href="http://www.zhangxinxu.com/study/201408/svg-preserveaspectratio-meet-slice-none.html"&gt;demo&lt;/a&gt; created by &lt;em&gt;zhangxinxu&lt;/em&gt;.&lt;/p&gt;&lt;/div&gt;</description><category>Graph</category><guid>http://pengyin-shan.com/posts/2016/Front%20End/svg-study-note.html</guid><pubDate>Mon, 01 Aug 2016 04:00:00 GMT</pubDate></item><item><title>Quick Note about Box-Sizing/Box-Shadow</title><link>http://pengyin-shan.com/posts/2016/Front%20End/quick-note-about-box-box-shadow.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h2&gt;&lt;code&gt;box-sizing&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;box-sizing&lt;/code&gt; is used to tell the browser what the sizing properties (&lt;code&gt;width&lt;/code&gt; and &lt;code&gt;height&lt;/code&gt;) should include.&lt;/p&gt;
 &lt;p&gt;It has following properties:&lt;/p&gt;
 &lt;ul&gt;
@@ -384,8 +381,7 @@
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;color&lt;/code&gt;: &lt;em&gt;Optional&lt;/em&gt;. Any color code. &lt;code&gt;rgba&lt;/code&gt; is a good option to includes opacity for shadow. Such as &lt;code&gt;rgba(0,0,0,0.75);&lt;/code&gt;.&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;</description><category>CSS3</category><guid>http://pengyin-shan.com/posts/2016/Front%20End/quick-note-about-box-box-shadow.html</guid><pubDate>Wed, 27 Jul 2016 04:00:00 GMT</pubDate></item><item><title>Learning Note - CSS Transitions and Transforms (Lynda.com)</title><link>http://pengyin-shan.com/posts/2016/Front%20End/learning-note-css-transitions-and-transforms.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;[TOC]&lt;/p&gt;
-&lt;h2&gt;Reference List&lt;/h2&gt;
+&lt;/ul&gt;&lt;/div&gt;</description><category>CSS3</category><guid>http://pengyin-shan.com/posts/2016/Front%20End/quick-note-about-box-box-shadow.html</guid><pubDate>Wed, 27 Jul 2016 04:00:00 GMT</pubDate></item><item><title>Learning Note - CSS Transitions and Transforms (Lynda.com)</title><link>http://pengyin-shan.com/posts/2016/Front%20End/learning-note-css-transitions-and-transforms.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h2&gt;Reference List&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;(Need Lynda.com Account) &lt;a href="https://www.lynda.com/CSS-tutorials/Exploring-transition-options/101072/108929-4.html"&gt;CSS: Transitions and Transforms&lt;/a&gt;&lt;/p&gt;
@@ -1513,8 +1509,7 @@
 &lt;span class="nx"&gt;foo&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Bar&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;prototype&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;prop1_&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="nx"&gt;foo&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Bar&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;prototype&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;prop2_&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="nx"&gt;foo&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Bar&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;prototype&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;prop4_&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'blah'&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</description><category>JavaScript</category><guid>http://pengyin-shan.com/posts/2016/JavaScript/reading-note-javascript-scoping-hoisting-and-others.html</guid><pubDate>Wed, 22 Jun 2016 04:00:00 GMT</pubDate></item><item><title>TypeScript Basics</title><link>http://pengyin-shan.com/posts/2016/JavaScript/typescript-basics.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;[TOC]&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;This is a brief reading note for TypeScript &lt;a href="http://www.typescriptlang.org/docs/handbook"&gt;official handbook&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
+&lt;/pre&gt;&lt;/div&gt;</description><category>JavaScript</category><guid>http://pengyin-shan.com/posts/2016/JavaScript/reading-note-javascript-scoping-hoisting-and-others.html</guid><pubDate>Wed, 22 Jun 2016 04:00:00 GMT</pubDate></item><item><title>TypeScript Basics</title><link>http://pengyin-shan.com/posts/2016/JavaScript/typescript-basics.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;em&gt;This is a brief reading note for TypeScript &lt;a href="http://www.typescriptlang.org/docs/handbook"&gt;official handbook&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
 &lt;h2&gt;Gulp Setup&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;Gulp&lt;/code&gt; can be used with TypeScript to provide powerful compiling process. See &lt;a href="http://www.typescriptlang.org/docs/handbook/gulp.html"&gt;here&lt;/a&gt; for a detailed description.&lt;/p&gt;
 &lt;p&gt;My new project requires Typescript, Jade and SASS. Here is a sample &lt;code&gt;gulpfile.js&lt;/code&gt;:&lt;/p&gt;
@@ -1688,8 +1683,7 @@
 &lt;span class="kd"&gt;let&lt;/span&gt; &lt;span class="nx"&gt;strlength2&lt;/span&gt;: &lt;span class="kt"&gt;number&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;typeassertion&lt;/span&gt; &lt;span class="kr"&gt;as&lt;/span&gt; &lt;span class="kt"&gt;string&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;length&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;strlength&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 &lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;strlength2&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</description><category>TypeScript</category><guid>http://pengyin-shan.com/posts/2016/JavaScript/typescript-basics.html</guid><pubDate>Tue, 21 Jun 2016 04:00:00 GMT</pubDate></item><item><title>Node.js Basics</title><link>http://pengyin-shan.com/posts/2016/JavaScript/node-js-basics.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;[TOC]&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;This is a reading note for node.js part on &lt;a href="http://www.tutorialspoint.com/nodejs/index.htm"&gt;tutorialspoint&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;/pre&gt;&lt;/div&gt;</description><category>TypeScript</category><guid>http://pengyin-shan.com/posts/2016/JavaScript/typescript-basics.html</guid><pubDate>Tue, 21 Jun 2016 04:00:00 GMT</pubDate></item><item><title>Node.js Basics</title><link>http://pengyin-shan.com/posts/2016/JavaScript/node-js-basics.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;em&gt;This is a reading note for node.js part on &lt;a href="http://www.tutorialspoint.com/nodejs/index.htm"&gt;tutorialspoint&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Node.js (MIT License) is a server-side framework built on Good V8 Engine. From Tutorialpoints.com, it has following features:&lt;/p&gt;
 &lt;ul&gt;
@@ -2268,8 +2262,7 @@ Error: Converted to exception. System will crash!
 &lt;span class="p"&gt;})&lt;/span&gt;
 
 &lt;span class="nx"&gt;app&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;listen&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;8081&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</description><category>Node.js</category><guid>http://pengyin-shan.com/posts/2016/JavaScript/node-js-basics.html</guid><pubDate>Wed, 25 May 2016 04:00:00 GMT</pubDate></item><item><title>Reading Note - Asynchronous in jQuery and ECMAScript 6</title><link>http://pengyin-shan.com/posts/2016/JavaScript/reading_note_defer_in_jquery.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;[TOC]&lt;/p&gt;
-&lt;h2&gt;Reference List&lt;/h2&gt;
+&lt;/pre&gt;&lt;/div&gt;</description><category>Node.js</category><guid>http://pengyin-shan.com/posts/2016/JavaScript/node-js-basics.html</guid><pubDate>Wed, 25 May 2016 04:00:00 GMT</pubDate></item><item><title>Reading Note - Asynchronous in jQuery and ECMAScript 6</title><link>http://pengyin-shan.com/posts/2016/JavaScript/reading_note_defer_in_jquery.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h2&gt;Reference List&lt;/h2&gt;
 &lt;p&gt;This is a &lt;strong&gt;reading note&lt;/strong&gt; for following articles/blogs:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;

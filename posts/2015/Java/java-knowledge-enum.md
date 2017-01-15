@@ -7,7 +7,7 @@
 .. authors: Pengyin Shan
 .. description: Enum is a very useful type in Java, and I'm not very familiar with it. This post records some basic knowledge of using Enum in Java, mainly are my reading notes for OCP Java SE7 MEAP V12 from Manning Publican, Chapter 2.3.
 
-[TOC]
+
 
 `Enum` is use to define **pre-defined**, **finite** set of objects.
 

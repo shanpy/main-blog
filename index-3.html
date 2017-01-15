@@ -11,7 +11,19 @@ article: http://ogp.me/ns/article#
 <link href="assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/index-3.html">
-<!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><style>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+    },
+    displayAlign: 'left', // Change this to 'center' to center equations.
+    "HTML-CSS": {
+        styles: {'.MathJax_Display': {"margin": 0}}
+    }
+});
+</script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><style>
     div.input_prompt {
       display: none;
     }
@@ -48,6 +60,115 @@ article: http://ogp.me/ns/article#
 
             </div>
             <div class="body">
+                <div>
+<p><code>Enum</code> is use to define <strong>pre-defined</strong>, <strong>finite</strong> set of objects.</p>
+<p>We can also use <code>Enumerated Types</code> to describe <code>Enum</code> type.</p>
+<p>An <code>enum</code> defines a new <strong>custom data type</strong> (like <code>interfaces</code> and <code>classes</code>).</p>
+<blockquote>
+<p>Users are allowed to <strong>use</strong> only <strong>existing</strong> <code>enum</code> objects;</p>
+<p>They <strong>can’t create</strong> new enum objects.</p>
+</blockquote>
+<h4>Create Enum</h4>
+<p>An <code>enum</code> enables you to create a <strong>type</strong>, which has a <strong>fixed</strong> set of <code>constants</code>.</p>
+<p>Code Example:</p>
+<pre class="code literal-block"><span></span><span class="c1">//Assume we have: enum Level {BEGINNER,INTERMEDIATE,EXPERT}</span>
+<span class="kd">class</span> <span class="nc">Game</span> <span class="o">{</span>
+    <span class="n">Level</span> <span class="n">gameLevel</span><span class="o">;</span> <span class="c1">//gameLevel is a variable with type Level</span>
+<span class="o">}</span>
+<span class="kd">class</span> <span class="nc">GameApp</span> <span class="o">{</span>
+    <span class="n">Game</span> <span class="n">game</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">startGame</span> <span class="o">()</span> <span class="o">{</span>
+        <span class="n">game</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Game</span><span class="o">();</span>
+        <span class="n">game</span><span class="o">.</span><span class="na">gameLevel</span> <span class="o">=</span> <span class="n">Level</span><span class="o">.</span><span class="na">BEGINNER</span><span class="o">;</span> <span class="c1">//Assgin constant BEGINNER</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre>
+
+
+<blockquote>
+<p>You can assign <strong>only one constants</strong> defined in the enum level to <code>gameLevel</code>, since it is type <code>Level</code>.</p>
+</blockquote>
+<h4>Detail about a Enum Class</h4>
+<p>Following is the implicate class for <code>enum Level {BEGINNER,INTERMEDIATE,EXPERT}</code>:</p>
+<pre class="code literal-block"><span></span><span class="kd">final</span> <span class="kd">class</span> <span class="nc">Level</span> <span class="kd">extends</span> <span class="n">Enum</span> <span class="c1">//enum is implicitly final</span>
+<span class="o">{</span>
+    <span class="c1">//enum constants are implicitly public, static and final</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">Level</span> <span class="n">BEGINNER</span><span class="o">;</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">Level</span> <span class="n">INTERMEDIATE</span><span class="o">;</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">Level</span> <span class="n">EXPERT</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">Level</span> <span class="n">$VALUES</span><span class="o">[];</span>
+    <span class="c1">//creation of enum constants. This compiles after constructor</span>
+    <span class="kd">static</span>
+    <span class="o">{</span>
+        <span class="n">BEGINNER</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Level</span><span class="o">(</span><span class="s">"BEGINNER"</span><span class="o">,</span> <span class="mi">0</span><span class="o">);</span>
+        <span class="n">INTERMEDIATE</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Level</span><span class="o">(</span><span class="s">"INTERMEDIATE"</span><span class="o">,</span> <span class="mi">1</span><span class="o">);</span>
+        <span class="n">EXPERT</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Level</span><span class="o">(</span><span class="s">"EXPERT"</span><span class="o">,</span> <span class="mi">2</span><span class="o">);</span>
+        <span class="n">$VALUES</span> <span class="o">=</span> <span class="o">(</span><span class="k">new</span> <span class="n">Level</span><span class="o">[]</span> <span class="o">{</span>
+            <span class="n">BEGINNER</span><span class="o">,</span> <span class="n">INTERMEDIATE</span><span class="o">,</span> <span class="n">EXPERT</span>
+        <span class="o">});</span>
+    <span class="o">}</span>
+    <span class="c1">//return an array of all enum constants</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="n">Level</span><span class="o">[]</span> <span class="nf">values</span><span class="o">()</span>
+    <span class="o">{</span>
+        <span class="k">return</span> <span class="o">(</span><span class="n">Level</span><span class="o">[])</span><span class="n">$VALUES</span><span class="o">.</span><span class="na">clone</span><span class="o">();</span>
+    <span class="o">}</span>
+    <span class="c1">//pass a string and return corresponding enum constant</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="n">Level</span> <span class="nf">valueOf</span><span class="o">(</span><span class="n">String</span> <span class="n">s</span><span class="o">)</span>
+    <span class="o">{</span>
+        <span class="k">return</span> <span class="o">(</span><span class="n">Level</span><span class="o">)</span><span class="n">Enum</span><span class="o">.</span><span class="na">valueOf</span><span class="o">(</span><span class="n">Level</span><span class="o">,</span> <span class="n">s</span><span class="o">);</span>
+    <span class="o">}</span>
+    <span class="c1">//constructor</span>
+    <span class="kd">private</span> <span class="nf">Level</span><span class="o">(</span><span class="n">String</span> <span class="n">s</span><span class="o">,</span> <span class="kt">int</span> <span class="n">i</span><span class="o">)</span>
+    <span class="o">{</span>
+        <span class="kd">super</span><span class="o">(</span><span class="n">s</span><span class="o">,</span> <span class="n">i</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre>
+
+
+<h4>java.lang.Enum</h4>
+<p>All enums in Java extend the abstract class <code>java.lang.Enum</code>, defined in the Java API.</p>
+<p>Code:</p>
+<pre class="code literal-block"><span></span><span class="kd">public</span> <span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Enum</span><span class="o">&lt;</span><span class="n">E</span> <span class="kd">extends</span> <span class="n">Enum</span><span class="o">&lt;</span><span class="n">E</span><span class="o">&gt;&gt;</span> <span class="kd">implements</span> <span class="n">Comparable</span><span class="o">&lt;</span><span class="n">E</span><span class="o">&gt;,</span> <span class="n">Serializable</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">name</span><span class="o">;</span> <span class="c1">//name of enum constant</span>
+    <span class="kd">private</span> <span class="kd">final</span> <span class="kt">int</span> <span class="n">ordinal</span><span class="o">;</span> <span class="c1">//position of enum constant</span>
+    <span class="kd">protected</span> <span class="nf">Enum</span><span class="o">(</span><span class="n">String</span> <span class="n">name</span><span class="o">,</span> <span class="kt">int</span> <span class="n">ordinal</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="o">;</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">ordinal</span> <span class="o">=</span> <span class="n">ordinal</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="c1">//Can be overridden, return name of constant</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">toString</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">name</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="c1">//Can not be overridden, return name of constant</span>
+    <span class="kd">public</span> <span class="kd">final</span> <span class="n">String</span> <span class="nf">name</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">name</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre>
+
+
+<p>The class <code>Enum</code> defines only <strong>one constructor</strong> with <code>String</code> and <code>int</code> parameters to specify its <em>name</em> and <em>ordinal (order)</em>. Every <code>enum</code> constant is implicitly assigned <strong>an order on its creation</strong>.</p>
+<p>The <strong>default order</strong> of enum constants is their <strong>order of definition</strong>. The enum constants <em>aren’t sorted alphabetically</em>.</p>
+<blockquote>
+<p>Note that both methods—<code>toString()</code> and <code>name()</code> defined in <code>java.lang.Enum</code> — return the value of the instance variable <code>name</code></p>
+</blockquote>
+<p>Because method <code>name()</code> is a <code>final</code> method, you <strong>can’t override</strong> it. But you <strong>can override</strong> method <code>toString()</code> to return any description that you want.</p>
+<p>For an <code>enum</code> constant <code>BEGINNER</code> in <code>enum</code> <code>Level</code>, calling <code>System.out.println(Level.BEGINNER)</code> returns the <strong>name</strong> of the enum constant—that is, <code>BEGINNER</code></p>
+<p>You can override <code>toString()</code> in an <code>enum</code> to modify this default return value.</p>
+<p>A class can <strong>extend from only one base class</strong>, an attempt to make your <code>enum</code> extend any another class will fail. The following code won’t compile:</p>
+<pre class="code literal-block"><span></span><span class="c1">//Won't compile</span>
+<span class="kd">class</span> <span class="nc">Person</span> <span class="o">{}</span>
+<span class="kd">enum</span> <span class="n">Level</span> <span class="kd">extends</span> <span class="n">Person</span> <span class="o">{</span> <span class="n">BEGINNER</span><span class="o">,</span> <span class="n">INTERMEDIATE</span><span class="o">,</span> <span class="n">EXPERT</span> <span class="o">}</span>
+</pre>
+
+
+<p>But you can make your <code>enum</code> implement any number of <code>interfaces</code>. A class can extend only one base class but <strong>can implement multiple interfaces</strong>. The following code compiles successfully:</p>
+<pre class="code literal-block"><span></span><span class="c1">//Compile successfully</span>
+<span class="kd">interface</span> <span class="nc">MyInterface</span> <span class="o">{}</span>
+<span class="kd">enum</span> <span class="n">Level</span> <span class="kd">implements</span> <span class="n">MyInterface</span> <span class="o">{</span> <span class="n">BEGINNER</span><span class="o">,</span> <span class="n">INTERMEDIATE</span><span class="o">,</span> <span class="n">EXPERT</span> <span class="o">}</span>
+</pre>
+</div>
             </div>
         </div>
         <div class="post">
@@ -73,6 +194,96 @@ article: http://ogp.me/ns/article#
 
             </div>
             <div class="body">
+                <div>
+<p>Note</p>
+<blockquote>
+<p>Before you through two cases below, make sure you check your <strong>web.xml</strong> and get the <code>&lt;url-pattern&gt;</code>:
+- If your web.xml set up default url-pattern <code>/</code>, when you refer a link, you don't need to add any suffix on it.
+- If your web.xml set up any url-pattern, such as <code>html</code> or <code>htm</code>, when you refere a link, in <code>ajax</code> or <code>windown.location.href</code>, you need to add <code>html</code> or <code>htm</code> suffix after it. <em>But don't add these suffix in spring controller request mapping</em>.</p>
+</blockquote>
+<h3>Case 1. Pass JSON Data to Controller in Ajax Call, using $.ajax()</h3>
+<blockquote>
+<p>Notes on 01/13/2015: I had trouble using <code>$.post()</code> to post JSON data. I doubt something is wrong but I haven't figure out why. Currently I just use <code>$.ajax()</code>*</p>
+</blockquote>
+<p>PROS</p>
+<blockquote>
+<p>Ajax is good for <strong>large dataset</strong>, so you can avoid possible "timeout" problem in case 2.</p>
+<p>Ajax has <strong>success</strong> and <strong>error</strong> option, so you can check status of ajax call, and give response based on feedback.</p>
+</blockquote>
+<p>CONS</p>
+<blockquote>
+<p>You need to come back this page after an ajax call!**, no matter you success or fail.</p>
+</blockquote>
+<p>So, if you want to go to another page, you need to use another <code>window.href</code> or other functions to call another controller, then follow that controller to go to another page.</p>
+<p>Process of using Ajax:</p>
+<pre class="code literal-block"><span></span><span class="c1">//Assume we have a json object 'json'</span>
+<span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
+    <span class="nx">headers</span><span class="o">:</span> <span class="p">{</span>
+    <span class="s1">'Accept'</span><span class="o">:</span> <span class="s1">'application/json'</span><span class="p">,</span>
+    <span class="s1">'Content-Type'</span><span class="o">:</span> <span class="s1">'application/json'</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+</pre>
+
+
+<p>TIP</p>
+<blockquote>
+<p>You may want to substitude <code>application/json</code> with <code>application/html</code> to avoid possible.</p>
+</blockquote>
+<h3>Case 2. Pass JSON Data as URL parameter, and Handle it in Spring MVC Controller</h3>
+<p>PROS</p>
+<blockquote>
+<p>You are free to go to another page or call other controllers after you pass data to controller.</p>
+</blockquote>
+<p>CONS</p>
+<blockquote>
+<p>Not good to handle large dataset. If you put too much stuff in URL, you may get "time out" problem.</p>
+</blockquote>
+<p>One of the easiest way to handle json object is to pass it directly to URL. I tried following methods:</p>
+<blockquote>
+<ol>
+<li>Pass data as pure json object, and make it as part of URL</li>
+<li>Pass data as pure jsob object, and make it as a parameter in URL</li>
+<li>Pass data as a string, and make it as part of URL</li>
+<li>Pass data as a astring, and make it as a parameter in URL</li>
+</ol>
+</blockquote>
+<p>Assume the code for JSON object in JavaScript is:</p>
+<pre class="code literal-block"><span></span><span class="kd">var</span> <span class="nx">json</span> <span class="o">=</span> <span class="p">[];</span>
+<span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{};</span>
+<span class="nx">obj</span><span class="p">.</span><span class="nx">age</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+<span class="nx">obj</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="s2">"test"</span><span class="p">;</span>
+<span class="nx">json</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">obj</span><span class="p">);</span>
+</pre>
+
+
+<p>So the code for JSP page can be:</p>
+<pre class="code literal-block"><span></span><span class="kd">var</span> <span class="nx">testUrl</span> <span class="o">=</span> <span class="s2">"/project/json_operation/"</span> <span class="o">+</span> <span class="nx">json</span><span class="p">;</span>
+<span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">href</span> <span class="o">=</span> <span class="nx">testUrl</span><span class="p">;</span>
+
+<span class="kd">var</span> <span class="nx">testUrl</span> <span class="o">=</span> <span class="s2">"/project/json_operation?json="</span> <span class="o">+</span> <span class="nx">json</span><span class="p">;</span>
+<span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">href</span> <span class="o">=</span> <span class="nx">testUrl</span><span class="p">;</span>
+
+<span class="kd">var</span> <span class="nx">testUrl</span> <span class="o">=</span> <span class="s2">"/project/json_operation/"</span> <span class="o">+</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">json</span><span class="p">);</span>
+<span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">href</span> <span class="o">=</span> <span class="nx">testUrl</span><span class="p">;</span>
+
+<span class="kd">var</span> <span class="nx">testUrl</span> <span class="o">=</span> <span class="s2">"/project/json_operation?json="</span> <span class="o">+</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">json</span><span class="p">);</span>
+<span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">hre</span> <span class="o">=</span> <span class="nx">testUrl</span><span class="p">;</span>
+</pre>
+
+
+<p>And the code for Spring Controller can be:</p>
+<pre class="code literal-block"><span></span><span class="cm">/*</span>
+<span class="cm">*1 and 3: not work.</span>
+<span class="cm">*For 1: Spring will recognize json as [object%20Object] in url</span>
+<span class="cm">*For 1 and 3: Spring cannot find</span>
+<span class="cm">*/</span>
+<span class="nd">@RequestMapping</span><span class="o">(</span><span class="n">value</span><span class="o">=</span><span class="s">"/springtest/{jsonstuff}"</span><span class="o">)</span>
+<span class="kd">public</span> <span class="n">ModelAndView</span> <span class="nf">test</span><span class="o">(</span><span class="nd">@PathVariable</span><span class="o">(</span><span class="s">"jsonstuff"</span><span class="o">)</span> <span class="n">JSONObject</span> <span class="n">json</span><span class="o">){</span>
+<span class="c1">//Or @PathVaraible("jsonstuff") String json</span>
+<span class="o">}</span>
+</pre>
+</div>
             </div>
         </div>
         <div class="post">
@@ -97,6 +308,50 @@ article: http://ogp.me/ns/article#
 
             </div>
             <div class="body">
+                <div>
+<p>This post will serve as a Q&amp;A note during the process of learning Sass. I'm absolutely a new beginner so I'll keep questions and answers updating continously:)</p>
+<h3>Question: What is the syntax difference between sass and scss?</h3>
+<p>So far I've found following difference:</p>
+<ul>
+<li>
+<p>scss is similar to css style, requires "{" and ";"</p>
+</li>
+<li>
+<p>sass has none of these</p>
+</li>
+<li>
+<p>sass is white space recoginized while scss not</p>
+</li>
+</ul>
+<h3>Question: How Jekyll work with Sass?</h3>
+<p>Currently version of Jekyll (2.4.0) has native support for Sass and CoffeeScript. Official documentation is here: http://jekyllrb.com/docs/assets/</p>
+<p>I use official way for sass compile by following step:</p>
+<p>In home directory, create a folder called _sass. I decide to use this folder for sass files that I will import from.</p>
+<p>Add following lines in _config.yml to register _sass folder:</p>
+<blockquote>
+<p>sass:
+ sass_dir: _sass</p>
+</blockquote>
+<p>You can always modify it to your folder name.</p>
+<p>Create a folder called "css", then put all scss file there. Now website has:</p>
+<pre class="code literal-block"><span></span>/css
+    - default.scss
+    - header.scss
+    - page.scss
+/_sass
+    - _test.css
+</pre>
+
+
+<p>In scss file, first two lines needs to be '- - -'. You can use @import 'test' to import _test.sass file in _sass.</p>
+<blockquote>
+<p>Please make sure everything in <em>sass folder start with a '</em>'.</p>
+<p>You don't need to put '- - -' to files in _sass folder.</p>
+</blockquote>
+<p>In html page, add link to these scss file, using '.css' extension. For example: <code>&lt;link rel="stylesheet" type="text/css" href="/css/default.css"&gt;</code> pointing to default.scss in css folder. You can actually find default.css in _site/css folder</p>
+<p>Jeyll will automatically compile scss and sass file when you build your project.</p>
+<p>On Jekyll website, there are some websites that are built with Sass. You can refer them for folder structure on your own blog site.</p>
+</div>
             </div>
         </div>
         <div class="post">
@@ -121,6 +376,94 @@ article: http://ogp.me/ns/article#
 
             </div>
             <div class="body">
+                <div>
+<h2>Canvas</h2>
+<h4>HTML</h4>
+<pre class="code literal-block"><span></span><span class="p">&lt;</span><span class="nt">canvas</span> <span class="na">style</span><span class="o">=</span><span class="s">"width:1000px; height:1000px;"</span> <span class="na">id</span><span class="o">=</span><span class="s">"thecanvas"</span><span class="p">&gt;&lt;/</span><span class="nt">canvas</span><span class="p">&gt;</span>
+</pre>
+
+
+<h4>JavaScript Operation</h4>
+<h5>Get Context (2d)</h5>
+<pre class="code literal-block"><span></span><span class="kd">var</span> <span class="nx">oCanvas</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"thecanvas"</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">oCtx</span> <span class="o">=</span> <span class="nx">oCanvas</span><span class="p">.</span><span class="nx">getContext</span><span class="p">(</span><span class="s2">"2d"</span><span class="p">);</span>
+</pre>
+
+
+<h5>Add Text and Edit Text Style</h5>
+<pre class="code literal-block"><span></span><span class="c1">//Example of Text Shadow. If you make them to 0, you can remove text shadow</span>
+<span class="nx">oCtx</span><span class="p">.</span><span class="nx">shadowColor</span> <span class="o">=</span> <span class="s2">"#000000"</span><span class="p">;</span>
+<span class="nx">oCtx</span><span class="p">.</span><span class="nx">shadowOffsetX</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">;</span>
+<span class="nx">oCtx</span><span class="p">.</span><span class="nx">shadowOffsetY</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">;</span>
+<span class="nx">oCtx</span><span class="p">.</span><span class="nx">shadowBlur</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">;</span>
+<span class="c1">//Example of Text Style</span>
+<span class="nx">oCtx</span><span class="p">.</span><span class="nx">font</span> <span class="o">=</span> <span class="s2">"normal 18px Arial"</span><span class="p">;</span>
+<span class="nx">oCtx</span><span class="p">.</span><span class="nx">fillStyle</span> <span class="o">=</span> <span class="s2">"#ccc"</span><span class="p">;</span>
+<span class="c1">//Draw Text</span>
+<span class="nx">oCtx</span><span class="p">.</span><span class="nx">fillText</span><span class="p">(</span><span class="s2">"Hello World"</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span> <span class="c1">//x-axis and y-axis</span>
+</pre>
+
+
+<h5>Draw Existing Image to Canvas</h5>
+<pre class="code literal-block"><span></span><span class="kd">var</span> <span class="nx">imageObj</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Image</span><span class="p">();</span>
+<span class="c1">//get src of existing image</span>
+<span class="nx">imageObj</span><span class="p">.</span><span class="nx">src</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'existing_image'</span><span class="p">).</span><span class="nx">src</span><span class="p">;</span>
+<span class="nx">oCtx</span><span class="p">.</span><span class="nx">drawImage</span><span class="p">(</span><span class="nx">imageObj</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span> <span class="c1">//x-axis and y-axis</span>
+</pre>
+
+
+<h5>Download Canvas as Image</h5>
+<pre class="code literal-block"><span></span><span class="cm">/**Create a (hidden) image to hold canvas data:</span>
+<span class="cm">&lt;img hidden src="" id="downloadCanvas" /&gt;</span>
+<span class="cm">**/</span>
+<span class="kd">var</span> <span class="nx">dataURL</span> <span class="o">=</span> <span class="nx">oCanvas</span><span class="p">.</span><span class="nx">toDataURL</span><span class="p">(</span><span class="s1">'image/png'</span><span class="p">);</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'downloadCanvas'</span><span class="p">).</span><span class="nx">width</span> <span class="o">=</span> <span class="nx">oCanvas</span><span class="p">.</span><span class="nx">width</span><span class="p">;</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'downloadCanvas'</span><span class="p">).</span><span class="nx">height</span> <span class="o">=</span> <span class="nx">oCanvas</span><span class="p">.</span><span class="nx">height</span><span class="p">;</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'downloadCanvas'</span><span class="p">).</span><span class="nx">src</span> <span class="o">=</span> <span class="nx">dataURL</span><span class="p">;</span>
+<span class="cm">/**</span>
+<span class="cm">If you want to have a download link to download canvas image, make sure you have HTML such as:</span>
+<span class="cm">&lt;a id="downloadBanner" href="#" class="button" download="banner_result.png"&gt;Download&lt;/a&gt;</span>
+<span class="cm">Note "download" attribute is able to re-name the downloadable image.</span>
+<span class="cm">**/</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'downloadBanner'</span><span class="p">).</span><span class="nx">href</span> <span class="o">=</span> <span class="nx">dataURL</span><span class="p">;</span>
+</pre>
+
+
+<h5>Clear Canvas</h5>
+<pre class="code literal-block"><span></span><span class="c1">//You may want to do this to remove unwanted elements from canvas</span>
+<span class="nx">oCtx</span><span class="p">.</span><span class="nx">clearRect</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">oCanvas</span><span class="p">.</span><span class="nx">width</span><span class="p">,</span> <span class="nx">oCanvas</span><span class="p">.</span><span class="nx">height</span><span class="p">);</span>
+</pre>
+
+
+<h2>Drag and Drop</h2>
+<p>Examples are taken from <a href="posts/2015/Front%20End/www.w3schools.com/html/html5_draganddrop.asp">w3schools.com</a>.</p>
+<h4>General Process</h4>
+<p>Draable stuff has <code>draggable = 'true'</code> attribute; has <code>ondragstart</code> attribute, which takes a method.</p>
+<p>Destination stuff has <code>ondrop</code> and <code>ondragover</code> attribute. Both of them take method.</p>
+<h4>ondragstart</h4>
+<p>This attribute takes a JavaScript method. This method takes a <code>event</code> parameter and describe what will happen when you start to drag.</p>
+<p>You need to set the data to drag by using <code>event.dataTransfer.setData(format, event.target.id)</code>:</p>
+<blockquote>
+<p><code>format</code> above can be <code>text</code>, <code>text/plain</code>, <code>text/html</code> etc, or <code>URL</code> format.</p>
+<p>This function set up the data that is take via <code>event.target.id</code>, which is the <code>id</code> for draggable stuff, and temparary store it. Note <code>event.target</code> now pointing to draggable stuff.</p>
+</blockquote>
+<h4>ondragover</h4>
+<p>This attribute takes a JavaScript method. This method takes a <code>event</code> parameter and describe what will happen when you drag stuff over elements without drop the stuff.</p>
+<p>Basic set up is <code>event.preventDefault()</code>, which prevents browser asking elements doing default behavior.</p>
+<h4>ondrop</h4>
+<p>This attribute takes a JavaScript method. This method takes a <code>event</code> parameter and describe what will happen when you drop the draggable stuff.</p>
+<p>First, you should do <code>event.preventDefault()</code>, which prevents browser asking elements doing default behavior.</p>
+<p>Then, you need to get the data that you dragged by using <code>event.dataTransfer.getData(format)</code>. The format should corresponding what you had in <code>event.dataTransfer.setData()</code> method.</p>
+<blockquote>
+<p>The method will return all data that has same format.</p>
+</blockquote>
+<p>You can get current dropdown container by using <code>event.target</code> (instead of draggable element). You can choose to append your draggable stuff by using</p>
+<pre class="code literal-block"><span></span><span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">dataTransfer</span><span class="p">.</span><span class="nx">getData</span><span class="p">(</span><span class="nx">format</span><span class="p">))</span>
+</pre>
+
+
+<p>if you passed <code>id</code> in <code>ondragstart</code>'s method. Or you can do whatever you want.</p>
+</div>
             </div>
         </div>
         <div class="post">
@@ -144,6 +487,21 @@ article: http://ogp.me/ns/article#
 
             </div>
             <div class="body">
+                <div>
+<p>Recentely I read a great article about <a href="https://gist.github.com/iamatypeofwalrus/5183133">Hosting IPython Notebook on Amazon AWS Free Tier from Scratch</a>. This tutorial explains the way to host IPython Notebook using a Amazon EC2 Micro Instance.</p>
+<p>I followed this tutorial and successfully hosted an IPython notebook on a Ubuntu 14 Guest AMI. I want to record some of important steps I took while following this tutorial:</p>
+<p>Note: You can use <strong>nano</strong> to edit <code>ipython_notebook_config.py</code> file. It is located at <code>~/.ipython/profile_nbserver/</code>.</p>
+<h3>Security Group</h3>
+<p>When you set up rules for <em>Security Groups</em>, make sure you include <code>SSH</code>, <code>HTTPS</code> and <code>8888</code> all of these. Lack of one can make your IPython Notebook fail. If you forget to do so when you set up the machine, you can set up later in your EC2 management console.</p>
+<h3>Elastic Ip</h3>
+<p>The tutorial suggest you link an <strong>Elastic IP</strong> to your instance so that everytime you try to access your instance in browser, you can type new ip address instead of long public DNS.</p>
+<p>To do this, click <strong>Elastic IPs</strong> option in you EC2 Dashboard menu, which is in <strong>NETWORK &amp; SECURITY</strong> section. On right panel, click <strong>Allocate New Address</strong> button. Then click <strong>Yes</strong> in the pop-up window.</p>
+<p>Now a IP address should be generated. Rememeber to <em>associate</em> your instance with this IP address. Select this IP address, then click <strong>Associate Address</strong> button. A pop-up window will appear. Click <strong>Instance</strong> then select your instance in drop-dowm menu. You can also do other setting here. Click <strong>Associate</strong> to associate your instance to this IP.</p>
+<p>Now you just need to type: <code>https://your_elastic_ip:port_number</code> to your IPython Notebook.</p>
+<h3>Make IPython Run as Service</h3>
+<p>You may want you IPython notebook still works after you shutdown your terminal/SSH. I got solution from this <a href="http://stackoverflow.com/questions/16418477/how-to-keep-server-running-on-ec2-after-ssh-is-terminated">StackOverflow post</a>. I got <strong>screen</strong> by typing <code>sudo apt-get install screen</code>, then do <code>ipython server &amp;</code>.</p>
+<p>If this not work for you, try <code>screen ipython s</code> instead</p>
+</div>
             </div>
         </div>
         <div class="post">
@@ -168,6 +526,138 @@ article: http://ogp.me/ns/article#
 
             </div>
             <div class="body">
+                <div>
+<p>One of my goal for 2015 is to learn Python. To prepare for this, I decided to create a new blog site, based on Python.</p>
+<p>After doing some research, I decide to use <a href="http://getnikola.com/"><strong>Nikola</strong></a> to build my blog. One of the reason I choose Nikola is that it has great support to <strong>IPython Notebook</strong>.</p>
+<h5>Lots of Thanks to <a href="http://www.damian.oquanta.info/">Damian Avila</a>! Your blog is so useful and great for Nikola beginners like me!</h5>
+<p><strong>1. Create Virtual Environment</strong></p>
+<p>Before you install Nikola, a good practice is to build a virual environment. You can install <strong>Virtualenv</strong> and use it. Since I had <strong>Anaconda</strong> installed, I just type <code>conda create -n techblog python=3.4 anaconda</code> to create a virtual environment called "techblog" with python 3.4. You can define your own name and python version.</p>
+<p><strong>2. Install Nikola and Necessary Component</strong></p>
+<p><em>First, make sure you use your virtual enviorment. command is:</em> <code>source activate name_of_environment</code></p>
+<p>I suggest you to use <strong>pip</strong> to install followiing components:
+- nikola
+- requests
+- sphinx
+- pyzmq
+- tornado(?)
+- jinja2
+- webassets (if you want to use USE_BUNDLES)
+- markdown (if you want to use markdown)
+- ipython (if you want to use ipython notebook)</p>
+<p>For example, you type follwing command in your terminal: <code>pip install nikola requests sphinx markdown ipython pyzmq tornado jinja2 webasset</code></p>
+<p><em>In the next following steps, make sure you are under your virtual environment.</em></p>
+<p><strong>3. Initialize Nikola</strong></p>
+<p>Type <code>nikola init</code> in your terminal, where you want to build your site in a <em>subfolder</em> of current location.</p>
+<p>You will be asked following questions:
+- Destination: Name of the folder your site will be
+- Site Title
+- Site Author
+- Author's Email
+- Site Description
+- Site URL: This is the url that when you click header of your site, the page will jump to. You can set this later in <strong>conf.py</strong> file. If you type one, make sure it ends with a <em>/</em>.
+- Default Language: I use <strong>en</strong> but you can refer Nikola website for more option.
+- Time Zone: Short name for your time zone. I use <strong>EST</strong>. For example.
+- Comment System: Nikola support popular comment system such as <em>Disqus</em>, <em>Google+</em> and <em>Facebook</em>. You will be asked to enter <em>comment system site identifier</em> if required.</p>
+<p><strong>4. Change Theme (Optional)</strong></p>
+<p>If you want to change theme of your website, You can find a list of themes from <a href="http://themes.getnikola.com/">Nikiola Website</a>. Note any theme that has <em>ipython</em> in its name supports IPython Notebook.</p>
+<p>Then, do <code>cd your_folder</code> to get to the folder that Nikola just created for you.</p>
+<p>Type <code>nikola install_theme name_of_theme</code> to install theme.</p>
+<p>You may need to change some setting in <strong>conf.py</strong> file, so read instructions in your terminal carefully.</p>
+<p><strong>5. Configure and Build Site</strong></p>
+<p>First, open <strong>conf.py</strong> file and configure it as your requests:</p>
+<ul>
+<li>
+<p>If you didn't do some setup in step 3 in terminal, you can found them here. For example, you can re-edit <strong>SITE_URL</strong> if you haven't done so.</p>
+</li>
+<li>
+<p>If you have installed new theme and want to change to it, change <strong>THEME=</strong> option to your installed theme. Some theme may also want you to change <strong>NAVIGATION_LINKS</strong> or other settings.</p>
+</li>
+<li>
+<p>If you want to use IPython Notebook or Markdown, find <strong>POSTS =</strong> option and add <code>("posts/*.md", "posts", "post.tmpl"),("posts/*.ipynb", "posts", "post.tmpl"),</code>. <em>If you don't need lots of new pages, I suggest you not change PAGES setting.</em></p>
+</li>
+<li>
+<p>Set <strong>INDEX_TEASERS = </strong> to <strong>True</strong> to enable teaser. Now you can just put <code>.. TEASER_END</code> or <code>&lt;!--TEASER_END--&gt;</code> in your post to make index page only show first part of your post</p>
+</li>
+<li>
+<p>If you have installed <strong>webassets</strong>, you can set <strong>USE_BUNDLES=</strong> to <strong>True</strong> to speed up your site.</p>
+</li>
+<li>
+<p>I skip the process of creating new post. Note if you create a IPython Notebook post, you can edit information such as slugs, dates, tags in <strong>.meta</strong> file, which is automatically generated with <strong>.ipynb</strong> file.</p>
+</li>
+</ul>
+<p>Now you can type <code>nikola build</code> to build your site. A list of rendered file will appear.</p>
+<ul>
+<li>
+<p>What user can see from your website is in <strong>output</strong> folder.</p>
+</li>
+<li>
+<p>If you have any external file, such as <strong>PDF</strong> or <strong>IMAGE</strong>, you can put it in <strong>files</strong> folder.</p>
+</li>
+</ul>
+<p>After building, you can type <code>nikola serve</code> to host your site locally. By default, you site can be open from <code>http://localhost:8000/</code></p>
+<p><strong>6. Deploy Site to Github Pages</strong></p>
+<p>I find great help from <a href="http://www.damian.oquanta.info/posts/one-line-deployment-of-your-site-to-gh-pages.html">solution of Damian's blog</a>. I used his method to deploy this site to one of my Github page.</p>
+<p>Please make sure you do follwing steps except git initiate every time you want to make change:</p>
+<ul>
+<li>
+<p>First, create a repository. You can use default "user.github.io" repo, but since I prefer a <strong>project Github Page</strong>, so I create a repo called "techblog".</p>
+</li>
+<li>
+<p>After installed <strong>Git</strong> to your machine, <code>cd</code> to your site folder, then type <code>git init</code> to initiate.</p>
+</li>
+<li>
+<p>Do <code>git remote add origin https://github.com/your_user_name/your_repo.git</code> to add repo, with a name <em>origin</em>.</p>
+</li>
+<li>
+<p>Push all of your content to <strong>master</strong> branch first</p>
+</li>
+<li>
+<p>Do <code>git checkout -b gh-pages</code> to create and swich to gh-pages. You can skip <code>-b</code> after you do this once.</p>
+</li>
+<li>
+<p>Do <code>git rm -rf .</code></p>
+</li>
+<li>
+<p>Do <code>git commit -am "Your Commit"</code> to commit for gh-pages</p>
+</li>
+<li>
+<p>Do <code>git push origin gh-pages</code></p>
+</li>
+<li>
+<p>Do <code>git checkout master</code> to switch back to master branch</p>
+</li>
+<li>
+<p>Do <code>git branch -D gh-pages</code> first to avoid commit error. (I tried to skip this step before but I got a git commit error, so I suggest you do this step first)</p>
+</li>
+<li>
+<p>Do <code>git subtree split --prefix output -b gh-pages</code> to only transfer content in <strong>output</strong> folder from master to gh-pages</p>
+</li>
+<li>
+<p>Do <code>git push -f origin gh-pages:gh-pages</code> to force push</p>
+</li>
+<li>
+<p>Do <code>git branch -D gh-pages</code> again to delete local gh-pages branch</p>
+</li>
+</ul>
+<p><strong>7. Add Custom Domain to Your Github Page (Optional)</strong></p>
+<p>You may want to add custom domain to your Github page. Github has a tutorial <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/">here</a>. Since I'm hosting my domain (pengyin-shan.com) on GoDaddy, I followed instructions <a href="http://captainwhippet.com/blog/2014/05/11/blog-setup-details.html">in this blog</a>.</p>
+<p>A few things I want to mention:</p>
+<ul>
+<li>
+<p><strong>CNAME</strong> file should be put to your <strong>files</strong> folder so that when you following steps above to push to Github, this file will show in gh-pages branch.</p>
+</li>
+<li>
+<p>The content of <strong>CNAME</strong> file should be bare subdomain of your custom domain, which means you <em>can not</em> use <code>http://test.com</code> or <code>http:test.com/blog</code>. You can only have one custdom domain.</p>
+</li>
+<li>
+<p>I think based on Github's role, even though you are hosting project Github pages, your custom domain has to be "test.com" instead of "test.com/name_of_repo"</p>
+</li>
+<li>
+<p>On Jan 1st, 2015, the IP address of <strong>Github Project Page</strong> are <code>192.30.252.153</code> and <code>192.30.152.154</code>. If you have A (Host), make sure your <code>@</code> is pointing to these two IPs.</p>
+</li>
+</ul>
+<p>If you finish these settings, you should be able to host your Nikola blog on Github Page. Please feel free to let me know if you have any comments.</p>
+</div>
             </div>
         </div>
         <div class="post">
@@ -191,6 +681,129 @@ article: http://ogp.me/ns/article#
 
             </div>
             <div class="body">
+                <div>
+<h2>Android Intents and Intent Filters from Developer Guides</h2>
+<p>http://developer.android.com/guide/components/intents-filters.html</p>
+<p>An Intent is a messaging object you can use to request an action from another app component.</p>
+<p>Intent carries information for determining which object to start</p>
+<p>Information that the recipient component uses in order to properly perform the action</p>
+<p>Start a new instance of an Activity by passing an Intent to <code>startActivity()</code>.</p>
+<p>Receieve result from activity by calling <code>startActivityForResult()</code>.</p>
+<p>Bind a service to another component by passing an Intent to <code>bindService()</code>.</p>
+<p>Deliver a broadcast by passing an Intent to <code>sendBroadcast()</code>, <code>sendOrderedBroadcast()</code> or <code>sendStickyBroadcast()</code>.</p>
+<p>Two types of intents:</p>
+<p>Explicit intents: used to start a component inside app. Must know class name or service name before start</p>
+<p>Always use explicit intent when starting a service and do not declare intent filter for service:</p>
+<pre class="code literal-block"><span></span><span class="c1">// Executed in an Activity, so 'this' is the context</span>
+<span class="c1">// The fileUrl is a string Url, such as "http://www.example.com/image.png"</span>
+<span class="n">Intent</span> <span class="n">downloadIntent</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Intent</span><span class="o">(</span><span class="k">this</span><span class="o">,</span> <span class="n">DownloadService</span><span class="o">,</span> <span class="n">class</span><span class="o">);</span>
+<span class="n">downloadIntent</span><span class="o">.</span><span class="na">setData</span><span class="o">(</span><span class="n">Uri</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="n">fileUrl</span><span class="o">));</span>
+<span class="n">startService</span><span class="o">(</span><span class="n">downloadIntent</span><span class="o">);</span>
+</pre>
+
+
+<p>An explicit intent is always delivered to its target, regardless of any intent filters the componenet declares.</p>
+<p>Implicit intents: don't specify class name. declare an action and ask other app to perform it.</p>
+<p>To start implicit intents, the intent defined in <code>intent filter</code> in <code>manifest file</code> will be find and match with passed intent. If matching, system start another app/component and deliver the passed intenet:</p>
+<pre class="code literal-block"><span></span><span class="c1">//Create the text message with a string</span>
+<span class="n">Intent</span> <span class="n">sendIntent</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Intent</span><span class="o">();</span>
+<span class="n">sendIntent</span><span class="o">.</span><span class="na">setAction</span><span class="o">(</span><span class="n">Intent</span><span class="o">.</span><span class="na">ACTION_SEND</span><span class="o">);</span>
+<span class="n">sendIntent</span><span class="o">.</span><span class="na">putExtra</span><span class="o">(</span><span class="n">Intent</span><span class="o">.</span><span class="na">EXTRA_TEXT</span><span class="o">,</span> <span class="n">textMessage</span><span class="o">);</span>
+<span class="n">sendIntent</span><span class="o">.</span><span class="na">setType</span><span class="o">(</span><span class="n">HTTP</span><span class="o">.</span><span class="na">PLAIN_TEXT_TYPE</span><span class="o">);</span>
+<span class="c1">// "text/plain" MIME Type</span>
+<span class="c1">//Verify that the intent will resolve to an activity, in case no app in device can start this activity</span>
+<span class="k">if</span> <span class="o">(</span><span class="n">sendIntent</span><span class="o">.</span><span class="na">resolveActivity</span><span class="o">(</span><span class="n">getPackageManager</span><span class="o">()!=</span><span class="kc">null</span><span class="o">)){</span>
+    <span class="n">startActivity</span><span class="o">(</span><span class="n">sendIntent</span><span class="o">);</span>
+<span class="o">}</span>
+</pre>
+
+
+<p>Intent filter is an expression in manifest file to search for components that should receive the intent.</p>
+<p>Intent has following information:</p>
+<ul>
+<li>
+<p>Componenet Name: must have for explict (ex. service) and skipped for implict</p>
+</li>
+<li>
+<p>Example Name: <code>com.example.ExActivity</code></p>
+</li>
+<li>
+<p>Set component name: <code>setComponent()</code>, <code>setClass()</code>, <code>setClassName()</code> or <code>Intent constructor</code></p>
+</li>
+</ul>
+<p>Action: a string that specifies the generic action to perform (such as view or pick)</p>
+<blockquote>
+<p>Example: <code>ACTION_VIEW</code>: use for <code>startActivity()</code>. Activity should show something to user, like picture</p>
+<ul>
+<li>Example: <code>ACTION_SEND</code>: i.e. "share"intent. use for <code>startActivity()</code>. Activity should have data to share with other apps, like email.</li>
+</ul>
+</blockquote>
+<pre class="code literal-block"><span></span><span class="kd">static</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">ACTION_TIME</span> <span class="o">=</span> <span class="s">"com.example.action.TIME"</span>
+</pre>
+
+
+<p>Data: A URI object that references data to be acted and/or the MIME type of data.</p>
+<p>content: URI will specify MIME type of data</p>
+<p><code>setData()</code>: set data URI. <code>setType()</code>: set MIME type. <code>setDataAndType()</code>: set both data and type</p>
+<p><code>setDate()</code> and <code>setType()</code> can not be used at the same time: null problem</p>
+<p>Catagory: optional. Describe info about the kind of component that should handle the intent. Andorid will know which app should start based on this</p>
+<blockquote>
+<p>Example: <code>CATEGORY_BROWSABLE</code>: target the activity that start a web browser and show data referenced by a link</p>
+<p>Example: <code>CATAGORY_LAUNCHER</code>: tartget the activity that initial a task and listed in system's application launcher</p>
+</blockquote>
+<p>Extras: <em>Key-Value</em> pair that carry additional information.  using <code>putExtra()</code> or create Bundle</p>
+<blockquote>
+<p>Example: define recipts or subjects in am email-send action</p>
+</blockquote>
+<p>Flags: define metadata for intent. use <code>setFlags()</code>.</p>
+<p>Forcing an app choose:</p>
+<pre class="code literal-block"><span></span><span class="n">Intent</span> <span class="n">intent</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Intent</span><span class="o">(</span><span class="n">Intent</span><span class="o">.</span><span class="na">ACTION_SEND</span><span class="o">);</span>
+<span class="c1">//...</span>
+<span class="c1">//Always use string resource for UI text</span>
+<span class="c1">//This says something like "Share this photo with"</span>
+<span class="n">String</span> <span class="n">title</span> <span class="o">=</span> <span class="n">getResources</span><span class="o">.</span><span class="na">getString</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">string</span><span class="o">.</span><span class="na">chooser_title</span><span class="o">);</span>
+<span class="c1">//Create intent to show chooser</span>
+<span class="n">Intent</span> <span class="n">chooser</span> <span class="o">=</span> <span class="n">Intent</span><span class="o">.</span><span class="na">createChooser</span><span class="o">(</span><span class="n">intent</span><span class="o">,</span> <span class="n">title</span><span class="o">);</span>
+<span class="c1">//This is used to call app chooser</span>
+<span class="c1">//Verify the intent will resolve at least one activity</span>
+<span class="k">if</span> <span class="o">(</span><span class="n">intent</span><span class="o">.</span><span class="na">resolveActivity</span><span class="o">(</span><span class="n">getPackageManager</span><span class="o">())</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">){</span>
+    <span class="n">startActivity</span><span class="o">(</span><span class="n">intent</span><span class="o">);</span>
+<span class="o">}</span>
+</pre>
+
+
+<p>Receiving an Implicit Intent:</p>
+<p>The system will deliver an implicit intent to app only if the intent pass through one of intent filters.</p>
+<p>Each unique job should have a intent filter</p>
+<p>Inside <code>&lt;intent-filter&gt;</code>:</p>
+<ul>
+<li>
+<p><code>&lt;action&gt;</code>: declares the intent action accepted, in the name attribute. Value must be a literal string.</p>
+</li>
+<li>
+<p><code>&lt;data&gt;</code>: declares the type of data accepted, using attributes from data URL (scheme, host, port, path, etc) and MIME type.</p>
+</li>
+<li>
+<p><code>&lt;category&gt;</code>: declares the intent category accepted, in the name attribute and value must be literal string.</p>
+</li>
+</ul>
+<p>Example:</p>
+<pre class="code literal-block"><span></span><span class="nt">&lt;activity</span> <span class="na">android:name=</span><span class="s">"ShareActivity"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;intent-filter&gt;</span>
+        <span class="nt">&lt;action</span> <span class="na">android:name=</span><span class="s">"android.intent.action.SEND"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;catagory</span> <span class="na">android:name=</span><span class="s">"android.intent.category.DEFAULT"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;data</span> <span class="na">android:mimeType=</span><span class="s">"text/plain"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/intent-filter&gt;</span>
+<span class="nt">&lt;/activity&gt;</span>
+</pre>
+
+
+<p>Pending Intent: a wrapper around an Intent object. Purpose is to get permission to a foreign application to use the contained intent</p>
+<p>Cases to use it:
+- Declare an intent to be executed when the user performs an action with your <em>notification</em> /Notification Manager Execution
+-
+- Declare an intent to be executed when the user performs an action with your <em>App Widget</em> /Home Screen App Execution</p>
+</div>
             </div>
         </div>
         <div class="post">
@@ -214,6 +827,97 @@ article: http://ogp.me/ns/article#
 
             </div>
             <div class="body">
+                <div>
+<p>On mid Dec, 2014, after thinking twice I decided to remove Windows 8.1 from my laptop (Dell XPS12). Instead I want to install linux on it. I'm a Linux <em>beginner</em> and a web developer.
+I want to record the reason I want to change to Linux and the comparation of three Linux system in this post. I may update this post later, since I'll learn more about Linux as time passes by.</p>
+<p>I hope this may be useful for you, if you are a Linux beginner like me:)</p>
+<p>Till Dec 2014, The personal reason I want to transfer to Linux is:</p>
+<ul>
+<li>
+<p>Although I know it can be very tough, I really want to learn linux/unix since I need to improve my system configuration skills. Plus working in commind line is kind of magical to me :)</p>
+</li>
+<li>
+<p>I'm tried of some "special" configuration that only windows have. Compared to using mouse to click all around screen, Linux can achieve functions in terminal with one line of code.</p>
+</li>
+<li>
+<p>Although I think compared to Windows 7, Windows 8/8.1 has improved speed a lot, Linux(At least Ubuntu and Linux Mint) still runs faster than Windows 8.1. And most of them are lighter than Windows, allowing me to drop any program that I don't need.</p>
+</li>
+<li>
+<p>I currently have a mac mini that I'm very satisfied, but I don't think I should buy a macbook for now, basic on finicial reason. Plus my current laptop (Dell XPS12) is a very good one. It has lightweight and good hardware. The only trick part is it only has 120 SSD storage. For a Linux system it is good enough buy for Windows 8.1 it has some problem, since Windows itself is very large.</p>
+</li>
+<li>
+<p>I don't need Windows-Specialize software very offen. For example, I have a MSOffice2011 on my mac mini, which is good enough for me. As a web developer, I just need my favorite development tools/programs, such as <code>Eclispe</code> &amp; <code>JDK Support</code>,<code>Sublime Text</code> and databases such as <code>MySQL</code> or <code>MongoDB</code>. They all work weel on Linux, plus linux has very good support for Python and Ruby.</p>
+</li>
+<li>
+<p>A very personal reason is the display of my laptop has a little bit problem under Windows 8.1 (Or its configuration software). It has black shadow occationally. This problem disappears when I change to Linux.</p>
+</li>
+</ul>
+<p>I started from `Ubuntu14, to Linux Mint17 Cinnamon, to CentOS7, then back to Ubuntu14. I had a long and hard time configuring each system on my laptop and VirtualBox. During configuration process, I got a chance to learn these system's speciality.</p>
+<p>I choose these three system because compare to other Linux system, they are popular so as a beginner, I can easily get support when I have any problem during configuration process.</p>
+<p>Now I want to make a very simple comparation of these three systems, from a Linux beginner's perpective, with very <em>personal</em> thoughts.</p>
+<h2>Ubuntu 14</h2>
+<h3>Pros for Me</h3>
+<ul>
+<li>
+<p>Most familar. I started to use Ubuntu when I was in college based on class requirement, so I can start using it very fast.</p>
+</li>
+<li>
+<p>Perfect community support. Ubuntu, since it is one of the most popular Linux system now, has great community support. Almost all questions I have can be answered. This is very important for Linux beginner like me.</p>
+</li>
+<li>
+<p>Great software support. Although Linux don't have a large software market like Windows or MacOS, Ubuntu has very outstanding software market that you can install with one-click. More important, among these three Linux systems, the installation process in Ubuntu has least probablity of rising problems. In most cases you don't need to change other files to isntall something. Even when you need to do extra configuration, there is always online guidence for you.</p>
+</li>
+</ul>
+<h3>Cons for Me</h3>
+<ul>
+<li>Almost no compilance for a Linux beginner. This is a great system for you to get into the world of Linux.</li>
+</ul>
+<h2>Linux Mint 17</h2>
+<h3>Pros for Me</h3>
+<ul>
+<li>
+<p>The interface of Linux Mint is so similar to Windows 7/XP, so if you are a previous Windows user, you won't have too much trouble on it.</p>
+</li>
+<li>
+<p>Linux Mint is based on Debian and Ubuntu, so it can almost run all software that Ubuntu has with one-click. Actually, I feel Linux Mint is almost the same as Ubuntu. So if you have a problem, the solution for Ubuntu should normally work in Linux Mint.</p>
+</li>
+<li>
+<p>This may depends, but Linux Mint 17 runs faster on my laptop thatn Ubuntu 14.</p>
+</li>
+</ul>
+<h3>Cons for Me</h3>
+<ul>
+<li>I'm not very sure if this only happens in this version, but some programs in Ubuntu have problem in Linux Mint. For example, <code>Okular</code> is not working well in my Linux Mint. This is very bad for me becuase I need annotate PDF a lot. However, most of programs should be safe in Linux. People who don't care pdf annotation can just skip this point :)</li>
+</ul>
+<h2>CentOS 7</h2>
+<h3>Pros for Me*</h3>
+<ul>
+<li>
+<p>Since CentOS is based on Red Hat Enterprise Linux (RHEL), I tried this system to experience RHEL. Compared to Ubuntu and Linux Mint, which are very GUI-friendly, CentOS tends to be more enterprise-oriented. I do feel CentOS is very powful for all-purpose configuration. I was given a list of installation options at the beginning of installation process. This list ranges from <em>Minimal Installation</em> to <em>Server Installation</em> to <em>Workstation Installation</em>.</p>
+</li>
+<li>
+<p>Since program installation process in CentOS needs more terminal configuration comparing to Ubuntu, I was pushed to get more exerise in understanding Unix command and functionality. Although for a beginner it really takes time to solve this problem, I really get a lot in this process.</p>
+</li>
+</ul>
+<h3>Cons for Me</h3>
+<ul>
+<li>
+<p>As the pro above pointed out, CentOS needs more configuration in terminal, compare to Ubuntu and Linux Mint. This do cause some trouble for a Linux beginner, for example, me. And some configuration problem is hard to get solution online, because compare to Ubuntu and Linux Mint, CentOS tends to be more Unix-Skill-Oriented, and the community for CentOS is not as large as Ubuntu (But it still has a pretty good community!) <em>So here is a trade. I can get valuable experience by solving a configuration problem in CentOS, but this really costs much more time, comparing to Ubuntu</em>.</p>
+</li>
+<li>
+<p>CentOS has less similarity with Windows comapre to Ubuntu and Linux Mint. This may affect Window user.</p>
+</li>
+<li>
+<p>CentOS gives you lots of freedom to congifure. This can be view as <em>pros</em> or <em>cons</em>. As a beginner, I'm confused because of it. However, <em>this is definetely great for a Linux expert</em>.</p>
+</li>
+<li>
+<p>CentOS doesn't have as many official software support as Ubuntu. Some software website has installation file specially for Ubuntu, but not a lot for CentOS. You may need to download tar.gz files then install them.</p>
+</li>
+</ul>
+<p>As a conclution, as a Linux beginner, all three Linux systems are great for me, and I can learn a lot from using them.
+However, considering I have some urgent study plan going on, I finally decided to use Ubuntu to save some time. <em>If you don't worry about time, and really want to learn Linux regardless of hard work, I highly recommend CentOS.</em></p>
+<p>I'll continue to learn Linux/Unix skills using Ubuntu. I may turn to CentOS after I get more skills to reduce time cost. I've already enjoyed working in terminal, and I'm looking forward to know more!</p>
+</div>
             </div>
         </div>
         <div class="post">
@@ -237,6 +941,80 @@ article: http://ogp.me/ns/article#
 
             </div>
             <div class="body">
+                <div>
+<p>Yesterday, I was thinking of changing my window 8.1 laptop to a dual boot Liunx PC. After checking out my laptop configuration, I felt it may not be a good idea because since my laptop only has 100GB storage in total. After giving windows 8.1 at least 60G, new system can not get enough space. So I decided to install linux system on a 300G external drive, and let laptop boot from this hard drive when I start it.</p>
+<p>I followed this article <a href="http://www.everydaylinuxuser.com/2014/05/install-ubuntu-1404-alongside-windows.html">Install Ubuntu 14.04 alongside Windows 8.1 in 10 easy steps</a>, posted by <em>Gary Newell</em>, and had no big trouble in process. However, I want to write this post to record some tips during installation process and configuration for Node.js, Hexo and Jekyll after installation.</p>
+<h2>Installation Process</h2>
+<h3>Step 1</h3>
+<p>First you need to backup your windows 8.1. Windows requires you using at least <em>16GB</em> usb for backup. You just need to type "recovery" in start window and Windows will find "Recovery Drive" program for you.</p>
+<blockquote>
+<p>Please note during recovery process, the focus on your screen is set to the "cancel" button by default. So if you accidently hid Enter, the recovery process will be cancelled. I learned this becuase my cat step over Enter button twice during this process :-(</p>
+</blockquote>
+<p>You have a choice to free recovery partition after back-up finishing.</p>
+<p>You may also want to back-up your personal file to a save place</p>
+<h3>Step 2</h3>
+<p>Create Linux Boot USB. Normally a 4GB usb is fine. I use <a href="http://www.linuxliveusb.com/">LinuxLive USB Creator</a>, which is free and very powerful.</p>
+<h3>Step 3</h3>
+<p>Shrink windows parition if you want to install Linux locally.</p>
+<blockquote>
+<p>Please note you may not be able to shrink C drive a lot using Disk Management on Windows 8.1 when Window is active.</p>
+</blockquote>
+<p>I searched on Google and downloaded <a href="http://www.partitionwizard.com/">Partition Wizard</a> to shrink C drive. There is a free "Home Edition" and a demo "Professional Edition". Home edition can not merge partitions.</p>
+<p>You may want to format your Linux drive to <em>NTFS</em> format. But when I installed Ubuntu 14 I was give a chance to re-format it to <code>Ext4</code> format, so I don't think it is necessary.</p>
+<h3>Step 4</h3>
+<p>You need to turn off your <code>fast-boot</code> and <code>secure boot</code>.</p>
+<p>To turn off your fast boot, go to <code>control panel</code> -&gt; <code>power options</code> -&gt; <code>Choose what the power button does</code>. In the new window, expand <code>Shutdown Settings</code> then uncheck <code>Turn on fast startup (recommanded)</code>.</p>
+<p>To turn off secure boot, you need to first hold <code>shift</code> button, then restart while holding <code>shift</code>. You will be lead to a blue screen with a button called <code>Troubleshoot</code>. Click this button and choose <code>Advanced Options</code>, then select <code>UEFI Firmeware Settings</code>. Click <code>resart</code> button on this page, and your pc will restart and go to BIOS setting.</p>
+<p>BIOS may looks differently for different PC. In my dell XPS 12, you can move to Boot menu in BIOS setting, then you can disable secure boot. In the next few step you will setup boot priority from here also. Make sure you click <code>F10</code> to save setting and restart your pc.</p>
+<h3>Step 5</h3>
+<p>Insert your Linux live USB to your pc. If you want to install Linux on a external drive, insert your external drive also. Start your pc. Re-start pc with <code>shift</code> key to enter the blue setup scrren in step 4. This time click "Use a device" button, and select the name of your Linux live USB</p>
+<h3>Step 6</h3>
+<p>Now your pc should run the Linux system from Live USB. Installation process is different between different systems.</p>
+<p>If you want to install Ubuntu on <em>external drive or select internal drive</em>, make sure you choose <strong>something else</strong> in installation manager.</p>
+<blockquote>
+<p>Special for Ubuntu 14: the installation manager will give you a change to choose the drive you want to install to. Usually the internal drive is <code>sda</code> and external drive is <code>sdb</code>. The empty drive that you want to install should under one of these two type. <em>You should format this drive to ext4 format and assign</em> <code>/</code> <em>as the mount</em>. If you don't choose <code>/</code>, Ubuntu will report a <code>root not found</code> error. You can format certain drive by clicking <code>change</code> button.</p>
+</blockquote>
+<p>You may choose to set a small <em>swap</em> driver based on Ubuntu's recommandation.</p>
+<p>You just need to format this drive to <code>linux-swap</code>.</p>
+<h3>Step 7</h3>
+<p>After finish installation, make sure you adjust BIOS boot priority. <code>USB storage</code> should be have highest priority</p>
+<h2>Configuration Process: Ubuntu14/Linux Mint Cinam Example</h2>
+<h3>Node.js &amp; Hexo &amp; Heroku &amp; Github</h3>
+<p>Install Node.js: <code>sudo apt-get install nodejs</code></p>
+<p>Install npm: <code>sudo apt-get install npm</code></p>
+<p>Check version: <code>nodejs -v</code> | <code>npm -v</code></p>
+<p>Install Hexo: <code>sudo npm install hexo -g</code></p>
+<p>Install Git: <code>sudo apt-get install git</code></p>
+<p>You can download <code>Heroku Toolbel</code> from Heroku website and install it.</p>
+<p>Clone proejct from Heroku (Please check Heroku website if you need to create project): <code>heroku git:clone -a app_name</code></p>
+<p>Get into your project folder and do <code>sudo npm install</code>. <em>You may encounter error message for node-sass: node not found. Solution is to do</em> <code>sudo apt-get install nodejs-legacy</code>.</p>
+<p>Now you can test Hexo. Get into project folder and try <code>hexo clean</code>, <code>hexo generate</code> and <code>hexo server</code>. They should all works fine.</p>
+<p>To re-add Github <code>origin master</code> branch, do <code>git remote add origin your_git_repo_address.git</code>. Please refer Github website if you want to create a new repository.</p>
+<p>You can check your existing git remote for current folder by doing <code>git remove -v</code>.</p>
+<h3>Ruby &amp; Jekyll</h3>
+<p>Install rvm: <code>sudo apt-get install curl</code> -&gt; <code>\curl -L https://get.rvm.io | bash -s stable</code>. <em>Please check the message in terminal after this process. You may need to download signature</em>.</p>
+<p>Read message in terminal and run <code>source /home/pshan/.rvm/scripts/rvm</code></p>
+<p>Install necessary dependencies: <code>rvm requirements</code></p>
+<p>Install Ruby: <code>rvm install ruby</code></p>
+<p>Use Ruby: <code>rvm use ruby --default</code></p>
+<p>Use RubyGem: <code>rvm rubygems current</code></p>
+<p>Install Jekyll: <code>gem install jekyll</code></p>
+<h3>Java JDK &amp; Eclipse</h3>
+<p>Download JDK file from Oracle's website</p>
+<p><code>cd /usr/local</code></p>
+<p><code>sudo tax xzf Path_to_JDK_File</code></p>
+<p><code>export JAVA_HOME=/usr/local/jdk1._x.0xx</code></p>
+<p><code>export PATH=$PATH:$JAV_HOME/bin</code></p>
+<p>Dowload <code>Eclipse</code> from Oracle wbesite and Extract folder</p>
+<p>You may want to choose <code>window</code>-&gt;<code>preference</code> to change your default JRE path to your preferred JDK. Ubuntu or LinuxMint use OpenJDK as defautl JDK</p>
+<p>To add server support, First download and extract tomact from Apache website. Then select <code>File</code> -&gt; <code>New</code> -&gt; <code>Server</code>, choose tomcat server in list. You can configure tomcat here.</p>
+<h3>Reference: My List of Necessary Apps on Ubuntu</h3>
+<p><code>Okular</code>: pdf annotation</p>
+<p><code>Chrome</code> | <code>Firefox</code></p>
+<p><code>Dropbox</code></p>
+<p><code>Sublime Text</code>: Only Sublime Text <em>3</em> has <code>.deb</code> version</p>
+<p><code>MySQL Server</code> &amp; <code>MySQL Workbench</code>: can be installed by <code>apt-get</code></p>
+</div>
             </div>
         </div>
         <div class="post">
@@ -259,6 +1037,14 @@ article: http://ogp.me/ns/article#
 
             </div>
             <div class="body">
+                <div>
+<p>Dave Ward gave three reasons for host jQuery on Google: "<strong>decreased latency</strong>", "<strong>increased parallelism</strong>" and "<strong>better caching</strong>"</p>
+<p><strong>decreased latency</strong>, based on what I understand, is the distance between your server and users, comparing with the distance between CDN's servers and users. Since CDN is able to locate user's location, it can ask the server that is <em>closest</em> to user to give response. For example, CDN may tell user to find server that it's only 1 mile from him. Your server, however, only stay in one place. This means the user on other side of earch needs to make a long request to your server here.</p>
+<p><strong>increased parallelism</strong>: Broswers all have limitation for how many connection can be established at the same time. When user send request to CDN instead to your server, CDN can move one connection from your server to its server, which means your server can deliver more information to user, using the connection gap created by CDN.</p>
+<p><strong>better caching</strong>: If you keep all files on your server, users must download all of them every time they reload page. However, since browser can automatically detect the files coming from same CDN address are identical, it will only download it once in a long time period. Then everytime browser will try to find this file in cache first, instead of re-download it.</p>
+<p>David Hall pointed out some disadvantage about CDN also. Most CDNs do cost money for its hosting, and the user may potentially block contents from a certain CDN, which can cause probelm on your website. Also geo-location may detect wrong location, which means user may take long time dealing with request.</p>
+<p>Generally, CDN is a good way to host content such as JavaScript library or CSS library. You just need to make decision based on your own situation.</p>
+</div>
             </div>
         </div>
             <nav class="postindexpager"><ul class="pager">

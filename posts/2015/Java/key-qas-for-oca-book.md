@@ -7,7 +7,7 @@
 .. authors: Pengyin Shan
 .. description: This post records all Q&As which are important and be easy to make mistake for me. Most of Q&As are taken from OCA Java SE 7 Certification Guide from Manning.
 
-[TOC]
+
 
 ##Q&As from Chapter 1, OCA Guide from Manning
 

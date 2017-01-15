@@ -6,7 +6,7 @@
 .. authors: Pengyin Shan
 .. description: One of my recent project involving in front-end data storage and processing. This is a study note of current ways of data storage in client side.
 
-[TOC]
+
 
 #Reference List
 

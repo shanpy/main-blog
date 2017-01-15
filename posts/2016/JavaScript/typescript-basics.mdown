@@ -7,7 +7,7 @@
 .. authors: Pengyin Shan
 .. description: The next project in my work involves in using TypeScript. This reading note is to go through <a href="http://www.typescriptlang.org/docs/handbook/">official handbook</a> and record some important knowledges about TypeScript.
 
-[TOC]
+
 
 *This is a brief reading note for TypeScript <a href="http://www.typescriptlang.org/docs/handbook">official handbook</a>*.
 

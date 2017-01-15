@@ -6,7 +6,7 @@
 .. authors: Pengyin Shan
 .. description: This is a learning note for **CSS Transitions and Transforms** taught by *Joseph Lowery*, on *Lynda.com*, with accompanying knowledge from other resources.
 
-[TOC]
+
 
 #Reference List
 

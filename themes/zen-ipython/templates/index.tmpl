@@ -31,6 +31,8 @@
             <div class="body">
             {% if index_teasers %}
                 {{ post.text(teaser_only=True) }}
+            {% else %}
+                {{ post.description() }}    
             {% endif %}
             </div>
         </div>

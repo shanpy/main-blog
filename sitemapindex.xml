@@ -38,6 +38,10 @@
   <lastmod>2016-12-22T20:25:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>http://pengyin-shan.com/categories/cat_book-highlight.xml</loc>
+  <lastmod>2017-01-20T14:07:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://pengyin-shan.com/categories/cat_data-science.xml</loc>
   <lastmod>2017-01-15T03:05:00Z</lastmod>
  </sitemap>
@@ -68,6 +72,10 @@
  <sitemap>
   <loc>http://pengyin-shan.com/categories/cdn.xml</loc>
   <lastmod>2016-12-22T20:25:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://pengyin-shan.com/categories/chinese.xml</loc>
+  <lastmod>2017-01-20T14:07:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://pengyin-shan.com/categories/compass.xml</loc>
@@ -274,11 +282,15 @@
   <lastmod>2016-12-22T20:25:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>http://pengyin-shan.com/categories/zi-kong-li.xml</loc>
+  <lastmod>2017-01-20T14:07:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://pengyin-shan.com/rss.xml</loc>
-  <lastmod>2017-01-15T03:36:00Z</lastmod>
+  <lastmod>2017-01-20T14:07:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://pengyin-shan.com/sitemap.xml</loc>
-  <lastmod>2017-01-15T03:38:00Z</lastmod>
+  <lastmod>2017-01-20T14:12:00Z</lastmod>
  </sitemap>
 </sitemapindex>

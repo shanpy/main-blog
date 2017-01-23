@@ -1,5 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>Pengyin's Note</title><link>http://pengyin-shan.com/</link><description>This is Pengyin Shan's Note</description><atom:link type="application/rss+xml" href="http://pengyin-shan.com/rss.xml" rel="self"></atom:link><language>en</language><lastBuildDate>Mon, 23 Jan 2017 01:33:06 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>(In Chinese) 自控力阅读摘抄 (Kindle 导出)</title><link>http://pengyin-shan.com/posts/2017/book/chinese-zi-kong-li-highlight.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3&gt;自控力 (凯利•麦格尼格尔, Kelly McGonigal)&lt;/h3&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pengyin's Note</title><link>http://pengyin-shan.com/</link><description>This is Pengyin Shan's Note</description><atom:link href="http://pengyin-shan.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 23 Jan 2017 11:25:32 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>(In Chinese) 聪明人用方格笔记本-阅读摘抄</title><link>http://pengyin-shan.com/posts/2017/book/chinese-use-graph-ruled-notebook.md.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;[TOC] &lt;/p&gt;
+&lt;h3&gt;笔记本三法则&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;法则1： 使用方格笔记本&lt;/li&gt;
+&lt;li&gt;法则2: 在笔记本上方的空白区域标出题目&lt;/li&gt;
+&lt;li&gt;法则3: 用三分法记录： 事实-》解释-》行动&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;笔记本要求&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;看起来工整&lt;/li&gt;
+&lt;li&gt;比A4纸d大&lt;/li&gt;
+&lt;li&gt;颜色不超过三种&lt;/li&gt;
+&lt;li&gt;每一页都有一个主题&lt;/li&gt;
+&lt;li&gt;是黑板，白板板书内容的提炼&lt;/li&gt;
+&lt;li&gt;留有空白区域&lt;/li&gt;
+&lt;li&gt;画有许多图，表，画&lt;/li&gt;
+&lt;li&gt;日后看笔记时依然可再现当时的内容&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;笔记的生命线是‘再现性’，这是记笔记的终极目的。&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;使用方格笔记本&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="使用指引" src="http://pengyin-shan.com/images/2017/books/notebook/guide.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="function1" src="http://pengyin-shan.com/images/2017/books/notebook/function1.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="function2" src="http://pengyin-shan.com/images/2017/books/notebook/function2.png"&gt;&lt;/p&gt;
+&lt;h4&gt;使用方格&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;行首对齐&lt;/li&gt;
+&lt;li&gt;在行首空两三个字的地方写小标题&lt;/li&gt;
+&lt;li&gt;在比小标题往后两三个字的地方写内容&lt;/li&gt;
+&lt;li&gt;项目改变时空一行&lt;/li&gt;
+&lt;li&gt;注意留出空隙，留出进行信息整理的空间&lt;/li&gt;
+&lt;li&gt;左右相对的两页记录一个信息点&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;学习需要有‘框架’。 框架 = 整理思路的书架&lt;/strong&gt;&lt;/p&gt;
+&lt;h4&gt;黄金三分法&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;康奈尔笔记本： 板书／发现／总结&lt;/li&gt;
+&lt;li&gt;咨询公司： 事实／解释／行动&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5&gt;东大录取生的笔记本&lt;/h5&gt;
+&lt;p&gt;&lt;img alt="东大录取生的笔记本" src="http://pengyin-shan.com/images/2017/books/notebook/tokuyo-notebook.png"&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;左右两页作为一页使用。 &lt;/li&gt;
+&lt;li&gt;右侧先空下，左侧记板书。&lt;/li&gt;
+&lt;li&gt;右侧左边记点评和疑点，右侧右边记采取的行动和总结。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5&gt;康奈尔笔记本&lt;/h5&gt;
+&lt;p&gt;&lt;img alt="康奈尔笔记本" src="http://pengyin-shan.com/images/2017/books/notebook/cornel-notebook.png"&gt;&lt;/p&gt;
+&lt;h5&gt;埃森哲Point Sheet&lt;/h5&gt;
+&lt;p&gt;&lt;img alt="埃森哲笔记本" src="http://pengyin-shan.com/images/2017/books/notebook/accenture-notebook.png"&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;左侧记录重点&lt;/li&gt;
+&lt;li&gt;右侧记录采取的行动： 谁，在什么时间之前， 需要完成什么事&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5&gt;麦肯锡笔记本&lt;/h5&gt;
+&lt;p&gt;&lt;img alt="麦肯锡笔记本" src="http://pengyin-shan.com/images/2017/books/notebook/McKinsey-notebook.png"&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;空：现在的情况&lt;/li&gt;
+&lt;li&gt;雨：对此情况的解释&lt;/li&gt;
+&lt;li&gt;伞：根据此解释而采取的行动&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;使用笔记本&lt;/h4&gt;
+&lt;h5&gt;横向使用方格笔记本&lt;/h5&gt;
+&lt;p&gt;由于人的眼睛时左右横向排列的，所以横向的视野比纵向的视野开阔&lt;/p&gt;
+&lt;h5&gt;A4笔记本为根本&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;小笔记本无法总结想法&lt;/li&gt;
+&lt;li&gt;A4笔记本符合国际标准&lt;/li&gt;
+&lt;li&gt;会增强PPT的制作能力&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5&gt;使用的颜色控制在三种以内&lt;/h5&gt;
+&lt;p&gt;咨询公司在记录时用单色（黑或蓝），检查或向客户反馈信息时用红色&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;使用蓝色笔提升创造力&lt;/strong&gt;&lt;/p&gt;
+&lt;h5&gt;像报纸那样标出‘题目’&lt;/h5&gt;
+&lt;p&gt;&lt;img alt="题目" src="http://pengyin-shan.com/images/2017/books/notebook/title.png"&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一句话表达这页的最重要的内容&lt;/li&gt;
+&lt;li&gt;表达“论点、问题核心”，推断出“结论、应该怎么做”&lt;/li&gt;
+&lt;li&gt;一页一主题&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5&gt;舒适的方格笔记本和笔&lt;/h5&gt;
+&lt;p&gt;书写舒适会提高记笔记的积极性&lt;/p&gt;
+&lt;h5&gt;大量书写，大量舍弃&lt;/h5&gt;
+&lt;p&gt;10000页联系&lt;/p&gt;
+&lt;h3&gt;笔记本与功能&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;记忆， 思考，传达&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;记忆性笔记本（学习笔记本）&lt;/li&gt;
+&lt;li&gt;思考型笔记本（工作笔记本）&lt;/li&gt;
+&lt;li&gt;传达型笔记本（提案、博弈笔记本）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4&gt;学习笔记本&lt;/h4&gt;
+&lt;p&gt;&lt;img alt="学习笔记本" src="http://pengyin-shan.com/images/2017/books/notebook/study-notebook.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="学习笔记本" src="http://pengyin-shan.com/images/2017/books/notebook/studynote1.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="学习笔记本" src="http://pengyin-shan.com/images/2017/books/notebook/studynote2.png"&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;不要照抄板书&lt;/li&gt;
+&lt;li&gt;看黑板-》印在大脑中-》不看黑板，将印在大脑中的内容重现在笔记本上&lt;/li&gt;
+&lt;li&gt;使用‘两页一主题’ 的方式使用学习笔记本：学习时新知识量很大&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5&gt;标题区&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;题目：这是一篇关于什么的讲义&lt;/li&gt;
+&lt;li&gt;重点：记录需要掌握的主要内容&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5&gt;三等分内容区&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;左：板书区域&lt;/li&gt;
+&lt;li&gt;中：老师点评，自己的所思所想区域&lt;/li&gt;
+&lt;li&gt;右：解决疑问，总结概括区域&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5&gt;中部区域是重点&lt;/h5&gt;
+&lt;p&gt;记录自己的疑问，想法，看能否在老师讲课后得到答案&lt;/p&gt;
+&lt;h5&gt;使用自己的‘逻辑连接词’将‘发现’故事化&lt;/h5&gt;
+&lt;h6&gt;使用适合自己的逻辑连接词&lt;/h6&gt;
+&lt;p&gt;&lt;img alt="逻辑连接词" src="http://pengyin-shan.com/images/2017/books/notebook/logicword.png"&gt;&lt;/p&gt;
+&lt;h6&gt;与三种箭头搭配使用&lt;/h6&gt;
+&lt;p&gt;&lt;strong&gt;展开、总结、强调&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="三种箭头" src="http://pengyin-shan.com/images/2017/books/notebook/logicarrow.png"&gt;&lt;/p&gt;
+&lt;h5&gt;灵活使用右侧的‘概括总结区域’&lt;/h5&gt;
+&lt;p&gt;本区域要记下‘要点’和‘疑问点’，锻炼‘概括能力’和‘提问能力’&lt;/p&gt;
+&lt;h5&gt;理解力&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;清楚地区分‘能够理解的地方’和‘不理解的地方’&lt;/li&gt;
+&lt;li&gt;对于‘不理解的地方’，立刻采取行动解决疑问，如询问老师，上网搜索，或是询问相关知识领域的人&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h5&gt;有意识地总结概括&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;右侧的总结区域写‘最想说的’，‘最重要的结论’&lt;/li&gt;
+&lt;li&gt;顶部区域&lt;strong&gt;用三点&lt;/strong&gt;概括这些重要内容&lt;/li&gt;
+&lt;li&gt;即‘总之’，‘重要的是这三点’&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="三点" src="http://pengyin-shan.com/images/2017/books/notebook/threepoint.png"&gt;&lt;/p&gt;&lt;/div&gt;</description><category>Chinese</category><category>Note Taking</category><category>笔记</category><guid>http://pengyin-shan.com/posts/2017/book/chinese-use-graph-ruled-notebook.md.html</guid><pubDate>Sun, 22 Jan 2017 05:00:00 GMT</pubDate></item><item><title>(In Chinese) 自控力阅读摘抄 (Kindle 导出)</title><link>http://pengyin-shan.com/posts/2017/book/chinese-zi-kong-li-highlight.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3&gt;自控力 (凯利•麦格尼格尔, Kelly McGonigal)&lt;/h3&gt;
 &lt;p&gt;提高自控力的最有效途径在于，弄清自己如何失控、为何失控。
 Kelly McGonigal), 自控力 (凯利•麦格尼格尔 [Kindle Edition]. loc. 154-155.
 &lt;/p&gt;&lt;hr&gt;
@@ -2611,167 +2742,4 @@ Error: Converted to exception. System will crash!
 &lt;span class="p"&gt;})&lt;/span&gt;
 
 &lt;span class="nx"&gt;app&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;listen&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;8081&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</description><category>Node.js</category><guid>http://pengyin-shan.com/posts/2016/JavaScript/node-js-basics.html</guid><pubDate>Wed, 25 May 2016 04:00:00 GMT</pubDate></item><item><title>Reading Note - Asynchronous in jQuery and ECMAScript 6</title><link>http://pengyin-shan.com/posts/2016/JavaScript/reading_note_defer_in_jquery.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h2&gt;Reference List&lt;/h2&gt;
-&lt;p&gt;This is a &lt;strong&gt;reading note&lt;/strong&gt; for following articles/blogs:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://github.com/shanpy/shanpy.github.io.git"&gt;&lt;/a&gt;, written by Julian Aubourg and Addy Osmani.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://api.jquery.com/category/deferred-object/"&gt;jQuery API&lt;/a&gt; and &lt;a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"&gt;Promise in MSDN&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;(Chinese) &lt;a href="http://es6.ruanyifeng.com/#docs/generator"&gt;Entry of ECMA6&lt;/a&gt;, from Yifeng Ran&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;(Chinese) blog of &lt;a href="http://www.cnblogs.com/dojo-lzz/p/5495671.html"&gt;dojo-lzz&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Promises&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;Promises&lt;/code&gt;: a &lt;strong&gt;container&lt;/strong&gt; which contains everything that has been deferred.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;If you are creating a Deferred, keep a reference to the Deferred so that it can be resolved or rejected at some point. Return only the Promise object via deferred.promise() so other code can register callbacks or inspect the current state. - jQuery API&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;A function which returns a promise &lt;strong&gt;will be run&lt;/strong&gt; if the condition in this function is satisfied, no matter if it is a successfully satisfied case or a failure case. i.e. a &lt;strong&gt;fulfilled&lt;/strong&gt; promise can be two states: &lt;code&gt;resolved&lt;/code&gt;(successfully passing data) or &lt;code&gt;rejected&lt;/code&gt; (something is wrong).&lt;/p&gt;
-&lt;h3&gt;promise.then&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;them&lt;/code&gt; method is used to handle the case the future result is available (resolved or rejected). It accepts two parameters, which can be functions. One for successful case. One for failed case. Following is the example:&lt;/p&gt;
-&lt;table class="codehilitetable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
-2
-3
-4
-5
-6
-7&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;promise&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;someFunction&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;arg1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;arg2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;...);&lt;/span&gt;
-&lt;span class="nx"&gt;promise&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;then&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;futurevalue&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
-        &lt;span class="cm"&gt;/*Handle successfully passed futurevalue*/&lt;/span&gt;
-    &lt;span class="p"&gt;},&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(){&lt;/span&gt;
-        &lt;span class="cm"&gt;/*Handle cases with error*/&lt;/span&gt;
-    &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;/pre&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-
-&lt;h3&gt;promise and when method&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;$.when&lt;/code&gt; is used to perform action after all promises have been satisfied. For example:&lt;/p&gt;
-&lt;table class="codehilitetable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt; 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;when&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;
-    &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(){&lt;/span&gt;
-        &lt;span class="cm"&gt;/*animation 1*/&lt;/span&gt;
-        &lt;span class="cm"&gt;/*return promise 1*/&lt;/span&gt;
-        &lt;span class="p"&gt;},&lt;/span&gt;
-    &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(){&lt;/span&gt;
-        &lt;span class="cm"&gt;/*animation 2*/&lt;/span&gt;
-        &lt;span class="cm"&gt;/*return promise 2*/&lt;/span&gt;
-    &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;then&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(){&lt;/span&gt;
-        &lt;span class="cm"&gt;/*Handle events after both promises are satisfied*/&lt;/span&gt;
-    &lt;span class="p"&gt;});&lt;/span&gt;
-&lt;/pre&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-
-&lt;h3&gt;Promise in ECMAScript 6&lt;/h3&gt;
-&lt;p&gt;&lt;em&gt;Remember to check browser capability before using promise JS object&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;ECMAScript 6 also have &lt;code&gt;Promise&lt;/code&gt; object, which can be used for deferred operations. Similar as promise in jQuery, Promise object in JS has three states: &lt;code&gt;pending&lt;/code&gt; (initial), &lt;code&gt;fulfilled&lt;/code&gt;, &lt;code&gt;rejected&lt;/code&gt;.&lt;/p&gt;
-&lt;h3&gt;Generator in ECMAScript 6&lt;/h3&gt;
-&lt;p&gt;ECMAScript 6 has a &lt;code&gt;Generator&lt;/code&gt; function, which provides possibility of lazy-loading.&lt;/p&gt;
-&lt;p&gt;Generator is a function which generates a Iterator. The iterator iterates every &lt;code&gt;yield&lt;/code&gt; statement insider Generator function and &lt;strong&gt;stop&lt;/strong&gt; on each &lt;code&gt;yield&lt;/code&gt; point. After running &lt;code&gt;.next()&lt;/code&gt; method, iterator will &lt;strong&gt;resume&lt;/strong&gt; from last &lt;code&gt;yield&lt;/code&gt; point.&lt;/p&gt;
-&lt;p&gt;Generator function has a &lt;code&gt;*&lt;/code&gt; in function header, which can be put in any position.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;.next()&lt;/code&gt; method will &lt;strong&gt;return&lt;/strong&gt; a object with &lt;code&gt;value&lt;/code&gt; and &lt;code&gt;done&lt;/code&gt; attributes. &lt;code&gt;value&lt;/code&gt; has the value which is returned by the last &lt;code&gt;yield&lt;/code&gt; (breakpoint). &lt;code&gt;done&lt;/code&gt; has the value which is the status of Generator, &lt;code&gt;true&lt;/code&gt; means iteration is finished.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;For the last &lt;code&gt;next()&lt;/code&gt; method, if there is no &lt;code&gt;return&lt;/code&gt; current function, &lt;code&gt;value&lt;/code&gt; will be &lt;code&gt;undefined&lt;/code&gt;. &lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;A quick example:&lt;/p&gt;
-&lt;table class="codehilitetable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
-2
-3
-4
-5
-6
-7
-8&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="nx"&gt;test&lt;/span&gt;&lt;span class="p"&gt;(){&lt;/span&gt;
-    &lt;span class="k"&gt;yield&lt;/span&gt; &lt;span class="s1"&gt;'test'&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="s1"&gt;'end'&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;testGenerator&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;test&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
-&lt;span class="nx"&gt;testGenerator&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;next&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt; &lt;span class="c1"&gt;//Object {value: "test", done:false}&lt;/span&gt;
-&lt;span class="nx"&gt;testGenerator&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;next&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt; &lt;span class="c1"&gt;//Object {value: "end", done:true}&lt;/span&gt;
-&lt;span class="nx"&gt;testGenerator&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;next&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt; &lt;span class="c1"&gt;//Object {value: undefined, done:true}&lt;/span&gt;
-&lt;/pre&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-
-&lt;h3&gt;Others&lt;/h3&gt;
-&lt;p&gt;I like following problem when I read a Chinese blog article from&lt;a href="http://www.cnblogs.com/dojo-lzz/p/5495671.html"&gt;dojo-lzz&lt;/a&gt;: if you have red light which is on for every 3 seconds, green light which is on every 1 second and yellow light which is on every 2 seconds, how to make three light switch and on without break? (i.e. red -&amp;gt; green -&amp;gt; yellow -&amp;gt; red -&amp;gt; green -&amp;gt; yellow, etc)&lt;/p&gt;
-&lt;h3&gt;Deferred in jQuery&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;$.Deferred&lt;/code&gt; is used to create new &lt;em&gt;deferred object&lt;/em&gt;. This deferred object can be used to check if a promise is exist or not, or to accept an optional function which needs to have deferring effect.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;A Deferred object starts in the pending state.  - jQuery API&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;From jQuery API, the function that is used inside &lt;code&gt;$.Deferred&lt;/code&gt; is called just before the &lt;code&gt;$.Deferred&lt;/code&gt; method returns. It accepts the new deferred object as parameter. This parameter represents as both the &lt;code&gt;this&lt;/code&gt; object and as the first argument to the inner function (the function which needs to be deferred). The function which calling the &lt;code&gt;$.Deferred&lt;/code&gt; method can attach callbacks using deferred.then(), for example.&lt;/p&gt;
-&lt;p&gt;I created a &lt;a href="https://jsfiddle.net/shanpy/g7kfqy8o/35/"&gt;JSFiddle&lt;/a&gt;. The code is following:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cm"&gt;/*This is a common function, which accepts functions that needs to have deferred effect*/&lt;/span&gt;
-&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;createCache&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;requestFunction&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
-&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;cache&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{};&lt;/span&gt;
-  &lt;span class="cm"&gt;/*&lt;/span&gt;
-&lt;span class="cm"&gt;  callback is optional&lt;/span&gt;
-&lt;span class="cm"&gt;  */&lt;/span&gt;
-  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;key&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;callback&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
-    &lt;span class="nx"&gt;callback&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(){&lt;/span&gt;
-        &lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'deferred callback function'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-    &lt;span class="p"&gt;}&lt;/span&gt;
-    &lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;!&lt;/span&gt;&lt;span class="nx"&gt;cache&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;key&lt;/span&gt;&lt;span class="p"&gt;]){&lt;/span&gt;
-        &lt;span class="nx"&gt;cache&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;key&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;Deferred&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;defer&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
-        &lt;span class="cm"&gt;/*&lt;/span&gt;
-&lt;span class="cm"&gt;        1. As mentioning above, defer is the deferred project&lt;/span&gt;
-&lt;span class="cm"&gt;        2. requestFunction here is loadImage function below&lt;/span&gt;
-&lt;span class="cm"&gt;        */&lt;/span&gt;
-        &lt;span class="nx"&gt;requestFunction&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;defer&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nx"&gt;key&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-      &lt;span class="p"&gt;}).&lt;/span&gt;&lt;span class="nx"&gt;promise&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt; &lt;span class="c1"&gt;// Return the Promise so caller can't change the Deferred&lt;/span&gt;
-    &lt;span class="p"&gt;}&lt;/span&gt;
-    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nx"&gt;cache&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;key&lt;/span&gt;&lt;span class="p"&gt;].&lt;/span&gt;&lt;span class="nx"&gt;done&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;callback&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-  &lt;span class="p"&gt;};&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-
-&lt;span class="cm"&gt;/*Defer is the deferred parameter/object in $.Deferred method above*/&lt;/span&gt;
-&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;loadImage&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;createCache&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;defer&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nx"&gt;url&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
-  &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;image&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nx"&gt;Image&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
-  &lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="nx"&gt;cleanup&lt;/span&gt;&lt;span class="p"&gt;(){&lt;/span&gt;
-    &lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'cleanup in process'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-    &lt;span class="nx"&gt;image&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;onload&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;image&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;onerror&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;null&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="p"&gt;}&lt;/span&gt;
-  &lt;span class="cm"&gt;/*rejected/resolved/in process*/&lt;/span&gt;
-  &lt;span class="nx"&gt;defer&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;then&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;cleanup&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;cleanup&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-  &lt;span class="cm"&gt;/*resolved only*/&lt;/span&gt;
-  &lt;span class="nx"&gt;defer&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;done&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(){&lt;/span&gt;
-    &lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'done'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-    &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'#test'&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;image&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-  &lt;span class="p"&gt;});&lt;/span&gt;
-  &lt;span class="nx"&gt;image&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;onload&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(){&lt;/span&gt;
-    &lt;span class="cm"&gt;/*After image successfully loading, change state to resolve*/&lt;/span&gt;
-    &lt;span class="nx"&gt;defer&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;resolve&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;url&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-  &lt;span class="p"&gt;};&lt;/span&gt;
-  &lt;span class="nx"&gt;image&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;onerror&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;defer&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;reject&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="nx"&gt;image&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;src&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;url&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="p"&gt;});&lt;/span&gt;
-
-&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;loadImage&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"https://www.gstatic.com/webp/gallery3/1.png"&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;done&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(){&lt;/span&gt;
-    &lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'finish loadingImage function'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-  &lt;span class="p"&gt;}).&lt;/span&gt;&lt;span class="nx"&gt;fail&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(){&lt;/span&gt;
-    &lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'there is error'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-  &lt;span class="p"&gt;})&lt;/span&gt;
-&lt;/pre&gt;
-
-
-&lt;p&gt;The output of code above in console is:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;VM2454&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;72&lt;/span&gt; &lt;span class="nx"&gt;cleanup&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="nx"&gt;process&lt;/span&gt;
-&lt;span class="nx"&gt;VM2454&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;77&lt;/span&gt; &lt;span class="nx"&gt;done&lt;/span&gt;
-&lt;span class="nx"&gt;VM2454&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;56&lt;/span&gt; &lt;span class="nx"&gt;deferred&lt;/span&gt; &lt;span class="nx"&gt;callback&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;
-&lt;span class="nx"&gt;VM2522&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;88&lt;/span&gt; &lt;span class="nx"&gt;finish&lt;/span&gt; &lt;span class="nx"&gt;loadingImage&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</description><category>JavaScript</category><category>jQuery</category><guid>http://pengyin-shan.com/posts/2016/JavaScript/reading_note_defer_in_jquery.html</guid><pubDate>Tue, 17 May 2016 04:00:00 GMT</pubDate></item></channel></rss>
+&lt;/pre&gt;&lt;/div&gt;</description><category>Node.js</category><guid>http://pengyin-shan.com/posts/2016/JavaScript/node-js-basics.html</guid><pubDate>Wed, 25 May 2016 04:00:00 GMT</pubDate></item></channel></rss>

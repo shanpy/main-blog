@@ -1,7 +1,7 @@
 .. title: (In Chinese) 聪明人用方格笔记本-阅读摘抄
 .. date: 2017-01-22
 .. category: Book Highlight
-.. tags: Chinese, 笔记, Note Taking, draft
+.. tags: Chinese, 笔记, Note Taking
 .. slug: chinese-use-graph-ruled-notebook.md
 .. authors: Pengyin Shan
 .. description: (This post is in Chinese) [高桥正史]《聪明人用方格笔记本-最有效的大脑思维整理术》书本经典语句摘抄
@@ -94,6 +94,8 @@
 
 咨询公司在记录时用单色（黑或蓝），检查或向客户反馈信息时用红色
 
+**使用蓝色笔提升创造力**
+
 ####像报纸那样标出‘题目’
 
 ![题目](/images/2017/books/notebook/title.png)
@@ -121,6 +123,10 @@
 ###学习笔记本
 
 ![学习笔记本](/images/2017/books/notebook/study-notebook.png)
+
+![学习笔记本](/images/2017/books/notebook/studynote1.png)
+
+![学习笔记本](/images/2017/books/notebook/studynote2.png)
 
 - 不要照抄板书
 - 看黑板-》印在大脑中-》不看黑板，将印在大脑中的内容重现在笔记本上
@@ -157,3 +163,15 @@
 
 本区域要记下‘要点’和‘疑问点’，锻炼‘概括能力’和‘提问能力’
 
+####理解力
+
+1. 清楚地区分‘能够理解的地方’和‘不理解的地方’
+2. 对于‘不理解的地方’，立刻采取行动解决疑问，如询问老师，上网搜索，或是询问相关知识领域的人
+
+####有意识地总结概括
+
+- 右侧的总结区域写‘最想说的’，‘最重要的结论’
+- 顶部区域**用三点**概括这些重要内容
+- 即‘总之’，‘重要的是这三点’
+
+![三点](/images/2017/books/notebook/threepoint.png)

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pengyin's Note (Note Taking)</title><link>http://pengyin-shan.com/</link><description></description><atom:link href="http://pengyin-shan.com/categories/note-taking.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 23 Jan 2017 11:25:32 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>(In Chinese) 聪明人用方格笔记本-阅读摘抄</title><link>http://pengyin-shan.com/posts/2017/book/chinese-use-graph-ruled-notebook.md.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;[TOC] &lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pengyin's Note (Note Taking)</title><link>http://pengyin-shan.com/</link><description></description><atom:link type="application/rss+xml" href="http://pengyin-shan.com/categories/note-taking.xml" rel="self"></atom:link><language>en</language><lastBuildDate>Mon, 23 Jan 2017 11:32:58 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>(In Chinese) 聪明人用方格笔记本-阅读摘抄</title><link>http://pengyin-shan.com/posts/2017/book/chinese-use-graph-ruled-notebook.md.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;hr&gt;
+
 &lt;h3&gt;笔记本三法则&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;法则1： 使用方格笔记本&lt;/li&gt;
@@ -18,6 +19,8 @@
 &lt;li&gt;日后看笔记时依然可再现当时的内容&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;strong&gt;笔记的生命线是‘再现性’，这是记笔记的终极目的。&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+
 &lt;h3&gt;使用方格笔记本&lt;/h3&gt;
 &lt;p&gt;&lt;img alt="使用指引" src="http://pengyin-shan.com/images/2017/books/notebook/guide.png"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="function1" src="http://pengyin-shan.com/images/2017/books/notebook/function1.png"&gt;&lt;/p&gt;
@@ -82,14 +85,15 @@
 &lt;p&gt;书写舒适会提高记笔记的积极性&lt;/p&gt;
 &lt;h5&gt;大量书写，大量舍弃&lt;/h5&gt;
 &lt;p&gt;10000页联系&lt;/p&gt;
-&lt;h3&gt;笔记本与功能&lt;/h3&gt;
+&lt;hr&gt;
+
+&lt;h3&gt;学习笔记本&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;记忆， 思考，传达&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;记忆性笔记本（学习笔记本）&lt;/li&gt;
 &lt;li&gt;思考型笔记本（工作笔记本）&lt;/li&gt;
 &lt;li&gt;传达型笔记本（提案、博弈笔记本）&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h4&gt;学习笔记本&lt;/h4&gt;
 &lt;p&gt;&lt;img alt="学习笔记本" src="http://pengyin-shan.com/images/2017/books/notebook/study-notebook.png"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="学习笔记本" src="http://pengyin-shan.com/images/2017/books/notebook/studynote1.png"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="学习笔记本" src="http://pengyin-shan.com/images/2017/books/notebook/studynote2.png"&gt;&lt;/p&gt;

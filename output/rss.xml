@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pengyin's Note</title><link>http://pengyin-shan.com/</link><description>This is Pengyin Shan's Note</description><atom:link type="application/rss+xml" href="http://pengyin-shan.com/rss.xml" rel="self"></atom:link><language>en</language><lastBuildDate>Mon, 23 Jan 2017 11:32:58 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>(In Chinese) 聪明人用方格笔记本-阅读摘抄</title><link>http://pengyin-shan.com/posts/2017/book/chinese-use-graph-ruled-notebook.md.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;hr&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pengyin's Note</title><link>http://pengyin-shan.com/</link><description>This is Pengyin Shan's Note</description><atom:link href="http://pengyin-shan.com/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Thu, 26 Jan 2017 01:21:30 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>(In Chinese) 聪明人用方格笔记本-阅读摘抄</title><link>http://pengyin-shan.com/posts/2017/book/chinese-use-graph-ruled-notebook.md.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;hr&gt;
 
 &lt;h3&gt;笔记本三法则&lt;/h3&gt;
 &lt;ul&gt;
@@ -134,7 +134,42 @@
 &lt;li&gt;顶部区域&lt;strong&gt;用三点&lt;/strong&gt;概括这些重要内容&lt;/li&gt;
 &lt;li&gt;即‘总之’，‘重要的是这三点’&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt="三点" src="http://pengyin-shan.com/images/2017/books/notebook/threepoint.png"&gt;&lt;/p&gt;&lt;/div&gt;</description><category>Chinese</category><category>Note Taking</category><category>笔记</category><guid>http://pengyin-shan.com/posts/2017/book/chinese-use-graph-ruled-notebook.md.html</guid><pubDate>Sun, 22 Jan 2017 05:00:00 GMT</pubDate></item><item><title>(In Chinese) 自控力阅读摘抄 (Kindle 导出)</title><link>http://pengyin-shan.com/posts/2017/book/chinese-zi-kong-li-highlight.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3&gt;自控力 (凯利•麦格尼格尔, Kelly McGonigal)&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="三点" src="http://pengyin-shan.com/images/2017/books/notebook/threepoint.png"&gt;&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;h3&gt;工作笔记本&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;工作笔记本是为了‘舍弃’&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;商务工作的基本任务就是从庞杂的信息中迅速找出与结果相关的重要信息并经整理得出结论。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;需要不断练习&lt;/em&gt;&lt;/p&gt;
+&lt;h4&gt;代谢不良的笔记本&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;按时间记录，而不是一页一主题&lt;/li&gt;
+&lt;li&gt;杂乱的‘视觉突出效果’&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;在记笔记的同时，应该养成快速思考‘这个信息是否有必要记在笔记本上’的习惯&lt;/strong&gt;&lt;/p&gt;
+&lt;h4&gt;关键是‘从论点开始’&lt;/h4&gt;
+&lt;p&gt;正确设定论点：&lt;strong&gt;询问&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;工作的第一步是向对方详细确认“问题是什么”。通过彻底的‘询问’，找出对方的问题点在哪里，看出解决问题的方向。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="确认论点" src="http://pengyin-shan.com/images/2017/books/notebook/querenlundian.png"&gt;&lt;/p&gt;
+&lt;h4&gt;确认论点的三分钟&lt;/h4&gt;
+&lt;h4&gt;情况一：当接受要求时，养成‘用三分钟确认论点’的习惯&lt;/h4&gt;
+&lt;p&gt;应主动用三分钟确认：
+1. 对方的想法是什么
+2. 想表达的论点和重点是什么
+3. 希望制作的大致轮廓和大致印象是什么&lt;/p&gt;
+&lt;h4&gt;情况二：在笔记本的标题区域预先写好“论点”后再交给部下&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;告诉部下所期望完成的报告书的大体轮廓&lt;/li&gt;
+&lt;li&gt;确认部下是否明白的你希望传达的意思&lt;/li&gt;
+&lt;li&gt;可将论点细化为分论点&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+
+&lt;h3&gt;提案笔记本&lt;/h3&gt;
+&lt;p&gt;笔记本的终极目标是‘提案笔记本’,即‘能得出可靠结论的提案笔记本’。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;最重要的是学会逻辑性思维&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;每天坚持‘按逻辑性思维记笔记’，可以充分锻炼逻辑思维。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;设定论点&lt;/strong&gt;是重中之重。要按照&lt;em&gt;事实-》解释-》行动及结论&lt;/em&gt;的顺序记笔记。&lt;/p&gt;&lt;/div&gt;</description><category>Chinese</category><category>Note Taking</category><category>笔记</category><guid>http://pengyin-shan.com/posts/2017/book/chinese-use-graph-ruled-notebook.md.html</guid><pubDate>Wed, 25 Jan 2017 05:00:00 GMT</pubDate></item><item><title>(In Chinese) 自控力阅读摘抄 (Kindle 导出)</title><link>http://pengyin-shan.com/posts/2017/book/chinese-zi-kong-li-highlight.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3&gt;自控力 (凯利•麦格尼格尔, Kelly McGonigal)&lt;/h3&gt;
 &lt;p&gt;提高自控力的最有效途径在于，弄清自己如何失控、为何失控。
 Kelly McGonigal), 自控力 (凯利•麦格尼格尔 [Kindle Edition]. loc. 154-155.
 &lt;/p&gt;&lt;hr&gt;

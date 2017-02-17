@@ -1,5 +1,255 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Pengyin's Note</title><link>http://pengyin-shan.com/</link><description>This is Pengyin Shan's Note</description><atom:link type="application/rss+xml" rel="self" href="http://pengyin-shan.com/rss.xml"></atom:link><language>en</language><lastBuildDate>Sat, 11 Feb 2017 02:03:00 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>(In Chinese) 聪明人用方格笔记本-阅读摘抄</title><link>http://pengyin-shan.com/posts/2017/book/chinese-use-graph-ruled-notebook.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;hr&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Pengyin's Note</title><link>http://pengyin-shan.com/</link><description>This is Pengyin Shan's Note</description><atom:link href="http://pengyin-shan.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Fri, 17 Feb 2017 02:12:33 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>(In Chinese) 富爸爸穷爸爸-阅读摘抄</title><link>http://pengyin-shan.com/posts/2017/book/chinese-rich-data-poor-dad.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h2&gt;Part 1: 课程&lt;/h2&gt;
+&lt;h4&gt;经常锻炼大脑&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;不能说“我可付不起”的话，要说“我怎样才能付得起呢？”&lt;/li&gt;
+&lt;li&gt;当遇到钱的问题时，想办法解决而不是顺其自然&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;寻求完全的经济自立&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;如果能了解钱是如何运转的，你就有了驾驭它的力量，并开始积累财富。&lt;/p&gt;
+&lt;h3&gt;第一课： 富人不为钱工作&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;穷人和中产阶级为钱而工作，富人让钱为他们工作&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;真正的学习需要精力，激情和热切的愿望&lt;/p&gt;
+&lt;p&gt;出于恐惧心，为了寻求稳定，多数人成了钱的奴隶，然后把怒气对准他们的老板&lt;/p&gt;
+&lt;h4&gt;避开人一生中最大的陷阱&lt;/h4&gt;
+&lt;p&gt;穷人为了一点点钱而勤奋工作，兼有一种有工作的虚幻安全感&lt;/p&gt;
+&lt;p&gt;真实地看待你的感情，以你喜欢的方式运用头脑和感情，而不是与自己作对&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;一份工作不能长期的解决经济问题。工作只是试图用暂时的办法来解决长期的问题&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;要学会支配钱，而不是害怕他&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;造成贫穷和财务问题的主要原因是恐惧和无知，而非经济环境，政府或富人&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;要运用恐惧或贪婪为长期利益牟利&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;人必须不停的与自己作斗争，通过学习打开自己的心扉而不是封闭自己的头脑&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;em&gt;学校毕业是继续学习的开端&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;让感情跟随思想&lt;/p&gt;
+&lt;p&gt;自己赚钱而不是依赖雇主&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;第二课： 为什么教授财务知识&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;规则：必须明白负债和资产的区别，尽可能购买资产&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4&gt;损益表&lt;/h4&gt;
+&lt;p&gt;&lt;img alt="损益表" src="http://pengyin-shan.com/images/2017/books/qiongbaba/sunyibiao.png"&gt;&lt;/p&gt;
+&lt;h4&gt;富人的现金流向图&lt;/h4&gt;
+&lt;p&gt;&lt;img alt="现金图" src="http://pengyin-shan.com/images/2017/books/qiongbaba/xianjitu1.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="现金图" src="http://pengyin-shan.com/images/2017/books/qiongbaba/xianjitu2.png"&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;善于独立思考&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4&gt;过大而时髦的房子可能成为负债&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;大多数人一生都在为一所他们并未真正拥有的房子而辛苦的工作&lt;/li&gt;
+&lt;li&gt;总是要先还清各期贷款后，才能以税后收入支付各种开支&lt;/li&gt;
+&lt;li&gt;财产税可能很高&lt;/li&gt;
+&lt;li&gt;将房子作为主要资产反复进行投资，而不是投资于那些能带来收入的真正的资产上&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;最大的损失是机会损失&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;结果 -&amp;gt;
+1. 失去了用其他资产增值的时机
+2. 本可以用来投资的资本将用于支付房子的各种高额，长期开支
+3. 失去受教育的机会，不能成为‘成熟投资者’&lt;/p&gt;
+&lt;h4&gt;富人的财务情况&lt;/h4&gt;
+&lt;p&gt;&lt;img alt="富人财务" src="http://pengyin-shan.com/images/2017/books/qiongbaba/furencaiwu.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="穷人财务" src="http://pengyin-shan.com/images/2017/books/qiongbaba/qiongrencaiwu.png"&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;因为普通中产阶级早年缺乏必要的财务知识，他们必须要回避风险， 而不是正确的去看待投资机会&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;普通中产阶级为雇主、股东工作，为政府工作，为银行工作&lt;/p&gt;
+&lt;h4&gt;三个步骤&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;从资产项（而不是工资）得到的现金流与支出等量 （不依赖工资）&lt;/li&gt;
+&lt;li&gt;把支出控制在资产所能够产生的现金流之下，从而使用多余现金再进行投资&lt;/li&gt;
+&lt;li&gt;重复第2步这种再投资过程&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;富人买入资产
+穷人只有支出
+中产阶级买他们以为是资产的负债&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;第三课：关注自己的事业&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;存在财务问题的人经常是一生为别人工作的人&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4&gt;在拥有职业的同时应该拥有自己的事业&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;事业是围绕着你的资产，而不是你的收入&lt;/li&gt;
+&lt;li&gt;只有把增加的收入用于购买可产生收入的资产时，才能获得真正的财务安全&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;汽车并不是真正的资产&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h5&gt;打下资产基础&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;支出稳定在低水平&lt;/li&gt;
+&lt;li&gt;减少借款&lt;/li&gt;
+&lt;li&gt;勤劳工作&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4&gt;真正的资产&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;不需要我到场就可以正常运作的业务&lt;/li&gt;
+&lt;li&gt;股票&lt;/li&gt;
+&lt;li&gt;债券
+4.共同基金&lt;/li&gt;
+&lt;li&gt;产生收入的房地产&lt;/li&gt;
+&lt;li&gt;票据（借据）&lt;/li&gt;
+&lt;li&gt;专利权， 如音乐，手稿，专利&lt;/li&gt;
+&lt;li&gt;其他有价值，可产生收入，或可能增值并有很好的流通市场的东西&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;想办法获得我所喜爱的资产，让钱能一天24小时代工作并且为几代人服务&lt;/p&gt;
+&lt;p&gt;富人最后才买奢侈品， 先建立资产&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;第四课： 税收的历史和公司的力量&lt;/h3&gt;
+&lt;p&gt;富人并未被征税，而是中产阶级在为穷人支付税金&lt;/p&gt;
+&lt;h4&gt;真正的资本家利用他们的财务知识逃避税收&lt;/h4&gt;
+&lt;p&gt;公司可以只是一些符合法律要求的文件，在政府注册后就被放在了律师的办公室里:
+1. 公司所得税率&lt;code&gt;低于&lt;/code&gt;个人收入所得税率
+2. 公司的某些支出可以在税前获得&lt;code&gt;抵减&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;吃亏的人一定是无知者，他们不会用合理合法的避税手段，也不了解法律&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4&gt;钱越多，需要的知识也就越多&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;让钱为我工作而不是我为钱工作&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;精于计算&lt;/li&gt;
+&lt;li&gt;了解法律&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4&gt;财务的构成&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;会计&lt;/code&gt; - 财务知识 - 读懂财务报表&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;投资战略&lt;/code&gt; - 钱生钱的科学 - 投资与创造&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;了解市场&lt;/code&gt; - 供给与需求的科学 - 决定投资的意义&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;法律&lt;/code&gt;：税收优惠，在诉讼中获得保护&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img alt="拥有公司" src="http://pengyin-shan.com/images/2017/books/qiongbaba/yongyougongsi.png"&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;目标一： 拥有一个由自己资产组成的公司 &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;第五课：富人的投资&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;过分的畏惧和自我怀疑是浪费我们才能的最大因素 &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4&gt;努力提高自己的财商&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;财商&lt;/code&gt;： 抓住机会，然后将机会转变成数以百万级的美元&lt;/p&gt;
+&lt;p&gt;富人更富有创造性，愿意经过精心筹划后再去冒险&lt;/p&gt;
+&lt;p&gt;应用财务智慧，创造性解决财务问题&lt;/p&gt;
+&lt;p&gt;不断学习和提高财商的原因是因为市场会有景气和萧条的交替，要欢迎变化而不是沉溺于过去。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;最重要的资产是头脑而不是金钱。如果受到良好训练，就可以迅速创造大量财富&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4&gt;开发理财天赋&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;有趣&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;如果投资机会太复杂而我不能弄明白，我就不会去投资&lt;/p&gt;
+&lt;p&gt;过于‘保险’的投资常常过于安全，太安全会导致低收益&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;越‘老练’就会得到越多的机会&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;如果你清楚自己在做什么，那就不是在赌博&lt;/li&gt;
+&lt;li&gt;如果把钱投入一笔交易然后只是祈祷，那就是在赌博&lt;/li&gt;
+&lt;li&gt;运用知识来降低风险，减少意外的发生&lt;/li&gt;
+&lt;li&gt;财商可以提高应付意外事件发生的能力&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;做创造投资机会的投资者&lt;/h4&gt;
+&lt;h5&gt;三种技能要求&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;如何寻找其他人都忽视的机会 - 买破房子并装修然后卖掉&lt;/li&gt;
+&lt;li&gt;如何增加资金 - 寻找不需要银行就能融资的方法 - 投资不是买入，而是一个收集信息的过程&lt;/li&gt;
+&lt;li&gt;如何把精明的人们组织起来&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;第六课：不要为金钱而工作&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;大部分人需要学习并掌握不止一项技能，才能是收入获得显著增长&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在寻找工作时要看看能从中&lt;code&gt;学到什么&lt;/code&gt;，而不是只看能挣到多少&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;富人能使自己活得更长一些，而贫穷的人只能早早死去&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;要对人生有长远的眼光，从长远看教育比金钱更有价值&lt;/p&gt;
+&lt;h4&gt;要学习&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;要学习营销技能，最好进入一家拥有&lt;code&gt;连锁营销&lt;/code&gt;系统或称为&lt;code&gt;多层次市场&lt;/code&gt;的公司&lt;/li&gt;
+&lt;li&gt;要研究一个企业&lt;code&gt;所有的部门&lt;/code&gt;，并对如何经营一家企业有一个整体的认识，能知道不同部门之间的相互关系&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4&gt;必要的管理素质&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;对&lt;code&gt;现金流&lt;/code&gt;的管理&lt;/li&gt;
+&lt;li&gt;对&lt;code&gt;系统&lt;/code&gt;（本人，时间和家庭）的管理&lt;/li&gt;
+&lt;li&gt;对&lt;code&gt;人员&lt;/code&gt;的管理&lt;/li&gt;
+&lt;li&gt;最重要：&lt;code&gt;销售与市场营销&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h5&gt;销售与市场营销&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;如果过度依赖专业特长，可能会出现工资增长，但选择机会消失的情况&lt;/li&gt;
+&lt;li&gt;在处理人际交往，商务谈判和控制被拒绝时的恐慌心理方面做得越好，生活就会越轻松。&lt;/li&gt;
+&lt;li&gt;成为好老师，好学生&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;目标二：学习销售饼提高处理人际关系的能力&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+
+&lt;h2&gt;Part2 : 开端&lt;/h2&gt;
+&lt;h3&gt;克服困难&lt;/h3&gt;
+&lt;h4&gt;不能拥有充足资产的五个原因&lt;/h4&gt;
+&lt;h5&gt;1. 恐惧心理 - 可能损失金钱&lt;/h5&gt;
+&lt;p&gt;恐惧心理是正常的，每个人仍有机会变得富有&lt;/p&gt;
+&lt;p&gt;对于大多数人来说，他们在财务上不能获胜的原因是因为对他们而言损失金钱所造成的痛苦远远大于致富所带来的乐趣&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;面对损失并将它变成盈利&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;要为了盈利而理财，而不是为了避免损失而理财&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;成功的投资者拥有盈利的投资组合，而不是一个安全而平衡的投资组合&lt;/li&gt;
+&lt;li&gt;要‘集中于一点’，在这点上不断取得进展， 而不是‘分散风险’&lt;/li&gt;
+&lt;li&gt;尽早起步&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h5&gt;2. 顾虑与愤世嫉俗&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;不要总是对自己产生怀疑&lt;/li&gt;
+&lt;li&gt;不要让谣言和杞人忧天式的怀疑加剧我们的恐惧心理和对自己的疑虑&lt;/li&gt;
+&lt;li&gt;成功者分析现实，分析使人心明眼亮 (在油价准备上涨时购买石油公司的股份)，失败者抱怨&lt;/li&gt;
+&lt;li&gt;注意能得到的巨大收益，而不是细节上的麻烦&lt;/li&gt;
+&lt;li&gt;寻找好的代管理者&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;避免‘买家反悔’心理，不要说‘我不想要’，把握实现财务自由的机会&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h5&gt;3. 懒惰&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;忙碌的人常常是最懒惰的人&lt;/li&gt;
+&lt;li&gt;应该‘贪婪'一点，勇于追求并得到自己想要的生活&lt;/li&gt;
+&lt;li&gt;负罪感比欲望要糟&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我怎样才能支付这个？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h5&gt;4. 不良习惯&lt;/h5&gt;
+&lt;p&gt;1.先支付自己
+2.然后思考如何赚到额外的钱支付政府的征税者&lt;/p&gt;
+&lt;h5&gt;5. 自负&lt;/h5&gt;
+&lt;p&gt;1.不要掩饰自己在某一方面欠缺知识
+2.马上开始教育自己&lt;/p&gt;&lt;/div&gt;</description><category>Chinese</category><category>Note Taking</category><category>笔记</category><guid>http://pengyin-shan.com/posts/2017/book/chinese-rich-data-poor-dad.html</guid><pubDate>Fri, 10 Feb 2017 05:00:00 GMT</pubDate></item><item><title>(In Chinese) 聪明人用方格笔记本-阅读摘抄</title><link>http://pengyin-shan.com/posts/2017/book/chinese-use-graph-ruled-notebook.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;hr&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;进化笔记本：学习、工作、博弈&lt;/p&gt;
@@ -2289,583 +2539,4 @@ Kelly McGonigal), 自控力 (凯利•麦格尼格尔 [Kindle Edition]. loc. 329
 &lt;span class="kd"&gt;let&lt;/span&gt; &lt;span class="nx"&gt;strlength2&lt;/span&gt;: &lt;span class="kt"&gt;number&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;typeassertion&lt;/span&gt; &lt;span class="kr"&gt;as&lt;/span&gt; &lt;span class="kt"&gt;string&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;length&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;strlength&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 &lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;strlength2&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</description><category>TypeScript</category><guid>http://pengyin-shan.com/posts/2016/JavaScript/typescript-basics.html</guid><pubDate>Tue, 21 Jun 2016 04:00:00 GMT</pubDate></item><item><title>Node.js Basics</title><link>http://pengyin-shan.com/posts/2016/JavaScript/node-js-basics.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;em&gt;This is a reading note for node.js part on &lt;a href="http://www.tutorialspoint.com/nodejs/index.htm"&gt;tutorialspoint&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-&lt;h2&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;Node.js (MIT License) is a server-side framework built on Good V8 Engine. From Tutorialpoints.com, it has following features:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Asynchronous and Event Driven: the server will always move on. Once it gets a notification of a event with returned data, it will trigger this event.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Single Threaded Model but Highly Scalable: although node.js use a single threaded server, it can response to multiple requests because of its asynchronous feature. It is easy to be scaled.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Node.js does not buffer any data.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Components&lt;/h2&gt;
-&lt;p&gt;One node.js application has following three parts:&lt;/p&gt;
-&lt;p&gt;Import Required Modules: use &lt;code&gt;require&lt;/code&gt; to import node.js modules. Example: &lt;code&gt;var http = require("http")&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Create server: user &lt;code&gt;http.createServer()&lt;/code&gt; to create server instance. This method includes callbacks for response information, such as port number, content-type, etc:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;http&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;require&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'http'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="nx"&gt;http&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;createServer&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;request&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;response&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
-    &lt;span class="nx"&gt;response&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;writeHead&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;200&lt;/span&gt;&lt;span class="p"&gt;,{&lt;/span&gt;&lt;span class="s1"&gt;'Content-Type'&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;'text/plain'&lt;/span&gt;&lt;span class="p"&gt;});&lt;/span&gt;
-    &lt;span class="nx"&gt;response&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;add&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'Hello World\n'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;//add data in response body&lt;/span&gt;
-&lt;span class="p"&gt;}).&lt;/span&gt;&lt;span class="nx"&gt;listen&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;8081&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="c1"&gt;//in example use 8081 as port number&lt;/span&gt;
-&lt;/pre&gt;
-
-
-&lt;p&gt;Start Server: use &lt;code&gt;node xxx.js&lt;/code&gt; in terminal to start server. Use name of server js file. Example: &lt;code&gt;node config.js&lt;/code&gt;.&lt;/p&gt;
-&lt;h2&gt;NPM&lt;/h2&gt;
-&lt;p&gt;node.js use &lt;code&gt;npm&lt;/code&gt; (Node Package Manager) to install/control node modules. &lt;code&gt;npm install package_name [-g] [--save/--save-dev]&lt;/code&gt; can be used to install package (&lt;strong&gt;&lt;code&gt;--save&lt;/code&gt; or &lt;code&gt;--save-dev&lt;/code&gt; is used to add dependencies to your package.json file&lt;/strong&gt;). There are two way of installation: &lt;strong&gt;Global&lt;/strong&gt; and &lt;strong&gt;Local&lt;/strong&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Local modules are installed inside project, in &lt;code&gt;node_modules&lt;/code&gt; folder. &lt;em&gt;Locally deployed packages are accessiable via &lt;code&gt;require()&lt;/code&gt; method.&lt;/em&gt; Local packages can be listed by &lt;code&gt;npm ls&lt;/code&gt; command.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Globally packages are stored in system directory. &lt;em&gt;It cannot be imported by &lt;code&gt;require()&lt;/code&gt;&lt;/em&gt;. They can be used in terminal. &lt;code&gt;npm ls -g&lt;/code&gt; can be used to list global packages.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;npm also has following common command:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;npm uninstall package_name&lt;/code&gt;: uninstall a package&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;npm update package_name&lt;/code&gt;: update a package&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;npm search package_name&lt;/code&gt;: search package name using npm.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;package.json&lt;/h3&gt;
-&lt;p&gt;For project: Run &lt;code&gt;npm init&lt;/code&gt; at top level of a project can be used to generate &lt;code&gt;package.json&lt;/code&gt; for &lt;strong&gt;this project&lt;/strong&gt;, which is a JSON file defining the property of &lt;strong&gt;this project&lt;/strong&gt;.  A few questions will be asked during initialization process.&lt;/p&gt;
-&lt;p&gt;A &lt;code&gt;package.json&lt;/code&gt; for project contains &lt;code&gt;dependencies&lt;/code&gt;, which is for publication pages, and &lt;code&gt;devDependencies&lt;/code&gt; for dev/test only packages. Following is an example:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="s2"&gt;"name"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"test"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c1"&gt;//name of project&lt;/span&gt;
-  &lt;span class="s2"&gt;"version"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"1.0.0"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-  &lt;span class="s2"&gt;"description"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;""&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-  &lt;span class="s2"&gt;"main"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"gulpfile.js"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c1"&gt;//entry point of project&lt;/span&gt;
-  &lt;span class="s2"&gt;"scripts"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="c1"&gt;//handle status of project, see https://docs.npmjs.com/misc/scripts for detail&lt;/span&gt;
-    &lt;span class="s2"&gt;"test"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"echo \"Error: no test specified\" &amp;amp;&amp;amp; exit 1"&lt;/span&gt;
-  &lt;span class="p"&gt;},&lt;/span&gt;
-  &lt;span class="s2"&gt;"author"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"test author"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-  &lt;span class="s2"&gt;"license"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"ISC"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-  &lt;span class="c1"&gt;//packages and versions for dev/test only&lt;/span&gt;
-  &lt;span class="s2"&gt;"devDependencies"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="s2"&gt;"gulp"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"^3.9.1"&lt;/span&gt;
-  &lt;span class="p"&gt;},&lt;/span&gt;
-  &lt;span class="c1"&gt;//packages and versions for production&lt;/span&gt;
-  &lt;span class="s2"&gt;"dependencies"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="s2"&gt;"gulp"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"^3.9.1"&lt;/span&gt;
-  &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;
-
-
-&lt;p&gt;For node modules: there is also a package.json file in each node module in &lt;code&gt;node_modules&lt;/code&gt; folder. Following is the &lt;code&gt;package.json&lt;/code&gt; file in &lt;code&gt;gulp-jade&lt;/code&gt; module package:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="s2"&gt;"name"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"gulp-jade"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-  &lt;span class="s2"&gt;"version"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"1.1.0"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-  &lt;span class="s2"&gt;"description"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"Compile Jade templates"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-  &lt;span class="s2"&gt;"keywords"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;
-    &lt;span class="s2"&gt;"jade"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-    &lt;span class="s2"&gt;"gulpplugin"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-    &lt;span class="s2"&gt;"stream"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-    &lt;span class="s2"&gt;"compile"&lt;/span&gt;
-  &lt;span class="p"&gt;],&lt;/span&gt;
-  &lt;span class="s2"&gt;"repository"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="s2"&gt;"type"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"git"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-    &lt;span class="s2"&gt;"url"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"git+https://github.com/phated/gulp-jade.git"&lt;/span&gt;
-  &lt;span class="p"&gt;},&lt;/span&gt;
-  &lt;span class="s2"&gt;"author"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="s2"&gt;"name"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"Blaine Bublitz"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-    &lt;span class="s2"&gt;"email"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"blaine@iceddev.com"&lt;/span&gt;
-  &lt;span class="p"&gt;},&lt;/span&gt;
-  &lt;span class="s2"&gt;"dependencies"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="s2"&gt;"gulp-util"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"^3.0.2"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-    &lt;span class="s2"&gt;"jade"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"1.1 - 1.11"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-    &lt;span class="s2"&gt;"through2"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"^2.0.0"&lt;/span&gt;
-  &lt;span class="p"&gt;},&lt;/span&gt;
-  &lt;span class="s2"&gt;"files"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;
-    &lt;span class="s2"&gt;"index.js"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-    &lt;span class="s2"&gt;"LICENSE"&lt;/span&gt;
-  &lt;span class="p"&gt;],&lt;/span&gt;
-  &lt;span class="s2"&gt;"engines"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="s2"&gt;"node"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"&amp;gt;= 0.10"&lt;/span&gt;
-  &lt;span class="p"&gt;},&lt;/span&gt;
-  &lt;span class="s2"&gt;"scripts"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="s2"&gt;"test"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"gulp jshint &amp;amp;&amp;amp; tap ./test"&lt;/span&gt;
-  &lt;span class="p"&gt;},&lt;/span&gt;
-  &lt;span class="s2"&gt;"license"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"MIT"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-  &lt;span class="s2"&gt;"devDependencies"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="s2"&gt;"gulp"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"^3.8.10"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-    &lt;span class="s2"&gt;"tap"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"^1.3.1"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-    &lt;span class="s2"&gt;"gulp-jshint"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"^1.9.0"&lt;/span&gt;
-  &lt;span class="p"&gt;},&lt;/span&gt;
-  &lt;span class="s2"&gt;"gitHead"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"671714d09e9ccd291489f22988bbc40fe8db40ec"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-  &lt;span class="s2"&gt;"bugs"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="s2"&gt;"url"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"https://github.com/phated/gulp-jade/issues"&lt;/span&gt;
-  &lt;span class="p"&gt;},&lt;/span&gt;
-  &lt;span class="s2"&gt;"homepage"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"https://github.com/phated/gulp-jade#readme"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-  &lt;span class="s2"&gt;"_id"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"gulp-jade@1.1.0"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-  &lt;span class="s2"&gt;"_shasum"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"cb2f332ac46824671f36891655c165c591c33bd4"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-  &lt;span class="s2"&gt;"_from"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"gulp-jade@latest"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-  &lt;span class="s2"&gt;"_npmVersion"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"2.8.3"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-  &lt;span class="s2"&gt;"_nodeVersion"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"0.10.36"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-  &lt;span class="s2"&gt;"_npmUser"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="s2"&gt;"name"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"phated"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-    &lt;span class="s2"&gt;"email"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"blaine@iceddev.com"&lt;/span&gt;
-  &lt;span class="p"&gt;},&lt;/span&gt;
-  &lt;span class="s2"&gt;"maintainers"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;
-    &lt;span class="p"&gt;{&lt;/span&gt;
-      &lt;span class="s2"&gt;"name"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"phated"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-      &lt;span class="s2"&gt;"email"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"blaine@iceddev.com"&lt;/span&gt;
-    &lt;span class="p"&gt;}&lt;/span&gt;
-  &lt;span class="p"&gt;],&lt;/span&gt;
-  &lt;span class="s2"&gt;"dist"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="s2"&gt;"shasum"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"cb2f332ac46824671f36891655c165c591c33bd4"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-    &lt;span class="s2"&gt;"tarball"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"https://registry.npmjs.org/gulp-jade/-/gulp-jade-1.1.0.tgz"&lt;/span&gt;
-  &lt;span class="p"&gt;},&lt;/span&gt;
-  &lt;span class="s2"&gt;"directories"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{},&lt;/span&gt;
-  &lt;span class="s2"&gt;"_resolved"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"https://registry.npmjs.org/gulp-jade/-/gulp-jade-1.1.0.tgz"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-  &lt;span class="s2"&gt;"readme"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"ERROR: No README data found!"&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;
-
-
-&lt;p&gt;&lt;code&gt;npm adduser&lt;/code&gt; to register current user to npm repository, then &lt;code&gt;npm publish&lt;/code&gt; can be used to publish current module to &lt;code&gt;repository&lt;/code&gt; address in &lt;code&gt;package.json&lt;/code&gt;.&lt;/p&gt;
-&lt;h2&gt;Concurrency: Callback and Events&lt;/h2&gt;
-&lt;h3&gt;Callbacks&lt;/h3&gt;
-&lt;p&gt;JavaScript callback functions are heavily used in node.js to make sure no block exists. Following is an example:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;//Assume 'input.txt' has one line 'Hello World!'&lt;/span&gt;
-&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;fs&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;require&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'fs'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="nx"&gt;fs&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;readFile&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'input.txt'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;err&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nx"&gt;data&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
-    &lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;err&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;err&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-    &lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;data&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;toString&lt;/span&gt;&lt;span class="p"&gt;());&lt;/span&gt;
-&lt;span class="p"&gt;});&lt;/span&gt;
-&lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'End Program!'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;/pre&gt;
-
-
-&lt;p&gt;The code above should output: &lt;code&gt;End Program! Hello World!&lt;/code&gt;. Program goes till &lt;code&gt;readFile()&lt;/code&gt; finished, then callback statements will run.&lt;/p&gt;
-&lt;h3&gt;Events&lt;/h3&gt;
-&lt;p&gt;Node.js use &lt;strong&gt;observer pattern&lt;/strong&gt;, which means there exists dependency from one to many. Many observers (i.e. event listeners) will observe one subject (i.e. event). When subjects changes, all observers will be notified and updated based on the update.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Node thread keeps an event loop and whenever any task get completed, it fires the corresponding event which signals the event listener function to get executed.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Image from tutorialspoint.com:&lt;/p&gt;
-&lt;p&gt;images/articles/2016/javascript/node_js_events.png &lt;/p&gt;
-&lt;p&gt;This is the difference between callbacks and events. The &lt;code&gt;EventEmitter&lt;/code&gt; is used to bind events and event listeners.&lt;/p&gt;
-&lt;p&gt;EventEmitter Methods:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;eventemitter.on('eventName',eventhandler)&lt;/code&gt; is used to bind event name and event handler.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;eventemitter.once('eventName', eventhandler)&lt;/code&gt; is to add a listener that &lt;em&gt;only the next time&lt;/em&gt; event is fired, after which it is removed.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;eventemitter.removeListener&lt;/code&gt;/&lt;code&gt;eventemitter.removeAllListeners&lt;/code&gt;: remove listener&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;eventemitter.emit('eventName')&lt;/code&gt; is used to fire an event.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;em&gt;'eventName' above is just a identifier for an event concept, it's not a real object.&lt;/em&gt; See example below:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;// Import events module&lt;/span&gt;
-&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;events&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;require&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'events'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="c1"&gt;// Create an eventEmitter object&lt;/span&gt;
-&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;eventEmitter&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nx"&gt;events&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;EventEmitter&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
-
-&lt;span class="c1"&gt;// Create an event handler as follows&lt;/span&gt;
-&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;connectHandler&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="nx"&gt;connected&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
- &lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'connection succesful.'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-
- &lt;span class="c1"&gt;// Fire the data_received event&lt;/span&gt;
- &lt;span class="nx"&gt;eventEmitter&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;emit&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'data_received'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-
-&lt;span class="c1"&gt;// Bind the connection event with the handler&lt;/span&gt;
-&lt;span class="nx"&gt;eventEmitter&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;on&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'connection'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;connectHandler&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-
-&lt;span class="c1"&gt;// Bind the data_received event with the anonymous function (callback)&lt;/span&gt;
-&lt;span class="nx"&gt;eventEmitter&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;on&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'data_received'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;err&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;data&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
-    &lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;err&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-        &lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'err'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-    &lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
-        &lt;span class="nx"&gt;setTimeout&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(){&lt;/span&gt;
-            &lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'data received'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-        &lt;span class="p"&gt;},&lt;/span&gt;&lt;span class="mi"&gt;2000&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-    &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;span class="p"&gt;});&lt;/span&gt;
-
-&lt;span class="c1"&gt;// Fire the connection event&lt;/span&gt;
-&lt;span class="nx"&gt;eventEmitter&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;emit&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'connection'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-
-&lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"Program Ended."&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;/pre&gt;
-
-
-&lt;p&gt;Since I purposely added a &lt;code&gt;setTimeout&lt;/code&gt; function to test callback, code above will generate output:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;connection succesful.
-Program Ended.
-data received
-&lt;/pre&gt;
-
-
-&lt;p&gt;&lt;em&gt;If no &lt;code&gt;setTimeout&lt;/code&gt; (i.e. &lt;code&gt;data_received&lt;/code&gt; event finish immediately), 'data received' will output before 'Program Ended'.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;In Node Application, any async function accepts a callback as a &lt;strong&gt;last&lt;/strong&gt; parameter and the callback function accepts error as a &lt;strong&gt;first&lt;/strong&gt; parameter.&lt;/p&gt;
-&lt;h2&gt;Streams&lt;/h2&gt;
-&lt;p&gt;Reading/Writing files needs &lt;code&gt;require('fs')&lt;/code&gt; module.&lt;/p&gt;
-&lt;p&gt;Streams is used to read/write data. In node.js, there are four type of streams:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Readable: stream for read operation. Common operation: &lt;code&gt;fs.createReadStream(file)&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Writable: stream for write operation. Common operation: &lt;code&gt;fs.createWriteStream(file)&lt;/code&gt;, &lt;code&gt;stream.write(data)&lt;/code&gt;, &lt;code&gt;stream.end()&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Duplex: stream for both read and write operation.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Transform: a duplex stream which output is based on input&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Each type of stream is an &lt;code&gt;EventEmitter&lt;/code&gt; instance. This means it is used the same way as EventEmitter above. Some common events that are bind to these EventEmitters are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;data: fired when data is available to read&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;end: fired when no more data to be read&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;error: fired when getting error while receiving/writing data&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;finish: fired when transferring data process is finished&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;code&gt;Piping&lt;/code&gt; is a mechanism where the output of one stream is the input of another stream.  Piping stream in node.js looks like following:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;fs&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;require&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'fs'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;readerStream&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;fs&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;createReadStream&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'input.txt'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;writeStream&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;fs&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;createWriteStream&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'output.txt'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="c1"&gt;//Pipe Operation. Read input and write to output&lt;/span&gt;
-&lt;span class="nx"&gt;readerStream&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;pipe&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;writeStream&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;/pre&gt;
-
-
-&lt;p&gt;&lt;code&gt;Chanining&lt;/code&gt; is a mechanism to connect output of one stream to another stream and create a chain of multiple stream operations.&lt;/p&gt;
-&lt;p&gt;It usually use with Piping stream. Example:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;fs&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;require&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'fs'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;zlib&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;require&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'zlib'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="nx"&gt;fs&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;createReadStream&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'input.txt'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-  &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;pipe&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;zlib&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;createGzip&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
-  &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;pipe&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;fs&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;createWriteStream&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'input.txt.gz'&lt;/span&gt;&lt;span class="p"&gt;));&lt;/span&gt;
-&lt;/pre&gt;
-
-
-&lt;h2&gt;Global Variables and Common Modules in node.js&lt;/h2&gt;
-&lt;p&gt;Following are some global variables in node.js, which can be used directly, instead of requiring it first:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;_filename&lt;/code&gt;: the filename of the code being executed. Example: &lt;code&gt;console.log(_filename)&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;_dirname&lt;/code&gt;: name of the directory that the currently executing script resides in&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;setTimeout(function, milliseconds)&lt;/code&gt;/&lt;code&gt;clearTimeout(object)&lt;/code&gt;/&lt;code&gt;setInterval(function, milliseconds)&lt;/code&gt;: timer functions in node.js.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Two global objects: &lt;code&gt;console&lt;/code&gt; and &lt;code&gt;process&lt;/code&gt; can be used directly in js file. &lt;code&gt;console&lt;/code&gt; is used to print information. &lt;code&gt;process&lt;/code&gt; is used to get information on current process.&lt;/p&gt;
-&lt;p&gt;Following modules are commonly used in node.js. They needs to be required at the beginning:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;OS Module: &lt;code&gt;require('os')&lt;/code&gt; module provides a few basic operating system related utility functions&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Path Module: &lt;code&gt;require('path')&lt;/code&gt; module provides methods to handle file paths.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Net Module: &lt;code&gt;require('net')&lt;/code&gt; module is used to create both servers and clients. It provides an asynchronous network wrapper. It has methods such as &lt;code&gt;net.createServer()&lt;/code&gt;, &lt;code&gt;net.connect()&lt;/code&gt;, etc. See &lt;a href="http://www.tutorialspoint.com/nodejs/nodejs_net_module.htm"&gt;here&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;DNS Module: Provides functions to do DNS lookup. Provides functions to use underlying operating system name resolution functions. It provides an asynchronous network wrapper. It has methods such as &lt;code&gt;dns.lookup()&lt;/code&gt;, &lt;code&gt;dns.resolve()&lt;/code&gt;, etc. See &lt;a href="http://www.tutorialspoint.com/nodejs/nodejs_dns_module.htm"&gt;here&lt;/a&gt; for details.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Domain Module: &lt;code&gt;require('domain')&lt;/code&gt; module is used to intercept unhandled error:&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;There are two ways to handle error: &lt;code&gt;Internal Binding&lt;/code&gt;, meaning error emmitter is executing its code within &lt;code&gt;run&lt;/code&gt; method of a domain; &lt;code&gt;External Binding&lt;/code&gt;, meaning error emmitter is added explicitly to a domain using its add method.&lt;/p&gt;
-&lt;h3&gt;Error Object&lt;/h3&gt;
-&lt;p&gt;Reference to &lt;a href="https://docs.nodejitsu.com/articles/errors/what-is-the-error-object/"&gt;this site&lt;/a&gt;: in node.js, &lt;code&gt;error&lt;/code&gt; is a build-in object that provides a standard set of useful information when an error occurs. such as a stack trace and the error message:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;error&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nb"&gt;Error&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'The error message'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;error&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;/pre&gt;
-
-
-&lt;p&gt;Output will be:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;{ stack: [Getter/Setter],
- arguments: undefined,
- type: undefined,
- message: 'The error message' }
-&lt;/pre&gt;
-
-
-&lt;p&gt;&lt;code&gt;domain.create()&lt;/code&gt; needs to be used create an instance of domain, then it can be used to listen to error event:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;EventEmitter&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;require&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'events'&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;EventEmitter&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;domain&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;require&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'domain'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-
-&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;emitter1&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nx"&gt;EventEmitter&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt; &lt;span class="c1"&gt;//create an instance of eventemitter&lt;/span&gt;
-
-&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;domain1&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;domain&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;create&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt; &lt;span class="c1"&gt;//create a domain&lt;/span&gt;
-&lt;span class="c1"&gt;//Domain handle error&lt;/span&gt;
-&lt;span class="nx"&gt;domain1&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;on&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'error'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;err&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
-  &lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'domain1 error handler'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="p"&gt;});&lt;/span&gt;
-
-&lt;span class="nx"&gt;domain1&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;add&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;emitter1&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;//Explicit Binding&lt;/span&gt;
-
-&lt;span class="c1"&gt;//Bind error event and error handler&lt;/span&gt;
-&lt;span class="nx"&gt;emitter1&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;on&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'error'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;err&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
-  &lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'emittter1 error handler'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="p"&gt;});&lt;/span&gt;
-
-&lt;span class="c1"&gt;//In output, fire emitter handler instead of domain handler&lt;/span&gt;
-&lt;span class="nx"&gt;emitter1&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;emit&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'error'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nb"&gt;Error&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'Error to be handled by listener'&lt;/span&gt;&lt;span class="p"&gt;));&lt;/span&gt;
-
-&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;domain2&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;domain&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;create&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
-&lt;span class="nx"&gt;domain2&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;on&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'error'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;err&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
-  &lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'domain2 error handler'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="p"&gt;});&lt;/span&gt;
-
-&lt;span class="c1"&gt;//Implicit Binding. Create EventEmitter inside run method&lt;/span&gt;
-&lt;span class="nx"&gt;domain2&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;run&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(){&lt;/span&gt;
-  &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;emitter2&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nx"&gt;EventEmitter&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
-  &lt;span class="nx"&gt;emitter2&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;emit&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'error'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nb"&gt;Error&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'Implicit error handler'&lt;/span&gt;&lt;span class="p"&gt;));&lt;/span&gt; &lt;span class="c1"&gt;//fire an error event with error message&lt;/span&gt;
-&lt;span class="p"&gt;});&lt;/span&gt;
-
-&lt;span class="c1"&gt;//Remove explict binding and try again. Remember to remove all listeners and remove eventemitter together!&lt;/span&gt;
-&lt;span class="nx"&gt;emitter1&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;removeAllListeners&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'error'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="nx"&gt;domain1&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;remove&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;emitter1&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="nx"&gt;emitter1&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;emit&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'error'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nb"&gt;Error&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'Converted to exception. System will crash!'&lt;/span&gt;&lt;span class="p"&gt;));&lt;/span&gt;
-&lt;/pre&gt;
-
-
-&lt;p&gt;Code above will have following output. Noted error message does not show unless there is no error handler for it:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;emittter1 error handler
-domain2 error handler
-
-events.js:72
-        throw er; // Unhandled 'error' event
-              ^
-Error: Converted to exception. System will crash!
-    at Object. (/web/com/1464273829_135671/main.js:36:28)
-    at Module._compile (module.js:456:26)
-    at Object.Module._extensions..js (module.js:474:10)
-    at Module.load (module.js:356:32)
-    at Function.Module._load (module.js:312:12)
-    at Function.Module.runMain (module.js:497:10)
-    at startup (node.js:119:16)
-    at node.js:929:3
-&lt;/pre&gt;
-
-
-&lt;h2&gt;Node.js as Web Server/Client&lt;/h2&gt;
-&lt;p&gt;Following is the image to describe web application architecture in tutorialspoint.com:&lt;/p&gt;
-&lt;p&gt;Following code is to use node.js as web server (&lt;code&gt;server.js&lt;/code&gt;):&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;http&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;require&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'http'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;fs&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;require&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'fs'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;url&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;require&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'url'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-
-&lt;span class="c1"&gt;// Create a server&lt;/span&gt;
-&lt;span class="nx"&gt;http&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;createServer&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;request&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;response&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-   &lt;span class="c1"&gt;// Parse the request containing file name&lt;/span&gt;
-   &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;pathname&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;url&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;parse&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;request&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;url&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;pathname&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c1"&gt;// /index.htm here&lt;/span&gt;
-
-   &lt;span class="c1"&gt;// Print the name of the file for which request is made.&lt;/span&gt;
-   &lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"Request for "&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nx"&gt;pathname&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s2"&gt;" received."&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-
-   &lt;span class="cm"&gt;/*&lt;/span&gt;
-&lt;span class="cm"&gt;    Read the requested file content from file system.&lt;/span&gt;
-&lt;span class="cm"&gt;    Here file is index.htm, so content type is text/html. Notice the usage of file system here.&lt;/span&gt;
-&lt;span class="cm"&gt;   */&lt;/span&gt;
-   &lt;span class="nx"&gt;fs&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;readFile&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;pathname&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;substr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;err&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;data&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-      &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;err&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-         &lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;err&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-         &lt;span class="c1"&gt;// HTTP Status: 404 : NOT FOUND&lt;/span&gt;
-         &lt;span class="c1"&gt;// Content Type: text/plain&lt;/span&gt;
-         &lt;span class="nx"&gt;response&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;writeHead&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;404&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="s1"&gt;'Content-Type'&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;'text/html'&lt;/span&gt;&lt;span class="p"&gt;});&lt;/span&gt;
-      &lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
-         &lt;span class="c1"&gt;//Page found&lt;/span&gt;
-         &lt;span class="c1"&gt;// HTTP Status: 200 : OK&lt;/span&gt;
-         &lt;span class="c1"&gt;// Content Type: text/plain&lt;/span&gt;
-         &lt;span class="nx"&gt;response&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;writeHead&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;200&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="s1"&gt;'Content-Type'&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;'text/html'&lt;/span&gt;&lt;span class="p"&gt;});&lt;/span&gt;
-
-         &lt;span class="c1"&gt;// Write the content of the file to response body&lt;/span&gt;
-         &lt;span class="nx"&gt;response&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;write&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;data&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;toString&lt;/span&gt;&lt;span class="p"&gt;());&lt;/span&gt;
-      &lt;span class="p"&gt;}&lt;/span&gt;
-      &lt;span class="c1"&gt;// Send the response body&lt;/span&gt;
-      &lt;span class="nx"&gt;response&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;end&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
-   &lt;span class="p"&gt;});&lt;/span&gt;
-&lt;span class="p"&gt;}).&lt;/span&gt;&lt;span class="nx"&gt;listen&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;8081&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-
-&lt;span class="c1"&gt;// Console will print the message&lt;/span&gt;
-&lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'Server running at http://127.0.0.1:8081/'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;/pre&gt;
-
-
-&lt;p&gt;Following code is to use node.js as web client (&lt;code&gt;client.js&lt;/code&gt;). &lt;code&gt;http&lt;/code&gt; module is also used in this part:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;http&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;require&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'http'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-
-&lt;span class="c1"&gt;//Options to used by request&lt;/span&gt;
-&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;options&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="nx"&gt;host&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;'localhost'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-  &lt;span class="nx"&gt;port&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;'8081'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-  &lt;span class="nx"&gt;path&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;'/index.htm'&lt;/span&gt;
-&lt;span class="p"&gt;};&lt;/span&gt;
-
-&lt;span class="c1"&gt;//Deal with response from web server&lt;/span&gt;
-&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;callback&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;response&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
-  &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;body&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;''&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="c1"&gt;//While data is being received by client, update body variable&lt;/span&gt;
-  &lt;span class="nx"&gt;response&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;on&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'data'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;data&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
-    &lt;span class="nx"&gt;body&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="nx"&gt;data&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="p"&gt;});&lt;/span&gt;
-  &lt;span class="c1"&gt;//Finish data receiving process&lt;/span&gt;
-  &lt;span class="nx"&gt;response&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;on&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'end'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(){&lt;/span&gt;
-    &lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;body&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-  &lt;span class="p"&gt;});&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-
-&lt;span class="c1"&gt;//Make request to web server&lt;/span&gt;
-&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;req&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;http&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;request&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;options&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;callback&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="nx"&gt;req&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;end&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;&lt;span class="c1"&gt;//Close request after finishing&lt;/span&gt;
-&lt;/pre&gt;
-
-
-&lt;p&gt;Following is a base &lt;code&gt;index.htm&lt;/code&gt;:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;html&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;head&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;title&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;Sample Page&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;title&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;head&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;body&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
-    Hello World!
-  &lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;body&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
-&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;html&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;
-
-
-&lt;p&gt;To run code above, create these three files:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Then open one terminal and type &lt;code&gt;node server.js&lt;/code&gt;. Terminal will show 'Server running at http://127.0.0.1:8081/' and you can open 'http://127.0.0.1:8081/' in web browser.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Now browse 'http://127.0.0.1:8081/index.htm'. Browser should have html available and terminal will give message 'Request for /index.htm received.'.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Then open another terminal and type &lt;code&gt;node client.js&lt;/code&gt;. New terminal should show html code (i.e. body variable). Old terminal should show 'Request for /index.htm received.'&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;If you don't have &lt;code&gt;index.htm&lt;/code&gt; file available, on step 2 terminal will give out error message, which is the code handled in server.js (404 part)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2&gt;Express&lt;/h2&gt;
-&lt;p&gt;Express is a popular Node.js framework. It has following features:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Set up &lt;strong&gt;middleware&lt;/strong&gt; to respond to HTTP requests&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Define the &lt;strong&gt;route table&lt;/strong&gt; to perform different action based on HTTP method and url&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Dynamically render HTML based on &lt;strong&gt;passing arguments&lt;/strong&gt; to templates&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Express is normally being installed with following modules (using &lt;code&gt;npm install xxx --save)&lt;/code&gt;:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;body-parser: the middle-ware for handling JSON, Raw, Text and URL encoded form data.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;cookie-parser: Parse cookie header and populate &lt;code&gt;req.cookies&lt;/code&gt; with an object keyed by the cookie names&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;multer - the middle-ware for handling multipart/form-data.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3&gt;Routing&lt;/h3&gt;
-&lt;p&gt;Express uses &lt;code&gt;request&lt;/code&gt; and &lt;code&gt;response&lt;/code&gt; objects in a &lt;em&gt;callback&lt;/em&gt; function. Basic usage is following:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;app&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'/'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;req&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nx"&gt;res&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
-  &lt;span class="c1"&gt;//deal with request and response objects&lt;/span&gt;
-&lt;span class="p"&gt;});&lt;/span&gt;
-&lt;/pre&gt;
-
-
-&lt;p&gt;Basic way to routing (web application response to different url end point to perform operations like get, post) is following:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;express&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;require&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'express'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;app&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;express&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
-
-&lt;span class="c1"&gt;//GET for abcd, abcxd, ab123cd and so on, using Regular Expression&lt;/span&gt;
-&lt;span class="nx"&gt;app&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'/abc*d'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;req&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nx"&gt;res&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
-  &lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'GET'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-  &lt;span class="nx"&gt;res&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;send&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'Hello GET'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;//send response back&lt;/span&gt;
-&lt;span class="p"&gt;});&lt;/span&gt;
-
-&lt;span class="c1"&gt;//POST&lt;/span&gt;
-&lt;span class="nx"&gt;app&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;post&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'/'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;req&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nx"&gt;res&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
-  &lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'POST from homepage'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-  &lt;span class="nx"&gt;res&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;send&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'Hello POST'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="p"&gt;});&lt;/span&gt;
-
-&lt;span class="c1"&gt;//PUT&lt;/span&gt;
-&lt;span class="nx"&gt;app&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;put&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'/put'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;req&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nx"&gt;res&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
-  &lt;span class="nx"&gt;res&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;send&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'PUT from /put page'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="p"&gt;});&lt;/span&gt;
-
-&lt;span class="c1"&gt;//DELETE&lt;/span&gt;
-&lt;span class="nx"&gt;app&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="k"&gt;delete&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'/delete'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;req&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;res&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
-  &lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'DELETE from /delete page'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-  &lt;span class="nx"&gt;res&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;send&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'Hello DELETE'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="p"&gt;});&lt;/span&gt;
-
-&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;server&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;app&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;listen&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;8081&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(){&lt;/span&gt;
-  &lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;server&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;address&lt;/span&gt;&lt;span class="p"&gt;());&lt;/span&gt;
-&lt;span class="p"&gt;});&lt;/span&gt;
-&lt;/pre&gt;
-
-
-&lt;p&gt;The console information for &lt;code&gt;server.address&lt;/code&gt; may return &lt;code&gt;address&lt;/code&gt; attribute as &lt;code&gt;::&lt;/code&gt;. This is because if the host name is omitted, the IPv6 address will show &lt;code&gt;::&lt;/code&gt; and IPv4 address will return &lt;code&gt;0.0.0.0&lt;/code&gt;. See &lt;a href="http://stackoverflow.com/questions/33853695/node-js-server-address-address-returns"&gt;this Stack Overflow post&lt;/a&gt; for detail.&lt;/p&gt;
-&lt;h3&gt;Static Files in Express&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;express.static&lt;/code&gt; middleware is used to serve static files, such as images, stylesheets or JS files. An example is following:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cm"&gt;/*&lt;/span&gt;
-&lt;span class="cm"&gt;now files in public folder (based on root) can be detected in browser&lt;/span&gt;
-&lt;span class="cm"&gt;*/&lt;/span&gt;
-&lt;span class="nx"&gt;app&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;use&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;express&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="kr"&gt;static&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'public'&lt;/span&gt;&lt;span class="p"&gt;));&lt;/span&gt;
-&lt;span class="nx"&gt;app&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'/'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;req&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nx"&gt;res&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
-  &lt;span class="c1"&gt;//continue with other operations&lt;/span&gt;
-&lt;span class="p"&gt;});&lt;/span&gt;
-&lt;/pre&gt;
-
-
-&lt;p&gt;After running code above, URL such as &lt;code&gt;http://localhost:8081/images/test.png&lt;/code&gt; can be typed and viewed in browser, as long as &lt;code&gt;image/test.png&lt;/code&gt; is under &lt;code&gt;public&lt;/code&gt; folder and &lt;code&gt;public&lt;/code&gt; folder is in root.&lt;/p&gt;
-&lt;h3&gt;Cookie&lt;/h3&gt;
-&lt;p&gt;Use &lt;code&gt;cookie-parser&lt;/code&gt; middleware to print out cookie information. Example:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;express&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;require&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'express'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;cookieParser&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;require&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'cookie-parser'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-
-&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;app&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;express&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
-&lt;span class="nx"&gt;app&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;use&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;cookieParser&lt;/span&gt;&lt;span class="p"&gt;());&lt;/span&gt;
-
-&lt;span class="nx"&gt;app&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'/'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;req&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;res&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"Cookies: "&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;req&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;cookies&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="p"&gt;})&lt;/span&gt;
-
-&lt;span class="nx"&gt;app&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;listen&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;8081&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</description><category>Node.js</category><guid>http://pengyin-shan.com/posts/2016/JavaScript/node-js-basics.html</guid><pubDate>Wed, 25 May 2016 04:00:00 GMT</pubDate></item></channel></rss>
+&lt;/pre&gt;&lt;/div&gt;</description><category>TypeScript</category><guid>http://pengyin-shan.com/posts/2016/JavaScript/typescript-basics.html</guid><pubDate>Tue, 21 Jun 2016 04:00:00 GMT</pubDate></item></channel></rss>

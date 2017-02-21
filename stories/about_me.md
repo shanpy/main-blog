@@ -19,7 +19,7 @@
 
 ![Pengyin Shan](/images/pengyin.jpg)
 <br/>
-<a href="/Pengyin_Shan_Resume.pdf">My Resume</a>
+<a href="/Pengyin_Shan_Resume.pdf" target="_blank">My Resume</a>
 
 <br/>
 <br/>

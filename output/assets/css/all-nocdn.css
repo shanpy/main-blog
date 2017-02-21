@@ -261,7 +261,8 @@ section {
 .social {
   float: left;
   min-height: 100%;
-  background: url('../images/blue-mocha-grunge.jpg') #192029;
+  /*background: url('../images/blue-mocha-grunge.jpg') #192029;*/
+  background: #be9b7b;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -2103,7 +2104,7 @@ body {
   color: #333333;
 }
 a {
-  color: #0088cc;
+  color: #854442;
   text-decoration: none;
 }
 a:hover,
@@ -2360,7 +2361,7 @@ address {
 }
 a.thumbnail:hover,
 a.thumbnail:focus {
-  border-color: #0088cc;
+  border-color: #854442;
   -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
@@ -2387,8 +2388,8 @@ pre {
 }
 code {
   padding: 2px 4px;
-  background-color: #f7f7f9;
-  border: 1px solid #e1e1e8;
+  background-color: #fff4e6;
+  border: 1px solid #4b3832;
   white-space: nowrap;
 }
 pre {

@@ -133,10 +133,10 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
        ('/index.html', 'Home', 'icon-home'),
+        ('/stories/about_me.html', 'About Me', 'icon-user'),
         ('/archive.html', 'Archives', 'icon-folder-open-alt'),
         ('/categories/index.html', 'Tags', 'icon-tags'),
         ('/rss.xml', 'RSS', 'icon-rss'),
-        ('/Pengyin_Shan_Resume.pdf', 'My Resume', 'icon-user'),
         ('https://www.linkedin.com/in/pengyinshan', 'My LinkedIn', 'icon-linkedin'),
         ('https://github.com/shanpy', 'My Github', 'icon-github'),
     ),
@@ -792,10 +792,10 @@ IMAGE_FOLDERS = {'images': 'images'}
 # FAVICONS contains (name, file, size) tuples.
 # Used to create favicon link like this:
 # <link rel="name" href="file" sizes="size"/>
-# FAVICONS = (
-#     ("icon", "/favicon.ico", "16x16"),
-#     ("icon", "/icon_128x128.png", "128x128"),
-# )
+FAVICONS = (
+    ("icon", "/passport_photo.ico", "16x16"),
+    ("icon", "/passport_photo.ico", "128x128"),
+)
 
 # Show teasers (instead of full posts) in indexes? Defaults to False.
 ## INDEX_TEASERS = True
@@ -889,9 +889,9 @@ COMMENT_SYSTEM_ID = "pengyinsnotes"
 #          will not be generated for that directory.
 # STORY_INDEX = False
 # Enable comments on story pages?
-# COMMENTS_IN_STORIES = False
+COMMENTS_IN_STORIES = True
 # Enable comments on picture gallery pages?
-# COMMENTS_IN_GALLERIES = False
+COMMENTS_IN_GALLERIES = True
 
 # What file should be used for directory indexes?
 # Defaults to index.html

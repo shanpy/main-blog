@@ -26,10 +26,6 @@
   <lastmod>2016-12-22T20:25:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://pengyin-shan.com/categories/bi-ji.xml</loc>
-  <lastmod>2017-02-17T02:12:00Z</lastmod>
- </sitemap>
- <sitemap>
   <loc>http://pengyin-shan.com/categories/big-data.xml</loc>
   <lastmod>2016-12-22T20:25:00Z</lastmod>
  </sitemap>
@@ -306,15 +302,11 @@
   <lastmod>2017-02-21T01:05:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://pengyin-shan.com/categories/zi-kong-li.xml</loc>
-  <lastmod>2017-01-20T23:15:00Z</lastmod>
- </sitemap>
- <sitemap>
   <loc>http://pengyin-shan.com/rss.xml</loc>
   <lastmod>2017-02-21T02:08:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://pengyin-shan.com/sitemap.xml</loc>
-  <lastmod>2017-02-21T02:25:00Z</lastmod>
+  <lastmod>2017-02-21T02:27:00Z</lastmod>
  </sitemap>
 </sitemapindex>

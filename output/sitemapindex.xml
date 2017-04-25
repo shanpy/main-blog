@@ -47,7 +47,7 @@
  </sitemap>
  <sitemap>
   <loc>http://pengyin-shan.com/categories/cat_data-science.xml</loc>
-  <lastmod>2017-01-15T03:05:00Z</lastmod>
+  <lastmod>2017-04-25T01:32:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://pengyin-shan.com/categories/cat_front-end.xml</loc>
@@ -82,6 +82,10 @@
   <lastmod>2017-02-21T01:24:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>http://pengyin-shan.com/categories/clean-data.xml</loc>
+  <lastmod>2017-04-25T01:32:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://pengyin-shan.com/categories/compass.xml</loc>
   <lastmod>2017-01-15T03:05:00Z</lastmod>
  </sitemap>
@@ -104,6 +108,10 @@
  <sitemap>
   <loc>http://pengyin-shan.com/categories/data-structure.xml</loc>
   <lastmod>2016-12-22T20:25:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://pengyin-shan.com/categories/data-visualization.xml</loc>
+  <lastmod>2017-04-25T01:32:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://pengyin-shan.com/categories/data.xml</loc>
@@ -196,6 +204,10 @@
  <sitemap>
   <loc>http://pengyin-shan.com/categories/linux.xml</loc>
   <lastmod>2016-12-22T20:25:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://pengyin-shan.com/categories/meeting-notes.xml</loc>
+  <lastmod>2017-04-25T01:32:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://pengyin-shan.com/categories/nikola.xml</loc>
@@ -303,10 +315,10 @@
  </sitemap>
  <sitemap>
   <loc>http://pengyin-shan.com/rss.xml</loc>
-  <lastmod>2017-02-21T02:08:00Z</lastmod>
+  <lastmod>2017-04-25T01:32:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://pengyin-shan.com/sitemap.xml</loc>
-  <lastmod>2017-02-21T02:34:00Z</lastmod>
+  <lastmod>2017-04-25T01:32:00Z</lastmod>
  </sitemap>
 </sitemapindex>

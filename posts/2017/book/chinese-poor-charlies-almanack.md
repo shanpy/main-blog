@@ -1,7 +1,7 @@
 .. title: (In Chinese) 穷查理宝典-阅读摘抄1 （企业与投资）
 .. date: 2017-05-21
 .. category: Book Highlight
-.. tags: Chinese, Reading Notes, Finance, Business, draft
+.. tags: Chinese, Reading Notes, Finance, Business
 .. slug: chinese-poor-charlies-almanack-1
 .. authors: Pengyin Shan
 .. description: (This post is in Chinese) [彼得考夫曼]《穷查理宝典》书本经典语句摘抄 （企业与投资部分）/ Book Highlight: Poor Charlie's Almanack: The Wit and Wisdom of Charles T. Munger written by Peter D.Kaufman (Enterprise and Investment Part)
@@ -477,37 +477,15 @@
 ####如何评估带收购的企业
 
 我们不太用财务标尺；我们也使用许多主观的标准：
-1. 我们能够信赖管理层吗？它会损害我们的声誉吗？会出现什么问题？我们理解这个行业
-吗？这家企业需要注资才能继续运转吗？预期的现金流是多少？我们并不期待
-它会直线增长，只要价格适中，周期性增长我们也能接受
 
+1. 我们能够信赖管理层吗？
+2. 它会损害我们的声誉吗？
+3. 会出现什么问题？
+4. 我们理解这个行业吗？
+5. 这家企业需要注资才能继续运转吗？
+6. 预期的现金流是多少？
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+我们并不期待它会直线增长，**只要价格适中，周期性增长我们也能接受**
 
 
 

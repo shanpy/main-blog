@@ -2272,6 +2272,7 @@ a:focus {
 .page-content > .content b,
 .page-content > .content strong {
   font-weight: bold;
+  text-decoration: underline;
 }
 .page-content > .content cite {
   font-style: normal;

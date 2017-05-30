@@ -1,5 +1,5 @@
 .. title: (In Chinese) 穷查理宝典-阅读摘抄3（财报）
-.. date: 2017-05-29
+.. date: 2017-05-30
 .. category: Book Highlight
 .. tags: Chinese, Reading Notes, Finance, Business
 .. slug: chinese-poor-charlies-almanack-3

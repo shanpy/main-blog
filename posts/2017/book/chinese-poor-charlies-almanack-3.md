@@ -1,5 +1,5 @@
 .. title: (In Chinese) 穷查理宝典-阅读摘抄3（财报）
-.. date: 2017-05-21
+.. date: 2017-05-29
 .. category: Book Highlight
 .. tags: Chinese, Reading Notes, Finance, Business
 .. slug: chinese-poor-charlies-almanack-3
@@ -328,19 +328,32 @@
 
 ####公司净资产
 
-> 资产–负债 = 净资产或所有者权益
+1. 资产–负债 = 净资产或所有者权益
+2. 流动资产 + 其他资产 = 公司总资产
 
 
+####流动资产周转：钱是如何赚取的
 
+![资产负债表1](/images/2017/books/qiongchali/zichanfuzhaibiao1.png)
 
+流动资产（=快速资产、不稳定资产、浮动资产）包括：
 
+1. 现金和现金等价物
+2. 短期投资
+3. 净应收账款
+4. 存货
+5. 统称的其他流动资产
 
+- 它们在资产负债表上是按照流动性（代表它们变现的速度）进行列示。
+- 它们是现金，或者能在很短的时间内（一般在一年以内）转化为现金: 如果公司的经营状况开始恶化，它们能够迅速变现
+- `现金→存货→应收账款→现金`循环：现金用于购买原料并以存货形式存在，经过加工处理的存货又出售给经销商，并变现为应收账款，从经销商那里收回的应收账款最后又转化为现金。
+- 巴菲特据此判断这个公司在竞争市场上是否具有持续性相对优势。
 
+####笔记
 
+![资产负债表](/images/2017/books/qiongchali/zichanfuzhaibiao-biji.jpg)
 
-
-
-
+![资产负债表](/images/2017/books/qiongchali/zichanfuzhaibiao-biji-2.jpg)
 
 <hr/>
 ###现金流量表: To be continued...

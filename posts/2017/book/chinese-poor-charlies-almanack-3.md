@@ -357,7 +357,7 @@
 
 ###现金流量表
 
-![现金流量表](/images/2017/books/qiongchali/xianjinliuliaobiao.jpg)
+![现金流量表](/images/2017/books/qiongchali/xianjinliuliangbiao.jpg)
 
 
 

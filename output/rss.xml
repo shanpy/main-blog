@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>I'm Pengyin</title><link>http://pengyin-shan.com/</link><description>This is Pengyin Shan's Blog</description><atom:link href="http://pengyin-shan.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 30 May 2017 14:35:19 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>(In Chinese) 穷查理宝典-阅读摘抄3（财报）</title><link>http://pengyin-shan.com/posts/2017/book/chinese-poor-charlies-almanack-3.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;blockquote&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>I'm Pengyin</title><link>http://pengyin-shan.com/</link><description>This is Pengyin Shan's Blog</description><atom:link rel="self" href="http://pengyin-shan.com/rss.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 19 Jun 2017 00:57:27 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Object Oriented Programming in Professional JavaScript for Web Developers</title><link>http://pengyin-shan.com/posts/2017/front-end/professional-javascript-oop.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;hr&gt;
+
+&lt;h2&gt;Object&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="OOP1" src="http://pengyin-shan.com/images/2017/front-end/javascript/professional-javascript/oop1.jpg"&gt;&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;h2&gt;Object Creation&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="OOP2" src="http://pengyin-shan.com/images/2017/front-end/javascript/professional-javascript/oop2.jpg"&gt;&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;p&gt;&lt;img alt="OOP3" src="http://pengyin-shan.com/images/2017/front-end/javascript/professional-javascript/oop3.jpg"&gt;&lt;/p&gt;&lt;/div&gt;</description><category>OOP</category><category>Reading Notes</category><guid>http://pengyin-shan.com/posts/2017/front-end/professional-javascript-oop.html</guid><pubDate>Sun, 18 Jun 2017 04:00:00 GMT</pubDate></item><item><title>(In Chinese) 穷查理宝典-阅读摘抄3（财报）</title><link>http://pengyin-shan.com/posts/2017/book/chinese-poor-charlies-almanack-3.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;blockquote&gt;
 &lt;p&gt;想知道股票值多少钱：首先要知道公司值多少钱&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2&gt;价值投资&lt;/h2&gt;
@@ -2960,73 +2970,4 @@ Kelly McGonigal), 自控力 (凯利•麦格尼格尔 [Kindle Edition]. loc. 329
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;Usage&lt;/h4&gt;
-&lt;p&gt;The way to use session storage is the same as the way to use local storage, except the object is now &lt;code&gt;window.sessionStorage&lt;/code&gt;.&lt;/p&gt;&lt;/div&gt;</description><category>HTML5</category><category>JavaScript</category><guid>http://pengyin-shan.com/posts/2016/Front%20End/front-end-data-storage.html</guid><pubDate>Tue, 16 Aug 2016 04:00:00 GMT</pubDate></item><item><title>SVG Study Note</title><link>http://pengyin-shan.com/posts/2016/Front%20End/svg-study-note.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h2&gt;Reference List&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;(Chinese) &lt;a href="http://waylau.com/svg-viewport-view-box/?utm_source=tuicool&amp;amp;utm_medium=referral"&gt;SVG Viewport and View Box&lt;/a&gt; written by &lt;em&gt;Way Lau&lt;/em&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;(Chinese) &lt;a href="http://www.zhangxinxu.com/wordpress/2014/08/svg-viewport-viewbox-preserveaspectratio/"&gt;Understand viewport, viewVox, preserveAspectRatio in SVG&lt;/a&gt; by &lt;em&gt;zhangxinxu&lt;/em&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;&lt;code&gt;viewport&lt;/code&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;viewport&lt;/code&gt; creates a new axis inside svg area. It provides a new scale inside svg.&lt;/p&gt;
-&lt;p&gt;It has two attribute: &lt;code&gt;width&lt;/code&gt; and &lt;code&gt;height&lt;/code&gt;. These two attributes is defined as &lt;strong&gt;unit&lt;/strong&gt;, such as &lt;code&gt;em&lt;/code&gt;, &lt;code&gt;px&lt;/code&gt; or &lt;code&gt;%&lt;/code&gt;, depends on css setting. The default unit is &lt;code&gt;px&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Example code:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;svg&lt;/span&gt; &lt;span class="na"&gt;width&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"500"&lt;/span&gt; &lt;span class="na"&gt;height&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"300"&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;svg&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
-&lt;span class="c"&gt;&amp;lt;!-- A svg area with width of 500 unit, height of 300 unit--&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;
-
-
-&lt;h2&gt;&lt;code&gt;viewbox&lt;/code&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;viewbox&lt;/code&gt; is a way of scaling svg view-able space. it has four attributes: &lt;code&gt;x-position&lt;/code&gt;, &lt;code&gt;y-position&lt;/code&gt;, &lt;code&gt;width&lt;/code&gt;, &lt;code&gt;height&lt;/code&gt;. &lt;strong&gt;Note a positive value in y-position meaning counting down from start point.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The use of &lt;code&gt;viewbox&lt;/code&gt; is to expand item to full svg area, following the scale defined in &lt;code&gt;viewbox&lt;/code&gt;. For example, &lt;code&gt;&amp;lt;svg width="500" height="300" viewbox="0 0 150 300"&amp;gt;&amp;lt;/svg&amp;gt;&lt;/code&gt; means define a area width a width of 150 and height of 300 from zero-point, then &lt;strong&gt;expand it to full svg (width 500 height 300)&lt;/strong&gt;. Everything inside viewbox will be also re-scaled.&lt;/p&gt;
-&lt;p&gt;A great demo (Chinese) created by &lt;strong&gt;zhangxinyu&lt;/strong&gt; can be found &lt;a href="http://www.zhangxinxu.com/study/201408/svg-viewbox-explain.html"&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;img-responsive images/articles/2016/frontend/viewbox.gif &lt;/p&gt;
-&lt;h2&gt;&lt;code&gt;preserveAspectRatio&lt;/code&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;preserveAspectRatio&lt;/code&gt; has two attributes: &lt;code&gt;how viewBox align with viewport&lt;/code&gt;, &lt;code&gt;ratio of height and width&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;The first attribute has two parts: &lt;code&gt;x alignment&lt;/code&gt; and &lt;code&gt;y alignment&lt;/code&gt;. Options are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;xMin&lt;/code&gt;: &lt;code&gt;viewport&lt;/code&gt; and &lt;code&gt;viewbox&lt;/code&gt; align on left edge&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;xMid&lt;/code&gt;: &lt;code&gt;viewport&lt;/code&gt; and &lt;code&gt;viewbox&lt;/code&gt; align on center of x-axis&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;xMax&lt;/code&gt;: &lt;code&gt;viewport&lt;/code&gt; and &lt;code&gt;viewbox&lt;/code&gt; align on right edge&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;YMin&lt;/code&gt;: &lt;code&gt;viewport&lt;/code&gt; and &lt;code&gt;viewbox&lt;/code&gt; align on top edge&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;YMid&lt;/code&gt;: &lt;code&gt;viewport&lt;/code&gt; and &lt;code&gt;viewbox&lt;/code&gt; align on middle of y-axis&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code&gt;YMax&lt;/code&gt;: &lt;code&gt;viewport&lt;/code&gt; and &lt;code&gt;viewbox&lt;/code&gt; align on bottom edge&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;So, a full option for first attribute is something like &lt;code&gt;xMinYMid&lt;/code&gt; or &lt;code&gt;xMaxYMax&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;The second attribute has following option:&lt;/p&gt;
-&lt;h3&gt;&lt;code&gt;meet&lt;/code&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;viewbox&lt;/code&gt; following its ratio, even the graph is out of svg area.&lt;/p&gt;
-&lt;p&gt;Example Code:&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;svg&lt;/span&gt; &lt;span class="na"&gt;width&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"400"&lt;/span&gt; &lt;span class="na"&gt;height&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"200"&lt;/span&gt; &lt;span class="na"&gt;viewBox&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"0 0 200 300"&lt;/span&gt; &lt;span class="na"&gt;preserveAspectRatio&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"xMinYMin meet"&lt;/span&gt; &lt;span class="na"&gt;style&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"border:1px solid #cd0000;"&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;rect&lt;/span&gt; &lt;span class="na"&gt;x&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"10"&lt;/span&gt; &lt;span class="na"&gt;y&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"10"&lt;/span&gt; &lt;span class="na"&gt;width&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"300"&lt;/span&gt; &lt;span class="na"&gt;height&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"300"&lt;/span&gt; &lt;span class="na"&gt;fill&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"#cd0000"&lt;/span&gt;&lt;span class="p"&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;svg&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;
-
-
-&lt;p&gt;Result from code above. Notice the rectangle is still in &lt;em&gt;2:3&lt;/em&gt; ratio for &lt;em&gt;width:height&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;img-responsive images/articles/2016/frontend/ratio-meet &lt;/p&gt;
-&lt;h3&gt;&lt;code&gt;slice&lt;/code&gt;&lt;/h3&gt;
-&lt;p&gt;Keep current ratio, while expanding &lt;code&gt;viewbox&lt;/code&gt; till &lt;strong&gt;short slide&lt;/strong&gt; of &lt;code&gt;viewport&lt;/code&gt; is &lt;strong&gt;filled&lt;/strong&gt; (Even though the inner shape is smaller width/height than svg, the short side of svg is still be filled).&lt;/p&gt;
-&lt;p&gt;Result from code above. Note &lt;em&gt;height&lt;/em&gt; is filled first, since it's the shorter side:&lt;/p&gt;
-&lt;p&gt;img-responsive images/articles/2016/frontend/ratio-slice &lt;/p&gt;
-&lt;h3&gt;&lt;code&gt;none&lt;/code&gt;&lt;/h3&gt;
-&lt;p&gt;Shapes inside &lt;code&gt;viewbox&lt;/code&gt; is hardly defined by its own width and height, without following any ratio.&lt;/p&gt;
-&lt;p&gt;Result from code above. :&lt;/p&gt;
-&lt;p&gt;img-responsive images/articles/2016/frontend/ratio-slice &lt;/p&gt;
-&lt;p&gt;If no &lt;code&gt;preserveAspectRatio&lt;/code&gt; is market, following result should be seen:&lt;/p&gt;
-&lt;p&gt;img-responsive images/articles/2016/frontend/ratio-no &lt;/p&gt;
-&lt;p&gt;Also see this &lt;a href="http://www.zhangxinxu.com/study/201408/svg-preserveaspectratio-meet-slice-none.html"&gt;demo&lt;/a&gt; created by &lt;em&gt;zhangxinxu&lt;/em&gt;.&lt;/p&gt;&lt;/div&gt;</description><category>Graph</category><guid>http://pengyin-shan.com/posts/2016/Front%20End/svg-study-note.html</guid><pubDate>Mon, 01 Aug 2016 04:00:00 GMT</pubDate></item></channel></rss>
+&lt;p&gt;The way to use session storage is the same as the way to use local storage, except the object is now &lt;code&gt;window.sessionStorage&lt;/code&gt;.&lt;/p&gt;&lt;/div&gt;</description><category>HTML5</category><category>JavaScript</category><guid>http://pengyin-shan.com/posts/2016/Front%20End/front-end-data-storage.html</guid><pubDate>Tue, 16 Aug 2016 04:00:00 GMT</pubDate></item></channel></rss>

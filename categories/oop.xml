@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>I'm Pengyin (OOP)</title><link>http://pengyin-shan.com/</link><description></description><atom:link rel="self" href="http://pengyin-shan.com/categories/oop.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 19 Jun 2017 00:57:27 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Object Oriented Programming in Professional JavaScript for Web Developers</title><link>http://pengyin-shan.com/posts/2017/front-end/professional-javascript-oop.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;hr&gt;
+
+&lt;h2&gt;Object&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="OOP1" src="http://pengyin-shan.com/images/2017/front-end/javascript/professional-javascript/oop1.jpg"&gt;&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;h2&gt;Object Creation&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="OOP2" src="http://pengyin-shan.com/images/2017/front-end/javascript/professional-javascript/oop2.jpg"&gt;&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;p&gt;&lt;img alt="OOP3" src="http://pengyin-shan.com/images/2017/front-end/javascript/professional-javascript/oop3.jpg"&gt;&lt;/p&gt;&lt;/div&gt;</description><category>OOP</category><category>Reading Notes</category><guid>http://pengyin-shan.com/posts/2017/front-end/professional-javascript-oop.html</guid><pubDate>Sun, 18 Jun 2017 04:00:00 GMT</pubDate></item></channel></rss>

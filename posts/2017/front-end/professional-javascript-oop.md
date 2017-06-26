@@ -10,14 +10,14 @@
 
 #Object
 
-![OOP1](/images/2017/front-end/javascript/professional-javascript/oop1.jpg)
+![OOP1](/images/2017/front-end/javascript/professional-javascript/OOP1.jpg)
 
 <hr/>
 
 #Object Creation
 
-![OOP2](/images/2017/front-end/javascript/professional-javascript/oop2.jpg)
+![OOP2](/images/2017/front-end/javascript/professional-javascript/OOP2.jpg)
 
 <hr/>
 
-![OOP3](/images/2017/front-end/javascript/professional-javascript/oop3.jpg)
+![OOP3](/images/2017/front-end/javascript/professional-javascript/OOP3.jpg)

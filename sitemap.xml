@@ -7,11 +7,11 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://pengyin-shan.com/2014/index.html</loc>
-  <lastmod>2017-06-21T01:49:00Z</lastmod>
+  <lastmod>2017-06-26T01:36:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/2015/index.html</loc>
-  <lastmod>2017-06-21T01:49:00Z</lastmod>
+  <lastmod>2017-06-26T01:36:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/2016/index.html</loc>
@@ -19,11 +19,11 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/2017/index.html</loc>
-  <lastmod>2017-06-21T01:48:00Z</lastmod>
+  <lastmod>2017-06-26T01:35:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/archive.html</loc>
-  <lastmod>2017-06-21T01:46:00Z</lastmod>
+  <lastmod>2017-06-26T01:34:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/ajax.html</loc>
@@ -31,7 +31,7 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/algorithm.html</loc>
-  <lastmod>2017-06-21T01:49:00Z</lastmod>
+  <lastmod>2017-06-26T01:36:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/amazon-ec2.html</loc>
@@ -59,31 +59,31 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/cat_algorithm-data-structure.html</loc>
-  <lastmod>2017-06-21T01:49:00Z</lastmod>
+  <lastmod>2017-06-26T01:36:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/cat_book-highlight.html</loc>
-  <lastmod>2017-06-21T01:48:00Z</lastmod>
+  <lastmod>2017-06-26T01:35:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/cat_data-science.html</loc>
-  <lastmod>2017-06-21T01:46:00Z</lastmod>
+  <lastmod>2017-06-26T01:35:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/cat_front-end.html</loc>
-  <lastmod>2017-06-21T01:49:00Z</lastmod>
+  <lastmod>2017-06-26T01:36:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/cat_java.html</loc>
-  <lastmod>2017-06-21T01:49:00Z</lastmod>
+  <lastmod>2017-06-26T01:36:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/cat_javascript.html</loc>
-  <lastmod>2017-06-21T01:49:00Z</lastmod>
+  <lastmod>2017-06-26T01:36:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/cat_linux.html</loc>
-  <lastmod>2017-06-21T01:48:00Z</lastmod>
+  <lastmod>2017-06-26T01:36:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/cat_others.html</loc>
@@ -99,7 +99,7 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/chinese.html</loc>
-  <lastmod>2017-06-21T01:48:00Z</lastmod>
+  <lastmod>2017-06-26T01:35:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/clean-data.html</loc>
@@ -119,7 +119,7 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/d3js.html</loc>
-  <lastmod>2017-06-21T01:49:00Z</lastmod>
+  <lastmod>2017-06-26T01:36:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/data-science.html</loc>
@@ -127,7 +127,7 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/data-structure.html</loc>
-  <lastmod>2017-06-21T01:49:00Z</lastmod>
+  <lastmod>2017-06-26T01:36:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/data-visualization.html</loc>
@@ -156,6 +156,10 @@
  <url>
   <loc>http://pengyin-shan.com/categories/dynamic-programming.html</loc>
   <lastmod>2017-06-21T01:46:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://pengyin-shan.com/categories/english.html</loc>
+  <lastmod>2017-06-26T01:35:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/fedora.html</loc>
@@ -191,7 +195,7 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/index.html</loc>
-  <lastmod>2017-06-21T01:46:00Z</lastmod>
+  <lastmod>2017-06-26T01:34:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/ipython.html</loc>
@@ -203,15 +207,15 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/java.html</loc>
-  <lastmod>2017-06-21T01:49:00Z</lastmod>
+  <lastmod>2017-06-26T01:36:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/javascript.html</loc>
-  <lastmod>2017-06-21T01:49:00Z</lastmod>
+  <lastmod>2017-06-26T01:36:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/jquery.html</loc>
-  <lastmod>2017-06-21T01:46:00Z</lastmod>
+  <lastmod>2017-06-26T01:36:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/json.html</loc>
@@ -227,7 +231,7 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/linux.html</loc>
-  <lastmod>2017-06-21T01:48:00Z</lastmod>
+  <lastmod>2017-06-26T01:36:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/meeting-notes.html</loc>
@@ -251,15 +255,15 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/operating-system.html</loc>
-  <lastmod>2017-06-21T01:48:00Z</lastmod>
+  <lastmod>2017-06-26T01:36:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/python.html</loc>
-  <lastmod>2017-06-21T01:46:00Z</lastmod>
+  <lastmod>2017-06-26T01:35:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/reading-notes.html</loc>
-  <lastmod>2017-06-21T01:48:00Z</lastmod>
+  <lastmod>2017-06-26T01:35:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/recursion.html</loc>
@@ -342,6 +346,10 @@
   <lastmod>2017-06-21T01:46:00Z</lastmod>
  </url>
  <url>
+  <loc>http://pengyin-shan.com/categories/writing.html</loc>
+  <lastmod>2017-06-26T01:35:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://pengyin-shan.com/index-1.html</loc>
   <lastmod>2017-06-21T01:46:00Z</lastmod>
  </url>
@@ -375,11 +383,11 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/index-9.html</loc>
-  <lastmod>2017-06-21T01:46:00Z</lastmod>
+  <lastmod>2017-06-26T01:34:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/index.html</loc>
-  <lastmod>2017-06-21T01:46:00Z</lastmod>
+  <lastmod>2017-06-26T01:35:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/posts/2014/benefit-of-hosting-content-library-with-CDN.html</loc>
@@ -730,6 +738,10 @@
   <lastmod>2017-06-21T01:46:00Z</lastmod>
  </url>
  <url>
+  <loc>http://pengyin-shan.com/posts/2017/book/chinese-the-element-of-style-reading-note.html</loc>
+  <lastmod>2017-06-26T01:35:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://pengyin-shan.com/posts/2017/book/chinese-use-graph-ruled-notebook.html</loc>
   <lastmod>2017-06-21T01:46:00Z</lastmod>
  </url>
@@ -743,7 +755,7 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/posts/2017/front-end/professional-javascript-oop.html</loc>
-  <lastmod>2017-06-21T01:46:00Z</lastmod>
+  <lastmod>2017-06-26T01:34:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/stories/about_me.html</loc>

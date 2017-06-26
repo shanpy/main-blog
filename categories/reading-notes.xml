@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>I'm Pengyin (Reading Notes)</title><link>http://pengyin-shan.com/</link><description></description><atom:link href="http://pengyin-shan.com/categories/reading-notes.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Mon, 26 Jun 2017 01:35:59 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>(In Chinese) 风格的要素-阅读摘抄 (The Elements of Style - Reading Note)</title><link>http://pengyin-shan.com/posts/2017/book/chinese-the-element-of-style-reading-note.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;strong&gt;Please note: the title should be &lt;em&gt;the Elements of Style&lt;/em&gt; in my writing notes.&lt;/strong&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>I'm Pengyin (Reading Notes)</title><link>http://pengyin-shan.com/</link><description></description><atom:link type="application/rss+xml" href="http://pengyin-shan.com/categories/reading-notes.xml" rel="self"></atom:link><language>en</language><lastBuildDate>Mon, 26 Jun 2017 01:38:58 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>(In Chinese) 风格的要素-阅读摘抄 (The Elements of Style - Reading Note)</title><link>http://pengyin-shan.com/posts/2017/book/chinese-the-element-of-style-reading-note.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;strong&gt;Please note: the title should be &lt;em&gt;the Elements of Style&lt;/em&gt; in my writing notes.&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;This is a great book about English&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -29,14 +29,14 @@
 &lt;p&gt;&lt;img alt="theElementsOfStyle6" src="http://pengyin-shan.com/images/2017/books/the_elements_of_style/the_element_of_style6.jpg"&gt;&lt;/p&gt;&lt;/div&gt;</description><category>Chinese</category><category>English</category><category>Reading Notes</category><category>Writing</category><guid>http://pengyin-shan.com/posts/2017/book/chinese-the-element-of-style-reading-note.html</guid><pubDate>Sun, 25 Jun 2017 04:00:00 GMT</pubDate></item><item><title>Object Oriented Programming in Professional JavaScript for Web Developers</title><link>http://pengyin-shan.com/posts/2017/front-end/professional-javascript-oop.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;hr&gt;
 
 &lt;h2&gt;Object&lt;/h2&gt;
-&lt;p&gt;&lt;img alt="OOP1" src="http://pengyin-shan.com/images/2017/front-end/javascript/professional-javascript/oop1.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="OOP1" src="http://pengyin-shan.com/images/2017/front-end/javascript/professional-javascript/OOP1.jpg"&gt;&lt;/p&gt;
 &lt;hr&gt;
 
 &lt;h2&gt;Object Creation&lt;/h2&gt;
-&lt;p&gt;&lt;img alt="OOP2" src="http://pengyin-shan.com/images/2017/front-end/javascript/professional-javascript/oop2.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="OOP2" src="http://pengyin-shan.com/images/2017/front-end/javascript/professional-javascript/OOP2.jpg"&gt;&lt;/p&gt;
 &lt;hr&gt;
 
-&lt;p&gt;&lt;img alt="OOP3" src="http://pengyin-shan.com/images/2017/front-end/javascript/professional-javascript/oop3.jpg"&gt;&lt;/p&gt;&lt;/div&gt;</description><category>OOP</category><category>Reading Notes</category><guid>http://pengyin-shan.com/posts/2017/front-end/professional-javascript-oop.html</guid><pubDate>Sun, 18 Jun 2017 04:00:00 GMT</pubDate></item><item><title>(In Chinese) 穷查理宝典-阅读摘抄3（财报）</title><link>http://pengyin-shan.com/posts/2017/book/chinese-poor-charlies-almanack-3.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;img alt="OOP3" src="http://pengyin-shan.com/images/2017/front-end/javascript/professional-javascript/OOP3.jpg"&gt;&lt;/p&gt;&lt;/div&gt;</description><category>OOP</category><category>Reading Notes</category><guid>http://pengyin-shan.com/posts/2017/front-end/professional-javascript-oop.html</guid><pubDate>Sun, 18 Jun 2017 04:00:00 GMT</pubDate></item><item><title>(In Chinese) 穷查理宝典-阅读摘抄3（财报）</title><link>http://pengyin-shan.com/posts/2017/book/chinese-poor-charlies-almanack-3.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;blockquote&gt;
 &lt;p&gt;想知道股票值多少钱：首先要知道公司值多少钱&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2&gt;价值投资&lt;/h2&gt;

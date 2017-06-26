@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>I'm Pengyin (JavaScript)</title><link>http://pengyin-shan.com/</link><description></description><atom:link type="application/rss+xml" href="http://pengyin-shan.com/categories/cat_javascript.xml" rel="self"></atom:link><language>en</language><lastBuildDate>Wed, 21 Jun 2017 01:46:46 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Object Oriented Programming in Professional JavaScript for Web Developers</title><link>http://pengyin-shan.com/posts/2017/front-end/professional-javascript-oop.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;hr&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>I'm Pengyin (JavaScript)</title><link>http://pengyin-shan.com/</link><description></description><atom:link type="application/rss+xml" href="http://pengyin-shan.com/categories/cat_javascript.xml" rel="self"></atom:link><language>en</language><lastBuildDate>Mon, 26 Jun 2017 01:38:58 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Object Oriented Programming in Professional JavaScript for Web Developers</title><link>http://pengyin-shan.com/posts/2017/front-end/professional-javascript-oop.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;hr&gt;
 
 &lt;h2&gt;Object&lt;/h2&gt;
-&lt;p&gt;&lt;img alt="OOP1" src="http://pengyin-shan.com/images/2017/front-end/javascript/professional-javascript/oop1.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="OOP1" src="http://pengyin-shan.com/images/2017/front-end/javascript/professional-javascript/OOP1.jpg"&gt;&lt;/p&gt;
 &lt;hr&gt;
 
 &lt;h2&gt;Object Creation&lt;/h2&gt;
-&lt;p&gt;&lt;img alt="OOP2" src="http://pengyin-shan.com/images/2017/front-end/javascript/professional-javascript/oop2.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="OOP2" src="http://pengyin-shan.com/images/2017/front-end/javascript/professional-javascript/OOP2.jpg"&gt;&lt;/p&gt;
 &lt;hr&gt;
 
-&lt;p&gt;&lt;img alt="OOP3" src="http://pengyin-shan.com/images/2017/front-end/javascript/professional-javascript/oop3.jpg"&gt;&lt;/p&gt;&lt;/div&gt;</description><category>OOP</category><category>Reading Notes</category><guid>http://pengyin-shan.com/posts/2017/front-end/professional-javascript-oop.html</guid><pubDate>Sun, 18 Jun 2017 04:00:00 GMT</pubDate></item><item><title>Web Worker Study Note</title><link>http://pengyin-shan.com/posts/2016/JavaScript/web-worker-study-note.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h2&gt;Reference List&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="OOP3" src="http://pengyin-shan.com/images/2017/front-end/javascript/professional-javascript/OOP3.jpg"&gt;&lt;/p&gt;&lt;/div&gt;</description><category>OOP</category><category>Reading Notes</category><guid>http://pengyin-shan.com/posts/2017/front-end/professional-javascript-oop.html</guid><pubDate>Sun, 18 Jun 2017 04:00:00 GMT</pubDate></item><item><title>Web Worker Study Note</title><link>http://pengyin-shan.com/posts/2016/JavaScript/web-worker-study-note.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h2&gt;Reference List&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href="http://www.html5rocks.com/en/tutorials/workers/basics/"&gt;The Basics with Web Workers&lt;/a&gt; written by &lt;em&gt;Eric Bidelman&lt;/em&gt;, &lt;em&gt;www.html5rocks.com&lt;/em&gt;.&lt;/p&gt;

@@ -43,7 +43,7 @@
  </sitemap>
  <sitemap>
   <loc>http://pengyin-shan.com/categories/cat_book-highlight.xml</loc>
-  <lastmod>2017-08-09T23:58:00Z</lastmod>
+  <lastmod>2017-10-10T14:42:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://pengyin-shan.com/categories/cat_data-science.xml</loc>
@@ -79,7 +79,7 @@
  </sitemap>
  <sitemap>
   <loc>http://pengyin-shan.com/categories/chinese.xml</loc>
-  <lastmod>2017-08-09T23:58:00Z</lastmod>
+  <lastmod>2017-10-10T14:42:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://pengyin-shan.com/categories/clean-data.xml</loc>
@@ -202,10 +202,6 @@
   <lastmod>2017-06-21T01:46:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://pengyin-shan.com/categories/life.xml</loc>
-  <lastmod>2017-08-09T23:49:00Z</lastmod>
- </sitemap>
- <sitemap>
   <loc>http://pengyin-shan.com/categories/linked-list.xml</loc>
   <lastmod>2017-06-21T01:46:00Z</lastmod>
  </sitemap>
@@ -227,7 +223,7 @@
  </sitemap>
  <sitemap>
   <loc>http://pengyin-shan.com/categories/note-taking.xml</loc>
-  <lastmod>2017-06-21T01:46:00Z</lastmod>
+  <lastmod>2017-10-10T14:42:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://pengyin-shan.com/categories/oop.xml</loc>
@@ -243,7 +239,7 @@
  </sitemap>
  <sitemap>
   <loc>http://pengyin-shan.com/categories/reading-notes.xml</loc>
-  <lastmod>2017-08-09T23:58:00Z</lastmod>
+  <lastmod>2017-10-10T14:42:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://pengyin-shan.com/categories/recursion.xml</loc>
@@ -331,10 +327,10 @@
  </sitemap>
  <sitemap>
   <loc>http://pengyin-shan.com/rss.xml</loc>
-  <lastmod>2017-08-09T23:58:00Z</lastmod>
+  <lastmod>2017-10-10T14:42:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://pengyin-shan.com/sitemap.xml</loc>
-  <lastmod>2017-08-09T23:58:00Z</lastmod>
+  <lastmod>2017-10-10T14:44:00Z</lastmod>
  </sitemap>
 </sitemapindex>

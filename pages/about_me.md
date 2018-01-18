@@ -1,7 +1,7 @@
 <!-- 
 .. title: About Me
 .. slug: about_me
-.. date: 2017-02-20 20:57:45 UTC-05:00
+.. date: 2018-01-18
 .. tags: 
 .. category: 
 .. link: 
@@ -12,12 +12,11 @@
 <br/>
 <br/>
 
-###Hello! My name is Pengyin Shan. I enjoy learning everything.
+###Hello! My name is Pengyin Shan. I enjoy learning everything. I'm living in Vancouver, British Columbia, Canada.
 
 <br/>
 <br/>
-
-![Pengyin Shan](/images/pengyin.jpg)
+<img src="/images/pengyin.png" width="80%" >
 <br/>
 <a href="/Pengyin Shan.pdf" target="_blank">My Resume</a>
 

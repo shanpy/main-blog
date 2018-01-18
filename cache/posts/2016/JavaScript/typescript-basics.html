@@ -56,12 +56,12 @@
 <p><em>Remember to use lower case <code>string</code>.</em></p>
 <p>Example:</p>
 <pre class="code literal-block"><span></span><span class="c1">//Using `` to provide break line effect</span>
-<span class="kd">let</span> <span class="nx">fullName</span>: <span class="kt">string</span> <span class="o">=</span> <span class="err">`</span><span class="nx">Bob</span><span class="err">`</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">fullName</span>: <span class="kt">string</span> <span class="o">=</span> <span class="sb">`Bob`</span><span class="p">;</span>
 <span class="kd">let</span> <span class="nx">age</span>: <span class="kt">number</span> <span class="o">=</span> <span class="mi">37</span><span class="p">;</span>
-<span class="kd">let</span> <span class="nx">sentence</span>: <span class="kt">string</span> <span class="o">=</span> <span class="err">`</span><span class="nx">Hello</span><span class="p">,</span> <span class="nx">my</span> <span class="nx">name</span> <span class="nx">is</span> <span class="nx">$</span><span class="p">{</span><span class="nx">fullName</span><span class="p">}.</span>
+<span class="kd">let</span> <span class="nx">sentence</span>: <span class="kt">string</span> <span class="o">=</span> <span class="sb">`Hello, my name is </span><span class="si">${</span><span class="nx">fullName</span><span class="si">}</span><span class="sb">.</span>
 
-<span class="nx">I</span><span class="s1">&#39;ll be ${age+1} years old next month.`</span>
-<span class="s1">let sentence: string = &quot;Hello, my name is &quot; + fullName + &quot;.\n\n&quot; + &quot;I&#39;</span><span class="nx">ll</span> <span class="nx">be</span> <span class="s2">&quot; + (age+1) + &quot;</span> <span class="nx">years</span> <span class="nx">old</span> <span class="nx">next</span> <span class="nx">month</span><span class="p">.</span><span class="err">&quot;</span>
+<span class="sb">I&#39;ll be </span><span class="si">${</span><span class="nx">age</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="sb"> years old next month.`</span>
+<span class="kd">let</span> <span class="nx">sentence</span>: <span class="kt">string</span> <span class="o">=</span> <span class="s2">&quot;Hello, my name is &quot;</span> <span class="o">+</span> <span class="nx">fullName</span> <span class="o">+</span> <span class="s2">&quot;.\n\n&quot;</span> <span class="o">+</span> <span class="s2">&quot;I&#39;ll be &quot;</span> <span class="o">+</span> <span class="p">(</span><span class="nx">age</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; years old next month.&quot;</span>
 </pre>
 
 

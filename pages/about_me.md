@@ -12,14 +12,14 @@
 <br/>
 <br/>
 
-###Hello! My name is Pengyin Shan, and I always like to learn. 
+###Hello! My name is Pengyin Shan. I enjoy learning everything.
 
 <br/>
 <br/>
 
 ![Pengyin Shan](/images/pengyin.jpg)
 <br/>
-<a href="/Pengyin_Shan_Resume.pdf" target="_blank">My Resume</a>
+<a href="/Pengyin Shan.pdf" target="_blank">My Resume</a>
 
 <br/>
 <br/>

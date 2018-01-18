@@ -201,7 +201,7 @@ PAGES = (
 # (e.g. 'Europe/Zurich')
 # Also, if you want to use a different time zone in some of your posts,
 # you can use the ISO 8601/RFC 3339 format (ex. 2012-03-30T23:00:00+02:00)
-TIMEZONE = "EDT"
+TIMEZONE = "America/Vancouver"
 
 # If you want to use ISO 8601 (also valid RFC 3339) throughout Nikola
 # (especially in new_post), set this to True.
@@ -793,8 +793,8 @@ IMAGE_FOLDERS = {'images': 'images'}
 # Used to create favicon link like this:
 # <link rel="name" href="file" sizes="size"/>
 FAVICONS = (
-    ("icon", "/passport_photo.ico", "16x16"),
-    ("icon", "/passport_photo.ico", "128x128"),
+    ("icon", "/pengyin.ico", "16x16"),
+    ("icon", "/pengyin.ico", "128x128"),
 )
 
 # Show teasers (instead of full posts) in indexes? Defaults to False.

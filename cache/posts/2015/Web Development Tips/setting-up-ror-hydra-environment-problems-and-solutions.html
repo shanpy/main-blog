@@ -27,18 +27,18 @@
 <p>A user <strong>Avinash Raj</strong> posted a great solution in <a href="http://askubuntu.com/questions/65911/how-can-i-fix-a-404-error-when-using-a-ppa-or-updating-my-package-lists">Ubuntu community</a> for removing PPA with errors.</p>
 <p>The detail of solution is: create a file called <code>ppa-remove</code> (no <code>.sh</code> extension) as following:</p>
 <pre class="code literal-block"><span></span><span class="ch">#!/bin/bash</span>
-sudo rm /tmp/update.txt<span class="p">;</span> tput setaf 6<span class="p">;</span> <span class="nb">echo</span> <span class="s2">&quot;Initializing.. Please Wait&quot;</span>
-sudo apt-get update &gt;&gt; /tmp/update.txt 2&gt;<span class="p">&amp;</span>1<span class="p">;</span> awk <span class="s1">&#39;( /W:/ &amp;&amp; /launchpad/ &amp;&amp; /404/ ) { print substr($5,26) }&#39;</span> /tmp/update.txt &gt; /tmp/awk.txt<span class="p">;</span> awk -F <span class="s1">&#39;/&#39;</span> <span class="s1">&#39;{ print $1&quot;/&quot;$2 }&#39;</span> /tmp/awk.txt &gt; /tmp/awk1.txt<span class="p">;</span> sort -u /tmp/awk1.txt &gt; /tmp/awk2.txt
+sudo rm /tmp/update.txt<span class="p">;</span> tput setaf <span class="m">6</span><span class="p">;</span> <span class="nb">echo</span> <span class="s2">&quot;Initializing.. Please Wait&quot;</span>
+sudo apt-get update &gt;&gt; /tmp/update.txt <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span><span class="p">;</span> awk <span class="s1">&#39;( /W:/ &amp;&amp; /launchpad/ &amp;&amp; /404/ ) { print substr($5,26) }&#39;</span> /tmp/update.txt &gt; /tmp/awk.txt<span class="p">;</span> awk -F <span class="s1">&#39;/&#39;</span> <span class="s1">&#39;{ print $1&quot;/&quot;$2 }&#39;</span> /tmp/awk.txt &gt; /tmp/awk1.txt<span class="p">;</span> sort -u /tmp/awk1.txt &gt; /tmp/awk2.txt
 tput sgr0
 <span class="k">if</span> <span class="o">[</span> -s /tmp/awk2.txt <span class="o">]</span>
 <span class="k">then</span>
-  tput setaf 1
+  tput setaf <span class="m">1</span>
   <span class="nb">printf</span> <span class="s2">&quot;PPA&#39;s going to be removed\n%s\n&quot;</span> <span class="s2">&quot;</span><span class="k">$(</span>cat /tmp/awk2.txt<span class="k">)</span><span class="s2">&quot;</span>
   tput sgr0
   <span class="k">while</span> <span class="nb">read</span> -r line<span class="p">;</span> <span class="k">do</span> <span class="nb">echo</span> <span class="s2">&quot;sudo add-apt-repository -r ppa:</span><span class="nv">$line</span><span class="s2">&quot;</span><span class="p">;</span> <span class="k">done</span> &lt; /tmp/awk2.txt &gt; out
   bash out
 <span class="k">else</span>
-  tput setaf 1
+  tput setaf <span class="m">1</span>
   <span class="nb">echo</span> <span class="s2">&quot;No PPA&#39;s to be removed&quot;</span>
   tput sgr0
 <span class="k">fi</span>

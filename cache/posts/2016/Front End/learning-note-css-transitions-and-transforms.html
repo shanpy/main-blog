@@ -52,15 +52,15 @@
 </ul>
 <p>Example:</p>
 <pre class="code literal-block"><span></span><span class="nt">a</span><span class="p">{</span>
-    <span class="nb">background-color</span><span class="o">:</span> <span class="nb">orange</span><span class="p">;</span>
-    <span class="n">transition</span><span class="o">-</span><span class="n">property</span><span class="o">:</span> <span class="nb">background</span><span class="p">;</span>
-    <span class="o">//</span><span class="n">you</span> <span class="n">may</span> <span class="n">need</span> <span class="n">to</span> <span class="n">add</span> <span class="n">prefix</span><span class="o">,</span> <span class="n">something</span> <span class="n">like</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">transition</span><span class="o">-</span><span class="n">property</span>
-    <span class="n">transition</span><span class="o">-</span><span class="n">duration</span><span class="o">:</span> <span class="m">1s</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="p">:</span> <span class="kc">orange</span><span class="p">;</span>
+    <span class="k">transition-property</span><span class="p">:</span> <span class="k">background</span><span class="p">;</span>
+    <span class="err">//you</span> <span class="err">may</span> <span class="err">need</span> <span class="err">to</span> <span class="err">add</span> <span class="err">prefix,</span> <span class="err">something</span> <span class="err">like</span> <span class="kp">-webkit-</span><span class="err">transition-property</span>
+    <span class="k">transition-duration</span><span class="p">:</span> <span class="mi">1</span><span class="kt">s</span><span class="p">;</span>
 
-    <span class="o">//</span><span class="n">Or</span> <span class="n">short</span><span class="o">-</span><span class="n">hand</span> <span class="n">version</span><span class="o">:</span> <span class="n">transition</span><span class="o">:</span> <span class="nb">background</span><span class="o">,</span> <span class="m">1s</span><span class="o">,</span> <span class="n">ease</span><span class="p">;</span> <span class="p">(</span><span class="n">property</span><span class="o">,</span> <span class="n">duration</span><span class="o">,</span> <span class="n">timing</span><span class="o">-</span><span class="n">function</span><span class="p">)</span>
+    <span class="err">//Or</span> <span class="err">short-hand</span> <span class="n">version</span><span class="p">:</span> <span class="k">transition</span><span class="o">:</span> <span class="k">background</span><span class="p">,</span> <span class="mi">1</span><span class="kt">s</span><span class="p">,</span> <span class="kc">ease</span><span class="p">;</span> <span class="err">(property,</span> <span class="err">duration,</span> <span class="err">timing-function)</span>
 <span class="p">}</span>
-<span class="nt">a</span><span class="nd">:hover</span><span class="p">{</span>
-    <span class="nb">background-color</span><span class="o">:</span> <span class="nb">blue</span><span class="p">;</span>
+<span class="nt">a</span><span class="p">:</span><span class="nd">hover</span><span class="p">{</span>
+    <span class="k">background-color</span><span class="p">:</span> <span class="kc">blue</span><span class="p">;</span>
 <span class="p">}</span>
 </pre>
 
@@ -108,7 +108,7 @@
 
 
 <p><code>scale</code>: resize object along X (width) and/or Y axis (height)</p>
-<pre class="code literal-block"><span></span><span class="nt">transform</span><span class="o">:</span> <span class="nt">scale</span><span class="o">(</span><span class="nc">.5</span><span class="o">,</span><span class="nc">.5</span><span class="o">);</span> <span class="o">//</span><span class="nt">1</span> <span class="nt">is</span> <span class="nt">original</span> <span class="nt">size</span><span class="o">.</span> <span class="nc">.5</span> <span class="nt">is</span> <span class="nt">half</span> <span class="nt">size</span>
+<pre class="code literal-block"><span></span><span class="nt">transform</span><span class="o">:</span> <span class="nt">scale</span><span class="o">(</span><span class="p">.</span><span class="nc">5</span><span class="o">,</span><span class="p">.</span><span class="nc">5</span><span class="o">);</span> <span class="o">//</span><span class="nt">1</span> <span class="nt">is</span> <span class="nt">original</span> <span class="nt">size</span><span class="o">.</span> <span class="p">.</span><span class="nc">5</span> <span class="nt">is</span> <span class="nt">half</span> <span class="nt">size</span>
 </pre>
 
 
@@ -143,7 +143,7 @@
 
 
 <p>Step 2: resize object along X(width), Y(height) or Z(depth)</p>
-<pre class="code literal-block"><span></span><span class="nt">transform</span><span class="o">:</span> <span class="nt">scale3d</span><span class="o">(</span><span class="nt">2</span><span class="o">,</span> <span class="nc">.75</span><span class="o">,</span> <span class="nt">1</span><span class="nc">.5</span><span class="o">);</span>
+<pre class="code literal-block"><span></span><span class="nt">transform</span><span class="o">:</span> <span class="nt">scale3d</span><span class="o">(</span><span class="nt">2</span><span class="o">,</span> <span class="p">.</span><span class="nc">75</span><span class="o">,</span> <span class="nt">1</span><span class="p">.</span><span class="nc">5</span><span class="o">);</span>
 </pre>
 
 
@@ -179,11 +179,11 @@
 </ul>
 <h2>Transition Multiple Properties</h2>
 <p>Example:</p>
-<pre class="code literal-block"><span></span><span class="nn">#test</span><span class="p">{</span>
-    <span class="n">transition</span><span class="o">-</span><span class="n">property</span><span class="o">:</span> <span class="nb">left</span><span class="o">,</span> <span class="nb">opacity</span><span class="o">,</span> <span class="n">transform</span><span class="p">;</span> <span class="o">//</span><span class="n">make</span> <span class="n">sure</span> <span class="n">transforming</span> <span class="n">being</span> <span class="n">add</span> <span class="n">prefix</span> <span class="n">in</span> <span class="n">prefix</span> <span class="n">version</span>
-    <span class="n">transition</span><span class="o">-</span><span class="n">duration</span><span class="o">:</span> <span class="m">3s</span><span class="o">,</span> <span class="m">4s</span><span class="o">,</span> <span class="m">3s</span><span class="p">;</span>
-    <span class="n">transition</span><span class="o">-</span><span class="n">timing</span><span class="o">-</span><span class="n">function</span><span class="o">:</span> <span class="n">ease</span><span class="o">,</span> <span class="n">ease</span><span class="o">,</span> <span class="n">ease</span><span class="o">-</span><span class="n">out</span><span class="p">;</span>
-    <span class="n">transition</span><span class="o">-</span><span class="n">delay</span><span class="o">:</span> <span class="m">0s</span><span class="o">,</span> <span class="m">.5s</span><span class="o">,</span> <span class="m">0s</span><span class="p">;</span>
+<pre class="code literal-block"><span></span><span class="p">#</span><span class="nn">test</span><span class="p">{</span>
+    <span class="k">transition-property</span><span class="p">:</span> <span class="kc">left</span><span class="p">,</span> <span class="k">opacity</span><span class="p">,</span> <span class="k">transform</span><span class="p">;</span> <span class="err">//make</span> <span class="err">sure</span> <span class="err">transforming</span> <span class="err">being</span> <span class="err">add</span> <span class="err">prefix</span> <span class="err">in</span> <span class="err">prefix</span> <span class="err">version</span>
+    <span class="k">transition-duration</span><span class="p">:</span> <span class="mi">3</span><span class="kt">s</span><span class="p">,</span> <span class="mi">4</span><span class="kt">s</span><span class="p">,</span> <span class="mi">3</span><span class="kt">s</span><span class="p">;</span>
+    <span class="k">transition-timing-function</span><span class="p">:</span> <span class="kc">ease</span><span class="p">,</span> <span class="kc">ease</span><span class="p">,</span> <span class="kc">ease-out</span><span class="p">;</span>
+    <span class="k">transition-delay</span><span class="p">:</span> <span class="mi">0</span><span class="kt">s</span><span class="p">,</span> <span class="mf">.5</span><span class="kt">s</span><span class="p">,</span> <span class="mi">0</span><span class="kt">s</span><span class="p">;</span>
 <span class="p">}</span>
 </pre>
 
@@ -191,22 +191,22 @@
 <h2><code>@keyframes</code> and <code>animation</code></h2>
 <p><code>@keyframes</code> defines percentage-based or keyword timeline.</p>
 <p>Example:</p>
-<pre class="code literal-block"><span></span><span class="k">@keyframes</span> <span class="nt">percentage</span><span class="p">{</span>
-    <span class="nt">0</span><span class="o">%</span> <span class="p">{</span><span class="nb">color</span><span class="o">:</span> <span class="nb">black</span><span class="p">;}</span>
-    <span class="nt">50</span><span class="o">%</span> <span class="p">{</span><span class="nb">color</span><span class="o">:</span> <span class="nb">pink</span><span class="p">}</span><span class="o">;</span>
-    <span class="nt">100</span><span class="o">%</span><span class="p">{</span> <span class="nb">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span> <span class="p">}</span>
+<pre class="code literal-block"><span></span><span class="p">@</span><span class="k">keyframes</span> <span class="nt">percentage</span><span class="p">{</span>
+    <span class="nt">0</span><span class="o">%</span> <span class="p">{</span><span class="k">color</span><span class="p">:</span> <span class="kc">black</span><span class="p">;}</span>
+    <span class="nt">50</span><span class="o">%</span> <span class="p">{</span><span class="k">color</span><span class="p">:</span> <span class="kc">pink</span><span class="p">}</span><span class="o">;</span>
+    <span class="nt">100</span><span class="o">%</span><span class="p">{</span> <span class="k">color</span><span class="p">:</span> <span class="kc">red</span><span class="p">;</span> <span class="p">}</span>
 <span class="p">}</span>
-<span class="k">@keyframes</span> <span class="nt">keywords</span><span class="p">{</span>
-    <span class="nt">to</span> <span class="p">{</span><span class="nb">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;}</span>
-    <span class="nt">from</span> <span class="p">{</span><span class="nb">color</span><span class="o">:</span> <span class="nb">black</span><span class="p">;}</span>
+<span class="p">@</span><span class="k">keyframes</span> <span class="nt">keywords</span><span class="p">{</span>
+    <span class="nt">to</span> <span class="p">{</span><span class="k">color</span><span class="p">:</span> <span class="kc">red</span><span class="p">;}</span>
+    <span class="nt">from</span> <span class="p">{</span><span class="k">color</span><span class="p">:</span> <span class="kc">black</span><span class="p">;}</span>
 <span class="p">}</span>
 </pre>
 
 
 <p><code>animation</code> references <code>@keyframes</code> and defines parameters</p>
 <p>Example:</p>
-<pre class="code literal-block"><span></span><span class="nn">#test</span><span class="p">{</span>
-    <span class="n">animation</span><span class="o">:</span> <span class="n">percentage</span> <span class="m">15s</span> <span class="n">infinite</span> <span class="n">alternate</span><span class="p">;</span> <span class="o">//</span><span class="n">keyframes</span> <span class="n">name</span><span class="o">,</span> <span class="n">duration</span><span class="o">,</span> <span class="n">iteration</span> <span class="n">count</span> <span class="p">(</span><span class="n">number</span> <span class="n">or</span> <span class="n">infinite</span><span class="p">)</span><span class="o">,</span> <span class="nb">direction</span> <span class="p">(</span><span class="nb">normal</span><span class="o">,</span> <span class="n">alternate</span><span class="p">)</span>
+<pre class="code literal-block"><span></span><span class="p">#</span><span class="nn">test</span><span class="p">{</span>
+    <span class="k">animation</span><span class="p">:</span> <span class="n">percentage</span> <span class="mi">15</span><span class="kt">s</span> <span class="kc">infinite</span> <span class="kc">alternate</span><span class="p">;</span> <span class="err">//keyframes</span> <span class="err">name,</span> <span class="err">duration,</span> <span class="err">iteration</span> <span class="err">count</span> <span class="err">(number</span> <span class="err">or</span> <span class="err">infinite),</span> <span class="err">direction</span> <span class="err">(normal,</span> <span class="err">alternate)</span>
 <span class="p">}</span>
 </pre>
 
@@ -235,23 +235,23 @@
 <h1>3D Transitions and Transforms</h1>
 <h2>z-index (Enhanced Image Size)</h2>
 <p>Example Code:</p>
-<pre class="code literal-block"><span></span><span class="nc">.ts-perspective</span><span class="p">{</span>
-    <span class="n">perspective</span><span class="o">:</span> <span class="m">1000</span><span class="p">;</span>
+<pre class="code literal-block"><span></span><span class="p">.</span><span class="nc">ts-perspective</span><span class="p">{</span>
+    <span class="k">perspective</span><span class="p">:</span> <span class="mi">1000</span><span class="p">;</span>
 <span class="p">}</span>
-<span class="k">@keyframes</span> <span class="nt">goBig</span><span class="p">{</span>
-    <span class="nt">0</span><span class="o">%</span> <span class="p">{</span><span class="nb">opacity</span><span class="o">:</span> <span class="m">1</span><span class="p">;}</span>
+<span class="p">@</span><span class="k">keyframes</span> <span class="nt">goBig</span><span class="p">{</span>
+    <span class="nt">0</span><span class="o">%</span> <span class="p">{</span><span class="k">opacity</span><span class="p">:</span> <span class="mi">1</span><span class="p">;}</span>
     <span class="nt">100</span><span class="o">%</span> <span class="p">{</span>
-        <span class="nb">opacity</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
-        <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span> <span class="n">scale3d</span><span class="p">(</span><span class="m">5</span><span class="o">,</span><span class="m">5</span><span class="o">,</span><span class="m">5</span><span class="p">);</span>
+        <span class="k">opacity</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="kp">-webkit-</span><span class="k">transform</span><span class="p">:</span> <span class="nb">scale3d</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">);</span>
     <span class="p">}</span>
 <span class="p">}</span>
-<span class="nc">.te-front</span><span class="p">{</span>
-    <span class="n">animation</span><span class="o">:</span> <span class="n">goBig</span> <span class="m">.4s</span> <span class="n">ease</span><span class="o">-</span><span class="n">in</span><span class="o">-</span><span class="n">out</span><span class="p">;</span>
-    <span class="n">backface</span><span class="o">-</span><span class="nb">visibility</span><span class="o">:</span> <span class="nb">hidden</span><span class="p">;</span>
+<span class="p">.</span><span class="nc">te-front</span><span class="p">{</span>
+    <span class="k">animation</span><span class="p">:</span> <span class="n">goBig</span> <span class="mf">.4</span><span class="kt">s</span> <span class="kc">ease-in-out</span><span class="p">;</span>
+    <span class="k">backface-visibility</span><span class="p">:</span> <span class="kc">hidden</span><span class="p">;</span>
 <span class="p">}</span>
-<span class="nc">.td-back</span><span class="p">{</span>
-    <span class="n">transform</span><span class="o">-</span><span class="n">style</span><span class="o">:</span> <span class="n">preserve</span><span class="m">-3</span><span class="n">d</span><span class="p">;</span>
-    <span class="nb">z-index</span><span class="o">:</span> <span class="m">1</span><span class="p">;</span>
+<span class="p">.</span><span class="nc">td-back</span><span class="p">{</span>
+    <span class="k">transform-style</span><span class="p">:</span> <span class="kc">preserve-3d</span><span class="p">;</span>
+    <span class="k">z-index</span><span class="p">:</span> <span class="mi">1</span><span class="p">;</span>
 <span class="p">}</span>
 </pre>
 
@@ -259,65 +259,65 @@
 <h2>Flipping Effect</h2>
 <p>Example Code:</p>
 <pre class="code literal-block"><span></span><span class="c">/*With Same JavaScript to Change Class*/</span>
-<span class="nc">.artGroup</span> <span class="nc">.flip</span><span class="p">{</span>
-    <span class="n">perspective</span><span class="o">:</span> <span class="m">800px</span><span class="p">;</span>
+<span class="p">.</span><span class="nc">artGroup</span> <span class="p">.</span><span class="nc">flip</span><span class="p">{</span>
+    <span class="k">perspective</span><span class="p">:</span> <span class="mi">800</span><span class="kt">px</span><span class="p">;</span>
 <span class="p">}</span>
-<span class="nc">.artGroup.flip.artwork</span><span class="p">{</span>
-    <span class="n">transition</span><span class="o">:</span> <span class="n">transform</span> <span class="m">1s</span><span class="p">;</span>
-    <span class="n">transform</span><span class="o">-</span><span class="n">style</span><span class="o">:</span> <span class="n">preserve</span><span class="m">-3</span><span class="n">d</span><span class="p">;</span>
+<span class="p">.</span><span class="nc">artGroup</span><span class="p">.</span><span class="nc">flip</span><span class="p">.</span><span class="nc">artwork</span><span class="p">{</span>
+    <span class="k">transition</span><span class="p">:</span> <span class="k">transform</span> <span class="mi">1</span><span class="kt">s</span><span class="p">;</span>
+    <span class="k">transform-style</span><span class="p">:</span> <span class="kc">preserve-3d</span><span class="p">;</span>
 <span class="p">}</span>
-<span class="nc">.artGroup.flip.detail</span><span class="o">,</span><span class="nc">.artGroup.flip.theFlip</span><span class="p">{</span>
-    <span class="n">transform</span><span class="o">:</span> <span class="n">rotateY</span><span class="p">(</span><span class="m">-180</span><span class="n">deg</span><span class="p">);</span>
+<span class="p">.</span><span class="nc">artGroup</span><span class="p">.</span><span class="nc">flip</span><span class="p">.</span><span class="nc">detail</span><span class="o">,</span><span class="p">.</span><span class="nc">artGroup</span><span class="p">.</span><span class="nc">flip</span><span class="p">.</span><span class="nc">theFlip</span><span class="p">{</span>
+    <span class="k">transform</span><span class="p">:</span> <span class="nb">rotateY</span><span class="p">(</span><span class="mi">-180</span><span class="kt">deg</span><span class="p">);</span>
 <span class="p">}</span>
-<span class="nc">.artGroup.flip</span> <span class="nt">img</span><span class="o">,</span><span class="nc">.artGroup.flip.detail</span><span class="p">{</span>
-    <span class="n">backface</span><span class="o">-</span><span class="nb">visibility</span><span class="o">:</span> <span class="nb">hidden</span><span class="p">;</span>
+<span class="p">.</span><span class="nc">artGroup</span><span class="p">.</span><span class="nc">flip</span> <span class="nt">img</span><span class="o">,</span><span class="p">.</span><span class="nc">artGroup</span><span class="p">.</span><span class="nc">flip</span><span class="p">.</span><span class="nc">detail</span><span class="p">{</span>
+    <span class="k">backface-visibility</span><span class="p">:</span> <span class="kc">hidden</span><span class="p">;</span>
 <span class="p">}</span>
 </pre>
 
 
 <h2>Image Cube</h2>
 <p>Example Code:</p>
-<pre class="code literal-block"><span></span><span class="nn">#theArt</span><span class="p">{</span>
-    <span class="n">perspective</span><span class="o">:</span> <span class="m">1000px</span><span class="p">;</span>
+<pre class="code literal-block"><span></span><span class="p">#</span><span class="nn">theArt</span><span class="p">{</span>
+    <span class="k">perspective</span><span class="p">:</span> <span class="mi">1000</span><span class="kt">px</span><span class="p">;</span>
 <span class="p">}</span>
-<span class="nn">#cube</span><span class="p">{</span>
-    <span class="n">transform</span><span class="o">-</span><span class="n">style</span><span class="o">:</span> <span class="n">preserve</span><span class="m">-3</span><span class="n">d</span><span class="p">;</span>
-    <span class="n">transition</span><span class="o">:</span> <span class="n">transform</span> <span class="m">1s</span><span class="p">;</span>
+<span class="p">#</span><span class="nn">cube</span><span class="p">{</span>
+    <span class="k">transform-style</span><span class="p">:</span> <span class="kc">preserve-3d</span><span class="p">;</span>
+    <span class="k">transition</span><span class="p">:</span> <span class="k">transform</span> <span class="mi">1</span><span class="kt">s</span><span class="p">;</span>
 <span class="p">}</span>
-<span class="nn">#cube</span> <span class="nc">.front</span><span class="p">{</span>
+<span class="p">#</span><span class="nn">cube</span> <span class="p">.</span><span class="nc">front</span><span class="p">{</span>
     <span class="c">/*translate long z-axis*/</span>
-    <span class="n">transform</span><span class="o">:</span> <span class="n">translateZ</span><span class="p">(</span><span class="m">136px</span><span class="p">);</span>
+    <span class="k">transform</span><span class="p">:</span> <span class="nb">translateZ</span><span class="p">(</span><span class="mi">136</span><span class="kt">px</span><span class="p">);</span>
 <span class="p">}</span>
-<span class="nn">#cube</span><span class="nc">.back</span><span class="p">{</span>
-    <span class="n">transform</span><span class="o">:</span> <span class="n">rotateX</span><span class="p">(</span><span class="m">-180</span><span class="n">deg</span><span class="p">)</span> <span class="n">translateZ</span><span class="p">(</span><span class="m">136px</span><span class="p">);</span>
+<span class="p">#</span><span class="nn">cube</span><span class="p">.</span><span class="nc">back</span><span class="p">{</span>
+    <span class="k">transform</span><span class="p">:</span> <span class="nb">rotateX</span><span class="p">(</span><span class="mi">-180</span><span class="kt">deg</span><span class="p">)</span> <span class="nb">translateZ</span><span class="p">(</span><span class="mi">136</span><span class="kt">px</span><span class="p">);</span>
 <span class="p">}</span>
-<span class="nn">#cube</span><span class="nc">.right</span><span class="p">{</span>
-    <span class="n">transform</span><span class="o">:</span> <span class="n">rotateX</span><span class="p">(</span><span class="m">90</span><span class="n">deg</span><span class="p">)</span> <span class="n">translateZ</span><span class="p">(</span><span class="m">136px</span><span class="p">);</span>
+<span class="p">#</span><span class="nn">cube</span><span class="p">.</span><span class="nc">right</span><span class="p">{</span>
+    <span class="k">transform</span><span class="p">:</span> <span class="nb">rotateX</span><span class="p">(</span><span class="mi">90</span><span class="kt">deg</span><span class="p">)</span> <span class="nb">translateZ</span><span class="p">(</span><span class="mi">136</span><span class="kt">px</span><span class="p">);</span>
 <span class="p">}</span>
-<span class="nn">#cube</span><span class="nc">.left</span><span class="p">{</span>
-    <span class="n">transform</span><span class="o">:</span> <span class="n">rotateX</span><span class="p">(</span><span class="m">-90</span><span class="n">deg</span><span class="p">)</span> <span class="n">translateZ</span><span class="p">(</span><span class="m">136px</span><span class="p">);</span>
+<span class="p">#</span><span class="nn">cube</span><span class="p">.</span><span class="nc">left</span><span class="p">{</span>
+    <span class="k">transform</span><span class="p">:</span> <span class="nb">rotateX</span><span class="p">(</span><span class="mi">-90</span><span class="kt">deg</span><span class="p">)</span> <span class="nb">translateZ</span><span class="p">(</span><span class="mi">136</span><span class="kt">px</span><span class="p">);</span>
 <span class="p">}</span>
-<span class="nn">#cube</span><span class="nc">.top</span><span class="p">{</span>
-    <span class="n">transform</span><span class="o">:</span> <span class="n">rotateX</span><span class="p">(</span><span class="m">90</span><span class="n">deg</span><span class="p">)</span> <span class="n">translateZ</span><span class="p">(</span><span class="m">136px</span><span class="p">);</span>
+<span class="p">#</span><span class="nn">cube</span><span class="p">.</span><span class="nc">top</span><span class="p">{</span>
+    <span class="k">transform</span><span class="p">:</span> <span class="nb">rotateX</span><span class="p">(</span><span class="mi">90</span><span class="kt">deg</span><span class="p">)</span> <span class="nb">translateZ</span><span class="p">(</span><span class="mi">136</span><span class="kt">px</span><span class="p">);</span>
 <span class="p">}</span>
 <span class="c">/*following are for parent container*/</span>
-<span class="nn">#cube</span><span class="nc">.show-front</span><span class="p">{</span>
-    <span class="n">transform</span><span class="o">:</span> <span class="n">translateZ</span><span class="p">(</span><span class="m">-136px</span><span class="p">);</span>
+<span class="p">#</span><span class="nn">cube</span><span class="p">.</span><span class="nc">show-front</span><span class="p">{</span>
+    <span class="k">transform</span><span class="p">:</span> <span class="nb">translateZ</span><span class="p">(</span><span class="mi">-136</span><span class="kt">px</span><span class="p">);</span>
 <span class="p">}</span>
-<span class="nn">#cube</span><span class="nc">.show-back</span><span class="p">{</span>
-    <span class="n">transform</span><span class="o">:</span> <span class="n">translateZ</span><span class="p">(</span><span class="m">-136px</span><span class="p">)</span> <span class="n">rotateX</span><span class="p">(</span><span class="m">180</span><span class="n">deg</span><span class="p">);</span>
+<span class="p">#</span><span class="nn">cube</span><span class="p">.</span><span class="nc">show-back</span><span class="p">{</span>
+    <span class="k">transform</span><span class="p">:</span> <span class="nb">translateZ</span><span class="p">(</span><span class="mi">-136</span><span class="kt">px</span><span class="p">)</span> <span class="nb">rotateX</span><span class="p">(</span><span class="mi">180</span><span class="kt">deg</span><span class="p">);</span>
 <span class="p">}</span>
-<span class="nn">#cube</span><span class="nc">.show-right</span><span class="p">{</span>
-    <span class="n">transform</span><span class="o">:</span> <span class="n">translateZ</span><span class="p">(</span><span class="m">-136px</span><span class="p">)</span> <span class="n">rotateY</span><span class="p">(</span><span class="m">-90</span><span class="n">deg</span><span class="p">);</span>
+<span class="p">#</span><span class="nn">cube</span><span class="p">.</span><span class="nc">show-right</span><span class="p">{</span>
+    <span class="k">transform</span><span class="p">:</span> <span class="nb">translateZ</span><span class="p">(</span><span class="mi">-136</span><span class="kt">px</span><span class="p">)</span> <span class="nb">rotateY</span><span class="p">(</span><span class="mi">-90</span><span class="kt">deg</span><span class="p">);</span>
 <span class="p">}</span>
-<span class="nn">#cube</span><span class="nc">.show-left</span><span class="p">{</span>
-    <span class="n">transform</span><span class="o">:</span> <span class="n">translateZ</span><span class="p">(</span><span class="m">-136px</span><span class="p">)</span> <span class="n">rotateY</span><span class="p">(</span><span class="m">90</span><span class="n">deg</span><span class="p">);</span>
+<span class="p">#</span><span class="nn">cube</span><span class="p">.</span><span class="nc">show-left</span><span class="p">{</span>
+    <span class="k">transform</span><span class="p">:</span> <span class="nb">translateZ</span><span class="p">(</span><span class="mi">-136</span><span class="kt">px</span><span class="p">)</span> <span class="nb">rotateY</span><span class="p">(</span><span class="mi">90</span><span class="kt">deg</span><span class="p">);</span>
 <span class="p">}</span>
-<span class="nn">#cube</span><span class="nc">.show-top</span><span class="p">{</span>
-    <span class="n">transform</span><span class="o">:</span> <span class="n">translateZ</span><span class="p">(</span><span class="m">-136px</span><span class="p">)</span> <span class="n">rotateX</span><span class="p">(</span><span class="m">-90</span><span class="n">deg</span><span class="p">);</span>
+<span class="p">#</span><span class="nn">cube</span><span class="p">.</span><span class="nc">show-top</span><span class="p">{</span>
+    <span class="k">transform</span><span class="p">:</span> <span class="nb">translateZ</span><span class="p">(</span><span class="mi">-136</span><span class="kt">px</span><span class="p">)</span> <span class="nb">rotateX</span><span class="p">(</span><span class="mi">-90</span><span class="kt">deg</span><span class="p">);</span>
 <span class="p">}</span>
-<span class="nn">#cube</span><span class="nc">.show-bottom</span><span class="p">{</span>
-    <span class="n">transform</span><span class="o">:</span> <span class="n">translateZ</span><span class="p">(</span><span class="m">-136px</span><span class="p">)</span> <span class="n">rotateX</span><span class="p">(</span><span class="m">90</span><span class="n">deg</span><span class="p">);</span>
+<span class="p">#</span><span class="nn">cube</span><span class="p">.</span><span class="nc">show-bottom</span><span class="p">{</span>
+    <span class="k">transform</span><span class="p">:</span> <span class="nb">translateZ</span><span class="p">(</span><span class="mi">-136</span><span class="kt">px</span><span class="p">)</span> <span class="nb">rotateX</span><span class="p">(</span><span class="mi">90</span><span class="kt">deg</span><span class="p">);</span>
 <span class="p">}</span>
 </pre>
 
@@ -329,30 +329,30 @@
 <h3>JS</h3>
 <p>Add/Remove Class, using index incremented by 1</p>
 <h3>CSS</h3>
-<pre class="code literal-block"><span></span><span class="nc">.container</span><span class="p">{</span>
-    <span class="n">perspective</span><span class="o">:</span> <span class="m">1000</span><span class="p">;</span>
+<pre class="code literal-block"><span></span><span class="p">.</span><span class="nc">container</span><span class="p">{</span>
+    <span class="k">perspective</span><span class="p">:</span> <span class="mi">1000</span><span class="p">;</span>
 <span class="p">}</span>
-<span class="nn">#carousel</span><span class="p">{</span>
-    <span class="n">transform</span><span class="o">-</span><span class="n">style</span><span class="o">:</span> <span class="n">preserve</span><span class="m">-3</span><span class="n">d</span><span class="p">;</span>
+<span class="p">#</span><span class="nn">carousel</span><span class="p">{</span>
+    <span class="k">transform-style</span><span class="p">:</span> <span class="kc">preserve-3d</span><span class="p">;</span>
 <span class="p">}</span>
-<span class="nn">#carousel</span> <span class="nt">figure</span><span class="p">{</span>
+<span class="p">#</span><span class="nn">carousel</span> <span class="nt">figure</span><span class="p">{</span>
 
 <span class="p">}</span>
-<span class="nc">.ready</span> <span class="nn">#carousel</span><span class="o">,</span> <span class="nc">.ready</span> <span class="nn">#carousel</span> <span class="nt">figure</span><span class="p">{</span>
-    <span class="n">transition</span><span class="o">:</span> <span class="n">transform</span> <span class="m">1s</span><span class="p">;</span>
+<span class="p">.</span><span class="nc">ready</span> <span class="p">#</span><span class="nn">carousel</span><span class="o">,</span> <span class="p">.</span><span class="nc">ready</span> <span class="p">#</span><span class="nn">carousel</span> <span class="nt">figure</span><span class="p">{</span>
+    <span class="k">transition</span><span class="p">:</span> <span class="k">transform</span> <span class="mi">1</span><span class="kt">s</span><span class="p">;</span>
 <span class="p">}</span>
-<span class="nn">#carousel</span> <span class="nt">figure</span> <span class="nt">img</span><span class="p">{</span>
-    <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">#000</span><span class="p">;</span>
-    <span class="n">transition</span><span class="o">:</span> <span class="n">all</span> <span class="m">1s</span><span class="p">;</span>
+<span class="p">#</span><span class="nn">carousel</span> <span class="nt">figure</span> <span class="nt">img</span><span class="p">{</span>
+    <span class="k">box-shadow</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mh">#000</span><span class="p">;</span>
+    <span class="k">transition</span><span class="p">:</span> <span class="kc">all</span> <span class="mi">1</span><span class="kt">s</span><span class="p">;</span>
 <span class="p">}</span>
-<span class="nn">#carousel</span> <span class="nt">figure</span><span class="nc">.showFig</span> <span class="nt">img</span><span class="nd">:hover</span><span class="p">{</span>
-    <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">3px</span> <span class="m">3px</span> <span class="m">5px</span> <span class="m">#000</span><span class="p">;</span>
-    <span class="n">transform</span><span class="o">:</span> <span class="n">scale</span><span class="p">(</span><span class="m">2</span><span class="p">);</span>
+<span class="p">#</span><span class="nn">carousel</span> <span class="nt">figure</span><span class="p">.</span><span class="nc">showFig</span> <span class="nt">img</span><span class="p">:</span><span class="nd">hover</span><span class="p">{</span>
+    <span class="k">box-shadow</span><span class="p">:</span> <span class="mi">3</span><span class="kt">px</span> <span class="mi">3</span><span class="kt">px</span> <span class="mi">5</span><span class="kt">px</span> <span class="mh">#000</span><span class="p">;</span>
+    <span class="k">transform</span><span class="p">:</span> <span class="nb">scale</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
 <span class="p">}</span>
-<span class="nc">.no-csstransform3d</span> <span class="nn">#carousel</span> <span class="nt">figure</span><span class="o">,</span> <span class="nc">.no-csstransform3d</span> <span class="nn">#toggle</span><span class="p">{</span>
-    <span class="nb">display</span><span class="o">:</span> <span class="nb">none</span><span class="p">;</span>
+<span class="p">.</span><span class="nc">no-csstransform3d</span> <span class="p">#</span><span class="nn">carousel</span> <span class="nt">figure</span><span class="o">,</span> <span class="p">.</span><span class="nc">no-csstransform3d</span> <span class="p">#</span><span class="nn">toggle</span><span class="p">{</span>
+    <span class="k">display</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
 <span class="p">}</span>
-<span class="nc">.no-csstransform3d</span> <span class="nn">#carousel</span> <span class="nt">figure</span><span class="nc">.showFig</span><span class="p">{</span>
-    <span class="nb">display</span><span class="o">:</span> <span class="nb">block</span><span class="p">;</span>
+<span class="p">.</span><span class="nc">no-csstransform3d</span> <span class="p">#</span><span class="nn">carousel</span> <span class="nt">figure</span><span class="p">.</span><span class="nc">showFig</span><span class="p">{</span>
+    <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
 <span class="p">}</span>
 </pre>

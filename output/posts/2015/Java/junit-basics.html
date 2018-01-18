@@ -11,8 +11,8 @@ article: http://ogp.me/ns/article#
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2015/Java/junit-basics.html">
-<link rel="icon" href="../../../passport_photo.ico" sizes="16x16">
-<link rel="icon" href="../../../passport_photo.ico" sizes="128x128">
+<link rel="icon" href="../../../pengyin.ico" sizes="16x16">
+<link rel="icon" href="../../../pengyin.ico" sizes="128x128">
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
@@ -31,7 +31,7 @@ MathJax.Hub.Config({
 <meta property="og:url" content="http://pengyin-shan.com/posts/2015/Java/junit-basics.html">
 <meta property="og:description" content="I'm planing to add JUnit and Cucumber to one of my work project. Before digging into Cucumber directly, I want to do a brief overview about JUnit.">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2015-07-24T00:00:00-04:00">
+<meta property="article:published_time" content="2015-07-24T00:00:00-07:00">
 <meta property="article:tag" content="Java">
 <meta property="article:tag" content="JUnit">
 <meta property="article:tag" content="Software Testing">
@@ -52,7 +52,7 @@ MathJax.Hub.Config({
 
         <div class="meta">
             <div class="authordate">
-                <time class="timeago" datetime="2015-07-24T00:00:00-04:00">2015-07-24 00:00</time>
+                <time class="timeago" datetime="2015-07-24T00:00:00-07:00">2015-07-24 00:00</time>
             
                       |  
         <a href="junit-basics.md" id="sourcelink">Source</a>
@@ -141,7 +141,7 @@ MathJax.Hub.Config({
 <span class="o">:::</span><span class="n">java</span>
 <span class="kn">import</span> <span class="nn">org.junit.Test</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">org.junit.Ignore</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">static</span> <span class="n">org</span><span class="o">.</span><span class="na">junit</span><span class="o">.</span><span class="na">Assert</span><span class="o">.</span><span class="na">assertEquals</span><span class="o">;</span>
+<span class="kn">import static</span> <span class="nn">org.junit.Assert.assertEquals</span><span class="o">;</span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">TestJunit1</span> <span class="o">{</span>
    <span class="n">String</span> <span class="n">message</span> <span class="o">=</span> <span class="s">"Robert"</span><span class="o">;</span>
    <span class="n">MessageUtil</span> <span class="n">messageUtil</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MessageUtil</span><span class="o">(</span><span class="n">message</span><span class="o">);</span>
@@ -156,7 +156,7 @@ MathJax.Hub.Config({
 <span class="o">:::</span><span class="n">java</span>
 <span class="kn">import</span> <span class="nn">org.junit.Test</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">org.junit.Ignore</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">static</span> <span class="n">org</span><span class="o">.</span><span class="na">junit</span><span class="o">.</span><span class="na">Assert</span><span class="o">.</span><span class="na">assertEquals</span><span class="o">;</span>
+<span class="kn">import static</span> <span class="nn">org.junit.Assert.assertEquals</span><span class="o">;</span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">TestJunit2</span> <span class="o">{</span>
    <span class="n">String</span> <span class="n">message</span> <span class="o">=</span> <span class="s">"Robert"</span><span class="o">;</span>
    <span class="n">MessageUtil</span> <span class="n">messageUtil</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MessageUtil</span><span class="o">(</span><span class="n">message</span><span class="o">);</span>
@@ -228,7 +228,7 @@ MathJax.Hub.Config({
 <h5>2. Create a Test Case Class</h5>
 <p>Example code from Tutorialspoint.com</p>
 <pre class="code literal-block"><span></span><span class="kn">import</span> <span class="nn">org.junit.Test</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">static</span> <span class="n">org</span><span class="o">.</span><span class="na">junit</span><span class="o">.</span><span class="na">Assert</span><span class="o">.</span><span class="na">assertEquals</span><span class="o">;</span>
+<span class="kn">import static</span> <span class="nn">org.junit.Assert.assertEquals</span><span class="o">;</span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">TestJunit</span> <span class="o">{</span>
    <span class="n">String</span> <span class="n">message</span> <span class="o">=</span> <span class="s">"Hello World"</span><span class="o">;</span>
    <span class="c1">//Use the message class above</span>
@@ -312,7 +312,7 @@ MathJax.Hub.Config({
 
 <p>Then, created a test business logic class with <strong>assestion</strong> and <strong>@Test</strong> annotation:</p>
 <pre class="code literal-block"><span></span><span class="kn">import</span> <span class="nn">org.junit.Test</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">static</span> <span class="n">org</span><span class="o">.</span><span class="na">junit</span><span class="o">.</span><span class="na">Assert</span><span class="o">.</span><span class="na">assertEquals</span><span class="o">;</span>
+<span class="kn">import static</span> <span class="nn">org.junit.Assert.assertEquals</span><span class="o">;</span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">TestEmployeeDetails</span> <span class="o">{</span>
    <span class="n">EmpBusinessLogic</span> <span class="n">empBusinessLogic</span> <span class="o">=</span><span class="k">new</span> <span class="n">EmpBusinessLogic</span><span class="o">();</span>
    <span class="n">EmployeeDetails</span> <span class="n">employee</span> <span class="o">=</span> <span class="k">new</span> <span class="n">EmployeeDetails</span><span class="o">();</span>
@@ -433,7 +433,7 @@ MathJax.Hub.Config({
 <p>Business Logic class with Methods for testing:</p>
 <pre class="code literal-block"><span></span><span class="kn">import</span> <span class="nn">org.junit.Test</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">org.junit.Ignore</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">static</span> <span class="n">org</span><span class="o">.</span><span class="na">junit</span><span class="o">.</span><span class="na">Assert</span><span class="o">.</span><span class="na">assertEquals</span><span class="o">;</span>
+<span class="kn">import static</span> <span class="nn">org.junit.Assert.assertEquals</span><span class="o">;</span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">TestJunit1</span> <span class="o">{</span>
    <span class="n">String</span> <span class="n">message</span> <span class="o">=</span> <span class="s">"Robert"</span><span class="o">;</span>
    <span class="n">MessageUtil</span> <span class="n">messageUtil</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MessageUtil</span><span class="o">(</span><span class="n">message</span><span class="o">);</span>
@@ -449,7 +449,7 @@ MathJax.Hub.Config({
 <p>Business Logic Test Class with Assertions:</p>
 <pre class="code literal-block"><span></span><span class="kn">import</span> <span class="nn">org.junit.Test</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">org.junit.Ignore</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">static</span> <span class="n">org</span><span class="o">.</span><span class="na">junit</span><span class="o">.</span><span class="na">Assert</span><span class="o">.</span><span class="na">assertEquals</span><span class="o">;</span>
+<span class="kn">import static</span> <span class="nn">org.junit.Assert.assertEquals</span><span class="o">;</span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">TestJunit2</span> <span class="o">{</span>
    <span class="n">String</span> <span class="n">message</span> <span class="o">=</span> <span class="s">"Robert"</span><span class="o">;</span>
    <span class="n">MessageUtil</span> <span class="n">messageUtil</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MessageUtil</span><span class="o">(</span><span class="n">message</span><span class="o">);</span>
@@ -493,7 +493,7 @@ MathJax.Hub.Config({
 <p>Example code from Tutorialspoint.com:</p>
 <pre class="code literal-block"><span></span><span class="kn">import</span> <span class="nn">org.junit.Test</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">org.junit.Ignore</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">static</span> <span class="n">org</span><span class="o">.</span><span class="na">junit</span><span class="o">.</span><span class="na">Assert</span><span class="o">.</span><span class="na">assertEquals</span><span class="o">;</span>
+<span class="kn">import static</span> <span class="nn">org.junit.Assert.assertEquals</span><span class="o">;</span>
 <span class="c1">//Note @Ignore is the annotation for test runner class</span>
 <span class="nd">@Ignore</span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">TestJunit</span> <span class="o">{</span>
@@ -525,7 +525,7 @@ MathJax.Hub.Config({
 <p>Example code from Tutorialspoint.com:</p>
 <pre class="code literal-block"><span></span><span class="kn">import</span> <span class="nn">org.junit.Test</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">org.junit.Ignore</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">static</span> <span class="n">org</span><span class="o">.</span><span class="na">junit</span><span class="o">.</span><span class="na">Assert</span><span class="o">.</span><span class="na">assertEquals</span><span class="o">;</span>
+<span class="kn">import static</span> <span class="nn">org.junit.Assert.assertEquals</span><span class="o">;</span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">TestJunit</span> <span class="o">{</span>
    <span class="n">String</span> <span class="n">message</span> <span class="o">=</span> <span class="s">"Robert"</span><span class="o">;</span>
    <span class="n">MessageUtil</span> <span class="n">messageUtil</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MessageUtil</span><span class="o">(</span><span class="n">message</span><span class="o">);</span>
@@ -556,7 +556,7 @@ MathJax.Hub.Config({
 <p>Example code from Tutorialspoint.com:</p>
 <pre class="code literal-block"><span></span><span class="kn">import</span> <span class="nn">org.junit.Test</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">org.junit.Ignore</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">static</span> <span class="n">org</span><span class="o">.</span><span class="na">junit</span><span class="o">.</span><span class="na">Assert</span><span class="o">.</span><span class="na">assertEquals</span><span class="o">;</span>
+<span class="kn">import static</span> <span class="nn">org.junit.Assert.assertEquals</span><span class="o">;</span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">TestJunit</span> <span class="o">{</span>
    <span class="n">String</span> <span class="n">message</span> <span class="o">=</span> <span class="s">"Robert"</span><span class="o">;</span>
    <span class="n">MessageUtil</span> <span class="n">messageUtil</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MessageUtil</span><span class="o">(</span><span class="n">message</span><span class="o">);</span>
@@ -623,7 +623,7 @@ MathJax.Hub.Config({
 <span class="kn">import</span> <span class="nn">org.junit.runners.Parameterized</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">org.junit.runners.Parameterized.Parameters</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">org.junit.runner.RunWith</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">static</span> <span class="n">org</span><span class="o">.</span><span class="na">junit</span><span class="o">.</span><span class="na">Assert</span><span class="o">.</span><span class="na">assertEquals</span><span class="o">;</span>
+<span class="kn">import static</span> <span class="nn">org.junit.Assert.assertEquals</span><span class="o">;</span>
 <span class="c1">//Parameterized.class works as parameter of @RunWith</span>
 <span class="nd">@RunWith</span><span class="o">(</span><span class="n">Parameterized</span><span class="o">.</span><span class="na">class</span><span class="o">)</span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">PrimeNumberCheckerTest</span> <span class="o">{</span>
@@ -670,7 +670,7 @@ MathJax.Hub.Config({
         </div>
                 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../Others/rdf-basics.html" rel="prev" title="RDF Basics">Previous post</a>
+                <a href="../Data%20Science/search-engine-basics-lucene.html" rel="prev" title="Search Engine Basics (Including Lucene)">Previous post</a>
             </li>
             <li class="next">
                 <a href="../Data%20Science/sql-tips.html" rel="next" title="SQL Tips">Next post</a>
@@ -696,7 +696,7 @@ MathJax.Hub.Config({
 
 
     </div>
-                     <footer id="footer"><p>Contents © 2017         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                     <footer id="footer"><p>Contents © 2018         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

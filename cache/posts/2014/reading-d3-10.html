@@ -4,11 +4,11 @@
 <h1>Chapter 10 : Interactive Design</h1>
 <p>code example for this chapter is <a href="http://shanpy.github.io/Front-End-Playground/D3/Reading-D3-VI.html"><strong>here</strong></a>. This part involves lots of code practice.</p>
 <p>To add transition to element using <code>css</code>:</p>
-<pre class="code literal-block"><span></span><span class="nt">rect</span><span class="nd">:hover</span> <span class="p">{</span>
-    <span class="n">transition</span><span class="o">:</span> <span class="n">all</span> <span class="m">0.3s</span><span class="p">;</span>
-    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">transition</span><span class="o">:</span> <span class="n">all</span> <span class="m">0.3s</span><span class="p">;</span>
-    <span class="o">-</span><span class="n">o</span><span class="o">-</span><span class="n">transition</span><span class="o">:</span> <span class="n">all</span> <span class="m">0.3s</span><span class="p">;</span>
-    <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">transition</span><span class="o">:</span> <span class="n">all</span> <span class="m">0.3s</span><span class="p">;</span>
+<pre class="code literal-block"><span></span><span class="nt">rect</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
+    <span class="k">transition</span><span class="p">:</span> <span class="kc">all</span> <span class="mf">0.3</span><span class="kt">s</span><span class="p">;</span>
+    <span class="kp">-moz-</span><span class="k">transition</span><span class="p">:</span> <span class="kc">all</span> <span class="mf">0.3</span><span class="kt">s</span><span class="p">;</span>
+    <span class="kp">-o-</span><span class="k">transition</span><span class="p">:</span> <span class="kc">all</span> <span class="mf">0.3</span><span class="kt">s</span><span class="p">;</span>
+    <span class="kp">-webkit-</span><span class="k">transition</span><span class="p">:</span> <span class="kc">all</span> <span class="mf">0.3</span><span class="kt">s</span><span class="p">;</span>
 <span class="p">}</span>
 </pre>
 
@@ -59,21 +59,21 @@
 <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 
 <span class="p">&lt;</span><span class="nt">style</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span><span class="p">&gt;</span>
-    <span class="nn">#tooltip</span><span class="p">{</span>
-        <span class="nb">position</span><span class="o">:</span> <span class="nb">absolute</span><span class="p">;</span> <span class="o">//</span><span class="n">This</span> <span class="n">is</span> <span class="n">important</span>
-        <span class="nb">width</span><span class="o">:</span> <span class="m">299px</span><span class="p">;</span>
-        <span class="nb">height</span><span class="o">:</span> <span class="nb">auto</span><span class="p">;</span>
-        <span class="nb">padding</span><span class="o">:</span> <span class="m">10px</span><span class="p">;</span>
-        <span class="nb">background-color</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
-        <span class="o">//...</span>
-        <span class="nb">pointer</span><span class="o">-</span><span class="n">events</span><span class="o">:</span><span class="nb">none</span><span class="p">;</span>
+    <span class="p">#</span><span class="nn">tooltip</span><span class="p">{</span>
+        <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span> <span class="err">//This</span> <span class="err">is</span> <span class="err">important</span>
+        <span class="k">width</span><span class="p">:</span> <span class="mi">299</span><span class="kt">px</span><span class="p">;</span>
+        <span class="k">height</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
+        <span class="k">padding</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+        <span class="k">background-color</span><span class="p">:</span> <span class="kc">white</span><span class="p">;</span>
+        <span class="err">//...</span>
+        <span class="n">pointer-events</span><span class="p">:</span><span class="kc">none</span><span class="p">;</span>
     <span class="p">}</span>
-    <span class="nn">#tooltip</span><span class="nc">.hidden</span><span class="p">{</span>
-        <span class="nb">display</span><span class="o">:</span> <span class="nb">none</span><span class="p">;</span>
+    <span class="p">#</span><span class="nn">tooltip</span><span class="p">.</span><span class="nc">hidden</span><span class="p">{</span>
+        <span class="k">display</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
     <span class="p">}</span>
-    <span class="nn">#tooltip</span> <span class="nt">p</span><span class="p">{</span>
-        <span class="nb">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
-        <span class="o">//...</span>
+    <span class="p">#</span><span class="nn">tooltip</span> <span class="nt">p</span><span class="p">{</span>
+        <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="err">//...</span>
     <span class="p">}</span>
 <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
 
@@ -99,35 +99,35 @@
 <h2>Code for This Chapter</h2>
 <p>You can view interative version <a href="http://shanpy.github.io/Front-End-Playground/D3/Reading-D3-VI.html"><strong>here</strong></a>.</p>
 <pre class="code literal-block"><span></span><span class="p">&lt;</span><span class="nt">style</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span><span class="p">&gt;</span>
-        <span class="nt">rect</span><span class="nd">:hover</span><span class="p">{</span>
-            <span class="n">fill</span><span class="o">:</span><span class="nb">orange</span><span class="p">;</span>
-            <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">transition</span><span class="o">:</span> <span class="n">all</span> <span class="m">0.3s</span><span class="p">;</span>
-            <span class="o">-</span><span class="n">o</span><span class="o">-</span><span class="n">transition</span><span class="o">:</span> <span class="n">all</span> <span class="m">0.3s</span><span class="p">;</span>
-            <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">transition</span><span class="o">:</span> <span class="n">all</span> <span class="m">0.3s</span><span class="p">;</span>
-            <span class="n">transition</span><span class="o">:</span> <span class="n">all</span> <span class="m">0.3s</span><span class="p">;</span>
+        <span class="nt">rect</span><span class="p">:</span><span class="nd">hover</span><span class="p">{</span>
+            <span class="n">fill</span><span class="p">:</span><span class="kc">orange</span><span class="p">;</span>
+            <span class="kp">-moz-</span><span class="k">transition</span><span class="p">:</span> <span class="kc">all</span> <span class="mf">0.3</span><span class="kt">s</span><span class="p">;</span>
+            <span class="kp">-o-</span><span class="k">transition</span><span class="p">:</span> <span class="kc">all</span> <span class="mf">0.3</span><span class="kt">s</span><span class="p">;</span>
+            <span class="kp">-webkit-</span><span class="k">transition</span><span class="p">:</span> <span class="kc">all</span> <span class="mf">0.3</span><span class="kt">s</span><span class="p">;</span>
+            <span class="k">transition</span><span class="p">:</span> <span class="kc">all</span> <span class="mf">0.3</span><span class="kt">s</span><span class="p">;</span>
         <span class="p">}</span>
 
-        <span class="nn">#tooltip</span><span class="p">{</span>
-            <span class="nb">position</span><span class="o">:</span> <span class="nb">absolute</span><span class="p">;</span>
-            <span class="nb">width</span><span class="o">:</span> <span class="m">10em</span><span class="p">;</span>
-            <span class="nb">height</span><span class="o">:</span> <span class="nb">auto</span><span class="p">;</span>
-            <span class="nb">padding</span><span class="o">:</span> <span class="m">1em</span><span class="p">;</span>
-            <span class="nb">background-color</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
-            <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="nb">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">5px</span><span class="p">;</span>
-            <span class="o">-</span><span class="n">mox</span><span class="o">-</span><span class="nb">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">5px</span><span class="p">;</span>
-            <span class="nb">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">5px</span><span class="p">;</span>
-            <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">3px</span> <span class="m">3px</span> <span class="m">3px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">.</span><span class="m">5</span><span class="p">);</span>
-            <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">3px</span> <span class="m">3px</span> <span class="m">3px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">.</span><span class="m">5</span><span class="p">);</span>
-            <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">3px</span> <span class="m">3px</span> <span class="m">3px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">.</span><span class="m">5</span><span class="p">);</span>
-            <span class="nb">pointer</span><span class="o">-</span><span class="n">events</span><span class="o">:</span><span class="nb">none</span><span class="p">;</span>
+        <span class="p">#</span><span class="nn">tooltip</span><span class="p">{</span>
+            <span class="k">position</span><span class="p">:</span> <span class="kc">absolute</span><span class="p">;</span>
+            <span class="k">width</span><span class="p">:</span> <span class="mi">10</span><span class="kt">em</span><span class="p">;</span>
+            <span class="k">height</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
+            <span class="k">padding</span><span class="p">:</span> <span class="mi">1</span><span class="kt">em</span><span class="p">;</span>
+            <span class="k">background-color</span><span class="p">:</span> <span class="kc">white</span><span class="p">;</span>
+            <span class="kp">-webkit-</span><span class="k">border-radius</span><span class="p">:</span> <span class="mi">5</span><span class="kt">px</span><span class="p">;</span>
+            <span class="err">-</span><span class="n">mox-border-radius</span><span class="p">:</span> <span class="mi">5</span><span class="kt">px</span><span class="p">;</span>
+            <span class="k">border-radius</span><span class="p">:</span> <span class="mi">5</span><span class="kt">px</span><span class="p">;</span>
+            <span class="kp">-webkit-</span><span class="k">box-shadow</span><span class="p">:</span> <span class="mi">3</span><span class="kt">px</span> <span class="mi">3</span><span class="kt">px</span> <span class="mi">3</span><span class="kt">px</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.5</span><span class="p">);</span>
+            <span class="kp">-moz-</span><span class="k">box-shadow</span><span class="p">:</span> <span class="mi">3</span><span class="kt">px</span> <span class="mi">3</span><span class="kt">px</span> <span class="mi">3</span><span class="kt">px</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.5</span><span class="p">);</span>
+            <span class="k">box-shadow</span><span class="p">:</span> <span class="mi">3</span><span class="kt">px</span> <span class="mi">3</span><span class="kt">px</span> <span class="mi">3</span><span class="kt">px</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.5</span><span class="p">);</span>
+            <span class="n">pointer-events</span><span class="p">:</span><span class="kc">none</span><span class="p">;</span>
         <span class="p">}</span>
 
-        <span class="nn">#tooltip</span><span class="nc">.hidden</span><span class="p">{</span>
-            <span class="nb">display</span><span class="o">:</span> <span class="nb">none</span><span class="p">;</span>
+        <span class="p">#</span><span class="nn">tooltip</span><span class="p">.</span><span class="nc">hidden</span><span class="p">{</span>
+            <span class="k">display</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
         <span class="p">}</span>
 
-        <span class="nn">#tooltip</span> <span class="nt">p</span><span class="p">{</span>
-            <span class="nb">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+        <span class="p">#</span><span class="nn">tooltip</span> <span class="nt">p</span><span class="p">{</span>
+            <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
         <span class="p">}</span>
 <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
 

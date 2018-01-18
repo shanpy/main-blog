@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>I'm Pengyin (jQuery)</title><link>http://pengyin-shan.com/</link><description></description><atom:link type="application/rss+xml" href="http://pengyin-shan.com/categories/jquery.xml" rel="self"></atom:link><language>en</language><lastBuildDate>Wed, 21 Jun 2017 01:46:42 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Reading Note - Asynchronous in jQuery and ECMAScript 6</title><link>http://pengyin-shan.com/posts/2016/JavaScript/reading_note_defer_in_jquery.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h2&gt;Reference List&lt;/h2&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>I'm Pengyin (Posts about jQuery)</title><link>http://pengyin-shan.com/</link><description></description><atom:link href="http://pengyin-shan.com/categories/jquery.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Thu, 18 Jan 2018 19:04:58 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Reading Note - Asynchronous in jQuery and ECMAScript 6</title><link>http://pengyin-shan.com/posts/2016/JavaScript/reading_note_defer_in_jquery.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h2&gt;Reference List&lt;/h2&gt;
 &lt;p&gt;This is a &lt;strong&gt;reading note&lt;/strong&gt; for following articles/blogs:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -162,7 +162,7 @@
 &lt;span class="nx"&gt;VM2454&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;77&lt;/span&gt; &lt;span class="nx"&gt;done&lt;/span&gt;
 &lt;span class="nx"&gt;VM2454&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;56&lt;/span&gt; &lt;span class="nx"&gt;deferred&lt;/span&gt; &lt;span class="nx"&gt;callback&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;
 &lt;span class="nx"&gt;VM2522&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;88&lt;/span&gt; &lt;span class="nx"&gt;finish&lt;/span&gt; &lt;span class="nx"&gt;loadingImage&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</description><category>JavaScript</category><category>jQuery</category><guid>http://pengyin-shan.com/posts/2016/JavaScript/reading_note_defer_in_jquery.html</guid><pubDate>Tue, 17 May 2016 04:00:00 GMT</pubDate></item><item><title>Jasmine Basics</title><link>http://pengyin-shan.com/posts/2015/JavaScript/jasmine-basics.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;You can find Jasmine &lt;a href="http://jasmine.github.io/2.3/introduction.html"&gt;here&lt;/a&gt;. I choose it because:&lt;/p&gt;
+&lt;/pre&gt;&lt;/div&gt;</description><category>JavaScript</category><category>jQuery</category><guid>http://pengyin-shan.com/posts/2016/JavaScript/reading_note_defer_in_jquery.html</guid><pubDate>Tue, 17 May 2016 07:00:00 GMT</pubDate></item><item><title>Jasmine Basics</title><link>http://pengyin-shan.com/posts/2015/JavaScript/jasmine-basics.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;You can find Jasmine &lt;a href="http://jasmine.github.io/2.3/introduction.html"&gt;here&lt;/a&gt;. I choose it because:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;It's a JavaScript framework which does not depend on any other JavaScript frameworks, and it does not require a DOM. So I can apply it on different web apps and platforms.&lt;/p&gt;
@@ -801,7 +801,7 @@
 &lt;h4&gt;HTML Fixture&lt;/h4&gt;
 &lt;p&gt;I'm still trying to figure out the best practice to apply HTML Fixture for my working project. HTML Fixture can be used to load HTML content to be used by your tests.&lt;/p&gt;
 &lt;p&gt;You can find more detailed information about HTML Fixture &lt;a href="https://github.com/velesin/jasmine-jquery"&gt;here&lt;/a&gt;. For most of my working projects, I need to limit the complexity of all my JavaScript test. Also, instead of &lt;code&gt;html&lt;/code&gt;, my work is more involved in &lt;code&gt;jsp&lt;/code&gt;, which is really hard to be transferred to pure HTML code for fixture content. Personally I prefer not to write too many fixtures for to simplify my test.&lt;/p&gt;
-&lt;p&gt;I'll continue to research for the best practice of using HTML Fixture.&lt;/p&gt;&lt;/div&gt;</description><category>Jasmine</category><category>JavaScript</category><category>jQuery</category><category>Software Testing</category><guid>http://pengyin-shan.com/posts/2015/JavaScript/jasmine-basics.html</guid><pubDate>Tue, 25 Aug 2015 04:00:00 GMT</pubDate></item><item><title>JavaScript Tips</title><link>http://pengyin-shan.com/posts/2015/JavaScript/javascript-tips.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3&gt;JavaScript String&lt;/h3&gt;
+&lt;p&gt;I'll continue to research for the best practice of using HTML Fixture.&lt;/p&gt;&lt;/div&gt;</description><category>Jasmine</category><category>JavaScript</category><category>jQuery</category><category>Software Testing</category><guid>http://pengyin-shan.com/posts/2015/JavaScript/jasmine-basics.html</guid><pubDate>Tue, 25 Aug 2015 07:00:00 GMT</pubDate></item><item><title>JavaScript Tips</title><link>http://pengyin-shan.com/posts/2015/JavaScript/javascript-tips.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3&gt;JavaScript String&lt;/h3&gt;
 &lt;h4&gt;Substring&lt;/h4&gt;
 &lt;p&gt;There are two ways in JavaScript to get substring:&lt;/p&gt;
 &lt;h5&gt;&lt;code&gt;substr(StartIndex, Length)&lt;/code&gt;:&lt;/h5&gt;
@@ -857,7 +857,7 @@
 &lt;/ul&gt;
 &lt;p&gt;You can refer this &lt;a href="http://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes"&gt;cheatsheet&lt;/a&gt; for more keycode information.&lt;/p&gt;
 &lt;h4&gt;Special Cases&lt;/h4&gt;
-&lt;p&gt;From &lt;a href="http://stackoverflow.com/questions/4084715/javascript-e-keycode-doesnt-catch-backspace-del-in-ie"&gt;this stackflow post&lt;/a&gt;, IE doesn't fire &lt;strong&gt;keypress&lt;/strong&gt; event for delete, end, enter, escape, function keys, home, insert, pageUp/Down and tab. So use &lt;strong&gt;keydown&lt;/strong&gt; or &lt;strong&gt;keyup&lt;/strong&gt; instead.&lt;/p&gt;&lt;/div&gt;</description><category>JavaScript</category><category>jQuery</category><guid>http://pengyin-shan.com/posts/2015/JavaScript/javascript-tips.html</guid><pubDate>Mon, 17 Aug 2015 04:00:00 GMT</pubDate></item><item><title>Possible Ajax Error Code and Reasons</title><link>http://pengyin-shan.com/posts/2015/JavaScript/possible-ajax-error-code-and-reasons.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3&gt;400 (Bad Request)&lt;/h3&gt;
+&lt;p&gt;From &lt;a href="http://stackoverflow.com/questions/4084715/javascript-e-keycode-doesnt-catch-backspace-del-in-ie"&gt;this stackflow post&lt;/a&gt;, IE doesn't fire &lt;strong&gt;keypress&lt;/strong&gt; event for delete, end, enter, escape, function keys, home, insert, pageUp/Down and tab. So use &lt;strong&gt;keydown&lt;/strong&gt; or &lt;strong&gt;keyup&lt;/strong&gt; instead.&lt;/p&gt;&lt;/div&gt;</description><category>JavaScript</category><category>jQuery</category><guid>http://pengyin-shan.com/posts/2015/JavaScript/javascript-tips.html</guid><pubDate>Mon, 17 Aug 2015 07:00:00 GMT</pubDate></item><item><title>Possible Ajax Error Code and Reasons</title><link>http://pengyin-shan.com/posts/2015/JavaScript/possible-ajax-error-code-and-reasons.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3&gt;400 (Bad Request)&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;In jQuery, no &lt;code&gt;JSON.stringify()&lt;/code&gt; is used to parse JavaScript object to JSON object&lt;/p&gt;
@@ -883,7 +883,7 @@
 &lt;h3&gt;No response (Back-end finsih processing but front-end give no response)&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Check your jQuery version and check if you are using &lt;code&gt;$.ajax({done: function(data../){}, fail: function(jqXHR...){}});&lt;/code&gt;. If so, try to check your jQuery to later version, or replace with &lt;code&gt;$.ajax({success: function(data...){}, error: function(jqXHR...) })&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;</description><category>Ajax</category><category>Java</category><category>jQuery</category><category>JSON</category><category>Spring MVC</category><guid>http://pengyin-shan.com/posts/2015/JavaScript/possible-ajax-error-code-and-reasons.html</guid><pubDate>Thu, 13 Aug 2015 04:00:00 GMT</pubDate></item><item><title>Ajax and Java Servlet</title><link>http://pengyin-shan.com/posts/2015/Java/ajax-and-java-servlet.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;I was working on an old Java web application today. This java web app used to pass data by using URL parameter, and I wanted to change it to passing data by using AJAX with JSON object, since there will be more data being passed in the future.&lt;/p&gt;
+&lt;/ul&gt;&lt;/div&gt;</description><category>Ajax</category><category>Java</category><category>jQuery</category><category>JSON</category><category>Spring MVC</category><guid>http://pengyin-shan.com/posts/2015/JavaScript/possible-ajax-error-code-and-reasons.html</guid><pubDate>Thu, 13 Aug 2015 07:00:00 GMT</pubDate></item><item><title>Ajax and Java Servlet</title><link>http://pengyin-shan.com/posts/2015/Java/ajax-and-java-servlet.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;I was working on an old Java web application today. This java web app used to pass data by using URL parameter, and I wanted to change it to passing data by using AJAX with JSON object, since there will be more data being passed in the future.&lt;/p&gt;
 &lt;p&gt;After working a while I realized I need to write this post becasue:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -1002,7 +1002,7 @@
 &lt;h4&gt;Tips&lt;/h4&gt;
 &lt;h5&gt;org.apache.catalina.LifecycleException: Failed to start component&lt;/h5&gt;
 &lt;p&gt;If you include &lt;code&gt;org.json&lt;/code&gt; jar file in your project, and you encourter &lt;code&gt;org.apache.catalina.LifecycleException: Failed to start component&lt;/code&gt; exception when you try to deploy to Tomcat:&lt;/p&gt;
-&lt;p&gt;Make sure you add your jar files to &lt;code&gt;Web Deployment Assebly&lt;/code&gt; in your project properies. Following &lt;a href="http://stackoverflow.com/questions/16362302/java-servlet-error-with-jsonobject"&gt;this post&lt;/a&gt; and you will be fine.&lt;/p&gt;&lt;/div&gt;</description><category>Ajax</category><category>Java</category><category>jQuery</category><category>Servlet</category><guid>http://pengyin-shan.com/posts/2015/Java/ajax-and-java-servlet.html</guid><pubDate>Mon, 03 Aug 2015 04:00:00 GMT</pubDate></item><item><title>JavaScript Object and JSON</title><link>http://pengyin-shan.com/posts/2015/JavaScript/javascript-object-and-json.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;Full information about following notes is on &lt;a href="http://www.w3schools.com/js/js_objects.asp"&gt;www3school&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Make sure you add your jar files to &lt;code&gt;Web Deployment Assebly&lt;/code&gt; in your project properies. Following &lt;a href="http://stackoverflow.com/questions/16362302/java-servlet-error-with-jsonobject"&gt;this post&lt;/a&gt; and you will be fine.&lt;/p&gt;&lt;/div&gt;</description><category>Ajax</category><category>Java</category><category>jQuery</category><category>Servlet</category><guid>http://pengyin-shan.com/posts/2015/Java/ajax-and-java-servlet.html</guid><pubDate>Mon, 03 Aug 2015 07:00:00 GMT</pubDate></item><item><title>JavaScript Object and JSON</title><link>http://pengyin-shan.com/posts/2015/JavaScript/javascript-object-and-json.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;Full information about following notes is on &lt;a href="http://www.w3schools.com/js/js_objects.asp"&gt;www3school&lt;/a&gt;.&lt;/p&gt;
 &lt;h3&gt;JavaScript Object&lt;/h3&gt;
 &lt;p&gt;A JavaScript is wrapped by &lt;code&gt;{}&lt;/code&gt; or created by &lt;code&gt;new&lt;/code&gt;. Components inside are like &lt;em&gt;key:value&lt;/em&gt; pairs.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -1083,7 +1083,7 @@ A method may or may not have return values&lt;/p&gt;
 &lt;h4&gt;Tips&lt;/h4&gt;
 &lt;ol&gt;
 &lt;li&gt;To change a JavaScript objec to JSON, using &lt;code&gt;JSON.stringify(js_object)&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/div&gt;</description><category>JavaScript</category><category>jQuery</category><guid>http://pengyin-shan.com/posts/2015/JavaScript/javascript-object-and-json.html</guid><pubDate>Fri, 10 Jul 2015 04:00:00 GMT</pubDate></item><item><title>Collection of Tips for Creating/Controlling Dropdown on Web Page</title><link>http://pengyin-shan.com/posts/2015/JavaScript/create-controll-dropdown.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;In my job, I always counter problem of creating dropdowns for web development project. Sometimes I can use Bootstrap, jQuery. Sometimes I have to use pure JavaScript. I also need to perform control options to dropdowns ocationally.&lt;/p&gt;
+&lt;/ol&gt;&lt;/div&gt;</description><category>JavaScript</category><category>jQuery</category><guid>http://pengyin-shan.com/posts/2015/JavaScript/javascript-object-and-json.html</guid><pubDate>Fri, 10 Jul 2015 07:00:00 GMT</pubDate></item><item><title>Collection of Tips for Creating/Controlling Dropdown on Web Page</title><link>http://pengyin-shan.com/posts/2015/JavaScript/create-controll-dropdown.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;In my job, I always counter problem of creating dropdowns for web development project. Sometimes I can use Bootstrap, jQuery. Sometimes I have to use pure JavaScript. I also need to perform control options to dropdowns ocationally.&lt;/p&gt;
 &lt;p&gt;I want to write this post to record all ways and tips for creating dropdown, for future reference.&lt;/p&gt;
 &lt;h2&gt;Pure JavaScript&lt;/h2&gt;
 &lt;h3&gt;Simpliest Dropdown Option&lt;/h3&gt;
@@ -1137,50 +1137,50 @@ A method may or may not have return values&lt;/p&gt;
 &lt;p&gt;CSS Structure (You may need to some tags to id in real world):&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c"&gt;/* Outside Container */&lt;/span&gt;
 &lt;span class="nt"&gt;ul&lt;/span&gt;
-&lt;span class="p"&gt;{&lt;/span&gt;   &lt;span class="nb"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="nb"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="nb"&gt;z-index&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;30&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;   &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;z-index&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;30&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
 
 &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;
-&lt;span class="p"&gt;{&lt;/span&gt;   &lt;span class="nb"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="nb"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="nb"&gt;list-style&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="nb"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;   &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;list-style&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
 
 &lt;span class="c"&gt;/* First Leval Menu */&lt;/span&gt;
 &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;
-&lt;span class="p"&gt;{&lt;/span&gt;   &lt;span class="nb"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="nb"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;1px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* adjust as you need */&lt;/span&gt;
-    &lt;span class="nb"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;4px&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* adjust as you need */&lt;/span&gt;
-    &lt;span class="nb"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;60px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="nb"&gt;text-align&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;center&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="nb"&gt;text-decoration&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;   &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="kt"&gt;px&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* adjust as you need */&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="kt"&gt;px&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="kt"&gt;px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* adjust as you need */&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;60&lt;/span&gt;&lt;span class="kt"&gt;px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;text-align&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;center&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;text-decoration&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
 
-&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt;
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nd"&gt;hover&lt;/span&gt;
 &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
 
 &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;div&lt;/span&gt;
-&lt;span class="p"&gt;{&lt;/span&gt;   &lt;span class="nb"&gt;position&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;absolute&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="nb"&gt;visibility&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;hidden&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="nb"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="nb"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;   &lt;span class="k"&gt;position&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;absolute&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;visibility&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;hidden&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
 
     &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;
-    &lt;span class="p"&gt;{&lt;/span&gt;   &lt;span class="nb"&gt;position&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;relative&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-        &lt;span class="nb"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-        &lt;span class="nb"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-        &lt;span class="nb"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;5px&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* adjust as you need */&lt;/span&gt;
-        &lt;span class="nb"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;auto&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-        &lt;span class="nb"&gt;white-space&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;nowrap&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* Specify that the text in &amp;lt;p&amp;gt; elements will never wrap */&lt;/span&gt;
-        &lt;span class="nb"&gt;text-align&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* adjust as you need */&lt;/span&gt;
-        &lt;span class="nb"&gt;text-decoration&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="p"&gt;{&lt;/span&gt;   &lt;span class="k"&gt;position&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;relative&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="kt"&gt;px&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="kt"&gt;px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* adjust as you need */&lt;/span&gt;
+        &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;auto&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="k"&gt;white-space&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;nowrap&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* Specify that the text in &amp;lt;p&amp;gt; elements will never wrap */&lt;/span&gt;
+        &lt;span class="k"&gt;text-align&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* adjust as you need */&lt;/span&gt;
+        &lt;span class="k"&gt;text-decoration&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
     &lt;span class="p"&gt;}&lt;/span&gt;
 
-    &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt;
+    &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nd"&gt;hover&lt;/span&gt;
     &lt;span class="p"&gt;{&lt;/span&gt;  &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;
 
@@ -1237,92 +1237,7 @@ A method may or may not have return values&lt;/p&gt;
 &lt;h2&gt;With jQuery&lt;/h2&gt;
 &lt;p&gt;update coming soon...&lt;/p&gt;
 &lt;h2&gt;With Bootstrap3 and jQuery&lt;/h2&gt;
-&lt;p&gt;update coming soon...&lt;/p&gt;&lt;/div&gt;</description><category>Bootstrap3</category><category>CSS</category><category>Dropdown</category><category>HTML5</category><category>JavaScript</category><category>jQuery</category><guid>http://pengyin-shan.com/posts/2015/JavaScript/create-controll-dropdown.html</guid><pubDate>Thu, 04 Jun 2015 04:00:00 GMT</pubDate></item><item><title>HTML5 Tips</title><link>http://pengyin-shan.com/posts/2015/Front%20End/html5-tips.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h2&gt;Canvas&lt;/h2&gt;
-&lt;h4&gt;HTML&lt;/h4&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;canvas&lt;/span&gt; &lt;span class="na"&gt;style&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"width:1000px; height:1000px;"&lt;/span&gt; &lt;span class="na"&gt;id&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"thecanvas"&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;canvas&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;
-
-
-&lt;h4&gt;JavaScript Operation&lt;/h4&gt;
-&lt;h5&gt;Get Context (2d)&lt;/h5&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;oCanvas&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getElementById&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"thecanvas"&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;oCtx&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;oCanvas&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getContext&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"2d"&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;/pre&gt;
-
-
-&lt;h5&gt;Add Text and Edit Text Style&lt;/h5&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;//Example of Text Shadow. If you make them to 0, you can remove text shadow&lt;/span&gt;
-&lt;span class="nx"&gt;oCtx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;shadowColor&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;"#000000"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="nx"&gt;oCtx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;shadowOffsetX&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mf"&gt;0.5&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="nx"&gt;oCtx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;shadowOffsetY&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mf"&gt;0.5&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="nx"&gt;oCtx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;shadowBlur&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mf"&gt;0.5&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="c1"&gt;//Example of Text Style&lt;/span&gt;
-&lt;span class="nx"&gt;oCtx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;font&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;"normal 18px Arial"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="nx"&gt;oCtx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;fillStyle&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;"#ccc"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="c1"&gt;//Draw Text&lt;/span&gt;
-&lt;span class="nx"&gt;oCtx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;fillText&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"Hello World"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;//x-axis and y-axis&lt;/span&gt;
-&lt;/pre&gt;
-
-
-&lt;h5&gt;Draw Existing Image to Canvas&lt;/h5&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;imageObj&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nx"&gt;Image&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
-&lt;span class="c1"&gt;//get src of existing image&lt;/span&gt;
-&lt;span class="nx"&gt;imageObj&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;src&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getElementById&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'existing_image'&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;src&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="nx"&gt;oCtx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;drawImage&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;imageObj&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;//x-axis and y-axis&lt;/span&gt;
-&lt;/pre&gt;
-
-
-&lt;h5&gt;Download Canvas as Image&lt;/h5&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cm"&gt;/**Create a (hidden) image to hold canvas data:&lt;/span&gt;
-&lt;span class="cm"&gt;&amp;lt;img hidden src="" id="downloadCanvas" /&amp;gt;&lt;/span&gt;
-&lt;span class="cm"&gt;**/&lt;/span&gt;
-&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;dataURL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;oCanvas&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;toDataURL&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'image/png'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getElementById&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'downloadCanvas'&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;width&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;oCanvas&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;width&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getElementById&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'downloadCanvas'&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;height&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;oCanvas&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;height&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getElementById&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'downloadCanvas'&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;src&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;dataURL&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="cm"&gt;/**&lt;/span&gt;
-&lt;span class="cm"&gt;If you want to have a download link to download canvas image, make sure you have HTML such as:&lt;/span&gt;
-&lt;span class="cm"&gt;&amp;lt;a id="downloadBanner" href="#" class="button" download="banner_result.png"&amp;gt;Download&amp;lt;/a&amp;gt;&lt;/span&gt;
-&lt;span class="cm"&gt;Note "download" attribute is able to re-name the downloadable image.&lt;/span&gt;
-&lt;span class="cm"&gt;**/&lt;/span&gt;
-&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getElementById&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'downloadBanner'&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;href&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;dataURL&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;/pre&gt;
-
-
-&lt;h5&gt;Clear Canvas&lt;/h5&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;//You may want to do this to remove unwanted elements from canvas&lt;/span&gt;
-&lt;span class="nx"&gt;oCtx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;clearRect&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;oCanvas&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;width&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;oCanvas&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;height&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;/pre&gt;
-
-
-&lt;h2&gt;Drag and Drop&lt;/h2&gt;
-&lt;p&gt;Examples are taken from &lt;a href="http://pengyin-shan.com/posts/2015/Front%20End/www.w3schools.com/html/html5_draganddrop.asp"&gt;w3schools.com&lt;/a&gt;.&lt;/p&gt;
-&lt;h4&gt;General Process&lt;/h4&gt;
-&lt;p&gt;Draable stuff has &lt;code&gt;draggable = 'true'&lt;/code&gt; attribute; has &lt;code&gt;ondragstart&lt;/code&gt; attribute, which takes a method.&lt;/p&gt;
-&lt;p&gt;Destination stuff has &lt;code&gt;ondrop&lt;/code&gt; and &lt;code&gt;ondragover&lt;/code&gt; attribute. Both of them take method.&lt;/p&gt;
-&lt;h4&gt;ondragstart&lt;/h4&gt;
-&lt;p&gt;This attribute takes a JavaScript method. This method takes a &lt;code&gt;event&lt;/code&gt; parameter and describe what will happen when you start to drag.&lt;/p&gt;
-&lt;p&gt;You need to set the data to drag by using &lt;code&gt;event.dataTransfer.setData(format, event.target.id)&lt;/code&gt;:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;format&lt;/code&gt; above can be &lt;code&gt;text&lt;/code&gt;, &lt;code&gt;text/plain&lt;/code&gt;, &lt;code&gt;text/html&lt;/code&gt; etc, or &lt;code&gt;URL&lt;/code&gt; format.&lt;/p&gt;
-&lt;p&gt;This function set up the data that is take via &lt;code&gt;event.target.id&lt;/code&gt;, which is the &lt;code&gt;id&lt;/code&gt; for draggable stuff, and temparary store it. Note &lt;code&gt;event.target&lt;/code&gt; now pointing to draggable stuff.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h4&gt;ondragover&lt;/h4&gt;
-&lt;p&gt;This attribute takes a JavaScript method. This method takes a &lt;code&gt;event&lt;/code&gt; parameter and describe what will happen when you drag stuff over elements without drop the stuff.&lt;/p&gt;
-&lt;p&gt;Basic set up is &lt;code&gt;event.preventDefault()&lt;/code&gt;, which prevents browser asking elements doing default behavior.&lt;/p&gt;
-&lt;h4&gt;ondrop&lt;/h4&gt;
-&lt;p&gt;This attribute takes a JavaScript method. This method takes a &lt;code&gt;event&lt;/code&gt; parameter and describe what will happen when you drop the draggable stuff.&lt;/p&gt;
-&lt;p&gt;First, you should do &lt;code&gt;event.preventDefault()&lt;/code&gt;, which prevents browser asking elements doing default behavior.&lt;/p&gt;
-&lt;p&gt;Then, you need to get the data that you dragged by using &lt;code&gt;event.dataTransfer.getData(format)&lt;/code&gt;. The format should corresponding what you had in &lt;code&gt;event.dataTransfer.setData()&lt;/code&gt; method.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;The method will return all data that has same format.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;You can get current dropdown container by using &lt;code&gt;event.target&lt;/code&gt; (instead of draggable element). You can choose to append your draggable stuff by using&lt;/p&gt;
-&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;event&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;target&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;appendChild&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getElementById&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;event&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;dataTransfer&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getData&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;format&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
-&lt;/pre&gt;
-
-
-&lt;p&gt;if you passed &lt;code&gt;id&lt;/code&gt; in &lt;code&gt;ondragstart&lt;/code&gt;'s method. Or you can do whatever you want.&lt;/p&gt;&lt;/div&gt;</description><category>HTML5</category><category>JavaScript</category><category>jQuery</category><guid>http://pengyin-shan.com/posts/2015/Front%20End/html5-tips.html</guid><pubDate>Tue, 13 Jan 2015 05:00:00 GMT</pubDate></item><item><title>Ajax and Spring MVC Controller</title><link>http://pengyin-shan.com/posts/2015/Java/ajax-and-spring-mvc-controller.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;Note&lt;/p&gt;
+&lt;p&gt;update coming soon...&lt;/p&gt;&lt;/div&gt;</description><category>Bootstrap3</category><category>CSS</category><category>Dropdown</category><category>HTML5</category><category>JavaScript</category><category>jQuery</category><guid>http://pengyin-shan.com/posts/2015/JavaScript/create-controll-dropdown.html</guid><pubDate>Thu, 04 Jun 2015 07:00:00 GMT</pubDate></item><item><title>Ajax and Spring MVC Controller</title><link>http://pengyin-shan.com/posts/2015/Java/ajax-and-spring-mvc-controller.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;Note&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Before you through two cases below, make sure you check your &lt;strong&gt;web.xml&lt;/strong&gt; and get the &lt;code&gt;&amp;lt;url-pattern&amp;gt;&lt;/code&gt;:
 - If your web.xml set up default url-pattern &lt;code&gt;/&lt;/code&gt;, when you refer a link, you don't need to add any suffix on it.
@@ -1409,7 +1324,92 @@ A method may or may not have return values&lt;/p&gt;
 &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="n"&gt;ModelAndView&lt;/span&gt; &lt;span class="nf"&gt;test&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nd"&gt;@PathVariable&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"jsonstuff"&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="n"&gt;JSONObject&lt;/span&gt; &lt;span class="n"&gt;json&lt;/span&gt;&lt;span class="o"&gt;){&lt;/span&gt;
 &lt;span class="c1"&gt;//Or @PathVaraible("jsonstuff") String json&lt;/span&gt;
 &lt;span class="o"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</description><category>Ajax</category><category>Java</category><category>jQuery</category><category>Spring</category><guid>http://pengyin-shan.com/posts/2015/Java/ajax-and-spring-mvc-controller.html</guid><pubDate>Tue, 13 Jan 2015 05:00:00 GMT</pubDate></item><item><title>JavaScript Library Experience: FullCalendar</title><link>http://pengyin-shan.com/posts/2015/JavaScript/javascript-library-experience-fullcalendar.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3&gt;First Impression and Basic Usage&lt;/h3&gt;
+&lt;/pre&gt;&lt;/div&gt;</description><category>Ajax</category><category>Java</category><category>jQuery</category><category>Spring</category><guid>http://pengyin-shan.com/posts/2015/Java/ajax-and-spring-mvc-controller.html</guid><pubDate>Tue, 13 Jan 2015 08:00:00 GMT</pubDate></item><item><title>HTML5 Tips</title><link>http://pengyin-shan.com/posts/2015/Front%20End/html5-tips.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h2&gt;Canvas&lt;/h2&gt;
+&lt;h4&gt;HTML&lt;/h4&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;canvas&lt;/span&gt; &lt;span class="na"&gt;style&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"width:1000px; height:1000px;"&lt;/span&gt; &lt;span class="na"&gt;id&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"thecanvas"&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;canvas&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;
+
+
+&lt;h4&gt;JavaScript Operation&lt;/h4&gt;
+&lt;h5&gt;Get Context (2d)&lt;/h5&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;oCanvas&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getElementById&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"thecanvas"&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;oCtx&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;oCanvas&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getContext&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"2d"&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/pre&gt;
+
+
+&lt;h5&gt;Add Text and Edit Text Style&lt;/h5&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;//Example of Text Shadow. If you make them to 0, you can remove text shadow&lt;/span&gt;
+&lt;span class="nx"&gt;oCtx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;shadowColor&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;"#000000"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="nx"&gt;oCtx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;shadowOffsetX&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mf"&gt;0.5&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="nx"&gt;oCtx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;shadowOffsetY&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mf"&gt;0.5&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="nx"&gt;oCtx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;shadowBlur&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mf"&gt;0.5&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="c1"&gt;//Example of Text Style&lt;/span&gt;
+&lt;span class="nx"&gt;oCtx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;font&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;"normal 18px Arial"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="nx"&gt;oCtx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;fillStyle&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;"#ccc"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="c1"&gt;//Draw Text&lt;/span&gt;
+&lt;span class="nx"&gt;oCtx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;fillText&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"Hello World"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;//x-axis and y-axis&lt;/span&gt;
+&lt;/pre&gt;
+
+
+&lt;h5&gt;Draw Existing Image to Canvas&lt;/h5&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;imageObj&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nx"&gt;Image&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+&lt;span class="c1"&gt;//get src of existing image&lt;/span&gt;
+&lt;span class="nx"&gt;imageObj&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;src&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getElementById&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'existing_image'&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;src&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="nx"&gt;oCtx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;drawImage&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;imageObj&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;//x-axis and y-axis&lt;/span&gt;
+&lt;/pre&gt;
+
+
+&lt;h5&gt;Download Canvas as Image&lt;/h5&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cm"&gt;/**Create a (hidden) image to hold canvas data:&lt;/span&gt;
+&lt;span class="cm"&gt;&amp;lt;img hidden src="" id="downloadCanvas" /&amp;gt;&lt;/span&gt;
+&lt;span class="cm"&gt;**/&lt;/span&gt;
+&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;dataURL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;oCanvas&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;toDataURL&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'image/png'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getElementById&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'downloadCanvas'&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;width&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;oCanvas&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;width&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getElementById&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'downloadCanvas'&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;height&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;oCanvas&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;height&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getElementById&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'downloadCanvas'&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;src&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;dataURL&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="cm"&gt;/**&lt;/span&gt;
+&lt;span class="cm"&gt;If you want to have a download link to download canvas image, make sure you have HTML such as:&lt;/span&gt;
+&lt;span class="cm"&gt;&amp;lt;a id="downloadBanner" href="#" class="button" download="banner_result.png"&amp;gt;Download&amp;lt;/a&amp;gt;&lt;/span&gt;
+&lt;span class="cm"&gt;Note "download" attribute is able to re-name the downloadable image.&lt;/span&gt;
+&lt;span class="cm"&gt;**/&lt;/span&gt;
+&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getElementById&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'downloadBanner'&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;href&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;dataURL&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;
+
+
+&lt;h5&gt;Clear Canvas&lt;/h5&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;//You may want to do this to remove unwanted elements from canvas&lt;/span&gt;
+&lt;span class="nx"&gt;oCtx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;clearRect&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;oCanvas&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;width&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;oCanvas&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;height&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/pre&gt;
+
+
+&lt;h2&gt;Drag and Drop&lt;/h2&gt;
+&lt;p&gt;Examples are taken from &lt;a href="http://pengyin-shan.com/posts/2015/Front%20End/www.w3schools.com/html/html5_draganddrop.asp"&gt;w3schools.com&lt;/a&gt;.&lt;/p&gt;
+&lt;h4&gt;General Process&lt;/h4&gt;
+&lt;p&gt;Draable stuff has &lt;code&gt;draggable = 'true'&lt;/code&gt; attribute; has &lt;code&gt;ondragstart&lt;/code&gt; attribute, which takes a method.&lt;/p&gt;
+&lt;p&gt;Destination stuff has &lt;code&gt;ondrop&lt;/code&gt; and &lt;code&gt;ondragover&lt;/code&gt; attribute. Both of them take method.&lt;/p&gt;
+&lt;h4&gt;ondragstart&lt;/h4&gt;
+&lt;p&gt;This attribute takes a JavaScript method. This method takes a &lt;code&gt;event&lt;/code&gt; parameter and describe what will happen when you start to drag.&lt;/p&gt;
+&lt;p&gt;You need to set the data to drag by using &lt;code&gt;event.dataTransfer.setData(format, event.target.id)&lt;/code&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;format&lt;/code&gt; above can be &lt;code&gt;text&lt;/code&gt;, &lt;code&gt;text/plain&lt;/code&gt;, &lt;code&gt;text/html&lt;/code&gt; etc, or &lt;code&gt;URL&lt;/code&gt; format.&lt;/p&gt;
+&lt;p&gt;This function set up the data that is take via &lt;code&gt;event.target.id&lt;/code&gt;, which is the &lt;code&gt;id&lt;/code&gt; for draggable stuff, and temparary store it. Note &lt;code&gt;event.target&lt;/code&gt; now pointing to draggable stuff.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4&gt;ondragover&lt;/h4&gt;
+&lt;p&gt;This attribute takes a JavaScript method. This method takes a &lt;code&gt;event&lt;/code&gt; parameter and describe what will happen when you drag stuff over elements without drop the stuff.&lt;/p&gt;
+&lt;p&gt;Basic set up is &lt;code&gt;event.preventDefault()&lt;/code&gt;, which prevents browser asking elements doing default behavior.&lt;/p&gt;
+&lt;h4&gt;ondrop&lt;/h4&gt;
+&lt;p&gt;This attribute takes a JavaScript method. This method takes a &lt;code&gt;event&lt;/code&gt; parameter and describe what will happen when you drop the draggable stuff.&lt;/p&gt;
+&lt;p&gt;First, you should do &lt;code&gt;event.preventDefault()&lt;/code&gt;, which prevents browser asking elements doing default behavior.&lt;/p&gt;
+&lt;p&gt;Then, you need to get the data that you dragged by using &lt;code&gt;event.dataTransfer.getData(format)&lt;/code&gt;. The format should corresponding what you had in &lt;code&gt;event.dataTransfer.setData()&lt;/code&gt; method.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The method will return all data that has same format.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;You can get current dropdown container by using &lt;code&gt;event.target&lt;/code&gt; (instead of draggable element). You can choose to append your draggable stuff by using&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;event&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;target&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;appendChild&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getElementById&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;event&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;dataTransfer&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getData&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;format&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;
+
+
+&lt;p&gt;if you passed &lt;code&gt;id&lt;/code&gt; in &lt;code&gt;ondragstart&lt;/code&gt;'s method. Or you can do whatever you want.&lt;/p&gt;&lt;/div&gt;</description><category>HTML5</category><category>JavaScript</category><category>jQuery</category><guid>http://pengyin-shan.com/posts/2015/Front%20End/html5-tips.html</guid><pubDate>Tue, 13 Jan 2015 08:00:00 GMT</pubDate></item><item><title>JavaScript Library Experience: FullCalendar</title><link>http://pengyin-shan.com/posts/2015/JavaScript/javascript-library-experience-fullcalendar.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3&gt;First Impression and Basic Usage&lt;/h3&gt;
 &lt;p&gt;I got a request in my work, asking me to research a open source JavaScript calendar library. The calendar should be able to do following:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Add/Load/Delete Events, which needs a commucation with back-end. Event content can be configured, which means developer can over write event trigger function. Also developer can set up event time plot.&lt;/p&gt;
@@ -1470,4 +1470,4 @@ resources loading successfully. Then replace all &lt;code&gt;CDN&lt;/code&gt; re
 &lt;p&gt;&lt;strong&gt;Important Notes&lt;/strong&gt;
 - &lt;code&gt;$(document).ready&lt;/code&gt; triggers after &lt;code&gt;HTML&lt;/code&gt; elements has been loaded.
 - &lt;code&gt;onload&lt;/code&gt; event occurs later, after all content elements, such as &lt;code&gt;image&lt;/code&gt;, has been loaded.
-- Next time I get this probelm, I should try to load stylesheet later, using &lt;code&gt;"&amp;lt;link/&amp;gt;".appendTo("head")&lt;/code&gt;.&lt;/p&gt;&lt;/div&gt;</description><category>Bootstrap3</category><category>JavaScript</category><category>jQuery</category><guid>http://pengyin-shan.com/posts/2015/JavaScript/javascript-library-experience-fullcalendar.html</guid><pubDate>Tue, 13 Jan 2015 05:00:00 GMT</pubDate></item></channel></rss>
+- Next time I get this probelm, I should try to load stylesheet later, using &lt;code&gt;"&amp;lt;link/&amp;gt;".appendTo("head")&lt;/code&gt;.&lt;/p&gt;&lt;/div&gt;</description><category>Bootstrap3</category><category>JavaScript</category><category>jQuery</category><guid>http://pengyin-shan.com/posts/2015/JavaScript/javascript-library-experience-fullcalendar.html</guid><pubDate>Tue, 13 Jan 2015 08:00:00 GMT</pubDate></item></channel></rss>

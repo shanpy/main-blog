@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>I'm Pengyin (Note Taking)</title><link>http://pengyin-shan.com/</link><description></description><atom:link rel="self" href="http://pengyin-shan.com/categories/note-taking.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 10 Oct 2017 14:42:50 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>(Chinese) Kindle Highlights for 読書は1冊のノートにまとめなさい (How to read a book effectively) by 奥野宣之</title><link>http://pengyin-shan.com/posts/2017/book/kindle-hightlights-for-how-to-read-a-book-effectively.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h2&gt;读书笔记的好处&lt;/h2&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>I'm Pengyin (Posts about Note Taking)</title><link>http://pengyin-shan.com/</link><description></description><atom:link href="http://pengyin-shan.com/categories/note-taking.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Thu, 18 Jan 2018 19:04:57 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>(Chinese) Kindle Highlights for 読書は1冊のノートにまとめなさい (How to read a book effectively) by 奥野宣之</title><link>http://pengyin-shan.com/posts/2017/book/kindle-hightlights-for-how-to-read-a-book-effectively.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h2&gt;读书笔记的好处&lt;/h2&gt;
 &lt;p&gt;至于能否得心应手地做好读书笔记，进而熟练地参考记录过的笔记，都是坚持写读书笔记几年甚至是几十年后才能收到的效果。所以，为了达到这样的境界，一切都应该以“能坚持下去”为先。&lt;/p&gt;
 &lt;p&gt;别看只是简短的一句话，写和不写还是有很大区别的。&lt;/p&gt;
 &lt;p&gt;当你以思想输出为前提去读书时，思想输入的质量也会有所提升，而且亲手写文章的好处比口头叙述要多。&lt;/p&gt;
@@ -119,7 +119,7 @@
 &lt;li&gt;
 &lt;p&gt;名言要贴在显眼处: 可以把这句话复印下来，用透明胶带贴在桌上，笔记本的封面、文件夹等收纳用品的表面也都是适合贴名言的好地方. 你想把名言贴在手机背面、笔记本电脑上也可以，&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ol&gt;&lt;/div&gt;</description><category>Chinese</category><category>Note Taking</category><category>Reading Notes</category><guid>http://pengyin-shan.com/posts/2017/book/kindle-hightlights-for-how-to-read-a-book-effectively.html</guid><pubDate>Sun, 08 Oct 2017 04:00:00 GMT</pubDate></item><item><title>(In Chinese) 聪明人用方格笔记本-阅读摘抄</title><link>http://pengyin-shan.com/posts/2017/book/chinese-use-graph-ruled-notebook.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;hr&gt;
+&lt;/ol&gt;&lt;/div&gt;</description><category>Chinese</category><category>Note Taking</category><category>Reading Notes</category><guid>http://pengyin-shan.com/posts/2017/book/kindle-hightlights-for-how-to-read-a-book-effectively.html</guid><pubDate>Sun, 08 Oct 2017 07:00:00 GMT</pubDate></item><item><title>(In Chinese) 聪明人用方格笔记本-阅读摘抄</title><link>http://pengyin-shan.com/posts/2017/book/chinese-use-graph-ruled-notebook.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;hr&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;进化笔记本：学习、工作、博弈&lt;/p&gt;
@@ -376,4 +376,4 @@
 &lt;li&gt;强调条形图中的差距&lt;/li&gt;
 &lt;li&gt;在右侧写出具体解释&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img alt="高楼效果" src="http://pengyin-shan.com/images/2017/books/notebook/building.png"&gt;&lt;/p&gt;&lt;/div&gt;</description><category>Chinese</category><category>Note Taking</category><category>Reading Notes</category><guid>http://pengyin-shan.com/posts/2017/book/chinese-use-graph-ruled-notebook.html</guid><pubDate>Wed, 08 Feb 2017 05:00:00 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;img alt="高楼效果" src="http://pengyin-shan.com/images/2017/books/notebook/building.png"&gt;&lt;/p&gt;&lt;/div&gt;</description><category>Chinese</category><category>Note Taking</category><category>Reading Notes</category><guid>http://pengyin-shan.com/posts/2017/book/chinese-use-graph-ruled-notebook.html</guid><pubDate>Wed, 08 Feb 2017 08:00:00 GMT</pubDate></item></channel></rss>

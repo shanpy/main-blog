@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>I'm Pengyin (CSS)</title><link>http://pengyin-shan.com/</link><description></description><atom:link type="application/rss+xml" href="http://pengyin-shan.com/categories/css.xml" rel="self"></atom:link><language>en</language><lastBuildDate>Wed, 21 Jun 2017 01:46:43 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Bootstrap 3 Sticky Footer by Martin Bean and Ryan Fait</title><link>http://pengyin-shan.com/posts/2015/Front%20End/bootstrap3_sticky_footer.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;You can view introduction page &lt;a href="http://getbootstrap.com/2.3.2/examples/sticky-footer.html"&gt;here&lt;/a&gt;.&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>I'm Pengyin (Posts about CSS)</title><link>http://pengyin-shan.com/</link><description></description><atom:link href="http://pengyin-shan.com/categories/css.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Thu, 18 Jan 2018 19:05:01 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Bootstrap 3 Sticky Footer by Martin Bean and Ryan Fait</title><link>http://pengyin-shan.com/posts/2015/Front%20End/bootstrap3_sticky_footer.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;You can view introduction page &lt;a href="http://getbootstrap.com/2.3.2/examples/sticky-footer.html"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Generally A sticky footer is created just like the &lt;code&gt;fixed-nav&lt;/code&gt; bar in Bootstrap3. This footer will always stay at the bottom of page, even though there isn't enough content.&lt;/p&gt;
 &lt;p&gt;Martin Bean and Ryan Fait also have a Sticky Footer with Fixed Nav Bar page &lt;a href="http://getbootstrap.com/2.3.2/examples/sticky-footer-navbar.html"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Following is part of basic code for Sticky Nav bar with my analysis (You need Bootstrap3 css library):&lt;/p&gt;
@@ -32,23 +32,23 @@
 &lt;span class="c"&gt;  -------------------------------------------------- */&lt;/span&gt;
   &lt;span class="nt"&gt;html&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;
   &lt;span class="nt"&gt;body&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="nb"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;100%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="kt"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
     &lt;span class="c"&gt;/* The html and body elements cannot have any padding or margin. */&lt;/span&gt;
   &lt;span class="p"&gt;}&lt;/span&gt;
   &lt;span class="c"&gt;/* Wrapper for page content to push down footer */&lt;/span&gt;
-  &lt;span class="nn"&gt;#wrap&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="nb"&gt;min-height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;100%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="nb"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;auto&lt;/span&gt; &lt;span class="cp"&gt;!important&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="p"&gt;#&lt;/span&gt;&lt;span class="nn"&gt;wrap&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;min-height&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="kt"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;auto&lt;/span&gt; &lt;span class="cp"&gt;!important&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
     &lt;span class="c"&gt;/* Negative indent footer by it's height */&lt;/span&gt;
-    &lt;span class="nb"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="nb"&gt;auto&lt;/span&gt; &lt;span class="m"&gt;-60px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="kc"&gt;auto&lt;/span&gt; &lt;span class="mi"&gt;-60&lt;/span&gt;&lt;span class="kt"&gt;px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
     &lt;span class="c"&gt;/**In th&lt;/span&gt;
 &lt;span class="c"&gt;  }&lt;/span&gt;
 &lt;span class="c"&gt;  /* Set the fixed height of the footer here */&lt;/span&gt;
-  &lt;span class="m"&gt;#push&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;
-  &lt;span class="m"&gt;#footer&lt;/span&gt; &lt;span class="err"&gt;{&lt;/span&gt;
-    &lt;span class="nb"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;60px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="err"&gt;#push,&lt;/span&gt;
+  &lt;span class="err"&gt;#footer&lt;/span&gt; &lt;span class="err"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;60&lt;/span&gt;&lt;span class="kt"&gt;px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
   &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</description><category>Bootstrap3</category><category>CSS</category><category>HTML5</category><category>JavaScript</category><guid>http://pengyin-shan.com/posts/2015/Front%20End/bootstrap3_sticky_footer.html</guid><pubDate>Thu, 09 Jul 2015 04:00:00 GMT</pubDate></item><item><title>Collection of Tips for Creating/Controlling Dropdown on Web Page</title><link>http://pengyin-shan.com/posts/2015/JavaScript/create-controll-dropdown.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;In my job, I always counter problem of creating dropdowns for web development project. Sometimes I can use Bootstrap, jQuery. Sometimes I have to use pure JavaScript. I also need to perform control options to dropdowns ocationally.&lt;/p&gt;
+&lt;/pre&gt;&lt;/div&gt;</description><category>Bootstrap3</category><category>CSS</category><category>HTML5</category><category>JavaScript</category><guid>http://pengyin-shan.com/posts/2015/Front%20End/bootstrap3_sticky_footer.html</guid><pubDate>Thu, 09 Jul 2015 07:00:00 GMT</pubDate></item><item><title>Collection of Tips for Creating/Controlling Dropdown on Web Page</title><link>http://pengyin-shan.com/posts/2015/JavaScript/create-controll-dropdown.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;In my job, I always counter problem of creating dropdowns for web development project. Sometimes I can use Bootstrap, jQuery. Sometimes I have to use pure JavaScript. I also need to perform control options to dropdowns ocationally.&lt;/p&gt;
 &lt;p&gt;I want to write this post to record all ways and tips for creating dropdown, for future reference.&lt;/p&gt;
 &lt;h2&gt;Pure JavaScript&lt;/h2&gt;
 &lt;h3&gt;Simpliest Dropdown Option&lt;/h3&gt;
@@ -102,50 +102,50 @@
 &lt;p&gt;CSS Structure (You may need to some tags to id in real world):&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c"&gt;/* Outside Container */&lt;/span&gt;
 &lt;span class="nt"&gt;ul&lt;/span&gt;
-&lt;span class="p"&gt;{&lt;/span&gt;   &lt;span class="nb"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="nb"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="nb"&gt;z-index&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;30&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;   &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;z-index&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;30&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
 
 &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt;
-&lt;span class="p"&gt;{&lt;/span&gt;   &lt;span class="nb"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="nb"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="nb"&gt;list-style&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="nb"&gt;float&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;   &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;list-style&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;float&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
 
 &lt;span class="c"&gt;/* First Leval Menu */&lt;/span&gt;
 &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;
-&lt;span class="p"&gt;{&lt;/span&gt;   &lt;span class="nb"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="nb"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;1px&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* adjust as you need */&lt;/span&gt;
-    &lt;span class="nb"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;4px&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* adjust as you need */&lt;/span&gt;
-    &lt;span class="nb"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;60px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="nb"&gt;text-align&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;center&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="nb"&gt;text-decoration&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;   &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="kt"&gt;px&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* adjust as you need */&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="kt"&gt;px&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="kt"&gt;px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* adjust as you need */&lt;/span&gt;
+    &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;60&lt;/span&gt;&lt;span class="kt"&gt;px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;text-align&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;center&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;text-decoration&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
 
-&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt;
+&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;li&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nd"&gt;hover&lt;/span&gt;
 &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;
 
 &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;div&lt;/span&gt;
-&lt;span class="p"&gt;{&lt;/span&gt;   &lt;span class="nb"&gt;position&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;absolute&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="nb"&gt;visibility&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;hidden&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="nb"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="nb"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;   &lt;span class="k"&gt;position&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;absolute&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;visibility&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;hidden&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
 
     &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;
-    &lt;span class="p"&gt;{&lt;/span&gt;   &lt;span class="nb"&gt;position&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;relative&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-        &lt;span class="nb"&gt;display&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-        &lt;span class="nb"&gt;margin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-        &lt;span class="nb"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;5px&lt;/span&gt; &lt;span class="m"&gt;10px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* adjust as you need */&lt;/span&gt;
-        &lt;span class="nb"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;auto&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-        &lt;span class="nb"&gt;white-space&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;nowrap&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* Specify that the text in &amp;lt;p&amp;gt; elements will never wrap */&lt;/span&gt;
-        &lt;span class="nb"&gt;text-align&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* adjust as you need */&lt;/span&gt;
-        &lt;span class="nb"&gt;text-decoration&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="p"&gt;{&lt;/span&gt;   &lt;span class="k"&gt;position&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;relative&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="k"&gt;display&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;block&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="k"&gt;margin&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="kt"&gt;px&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="kt"&gt;px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* adjust as you need */&lt;/span&gt;
+        &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;auto&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+        &lt;span class="k"&gt;white-space&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;nowrap&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* Specify that the text in &amp;lt;p&amp;gt; elements will never wrap */&lt;/span&gt;
+        &lt;span class="k"&gt;text-align&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;left&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* adjust as you need */&lt;/span&gt;
+        &lt;span class="k"&gt;text-decoration&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
     &lt;span class="p"&gt;}&lt;/span&gt;
 
-    &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="nd"&gt;:hover&lt;/span&gt;
+    &lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nd"&gt;hover&lt;/span&gt;
     &lt;span class="p"&gt;{&lt;/span&gt;  &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;
 
@@ -202,7 +202,7 @@
 &lt;h2&gt;With jQuery&lt;/h2&gt;
 &lt;p&gt;update coming soon...&lt;/p&gt;
 &lt;h2&gt;With Bootstrap3 and jQuery&lt;/h2&gt;
-&lt;p&gt;update coming soon...&lt;/p&gt;&lt;/div&gt;</description><category>Bootstrap3</category><category>CSS</category><category>Dropdown</category><category>HTML5</category><category>JavaScript</category><category>jQuery</category><guid>http://pengyin-shan.com/posts/2015/JavaScript/create-controll-dropdown.html</guid><pubDate>Thu, 04 Jun 2015 04:00:00 GMT</pubDate></item><item><title>SASS Q&amp;A and Tips CONTINUALLY UPDATE</title><link>http://pengyin-shan.com/posts/2015/Front%20End/sass-qa-and-tips.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;This post will serve as a Q&amp;amp;A note during the process of learning Sass. I'm absolutely a new beginner so I'll keep questions and answers updating continously:)&lt;/p&gt;
+&lt;p&gt;update coming soon...&lt;/p&gt;&lt;/div&gt;</description><category>Bootstrap3</category><category>CSS</category><category>Dropdown</category><category>HTML5</category><category>JavaScript</category><category>jQuery</category><guid>http://pengyin-shan.com/posts/2015/JavaScript/create-controll-dropdown.html</guid><pubDate>Thu, 04 Jun 2015 07:00:00 GMT</pubDate></item><item><title>SASS Q&amp;A and Tips CONTINUALLY UPDATE</title><link>http://pengyin-shan.com/posts/2015/Front%20End/sass-qa-and-tips.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;This post will serve as a Q&amp;amp;A note during the process of learning Sass. I'm absolutely a new beginner so I'll keep questions and answers updating continously:)&lt;/p&gt;
 &lt;h3&gt;Question: What is the syntax difference between sass and scss?&lt;/h3&gt;
 &lt;p&gt;So far I've found following difference:&lt;/p&gt;
 &lt;ul&gt;
@@ -243,7 +243,7 @@
 &lt;/blockquote&gt;
 &lt;p&gt;In html page, add link to these scss file, using '.css' extension. For example: &lt;code&gt;&amp;lt;link rel="stylesheet" type="text/css" href="/css/default.css"&amp;gt;&lt;/code&gt; pointing to default.scss in css folder. You can actually find default.css in _site/css folder&lt;/p&gt;
 &lt;p&gt;Jeyll will automatically compile scss and sass file when you build your project.&lt;/p&gt;
-&lt;p&gt;On Jekyll website, there are some websites that are built with Sass. You can refer them for folder structure on your own blog site.&lt;/p&gt;&lt;/div&gt;</description><category>Compass</category><category>CSS</category><category>SASS</category><guid>http://pengyin-shan.com/posts/2015/Front%20End/sass-qa-and-tips.html</guid><pubDate>Tue, 13 Jan 2015 05:00:00 GMT</pubDate></item><item><title>Bootstrap3 API Reading Notes</title><link>http://pengyin-shan.com/posts/2014/bootstrap3-api-reading-notes.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;This post is transferred from my &lt;a href="http://blogpengyin.herokuapp.com/"&gt;old Hexo blog site&lt;/a&gt;, created on 2014.&lt;/p&gt;
+&lt;p&gt;On Jekyll website, there are some websites that are built with Sass. You can refer them for folder structure on your own blog site.&lt;/p&gt;&lt;/div&gt;</description><category>Compass</category><category>CSS</category><category>SASS</category><guid>http://pengyin-shan.com/posts/2015/Front%20End/sass-qa-and-tips.html</guid><pubDate>Tue, 13 Jan 2015 08:00:00 GMT</pubDate></item><item><title>Bootstrap3 API Reading Notes</title><link>http://pengyin-shan.com/posts/2014/bootstrap3-api-reading-notes.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;This post is transferred from my &lt;a href="http://blogpengyin.herokuapp.com/"&gt;old Hexo blog site&lt;/a&gt;, created on 2014.&lt;/p&gt;
 &lt;h2&gt;CSS Part&lt;/h2&gt;
 &lt;p&gt;This is a reading note for Bootstrap 3 Official API CSS part, including everything I think that will be useful for future web development.&lt;/p&gt;
 &lt;p&gt;Bootstrap3 needs to have &lt;code&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/code&gt; on top for html5 recogization purpose.&lt;/p&gt;
@@ -830,7 +830,7 @@ can be reached by event.relatedTarget&lt;/p&gt;
 &lt;p&gt;Quotes:&lt;/p&gt;
 &lt;p&gt;-&lt;code&gt;&amp;lt;blockquote&amp;gt;&lt;/code&gt;: start of a block of quote&lt;/p&gt;
 &lt;p&gt;-&lt;code&gt;&amp;lt;cite&amp;gt;&lt;/code&gt;: cite author name&lt;/p&gt;
-&lt;p&gt;-&lt;code&gt;.pull-right&lt;/code&gt;: all block text align is right&lt;/p&gt;&lt;/div&gt;</description><category>Bootstrap3</category><category>CSS</category><category>JavaScript</category><category>jQuery</category><guid>http://pengyin-shan.com/posts/2014/bootstrap3-api-reading-notes.html</guid><pubDate>Wed, 10 Dec 2014 05:00:00 GMT</pubDate></item><item><title>Bootstrap3 Tips CONTINUALLY UPDATE</title><link>http://pengyin-shan.com/posts/2015/Front%20End/bootstrap3-tricks.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;This post is transferred from my &lt;a href="http://blogpengyin.herokuapp.com/"&gt;old Hexo blog site&lt;/a&gt;, created on 2014. This blog will be &lt;strong&gt;updating continually&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;-&lt;code&gt;.pull-right&lt;/code&gt;: all block text align is right&lt;/p&gt;&lt;/div&gt;</description><category>Bootstrap3</category><category>CSS</category><category>JavaScript</category><category>jQuery</category><guid>http://pengyin-shan.com/posts/2014/bootstrap3-api-reading-notes.html</guid><pubDate>Wed, 10 Dec 2014 08:00:00 GMT</pubDate></item><item><title>Bootstrap3 Tips CONTINUALLY UPDATE</title><link>http://pengyin-shan.com/posts/2015/Front%20End/bootstrap3-tricks.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;This post is transferred from my &lt;a href="http://blogpengyin.herokuapp.com/"&gt;old Hexo blog site&lt;/a&gt;, created on 2014. This blog will be &lt;strong&gt;updating continually&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;If you want to find specific topic, feel free to use &lt;code&gt;ctrl + F&lt;/code&gt; to search for keyword.&lt;/p&gt;
 &lt;h2&gt;Change Glyphicon when Bootstrap Collapse Show or Hide&lt;/h2&gt;
 &lt;p&gt;This is what I learned from: http://stackoverflow.com/questions/18325779/bootstrap-3-collapse-show-state-with-chevron-icon . The answer is from &lt;code&gt;zessx&lt;/code&gt;.&lt;/p&gt;
@@ -905,4 +905,4 @@ can be reached by event.relatedTarget&lt;/p&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;this.checked="checked"&lt;/code&gt; or &lt;code&gt;this.checked = true&lt;/code&gt; will only change use interface. Your checkbox will be checked buy there is nothing changed in code.&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;</description><category>Bootstrap3</category><category>CSS</category><category>JavaScript</category><category>jQuery</category><guid>http://pengyin-shan.com/posts/2015/Front%20End/bootstrap3-tricks.html</guid><pubDate>Wed, 10 Dec 2014 05:00:00 GMT</pubDate></item></channel></rss>
+&lt;/ul&gt;&lt;/div&gt;</description><category>Bootstrap3</category><category>CSS</category><category>JavaScript</category><category>jQuery</category><guid>http://pengyin-shan.com/posts/2015/Front%20End/bootstrap3-tricks.html</guid><pubDate>Wed, 10 Dec 2014 08:00:00 GMT</pubDate></item></channel></rss>

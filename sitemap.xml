@@ -23,11 +23,11 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/2018/index.html</loc>
-  <lastmod>2018-01-30T18:08:00Z</lastmod>
+  <lastmod>2018-02-01T04:43:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/archive.html</loc>
-  <lastmod>2018-01-30T18:08:00Z</lastmod>
+  <lastmod>2018-02-01T04:42:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/ajax.html</loc>
@@ -90,6 +90,10 @@
   <lastmod>2018-01-30T18:08:00Z</lastmod>
  </url>
  <url>
+  <loc>http://pengyin-shan.com/categories/cat_math.html</loc>
+  <lastmod>2018-02-01T04:43:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://pengyin-shan.com/categories/cat_others.html</loc>
   <lastmod>2018-01-30T18:08:00Z</lastmod>
  </url>
@@ -103,7 +107,7 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/chinese.html</loc>
-  <lastmod>2018-01-30T18:08:00Z</lastmod>
+  <lastmod>2018-02-01T04:43:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/clean-data.html</loc>
@@ -199,7 +203,7 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/index.html</loc>
-  <lastmod>2018-01-30T18:08:00Z</lastmod>
+  <lastmod>2018-02-01T04:42:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/ipython.html</loc>
@@ -238,6 +242,10 @@
   <lastmod>2018-01-30T18:08:00Z</lastmod>
  </url>
  <url>
+  <loc>http://pengyin-shan.com/categories/math.html</loc>
+  <lastmod>2018-02-01T04:43:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://pengyin-shan.com/categories/meeting-notes.html</loc>
   <lastmod>2018-01-30T18:08:00Z</lastmod>
  </url>
@@ -251,7 +259,7 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/note-taking.html</loc>
-  <lastmod>2018-01-30T18:08:00Z</lastmod>
+  <lastmod>2018-02-01T04:43:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/oop.html</loc>
@@ -387,11 +395,11 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/index-9.html</loc>
-  <lastmod>2018-01-30T18:08:00Z</lastmod>
+  <lastmod>2018-02-01T04:42:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/index.html</loc>
-  <lastmod>2018-01-30T18:08:00Z</lastmod>
+  <lastmod>2018-02-01T04:43:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/posts/2014/benefit-of-hosting-content-library-with-CDN.html</loc>
@@ -767,10 +775,14 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/posts/2018/book/highlight-of-money-oder-das-1-X-1-des-geldes-by-bodo-shafer.html</loc>
-  <lastmod>2018-01-30T18:08:00Z</lastmod>
+  <lastmod>2018-02-01T04:42:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://pengyin-shan.com/posts/2018/math/chinese-permutation-combination-brief-note.html</loc>
+  <lastmod>2018-02-01T04:43:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/stories/about_me.html</loc>
-  <lastmod>2018-01-30T18:08:00Z</lastmod>
+  <lastmod>2018-02-01T04:43:00Z</lastmod>
  </url>
 </urlset>

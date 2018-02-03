@@ -373,12 +373,27 @@ section {
  */
 /* FONT PATH
  * -------------------------- */
-@font-face {
+ @font-face {
   font-family: 'FontAwesome';
   src: url('https://netdna.bootstrapcdn.com/font-awesome/3.2.1/font/fontawesome-webfont.eot?v=3.2.1');
   src: url('https://netdna.bootstrapcdn.com/font-awesome/3.2.1/font/fontawesome-webfont.eot?#iefix&v=3.2.1') format('embedded-opentype'), url('https://netdna.bootstrapcdn.com/font-awesome/3.2.1/font/fontawesome-webfont.woff?v=3.2.1') format('woff'), url('https://netdna.bootstrapcdn.com/font-awesome/3.2.1/font/fontawesome-webfont.ttf?v=3.2.1') format('truetype'), url('https://netdna.bootstrapcdn.com/font-awesome/3.2.1/font/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1') format('svg');
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face{
+    font-family:"SQMarket";
+    src:url("/assets/fonts/sqmarket-regular.eot");
+    src:url("/assets/fonts/sqmarket-regular.eot?#iefix") format("eot"),url("/assets/fonts/sqmarket-regular.woff") format("woff"),url("/assets/fonts/sqmarket-regular.ttf") format("truetype");
+    font-weight:300;
+    font-style:normal
+}
+@font-face{
+    font-family:"SQMarket";
+    src:url("/assets/fonts/sqmarket-regular.eot");
+    src:url("/assets/fonts/sqmarket-regular.eot?#iefix") format("eot"),url("/assets/fonts/sqmarket-regular.woff") format("woff"),url("/assets/fonts/sqmarket-regular.ttf") format("truetype");
+    font-weight:normal;
+    font-style:normal
 }
 /* FONT AWESOME CORE
  * -------------------------- */
@@ -2151,7 +2166,7 @@ a:focus {
   font-size: 26.25px;
 }
 .page-content {
-  font-family: "Bitter", "Georgia", "Times New Roman", serif;
+  font-family: "SQMarket","Helvetica Neue",sans-serif;
 }
 .page-content > .content {
   text-rendering: optimizeLegibility;
@@ -2358,7 +2373,7 @@ a.thumbnail:focus {
 code,
 pre {
   padding: 0 3px 2px;
-  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-family: "SQMarket","Helvetica Neue",sans-serif;;
   font-size: 13px;
   color: #333333;
   -webkit-border-radius: 3px;
@@ -2535,6 +2550,7 @@ pre.code {
 }
 .post .body {
   margin-bottom: 36px;
+  color: #959ba2
 }
 .post .body .figure {
   display: block;

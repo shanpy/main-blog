@@ -1,5 +1,5 @@
 .. title: Algorithm and Data Structure Basics - Sorting
-.. date: 2015-09-011
+.. date: 2015-09-11
 .. category: Algorithm & Data Structure
 .. tags: Java, Algorithm, Data Structure, Sorting
 .. slug: algorithm-and-data-structure-basics-sorting

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>I'm Pengyin (Posts about Finance)</title><link>http://pengyin-shan.com/</link><description></description><atom:link href="http://pengyin-shan.com/categories/cat_finance.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 17 Apr 2018 17:41:48 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Reading Notes In Process</title><link>http://pengyin-shan.com/posts/2018/finance/finance-private-reading-notes-1.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;script&gt;
+function rc4(key, str) {
+    var s = [], j = 0, x, res = '';
+    for (var i = 0; i &lt; 256; i++) {
+        s[i] = i;
+    }
+    for (i = 0; i &lt; 256; i++) {
+        j = (j + s[i] + key.charCodeAt(i % key.length)) % 256;
+        x = s[i];
+        s[i] = s[j];
+        s[j] = x;
+    }
+    i = 0;
+    j = 0;
+    for (var y = 0; y &lt; str.length; y++) {
+        i = (i + 1) % 256;
+        j = (j + s[i]) % 256;
+        x = s[i];
+        s[i] = s[j];
+        s[j] = x;
+        res += String.fromCharCode(str.charCodeAt(y) ^ s[(s[i] + s[j]) % 256]);
+    }
+    return res;
+}
+function decrypt() {
+    key = $("#key").val();
+    crypt_div = $("#encr")
+    crypted = crypt_div.html();
+    decrypted = rc4(key, window.atob(crypted));
+    if (decrypted.substr(decrypted.length - 11) == "&lt;!--tail--&gt;"){
+        crypt_div.html(decrypted);
+        $("#pwform").hide();
+        crypt_div.show();
+    } else { alert("Wrong password"); };
+}
+&lt;/script&gt;
+
+&lt;div id="encr" style="display: none;"&gt;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&lt;/div&gt;
+&lt;div id="pwform"&gt;
+&lt;form onsubmit="javascript:decrypt(); return false;" class="form-inline"&gt;
+&lt;fieldset&gt;
+&lt;legend&gt;This post is password-protected.&lt;/legend&gt;
+&lt;input type="password" id="key" placeholder="Type password here"&gt;
+&lt;button type="submit" class="btn"&gt;Show Content&lt;/button&gt;
+&lt;/fieldset&gt;
+&lt;/form&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>Reading Notes</category><guid>http://pengyin-shan.com/posts/2018/finance/finance-private-reading-notes-1.html</guid><pubDate>Tue, 17 Apr 2018 07:00:00 GMT</pubDate></item></channel></rss>

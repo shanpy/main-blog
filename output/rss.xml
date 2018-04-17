@@ -1,5 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>I'm Pengyin</title><link>http://pengyin-shan.com/</link><description>This is Pengyin Shan's Blog</description><atom:link rel="self" type="application/rss+xml" href="http://pengyin-shan.com/rss.xml"></atom:link><language>en</language><lastBuildDate>Sun, 18 Mar 2018 17:13:33 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>(Chinese) Highlights for “The Minto Pyramid Principle: Logic in Writing, Thinking, &amp; Problem Solving/金字塔原理” by Barbara Minto</title><link>http://pengyin-shan.com/posts/2018/book/hightlights-for-the-minto-pyramid-principle.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h2&gt;第1章 为什么要用金字塔结构&lt;/h2&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>I'm Pengyin</title><link>http://pengyin-shan.com/</link><description>This is Pengyin Shan's Blog</description><atom:link href="http://pengyin-shan.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 17 Apr 2018 17:41:53 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Reading Notes In Process</title><link>http://pengyin-shan.com/posts/2018/finance/finance-private-reading-notes-1.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;script&gt;
+function rc4(key, str) {
+    var s = [], j = 0, x, res = '';
+    for (var i = 0; i &lt; 256; i++) {
+        s[i] = i;
+    }
+    for (i = 0; i &lt; 256; i++) {
+        j = (j + s[i] + key.charCodeAt(i % key.length)) % 256;
+        x = s[i];
+        s[i] = s[j];
+        s[j] = x;
+    }
+    i = 0;
+    j = 0;
+    for (var y = 0; y &lt; str.length; y++) {
+        i = (i + 1) % 256;
+        j = (j + s[i]) % 256;
+        x = s[i];
+        s[i] = s[j];
+        s[j] = x;
+        res += String.fromCharCode(str.charCodeAt(y) ^ s[(s[i] + s[j]) % 256]);
+    }
+    return res;
+}
+function decrypt() {
+    key = $("#key").val();
+    crypt_div = $("#encr")
+    crypted = crypt_div.html();
+    decrypted = rc4(key, window.atob(crypted));
+    if (decrypted.substr(decrypted.length - 11) == "&lt;!--tail--&gt;"){
+        crypt_div.html(decrypted);
+        $("#pwform").hide();
+        crypt_div.show();
+    } else { alert("Wrong password"); };
+}
+&lt;/script&gt;
+
+&lt;div id="encr" style="display: none;"&gt;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&lt;/div&gt;
+&lt;div id="pwform"&gt;
+&lt;form onsubmit="javascript:decrypt(); return false;" class="form-inline"&gt;
+&lt;fieldset&gt;
+&lt;legend&gt;This post is password-protected.&lt;/legend&gt;
+&lt;input type="password" id="key" placeholder="Type password here"&gt;
+&lt;button type="submit" class="btn"&gt;Show Content&lt;/button&gt;
+&lt;/fieldset&gt;
+&lt;/form&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>Reading Notes</category><guid>http://pengyin-shan.com/posts/2018/finance/finance-private-reading-notes-1.html</guid><pubDate>Tue, 17 Apr 2018 07:00:00 GMT</pubDate></item><item><title>(Chinese) Highlights for “The Minto Pyramid Principle: Logic in Writing, Thinking, &amp; Problem Solving/金字塔原理” by Barbara Minto</title><link>http://pengyin-shan.com/posts/2018/book/hightlights-for-the-minto-pyramid-principle.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h2&gt;第1章 为什么要用金字塔结构&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;条理清晰的关键，是把你的思想组织成金字塔结构，并在写作前用金字塔原理检查。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -2083,95 +2129,4 @@
 &lt;li&gt;
 &lt;p&gt;自信：如果因为你的特立独行而在周围人中不受欢迎……那你就随他们去吧。&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;</description><category>Business</category><category>Chinese</category><category>Finance</category><category>Reading Notes</category><guid>http://pengyin-shan.com/posts/2017/book/chinese-poor-charlies-almanack-2.html</guid><pubDate>Sun, 21 May 2017 07:00:00 GMT</pubDate></item><item><title>Meeting Notes for 'From Dirty to Decisive: Using Clean Data to Your Advantage'</title><link>http://pengyin-shan.com/posts/2017/data%20science/meeting-notes-for-from-dirty-to-decisive-using-clean-data-to-your-advantage.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h2&gt;Solution for Making Decision based on Large Set of Data&lt;/h2&gt;
-&lt;h3&gt;How Data Impacts Decision&lt;/h3&gt;
-&lt;h4&gt;Two Kinds of People in Decision Making Process&lt;/h4&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;Liability&lt;/code&gt;: people who know materials well, but not involved in decision making process&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Assets&lt;/code&gt;: people who can access materials and impact on decision making process&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4&gt;Ignore Data Scraps and Less Hunting&lt;/h4&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Need clear actions: Less Time Hunting Data, More Time Getting Actions&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3&gt;The Decision Making Modal&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Stream Line&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h4&gt;Decision&lt;/h4&gt;
-&lt;blockquote&gt;
-&lt;p&gt;A choice or determination made after considering a set of presented materials&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h4&gt;Supported Materials&lt;/h4&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;Road Map&lt;/code&gt; before decision&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Guidance&lt;/code&gt; for decision&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4&gt;Modals&lt;/h4&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;Informed-ness&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Timeless&lt;/code&gt;: decision-desired actions (time for taking action) =&amp;gt; Risk Impact Analysis&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Completeness&lt;/code&gt;: degree that I am confident in my decision&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Preparation of Direct Action&lt;/code&gt;: streaming triggered actions&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Optimality of Outcome&lt;/code&gt;: degree to which decision gets best result. This is the &lt;em&gt;environment&lt;/em&gt; for best decision&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3&gt;The Decision Making Process&lt;/h3&gt;
-&lt;h4&gt;Step 1: Decision-Driven Decision Making&lt;/h4&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Always start from decision&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h5&gt;What do we want to achieve?&lt;/h5&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;del&gt;What DATA can I access?&lt;/del&gt; &lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Problem-Solve-Targeted&lt;/code&gt;: We want to have our data &lt;strong&gt;available to subscribers&lt;/strong&gt;. &lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4&gt;Step 2: Find answers to questions&lt;/h4&gt;
-&lt;ol&gt;
-&lt;li&gt;Know questions &lt;code&gt;before see the data&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;i.e. &lt;em&gt;What will answer my questions?&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Draw three panels: &lt;img alt="three panels" src="http://pengyin-shan.com/images/2017/data-science/three-panels.png"&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4&gt;Step 3: Clean it up&lt;/h4&gt;
-&lt;h5&gt;Process in place before cleaning&lt;/h5&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Goal: Get to decision point&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;Build Process&lt;/li&gt;
-&lt;li&gt;Make data run under this process&lt;/li&gt;
-&lt;li&gt;Example: Get Excel File =&amp;gt; Data Visualization =&amp;gt; Find Rules to Clean File =&amp;gt;Get Cleaned File&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h5&gt;How to clean data?&lt;/h5&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;Capture&lt;/code&gt;: what &lt;strong&gt;bring&lt;/strong&gt; attention? =&amp;gt; Based on rules (&lt;em&gt;error&lt;/em&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Clarify&lt;/code&gt;: what it mean in &lt;strong&gt;context&lt;/strong&gt; (process) =&amp;gt; looking for &lt;strong&gt;data connector points/common points&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Organize&lt;/code&gt;: data with &lt;strong&gt;highest priority&lt;/strong&gt; first&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Reflect&lt;/code&gt;: &lt;strong&gt;review data&lt;/strong&gt; frequently =&amp;gt; &lt;em&gt;Ask client questions&lt;/em&gt;. Note context may change&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Engage&lt;/code&gt;: &lt;strong&gt;implementation&lt;/strong&gt; with data&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4&gt;Step 4: Present&lt;/h4&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Target to the right stakeholder, right time, right way&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Remember different people use data differently, so when present data to clients, remember to use data that client only cares.&lt;/p&gt;
-&lt;h4&gt;Step 5: Distribute the insights&lt;/h4&gt;
-&lt;p&gt;Apply &lt;code&gt;insights&lt;/code&gt; to decision making process: Turn Data into Action&lt;/p&gt;
-&lt;h5&gt;Three Panels for Evaluating Action&lt;/h5&gt;
-&lt;p&gt;&lt;img alt="three panels2" src="http://pengyin-shan.com/images/2017/data-science/three-panels2.png"&gt;&lt;/p&gt;
-&lt;h4&gt;Examples and Conclusions&lt;/h4&gt;
-&lt;p&gt;data.geogria.gov&lt;/p&gt;
-&lt;h5&gt;Composition of Data&lt;/h5&gt;
-&lt;ol&gt;
-&lt;li&gt;Based on decision I want to make&lt;/li&gt;
-&lt;li&gt;Bring historical data in&lt;/li&gt;
-&lt;li&gt;Ask questions: what &lt;strong&gt;cause&lt;/strong&gt; the gap? What's the &lt;strong&gt;impact&lt;/strong&gt; of gap?&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4&gt;Tools Recommendation&lt;/h4&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;CSV&lt;/code&gt;s&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;OpenRefine&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;SQL&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;DKAN&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Data Integration List&lt;/code&gt;: share with client/standard for clean data. Example: null data? misspelling?&lt;/li&gt;
-&lt;li&gt;Majority of time spending on &lt;strong&gt;clean data&lt;/strong&gt; =&amp;gt; &lt;em&gt;put this in SOW! show price in SOW!&lt;/em&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/div&gt;</description><category>Clean Data</category><category>Data Visualization</category><category>Meeting Notes</category><guid>http://pengyin-shan.com/posts/2017/data%20science/meeting-notes-for-from-dirty-to-decisive-using-clean-data-to-your-advantage.html</guid><pubDate>Mon, 24 Apr 2017 07:00:00 GMT</pubDate></item></channel></rss>
+&lt;/ul&gt;&lt;/div&gt;</description><category>Business</category><category>Chinese</category><category>Finance</category><category>Reading Notes</category><guid>http://pengyin-shan.com/posts/2017/book/chinese-poor-charlies-almanack-2.html</guid><pubDate>Sun, 21 May 2017 07:00:00 GMT</pubDate></item></channel></rss>

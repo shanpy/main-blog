@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>I'm Pengyin</title><link>http://pengyin-shan.com/</link><description>This is Pengyin Shan's Blog</description><atom:link href="http://pengyin-shan.com/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 06 Jul 2018 17:48:39 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>(Chinese) Highlights for “Scarcity: Why Having Too Little Means So Much” by Sendhil Mullainathan &amp; Elddar Shafir</title><link>http://pengyin-shan.com/posts/2018/book/highlights-for-scarcity.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3&gt;第二部分 贫穷和忙碌是如何让“带宽”变窄的&lt;/h3&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>I'm Pengyin</title><link>http://pengyin-shan.com/</link><description>This is Pengyin Shan's Blog</description><atom:link href="http://pengyin-shan.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Fri, 06 Jul 2018 17:52:47 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>(Chinese) Highlights for “Scarcity: Why Having Too Little Means So Much” by Sendhil Mullainathan &amp; Elddar Shafir</title><link>http://pengyin-shan.com/posts/2018/book/highlights-for-scarcity.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3&gt;第二部分 贫穷和忙碌是如何让“带宽”变窄的&lt;/h3&gt;
 &lt;p&gt;经济学家们称这种现象为&lt;code&gt;边际效用递减&lt;/code&gt;，即你拥有的越多，对你而言，每一样额外增加的物品的价值就会越低。&lt;/p&gt;
 &lt;p&gt;余闲能让我们轻松地避免选择负担。你之所以必须在讲座和电影之间做选择，是因为你可以利用的时间是有限的。如果你有余闲，就可以两件事情都做。当你逛街买衣服时，同时看到两件你喜欢的衣服，如果口袋里的钱有限，你就不得不二选一。如果你同时喜欢上两款口味的冰激凌，而此时你正在节食，就不得不从中选择一款。无论是金钱余闲、时间余闲还是热量余闲，都会给予你不去做选择的权利。此时，你就可以说：“我两个都要。”&lt;/p&gt;
 &lt;h4&gt;没有余闲时犯错，后果很严重&lt;/h4&gt;
@@ -17,8 +17,6 @@
 &lt;p&gt;而当我们有了管窥之见时，借用就会超越得失均衡的限度。当面临稀缺状况时，我们的借用，从长期来看通常是不合理的。&lt;/p&gt;
 &lt;h4&gt;忽视未来&lt;/h4&gt;
 &lt;p&gt;将一件重要但不紧急的事务搁置一旁，与借用无异。你通过不去做这件事情，而为今天赚得了时间，但却增加了未来的成本，因为你早晚要借用其他时间（很可能是更多时间）来处理这件事。与此同时，你也许会因为没有做这件事情而付出成本，或损失这件事情可能带来的收益。办公环境混乱，一定会令你的工作效率有所下降。你会花上许多时间，去寻找压在信件下面的那摞文件。每天，你都会给未来增加一点成本。这些成本永远不会大到将此事升级为紧急要务的程度，永远不会像截止日期那样奏效。被你忽略的办公室环境，会像小刀一样，一刀接一刀，让你遍体鳞伤，流血不止。&lt;/p&gt;
-&lt;p&gt;Highlight(pink) - 忽视未来 &amp;gt; Location 1958&lt;/p&gt;
-&lt;p&gt;Highlight(pink) - 忽视未来 &amp;gt; Location 1961&lt;/p&gt;
 &lt;p&gt;稀缺，尤其是管窥心态，会让你搁置那些重要但不紧急的事务，比如整理办公室、做结肠镜检查、写遗嘱等，这些都是很容易为我们所忽略的事情。做这些事情的成本是立即显现的，用管窥心态来看的确十分高昂，而且这些事情可以轻松地往后推，其好处都落在了“管子”的视野之外。于是，人们会等到所有紧急事务都处理完毕后才会做这些事。就算现在做这些事情能为今后带来很大的好处，人们也常常不愿意在现在就付出这些小小的努力。&lt;/p&gt;
 &lt;p&gt;稀缺陷阱尤其会令人感到辛酸的就是，它会让人产生一种感觉：只要再多一点资源，就能摆脱欠下的所有债务，就能逃脱这个恶性循环。所以，工作一直赶不上进度的人会说：“如果我再多那么一点点时间，就能赶在进度之前做完这些事。”街头小贩会想：“如果我拥有买水果的钱，而不用一点一滴地攒钱，那么就能摆脱债务，我的收入就能翻番。”在所有这些情况中，一次性的资源补充似乎是解决问题的关键。&lt;/p&gt;
 &lt;p&gt;身负债务时，小贩就要面对这个难题。他必须做出权衡：若想买礼物，我要放弃什么？或者要么干脆买件小一点的礼物。此时，他有了管窥心态，但借钱并不是一个选择，因为其已经从放贷人那里借钱去进货了。他只能尽自己的微薄之力去平息这场风暴。他可能会因为购买礼物而放弃许多，而放弃令其感受到了切实的痛苦。他也可能购买了一件拿不出手的礼物，并因此而感到羞愧不已。&lt;/p&gt;
@@ -26,6 +24,7 @@
 &lt;p&gt;远离稀缺陷阱的威胁，需要的不是充裕的资源，而是&lt;strong&gt;足够充裕&lt;/strong&gt;的资源——就算我们乱花钱，做事一拖再拖，还是有足够的余闲去应对绝大部分突发事件；如果拥有足够充裕的资源，就算长时间的拖延，我们还是有时间去管理预期之外截止日期的到来。远离稀缺陷阱的威胁，需要拥有足够的余闲去应对这个世界中林林总总的突发事件，去应对我们给自己制造出来的诸多麻烦。&lt;/p&gt;
 &lt;h4&gt;改变心态，逃离稀缺陷阱的唯一希望&lt;/h4&gt;
 &lt;p&gt;穷人会一直贫穷下去，而孤独者也注定会继续形单影只；繁忙之人永远会日理万机，而节食者的计划也总是会以失败告终。稀缺造就了一种心态，而这种心态会令稀缺长存。如果这种说法让你觉得太过残酷，那么就来看看另一种观点：穷人之所以贫穷，是因为他们缺乏技能；孤独者之所以孤独，是因为他们不受人欢迎；节食者之所以失败，是因为他们缺乏意志力；繁忙之人之所以整天忙碌，是因为他们没有能力过上井井有条的生活。这种观点认为，稀缺是深层次个人问题所引发的后果，很难改变。&lt;/p&gt;
+&lt;hr&gt;
 &lt;h3&gt;第三部分 如何从稀缺走向富足&lt;/h3&gt;
 &lt;h4&gt;余闲的重要作用&lt;/h4&gt;
 &lt;p&gt;面对太多等待去做的事情，人的第一反应就是将时间表排得尽可能得紧凑，以便将所有事情都安排进去。如果你安排得不够紧凑，就会感觉好像没有尽力去做事情一样。当效率专家发现员工们没有得到充分利用时，总会敦促他们“更有效率”地利用时间，但这样做就意味着他们会丢掉余闲。&lt;/p&gt;

@@ -1,7 +1,7 @@
 <p>This post is transferred from my <a href="http://blogpengyin.herokuapp.com/">old Hexo blog site</a>, created on 2014.</p>
 <p>This is a reading note from Spring Framework 3.1 Tutorial pdf, created by <a href="http://www.tutorialspoint.com/spring"><strong>tutorialspoint</strong></a>. This pdf contains information for Spring 3 Core Basics, which is very useful for understanding defination and practive in Spring programming.</p>
 <p>This note includes Chapter 17 to Chapter 19 in tutorial.</p>
-<h1>Chapter 17: Event Handling in Spring</h1>
+<h1 id="chapter-17-event-handling-in-spring">Chapter 17: Event Handling in Spring</h1>
 <p>In Spring, the <code>ApplicatonContext</code> publishes certain types of <code>events</code> when loading the beans.</p>
 <p><code>ApplicationEvent</code> class and <code>ApplicationListener</code> interface is used in <code>ApplicationContext</code> to deal with event handling.</p>
 <p>If a bean implements <code>ApplicationListener</code>, then every time <code>ApplicatioContext</code> publish an <code>ApplicationEvent</code>, this bean will be notified.</p>
@@ -54,7 +54,7 @@ images/posts/spring_events.png </p>
 </pre>
 
 
-<h1>Chapter 18: Custom Events in Spring**</h1>
+<h1 id="chapter-18-custom-events-in-spring">Chapter 18: Custom Events in Spring**</h1>
 <p>To create a custom event, you need a <code>event</code> class, a <code>event publisher</code> class and a <code>event handler</code> class:</p>
 <p>XML:
     :::xml
@@ -97,7 +97,7 @@ images/posts/spring_events.png </p>
 </pre>
 
 
-<h1>Chapter 19: AOP with Spring Framework</h1>
+<h1 id="chapter-19-aop-with-spring-framework">Chapter 19: AOP with Spring Framework</h1>
 <p><code>Aspect Oriented Programming (AOP)</code> entails <em>breaking down</em> program logic into distinct parts called <code>concerns</code>,or <code>crossing-cutting concerns</code>. These concerns are conceptually separate from the application's bussiness logic.</p>
 <p>Spring AOP modules provides interceptors to intercept an application. For example. when a method is executed, you can <em>add extra functionality</em> before or after the method execution.</p>
 <p><em>AOP Terminologies</em>
@@ -105,7 +105,7 @@ images/posts/AOP_Term1.png
 images/posts/AOP_Term2.png </p>
 <p><em>Type of Advice</em>
 images/posts/AOP_Advice.png </p>
-<h2>XML Schema Based Aspect Implementation</h2>
+<h2 id="xml-schema-based-aspect-implementation">XML Schema Based Aspect Implementation</h2>
 <p>Use regular classes along with <code>xml</code> based configuration</p>
 <p><code>xml</code> needs to be configured:</p>
 <pre class="code literal-block"><span></span><span class="nt">&lt;beans</span> <span class="na">xmlns=</span><span class="s">&quot;...&quot;</span>
@@ -238,7 +238,7 @@ images/posts/AOP_Advice.png </p>
 </pre>
 
 
-<h2>@AspectJ Based AOP with Spring</h2>
+<h2 id="aspectj-based-aop-with-spring">@AspectJ Based AOP with Spring</h2>
 <p><code>@AspectJ</code> refers a style of declaring aspects as regular <em>Java classes</em> with Java 5 annotations.</p>
 <p>You need to add <code>&lt;aop:aspectj-autoproxy&gt;</code> in <code>xml</code> file first.</p>
 <p>You also need AspectJ libraries in your CLASSPATH</p>

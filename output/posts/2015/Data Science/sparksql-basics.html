@@ -7,7 +7,7 @@ article: http://ogp.me/ns/article#
 <meta charset="utf-8">
 <meta name="description" content="This post includes basic knowledge about SparkSQL, which will be continuously updated.">
 <meta name="viewport" content="width=device-width">
-<title>SparkSQL Basics | I'm Pengyin</title>
+<title>SparkSQL Basics | I'm Pengyin (Wendy)</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2015/Data%20Science/sparksql-basics.html">
@@ -26,7 +26,7 @@ MathJax.Hub.Config({
     }
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
-<meta property="og:site_name" content="I'm Pengyin">
+<meta property="og:site_name" content="I'm Pengyin (Wendy)">
 <meta property="og:title" content="SparkSQL Basics">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2015/Data%20Science/sparksql-basics.html">
 <meta property="og:description" content="This post includes basic knowledge about SparkSQL, which will be continuously updated.">
@@ -70,12 +70,12 @@ MathJax.Hub.Config({
         </div>
         <div class="body">
             <div>
-<h3>Resource List</h3>
+<h3 id="resource-list">Resource List</h3>
 <ul>
 <li>
 <a href="../Data%20Science/www.sparkinchina.com">SparkSQL(Chinese)</a>, written by Junhui Ma, www.sparkinchina.com (i.e. <code>SparkSQL book</code> in my post)</li>
 </ul>
-<h3>Traditional SQL and RDBMS</h3>
+<h3 id="traditional-sql-and-rdbms">Traditional SQL and RDBMS</h3>
 <p>This is a graph of how traditional SQL query is processed, from SparkSQL book:</p>
 <p>../images/articles/2015/data_science/regular_query.png </p>
 <p>A traditional SQL query following this sequence: <code>Result</code> -&gt; <code>Data Source</code> -&gt; <code>Operation</code>.</p>
@@ -86,7 +86,7 @@ MathJax.Hub.Config({
 <p>During step2, RDBMS will also supply a few execution plan. RDBMS will choose the one with the best optimization.</p>
 <p><strong>When RDBMS parse sql, it will transfer the sql to tree structure:</strong></p>
 <p>../images/articles/2015/data_science/sql_tree.png </p>
-<h2>SparkSQL</h2>
+<h2 id="sparksql">SparkSQL</h2>
 <p>SparkSQL(1.1) is combined by four modules:</p>
 <ul>
 <li>
@@ -102,12 +102,12 @@ MathJax.Hub.Config({
 <p><code>hive-Thriftserver</code>: provide <code>CLI</code> and <code>JDBC/ODBC</code> interface.</p>
 </li>
 </ul>
-<h3>SparkSQL: Tree and Rule</h3>
+<h3 id="sparksql-tree-and-rule">SparkSQL: Tree and Rule</h3>
 <p>Similar as traditional RDBMS, SparkSQL also parse SQL query to a <strong>Tree</strong> structure. The operation to tree is <strong>Rule</strong>, which involves in using pattern matching to decide which operation show be taken for a certain tree node.</p>
-<h4>Tree</h4>
+<h4 id="tree">Tree</h4>
 <p>Tree can be used to show: <code>Logical Plans</code>, <code>Expressions</code> and <code>Physical Operators</code>.</p>
 <p>The operation to tree is working on <strong>TreeNode</strong>. Just like normal tree data structure, SparkSQL can traverse whole tree or go to a certain tree node to perform operation.</p>
-<h5>Three Types of Tree Node</h5>
+<h5 id="three-types-of-tree-node">Three Types of Tree Node</h5>
 <ul>
 <li>
 <p><code>UnaryNode</code>: Only one child node. Using for operations like <code>Limit</code>, <code>Filter</code></p>
@@ -119,11 +119,11 @@ MathJax.Hub.Config({
 <p><code>LeafNode</code>: No child node. Using for user command, such as <code>SetCommand</code></p>
 </li>
 </ul>
-<h4>Rule</h4>
+<h4 id="rule">Rule</h4>
 <p><code>Rule</code> is a abstract class. It is extended by <code>RuleExecutor</code>.</p>
 <p>Rule can perform <code>transform</code> operation by using <code>batch</code>es.</p>
 <p>Rule can perform recursive operations by using <code>Once</code> and <code>FixedPoint</code>.</p>
-<h5>Example for Rule: Analyzer</h5>
+<h5 id="example-for-rule-analyzer">Example for Rule: Analyzer</h5>
 <p>Analyzer graph from SparkSQL book:</p>
 <p>../images/articles/2015/data_science/sparksql_analyzer.png </p>
 <p>Face in <code>RuleExcutor</code> class for Analyzer:</p>
@@ -141,7 +141,7 @@ MathJax.Hub.Config({
 <blockquote>
 <p>Tree and Rule are working together to perform: parse operation, binding operation, optimizing operation, create logical plan, etc. Finally a executable plan will be created.</p>
 </blockquote>
-<h3>SparkSQL: sqlContext</h3>
+<h3 id="sparksql-sqlcontext">SparkSQL: sqlContext</h3>
 <p>Source Code:</p>
 <pre class="code literal-block"><span></span><span class="k">def</span> <span class="n">sql</span><span class="o">(</span><span class="n">sqlText</span><span class="k">:</span> <span class="kt">String</span><span class="o">)</span><span class="k">:</span> <span class="kt">SchemaRDD</span> <span class="o">=</span> <span class="o">{</span>
     <span class="k">if</span> <span class="o">(</span><span class="n">dialect</span> <span class="o">==</span> <span class="s">"sql"</span><span class="o">)</span> <span class="o">{</span>
@@ -156,7 +156,7 @@ MathJax.Hub.Config({
 <p><code>sqlContext.sql</code> will return a <code>new SchemaRDD(this, parseSql(sqlText))</code>, which has been parsed by <code>catalyst.SqlParser</code>. Note <code>parseSql()</code> will return a <code>Unresolved LogicalPlan</code>.</p>
 <p>sqlContext Process Graph from SparkSQL book:</p>
 <p>../images/articles/2015/data_science/sqlcontext_process.png </p>
-<h3>SparkSQL: catalyst</h3>
+<h3 id="sparksql-catalyst">SparkSQL: catalyst</h3>
 <p>Design of SparkSQL(1.1) from SparkSQL Book (dash line means future feature):</p>
 <p>../images/articles/2015/data_science/catalyst_design.png </p>
 <p>Main modules for Catalyst:</p>
@@ -219,7 +219,7 @@ MathJax.Hub.Config({
 
 
     </div>
-                     <footer id="footer"><p>Contents © 2018         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                     <footer id="footer"><p>Contents © 2018         <a href="mailto:pengyin.shan@outlook.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

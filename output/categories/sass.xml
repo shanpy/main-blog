@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>I'm Pengyin (Posts about SASS)</title><link>http://pengyin-shan.com/</link><description></description><atom:link href="http://pengyin-shan.com/categories/sass.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 06 Jul 2018 17:48:43 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>SASS Q&amp;A and Tips CONTINUALLY UPDATE</title><link>http://pengyin-shan.com/posts/2015/Front%20End/sass-qa-and-tips.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;This post will serve as a Q&amp;amp;A note during the process of learning Sass. I'm absolutely a new beginner so I'll keep questions and answers updating continously:)&lt;/p&gt;
-&lt;h3&gt;Question: What is the syntax difference between sass and scss?&lt;/h3&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>I'm Pengyin (Posts about SASS)</title><link>http://pengyin-shan.com/</link><description></description><atom:link type="application/rss+xml" rel="self" href="http://pengyin-shan.com/categories/sass.xml"></atom:link><language>en</language><lastBuildDate>Tue, 10 Jul 2018 14:56:13 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>SASS Q&amp;A and Tips CONTINUALLY UPDATE</title><link>http://pengyin-shan.com/posts/2015/Front%20End/sass-qa-and-tips.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;This post will serve as a Q&amp;amp;A note during the process of learning Sass. I'm absolutely a new beginner so I'll keep questions and answers updating continously:)&lt;/p&gt;
+&lt;h3 id="question-what-is-the-syntax-difference-between-sass-and-scss"&gt;Question: What is the syntax difference between sass and scss?&lt;/h3&gt;
 &lt;p&gt;So far I've found following difference:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -13,7 +13,7 @@
 &lt;p&gt;sass is white space recoginized while scss not&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Question: How Jekyll work with Sass?&lt;/h3&gt;
+&lt;h3 id="question-how-jekyll-work-with-sass"&gt;Question: How Jekyll work with Sass?&lt;/h3&gt;
 &lt;p&gt;Currently version of Jekyll (2.4.0) has native support for Sass and CoffeeScript. Official documentation is here: http://jekyllrb.com/docs/assets/&lt;/p&gt;
 &lt;p&gt;I use official way for sass compile by following step:&lt;/p&gt;
 &lt;p&gt;In home directory, create a folder called _sass. I decide to use this folder for sass files that I will import from.&lt;/p&gt;

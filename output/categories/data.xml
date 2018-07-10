@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>I'm Pengyin (Posts about Data)</title><link>http://pengyin-shan.com/</link><description></description><atom:link href="http://pengyin-shan.com/categories/data.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 06 Jul 2018 17:48:40 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>RDF Basics</title><link>http://pengyin-shan.com/posts/2015/Others/rdf-basics.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h4&gt;Resource&lt;/h4&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>I'm Pengyin (Posts about Data)</title><link>http://pengyin-shan.com/</link><description></description><atom:link type="application/rss+xml" rel="self" href="http://pengyin-shan.com/categories/data.xml"></atom:link><language>en</language><lastBuildDate>Tue, 10 Jul 2018 14:56:11 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>RDF Basics</title><link>http://pengyin-shan.com/posts/2015/Others/rdf-basics.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h4 id="resource"&gt;Resource&lt;/h4&gt;
 &lt;p&gt;&lt;a href="http://www.w3schools.com/webservices/ws_rdf_intro.asp"&gt;Introduction to RDF From W3C&lt;/a&gt;&lt;/p&gt;
-&lt;h4&gt;Intro to RDF&lt;/h4&gt;
+&lt;h4 id="intro-to-rdf"&gt;Intro to RDF&lt;/h4&gt;
 &lt;p&gt;RDF (Resource Description Framework) is standard from W3C to describe describe title, author, content, and copyright information of web pages.&lt;/p&gt;
 &lt;p&gt;It is really useful for search engines or digital library.&lt;/p&gt;
-&lt;h5&gt;Realities of RDF&lt;/h5&gt;
+&lt;h5 id="realities-of-rdf"&gt;Realities of RDF&lt;/h5&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;RDF is designed to be read and understood by computers, instead ofbeing displayed to people. &lt;em&gt;RDF descriptions are not designed to be displayed on the web&lt;/em&gt;.&lt;/p&gt;
@@ -33,7 +33,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h4&gt;RDF Rules&lt;/h4&gt;
+&lt;h4 id="rdf-rules"&gt;RDF Rules&lt;/h4&gt;
 &lt;p&gt;RDF identifies things using &lt;strong&gt;Web identifiers&lt;/strong&gt; (URIs), and describes resources with &lt;strong&gt;properties&lt;/strong&gt; and &lt;strong&gt;property values&lt;/strong&gt;.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -57,7 +57,7 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;RDF Statements&lt;/h4&gt;
+&lt;h4 id="rdf-statements"&gt;RDF Statements&lt;/h4&gt;
 &lt;p&gt;The &lt;strong&gt;combination&lt;/strong&gt; of a &lt;code&gt;Resource&lt;/code&gt;, a &lt;code&gt;Property&lt;/code&gt;, and a &lt;code&gt;Property value&lt;/code&gt; forms a &lt;code&gt;Statement&lt;/code&gt; .&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -85,7 +85,7 @@
 &lt;p&gt;Object: Jan Egil Refsnes&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4&gt;RDF Main Elements&lt;/h4&gt;
+&lt;h4 id="rdf-main-elements"&gt;RDF Main Elements&lt;/h4&gt;
 &lt;p&gt;A full RDF example with from W3C:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cp"&gt;&amp;lt;?xml version="1.0"?&amp;gt;&lt;/span&gt;
 &lt;span class="c"&gt;&amp;lt;!-- Declare RDF --&amp;gt;&lt;/span&gt;
@@ -124,14 +124,14 @@
 &lt;p&gt;&lt;code&gt;&amp;lt;Description&amp;gt;&lt;/code&gt; element&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h5&gt;&lt;rdf&gt;&lt;/rdf&gt;&lt;/h5&gt;
+&lt;h5 id="_1"&gt;&lt;rdf&gt;&lt;/rdf&gt;&lt;/h5&gt;
 &lt;p&gt;&lt;code&gt;&amp;lt;rdf:RDF&amp;gt;&lt;/code&gt; is the root element of an RDF document.&lt;/p&gt;
 &lt;p&gt;It defines the XML document to be an RDF document.&lt;/p&gt;
 &lt;p&gt;It also contains a reference to the RDF namespace.&lt;/p&gt;
-&lt;h5&gt;&lt;description&gt;&lt;/description&gt;&lt;/h5&gt;
+&lt;h5 id="_2"&gt;&lt;description&gt;&lt;/description&gt;&lt;/h5&gt;
 &lt;p&gt;The &lt;code&gt;&amp;lt;rdf:Description&amp;gt;&lt;/code&gt; element identifies a resource with the &lt;code&gt;about&lt;/code&gt; attribute.&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;&amp;lt;rdf:Description&amp;gt;&lt;/code&gt; element contains elements that &lt;em&gt;describe&lt;/em&gt; the resource.&lt;/p&gt;
-&lt;h5&gt;&lt;cd&gt;&lt;/cd&gt;&lt;/h5&gt;
+&lt;h5 id="_3"&gt;&lt;cd&gt;&lt;/cd&gt;&lt;/h5&gt;
 &lt;p&gt;Elements with &lt;code&gt;&amp;lt;cd&amp;gt;&lt;/code&gt; namespace is not part of RDF. RDF defines only the framework.&lt;/p&gt;
 &lt;p&gt;So the elements, artist, country, company, price, and year, &lt;em&gt;must be defined by someone else&lt;/em&gt; (company, organization, person, etc).&lt;/p&gt;
 &lt;p&gt;You can also define these &lt;strong&gt;properties as attributes&lt;/strong&gt; of &lt;code&gt;&amp;lt;rdf:Description&amp;gt;&lt;/code&gt;. For example:&lt;/p&gt;
@@ -161,10 +161,10 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;RDF Container Elements&lt;/h4&gt;
+&lt;h4 id="rdf-container-elements"&gt;RDF Container Elements&lt;/h4&gt;
 &lt;p&gt;RDF containers are used to describe &lt;strong&gt;group of things&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;The following RDF elements are used to describe groups: &lt;code&gt;&amp;lt;Bag&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;Seq&amp;gt;&lt;/code&gt;, and &lt;code&gt;&amp;lt;Alt&amp;gt;&lt;/code&gt;.&lt;/p&gt;
-&lt;h4&gt;&lt;bag&gt;&lt;/bag&gt;&lt;/h4&gt;
+&lt;h4 id="_4"&gt;&lt;bag&gt;&lt;/bag&gt;&lt;/h4&gt;
 &lt;p&gt;The &lt;code&gt;&amp;lt;rdf:Bag&amp;gt;&lt;/code&gt; element is used to describe a list of values that &lt;em&gt;do not have to be in a specific order&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;&amp;lt;rdf:Bag&amp;gt;&lt;/code&gt; element &lt;em&gt;may contain duplicate values&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Example from W3C:&lt;/p&gt;
@@ -187,11 +187,11 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;&lt;seq&gt;&lt;/seq&gt;&lt;/h4&gt;
+&lt;h4 id="_5"&gt;&lt;seq&gt;&lt;/seq&gt;&lt;/h4&gt;
 &lt;p&gt;The &lt;code&gt;&amp;lt;rdf:Seq&amp;gt;&lt;/code&gt; element is used to describe an &lt;em&gt;ordered list of values&lt;/em&gt; (For example, in alphabetical order).&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;&amp;lt;rdf:Seq&amp;gt;&lt;/code&gt; element &lt;em&gt;may contain duplicate values&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;If you want to see an example, just replace &lt;code&gt;&amp;lt;rdf:Bag&amp;gt;&lt;/code&gt; with &lt;code&gt;&amp;lt;rdf:Seq&amp;gt;&lt;/code&gt; from example abpve.&lt;/p&gt;
-&lt;h4&gt;&lt;alt&gt;&lt;/alt&gt;&lt;/h4&gt;
+&lt;h4 id="_6"&gt;&lt;alt&gt;&lt;/alt&gt;&lt;/h4&gt;
 &lt;p&gt;The &lt;code&gt;&amp;lt;rdf:Alt&amp;gt;&lt;/code&gt; element is used to describe a list of alternative values (&lt;em&gt;the user can select only one of the values&lt;/em&gt;).&lt;/p&gt;
 &lt;p&gt;Example from W3C:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cp"&gt;&amp;lt;?xml version="1.0"?&amp;gt;&lt;/span&gt;
@@ -212,7 +212,7 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;RDF Terms&lt;/h5&gt;
+&lt;h5 id="rdf-terms"&gt;RDF Terms&lt;/h5&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;A &lt;code&gt;container&lt;/code&gt; is a resource that contains things&lt;/p&gt;
@@ -221,7 +221,7 @@
 &lt;p&gt;The contained things are called &lt;code&gt;member&lt;/code&gt;s (not list of values)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4&gt;RDF Collections&lt;/h4&gt;
+&lt;h4 id="rdf-collections"&gt;RDF Collections&lt;/h4&gt;
 &lt;p&gt;RDF collections describe groups that can &lt;strong&gt;ONLY&lt;/strong&gt; contain the specified members.&lt;/p&gt;
 &lt;p&gt;A collection is described by the attribute &lt;code&gt;rdf:parseType="Collection"&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Example from W3C:&lt;/p&gt;
@@ -243,7 +243,7 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;RDF Schema (RDFS)&lt;/h4&gt;
+&lt;h4 id="rdf-schema-rdfs"&gt;RDF Schema (RDFS)&lt;/h4&gt;
 &lt;p&gt;RDF Schema does not provide actual application-specific classes and properties.&lt;/p&gt;
 &lt;p&gt;Instead RDF Schema provides &lt;strong&gt;the framework to describe&lt;/strong&gt; application-specific classes and properties.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Classes in RDF Schema are much like classes in object oriented programming languages&lt;/em&gt;. This allows resources to be defined as instances of classes, and subclasses of classes.&lt;/p&gt;
@@ -280,7 +280,7 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;OWL&lt;/h4&gt;
+&lt;h4 id="owl"&gt;OWL&lt;/h4&gt;
 &lt;p&gt;OWL is a language for processing web information. It is built on top of RDF, and also written in &lt;code&gt;XML&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;Ontology&lt;/code&gt; is about the exact description of things and their relationships.&lt;/p&gt;
 &lt;p&gt;For the web, ontology is about the exact description of web information and relationships between web information.&lt;/p&gt;

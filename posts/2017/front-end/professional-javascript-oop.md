@@ -6,18 +6,18 @@
 .. authors: Pengyin Shan
 .. description: Recently I decide to review some important knowledge in JavaScript by reading Professional JavaScript for Web Developers, written by Nicholas C. Zakas. This post is the hand-written reading note for Object Oriented Programming in ECMAScript5. 
 
-<hr/>
+[TOC]
 
 #Object
 
 ![OOP1](/images/2017/front-end/javascript/professional-javascript/OOP1.jpg)
 
-<hr/>
+***
 
 #Object Creation
 
 ![OOP2](/images/2017/front-end/javascript/professional-javascript/OOP2.jpg)
 
-<hr/>
+***
 
 ![OOP3](/images/2017/front-end/javascript/professional-javascript/OOP3.jpg)

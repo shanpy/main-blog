@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>I'm Pengyin (Posts about JUnit)</title><link>http://pengyin-shan.com/</link><description></description><atom:link href="http://pengyin-shan.com/categories/junit.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 06 Jul 2018 17:48:44 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>JUnit Basics</title><link>http://pengyin-shan.com/posts/2015/Java/junit-basics.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3&gt;Reference&lt;/h3&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>I'm Pengyin (Posts about JUnit)</title><link>http://pengyin-shan.com/</link><description></description><atom:link type="application/rss+xml" rel="self" href="http://pengyin-shan.com/categories/junit.xml"></atom:link><language>en</language><lastBuildDate>Tue, 10 Jul 2018 14:56:12 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>JUnit Basics</title><link>http://pengyin-shan.com/posts/2015/Java/junit-basics.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3 id="reference"&gt;Reference&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://www.tutorialspoint.com//junit/index.htm"&gt;JUnit Tutorial from Tutorialspoint.com&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Overview&lt;/h3&gt;
+&lt;h3 id="overview"&gt;Overview&lt;/h3&gt;
 &lt;p&gt;A &lt;code&gt;Unit Test Case&lt;/code&gt; is a part of code which ensures that the another part of code (method) works as expected. To achieve those desired results quickly, test framework is required.&lt;/p&gt;
 &lt;p&gt;JUnit is perfect unit test framework for java programming language.&lt;/p&gt;
-&lt;h3&gt;Test Framework&lt;/h3&gt;
-&lt;h4&gt;Features&lt;/h4&gt;
+&lt;h3 id="test-framework"&gt;Test Framework&lt;/h3&gt;
+&lt;h4 id="features"&gt;Features&lt;/h4&gt;
 &lt;p&gt;JUnit test framework provides following important features:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -23,7 +23,7 @@
 &lt;p&gt;&lt;code&gt;JUnit classes&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h5&gt;Fixtures&lt;/h5&gt;
+&lt;h5 id="fixtures"&gt;Fixtures&lt;/h5&gt;
 &lt;p&gt;&lt;code&gt;Fixtures&lt;/code&gt; is a fixed state of a set of &lt;strong&gt;objects&lt;/strong&gt; used as a baseline for running tests.&lt;/p&gt;
 &lt;p&gt;The purpose of a test fixture is to ensure that there is a well known and &lt;strong&gt;fixed environment&lt;/strong&gt; in which tests are run so that results are repeatable. It includes:&lt;/p&gt;
 &lt;ul&gt;
@@ -53,7 +53,7 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;Test Suite&lt;/h5&gt;
+&lt;h5 id="test-suite"&gt;Test Suite&lt;/h5&gt;
 &lt;p&gt;&lt;code&gt;Test suite&lt;/code&gt; means &lt;strong&gt;bundle&lt;/strong&gt; a few unit test cases and run it together.&lt;/p&gt;
 &lt;p&gt;In JUnit, both &lt;code&gt;@RunWith&lt;/code&gt; and &lt;code&gt;@Suite&lt;/code&gt; annotation are used to run the suite test.&lt;/p&gt;
 &lt;p&gt;Here is an example which uses TestJunit1 &amp;amp; TestJunit2 test classes from Tutorialspoint.com:&lt;/p&gt;
@@ -99,7 +99,7 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;Test Runner&lt;/h5&gt;
+&lt;h5 id="test-runner"&gt;Test Runner&lt;/h5&gt;
 &lt;p&gt;&lt;code&gt;Test runner&lt;/code&gt; is used for &lt;strong&gt;executing&lt;/strong&gt; the test cases.&lt;/p&gt;
 &lt;p&gt;Here is an example which assumes TestJunit test class already exists, from Tutorialspoint.com:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.junit.runner.JUnitCore&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -118,7 +118,7 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;JUnit Classes&lt;/h5&gt;
+&lt;h5 id="junit-classes"&gt;JUnit Classes&lt;/h5&gt;
 &lt;p&gt;JUnit classes are important classes which is used in writing and testing JUnits.&lt;/p&gt;
 &lt;p&gt;Some of the important classes are:&lt;/p&gt;
 &lt;ul&gt;
@@ -132,8 +132,8 @@
 &lt;p&gt;&lt;code&gt;TestResult&lt;/code&gt; which contain methods to collect the results of executing a test case.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4&gt;JUnit Basic Usage&lt;/h4&gt;
-&lt;h5&gt;1. Create a Message Class&lt;/h5&gt;
+&lt;h4 id="junit-basic-usage"&gt;JUnit Basic Usage&lt;/h4&gt;
+&lt;h5 id="1-create-a-message-class"&gt;1. Create a Message Class&lt;/h5&gt;
 &lt;p&gt;Example code from Tutorialspoint.com:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cm"&gt;/*&lt;/span&gt;
 &lt;span class="cm"&gt;* This class prints the given message on console.&lt;/span&gt;
@@ -154,7 +154,7 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;2. Create a Test Case Class&lt;/h5&gt;
+&lt;h5 id="2-create-a-test-case-class"&gt;2. Create a Test Case Class&lt;/h5&gt;
 &lt;p&gt;Example code from Tutorialspoint.com&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.junit.Test&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;span class="kn"&gt;import static&lt;/span&gt; &lt;span class="nn"&gt;org.junit.Assert.assertEquals&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -171,7 +171,7 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;3. Create a Test Runner Class&lt;/h5&gt;
+&lt;h5 id="3-create-a-test-runner-class"&gt;3. Create a Test Runner Class&lt;/h5&gt;
 &lt;p&gt;Example code from Tutorialspoint.com&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.junit.runner.JUnitCore&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.junit.runner.Result&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -190,7 +190,7 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Writing Test with POJOs&lt;/h4&gt;
+&lt;h4 id="writing-test-with-pojos"&gt;Writing Test with POJOs&lt;/h4&gt;
 &lt;p&gt;To write a test for a POJO class, we need following:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -274,10 +274,10 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Assertion and Annotation&lt;/h4&gt;
-&lt;h5&gt;Assertion&lt;/h5&gt;
+&lt;h4 id="assertion-and-annotation"&gt;Assertion and Annotation&lt;/h4&gt;
+&lt;h5 id="assertion"&gt;Assertion&lt;/h5&gt;
 &lt;p&gt;This class provides a set of assertion methods useful for writing tests. &lt;em&gt;Only failed assertions are recorded.&lt;/em&gt;&lt;/p&gt;
-&lt;h6&gt;List of Assertion Methods&lt;/h6&gt;
+&lt;h6 id="list-of-assertion-methods"&gt;List of Assertion Methods&lt;/h6&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;assertEquals&lt;/code&gt;: Check that two primitives/Objectes are equal&lt;/p&gt;
@@ -295,7 +295,7 @@
 &lt;p&gt;&lt;strong&gt;assertArrayEquals&lt;/strong&gt;: Check whether two arrays are equal to each other&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h5&gt;Annotation&lt;/h5&gt;
+&lt;h5 id="annotation"&gt;Annotation&lt;/h5&gt;
 &lt;p&gt;The annotation in JUnit gives us information about test methods, include:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -308,7 +308,7 @@
 &lt;p&gt;which methods or class will be ignore during execution.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h6&gt;List of Annotations&lt;/h6&gt;
+&lt;h6 id="list-of-annotations"&gt;List of Annotations&lt;/h6&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;@Test&lt;/code&gt;: The Test annotation tells JUnit that the &lt;strong&gt;public void method&lt;/strong&gt; to which it is attached can be run as a test case.&lt;/p&gt;
@@ -329,9 +329,9 @@
 &lt;p&gt;&lt;code&gt;@Ignore&lt;/code&gt;: The Ignore annotation is used to ignore the test and that &lt;strong&gt;test will not be executed&lt;/strong&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4&gt;Suite Test&lt;/h4&gt;
+&lt;h4 id="suite-test"&gt;Suite Test&lt;/h4&gt;
 &lt;p&gt;Test suites means bundle a few unit test cases and run it together. In JUnit, both &lt;code&gt;@RunWith&lt;/code&gt; and &lt;code&gt;@Suite&lt;/code&gt; annotation are used to run the suite test.&lt;/p&gt;
-&lt;h5&gt;Step 1: Create a Message Class&lt;/h5&gt;
+&lt;h5 id="step-1-create-a-message-class"&gt;Step 1: Create a Message Class&lt;/h5&gt;
 &lt;p&gt;Example code from Tutorialspoint.com:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cm"&gt;/*&lt;/span&gt;
 &lt;span class="cm"&gt;* This class prints the given message on console.&lt;/span&gt;
@@ -358,7 +358,7 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;Step 2: Create Business Login Class with Business Login Test Class&lt;/h5&gt;
+&lt;h5 id="step-2-create-business-login-class-with-business-login-test-class"&gt;Step 2: Create Business Login Class with Business Login Test Class&lt;/h5&gt;
 &lt;p&gt;Business Logic class with Methods for testing:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.junit.Test&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.junit.Ignore&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -392,7 +392,7 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;Step3: Create Test Suite Class using @RunWith and @Suite annotation&lt;/h5&gt;
+&lt;h5 id="step3-create-test-suite-class-using-runwith-and-suite-annotation"&gt;Step3: Create Test Suite Class using @RunWith and @Suite annotation&lt;/h5&gt;
 &lt;p&gt;Example code from Tutorialspoint.com:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.junit.runner.RunWith&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.junit.runners.Suite&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -408,17 +408,17 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;Create Test Runner Classes&lt;/h5&gt;
+&lt;h5 id="create-test-runner-classes"&gt;Create Test Runner Classes&lt;/h5&gt;
 &lt;p&gt;Same code as examples above&lt;/p&gt;
-&lt;h4&gt;Ignore Test&lt;/h4&gt;
+&lt;h4 id="ignore-test"&gt;Ignore Test&lt;/h4&gt;
 &lt;p&gt;Sometimes it happens that our code is not ready and test case written to test that method/code will fail if run. The &lt;code&gt;@Ignore&lt;/code&gt; annotation helps in this regards.&lt;/p&gt;
 &lt;p&gt;A test method annotated with @Ignore &lt;strong&gt;will not be executed&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;If a test class is annotated with @Ignore then none of its test methods will be executed.&lt;/p&gt;
-&lt;h5&gt;Step 1: Create a Message Class&lt;/h5&gt;
+&lt;h5 id="step-1-create-a-message-class_1"&gt;Step 1: Create a Message Class&lt;/h5&gt;
 &lt;p&gt;Same as example above.&lt;/p&gt;
-&lt;h5&gt;Step 2: Create Business Login Class with Business Login Test Class&lt;/h5&gt;
+&lt;h5 id="step-2-create-business-login-class-with-business-login-test-class_1"&gt;Step 2: Create Business Login Class with Business Login Test Class&lt;/h5&gt;
 &lt;p&gt;Same as example above.&lt;/p&gt;
-&lt;h5&gt;Step 3: Create Test Runner Class with @Ignore Annotation&lt;/h5&gt;
+&lt;h5 id="step-3-create-test-runner-class-with-ignore-annotation"&gt;Step 3: Create Test Runner Class with @Ignore Annotation&lt;/h5&gt;
 &lt;p&gt;Example code from Tutorialspoint.com:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.junit.Test&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.junit.Ignore&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -445,12 +445,12 @@
 
 
 &lt;p&gt;If you run the code above, you will always pass all test because none of test with @Test annotation above is excuted.&lt;/p&gt;
-&lt;h4&gt;Time Test&lt;/h4&gt;
+&lt;h4 id="time-test"&gt;Time Test&lt;/h4&gt;
 &lt;p&gt;If a test case takes more time than specified number of milliseconds then JUnit will automatically mark it as failed.&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;timeout&lt;/code&gt; parameter is used along with @Test annotation.&lt;/p&gt;
-&lt;h5&gt;Step 1: Create a Message Class&lt;/h5&gt;
+&lt;h5 id="step-1-create-a-message-class_2"&gt;Step 1: Create a Message Class&lt;/h5&gt;
 &lt;p&gt;Same as example above.&lt;/p&gt;
-&lt;h5&gt;Step 2: Create Test Class with Timeout Setting&lt;/h5&gt;
+&lt;h5 id="step-2-create-test-class-with-timeout-setting"&gt;Step 2: Create Test Class with Timeout Setting&lt;/h5&gt;
 &lt;p&gt;Example code from Tutorialspoint.com:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.junit.Test&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.junit.Ignore&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -474,14 +474,14 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;Step 3: Create Test Runner Class&lt;/h5&gt;
+&lt;h5 id="step-3-create-test-runner-class"&gt;Step 3: Create Test Runner Class&lt;/h5&gt;
 &lt;p&gt;Same regular Test Runner class as examples above&lt;/p&gt;
-&lt;h4&gt;Exceptions Test&lt;/h4&gt;
+&lt;h4 id="exceptions-test"&gt;Exceptions Test&lt;/h4&gt;
 &lt;p&gt;You can test the code &lt;em&gt;whether code throws desired exception or not&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;The &lt;strong&gt;expected&lt;/strong&gt; parameter is used along with @Test annotation.&lt;/p&gt;
-&lt;h5&gt;Step 1: Create a Message Class&lt;/h5&gt;
+&lt;h5 id="step-1-create-a-message-class_3"&gt;Step 1: Create a Message Class&lt;/h5&gt;
 &lt;p&gt;Same as example above.&lt;/p&gt;
-&lt;h5&gt;Step 2: Create Test Class with Exception Setting&lt;/h5&gt;
+&lt;h5 id="step-2-create-test-class-with-exception-setting"&gt;Step 2: Create Test Class with Exception Setting&lt;/h5&gt;
 &lt;p&gt;Example code from Tutorialspoint.com:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.junit.Test&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.junit.Ignore&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -505,9 +505,9 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;Step 3: Create Test Runner Class&lt;/h5&gt;
+&lt;h5 id="step-3-create-test-runner-class_1"&gt;Step 3: Create Test Runner Class&lt;/h5&gt;
 &lt;p&gt;Same regular Test Runner class as examples above&lt;/p&gt;
-&lt;h4&gt;Parameterized Test&lt;/h4&gt;
+&lt;h4 id="parameterized-test"&gt;Parameterized Test&lt;/h4&gt;
 &lt;p&gt;Parameterized tests allow developer to &lt;em&gt;run the same test over and over again using different values&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Five steps to follow for parameterized test:&lt;/p&gt;
 &lt;ol&gt;
@@ -528,7 +528,7 @@
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;The test case will be invoked once per each row of data.&lt;/p&gt;
-&lt;h5&gt;Step 1: Create a Business Logic class with Methods for Testing&lt;/h5&gt;
+&lt;h5 id="step-1-create-a-business-logic-class-with-methods-for-testing"&gt;Step 1: Create a Business Logic class with Methods for Testing&lt;/h5&gt;
 &lt;p&gt;Exmaple code from Tutorialspoint.com:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;PrimeNumberChecker&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
    &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="n"&gt;Boolean&lt;/span&gt; &lt;span class="nf"&gt;validate&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;final&lt;/span&gt; &lt;span class="n"&gt;Integer&lt;/span&gt; &lt;span class="n"&gt;primeNumber&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
@@ -543,7 +543,7 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;Step 2: Create a Business Logic Parameterized Test Class&lt;/h5&gt;
+&lt;h5 id="step-2-create-a-business-logic-parameterized-test-class"&gt;Step 2: Create a Business Logic Parameterized Test Class&lt;/h5&gt;
 &lt;p&gt;Exmaple code from Tutorialspoint.com:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;java.util.Arrays&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;java.util.Collection&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -593,5 +593,5 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;Step 3: Create Test Runner Class&lt;/h5&gt;
+&lt;h5 id="step-3-create-test-runner-class_2"&gt;Step 3: Create Test Runner Class&lt;/h5&gt;
 &lt;p&gt;Same regular Test Runner class as examples above&lt;/p&gt;&lt;/div&gt;</description><category>Java</category><category>JUnit</category><category>Software Testing</category><guid>http://pengyin-shan.com/posts/2015/Java/junit-basics.html</guid><pubDate>Fri, 24 Jul 2015 07:00:00 GMT</pubDate></item></channel></rss>

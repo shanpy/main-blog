@@ -1,21 +1,21 @@
 <p>A JavaScript Regex Cheatsheet <a href="https://www.debuggex.com/cheatsheet/regex/javascript">online</a>.</p>
-<h2>JavaScript Regular Expression</h2>
-<h3>Method</h3>
-<h4>search</h4>
+<h2 id="javascript-regular-expression">JavaScript Regular Expression</h2>
+<h3 id="method">Method</h3>
+<h4 id="search">search</h4>
 <p><code>search()</code> uses an expression to search for a match, and returns the position of the match. Return <code>-1</code> if regular expression not match:</p>
 <pre class="code literal-block"><span></span><span class="kd">var</span> <span class="nx">str</span> <span class="o">=</span> <span class="s2">&quot;test&quot;</span><span class="p">;</span>
 <span class="kd">var</span> <span class="nx">n</span> <span class="o">=</span> <span class="nx">str</span><span class="p">.</span><span class="nx">search</span><span class="p">(</span><span class="sr">/^(test)+$/i</span><span class="p">);</span> <span class="c1">//n=0</span>
 </pre>
 
 
-<h4>replace</h4>
+<h4 id="replace">replace</h4>
 <p><code>replace</code>: search pattern and replace it</p>
 <pre class="code literal-block"><span></span><span class="kd">var</span> <span class="nx">str</span> <span class="o">=</span> <span class="s2">&quot;test&quot;</span><span class="p">;</span>
 <span class="kd">var</span> <span class="nx">res</span> <span class="o">=</span> <span class="nx">str</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/test/i</span><span class="p">,</span> <span class="s2">&quot;new-test&quot;</span><span class="p">);</span>
 </pre>
 
 
-<h4>test</h4>
+<h4 id="test">test</h4>
 <p><code>test()</code> searches a string for a pattern, and returns <code>true</code> or <code>false</code>, depending on the result.</p>
 <p>Example code from w3cschool:</p>
 <pre class="code literal-block"><span></span><span class="kd">var</span> <span class="nx">patt</span> <span class="o">=</span> <span class="sr">/e/</span><span class="p">;</span>
@@ -23,14 +23,14 @@
 </pre>
 
 
-<h4>exec</h4>
+<h4 id="exec">exec</h4>
 <p><code>exec()</code> searches a string for a specified pattern, and returns <strong>the found text</strong>. If nothing is founded, return <code>null</code>.</p>
 <p>Example code from w3cschool:</p>
 <pre class="code literal-block"><span></span><span class="sr">/e/</span><span class="p">.</span><span class="nx">exec</span><span class="p">(</span><span class="s2">&quot;The best things in life are free!&quot;</span><span class="p">);</span> <span class="c1">//e</span>
 </pre>
 
 
-<h3>Modifiers</h3>
+<h3 id="modifiers">Modifiers</h3>
 <ul>
 <li>
 <p><code>i</code>: Perform case-insensitive matching</p>
@@ -42,13 +42,13 @@
 <p><code>m</code>: Perform a mutiline matching</p>
 </li>
 </ul>
-<h3>Escape</h3>
+<h3 id="escape">Escape</h3>
 <p>Use <code>\</code> to <strong>escape</strong> to following items in regular expression: <code>^</code>, <code>$</code>, <code>.</code>, <code>*</code>, <code>+</code>, <code>?</code>, <code>=</code>, <code>!</code>, <code>:</code>, <code>|</code>, <code>\</code>, <code>/</code>, <code>(</code>, <code>)</code>, <code>[</code>, <code>]</code>, <code>{</code>, <code>}</code></p>
-<h3>OR</h3>
+<h3 id="or">OR</h3>
 <p><code>[]</code>: <code>/[abc]/</code> means <code>a</code> or <code>b</code> or <code>c</code></p>
-<h3>Except</h3>
+<h3 id="except">Except</h3>
 <p><code>[^]</code>: <code>/[^abc]/</code> anything except <code>a</code> or <code>b</code> or <code>c</code></p>
-<h3>Character</h3>
+<h3 id="character">Character</h3>
 <p><code>.</code>: any single character <em>except next-line and white-space</em>. i.e. <code>[^\n\r]</code></p>
 <p><code>\w</code>: any ASCII single character. i.e. <code>[a-zA-Z0-9]</code></p>
 <p><code>\W</code>: any non-ASCII single character. i.e. <code>[^a-zA-Z0-9]</code></p>
@@ -56,13 +56,13 @@
 <p><code>\D</code>: any non-digital single character. i.e.e <code>[^0-9]</code></p>
 <p><code>\s</code>: white-space</p>
 <p><code>\S</code>: non-white-space</p>
-<h3>Meta Character</h3>
+<h3 id="meta-character">Meta Character</h3>
 <p><code>\r</code>: Assume you hit <code>Enter</code> key</p>
 <p><code>\t</code>: Tab</p>
 <p><code>\n</code>: change new line</p>
 <p><code>\f</code>: change page</p>
 <p><code>\0</code>: empty character</p>
-<h3>Repeat</h3>
+<h3 id="repeat">Repeat</h3>
 <p><code>{min, max}</code>: Repeat from min times to max times. Example: <code>/[test]{4,6}/</code> means 't' or <code>e</code> or <code>s</code> or <code>t</code> should be repeated at least 4 times and as most 6 times.</p>
 <p><code>{min,}</code> or <code>{,max}</code>: Repeat at least <code>min</code> or at most <code>max</code> times. Example: <code>/[test]{4,}</code> means 't' or <code>e</code> or <code>s</code> or <code>t</code> should be repeated at least 4 times. No maximum times.</p>
 <p><code>{n}</code>: Repeat exactly n times.</p>
@@ -78,7 +78,7 @@
 </pre>
 
 
-<h3>Group and Border</h3>
+<h3 id="group-and-border">Group and Border</h3>
 <p><code>^</code>: Mark start point</p>
 <p><code>$</code>: Mark end point</p>
 <p><code>\b</code>: all characters except <code>[a-zA-Z0-9]</code></p>
@@ -92,7 +92,7 @@
 <p><code>\B</code>: opposite from above</p>
 <p><code>()</code>: AND. Example: <code>/(abc)+/</code> means <code>abc</code> or <code>abcabc</code> or more.</p>
 <p><code>|</code>: OR. Example: <code>/a|b/</code> means <code>a</code> or <code>b</code></p>
-<h3>Frequently Used Regular Expressions</h3>
+<h3 id="frequently-used-regular-expressions">Frequently Used Regular Expressions</h3>
 <p>Examples below are taken from <a href="http://kb.cnblogs.com/page/80965/">this post</a>:</p>
 <ul>
 <li>

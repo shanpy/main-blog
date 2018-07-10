@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>I'm Pengyin (Posts about SEO)</title><link>http://pengyin-shan.com/</link><description></description><atom:link href="http://pengyin-shan.com/categories/seo.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 06 Jul 2018 17:48:43 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Search Engine Basics (Including Lucene)</title><link>http://pengyin-shan.com/posts/2015/Data%20Science/search-engine-basics-lucene.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3&gt;Reference List&lt;/h3&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>I'm Pengyin (Posts about SEO)</title><link>http://pengyin-shan.com/</link><description></description><atom:link type="application/rss+xml" rel="self" href="http://pengyin-shan.com/categories/seo.xml"></atom:link><language>en</language><lastBuildDate>Tue, 10 Jul 2018 14:56:13 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Search Engine Basics (Including Lucene)</title><link>http://pengyin-shan.com/posts/2015/Data%20Science/search-engine-basics-lucene.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3 id="reference-list"&gt;Reference List&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://www.tutorialspoint.com/lucene/lucene_overview.htm"&gt;Lucene Tutorial from TutorialPoint.com&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Search Engine Basics&lt;/h3&gt;
-&lt;h4&gt;Search Application Operation List&lt;/h4&gt;
+&lt;h3 id="search-engine-basics"&gt;Search Engine Basics&lt;/h3&gt;
+&lt;h4 id="search-application-operation-list"&gt;Search Application Operation List&lt;/h4&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Acquire Raw Content&lt;/strong&gt;: Collect the target contents on which search are to be conducted.&lt;/p&gt;
@@ -31,18 +31,18 @@
 &lt;p&gt;&lt;strong&gt;Render Results&lt;/strong&gt;: Once result is received the application should decide how to show the results to the user using User Interface. How much information is to be shown at first look and so on.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3&gt;Lucene Basics&lt;/h3&gt;
-&lt;h4&gt;Setup&lt;/h4&gt;
+&lt;h3 id="lucene-basics"&gt;Lucene Basics&lt;/h3&gt;
+&lt;h4 id="setup"&gt;Setup&lt;/h4&gt;
 &lt;p&gt;Lucene performs step 2 to step 7 in &lt;code&gt;Search Application Operation List&lt;/code&gt; section above.&lt;/p&gt;
 &lt;p&gt;You need &lt;code&gt;JDK&lt;/code&gt; for Lucene setup. You can view setup process &lt;a href="http://www.tutorialspoint.com/lucene/lucene_environment.htm"&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;h4&gt;Index Process&lt;/h4&gt;
+&lt;h4 id="index-process"&gt;Index Process&lt;/h4&gt;
 &lt;p&gt;In Lucene, &lt;code&gt;IndexWriter&lt;/code&gt; is the most important and core component of the indexing process.&lt;/p&gt;
 &lt;p&gt;Process Chart for TutorialsPoint:&lt;/p&gt;
 &lt;p&gt;images/articles/2015/data/indexing_process.jpg &lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;We add Document(s) containing Field(s) to IndexWriter which analyzes the Document(s) using the Analyzer and then creates/open/edit indexes as required and store/update them in a Directory. IndexWriter is used to &lt;em&gt;update or create&lt;/em&gt; indexes. It is not used to read indexes.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h5&gt;List of Indexing Classes&lt;/h5&gt;
+&lt;h5 id="list-of-indexing-classes"&gt;List of Indexing Classes&lt;/h5&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href="http://www.tutorialspoint.com/lucene/lucene_indexwriter.htm"&gt;IndexWriter&lt;/a&gt;: This class acts as a core component which &lt;strong&gt;creates/updates indexes&lt;/strong&gt; during indexing process.&lt;/p&gt;
@@ -60,7 +60,7 @@
 &lt;p&gt;&lt;a href="http://www.tutorialspoint.com/lucene/lucene_field.htm"&gt;Field&lt;/a&gt;: Field is the &lt;strong&gt;lowest unit or the starting point&lt;/strong&gt; of the indexing process. It represents the &lt;code&gt;key-value&lt;/code&gt; pair relationship where a key is used to identify the value to be indexed. Say a field used to represent contents of a document will have key as "contents" and the value may contain the part or all of the text or numeric content of the document. Lucene can index only &lt;strong&gt;text or numeric&lt;/strong&gt; contents only.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h5&gt;List of Search Classes&lt;/h5&gt;
+&lt;h5 id="list-of-search-classes"&gt;List of Search Classes&lt;/h5&gt;
 &lt;p&gt;Searching process is again one of the core functionality provided by Lucene.&lt;/p&gt;
 &lt;p&gt;It's flow is similar to that of indexing process. Basic search of lucene can be made using following classes which can also be termed as foundation classes for all search related operations:&lt;/p&gt;
 &lt;ol&gt;
@@ -80,7 +80,7 @@
 &lt;p&gt;&lt;a href="http://www.tutorialspoint.com/lucene/lucene_topdocs.htm"&gt;TopDocs&lt;/a&gt; : TopDocs points to the top N search results which matches the search criteria. It is simple container of pointers to point to documents which are output of search result.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h5&gt;Create a Document&lt;/h5&gt;
+&lt;h5 id="create-a-document"&gt;Create a Document&lt;/h5&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Create a method to &lt;strong&gt;get a lucene document&lt;/strong&gt; from a text file.&lt;/p&gt;
@@ -109,7 +109,7 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;Create a IndexWriter&lt;/h5&gt;
+&lt;h5 id="create-a-indexwriter"&gt;Create a IndexWriter&lt;/h5&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;IndexWriter class acts as a core component which &lt;strong&gt;creates/updates&lt;/strong&gt; indexes during indexing process.&lt;/p&gt;
@@ -135,7 +135,7 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;Start Indexing Process&lt;/h5&gt;
+&lt;h5 id="start-indexing-process"&gt;Start Indexing Process&lt;/h5&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;private&lt;/span&gt; &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;indexFile&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;File&lt;/span&gt; &lt;span class="n"&gt;file&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="kd"&gt;throws&lt;/span&gt; &lt;span class="n"&gt;IOException&lt;/span&gt;&lt;span class="o"&gt;{&lt;/span&gt;
    &lt;span class="n"&gt;System&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;out&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;println&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"Indexing "&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;file&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;getCanonicalPath&lt;/span&gt;&lt;span class="o"&gt;());&lt;/span&gt;
    &lt;span class="n"&gt;Document&lt;/span&gt; &lt;span class="n"&gt;document&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;getDocument&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;file&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
@@ -144,8 +144,8 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Basic Indexing Operations&lt;/h4&gt;
-&lt;h5&gt;Add Document Operation&lt;/h5&gt;
+&lt;h4 id="basic-indexing-operations"&gt;Basic Indexing Operations&lt;/h4&gt;
+&lt;h5 id="add-document-operation"&gt;Add Document Operation&lt;/h5&gt;
 &lt;p&gt;Add document is one of the core operation as part of indexing process.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -163,7 +163,7 @@
 &lt;p&gt;Way 2: &lt;strong&gt;addDocument(Document,Analyzer)&lt;/strong&gt; - Adds the document using the provided analyzer.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Refer "Start Indexing Process" section above for code reference.&lt;/p&gt;
-&lt;h5&gt;Update Document Operation&lt;/h5&gt;
+&lt;h5 id="update-document-operation"&gt;Update Document Operation&lt;/h5&gt;
 &lt;p&gt;Update document is another important operation as part of indexing process.&lt;/p&gt;
 &lt;p&gt;This operation is used when already indexed contents are updated and indexes become invalid. This operation is also known as &lt;code&gt;re-indexing&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;We update Document(s) containing Field(s) to &lt;code&gt;IndexWriter&lt;/code&gt; where &lt;code&gt;IndexWriter&lt;/code&gt; is used to update indexes.&lt;/p&gt;
@@ -205,7 +205,7 @@
 
 
 &lt;/blockquote&gt;
-&lt;h5&gt;Delete Document Operation&lt;/h5&gt;
+&lt;h5 id="delete-document-operation"&gt;Delete Document Operation&lt;/h5&gt;
 &lt;p&gt;Delete document is another important operation as part of indexing process.&lt;/p&gt;
 &lt;p&gt;This operation is used when already indexed contents are updated and indexes become invalid or indexes become very large in size then &lt;em&gt;in order to reduce the size and update the index&lt;/em&gt;, delete operations are carried out.&lt;/p&gt;
 &lt;p&gt;We delete Document(s) containing Field(s) to &lt;code&gt;IndexWriter&lt;/code&gt; where &lt;code&gt;IndexWriter&lt;/code&gt; is used to update indexes.&lt;/p&gt;
@@ -247,11 +247,11 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;Field Options&lt;/h5&gt;
+&lt;h5 id="field-options"&gt;Field Options&lt;/h5&gt;
 &lt;p&gt;Field is the most important and the foundation unit of indexing process.&lt;/p&gt;
 &lt;p&gt;It is the actual object containing the contents to be indexed. When we add a field, lucene provides numerous controls on the field using Field Options which states how much a field is to be searchable.&lt;/p&gt;
 &lt;p&gt;We add Document(s) containing Field(s) to &lt;code&gt;IndexWriter&lt;/code&gt; where &lt;code&gt;IndexWriter&lt;/code&gt; is used to update or create indexes.&lt;/p&gt;
-&lt;h6&gt;List of Field Options&lt;/h6&gt;
+&lt;h6 id="list-of-field-options"&gt;List of Field Options&lt;/h6&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;Index.ANALYZED&lt;/code&gt;: First analyze then do indexing. Used for &lt;em&gt;normal text indexing&lt;/em&gt;. Analyzer will break the field's value into stream of tokens and each token is searcable sepearately.&lt;/p&gt;
@@ -269,7 +269,7 @@
 &lt;p&gt;&lt;code&gt;Index.NO&lt;/code&gt;: Field value is not searchable.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h6&gt;Use of Field Options&lt;/h6&gt;
+&lt;h6 id="use-of-field-options"&gt;Use of Field Options&lt;/h6&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Same steps as &lt;code&gt;Create a Document&lt;/code&gt; section&lt;/p&gt;
@@ -278,7 +278,7 @@
 &lt;p&gt;Add the newly created fields to the document object and return it to the caller method.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h4&gt;Search Operations&lt;/h4&gt;
+&lt;h4 id="search-operations"&gt;Search Operations&lt;/h4&gt;
 &lt;p&gt;Searching process is one of the core functionality provided by Lucene.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;IndexSearcher&lt;/code&gt; is the most important and core component of the searching process.&lt;/p&gt;
 &lt;p&gt;Process Chart for TutorialsPoint:&lt;/p&gt;
@@ -286,7 +286,7 @@
 &lt;p&gt;We first create &lt;code&gt;Directory&lt;/code&gt;(s) containing &lt;code&gt;index&lt;/code&gt;es and then pass it to &lt;code&gt;IndexSearcher&lt;/code&gt; which opens the &lt;code&gt;Directory&lt;/code&gt; using &lt;code&gt;IndexReader&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Then we create a &lt;code&gt;Query&lt;/code&gt; with a &lt;code&gt;Term&lt;/code&gt; and make a search using &lt;code&gt;IndexSearcher&lt;/code&gt; by passing the &lt;code&gt;Query&lt;/code&gt; to the searcher.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;IndexSearcher&lt;/code&gt; returns a &lt;code&gt;TopDocs&lt;/code&gt; object which contains the search details along with document &lt;code&gt;ID&lt;/code&gt;(s) of the Document which is the result of the search operation.&lt;/p&gt;
-&lt;h5&gt;Create a QueryParser&lt;/h5&gt;
+&lt;h5 id="create-a-queryparser"&gt;Create a QueryParser&lt;/h5&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;QueryParser class parses the user entered input into &lt;strong&gt;lucene understandable format query&lt;/strong&gt;.&lt;/p&gt;
@@ -309,7 +309,7 @@
 
 
 &lt;/blockquote&gt;
-&lt;h5&gt;Create a IndexSearch&lt;/h5&gt;
+&lt;h5 id="create-a-indexsearch"&gt;Create a IndexSearch&lt;/h5&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;IndexSearcher&lt;/code&gt; class acts as a core component which searcher indexes created during indexing process.&lt;/p&gt;
@@ -335,7 +335,7 @@
 
 
 &lt;/blockquote&gt;
-&lt;h5&gt;Make search&lt;/h5&gt;
+&lt;h5 id="make-search"&gt;Make search&lt;/h5&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;To start search, create a &lt;code&gt;Query&lt;/code&gt; object by parsing search expression through QueryParser.&lt;/p&gt;
@@ -354,7 +354,7 @@
 
 
 &lt;/blockquote&gt;
-&lt;h5&gt;Get the document&lt;/h5&gt;
+&lt;h5 id="get-the-document"&gt;Get the document&lt;/h5&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="n"&gt;Document&lt;/span&gt; &lt;span class="nf"&gt;getDocument&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ScoreDoc&lt;/span&gt; &lt;span class="n"&gt;scoreDoc&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
    &lt;span class="kd"&gt;throws&lt;/span&gt; &lt;span class="n"&gt;CorruptIndexException&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;IOException&lt;/span&gt;&lt;span class="o"&gt;{&lt;/span&gt;
    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;indexSearcher&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;doc&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;scoreDoc&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;doc&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
@@ -362,14 +362,14 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;Close IndexSearcher&lt;/h5&gt;
+&lt;h5 id="close-indexsearcher"&gt;Close IndexSearcher&lt;/h5&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;close&lt;/span&gt;&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="kd"&gt;throws&lt;/span&gt; &lt;span class="n"&gt;IOException&lt;/span&gt;&lt;span class="o"&gt;{&lt;/span&gt;
    &lt;span class="n"&gt;indexSearcher&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;close&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;
 &lt;span class="o"&gt;}&lt;/span&gt;
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Query Programming&lt;/h4&gt;
+&lt;h4 id="query-programming"&gt;Query Programming&lt;/h4&gt;
 &lt;p&gt;&lt;a href="http://www.tutorialspoint.com/lucene/lucene_termquery1.htm"&gt;TermQuery&lt;/a&gt;: TermQuery is the most commonly used query object and is the foundation of many complex queries that lucene can make use of. TermQuery is normally used to retrieve documents based on the key which is case sensitive.&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.tutorialspoint.com/lucene/lucene_termrangequery.htm"&gt;TermRangeQuery&lt;/a&gt;: TermRangeQuery is the used when a range of textual terms are to be searched.&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.tutorialspoint.com/lucene/lucene_prefixquery.htm"&gt;PrefixQuery&lt;/a&gt;: PrefixQuery is used to match documents whose &lt;em&gt;index starts with a specified string&lt;/em&gt;.&lt;/p&gt;
@@ -378,7 +378,7 @@
 &lt;p&gt;WhildCardQuery: WildcardQuery is used to search documents using wildcards like &lt;code&gt;*&lt;/code&gt; for any character sequence,&lt;code&gt;?&lt;/code&gt; matching a single character.&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.tutorialspoint.com/lucene/lucene_fuzzyquery.htm"&gt;FuzzyQuery&lt;/a&gt;: FuzzyQuery is used to search documents using &lt;strong&gt;fuzzy implementation&lt;/strong&gt; that is an approximate search based on edit distance algorithm.&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.tutorialspoint.com/lucene/lucene_matchalldocsquery.htm"&gt;MatchAllDocsQuery&lt;/a&gt;: MatchAllDocsQuery as name suggests &lt;em&gt;matches all the documents&lt;/em&gt;.&lt;/p&gt;
-&lt;h4&gt;Analysis Objects&lt;/h4&gt;
+&lt;h4 id="analysis-objects"&gt;Analysis Objects&lt;/h4&gt;
 &lt;p&gt;&lt;a href="http://www.tutorialspoint.com/lucene/lucene_token.htm"&gt;Token&lt;/a&gt;: Token represents text or word in a document with relevant details like its &lt;strong&gt;metadata&lt;/strong&gt; (position, start offset, end offset, token type and its position increment).&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.tutorialspoint.com/lucene/lucene_tokenstream.htm"&gt;TokenStream&lt;/a&gt;: TokenStream is an output of analysis process and it comprises of series of tokens. It is an abstract class.&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.tutorialspoint.com/lucene/lucene_analyzer_class.htm"&gt;Analyzer&lt;/a&gt;: Analyzer class is responsible to analyze a document and get the tokens/words from the text which is to be indexed. Without analysis done, IndexWriter can not create index.&lt;/p&gt;
@@ -386,8 +386,8 @@
 &lt;p&gt;&lt;a href="http://www.tutorialspoint.com/lucene/lucene_simpleanalyzer.htm"&gt;SimpleAnalyzer&lt;/a&gt;: This analyzer spilts the text in a document based on &lt;strong&gt;non-letter characters&lt;/strong&gt; and then lowercase them.&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.tutorialspoint.com/lucene/lucene_stopanalyzer.htm"&gt;StopAnalyzer&lt;/a&gt;: This analyzer works similar to SimpleAnalyzer and remove the common words like &lt;code&gt;a&lt;/code&gt;,&lt;code&gt;an&lt;/code&gt;,&lt;code&gt;the&lt;/code&gt; etc.&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.tutorialspoint.com/lucene/lucene_standardanalyzer.htm"&gt;StandardAnalyzer&lt;/a&gt;: This is the most sofisticated analyzer and is capable of handling &lt;code&gt;names&lt;/code&gt;, &lt;code&gt;email address&lt;/code&gt; etc. It lowercases each token and removes common words and punctuation if any.&lt;/p&gt;
-&lt;h4&gt;Sorting&lt;/h4&gt;
-&lt;h5&gt;Sorting By Relevance&lt;/h5&gt;
+&lt;h4 id="sorting"&gt;Sorting&lt;/h4&gt;
+&lt;h5 id="sorting-by-relevance"&gt;Sorting By Relevance&lt;/h5&gt;
 &lt;p&gt;This is &lt;strong&gt;default&lt;/strong&gt; sorting mode used by lucene.&lt;/p&gt;
 &lt;p&gt;Lucene provides results by the most relevant hit at the top.&lt;/p&gt;
 &lt;p&gt;Example Code from TutorialsPoint:&lt;/p&gt;
@@ -415,7 +415,7 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;Sorting By IndexOrder&lt;/h5&gt;
+&lt;h5 id="sorting-by-indexorder"&gt;Sorting By IndexOrder&lt;/h5&gt;
 &lt;p&gt;This is sorting mode used by lucene in which first document indexed is shown first in the search results.&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;private&lt;/span&gt; &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;sortUsingIndex&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;searchQuery&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
  &lt;span class="kd"&gt;throws&lt;/span&gt; &lt;span class="n"&gt;IOException&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;ParseException&lt;/span&gt;&lt;span class="o"&gt;{&lt;/span&gt;

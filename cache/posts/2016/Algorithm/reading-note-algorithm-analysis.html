@@ -1,5 +1,5 @@
 <p>Although my current work isn't involved in too much algorithms, it's important for me to review and throughly learn the idea in it. This is a reading note of <em>The Algorithm Design Manual 2nd edition written by Steven S. Skiena - Algorithm Analysis</em> part.</p>
-<h1>Reference List</h1>
+<h1 id="reference-list">Reference List</h1>
 <ul>
 <li>
 <p><a href="http://www.martinkeefe.com/math/mathjax1">A good reference website of MathJax in markdown</a>, from <em>Matin's Stuff</em> blog</p>
@@ -16,7 +16,7 @@
 <p>To analyze an algorithm, two important tools are 1) RAM model of computation 2) the asymptotic analysis of worst-case complexity</p>
 </blockquote>
 <hr>
-<h1>RAM Model of Computation</h1>
+<h1 id="ram-model-of-computation">RAM Model of Computation</h1>
 <p><code>Random Access Machine (RAM)</code> is a hypothetical computer which has following properties:</p>
 <ul>
 <li>
@@ -31,7 +31,7 @@
 </ul>
 <p>Under RAM model, run time is measured by <em>counting up the number of steps</em> an algorithm takes on a given problem instance. If we assume that RAM executes a given number of steps per second, this operation count coverts naturally to the actual running time.</p>
 <hr>
-<h1>Best, Worst and Average-Case Complexity</h1>
+<h1 id="best-worst-and-average-case-complexity">Best, Worst and Average-Case Complexity</h1>
 <p>The book gave a graph to show three cases:</p>
 <p>img-responsive images/articles/2016/algorithms/complexity1.png </p>
 <p>The graph above shows that we can present each <em>input instance</em> as a point on a graph, where the $x-axis$ represents the <em>size</em> of the input problem and the $y-axis$ denotes the number of <em>steps</em> taken by the algorithm in this instance.</p>
@@ -52,7 +52,7 @@
 </blockquote>
 <p>Each of these time complexities define a numerical function, representing <strong>time versus problem size</strong>.</p>
 <hr>
-<h1>Big $O$ Notation</h1>
+<h1 id="big-o-notation">Big $O$ Notation</h1>
 <p>the functions generating from the parts above have two problems:</p>
 <ul>
 <li>
@@ -94,7 +94,7 @@
 <p>The Big $O$ annotation enables use to ignore details and focus on the big picture.</p>
 </blockquote>
 <hr>
-<h1>Growth Rates and Dominance Relations</h1>
+<h1 id="growth-rates-and-dominance-relations">Growth Rates and Dominance Relations</h1>
 <blockquote>
 <p>A faster-growing function <strong>dominates</strong> a slower-growing function.</p>
 </blockquote>

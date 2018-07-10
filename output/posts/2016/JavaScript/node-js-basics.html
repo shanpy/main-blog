@@ -7,7 +7,7 @@ article: http://ogp.me/ns/article#
 <meta charset="utf-8">
 <meta name="description" content="Now most JavaScript packages been been integrated to npm. It is time to start exploring node.js and understand the best scansion to apply it.">
 <meta name="viewport" content="width=device-width">
-<title>Node.js Basics | I'm Pengyin</title>
+<title>Node.js Basics | I'm Pengyin (Wendy)</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2016/JavaScript/node-js-basics.html">
@@ -26,7 +26,7 @@ MathJax.Hub.Config({
     }
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
-<meta property="og:site_name" content="I'm Pengyin">
+<meta property="og:site_name" content="I'm Pengyin (Wendy)">
 <meta property="og:title" content="Node.js Basics">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2016/JavaScript/node-js-basics.html">
 <meta property="og:description" content="Now most JavaScript packages been been integrated to npm. It is time to start exploring node.js and understand the best scansion to apply it.">
@@ -67,7 +67,7 @@ MathJax.Hub.Config({
         <div class="body">
             <div>
 <p><em>This is a reading note for node.js part on <a href="http://www.tutorialspoint.com/nodejs/index.htm">tutorialspoint</a>.</em></p>
-<h2>Introduction</h2>
+<h2 id="introduction">Introduction</h2>
 <p>Node.js (MIT License) is a server-side framework built on Good V8 Engine. From Tutorialpoints.com, it has following features:</p>
 <ul>
 <li>
@@ -80,7 +80,7 @@ MathJax.Hub.Config({
 <p>Node.js does not buffer any data.</p>
 </li>
 </ul>
-<h2>Components</h2>
+<h2 id="components">Components</h2>
 <p>One node.js application has following three parts:</p>
 <p>Import Required Modules: use <code>require</code> to import node.js modules. Example: <code>var http = require("http")</code></p>
 <p>Create server: user <code>http.createServer()</code> to create server instance. This method includes callbacks for response information, such as port number, content-type, etc:</p>
@@ -93,7 +93,7 @@ MathJax.Hub.Config({
 
 
 <p>Start Server: use <code>node xxx.js</code> in terminal to start server. Use name of server js file. Example: <code>node config.js</code>.</p>
-<h2>NPM</h2>
+<h2 id="npm">NPM</h2>
 <p>node.js use <code>npm</code> (Node Package Manager) to install/control node modules. <code>npm install package_name [-g] [--save/--save-dev]</code> can be used to install package (<strong><code>--save</code> or <code>--save-dev</code> is used to add dependencies to your package.json file</strong>). There are two way of installation: <strong>Global</strong> and <strong>Local</strong>:</p>
 <ul>
 <li>
@@ -115,7 +115,7 @@ MathJax.Hub.Config({
 <p><code>npm search package_name</code>: search package name using npm.</p>
 </li>
 </ul>
-<h3>package.json</h3>
+<h3 id="packagejson">package.json</h3>
 <p>For project: Run <code>npm init</code> at top level of a project can be used to generate <code>package.json</code> for <strong>this project</strong>, which is a JSON file defining the property of <strong>this project</strong>.  A few questions will be asked during initialization process.</p>
 <p>A <code>package.json</code> for project contains <code>dependencies</code>, which is for publication pages, and <code>devDependencies</code> for dev/test only packages. Following is an example:</p>
 <pre class="code literal-block"><span></span><span class="p">{</span>
@@ -213,8 +213,8 @@ MathJax.Hub.Config({
 
 
 <p><code>npm adduser</code> to register current user to npm repository, then <code>npm publish</code> can be used to publish current module to <code>repository</code> address in <code>package.json</code>.</p>
-<h2>Concurrency: Callback and Events</h2>
-<h3>Callbacks</h3>
+<h2 id="concurrency-callback-and-events">Concurrency: Callback and Events</h2>
+<h3 id="callbacks">Callbacks</h3>
 <p>JavaScript callback functions are heavily used in node.js to make sure no block exists. Following is an example:</p>
 <pre class="code literal-block"><span></span><span class="c1">//Assume 'input.txt' has one line 'Hello World!'</span>
 <span class="kd">var</span> <span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'fs'</span><span class="p">);</span>
@@ -227,7 +227,7 @@ MathJax.Hub.Config({
 
 
 <p>The code above should output: <code>End Program! Hello World!</code>. Program goes till <code>readFile()</code> finished, then callback statements will run.</p>
-<h3>Events</h3>
+<h3 id="events">Events</h3>
 <p>Node.js use <strong>observer pattern</strong>, which means there exists dependency from one to many. Many observers (i.e. event listeners) will observe one subject (i.e. event). When subjects changes, all observers will be notified and updated based on the update.</p>
 <blockquote>
 <p>Node thread keeps an event loop and whenever any task get completed, it fires the corresponding event which signals the event listener function to get executed.</p>
@@ -294,7 +294,7 @@ data received
 
 <p><em>If no <code>setTimeout</code> (i.e. <code>data_received</code> event finish immediately), 'data received' will output before 'Program Ended'.</em></p>
 <p>In Node Application, any async function accepts a callback as a <strong>last</strong> parameter and the callback function accepts error as a <strong>first</strong> parameter.</p>
-<h2>Streams</h2>
+<h2 id="streams">Streams</h2>
 <p>Reading/Writing files needs <code>require('fs')</code> module.</p>
 <p>Streams is used to read/write data. In node.js, there are four type of streams:</p>
 <ol>
@@ -345,7 +345,7 @@ data received
 </pre>
 
 
-<h2>Global Variables and Common Modules in node.js</h2>
+<h2 id="global-variables-and-common-modules-in-nodejs">Global Variables and Common Modules in node.js</h2>
 <p>Following are some global variables in node.js, which can be used directly, instead of requiring it first:</p>
 <ul>
 <li>
@@ -378,7 +378,7 @@ data received
 </li>
 </ul>
 <p>There are two ways to handle error: <code>Internal Binding</code>, meaning error emmitter is executing its code within <code>run</code> method of a domain; <code>External Binding</code>, meaning error emmitter is added explicitly to a domain using its add method.</p>
-<h3>Error Object</h3>
+<h3 id="error-object">Error Object</h3>
 <p>Reference to <a href="https://docs.nodejitsu.com/articles/errors/what-is-the-error-object/">this site</a>: in node.js, <code>error</code> is a build-in object that provides a standard set of useful information when an error occurs. such as a stack trace and the error message:</p>
 <pre class="code literal-block"><span></span><span class="kd">var</span> <span class="nx">error</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="s1">'The error message'</span><span class="p">);</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">error</span><span class="p">);</span>
@@ -452,7 +452,7 @@ Error: Converted to exception. System will crash!
 </pre>
 
 
-<h2>Node.js as Web Server/Client</h2>
+<h2 id="nodejs-as-web-serverclient">Node.js as Web Server/Client</h2>
 <p>Following is the image to describe web application architecture in tutorialspoint.com:</p>
 <p>Following code is to use node.js as web server (<code>server.js</code>):</p>
 <pre class="code literal-block"><span></span><span class="kd">var</span> <span class="nx">http</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'http'</span><span class="p">);</span>
@@ -552,7 +552,7 @@ Error: Converted to exception. System will crash!
 <p>If you don't have <code>index.htm</code> file available, on step 2 terminal will give out error message, which is the code handled in server.js (404 part)</p>
 </li>
 </ol>
-<h2>Express</h2>
+<h2 id="express">Express</h2>
 <p>Express is a popular Node.js framework. It has following features:</p>
 <ul>
 <li>
@@ -577,7 +577,7 @@ Error: Converted to exception. System will crash!
 <p>multer - the middle-ware for handling multipart/form-data.</p>
 </li>
 </ol>
-<h3>Routing</h3>
+<h3 id="routing">Routing</h3>
 <p>Express uses <code>request</code> and <code>response</code> objects in a <em>callback</em> function. Basic usage is following:</p>
 <pre class="code literal-block"><span></span><span class="nx">app</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">'/'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span><span class="nx">res</span><span class="p">){</span>
   <span class="c1">//deal with request and response objects</span>
@@ -619,7 +619,7 @@ Error: Converted to exception. System will crash!
 
 
 <p>The console information for <code>server.address</code> may return <code>address</code> attribute as <code>::</code>. This is because if the host name is omitted, the IPv6 address will show <code>::</code> and IPv4 address will return <code>0.0.0.0</code>. See <a href="http://stackoverflow.com/questions/33853695/node-js-server-address-address-returns">this Stack Overflow post</a> for detail.</p>
-<h3>Static Files in Express</h3>
+<h3 id="static-files-in-express">Static Files in Express</h3>
 <p><code>express.static</code> middleware is used to serve static files, such as images, stylesheets or JS files. An example is following:</p>
 <pre class="code literal-block"><span></span><span class="cm">/*</span>
 <span class="cm">now files in public folder (based on root) can be detected in browser</span>
@@ -632,7 +632,7 @@ Error: Converted to exception. System will crash!
 
 
 <p>After running code above, URL such as <code>http://localhost:8081/images/test.png</code> can be typed and viewed in browser, as long as <code>image/test.png</code> is under <code>public</code> folder and <code>public</code> folder is in root.</p>
-<h3>Cookie</h3>
+<h3 id="cookie">Cookie</h3>
 <p>Use <code>cookie-parser</code> middleware to print out cookie information. Example:</p>
 <pre class="code literal-block"><span></span><span class="kd">var</span> <span class="nx">express</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'express'</span><span class="p">);</span>
 <span class="kd">var</span> <span class="nx">cookieParser</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'cookie-parser'</span><span class="p">);</span>
@@ -676,7 +676,7 @@ Error: Converted to exception. System will crash!
 
 
     </div>
-                     <footer id="footer"><p>Contents © 2018         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                     <footer id="footer"><p>Contents © 2018         <a href="mailto:pengyin.shan@outlook.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

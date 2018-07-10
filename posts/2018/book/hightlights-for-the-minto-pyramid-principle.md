@@ -6,6 +6,8 @@
 .. authors: Pengyin Shan
 .. description: Great book for business writing. Most of highlights are appendix 3 of book. I post it here as reference.
 
+[TOC]
+
 #第1章 为什么要用金字塔结构
 
 > 条理清晰的关键，是把你的思想组织成金字塔结构，并在写作前用金字塔原理检查。

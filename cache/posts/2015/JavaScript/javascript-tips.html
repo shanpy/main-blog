@@ -1,16 +1,16 @@
-<h2>JavaScript String</h2>
-<h3>Substring</h3>
+<h2 id="javascript-string">JavaScript String</h2>
+<h3 id="substring">Substring</h3>
 <p>There are two ways in JavaScript to get substring:</p>
-<h4><code>substr(StartIndex, Length)</code>:</h4>
+<h4 id="substrstartindex-length"><code>substr(StartIndex, Length)</code>:</h4>
 <p>Takes two parameter: <strong>StartIndex</strong> and <strong>Length of Substring (Optional)</strong></p>
-<h4><code>substring(StartIndex, EndIndex)</code></h4>
+<h4 id="substringstartindex-endindex"><code>substring(StartIndex, EndIndex)</code></h4>
 <p>Takes two parameter: <strong>StartIndex (inclusive)</strong> and <strong>EndIndex (exclusive)</strong>. EndIndex is optional.</p>
 <p>If "start" is greater than "end", this method will swap the two arguments, meaning str.substring(1,4) == str.substring(4,1).</p>
 <p>If either "start" or "stop" is less than 0, it is treated as if it were 0.</p>
 <blockquote>
 <p>Note: Both methods do not change the original string.</p>
 </blockquote>
-<h4>Special Cases</h4>
+<h4 id="special-cases">Special Cases</h4>
 <p>The two methods above have difference usage for following spceial cases:</p>
 <p><strong>Negative Value</strong></p>
 <p><code>substr()</code> and <code>substring()</code> can both take negative value parameters as <code>StartIndex</code>, which means starting to count from end of string.</p>
@@ -23,8 +23,8 @@
 <blockquote>
 <p>Remember you substring has same sequence as original string. It's not reversed.</p>
 </blockquote>
-<h2>JavaScript KeyCode and Related Information</h2>
-<h3>Two Way of Event Binding</h3>
+<h2 id="javascript-keycode-and-related-information">JavaScript KeyCode and Related Information</h2>
+<h3 id="two-way-of-event-binding">Two Way of Event Binding</h3>
 <pre class="code literal-block"><span></span><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#inputbox_id&#39;</span><span class="p">).</span><span class="nx">bind</span><span class="p">(</span><span class="s1">&#39;input&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
     <span class="c1">//event.keyCode...</span>
 <span class="p">}</span>
@@ -37,7 +37,7 @@
 </pre>
 
 
-<h3>Common KeyCode</h3>
+<h3 id="common-keycode">Common KeyCode</h3>
 <ul>
 <li>
 <p><code>Delete</code>:46</p>
@@ -53,5 +53,5 @@
 </li>
 </ul>
 <p>You can refer this <a href="http://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes">cheatsheet</a> for more keycode information.</p>
-<h3>Special Cases</h3>
+<h3 id="special-cases_1">Special Cases</h3>
 <p>From <a href="http://stackoverflow.com/questions/4084715/javascript-e-keycode-doesnt-catch-backspace-del-in-ie">this stackflow post</a>, IE doesn't fire <strong>keypress</strong> event for delete, end, enter, escape, function keys, home, insert, pageUp/Down and tab. So use <strong>keydown</strong> or <strong>keyup</strong> instead.</p>

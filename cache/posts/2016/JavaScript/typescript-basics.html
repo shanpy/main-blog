@@ -1,5 +1,5 @@
 <p><em>This is a brief reading note for TypeScript <a href="http://www.typescriptlang.org/docs/handbook">official handbook</a></em>.</p>
-<h1>Gulp Setup</h1>
+<h1 id="gulp-setup">Gulp Setup</h1>
 <p><code>Gulp</code> can be used with TypeScript to provide powerful compiling process. See <a href="http://www.typescriptlang.org/docs/handbook/gulp.html">here</a> for a detailed description.</p>
 <p>My new project requires Typescript, Jade and SASS. Here is a sample <code>gulpfile.js</code>:</p>
 <pre class="code literal-block"><span></span><span class="kd">var</span> <span class="nx">gulp</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;gulp&quot;</span><span class="p">);</span>
@@ -44,14 +44,14 @@
 </pre>
 
 
-<h1>Types and Variables</h1>
-<h2>Number</h2>
+<h1 id="types-and-variables">Types and Variables</h1>
+<h2 id="number">Number</h2>
 <p>Integer, Floating Point, Hexadecimal and Decimal Literals can all be declared as <code>number</code> type.</p>
 <pre class="code literal-block"><span></span><span class="kd">let</span> <span class="nx">decimal</span>: <span class="kt">number</span> <span class="o">=</span> <span class="mi">6</span><span class="p">;</span> <span class="c1">//declare a variable called &#39;decimal&#39;, with value equaling to 6</span>
 </pre>
 
 
-<h2>String</h2>
+<h2 id="string">String</h2>
 <p><code>Template Strings</code> can be used to span multiple lines and have embedded expressions. Also <code>+</code> can be used to concatenate strings with variables.</p>
 <p><em>Remember to use lower case <code>string</code>.</em></p>
 <p>Example:</p>
@@ -73,7 +73,7 @@
 </pre>
 
 
-<h2>Array &amp; Tuple</h2>
+<h2 id="array-tuple">Array &amp; Tuple</h2>
 <p>To create an array, just use <code>[]</code> to construct array, or use <code>Array&lt;elemType&gt;</code> to do so: <code>let list: number[] = [1,2,3]</code></p>
 <p>To create a tuple (mixed type of variables), declare it first, then insert element to it:</p>
 <pre class="code literal-block"><span></span><span class="kd">let</span> <span class="nx">x</span><span class="o">:</span> <span class="p">[</span><span class="kt">string</span><span class="p">,</span> <span class="kt">number</span><span class="p">];</span>
@@ -82,7 +82,7 @@
 </pre>
 
 
-<h2>Enum</h2>
+<h2 id="enum">Enum</h2>
 <p>In <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html">Java</a>, <code>Enum</code> is a special data type that enables for a variable to be a set of <strong>predefined constants</strong>. The variable must be equal to one of the values that have been predefined for it. Java example is below:</p>
 <pre class="code literal-block"><span></span><span class="kd">public</span> <span class="kd">enum</span> <span class="n">Day</span><span class="o">{</span>
     <span class="n">SUNDAY</span><span class="o">,</span> <span class="n">MONDAY</span><span class="o">,</span> <span class="n">TUESDAY</span><span class="o">,</span> <span class="n">WEDNESDAY</span><span class="o">,</span> <span class="n">THURSDAY</span><span class="o">,</span> <span class="n">FRIDAY</span><span class="o">,</span> <span class="n">SATURDAY</span>
@@ -136,7 +136,7 @@
 </pre>
 
 
-<h2>Any &amp; Void</h2>
+<h2 id="any-void">Any &amp; Void</h2>
 <p><code>Any</code> is used to describe the variables with unknown type, like data from user or 3rd party. Use <code>any</code> to let variable passing compiler's type-checking:</p>
 <pre class="code literal-block"><span></span><span class="kd">let</span> <span class="nx">notSure</span>: <span class="kt">any</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>
 <span class="kd">let</span> <span class="nx">notSure2</span>: <span class="kt">any</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;test&#39;</span><span class="p">,</span> <span class="kc">false</span><span class="p">]</span>
@@ -164,7 +164,7 @@
 </pre>
 
 
-<h2>Type Assertion</h2>
+<h2 id="type-assertion">Type Assertion</h2>
 <p>Similar as <code>cast</code> in other languages, type assertion can be used to pass compiler's type checking. It should be used when certain type checking has been down and there is a guarantee of correct type.</p>
 <p><code>&lt;type&gt;variable</code> and <code>variable as type</code> can all be used to do type assertion. <code>JSX</code> only use <code>variable as type</code> style:</p>
 <pre class="code literal-block"><span></span><span class="kd">let</span> <span class="nx">typeassertion</span>: <span class="kt">string</span> <span class="o">=</span> <span class="s2">&quot;test type assertion string&quot;</span><span class="p">;</span>

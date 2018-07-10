@@ -7,7 +7,7 @@ article: http://ogp.me/ns/article#
 <meta charset="utf-8">
 <meta name="description" content="Reading Notes for Spring 3 Core Components Tutorial Part II (Chapter 11 to Chapter 13)">
 <meta name="viewport" content="width=device-width">
-<title>Reading Notes for Spring 3 Core Components Tutorial Part II (Chapter 11 to Chapter 13) | I'm Pengyin</title>
+<title>Reading Notes for Spring 3 Core Components Tutorial Part II (Chapter 11 to Chapter 13) | I'm Pengyin (Wendy)</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2014/reading-spring-3-11-to-13.html">
@@ -26,7 +26,7 @@ MathJax.Hub.Config({
     }
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
-<meta property="og:site_name" content="I'm Pengyin">
+<meta property="og:site_name" content="I'm Pengyin (Wendy)">
 <meta property="og:title" content="Reading Notes for Spring 3 Core Components Tutorial Part II (Chapter 1">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2014/reading-spring-3-11-to-13.html">
 <meta property="og:description" content="Reading Notes for Spring 3 Core Components Tutorial Part II (Chapter 11 to Chapter 13)">
@@ -69,7 +69,7 @@ MathJax.Hub.Config({
 <p>This post is transferred from my <a href="http://blogpengyin.herokuapp.com/">old Hexo blog site</a>, created on 2014.</p>
 <p>This is a reading note from Spring Framework 3.1 Tutorial pdf, created by <a href="http://www.tutorialspoint.com/spring"><strong>tutorialspoint</strong></a>. This pdf contains information for Spring 3 Core Basics, which is very useful for understanding defination and practive in Spring programming.</p>
 <p>This note includes Chapter 11 to Chapter 13 in tutorial.</p>
-<h2>Chapter 11: Spring Dependency Injection</h2>
+<h2 id="chapter-11-spring-dependency-injection">Chapter 11: Spring Dependency Injection</h2>
 <p>Dependency Injection (or Wiring) helps in gluing individual application classes together and same time keeping them independent.</p>
 <p>There are two types of DI: <code>Constructor-Based</code> DI and <code>Setter-Based</code> DI:</p>
 <ul>
@@ -81,7 +81,7 @@ MathJax.Hub.Config({
 </li>
 </ul>
 <p>It is a good practive to <em>use constructor arguments for</em> <strong>mandatory dependencies</strong> <em>and setter for</em> <strong>option dependencies</strong></p>
-<h3>Constructor-Based Dependency Injection</h3>
+<h3 id="constructor-based-dependency-injection">Constructor-Based Dependency Injection</h3>
 <p>Example:</p>
 <p>XML:</p>
 <pre class="code literal-block"><span></span><span class="nt">&lt;bean</span> <span class="na">id=</span><span class="s">"textEditor"</span> <span class="na">class=</span><span class="s">"com.sample.TextEditor"</span><span class="nt">&gt;</span>
@@ -133,7 +133,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h3>Consructor Arguments Resolution</h3>
+<h3 id="consructor-arguments-resolution">Consructor Arguments Resolution</h3>
 <p><code>Ambiguity</code> can happen when a constroctor takes more than one parameters. Spring make sure the <em>order</em> of <code>constrctor-arg</code> in bean <code>xml</code> file defines the <em>order</em> of parameters taken by construcor in <code>java</code> file.</p>
 <p>If you have <code>type</code> attribute in <code>xml</code> file, Spring can use <em>Type-Matching</em> to check these parameters.</p>
 <p><strong>Important</strong>: If you try to pass <em>reference</em> in <code>&lt;constructor-args&gt;</code>, use <code>ref</code> attribute. If you try to pass <em>value</em> in <code>&lt;constructor-args&gt;</code>, use <code>value</code> attribute.</p>
@@ -161,7 +161,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h3>Setter-based Dependncy Injection</h3>
+<h3 id="setter-based-dependncy-injection">Setter-based Dependncy Injection</h3>
 <p>Example:</p>
 <p>XML:</p>
 <pre class="code literal-block"><span></span><span class="nt">&lt;bean</span> <span class="na">id=</span><span class="s">"textEditor"</span> <span class="na">class=</span><span class="s">"com.sample.TextEditor"</span><span class="nt">&gt;</span>
@@ -244,7 +244,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h2>Chapter 12: Spring Injecting Inner Beans</h2>
+<h2 id="chapter-12-spring-injecting-inner-beans">Chapter 12: Spring Injecting Inner Beans</h2>
 <p>The code above can be transferred to <code>inner bean</code>. Just like <code>inner class</code> in Java, <code>inner bean</code> is the bean defined inside <code>&lt;construcor-args&gt;</code> or <code>&lt;property&gt;</code>.</p>
 <p>Example:</p>
 <p>XML:</p>
@@ -267,7 +267,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h2>Chapter 13: Spring Injecting Collection</h2>
+<h2 id="chapter-13-spring-injecting-collection">Chapter 13: Spring Injecting Collection</h2>
 <p>Spring has data type so you can pass value groups in <code>xml</code> file. There are four types: List, Set, Map and Properties. Difference is following:
 images/posts/spring-di-collection.png </p>
 <p><em>You can use</em> <code>&lt;list&gt;</code> or <code>&lt;set&gt;</code> to wire any implementation of <code>java.util.Collection</code> or <code>Array</code>.</p>
@@ -401,7 +401,7 @@ images/posts/spring-di-collection.png </p>
 
 
     </div>
-                     <footer id="footer"><p>Contents © 2018         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                     <footer id="footer"><p>Contents © 2018         <a href="mailto:pengyin.shan@outlook.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

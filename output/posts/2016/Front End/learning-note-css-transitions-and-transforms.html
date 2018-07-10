@@ -7,7 +7,7 @@ article: http://ogp.me/ns/article#
 <meta charset="utf-8">
 <meta name="description" content="This is a learning note for **CSS Transitions and Transforms** taught by *Joseph Lowery*, on *Lynda.com*, with accompanying knowledge from other resources.">
 <meta name="viewport" content="width=device-width">
-<title>Learning Note - CSS Transitions and Transforms (Lynda.com) | I'm Pengyin</title>
+<title>Learning Note - CSS Transitions and Transforms (Lynda.com) | I'm Pengyin (Wendy)</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2016/Front%20End/learning-note-css-transitions-and-transforms.html">
@@ -26,7 +26,7 @@ MathJax.Hub.Config({
     }
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
-<meta property="og:site_name" content="I'm Pengyin">
+<meta property="og:site_name" content="I'm Pengyin (Wendy)">
 <meta property="og:title" content="Learning Note - CSS Transitions and Transforms (Lynda.com)">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2016/Front%20End/learning-note-css-transitions-and-transforms.html">
 <meta property="og:description" content="This is a learning note for **CSS Transitions and Transforms** taught by *Joseph Lowery*, on *Lynda.com*, with accompanying knowledge from other resources.">
@@ -66,7 +66,7 @@ MathJax.Hub.Config({
         </div>
         <div class="body">
             <div>
-<h2>Reference List</h2>
+<h2 id="reference-list">Reference List</h2>
 <ul>
 <li>
 <p>(Need Lynda.com Account) <a href="https://www.lynda.com/CSS-tutorials/Exploring-transition-options/101072/108929-4.html">CSS: Transitions and Transforms</a></p>
@@ -75,7 +75,7 @@ MathJax.Hub.Config({
 <p>(Chinese) <a href="http://www.jianshu.com/p/d999f090d333">cubic-bezier</a> by Jovey</p>
 </li>
 </ul>
-<h2>Online Tools</h2>
+<h2 id="online-tools">Online Tools</h2>
 <ul>
 <li>
 <p><a href="../Front%20End/matthewlein.com/ceaser">test a great variety of transitions</a></p>
@@ -84,7 +84,7 @@ MathJax.Hub.Config({
 <p><a href="../Front%20End/www.css3maker.com">CSS 3.0 Maker</a></p>
 </li>
 </ul>
-<h2>Basics</h2>
+<h2 id="basics">Basics</h2>
 <p>To create a basic css transition, need as least two statement in css:</p>
 <ol>
 <li>
@@ -133,7 +133,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h3>transition-timing-function</h3>
+<h3 id="transition-timing-function">transition-timing-function</h3>
 <blockquote>
 <p>Default transitions start slow, speed up, and then slow down (<code>ease</code> transition)</p>
 </blockquote>
@@ -155,7 +155,7 @@ MathJax.Hub.Config({
 <p><code>ease-in-out</code>: start slow, speed up, slows again</p>
 </li>
 </ul>
-<h4>cubic-bezier</h4>
+<h4 id="cubic-bezier">cubic-bezier</h4>
 <p>Another <code>transition-timing-function</code> value is <code>cubic-besier(x1,y1,x2,y2)</code>. <code>0&lt;x&lt;1</code>, when <code>x&gt;1</code> cubic-besier will lose its effect. There is no rule for <code>y</code>.</p>
 <p>Jovey created following graph in her blog post <a href="http://www.jianshu.com/p/d999f090d333">cubic-bezier</a> to show cubic-bezier:</p>
 <p>img-responsive images/articles/2016/frontend/cubic-bezier.png </p>
@@ -163,7 +163,7 @@ MathJax.Hub.Config({
 <p>Jovey gave following example for the value of cubic-basier of <code>ease-out</code> and <code>ease-in-out</code>:</p>
 <p>img-responsive images/articles/2016/frontend/cubic-bezier2.png </p>
 <p><code>transition-delay</code> is used to hold transition for a period of time.</p>
-<h3>Transforms</h3>
+<h3 id="transforms">Transforms</h3>
 <p>Basic Syntax:</p>
 <pre class="code literal-block"><span></span><span class="nt">transform</span><span class="o">:</span> <span class="nt">function</span><span class="o">(</span><span class="nt">parameters</span><span class="o">)</span>
 </pre>
@@ -197,7 +197,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h3>3D Transforms</h3>
+<h3 id="3d-transforms">3D Transforms</h3>
 <p>Step 1: establishing 3D container and observer placement</p>
 <pre class="code literal-block"><span></span><span class="nt">perspective</span><span class="o">:</span> <span class="nt">500px</span><span class="o">;</span> <span class="o">//</span><span class="nt">distance</span> <span class="nt">from</span> <span class="nt">viewer</span> <span class="nt">to</span> <span class="nt">object</span>
 <span class="nt">perspective-origin</span><span class="o">:</span> <span class="nt">50</span><span class="o">%</span> <span class="nt">50</span><span class="o">%</span> <span class="o">//</span><span class="nt">vanishing</span> <span class="nt">point</span><span class="o">.</span> <span class="nt">50</span><span class="o">%</span> <span class="nt">50</span><span class="o">%</span> <span class="nt">is</span> <span class="nt">center</span> <span class="o">(</span><span class="nt">default</span><span class="o">)</span>
@@ -226,8 +226,8 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h2>2D Transitions and Transforms</h2>
-<h3>Basic</h3>
+<h2 id="2d-transitions-and-transforms">2D Transitions and Transforms</h2>
+<h3 id="basic">Basic</h3>
 <ul>
 <li>
 <p>color: <code>transition: background-color 1s ease</code>, with <code>background-color</code> as changes attribute in target element</p>
@@ -245,7 +245,7 @@ MathJax.Hub.Config({
 <p>adjust font size: <code>transition: font-size .5s ease</code> for original element, <code>font-size</code> for new status.</p>
 </li>
 </ul>
-<h3>Transition Multiple Properties</h3>
+<h3 id="transition-multiple-properties">Transition Multiple Properties</h3>
 <p>Example:</p>
 <pre class="code literal-block"><span></span><span class="p">#</span><span class="nn">test</span><span class="p">{</span>
     <span class="k">transition-property</span><span class="p">:</span> <span class="kc">left</span><span class="p">,</span> <span class="k">opacity</span><span class="p">,</span> <span class="k">transform</span><span class="p">;</span> <span class="err">//make</span> <span class="err">sure</span> <span class="err">transforming</span> <span class="err">being</span> <span class="err">add</span> <span class="err">prefix</span> <span class="err">in</span> <span class="err">prefix</span> <span class="err">version</span>
@@ -256,7 +256,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h3>
+<h3 id="keyframes-and-animation">
 <code>@keyframes</code> and <code>animation</code>
 </h3>
 <p><code>@keyframes</code> defines percentage-based or keyword timeline.</p>
@@ -281,7 +281,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h4>
+<h4 id="animation-properties">
 <code>animation</code> properties</h4>
 <ul>
 <li>
@@ -303,8 +303,8 @@ MathJax.Hub.Config({
 <p><code>animation-delay</code>: value in <code>s</code> or <code>ms</code></p>
 </li>
 </ul>
-<h2>3D Transitions and Transforms</h2>
-<h3>z-index (Enhanced Image Size)</h3>
+<h2 id="3d-transitions-and-transforms">3D Transitions and Transforms</h2>
+<h3 id="z-index-enhanced-image-size">z-index (Enhanced Image Size)</h3>
 <p>Example Code:</p>
 <pre class="code literal-block"><span></span><span class="p">.</span><span class="nc">ts-perspective</span><span class="p">{</span>
     <span class="k">perspective</span><span class="p">:</span> <span class="mi">1000</span><span class="p">;</span>
@@ -327,7 +327,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h3>Flipping Effect</h3>
+<h3 id="flipping-effect">Flipping Effect</h3>
 <p>Example Code:</p>
 <pre class="code literal-block"><span></span><span class="c">/*With Same JavaScript to Change Class*/</span>
 <span class="p">.</span><span class="nc">artGroup</span> <span class="p">.</span><span class="nc">flip</span><span class="p">{</span>
@@ -346,7 +346,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h3>Image Cube</h3>
+<h3 id="image-cube">Image Cube</h3>
 <p>Example Code:</p>
 <pre class="code literal-block"><span></span><span class="p">#</span><span class="nn">theArt</span><span class="p">{</span>
     <span class="k">perspective</span><span class="p">:</span> <span class="mi">1000</span><span class="kt">px</span><span class="p">;</span>
@@ -393,13 +393,13 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h3>Create Carousel</h3>
+<h3 id="create-carousel">Create Carousel</h3>
 <p>HTML -&gt; JavaScript -&gt; CSS</p>
-<h4>HTML</h4>
+<h4 id="html">HTML</h4>
 <p>User <code>data-increment = 1/-1</code> to control direction</p>
-<h4>JS</h4>
+<h4 id="js">JS</h4>
 <p>Add/Remove Class, using index incremented by 1</p>
-<h4>CSS</h4>
+<h4 id="css">CSS</h4>
 <pre class="code literal-block"><span></span><span class="p">.</span><span class="nc">container</span><span class="p">{</span>
     <span class="k">perspective</span><span class="p">:</span> <span class="mi">1000</span><span class="p">;</span>
 <span class="p">}</span>
@@ -457,7 +457,7 @@ MathJax.Hub.Config({
 
 
     </div>
-                     <footer id="footer"><p>Contents © 2018         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                     <footer id="footer"><p>Contents © 2018         <a href="mailto:pengyin.shan@outlook.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

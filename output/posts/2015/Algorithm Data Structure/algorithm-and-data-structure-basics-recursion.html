@@ -7,7 +7,7 @@ article: http://ogp.me/ns/article#
 <meta charset="utf-8">
 <meta name="description" content="I wrote this post to record some basic knowledge about using recursion for future reference. Code is written mainly in Java.">
 <meta name="viewport" content="width=device-width">
-<title>Algorithm and Data Structure Basics - Recursion | I'm Pengyin</title>
+<title>Algorithm and Data Structure Basics - Recursion | I'm Pengyin (Wendy)</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2015/Algorithm%20Data%20Structure/algorithm-and-data-structure-basics-recursion.html">
@@ -26,7 +26,7 @@ MathJax.Hub.Config({
     }
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
-<meta property="og:site_name" content="I'm Pengyin">
+<meta property="og:site_name" content="I'm Pengyin (Wendy)">
 <meta property="og:title" content="Algorithm and Data Structure Basics - Recursion">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2015/Algorithm%20Data%20Structure/algorithm-and-data-structure-basics-recursion.html">
 <meta property="og:description" content="I wrote this post to record some basic knowledge about using recursion for future reference. Code is written mainly in Java.">
@@ -72,7 +72,7 @@ MathJax.Hub.Config({
         </div>
         <div class="body">
             <div>
-<h4>Reference List</h4>
+<h4 id="reference-list">Reference List</h4>
 <ul>
 <li>
 <p><a href="http://www.nowamagic.net/librarys/veda/detail/2314">Understand Recursion (Chinese)</a></p>
@@ -81,7 +81,7 @@ MathJax.Hub.Config({
 <p><a href="http://blog.csdn.net/wangjinyu501/article/details/8248492">Recursion (Chinese)</a></p>
 </li>
 </ul>
-<h4>Common Model of Recursion</h4>
+<h4 id="common-model-of-recursion">Common Model of Recursion</h4>
 <pre class="code literal-block"><span></span><span class="n">Obj</span> <span class="nf">recursion</span><span class="o">(</span><span class="n">Obj</span> <span class="n">o</span><span class="o">){</span>
     <span class="k">if</span><span class="o">(</span><span class="n">baseCondition</span><span class="o">){</span>
         <span class="cm">/*</span>
@@ -97,10 +97,10 @@ MathJax.Hub.Config({
 
 
 <p><em>If there are other expression before or after recursion call, make sure you run it after each call back, because these expressions are part of method, and you want to call the full method for each recursion. Check "Hanoi" example below for detail.</em></p>
-<h4>Problem in Recursion</h4>
+<h4 id="problem-in-recursion">Problem in Recursion</h4>
 <p>Since system using <strong>stack</strong> to save return values from each callback, it's really easy to get memory overflow problem.</p>
-<h4>Hanoi</h4>
-<h5>Rule</h5>
+<h4 id="hanoi">Hanoi</h4>
+<h5 id="rule">Rule</h5>
 <ol>
 <li>
 <p>Move plate when number of plate is <code>1</code> (In code below, we want to printout basic value);</p>
@@ -109,7 +109,7 @@ MathJax.Hub.Config({
 <p>If number of plates on a tower is more than <code>1</code> (assume <code>n</code>), move first <code>n-1</code> plate, then move the bottom plate.</p>
 </li>
 </ol>
-<h5>Code</h5>
+<h5 id="code">Code</h5>
 <pre class="code literal-block"><span></span><span class="cm">/**</span>
 <span class="cm">Result:</span>
 <span class="cm">    Dist 1 from A  to C</span>
@@ -146,8 +146,8 @@ MathJax.Hub.Config({
 
 <p>To make code looks clear, I draw a draft of the sequence of recursion call for the code above. Note the purpose numbers are the sequence of call:</p>
 <p>../images/articles/2015/algorithm/hanoi_graph.png </p>
-<h4>Merge Sort</h4>
-<h5>Code</h5>
+<h4 id="merge-sort">Merge Sort</h4>
+<h5 id="code_1">Code</h5>
 <pre class="code literal-block"><span></span><span class="cm">/*</span>
 <span class="cm">Output:</span>
 <span class="cm">72 90 45 126 54</span>
@@ -235,7 +235,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h4>Binary Search</h4>
+<h4 id="binary-search">Binary Search</h4>
 <pre class="code literal-block"><span></span><span class="cm">/**</span>
 <span class="cm">Output:</span>
 <span class="cm">    45 54 72 90 126</span>
@@ -319,8 +319,8 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h4>Word Recursion (Anagram)</h4>
-<h5>Idea</h5>
+<h4 id="word-recursion-anagram">Word Recursion (Anagram)</h4>
+<h5 id="idea">Idea</h5>
 <p>Assume a word has <code>n</code> letters:</p>
 <ol>
 <li>
@@ -333,7 +333,7 @@ MathJax.Hub.Config({
 <p>Do two steps above <code>n</code> times</p>
 </li>
 </ol>
-<h5>Code</h5>
+<h5 id="code_2">Code</h5>
 <pre class="code literal-block"><span></span><span class="cm">/**</span>
 <span class="cm">If you input 'test', you will get:</span>
 <span class="cm">  1 test</span>
@@ -421,8 +421,8 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h4>Height of B-Tree</h4>
-<h5>Code</h5>
+<h4 id="height-of-b-tree">Height of B-Tree</h4>
+<h5 id="code_3">Code</h5>
 <p>This is my code from hankerrank.com:</p>
 <pre class="code literal-block"><span></span>    <span class="cm">/*</span>
 <span class="cm">    class Node</span>
@@ -444,7 +444,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h4>Decide if B-Tree is Balanced</h4>
+<h4 id="decide-if-b-tree-is-balanced">Decide if B-Tree is Balanced</h4>
 <p>Following method is taken from <a href="http://www.nowamagic.net/librarys/veda/detail/2314">this post</a>:</p>
 <pre class="code literal-block"><span></span><span class="cm">/*</span>
 <span class="cm">class Node</span>
@@ -503,7 +503,7 @@ MathJax.Hub.Config({
 
 
     </div>
-                     <footer id="footer"><p>Contents © 2018         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                     <footer id="footer"><p>Contents © 2018         <a href="mailto:pengyin.shan@outlook.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

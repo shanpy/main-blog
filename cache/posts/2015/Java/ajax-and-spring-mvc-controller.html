@@ -4,7 +4,7 @@
 - If your web.xml set up default url-pattern <code>/</code>, when you refer a link, you don't need to add any suffix on it.
 - If your web.xml set up any url-pattern, such as <code>html</code> or <code>htm</code>, when you refere a link, in <code>ajax</code> or <code>windown.location.href</code>, you need to add <code>html</code> or <code>htm</code> suffix after it. <em>But don't add these suffix in spring controller request mapping</em>.</p>
 </blockquote>
-<h2>Case 1. Pass JSON Data to Controller in Ajax Call, using $.ajax()</h2>
+<h2 id="case-1-pass-json-data-to-controller-in-ajax-call-using-ajax">Case 1. Pass JSON Data to Controller in Ajax Call, using $.ajax()</h2>
 <blockquote>
 <p>Notes on 01/13/2015: I had trouble using <code>$.post()</code> to post JSON data. I doubt something is wrong but I haven't figure out why. Currently I just use <code>$.ajax()</code>*</p>
 </blockquote>
@@ -33,7 +33,7 @@
 <blockquote>
 <p>You may want to substitude <code>application/json</code> with <code>application/html</code> to avoid possible.</p>
 </blockquote>
-<h2>Case 2. Pass JSON Data as URL parameter, and Handle it in Spring MVC Controller</h2>
+<h2 id="case-2-pass-json-data-as-url-parameter-and-handle-it-in-spring-mvc-controller">Case 2. Pass JSON Data as URL parameter, and Handle it in Spring MVC Controller</h2>
 <p>PROS</p>
 <blockquote>
 <p>You are free to go to another page or call other controllers after you pass data to controller.</p>

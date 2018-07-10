@@ -6,11 +6,13 @@
 .. authors: Pengyin Shan
 .. description: (This post is in Chinese) [罗伯特清崎]《富爸爸，穷爸爸》书本经典语句摘抄/Rich Dad, Poor Dad Book Highlights by Robert T. Kiyosaki
 
+[TOC]
+
 >1. 即使只是为了生存下去我们也需要提高自己的财商。
 >2. 只有工作才能创造钱的思想是在财务上不成熟的人的思想
 >3. 金钱是一种思想，要赚更多的钱，必须改变思想
 
-<hr/>
+***
 
 #Part 1: 课程
 
@@ -228,7 +230,7 @@
 
 > 目标二：学习销售饼提高处理人际关系的能力
 
-<hr/>
+***
 
 #Part2 : 开端
 
@@ -278,7 +280,7 @@
 1.不要掩饰自己在某一方面欠缺知识
 2.马上开始`教育自己`
 
-<hr/>
+***
 
 #Part3: 开始行动
 

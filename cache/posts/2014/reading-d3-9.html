@@ -1,9 +1,9 @@
 <p>This post is transferred from my <a href="http://blogpengyin.herokuapp.com/">old Hexo blog site</a>, created on 2014.</p>
 <p>This is a Reading Note for <em>Interactive Data Visualization for the Web - An Introduction to Designing with D3</em> by <em>Scott Murray</em>, pulished by <em>O'Reilly, 2013</em></p>
 <p>This post will contains concepts that I think it's important for me to be familiar with in D3 book.</p>
-<h1>Chapter 9 : Animation</h1>
+<h1 id="chapter-9-animation">Chapter 9 : Animation</h1>
 <p>code example for this chapter is <a href="http://shanpy.github.io/Front-End-Playground/D3/Reading-D3-V.html"><strong>here</strong></a>. This part involves lots of code practice.</p>
-<h2>Transition and Animation</h2>
+<h2 id="transition-and-animation">Transition and Animation</h2>
 <p>When we <code>refresh</code> a d3 chart, we can use <code>transition</code> to add <code>animation</code> to this chart, so it looks better.</p>
 <p><code>ordinal scale</code> can show the <code>discreate</code> domain, such as a set of names or categoires. These names or categories will be shown by a set of sequence, from left to right, equally.</p>
 <p>You only need an <code>array</code> that contais name of categories to set of <code>range</code> of an <code>oridinal scale</code>. For example, <code>.domain([1,4,22,44)</code>.</p>
@@ -86,7 +86,7 @@
 </pre>
 
 
-<h2>Clip-Path</h2>
+<h2 id="clip-path">Clip-Path</h2>
 <p><code>clipPath()</code> can create an <code>area</code>, so that only when element's part is <em>inside</em> this area, this part can be seen. Steps are:</p>
 <ul>
 <li>
@@ -127,7 +127,7 @@ svg.append(&#39;g&#39;) //create new g element and set id
 </pre>
 
 
-<h2>Add or Remove Element</h2>
+<h2 id="add-or-remove-element">Add or Remove Element</h2>
 <p>To <em>add new</em> rectangle(or other elments), re-select and re-append <code>rects</code>, then after <code>enter()</code>, use <code>attr('x',w)</code> to make the new bar to right most right of svg, so no one can see it. The use <code>transition().attr('x',...).attr('y',...).attr('width',...).attr('height',...)</code> to make it in with animation. Now new element will be on <em>right</em> of old elements.</p>
 <p>To <em>delete</em> existing element, using <code>exit()</code>. You can firstly remove <em>first</em> element from dataset by using <code>dataset.shift()</code>, then do:</p>
 <pre class="code literal-block"><span></span><span class="nx">bars</span><span class="p">.</span><span class="nx">exit</span><span class="p">().</span><span class="nx">transition</span><span class="p">()</span>
@@ -138,7 +138,7 @@ svg.append(&#39;g&#39;) //create new g element and set id
 </pre>
 
 
-<h2>Key-Value Pair Dataset</h2>
+<h2 id="key-value-pair-dataset">Key-Value Pair Dataset</h2>
 <p>D3 has <code>index</code> with each value in dataset automatically. However, you may needs to define your own <code>key</code> when you need. You can define <code>key-value</code> pair in dataset if you need:</p>
 <pre class="code literal-block"><span></span><span class="kd">var</span> <span class="nx">dataset</span> <span class="o">=</span> <span class="p">[{</span><span class="nx">key</span><span class="o">:</span><span class="s1">&#39;apple&#39;</span><span class="p">,</span><span class="nx">value</span><span class="o">:</span><span class="mi">1</span><span class="p">},</span>
                 <span class="p">{</span><span class="nx">key</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">value</span><span class="o">:</span> <span class="mi">200</span><span class="p">}];</span>
@@ -149,7 +149,7 @@ svg.append(&#39;g&#39;) //create new g element and set id
 
 <p>Now you need to use <code>d3.value</code> to access value. You can set <code>var key = function(d){ return d.key;}</code> for future usage, the use <code>.data(dataset,key)</code> to assign dataset.</p>
 <p>Now to let the <em>left most</em> bar remove from <em>left</em>, use <code>.exit().transition().attr('x',-xScale.rangeBand()</code>.</p>
-<h2>Code Example For This Chapter</h2>
+<h2 id="code-example-for-this-chapter">Code Example For This Chapter</h2>
 <p>You can check the interative version from <a href="http://shanpy.github.io/Front-End-Playground/D3/Reading-D3-V.html"><strong>here</strong></a>.</p>
 <pre class="code literal-block"><span></span><span class="c1">//Code Part I: Transition Animation</span>
 

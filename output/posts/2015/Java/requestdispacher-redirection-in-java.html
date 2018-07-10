@@ -7,7 +7,7 @@ article: http://ogp.me/ns/article#
 <meta charset="utf-8">
 <meta name="description" content="This post describe the way to using RequestDispacher and redirect in Java Web App.">
 <meta name="viewport" content="width=device-width">
-<title>RequestDispacher and Redirection in Java Web App | I'm Pengyin</title>
+<title>RequestDispacher and Redirection in Java Web App | I'm Pengyin (Wendy)</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2015/Java/requestdispacher-redirection-in-java.html">
@@ -26,7 +26,7 @@ MathJax.Hub.Config({
     }
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
-<meta property="og:site_name" content="I'm Pengyin">
+<meta property="og:site_name" content="I'm Pengyin (Wendy)">
 <meta property="og:title" content="RequestDispacher and Redirection in Java Web App">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2015/Java/requestdispacher-redirection-in-java.html">
 <meta property="og:description" content="This post describe the way to using RequestDispacher and redirect in Java Web App.">
@@ -71,11 +71,11 @@ MathJax.Hub.Config({
         <div class="body">
             <div>
 <p>This post only talks about <code>RequestDispacher</code> in Java web app. If you want to know more about using servlet in Java, I have another related post: <a href="http://pengyin-shan.com/blog/ajax-and-java-servlet">Ajax and Java Servlet</a>.</p>
-<h4>Dispach</h4>
+<h4 id="dispach">Dispach</h4>
 <p>This <a href="http://www.xyzws.com/servletfaq/what-is-the-defferent-between-getnameddispatcher-and-getrequestdispatcher/3">article</a> from www.xyzws.com is very useful.</p>
 <p><code>RequestDispacher</code> is used to formard a client's request to another 'place', which including another servlet, another JSP, etc.</p>
 <p>In a servlet, there are three ways to get RequestDispacher:</p>
-<h5>RequestDispatcher dispatch = request.getRequestDispatcher(path);</h5>
+<h5 id="requestdispatcher-dispatch-requestgetrequestdispatcherpath">RequestDispatcher dispatch = request.getRequestDispatcher(path);</h5>
 <p>Using this, <em>path</em> can be:</p>
 <ul>
 <li>
@@ -88,9 +88,9 @@ MathJax.Hub.Config({
 <p>or a abosute path related to your current contaxt, such as <code>/subpage/subjome.jsp</code></p>
 </li>
 </ul>
-<h5>RequestDispatcher dispatch = getServletContext.getRequestDispatcher(path)</h5>
+<h5 id="requestdispatcher-dispatch-getservletcontextgetrequestdispatcherpath">RequestDispatcher dispatch = getServletContext.getRequestDispatcher(path)</h5>
 <p>Using this, <em>path</em> <strong>must</strong> start with <code>/</code>, such as <code>/subpage/subjome.jsp</code></p>
-<h5>RequestDispatcher dispatch = getServletContext.getNamedDispatcher("string")</h5>
+<h5 id="requestdispatcher-dispatch-getservletcontextgetnameddispatcherstring">RequestDispatcher dispatch = getServletContext.getNamedDispatcher("string")</h5>
 <p>This method must take the servlet name as its parameter. The servlet name is definded in <code>web.xml</code> as  <servlet-name> sub-element of the <servlet> element. The request is dispatched to that corresponding servlet.</servlet></servlet-name></p>
 <p>Example in <code>web.xml</code>:</p>
 <pre class="code literal-block"><span></span><span class="nt">&lt;servlet&gt;</span>
@@ -106,9 +106,9 @@ MathJax.Hub.Config({
 
 
 <p>Before/After get your RequestDispacher, you can use <code>request.addAttribute(something)</code> or other functions to add stuff to your request.</p>
-<h4>Go to another place</h4>
+<h4 id="go-to-another-place">Go to another place</h4>
 <p>After you finish process HttpRequest or HttpResponse, there are three ways to 'leave' for another place:</p>
-<h5>RequestDispatcher.forward(request, response) | RequestDispatcher.include(request, response)</h5>
+<h5 id="requestdispatcherforwardrequest-response-requestdispatcherincluderequest-response">RequestDispatcher.forward(request, response) | RequestDispatcher.include(request, response)</h5>
 <p>There is a greate <a href="http://way2java.com/servlets/difference-between-include-and-forward-in-requestdispatcher/">article</a> from way2java.com to explain the difference between <code>RequestDispatcher.forward()</code> and <code>RequestDispatcher.include()</code>.</p>
 <p>These are main differences bewtween these two methods:</p>
 <ul>
@@ -128,7 +128,7 @@ MathJax.Hub.Config({
 <p>Generally, you want to use <code>include()</code> when <strong>static</strong> information needs to be included, such as Banner Content or Copyright Information. <code>forward()</code> should be used to include <strong>dynamic</strong> information, or when you want to use servlet as a Controller.</p>
 </li>
 </ul>
-<h5>HttpResponse.sendRedirect(String)</h5>
+<h5 id="httpresponsesendredirectstring">HttpResponse.sendRedirect(String)</h5>
 <p>The differnce between <code>forward()/include()</code> and <code>HttpResponse.sendRedirect()</code> is very obvious:</p>
 <ul>
 <li>
@@ -168,7 +168,7 @@ MathJax.Hub.Config({
 
 
     </div>
-                     <footer id="footer"><p>Contents © 2018         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                     <footer id="footer"><p>Contents © 2018         <a href="mailto:pengyin.shan@outlook.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

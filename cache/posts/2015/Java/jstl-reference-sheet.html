@@ -17,7 +17,7 @@
 </li>
 </ul>
 <p>Before you use JSTL library, you need to download it and put it to <code>webapps\ROOT\WEB-INF\lib</code> directoy.</p>
-<h2>Core Tages</h2>
+<h2 id="core-tages">Core Tages</h2>
 <p>Make sure you include core tag library in your JSP file: <code>&lt;%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %&gt;</code></p>
 <p>Following tags are common core tags with an explaination of their usage:</p>
 <p><code>&lt;c:out&gt;</code>: Display the result of an expression. Similar to <code>&lt;%= %&gt;</code> exception you use a <code>.</code> notation to access property now.</p>
@@ -110,7 +110,7 @@ ${theCount.index}
 </pre>
 
 
-<h2>Formatting Tags</h2>
+<h2 id="formatting-tags">Formatting Tags</h2>
 <p>Make sure you include formatting tag library in your JSP file: <code>&lt;%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %&gt;</code></p>
 <p>Following tags are common formatting tags with an explaination of their usage:</p>
 <p><code>&lt;fmt:formatNumber&gt;</code>: format numbers, percentages and currencies. It has lots of parameters for configuration. You can view <a href="http://www.tutorialspoint.com/jsp/jstl_format_formatnumber_tag.htm">here</a> for detail.</p>
@@ -168,7 +168,7 @@ ${theCount.index}
 </pre>
 
 
-<h2>SQL Tags</h2>
+<h2 id="sql-tags">SQL Tags</h2>
 <p>Make sure you include sql tag library in your JSP file: <code>&lt;%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql" %&gt;</code></p>
 <p>Following tags are common sql tags with an explaination of their usage:</p>
 <p><code>&lt;sql:setDateSource&gt;</code>: Takes several parameters and set data source.</p>
@@ -213,7 +213,7 @@ SELECT * from Employees;
 </pre>
 
 
-<h2>JSTL Functions</h2>
+<h2 id="jstl-functions">JSTL Functions</h2>
 <p>Make sure you include function tag library in your JSP file: <code>&lt;%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %&gt;</code></p>
 <p>Normally JSTL functions are used within <strong>${}</strong>.</p>
 <p>Following tags are common function tags with an explaination of their usage:</p>

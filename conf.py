@@ -18,14 +18,14 @@ import time
 
 # Data about this site
 BLOG_AUTHOR = "Pengyin Shan"  # (translatable)
-BLOG_TITLE = "I'm Pengyin"  # (translatable)
+BLOG_TITLE = "I'm Pengyin (Wendy)"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
 SITE_URL = "http://pengyin-shan.com/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://pengyin-shan.com/"
-BLOG_EMAIL = "shanpy901115@gmail.com"
+BLOG_EMAIL = "pengyin.shan@outlook.com"
 BLOG_DESCRIPTION = "This is Pengyin Shan's Blog"  # (translatable)
 
 # Nikola is multilingual!
@@ -981,7 +981,7 @@ MathJax.Hub.Config({
 # Note: most Nikola-specific extensions are done via the Nikola plugin system,
 #       with the MarkdownExtension class and should not be added here.
 # The default is ['fenced_code', 'codehilite']
-MARKDOWN_EXTENSIONS = ['fenced_code', 'codehilite', 'extra']
+MARKDOWN_EXTENSIONS = ['toc', 'fenced_code', 'codehilite', 'extra']
 
 # Extra options to pass to the pandoc comand.
 # by default, it's empty, is a list of strings, for example

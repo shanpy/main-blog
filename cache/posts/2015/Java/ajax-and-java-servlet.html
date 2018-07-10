@@ -9,7 +9,7 @@
 </li>
 </ol>
 <p>So, if you have a JSP/Servlet Java web app and you want to use AJAX with JSON object, you have to write code in three places:</p>
-<h3>1. JSP with jQuery</h3>
+<h3 id="1-jsp-with-jquery">1. JSP with jQuery</h3>
 <p>You want to have <code>jQuery</code> library in your JSP file to make sure you can use AJAX.</p>
 <pre class="code literal-block"><span></span><span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
         <span class="nx">type</span><span class="o">:</span> <span class="s2">&quot;POST&quot;</span><span class="p">,</span>
@@ -46,13 +46,13 @@
 <blockquote>
 <p>In the code above, <code>contentType</code> and <code>dataType</code> (and <code>mimeType</code> if exists) is very important because wrong value of these attributes can give you a <code>404</code> or <code>500</code> error.</p>
 </blockquote>
-<h4>contentType</h4>
+<h4 id="contenttype">contentType</h4>
 <p>Default value: <code>application/x-www-form-urlencoded; charset=UTF-8</code></p>
 <p>This is the data type <strong>when you send data to server</strong>.</p>
-<h4>dataType</h4>
+<h4 id="datatype">dataType</h4>
 <p>Default value: Guess(<code>xml</code>, <code>json</code>, <code>script</code>, <code>html</code>)</p>
 <p>This is the data type <strong>when server pass data back to you</strong>.</p>
-<h4>mimeType</h4>
+<h4 id="mimetype">mimeType</h4>
 <p>A mime type to override the XHR mime type. This is the data type <strong>when server pass data back to you</strong>.</p>
 <p>Form Mozilla, MIME types describe the media type of content either in email or served by web servers or web applications.</p>
 <p>MIME types are intended to help guide a web browser in <em>how the content is to be processed and displayed</em>. Examples of MIME types are:</p>
@@ -64,7 +64,7 @@
 <li><code>application/pdf</code> for Adobe® PDF documents.</li>
 </ul>
 <p>So if you want you browser to access data like <code>xml</code>, <code>json</code>, <code>script</code> or <code>html</code>, <code>dataType</code> is good enough. However, if you want to let your browser detect PDF file or other data types, you need to set <code>mimeType</code>.</p>
-<h3>2. web.xml</h3>
+<h3 id="2-webxml">2. web.xml</h3>
 <blockquote>
 <p>After working with Spring MVC for a while, I realizae I can forget web.xml easily. Make sure you register your servlet in web.xml.</p>
 </blockquote>
@@ -84,7 +84,7 @@
 </pre>
 
 
-<h3>3. Servlet</h3>
+<h3 id="3-servlet">3. Servlet</h3>
 <p>If you pass JSON object to your servlet, you may want to use <code>org.json</code>, <code>com.fasterxml.jackson</code> or <code>gson</code> external library to help you dealing with JSON object in Java.</p>
 <p>Example code for post operation:</p>
 <pre class="code literal-block"><span></span><span class="c1">//You want your class extends HttpServlet</span>
@@ -114,7 +114,7 @@
 
 
 <p>This post will be udpated when I learned more about AJAX in my work experience.</p>
-<h3>Tips</h3>
-<h4>org.apache.catalina.LifecycleException: Failed to start component</h4>
+<h3 id="tips">Tips</h3>
+<h4 id="orgapachecatalinalifecycleexception-failed-to-start-component">org.apache.catalina.LifecycleException: Failed to start component</h4>
 <p>If you include <code>org.json</code> jar file in your project, and you encourter <code>org.apache.catalina.LifecycleException: Failed to start component</code> exception when you try to deploy to Tomcat:</p>
 <p>Make sure you add your jar files to <code>Web Deployment Assebly</code> in your project properies. Following <a href="http://stackoverflow.com/questions/16362302/java-servlet-error-with-jsonobject">this post</a> and you will be fine.</p>

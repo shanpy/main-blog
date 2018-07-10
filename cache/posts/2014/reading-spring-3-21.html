@@ -1,9 +1,9 @@
 <p>This post is transferred from my <a href="http://blogpengyin.herokuapp.com/">old Hexo blog site</a>, created on 2014.</p>
 <p>This is a reading note from Spring Framework 3.1 Tutorial pdf, created by <a href="http://www.tutorialspoint.com/spring"><strong>tutorialspoint</strong></a>. This pdf contains information for Spring 3 Core Basics, which is very useful for understanding defination and practive in Spring programming.</p>
 <p>This note includes Chapter 21 in tutorial.</p>
-<h1>Spring Transaction Management</h1>
+<h1 id="spring-transaction-management">Spring Transaction Management</h1>
 <p>A <strong>Database Transaction</strong> is a sequence of actions that are treated as a single unit of work. <em>You either run all of actions once, or you don't run any of them</em>.</p>
-<h2>Four Properties About Database**</h2>
+<h2 id="four-properties-about-database">Four Properties About Database**</h2>
 <p>There are four key property that a transaction must have, called <strong>ACID</strong>:</p>
 <ul>
 <li>
@@ -19,18 +19,18 @@
 <p><code>Durability</code>: Once a transaction has completed, the results of this transaction has to be <em>permanent</em> and <em>cannot be earased from the database</em> due to system failure.</p>
 </li>
 </ul>
-<h2>A Typical Sequence of Transaction</h2>
+<h2 id="a-typical-sequence-of-transaction">A Typical Sequence of Transaction</h2>
 <p>Begin the transaction using begining transaction command</p>
 <p>Perfom <code>deleted</code>, <code>update</code> or <code>insert</code> operations using SQL queries.</p>
 <p>If all the operation are successful then perfom <code>commit</code> otherwise <code>rollback</code> all the operations.</p>
 <p>Spring transaction support aims to provide an alternative to <code>EJB</code> transactions by adding transaction capabilities to <code>POJO</code>s.</p>
 <p>Spring supports both <code>programmatic</code> and <code>declarative</code> transaction management.</p>
 <p>Spring transaction management can be implemented <em>without</em> a need of application server.</p>
-<h2>Local vs Global Transactions</h2>
+<h2 id="local-vs-global-transactions">Local vs Global Transactions</h2>
 <p><code>Local Transaction</code> is specific to a <em>single</em> transaction resource such as a JDBC connection, whereas <code>Global Transactions</code> can span <em>multiple</em> transaction resources like transaction in a Distributed System.</p>
 <p><code>Local Transaction</code> is useful in a centralized computing environment where application components and resources are located at <em>a single site</em> and transaction management only involves a <em>local data manager</em> runing on a <em>single machine</em>. Local transactions are easier to implement.</p>
 <p><code>Global Transaction</code> management is required in a <em>distributed</em> computing environment where all the resources are distributed across <em>multiple systems</em>. In such a case transaction management needs to be done both <em>at local and global events</em>. A distributed or a global transaction is executed across multiple systems, and its execution requires <em>coordination</em> between the global transaction management system and all the local data managers of all the involved systems.</p>
-<h2>Programmatic vs Declarative</h2>
+<h2 id="programmatic-vs-declarative">Programmatic vs Declarative</h2>
 <p>Spring supports two type of transaction management:</p>
 <ul>
 <li>
@@ -40,14 +40,14 @@
 <p><code>Declarative Transaction Management</code>: You <em>seperate</em> transaction management from the <em>business code</em>. You only use <code>xml</code> based configuration to manage transactions. This is more preferable. Spring supports declarative transaction management through the Spring AOP framework.</p>
 </li>
 </ul>
-<h2>Spring Transaction Abstractions</h2>
+<h2 id="spring-transaction-abstractions">Spring Transaction Abstractions</h2>
 <p>The key to Spring transaction is: <code>org.springframework.transaction.PlatformTransactionManager</code> interface.
 images/posts/PlatformTransactionManager.png </p>
 <p><code>TransactionDefinition</code> is the core interface of the transaction support in Spring.
 images/posts/TransactionDefinition.png </p>
 <p><code>TransactionStatus</code> interface is used to control transaction execution and query transaction status.
 images/posts/TransactionStatus.png </p>
-<h2>Programmatic Transaction Management</h2>
+<h2 id="programmatic-transaction-management">Programmatic Transaction Management</h2>
 <p>The generate process of <code>Programmatic Transaction Management</code> is:</p>
 <ul>
 <li>
@@ -142,7 +142,7 @@ images/posts/TransactionStatus.png </p>
 </pre>
 
 
-<h2>Declarative Transaction Management</h2>
+<h2 id="declarative-transaction-management">Declarative Transaction Management</h2>
 <p>If you use <code>Declarative Transaction Management</code>, you only use <code>Annotations</code> or <code>XML</code> based configuration to manage the transactions. Steps are:</p>
 <ul>
 <li>

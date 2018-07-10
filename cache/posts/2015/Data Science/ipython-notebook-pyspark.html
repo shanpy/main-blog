@@ -4,7 +4,7 @@
 <p><a href="http://ramhiser.com/2015/02/01/configuring-ipython-notebook-support-for-pyspark/">Configuring IPython Notebook Support for PySpark</a>, written by John Ramey.</p>
 <p><a href="https://beingzy.github.io/tutorial/2014/10/13/spark-tutorial-Part-I-setting-up-spark-and-ipython-notebook-within-10-minutes.html">Spark Tutorial (Part I): Setting Up Spark and IPython Notebook within 10 minutes</a>, written by Yi Zhang.</p>
 <p><a href="https://ipython.org/ipython-doc/dev/config/intro.html">Introduction to IPython Configuration</a></p>
-<h2>Install Python and IPython Notebook</h2>
+<h2 id="install-python-and-ipython-notebook">Install Python and IPython Notebook</h2>
 <p>I highly recommend you using <a href="https://virtualenv.pypa.io/en/latest/">Virtualenv</a> or <a href="https://store.continuum.io/cshop/anaconda/">Anacona</a> for Python package control.</p>
 <p>You need to install <strong>Python</strong> and <strong>pip</strong> first (You can find installation documents through Google Search). Then in terminal, type following:</p>
 <pre class="code literal-block"><span></span><span class="gp">$</span>pip install <span class="s2">&quot;ipython[notebook]&quot;</span>
@@ -22,7 +22,7 @@
 
 
 <p>Your default browser should open a window with IPython Notebook interface.</p>
-<h2>Install Spark and PySpark</h2>
+<h2 id="install-spark-and-pyspark">Install Spark and PySpark</h2>
 <p>You can download Spark from <a href="https://spark.apache.org/downloads.html">here</a>. You can install either source code package, or a pre-build package. All packages can be installed and configured for IPython Notebook.</p>
 <p>Pre-build package can be extracted and being used directly. If you download source package, you need to do this after extracting:</p>
 <pre class="code literal-block"><span></span><span class="gp">$</span><span class="nb">cd</span> your_spark_source_folder
@@ -49,7 +49,7 @@
 </blockquote>
 <p>You should see following in your terminal. Type <code>sc</code> and you should see output as <code>SparkContext</code>:</p>
 <p>../images/articles/2015/python/test_pyspark.png </p>
-<h2>Configure PySpark and IPython Notebook</h2>
+<h2 id="configure-pyspark-and-ipython-notebook">Configure PySpark and IPython Notebook</h2>
 <p>Based on my experience, PySpark has good support for Python 2.7, but not Python 3. I recommend you use <strong>Python 2.7</strong> in this step.</p>
 <p><a href="http://ramhiser.com/2015/02/01/configuring-ipython-notebook-support-for-pyspark/">Configuring IPython Notebook Support for PySpark</a>, written by John Ramey, gave a very good description of steps you need to follow. However, you need to remember doing following:</p>
 <p>In <code>.bashrc</code> and <code>00-pyspark-setup.py</code>, make sure you have your own Spark folder name. Check your <code>your_spark_folder/python/lib</code> for py4j version.</p>

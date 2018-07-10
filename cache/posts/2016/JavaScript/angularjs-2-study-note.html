@@ -1,7 +1,7 @@
 <p>While my recent project involving in processing data, I think this is a good chance for to touch AngularJS 2, and a little bit TypeScript. <em>This study note follows BASICS and DEVELOPER GUIDE part in official document</em>.</p>
 <!-- TEASER_END -->
 
-<h1>Reference List</h1>
+<h1 id="reference-list">Reference List</h1>
 <ul>
 <li>
 <p><a href="https://angular.cn">AngularJS 2 Official Website (Chinese)</a></p>
@@ -10,7 +10,7 @@
 <p><a href="https://angular.io/">AngularJS 2 Office Website (English)</a></p>
 </li>
 </ul>
-<h1>Architecture</h1>
+<h1 id="architecture">Architecture</h1>
 <p>Based on official suggestion, an angular app should contains following parts:</p>
 <ul>
 <li>
@@ -28,7 +28,7 @@
 </ul>
 <p>Other parts includes MetaData, Directives, etc. Angular website has a very clear graph which describe how things works together:</p>
 <p>img-responsive images/articles/2016/javascript/angular-architecture.png </p>
-<h1>Module</h1>
+<h1 id="module">Module</h1>
 <p>Angular Module is also called <code>NgModule</code>.</p>
 <p>Generally, module is used to:</p>
 <ol>
@@ -44,7 +44,7 @@
 <blockquote>
 <p>A <strong>decorator</strong> is used to add <code>metadata</code> to class, like <code>@randomly</code> or <code>@superhero</code>.</p>
 </blockquote>
-<h2>AppModule</h2>
+<h2 id="appmodule">AppModule</h2>
 <p>Every angular app has a <strong>root module</strong>, called <code>AppModule</code>. It is in <code>app.module.ts</code> file.</p>
 <p>The minimal <code>app.module.ts</code>:</p>
 <pre class="code literal-block"><span></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">NgModule</span> <span class="p">}</span>      <span class="nx">from</span> <span class="s1">&#39;@angular/core&#39;</span><span class="p">;</span>
@@ -78,7 +78,7 @@
 
 
 <p>Bootstrap process can be done dynamically or statically. Official document has detail.</p>
-<h2>NgModule</h2>
+<h2 id="ngmodule">NgModule</h2>
 <p>NgModule is a decorator class. It has following properties:</p>
 <ul>
 <li>
@@ -118,6 +118,6 @@
 </pre>
 
 
-<h2>Angular Module Library</h2>
+<h2 id="angular-module-library">Angular Module Library</h2>
 <p>Angular has a series of module libraries. User can use <code>import {} from '@angular/XXX</code> format to import and use it.</p>
 <p>Use <code>npm</code> to install these modules.</p>

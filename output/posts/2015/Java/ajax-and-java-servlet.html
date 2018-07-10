@@ -7,7 +7,7 @@ article: http://ogp.me/ns/article#
 <meta charset="utf-8">
 <meta name="description" content="This post describe the way to using AJAX with JSP/Servlet Java Web Apps.">
 <meta name="viewport" content="width=device-width">
-<title>Ajax and Java Servlet | I'm Pengyin</title>
+<title>Ajax and Java Servlet | I'm Pengyin (Wendy)</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2015/Java/ajax-and-java-servlet.html">
@@ -26,7 +26,7 @@ MathJax.Hub.Config({
     }
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
-<meta property="og:site_name" content="I'm Pengyin">
+<meta property="og:site_name" content="I'm Pengyin (Wendy)">
 <meta property="og:title" content="Ajax and Java Servlet">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2015/Java/ajax-and-java-servlet.html">
 <meta property="og:description" content="This post describe the way to using AJAX with JSP/Servlet Java Web Apps.">
@@ -83,7 +83,7 @@ MathJax.Hub.Config({
 </li>
 </ol>
 <p>So, if you have a JSP/Servlet Java web app and you want to use AJAX with JSON object, you have to write code in three places:</p>
-<h4>1. JSP with jQuery</h4>
+<h4 id="1-jsp-with-jquery">1. JSP with jQuery</h4>
 <p>You want to have <code>jQuery</code> library in your JSP file to make sure you can use AJAX.</p>
 <pre class="code literal-block"><span></span><span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
         <span class="nx">type</span><span class="o">:</span> <span class="s2">"POST"</span><span class="p">,</span>
@@ -120,13 +120,13 @@ MathJax.Hub.Config({
 <blockquote>
 <p>In the code above, <code>contentType</code> and <code>dataType</code> (and <code>mimeType</code> if exists) is very important because wrong value of these attributes can give you a <code>404</code> or <code>500</code> error.</p>
 </blockquote>
-<h5>contentType</h5>
+<h5 id="contenttype">contentType</h5>
 <p>Default value: <code>application/x-www-form-urlencoded; charset=UTF-8</code></p>
 <p>This is the data type <strong>when you send data to server</strong>.</p>
-<h5>dataType</h5>
+<h5 id="datatype">dataType</h5>
 <p>Default value: Guess(<code>xml</code>, <code>json</code>, <code>script</code>, <code>html</code>)</p>
 <p>This is the data type <strong>when server pass data back to you</strong>.</p>
-<h5>mimeType</h5>
+<h5 id="mimetype">mimeType</h5>
 <p>A mime type to override the XHR mime type. This is the data type <strong>when server pass data back to you</strong>.</p>
 <p>Form Mozilla, MIME types describe the media type of content either in email or served by web servers or web applications.</p>
 <p>MIME types are intended to help guide a web browser in <em>how the content is to be processed and displayed</em>. Examples of MIME types are:</p>
@@ -143,7 +143,7 @@ MathJax.Hub.Config({
 <code>application/pdf</code> for Adobe® PDF documents.</li>
 </ul>
 <p>So if you want you browser to access data like <code>xml</code>, <code>json</code>, <code>script</code> or <code>html</code>, <code>dataType</code> is good enough. However, if you want to let your browser detect PDF file or other data types, you need to set <code>mimeType</code>.</p>
-<h4>2. web.xml</h4>
+<h4 id="2-webxml">2. web.xml</h4>
 <blockquote>
 <p>After working with Spring MVC for a while, I realizae I can forget web.xml easily. Make sure you register your servlet in web.xml.</p>
 </blockquote>
@@ -163,7 +163,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h4>3. Servlet</h4>
+<h4 id="3-servlet">3. Servlet</h4>
 <p>If you pass JSON object to your servlet, you may want to use <code>org.json</code>, <code>com.fasterxml.jackson</code> or <code>gson</code> external library to help you dealing with JSON object in Java.</p>
 <p>Example code for post operation:</p>
 <pre class="code literal-block"><span></span><span class="c1">//You want your class extends HttpServlet</span>
@@ -193,8 +193,8 @@ MathJax.Hub.Config({
 
 
 <p>This post will be udpated when I learned more about AJAX in my work experience.</p>
-<h4>Tips</h4>
-<h5>org.apache.catalina.LifecycleException: Failed to start component</h5>
+<h4 id="tips">Tips</h4>
+<h5 id="orgapachecatalinalifecycleexception-failed-to-start-component">org.apache.catalina.LifecycleException: Failed to start component</h5>
 <p>If you include <code>org.json</code> jar file in your project, and you encourter <code>org.apache.catalina.LifecycleException: Failed to start component</code> exception when you try to deploy to Tomcat:</p>
 <p>Make sure you add your jar files to <code>Web Deployment Assebly</code> in your project properies. Following <a href="http://stackoverflow.com/questions/16362302/java-servlet-error-with-jsonobject">this post</a> and you will be fine.</p>
 </div>
@@ -227,7 +227,7 @@ MathJax.Hub.Config({
 
 
     </div>
-                     <footer id="footer"><p>Contents © 2018         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                     <footer id="footer"><p>Contents © 2018         <a href="mailto:pengyin.shan@outlook.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

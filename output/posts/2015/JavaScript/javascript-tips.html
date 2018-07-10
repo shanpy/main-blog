@@ -7,7 +7,7 @@ article: http://ogp.me/ns/article#
 <meta charset="utf-8">
 <meta name="description" content="This post includes useful JavaScript tips I encourted in daily job, may also contain knowledge in jQuery.">
 <meta name="viewport" content="width=device-width">
-<title>JavaScript Tips | I'm Pengyin</title>
+<title>JavaScript Tips | I'm Pengyin (Wendy)</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2015/JavaScript/javascript-tips.html">
@@ -26,7 +26,7 @@ MathJax.Hub.Config({
     }
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
-<meta property="og:site_name" content="I'm Pengyin">
+<meta property="og:site_name" content="I'm Pengyin (Wendy)">
 <meta property="og:title" content="JavaScript Tips">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2015/JavaScript/javascript-tips.html">
 <meta property="og:description" content="This post includes useful JavaScript tips I encourted in daily job, may also contain knowledge in jQuery.">
@@ -68,20 +68,20 @@ MathJax.Hub.Config({
         </div>
         <div class="body">
             <div>
-<h3>JavaScript String</h3>
-<h4>Substring</h4>
+<h3 id="javascript-string">JavaScript String</h3>
+<h4 id="substring">Substring</h4>
 <p>There are two ways in JavaScript to get substring:</p>
-<h5>
+<h5 id="substrstartindex-length">
 <code>substr(StartIndex, Length)</code>:</h5>
 <p>Takes two parameter: <strong>StartIndex</strong> and <strong>Length of Substring (Optional)</strong></p>
-<h5><code>substring(StartIndex, EndIndex)</code></h5>
+<h5 id="substringstartindex-endindex"><code>substring(StartIndex, EndIndex)</code></h5>
 <p>Takes two parameter: <strong>StartIndex (inclusive)</strong> and <strong>EndIndex (exclusive)</strong>. EndIndex is optional.</p>
 <p>If "start" is greater than "end", this method will swap the two arguments, meaning str.substring(1,4) == str.substring(4,1).</p>
 <p>If either "start" or "stop" is less than 0, it is treated as if it were 0.</p>
 <blockquote>
 <p>Note: Both methods do not change the original string.</p>
 </blockquote>
-<h5>Special Cases</h5>
+<h5 id="special-cases">Special Cases</h5>
 <p>The two methods above have difference usage for following spceial cases:</p>
 <p><strong>Negative Value</strong></p>
 <p><code>substr()</code> and <code>substring()</code> can both take negative value parameters as <code>StartIndex</code>, which means starting to count from end of string.</p>
@@ -94,8 +94,8 @@ MathJax.Hub.Config({
 <blockquote>
 <p>Remember you substring has same sequence as original string. It's not reversed.</p>
 </blockquote>
-<h3>JavaScript KeyCode and Related Information</h3>
-<h4>Two Way of Event Binding</h4>
+<h3 id="javascript-keycode-and-related-information">JavaScript KeyCode and Related Information</h3>
+<h4 id="two-way-of-event-binding">Two Way of Event Binding</h4>
 <pre class="code literal-block"><span></span><span class="nx">$</span><span class="p">(</span><span class="s1">'#inputbox_id'</span><span class="p">).</span><span class="nx">bind</span><span class="p">(</span><span class="s1">'input'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
     <span class="c1">//event.keyCode...</span>
 <span class="p">}</span>
@@ -108,7 +108,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h4>Common KeyCode</h4>
+<h4 id="common-keycode">Common KeyCode</h4>
 <ul>
 <li>
 <p><code>Delete</code>:46</p>
@@ -124,7 +124,7 @@ MathJax.Hub.Config({
 </li>
 </ul>
 <p>You can refer this <a href="http://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes">cheatsheet</a> for more keycode information.</p>
-<h4>Special Cases</h4>
+<h4 id="special-cases_1">Special Cases</h4>
 <p>From <a href="http://stackoverflow.com/questions/4084715/javascript-e-keycode-doesnt-catch-backspace-del-in-ie">this stackflow post</a>, IE doesn't fire <strong>keypress</strong> event for delete, end, enter, escape, function keys, home, insert, pageUp/Down and tab. So use <strong>keydown</strong> or <strong>keyup</strong> instead.</p>
 </div>
         </div>
@@ -156,7 +156,7 @@ MathJax.Hub.Config({
 
 
     </div>
-                     <footer id="footer"><p>Contents © 2018         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                     <footer id="footer"><p>Contents © 2018         <a href="mailto:pengyin.shan@outlook.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

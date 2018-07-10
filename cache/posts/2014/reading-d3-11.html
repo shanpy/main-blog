@@ -1,7 +1,7 @@
 <p>This post is transferred from my <a href="http://blogpengyin.herokuapp.com/">old Hexo blog site</a>, created on 2014.</p>
 <p>This is a Reading Note for <em>Interactive Data Visualization for the Web - An Introduction to Designing with D3</em> by <em>Scott Murray</em>, pulished by <em>O'Reilly, 2013</em></p>
 <p>This post will contains concepts that I think it's important for me to be familiar with in D3 book.</p>
-<h1>Chapter 11 : Layout</h1>
+<h1 id="chapter-11-layout">Chapter 11 : Layout</h1>
 <p>code example for Chapter 11 is <a href="http://shanpy.github.io/Front-End-Playground/D3/Reading-D3-VII.html"><strong>here</strong></a>.</p>
 <p>All Layouts for D3 are:</p>
 <ul>
@@ -42,7 +42,7 @@
 <p><code>Treemap</code>: generate a group of rectangles. Each reactangles size is based on radio of data.</p>
 </li>
 </ul>
-<h2>Pie Chart</h2>
+<h2 id="pie-chart">Pie Chart</h2>
 <p>Step one: given a dataset(array of numbers), you can use <code>var pie = d3.layout.pie()</code> to convert this dataset to a <em>new</em> dataset with numbers ready for pie chart.</p>
 <p>Step two: you can use <code>d3.svg.arc()</code> to create <code>arc</code> for pie chart. This function will generate a <code>path</code> variable, which can draw any shape in SVG:</p>
 <pre class="code literal-block"><span></span><span class="kd">var</span> <span class="nx">outRadius</span> <span class="o">=</span> <span class="nx">h</span><span class="o">/</span><span class="mi">2</span><span class="p">;</span>
@@ -88,7 +88,7 @@
 </pre>
 
 
-<h2>Stack Layout</h2>
+<h2 id="stack-layout">Stack Layout</h2>
 <p>Step 1: Assume you have a dataset which contains objects with attributes, you need to <em>re-organize</em> this dataset to objects with <code>x-y</code> attribues. <code>x</code> is the <code>ID</code> value. <code>y</code> is the actally value of original data:</p>
 <pre class="code literal-block"><span></span><span class="c1">//Sample Dataset</span>
 <span class="kd">var</span> <span class="nx">dataset</span> <span class="o">=</span> <span class="p">[</span>
@@ -133,7 +133,7 @@ images/posts/stack chart data.png </p>
 </pre>
 
 
-<h2>Force Directed Layout</h2>
+<h2 id="force-directed-layout">Force Directed Layout</h2>
 <p>This layout is <em>dragable</em> by user, and the chart will move following physic role. This layout use <code>graph</code>, which is combined by <code>node</code> and <code>edge</code>.</p>
 <p>Step 1: This layout needs special dataset which defining <code>nodes</code> and <code>edges</code> object. <code>nodes</code> has <code>name</code> attribute. <code>edges</code> has <code>source</code> and <code>target</code> and <code>weight</code> attributes, which defines the <em>from</em> and <em>to</em> attribute for each edge, with <em>line weight</em>:</p>
 <pre class="code literal-block"><span></span><span class="kd">var</span> <span class="nx">dataset</span> <span class="o">=</span> <span class="p">{</span>
@@ -216,7 +216,7 @@ images/posts/stack chart data.png </p>
 </pre>
 
 
-<h2>Code for This Chapter</h2>
+<h2 id="code-for-this-chapter">Code for This Chapter</h2>
 <p>An interacive version is <a href="http://shanpy.github.io/Front-End-Playground/D3/Reading-D3-VII.html"><strong>here</strong></a>.</p>
 <pre class="code literal-block"><span></span>//Part I Code
 

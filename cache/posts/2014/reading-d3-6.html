@@ -1,10 +1,10 @@
 <p>This post is transferred from my <a href="http://blogpengyin.herokuapp.com/">old Hexo blog site</a>, created on 2014.</p>
 <p>This is a Reading Note for <em>Interactive Data Visualization for the Web - An Introduction to Designing with D3</em> by <em>Scott Murray</em>, pulished by <em>O'Reilly, 2013</em></p>
 <p>This post will contains concepts that I think it's important for me to be familiar with in D3 book.</p>
-<h1>Chapter 6 : Draw Graph basiced on Data</h1>
+<h1 id="chapter-6-draw-graph-basiced-on-data">Chapter 6 : Draw Graph basiced on Data</h1>
 <p>code example for this chapter is <a href="http://shanpy.github.io/Front-End-Playground/D3/Reading-D3-II.html"><em>here</em></a>. This part involves lots of code practice.</p>
 <p>Everything is <code>rectangular</code> for browser. Using <code>div</code> is the easiest way to draw a <em>Bar Chart</em>.</p>
-<h3>code part I</h3>
+<h3 id="code-part-i">code part I</h3>
 <p><code>attr()</code> set up the value for a DOM attribute, such as <code>.attr('class','bar')</code></p>
 <p><code>style()</code> add css style to an element</p>
 <p><code>classed()</code> quickly add/delete class to an element, such as <code>.classed('bar',true/false)</code> to add/delete a class <code>bar</code> to an element</p>
@@ -15,8 +15,8 @@
 </pre>
 
 
-<h2>Draw SVG</h2>
-<h3>code part II</h3>
+<h2 id="draw-svg">Draw SVG</h2>
+<h3 id="code-part-ii">code part II</h3>
 <p>For each <code>SVG</code> element, all its properties are defined by <code>property='XXX'</code>, such as <code>&lt;element property = 'value'&gt;&lt;/element&gt;</code></p>
 <p>First step is always create a <code>SVG</code> element:</p>
 <pre class="code literal-block"><span></span><span class="kd">var</span> <span class="nx">w</span> <span class="o">=</span> <span class="mi">200</span><span class="p">;</span> <span class="c1">//This is pixel</span>
@@ -49,8 +49,8 @@
 </pre>
 
 
-<h2>Draw Bar Chart</h2>
-<h3>code part III</h3>
+<h2 id="draw-bar-chart">Draw Bar Chart</h2>
+<h3 id="code-part-iii">code part III</h3>
 <p>In D3, always choose element that you need, even before it is created.</p>
 <p><code>SVG</code> only support alignment through <em>left-upper</em> corner. To make sure bar chart using bottom alignment:</p>
 <ul>
@@ -98,8 +98,8 @@
 </pre>
 
 
-<h2>Draw Scatter Plot</h2>
-<h3>code part IV</h3>
+<h2 id="draw-scatter-plot">Draw Scatter Plot</h2>
+<h3 id="code-part-iv">code part IV</h3>
 <p>For a scatter plot, data should look like an array of arrays:</p>
 <pre class="code literal-block"><span></span><span class="kd">var</span> <span class="nx">dataset</span> <span class="o">=</span> <span class="p">[</span>
                                 <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">10</span><span class="p">],</span>

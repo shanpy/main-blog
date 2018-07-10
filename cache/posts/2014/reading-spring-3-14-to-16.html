@@ -1,7 +1,7 @@
 <p>This post is transferred from my <a href="http://blogpengyin.herokuapp.com/">old Hexo blog site</a>, created on 2014.</p>
 <p>This is a reading note from Spring Framework 3.1 Tutorial pdf, created by <a href="http://www.tutorialspoint.com/spring"><strong>tutorialspoint</strong></a>. This pdf contains information for Spring 3 Core Basics, which is very useful for understanding defination and practive in Spring programming.</p>
 <p>This note includes Chapter 14 to Chapter 16 in tutorial.</p>
-<h1>Chapter 14: Spring Beans Auto-Wiring</h1>
+<h1 id="chapter-14-spring-beans-auto-wiring">Chapter 14: Spring Beans Auto-Wiring</h1>
 <p><em>This is an example of my own problem:</em> I tried to use <code>jdbctemplate.update()</code> function to insert data, which is passed from controller by a <em>DAO</em> object.</p>
 <p>No matter how hard I try, even using hard-code for sql statement, I kept getting <code>nested exception: java.lang NullPointerException</code> error. Problem did not get solved until I realize instead of just declare a DAO object and call update method, I should declare a DAO as a <em>class variable</em>, and add <code>@autowired</code> to it, such as:</p>
 <pre class="code literal-block"><span></span><span class="c1">//In xml, we have &lt;bean id=&quot;userDAO&quot; class=&quot;...&quot;&gt;&lt;/bean&gt;</span>
@@ -23,14 +23,14 @@
 
 
 <p>Spring can <em>auto-wire</em> relationships between beans without using <code>&lt;constructor-arg&gt;</code> or <code>&lt;property&gt;</code></p>
-<h2>Auto-wiring Modes</h2>
+<h2 id="auto-wiring-modes">Auto-wiring Modes</h2>
 <p>You should be <code>autowire</code> attribute of the <code>&lt;bean/&gt;</code> element to specify autowire mode for a bean definition. There are four Auto-wiring modes, which are defined in this following table:
 images/posts/auto-wiring.png </p>
 <p><code>byType</code> or <code>constructor</code> autowiring mode can be used to wire <em>arrays</em> and other <em>typed-collections</em>.</p>
-<h2>Limitations with Autowiring</h2>
+<h2 id="limitations-with-autowiring">Limitations with Autowiring</h2>
 <p>Autowiring is great to use across a project. However, it do have limitations and you can override it:
 images/posts/autowiring-limitation.png </p>
-<h2>Autowiring By Name*</h2>
+<h2 id="autowiring-by-name">Autowiring By Name*</h2>
 <p>Spring container looks at the beans on which has a <code>autowirte</code> attribute in <code>xml</code> configuration file.</p>
 <p>Then it will go to the java bean class for this bean, and find all attributes that have <code>setter</code> for this bean.</p>
 <p>Then it will come back to <code>xml</code> file, check other bean name, until it find <em>one</em> bean that has same <em>class type (i.e. class="...")</em> as this bean's attribute variable <em>name</em>.</p>
@@ -99,7 +99,7 @@ public class Test{
 </pre>
 
 
-<h2>Autowiring By Type</h2>
+<h2 id="autowiring-by-type">Autowiring By Type</h2>
 <p>Spring first check <code>xml</code> configuration file, find a bean with <code>autowire</code> attribute that marked as <code>byType</code>.</p>
 <p>Spring will go to this bean's java class, then find all its atrribute variables that have <code>setter</code>.</p>
 <p>Spring comes back to <code>xml</code> then go through all the beans. As long as it finds <em>one</em> bean that has same <em>name</em> as java class attribute's <em>type</em>. Spring will instantiate this specific bean.</p>
@@ -132,7 +132,7 @@ public class Test{
 </pre>
 
 
-<h2>Autowiring By Constructor</h2>
+<h2 id="autowiring-by-constructor">Autowiring By Constructor</h2>
 <p>Autowirng by <em>constructor</em> is very similar to autowiring by <em>type</em>. The only difference is it works on <em>constructor</em>.</p>
 <p>So now Spring will check <code>xml</code> file with <code>autowire="constructor"</code> attribute, then go to this java bean class and find this bean's constructor parameters.</p>
 <p>Spring comes back to <code>xml</code> and go through all beans. As long as it find <em>one</em> bean that has same <em>name</em> as the <em>type</em> of constructor parameter, Spring will instantiated this bean based on its configuration, then instantiates original bean.</p>
@@ -184,7 +184,7 @@ public class Test{
 </pre>
 
 
-<h1>Chapter 15: Spring Annotation Based Configuration</h1>
+<h1 id="chapter-15-spring-annotation-based-configuration">Chapter 15: Spring Annotation Based Configuration</h1>
 <p>Instead of using <code>xml</code> to do <em>auto-wiring</em>, you can use move the auto-wiring part to bean's <code>java class</code>.</p>
 <p>Since annotation is performed <em>before</em> xml configuration, auto-writing in xml can <em>override</em> annotation.</p>
 <p>To add anonotation, make sure you put <code>&lt;context:annotation-config/&gt;</code> in <code>&lt;beans&gt;&lt;/beans&gt;</code> in xml file, then add your bean configuration after this line.</p>
@@ -203,7 +203,7 @@ public class Test{
 <p><code>@JSO-250 Annotations</code>: includes <code>@Resource</code>, <code>@PostConstruct</code> adn <code>@PreDestroy</code></p>
 </li>
 </ul>
-<h2>@Required Annotation</h2>
+<h2 id="required-annotation">@Required Annotation</h2>
 <p><code>@Required</code> applys to <code>setter</code>. It means a configuration in <code>xml</code> for this attribute <em>type</em> must be declared. Otherwise it will report <code>BeanInitializationException</code> error.</p>
 <p>Example:</p>
 <p>XML:</p>
@@ -247,8 +247,8 @@ public class Test{
 </pre>
 
 
-<h2>@Autowired Annotation</h2>
-<h3>@Autowired on Setter Methods</h3>
+<h2 id="autowired-annotation">@Autowired Annotation</h2>
+<h3 id="autowired-on-setter-methods">@Autowired on Setter Methods</h3>
 <p>Instead of put <code>&lt;property&gt;</code> in <code>xml</code> file, you can use <code>@Autowired</code> on setter to do a <em>byType autowiring</em>.</p>
 <p>Example:</p>
 <p>XML:</p>
@@ -289,7 +289,7 @@ public class Test{
 </pre>
 
 
-<h3>@Autowired on Properties</h3>
+<h3 id="autowired-on-properties">@Autowired on Properties</h3>
 <p>Instead of creating a <code>setter</code>, you can put <code>@Autowired</code> annotation on the property/attribute declaration.</p>
 <p>In <code>xml</code>, after you configure using <code>&lt;property&gt;</code>, Spring will automatically create a <code>setter</code> for this attribute, using the configuration in <code>xml</code> file for setter's bean. If you define a value in <code>&lt;property&gt;</code>, the value will be passed.</p>
 <p>When Spring search for corresponding setter bean in <code>xml</code> file, it will refer <code>id</code> in each beans.</p>
@@ -331,7 +331,7 @@ public class Test{
 </pre>
 
 
-<h3>@Autowired on Constructors*</h3>
+<h3 id="autowired-on-constructors">@Autowired on Constructors*</h3>
 <p><code>@Autowired</code> on constructor means even if no <code>&lt;constructor-arg&gt;</code> exists, Spring should check if there is any bean that has same <code>id</code> as constructor's <em>parameter name</em>.</p>
 <p>Example:</p>
 <pre class="code literal-block"><span></span><span class="c1">//Assume bean.xml is the same as above</span>
@@ -352,9 +352,9 @@ public class Test{
 </pre>
 
 
-<h3>@Autowired with (required=false) Option</h3>
+<h3 id="autowired-with-requiredfalse-option">@Autowired with (required=false) Option</h3>
 <p>When you add <code>@Autowired</code> to setter, you can add use <code>@Autowired(required=false)</code> to make sure if this setter doesn't has a bean in <code>xml</code> file, it is still fine.</p>
-<h3>@Qualifier Annotation</h3>
+<h3 id="qualifier-annotation">@Qualifier Annotation</h3>
 <p>You can use <code>@Qualifier</code> with <code>@Autowire</code> to select <em>only one</em> bean if you have many beans with <em>same type</em>. This should be added on properties.</p>
 <p>Example:</p>
 <p>XML:</p>
@@ -389,11 +389,11 @@ public class Test{
 </pre>
 
 
-<h2>Spring JSP-250 Annotations</h2>
-<h3>@PostContruct and @PreDestroy Annotations</h3>
+<h2 id="spring-jsp-250-annotations">Spring JSP-250 Annotations</h2>
+<h3 id="postcontruct-and-predestroy-annotations">@PostContruct and @PreDestroy Annotations</h3>
 <p><code>@PostConstruct</code> is to be added on the method that <code>init=XXX</code> in <code>xml</code> file.</p>
 <p><code>@PreDestroy</code> is to be added on the method that <code>destroy=XXX</code> in <code>xml</code> file.</p>
-<h3>@Resource</h3>
+<h3 id="resource">@Resource</h3>
 <p>Follows <em>byName</em> convention, it takes a <em>self-defined</em> name or default <em>property</em> or <em>setter</em> name in java file, then come to <code>xml</code> file to find the bean with same name.</p>
 <p>It can be added on <code>properties</code> or <code>setters</code>.</p>
 <p>Example:</p>
@@ -405,9 +405,9 @@ public class Test{
 </pre>
 
 
-<h1>Chapter 16: Spring Java Based Configuration</h1>
+<h1 id="chapter-16-spring-java-based-configuration">Chapter 16: Spring Java Based Configuration</h1>
 <p>Java based configuration enables you to write most of your Spring configuration without xml.</p>
-<h2>@Configuration and @Bean</h2>
+<h2 id="configuration-and-bean">@Configuration and @Bean</h2>
 <p><code>@Configuration</code> applys to a <code>class</code>, which means this java class is used to configure Spring beans (i.e. It is a <code>IoC Container</code>).</p>
 <p><code>@Bean</code> applys to <code>properties</code>/<code>methods</code> inside configuration class. It automatically pick up bean ID and returns actual bean.</p>
 <p>A <code>@Configuration</code> class can have more than one <code>@Bean</code>.</p>
@@ -450,7 +450,7 @@ public class Test{
 </pre>
 
 
-<h2>Injecting Bean Dependencies</h2>
+<h2 id="injecting-bean-dependencies">Injecting Bean Dependencies</h2>
 <p>To mark one bean has <em>dependency</em> with another bean, just <em>call</em> this bean from anther bean.</p>
 <p>Example:</p>
 <pre class="code literal-block"><span></span><span class="nd">@Configuration</span>
@@ -488,7 +488,7 @@ public class Test{
 </pre>
 
 
-<h2>@Import Annotation</h2>
+<h2 id="import-annotation">@Import Annotation</h2>
 <p>You can use <code>@Import</code> for beans from another configuration class.</p>
 <p>When you define class to ApplicationContext, only non-import bean needs to be defined.</p>
 <p>Example:</p>
@@ -516,7 +516,7 @@ public class Test{
 </pre>
 
 
-<h2>Init and Destroy</h2>
+<h2 id="init-and-destroy">Init and Destroy</h2>
 <p>You can use <code>initMethod</code> and <code>destoryMethod</code> with <code>@Bean</code> for initialization and destroy of the bean:</p>
 <pre class="code literal-block"><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Foo</span><span class="o">{</span>
     <span class="kd">public</span> <span class="kt">void</span> <span class="nf">init</span><span class="o">(){</span>
@@ -537,7 +537,7 @@ public class Test{
 </pre>
 
 
-<h2>Bean Scope</h2>
+<h2 id="bean-scope">Bean Scope</h2>
 <p>Default scope is <code>singleton</code>. You can use <code>@Scope</code> to define other scopes:</p>
 <pre class="code literal-block"><span></span><span class="nd">@Bean</span>
 <span class="nd">@Scope</span><span class="o">(</span><span class="s">&quot;prototype&quot;</span><span class="o">)</span>

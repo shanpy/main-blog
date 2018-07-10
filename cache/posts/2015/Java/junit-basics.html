@@ -1,12 +1,12 @@
-<h2>Reference</h2>
+<h2 id="reference">Reference</h2>
 <ul>
 <li><a href="http://www.tutorialspoint.com//junit/index.htm">JUnit Tutorial from Tutorialspoint.com</a></li>
 </ul>
-<h2>Overview</h2>
+<h2 id="overview">Overview</h2>
 <p>A <code>Unit Test Case</code> is a part of code which ensures that the another part of code (method) works as expected. To achieve those desired results quickly, test framework is required.</p>
 <p>JUnit is perfect unit test framework for java programming language.</p>
-<h2>Test Framework</h2>
-<h3>Features</h3>
+<h2 id="test-framework">Test Framework</h2>
+<h3 id="features">Features</h3>
 <p>JUnit test framework provides following important features:</p>
 <ul>
 <li>
@@ -22,7 +22,7 @@
 <p><code>JUnit classes</code></p>
 </li>
 </ul>
-<h4>Fixtures</h4>
+<h4 id="fixtures">Fixtures</h4>
 <p><code>Fixtures</code> is a fixed state of a set of <strong>objects</strong> used as a baseline for running tests.</p>
 <p>The purpose of a test fixture is to ensure that there is a well known and <strong>fixed environment</strong> in which tests are run so that results are repeatable. It includes:</p>
 <ul>
@@ -52,7 +52,7 @@
 </pre>
 
 
-<h4>Test Suite</h4>
+<h4 id="test-suite">Test Suite</h4>
 <p><code>Test suite</code> means <strong>bundle</strong> a few unit test cases and run it together.</p>
 <p>In JUnit, both <code>@RunWith</code> and <code>@Suite</code> annotation are used to run the suite test.</p>
 <p>Here is an example which uses TestJunit1 &amp; TestJunit2 test classes from Tutorialspoint.com:</p>
@@ -98,7 +98,7 @@
 </pre>
 
 
-<h4>Test Runner</h4>
+<h4 id="test-runner">Test Runner</h4>
 <p><code>Test runner</code> is used for <strong>executing</strong> the test cases.</p>
 <p>Here is an example which assumes TestJunit test class already exists, from Tutorialspoint.com:</p>
 <pre class="code literal-block"><span></span><span class="kn">import</span> <span class="nn">org.junit.runner.JUnitCore</span><span class="o">;</span>
@@ -117,7 +117,7 @@
 </pre>
 
 
-<h4>JUnit Classes</h4>
+<h4 id="junit-classes">JUnit Classes</h4>
 <p>JUnit classes are important classes which is used in writing and testing JUnits.</p>
 <p>Some of the important classes are:</p>
 <ul>
@@ -131,8 +131,8 @@
 <p><code>TestResult</code> which contain methods to collect the results of executing a test case.</p>
 </li>
 </ul>
-<h3>JUnit Basic Usage</h3>
-<h4>1. Create a Message Class</h4>
+<h3 id="junit-basic-usage">JUnit Basic Usage</h3>
+<h4 id="1-create-a-message-class">1. Create a Message Class</h4>
 <p>Example code from Tutorialspoint.com:</p>
 <pre class="code literal-block"><span></span><span class="cm">/*</span>
 <span class="cm">* This class prints the given message on console.</span>
@@ -153,7 +153,7 @@
 </pre>
 
 
-<h4>2. Create a Test Case Class</h4>
+<h4 id="2-create-a-test-case-class">2. Create a Test Case Class</h4>
 <p>Example code from Tutorialspoint.com</p>
 <pre class="code literal-block"><span></span><span class="kn">import</span> <span class="nn">org.junit.Test</span><span class="o">;</span>
 <span class="kn">import static</span> <span class="nn">org.junit.Assert.assertEquals</span><span class="o">;</span>
@@ -170,7 +170,7 @@
 </pre>
 
 
-<h4>3. Create a Test Runner Class</h4>
+<h4 id="3-create-a-test-runner-class">3. Create a Test Runner Class</h4>
 <p>Example code from Tutorialspoint.com</p>
 <pre class="code literal-block"><span></span><span class="kn">import</span> <span class="nn">org.junit.runner.JUnitCore</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">org.junit.runner.Result</span><span class="o">;</span>
@@ -189,7 +189,7 @@
 </pre>
 
 
-<h3>Writing Test with POJOs</h3>
+<h3 id="writing-test-with-pojos">Writing Test with POJOs</h3>
 <p>To write a test for a POJO class, we need following:</p>
 <ul>
 <li>
@@ -273,10 +273,10 @@
 </pre>
 
 
-<h3>Assertion and Annotation</h3>
-<h4>Assertion</h4>
+<h3 id="assertion-and-annotation">Assertion and Annotation</h3>
+<h4 id="assertion">Assertion</h4>
 <p>This class provides a set of assertion methods useful for writing tests. <em>Only failed assertions are recorded.</em></p>
-<h5>List of Assertion Methods</h5>
+<h5 id="list-of-assertion-methods">List of Assertion Methods</h5>
 <ul>
 <li>
 <p><code>assertEquals</code>: Check that two primitives/Objectes are equal</p>
@@ -294,7 +294,7 @@
 <p><strong>assertArrayEquals</strong>: Check whether two arrays are equal to each other</p>
 </li>
 </ul>
-<h4>Annotation</h4>
+<h4 id="annotation">Annotation</h4>
 <p>The annotation in JUnit gives us information about test methods, include:</p>
 <ul>
 <li>
@@ -307,7 +307,7 @@
 <p>which methods or class will be ignore during execution.</p>
 </li>
 </ul>
-<h5>List of Annotations</h5>
+<h5 id="list-of-annotations">List of Annotations</h5>
 <ul>
 <li>
 <p><code>@Test</code>: The Test annotation tells JUnit that the <strong>public void method</strong> to which it is attached can be run as a test case.</p>
@@ -328,9 +328,9 @@
 <p><code>@Ignore</code>: The Ignore annotation is used to ignore the test and that <strong>test will not be executed</strong>.</p>
 </li>
 </ul>
-<h3>Suite Test</h3>
+<h3 id="suite-test">Suite Test</h3>
 <p>Test suites means bundle a few unit test cases and run it together. In JUnit, both <code>@RunWith</code> and <code>@Suite</code> annotation are used to run the suite test.</p>
-<h4>Step 1: Create a Message Class</h4>
+<h4 id="step-1-create-a-message-class">Step 1: Create a Message Class</h4>
 <p>Example code from Tutorialspoint.com:</p>
 <pre class="code literal-block"><span></span><span class="cm">/*</span>
 <span class="cm">* This class prints the given message on console.</span>
@@ -357,7 +357,7 @@
 </pre>
 
 
-<h4>Step 2: Create Business Login Class with Business Login Test Class</h4>
+<h4 id="step-2-create-business-login-class-with-business-login-test-class">Step 2: Create Business Login Class with Business Login Test Class</h4>
 <p>Business Logic class with Methods for testing:</p>
 <pre class="code literal-block"><span></span><span class="kn">import</span> <span class="nn">org.junit.Test</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">org.junit.Ignore</span><span class="o">;</span>
@@ -391,7 +391,7 @@
 </pre>
 
 
-<h4>Step3: Create Test Suite Class using @RunWith and @Suite annotation</h4>
+<h4 id="step3-create-test-suite-class-using-runwith-and-suite-annotation">Step3: Create Test Suite Class using @RunWith and @Suite annotation</h4>
 <p>Example code from Tutorialspoint.com:</p>
 <pre class="code literal-block"><span></span><span class="kn">import</span> <span class="nn">org.junit.runner.RunWith</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">org.junit.runners.Suite</span><span class="o">;</span>
@@ -407,17 +407,17 @@
 </pre>
 
 
-<h4>Create Test Runner Classes</h4>
+<h4 id="create-test-runner-classes">Create Test Runner Classes</h4>
 <p>Same code as examples above</p>
-<h3>Ignore Test</h3>
+<h3 id="ignore-test">Ignore Test</h3>
 <p>Sometimes it happens that our code is not ready and test case written to test that method/code will fail if run. The <code>@Ignore</code> annotation helps in this regards.</p>
 <p>A test method annotated with @Ignore <strong>will not be executed</strong>.</p>
 <p>If a test class is annotated with @Ignore then none of its test methods will be executed.</p>
-<h4>Step 1: Create a Message Class</h4>
+<h4 id="step-1-create-a-message-class_1">Step 1: Create a Message Class</h4>
 <p>Same as example above.</p>
-<h4>Step 2: Create Business Login Class with Business Login Test Class</h4>
+<h4 id="step-2-create-business-login-class-with-business-login-test-class_1">Step 2: Create Business Login Class with Business Login Test Class</h4>
 <p>Same as example above.</p>
-<h4>Step 3: Create Test Runner Class with @Ignore Annotation</h4>
+<h4 id="step-3-create-test-runner-class-with-ignore-annotation">Step 3: Create Test Runner Class with @Ignore Annotation</h4>
 <p>Example code from Tutorialspoint.com:</p>
 <pre class="code literal-block"><span></span><span class="kn">import</span> <span class="nn">org.junit.Test</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">org.junit.Ignore</span><span class="o">;</span>
@@ -444,12 +444,12 @@
 
 
 <p>If you run the code above, you will always pass all test because none of test with @Test annotation above is excuted.</p>
-<h3>Time Test</h3>
+<h3 id="time-test">Time Test</h3>
 <p>If a test case takes more time than specified number of milliseconds then JUnit will automatically mark it as failed.</p>
 <p>The <code>timeout</code> parameter is used along with @Test annotation.</p>
-<h4>Step 1: Create a Message Class</h4>
+<h4 id="step-1-create-a-message-class_2">Step 1: Create a Message Class</h4>
 <p>Same as example above.</p>
-<h4>Step 2: Create Test Class with Timeout Setting</h4>
+<h4 id="step-2-create-test-class-with-timeout-setting">Step 2: Create Test Class with Timeout Setting</h4>
 <p>Example code from Tutorialspoint.com:</p>
 <pre class="code literal-block"><span></span><span class="kn">import</span> <span class="nn">org.junit.Test</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">org.junit.Ignore</span><span class="o">;</span>
@@ -473,14 +473,14 @@
 </pre>
 
 
-<h4>Step 3: Create Test Runner Class</h4>
+<h4 id="step-3-create-test-runner-class">Step 3: Create Test Runner Class</h4>
 <p>Same regular Test Runner class as examples above</p>
-<h3>Exceptions Test</h3>
+<h3 id="exceptions-test">Exceptions Test</h3>
 <p>You can test the code <em>whether code throws desired exception or not</em>.</p>
 <p>The <strong>expected</strong> parameter is used along with @Test annotation.</p>
-<h4>Step 1: Create a Message Class</h4>
+<h4 id="step-1-create-a-message-class_3">Step 1: Create a Message Class</h4>
 <p>Same as example above.</p>
-<h4>Step 2: Create Test Class with Exception Setting</h4>
+<h4 id="step-2-create-test-class-with-exception-setting">Step 2: Create Test Class with Exception Setting</h4>
 <p>Example code from Tutorialspoint.com:</p>
 <pre class="code literal-block"><span></span><span class="kn">import</span> <span class="nn">org.junit.Test</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">org.junit.Ignore</span><span class="o">;</span>
@@ -504,9 +504,9 @@
 </pre>
 
 
-<h4>Step 3: Create Test Runner Class</h4>
+<h4 id="step-3-create-test-runner-class_1">Step 3: Create Test Runner Class</h4>
 <p>Same regular Test Runner class as examples above</p>
-<h3>Parameterized Test</h3>
+<h3 id="parameterized-test">Parameterized Test</h3>
 <p>Parameterized tests allow developer to <em>run the same test over and over again using different values</em>.</p>
 <p>Five steps to follow for parameterized test:</p>
 <ol>
@@ -527,7 +527,7 @@
 </li>
 </ol>
 <p>The test case will be invoked once per each row of data.</p>
-<h4>Step 1: Create a Business Logic class with Methods for Testing</h4>
+<h4 id="step-1-create-a-business-logic-class-with-methods-for-testing">Step 1: Create a Business Logic class with Methods for Testing</h4>
 <p>Exmaple code from Tutorialspoint.com:</p>
 <pre class="code literal-block"><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">PrimeNumberChecker</span> <span class="o">{</span>
    <span class="kd">public</span> <span class="n">Boolean</span> <span class="nf">validate</span><span class="o">(</span><span class="kd">final</span> <span class="n">Integer</span> <span class="n">primeNumber</span><span class="o">)</span> <span class="o">{</span>
@@ -542,7 +542,7 @@
 </pre>
 
 
-<h4>Step 2: Create a Business Logic Parameterized Test Class</h4>
+<h4 id="step-2-create-a-business-logic-parameterized-test-class">Step 2: Create a Business Logic Parameterized Test Class</h4>
 <p>Exmaple code from Tutorialspoint.com:</p>
 <pre class="code literal-block"><span></span><span class="kn">import</span> <span class="nn">java.util.Arrays</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">java.util.Collection</span><span class="o">;</span>
@@ -592,5 +592,5 @@
 </pre>
 
 
-<h4>Step 3: Create Test Runner Class</h4>
+<h4 id="step-3-create-test-runner-class_2">Step 3: Create Test Runner Class</h4>
 <p>Same regular Test Runner class as examples above</p>

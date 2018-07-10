@@ -7,7 +7,7 @@ article: http://ogp.me/ns/article#
 <meta charset="utf-8">
 <meta name="description" content="When I started to create multiple development environment for my Hydra experiment project, moving data from one to another become a high-priority problem. When I looked into my project to find the proper way, I realize a post is necessary to record my exploration about data processing between Hydra, Fedora and Solr.">
 <meta name="viewport" content="width=device-width">
-<title>A Journal of Playing with Hydra Data | I'm Pengyin</title>
+<title>A Journal of Playing with Hydra Data | I'm Pengyin (Wendy)</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2015/Others/play-with-hydra-data.html">
@@ -26,7 +26,7 @@ MathJax.Hub.Config({
     }
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
-<meta property="og:site_name" content="I'm Pengyin">
+<meta property="og:site_name" content="I'm Pengyin (Wendy)">
 <meta property="og:title" content="A Journal of Playing with Hydra Data">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2015/Others/play-with-hydra-data.html">
 <meta property="og:description" content="When I started to create multiple development environment for my Hydra experiment project, moving data from one to another become a high-priority problem. When I looked into my project to find the pro">
@@ -70,11 +70,11 @@ MathJax.Hub.Config({
         </div>
         <div class="body">
             <div>
-<h3>Data Immigration</h3>
+<h3 id="data-immigration">Data Immigration</h3>
 <p><em>This part is based on the <a href="https://github.com/projecthydra/hydra/wiki/Dive-into-Hydra">dive-into-hydra</a> tutorial project.</em></p>
 <p>What should I do to immigrate Hydra Data (Fedora files, Solr documents and indexes, etc) from one Hydra project to another project?</p>
 <p>To figure out a way, I have explored following items:</p>
-<h4>Step 1: SQLite3</h4>
+<h4 id="step-1-sqlite3">Step 1: SQLite3</h4>
 <p><strong>8/12/15</strong></p>
 <p>My first idea is to check database. Tutorial project uses SQLite3 as database. All files are included in <code>/db</code> folder. Before going to production, you may get <code>developer.sqlite3</code>, <code>test.sqlite3</code>.</p>
 <p>I used <code>SQLiteStudio</code> to open these two SQLite3 databases. Each database has four tables, which are:</p>
@@ -94,14 +94,14 @@ MathJax.Hub.Config({
 </ul>
 <p>It seems that database(SQLite3) here is used to record information in search process, after all previous data has been immigrated.</p>
 <p>Now my question is: <em>Does Hydra have a solution?</em></p>
-<h4>Step 2: Hydra</h4>
+<h4 id="step-2-hydra">Step 2: Hydra</h4>
 <p><strong>8/12/15</strong></p>
 <p>I did some research about a full immigration solution in Hydra. I didn't find any result, which is nature because Hydra includes so many components: Fedora, Solr, Blacklight, etc. It would be extremely hard to transfer all data from these components once, without any error.</p>
 <p>After I re-think my requirement, I realize this is what I want: <strong>Get all data from Fedora in old project -&gt; Put it to Fedora in new project, with same structure -&gt; Solr in new project re-indexing -&gt; Blacklight can find new documents</strong></p>
 <p>Now I want to start the process of <em>export and import Fedora data</em>.</p>
-<h4>Step 3: Fedora</h4>
+<h4 id="step-3-fedora">Step 3: Fedora</h4>
 <p><strong>8/12/15</strong></p>
-<h5>Data Export</h5>
+<h5 id="data-export">Data Export</h5>
 <p>Fedora4 provides a <a href="https://wiki.duraspace.org/display/FEDORA40/RESTful+HTTP+API">RESTful HTTP API</a> for data processing.</p>
 <p>To export serialized form of a resource, <strong>with all subtress and binary content</strong>, run following in your terminal (I adjust path based on my project):</p>
 <pre class="code literal-block"><span></span>curl -u fedoraAdmin:fedoraAdmin http://127.0.0.1:8983/fedora/dev/fcr:export?recurse=true&amp;skipBinary=false"
@@ -110,7 +110,7 @@ MathJax.Hub.Config({
 
 <p>Make sure to use your own fedora username and password.</p>
 <p>This command will generate a group of <code>xml</code> code, save it to a <code>xml</code> file, such as <code>FedoraExport.xml</code>.</p>
-<h5>Data Import</h5>
+<h5 id="data-import">Data Import</h5>
 <p>Now go to your new project and get a copy of your exported xml file. Run following command to import:</p>
 <pre class="code literal-block"><span></span>curl -u fedoraAdmin:fedoraAdmin -X POST --data-binary "@FedoraExport.xml" "http://127.0.0.1:8983/fedora/rest/dev/fcr:import?format=jcr/xml"
 </pre>
@@ -123,7 +123,7 @@ MathJax.Hub.Config({
 <p>Possible Solution: I should create a summary node, which includes all my books data. I export this summary node and import it to /fedora/rest/dev. Now I can have exactly same structure as old fedora.</p>
 </blockquote>
 <p>Now I want to start the process of <em>Solr re-indexing</em>.</p>
-<h4>Step 4: Solr</h4>
+<h4 id="step-4-solr">Step 4: Solr</h4>
 <p>Working in process :)</p>
 </div>
         </div>
@@ -155,7 +155,7 @@ MathJax.Hub.Config({
 
 
     </div>
-                     <footer id="footer"><p>Contents © 2018         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                     <footer id="footer"><p>Contents © 2018         <a href="mailto:pengyin.shan@outlook.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

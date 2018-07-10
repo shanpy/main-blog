@@ -1,7 +1,7 @@
 <p>This post is transferred from my <a href="http://blogpengyin.herokuapp.com/">old Hexo blog site</a>, created on 2014.</p>
 <p>This is a Reading Note for "Interactive Data Visualization for the Web - An Introduction to Designing with D3" by <em>Scott Murray</em>, pulished by O'Reilly</p>
 <p>This post will contains concepts that I think it's important for me to be familiar with in D3 book.</p>
-<h1>Chapter 2: D3 Introduction</h1>
+<h1 id="chapter-2-d3-introduction">Chapter 2: D3 Introduction</h1>
 <p>D3 is a short-name for <em>Data-Driven Documents</em>. The data is from data provider (users, customers, etc) and the documents are documents based on web, such as HTML, SVG.</p>
 <p>The process that D3 create data-driven document is:</p>
 <ul>
@@ -21,11 +21,11 @@
 <p>Transforming is very important. You will need to create transforming rule in this step.</p>
 <p>D3.js is great for explaining data instead of exploring data.</p>
 <p>D3.js will not hide you original data in client side.</p>
-<h1>Chapter 3: Basic Skill in Web</h1>
+<h1 id="chapter-3-basic-skill-in-web">Chapter 3: Basic Skill in Web</h1>
 <p>GeoJSON is similar to JSON, specailly for geograpic data, like points(longitude, latitude) or shapes.</p>
 <p>Make sure not decling too many global object. All global variables are attributes for <code>window</code> object. You can declare one or few gloal object then assign attribute to this global object.</p>
 <p>In SVG, if <code>x</code> is getting larger, graph will move towards <em>right</em>. If <code>y</code> is getting larger, graph will move towards <em>bottom</em>.</p>
-<h2>Graphs in SVG:</h2>
+<h2 id="graphs-in-svg">Graphs in SVG:</h2>
 <p><code>rect</code>: <code>x</code> and <code>y</code> is the location of left top corner.</p>
 <pre class="code literal-block"><span></span><span class="p">&lt;</span><span class="nt">rect</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;500&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;50&quot;</span><span class="p">/&gt;</span>
 </pre>
@@ -39,7 +39,7 @@
 
 
 <p><code>text</code>: creatign text. <code>x</code> is the left top corner of text, <code>y</code> is the base line of text. Letters like <em>p</em> or <em>y</em> have parts that are under base line. <code>font-family | font-size | etc</code> can be used to add style to text.</p>
-<h2>Style/Attribute for SVG Element</h2>
+<h2 id="styleattribute-for-svg-element">Style/Attribute for SVG Element</h2>
 <p><code>fill</code>: fill color</p>
 <p><code>stroke</code>: border color</p>
 <p><code>stroke-width</code>: width of border</p>
@@ -71,12 +71,12 @@
 </pre>
 
 
-<h1>Chapter 4: Install D3.js</h1>
+<h1 id="chapter-4-install-d3js">Chapter 4: Install D3.js</h1>
 <p>It is important to set <code>&lt;meta charset="utf-8"&gt;</code> for correctly compile D3.js.</p>
-<h1>Chapter 5: Data</h1>
+<h1 id="chapter-5-data">Chapter 5: Data</h1>
 <p><code>.select("tag_name")</code>: reference the first element that has tag_name.</p>
 <p><code>.text("content_of_text")</code>: insert text.</p>
-<h2>Use CSV</h2>
+<h2 id="use-csv">Use CSV</h2>
 <p>D3 can load CSV file via <code>d3.csv()</code>:</p>
 <pre class="code literal-block"><span></span><span class="nx">d3</span><span class="p">.</span><span class="nx">csv</span><span class="p">(</span><span class="s2">&quot;test.csv&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">){</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>

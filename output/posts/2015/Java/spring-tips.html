@@ -7,7 +7,7 @@ article: http://ogp.me/ns/article#
 <meta charset="utf-8">
 <meta name="description" content="This post serves as a sticky note for me to record Spring Core/MVC tips I got in job. I will update this post when I learn more.">
 <meta name="viewport" content="width=device-width">
-<title>Spring Tips | I'm Pengyin</title>
+<title>Spring Tips | I'm Pengyin (Wendy)</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2015/Java/spring-tips.html">
@@ -26,7 +26,7 @@ MathJax.Hub.Config({
     }
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
-<meta property="og:site_name" content="I'm Pengyin">
+<meta property="og:site_name" content="I'm Pengyin (Wendy)">
 <meta property="og:title" content="Spring Tips">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2015/Java/spring-tips.html">
 <meta property="og:description" content="This post serves as a sticky note for me to record Spring Core/MVC tips I got in job. I will update this post when I learn more.">
@@ -71,7 +71,7 @@ MathJax.Hub.Config({
 <hr>
 <p>In Spring MVC, if AJAX pass back a <code>String</code>, use <code>JSON.parse()</code> to transfer it to JSON object first.</p>
 <hr>
-<h4>Use Session Object in Controller</h4>
+<h4 id="use-session-object-in-controller">Use Session Object in Controller</h4>
 <p>Way1:</p>
 <pre class="code literal-block"><span></span><span class="err">\\</span><span class="o">...(...</span><span class="na">HttpSession</span> <span class="n">sessionObj</span><span class="o">){</span>
     <span class="n">sessionobj</span><span class="o">.</span><span class="na">setAttribute</span><span class="o">(</span><span class="err">'</span><span class="n">name_of_attribute</span><span class="err">'</span><span class="o">,</span> <span class="n">attribute_object</span><span class="o">);</span>
@@ -91,8 +91,8 @@ MathJax.Hub.Config({
 
 <p>Different from <code>flash attribute</code>, if we use session, attribute in front-end will not be erased after reloading.</p>
 <hr>
-<h3>Spring MVC Form Tips</h3>
-<h4>Spring Form Validation:</h4>
+<h3 id="spring-mvc-form-tips">Spring MVC Form Tips</h3>
+<h4 id="spring-form-validation">Spring Form Validation:</h4>
 <p>Way 1:</p>
 <pre class="code literal-block"><span></span><span class="p">&lt;</span><span class="nt">form:form</span> <span class="err">...</span> <span class="na">onsubmit</span><span class="o">=</span><span class="s">'return valid()'</span><span class="p">&gt;</span>
     <span class="c">&lt;!--. Code... --&gt;</span>
@@ -122,7 +122,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h4>Submit Spring Form in jQuery:</h4>
+<h4 id="submit-spring-form-in-jquery">Submit Spring Form in jQuery:</h4>
 <pre class="code literal-block"><span></span><span class="nx">$</span><span class="p">(</span><span class="s1">'#Form_ID'</span><span class="p">).</span><span class="nx">submit</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span>
         <span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
         <span class="c1">//...</span>
@@ -140,7 +140,7 @@ MathJax.Hub.Config({
 <p>If you are using Eclipse, comment your unwanted Spring code will not work! You should remove unwanted Spring code instead of commenting them, because Eclipse will compile Spring code anyway, and you may get error because of that.</p>
 </blockquote>
 <hr>
-<h3>Spring and AJAX</h3>
+<h3 id="spring-and-ajax">Spring and AJAX</h3>
 <p>I wrote any post about Spring and AJAX <a href="http://pengyin-shan.com/ajax-and-spring-mvc-controller.html">here</a>.
 Post Method in jQuery:</p>
 <pre class="code literal-block"><span></span><span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
@@ -203,7 +203,7 @@ Post Method in jQuery:</p>
 
 
     </div>
-                     <footer id="footer"><p>Contents © 2018         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                     <footer id="footer"><p>Contents © 2018         <a href="mailto:pengyin.shan@outlook.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

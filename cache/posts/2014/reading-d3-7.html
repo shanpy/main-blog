@@ -1,14 +1,14 @@
 <p>This post is transferred from my <a href="http://blogpengyin.herokuapp.com/">old Hexo blog site</a>, created on 2014.</p>
 <p>This is a Reading Note for <em>Interactive Data Visualization for the Web - An Introduction to Designing with D3</em> by <em>Scott Murray</em>, pulished by <em>O'Reilly, 2013</em></p>
 <p>This post will contains concepts that I think it's important for me to be familiar with in D3 book.</p>
-<h1>Chapter 7 : Scale (Linear)</h1>
+<h1 id="chapter-7-scale-linear">Chapter 7 : Scale (Linear)</h1>
 <p>code example for this chapter is <a href="http://shanpy.github.io/Front-End-Playground/D3/Reading-D3-III.html"><strong>here</strong></a>. This part involves lots of code practice.</p>
 <p>In D3, the scales are the functions that has parameters. You pass value to these functions, then they pass out values based on scale.</p>
 <p><code>input domain</code> means possible range for input values</p>
 <p><code>output range</code> means possible range for output values, mostly by pixels.</p>
 <p><code>normalization</code> means based on possible min and max value, transfer a value to a new value <em>between 0 and 1</em>. This is what we are doing for linear scale.</p>
-<h2>Create Scale</h2>
-<h3>Code Part I</h3>
+<h2 id="create-scale">Create Scale</h2>
+<h3 id="code-part-i">Code Part I</h3>
 <pre class="code literal-block"><span></span><span class="kd">var</span> <span class="nx">scale</span> <span class="o">=</span> <span class="nx">d3</span><span class="p">.</span><span class="nx">scale</span><span class="p">.</span><span class="nx">linear</span><span class="p">();</span> <span class="c1">//Now scale is a function for linear scale</span>
 
 <span class="nx">scale</span><span class="p">.</span><span class="nx">domain</span><span class="p">([</span><span class="mi">100</span><span class="p">,</span><span class="mi">500</span><span class="p">]);</span> <span class="c1">//set up input domain</span>
@@ -19,8 +19,8 @@
 </pre>
 
 
-<h2>Zoomed Scatter Plot</h2>
-<h3>Code Part II</h3>
+<h2 id="zoomed-scatter-plot">Zoomed Scatter Plot</h2>
+<h3 id="code-part-ii">Code Part II</h3>
 <p>We can make the input range more flexiable by using <code>d3.min()</code> and <code>d3.max()</code>. Normall we can just do <code>d3.min(dataset)</code>. To get max value from an array of arrays:</p>
 <pre class="code literal-block"><span></span><span class="kd">var</span> <span class="nx">dataset</span> <span class="o">=</span> <span class="p">[</span>
                 <span class="p">[</span><span class="mi">50</span><span class="p">,</span><span class="mi">100</span><span class="p">],[</span><span class="mi">20</span><span class="p">,</span><span class="mi">200</span><span class="p">],[</span><span class="mi">74</span><span class="p">,</span><span class="mi">40</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">300</span><span class="p">]</span>
@@ -105,7 +105,7 @@
 </pre>
 
 
-<h2>Other Methods and Scales</h2>
+<h2 id="other-methods-and-scales">Other Methods and Scales</h2>
 <p><code>scale.nice()</code>: Extend the domain so it starts and ends on nice round values. Following formula: <code>exp(round(log(dx))-1)</code>. For example, <code>[0.998, 2.5555]</code> to <code>[1,2.5]</code></p>
 <p><code>scale.rangeRound()</code>: Round ranges to closest <code>intenger</code></p>
 <p><code>scale.clamp()</code>: Force all values that <em>out of range</em> to be in closest range, i.e, max or min value.</p>

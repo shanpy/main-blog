@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>I'm Pengyin (Posts about Spring)</title><link>http://pengyin-shan.com/</link><description></description><atom:link href="http://pengyin-shan.com/categories/spring.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 06 Jul 2018 17:48:42 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Spring Tips</title><link>http://pengyin-shan.com/posts/2015/Java/spring-tips.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;hr&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>I'm Pengyin (Posts about Spring)</title><link>http://pengyin-shan.com/</link><description></description><atom:link type="application/rss+xml" rel="self" href="http://pengyin-shan.com/categories/spring.xml"></atom:link><language>en</language><lastBuildDate>Tue, 10 Jul 2018 14:56:12 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Spring Tips</title><link>http://pengyin-shan.com/posts/2015/Java/spring-tips.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;hr&gt;
 &lt;p&gt;In Spring MVC, if AJAX pass back a &lt;code&gt;String&lt;/code&gt;, use &lt;code&gt;JSON.parse()&lt;/code&gt; to transfer it to JSON object first.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h4&gt;Use Session Object in Controller&lt;/h4&gt;
+&lt;h4 id="use-session-object-in-controller"&gt;Use Session Object in Controller&lt;/h4&gt;
 &lt;p&gt;Way1:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;\\&lt;/span&gt;&lt;span class="o"&gt;...(...&lt;/span&gt;&lt;span class="na"&gt;HttpSession&lt;/span&gt; &lt;span class="n"&gt;sessionObj&lt;/span&gt;&lt;span class="o"&gt;){&lt;/span&gt;
     &lt;span class="n"&gt;sessionobj&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;setAttribute&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="err"&gt;'&lt;/span&gt;&lt;span class="n"&gt;name_of_attribute&lt;/span&gt;&lt;span class="err"&gt;'&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;attribute_object&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
@@ -22,8 +22,8 @@
 
 &lt;p&gt;Different from &lt;code&gt;flash attribute&lt;/code&gt;, if we use session, attribute in front-end will not be erased after reloading.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3&gt;Spring MVC Form Tips&lt;/h3&gt;
-&lt;h4&gt;Spring Form Validation:&lt;/h4&gt;
+&lt;h3 id="spring-mvc-form-tips"&gt;Spring MVC Form Tips&lt;/h3&gt;
+&lt;h4 id="spring-form-validation"&gt;Spring Form Validation:&lt;/h4&gt;
 &lt;p&gt;Way 1:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;form:form&lt;/span&gt; &lt;span class="err"&gt;...&lt;/span&gt; &lt;span class="na"&gt;onsubmit&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;'return valid()'&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
     &lt;span class="c"&gt;&amp;lt;!--. Code... --&amp;gt;&lt;/span&gt;
@@ -53,7 +53,7 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Submit Spring Form in jQuery:&lt;/h4&gt;
+&lt;h4 id="submit-spring-form-in-jquery"&gt;Submit Spring Form in jQuery:&lt;/h4&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'#Form_ID'&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;submit&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;e&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
         &lt;span class="nx"&gt;e&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;preventDefault&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
         &lt;span class="c1"&gt;//...&lt;/span&gt;
@@ -71,7 +71,7 @@
 &lt;p&gt;If you are using Eclipse, comment your unwanted Spring code will not work! You should remove unwanted Spring code instead of commenting them, because Eclipse will compile Spring code anyway, and you may get error because of that.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h3&gt;Spring and AJAX&lt;/h3&gt;
+&lt;h3 id="spring-and-ajax"&gt;Spring and AJAX&lt;/h3&gt;
 &lt;p&gt;I wrote any post about Spring and AJAX &lt;a href="http://pengyin-shan.com/ajax-and-spring-mvc-controller.html"&gt;here&lt;/a&gt;.
 Post Method in jQuery:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;ajax&lt;/span&gt;&lt;span class="p"&gt;({&lt;/span&gt;
@@ -109,7 +109,7 @@ Post Method in jQuery:&lt;/p&gt;
 - If your web.xml set up default url-pattern &lt;code&gt;/&lt;/code&gt;, when you refer a link, you don't need to add any suffix on it.
 - If your web.xml set up any url-pattern, such as &lt;code&gt;html&lt;/code&gt; or &lt;code&gt;htm&lt;/code&gt;, when you refere a link, in &lt;code&gt;ajax&lt;/code&gt; or &lt;code&gt;windown.location.href&lt;/code&gt;, you need to add &lt;code&gt;html&lt;/code&gt; or &lt;code&gt;htm&lt;/code&gt; suffix after it. &lt;em&gt;But don't add these suffix in spring controller request mapping&lt;/em&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3&gt;Case 1. Pass JSON Data to Controller in Ajax Call, using $.ajax()&lt;/h3&gt;
+&lt;h3 id="case-1-pass-json-data-to-controller-in-ajax-call-using-ajax"&gt;Case 1. Pass JSON Data to Controller in Ajax Call, using $.ajax()&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Notes on 01/13/2015: I had trouble using &lt;code&gt;$.post()&lt;/code&gt; to post JSON data. I doubt something is wrong but I haven't figure out why. Currently I just use &lt;code&gt;$.ajax()&lt;/code&gt;*&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -138,7 +138,7 @@ Post Method in jQuery:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;You may want to substitude &lt;code&gt;application/json&lt;/code&gt; with &lt;code&gt;application/html&lt;/code&gt; to avoid possible.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3&gt;Case 2. Pass JSON Data as URL parameter, and Handle it in Spring MVC Controller&lt;/h3&gt;
+&lt;h3 id="case-2-pass-json-data-as-url-parameter-and-handle-it-in-spring-mvc-controller"&gt;Case 2. Pass JSON Data as URL parameter, and Handle it in Spring MVC Controller&lt;/h3&gt;
 &lt;p&gt;PROS&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;You are free to go to another page or call other controllers after you pass data to controller.&lt;/p&gt;

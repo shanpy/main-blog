@@ -10,7 +10,7 @@ article: http://ogp.me/ns/article#
 <body>
 <p>jQuery Tutorial on TutorialsPoint.com, including useful functions/concepts for web development using jQuery. Please note I only pick parts of core concept which I will use most often."&gt;
     <meta name="viewport" content="width=device-width"></p>
-<title>jQuery Tutorial Reading Notes | I'm Pengyin</title>
+<title>jQuery Tutorial Reading Notes | I'm Pengyin (Wendy)</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2014/jquery-tutorial-reading-notes.html">
@@ -29,7 +29,7 @@ MathJax.Hub.Config({
     }
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
-<meta property="og:site_name" content="I'm Pengyin">
+<meta property="og:site_name" content="I'm Pengyin (Wendy)">
 <meta property="og:title" content="jQuery Tutorial Reading Notes">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2014/jquery-tutorial-reading-notes.html">
 <meta property="og:description" content='This is an old blog I created when I wanted to be more familiar with jQuery library, in late 2014. This is a reading note for &lt;a href="http://www.tutorialspoint.com/jquery"&gt;jQuery Tutorial on Tutorial'>
@@ -73,9 +73,9 @@ MathJax.Hub.Config({
 <p>If you want to find specific topic, feel free to use <code>ctrl + F</code> to search for keyword.</p>
 <p>This is a reading note for <a href="http://www.tutorialspoint.com/jquery">jQuery Tutorial on TutorialsPoint.com</a>, including useful functions/concepts for web development using jQuery. Please note I only pick parts of core concept which I will use most often.</p>
 <p>This reading note is based on <code>jQuery 1.3.2</code>.</p>
-<h2>Part I : Selectors, Attributes, Traversing</h2>
-<h3>Selectors</h3>
-<h4>$()/jQuery() function</h4>
+<h2 id="part-i-selectors-attributes-traversing">Part I : Selectors, Attributes, Traversing</h2>
+<h3 id="selectors">Selectors</h3>
+<h4 id="jquery-function">$()/jQuery() function</h4>
 <p><code>$()</code> or <code>jQuery()</code> is the format for all selectors in jQuery. It can be applied to:</p>
 <ul>
 <li>
@@ -94,7 +94,7 @@ MathJax.Hub.Config({
 <p><em>Mutiple Selectors</em>: results from mutiple selectors can be selected at the same time. For example, <code>$('a#IDs.Classes')</code> means an element with <code>&lt;a&gt;</code> <em>and</em> <code>ID</code> as id <em>and</em> <code>Classes</code> as class name.</p>
 </li>
 </ul>
-<h4>Important Notes</h4>
+<h4 id="important-notes">Important Notes</h4>
 <ul>
 <li>
 <p><code>$(XX:not(YY))</code>: select XX elements without YY elements</p>
@@ -154,7 +154,7 @@ MathJax.Hub.Config({
 <p><code>$(:parent)</code>:all elements that are <em>parents</em> of another element, including <code>text</code></p>
 </li>
 </ul>
-<h3>DOM Attributes</h3>
+<h3 id="dom-attributes">DOM Attributes</h3>
 <p>Some of most import DOM attributes are: <code>className</code>, <code>tagName</code>, <code>id</code>, <code>href</code>, <code>title</code>, <code>rel</code>, <code>src</code></p>
 <p><em>Get Attribute Value</em>: <code>.attr()</code>. For example: <code>var title = $(#testId).attr('title');</code>. Element testId should be <code>&lt;XX titile="..."/&gt;</code></p>
 <p><em>Set Attribute Value</em>: <code>.attr(name,value)</code>. For example, <code>$("#testId").attr('src','/image.jpg');</code></p>
@@ -179,8 +179,8 @@ MathJax.Hub.Config({
 <p><em>Set Text Contents to All</em>: <code>.text(val)</code>. Set the text contents of all matched elements.</p>
 <p><em>Get Value</em>: <code>.val()</code> get the input value of the first matched element</p>
 <p><em>Set Value</em>: <code>val(val)</code>. If applied to <code>input</code>, set the value of all input field. If applied to <code>select</code> and passign <code>option</code> value, that option is selected. If applied to <code>checkbox</code> or <code>radiobutton</code>, all match checkbox or radiobutton are selected.</p>
-<h3>DOM Traversing</h3>
-<h4>For Table Lists</h4>
+<h3 id="dom-traversing">DOM Traversing</h3>
+<h4 id="for-table-lists">For Table Lists</h4>
 <p><code>.eq(index)</code>: find the <em>index+1</em>th element, since we count staring from 0.</p>
 <p><code>.filter(selector)</code>: remove all elements which not match to selector</p>
 <p><code>.filter(function)</code>: remove all elements which not match to function</p>
@@ -189,7 +189,7 @@ MathJax.Hub.Config({
 <p><code>.not(selector)</code>: remove all elements which match to the selector</p>
 <p><code>.slice(start, [end])</code>: select a subset of matched elements. Starting for <em>0</em>.</p>
 <p><em>End is exclusive</em>. If using nagative number, it means starting from the end of selection.</p>
-<h4>Others</h4>
+<h4 id="others">Others</h4>
 <p><code>XX.add(selector)</code>: add more elements to XX, which matches the selector.</p>
 <p><code>XX.selector.andSelf().Do-something</code>: Do something to elements in selector, and XX itself:</p>
 <pre class="code literal-block"><span></span><span class="nx">$</span><span class="p">(</span><span class="s1">'div'</span><span class="p">).</span><span class="nx">find</span><span class="p">(</span><span class="nx">p</span><span class="p">).</span><span class="nx">andSelf</span><span class="p">().</span><span class="nx">addClass</span><span class="p">(</span><span class="s2">"border"</span><span class="p">);</span>
@@ -209,8 +209,8 @@ MathJax.Hub.Config({
 <p><code>prev()/prev(selector)</code>: return <em>closest</em> previous sibling (which matches the selector).</p>
 <p><code>prevAll()/prevAll(selector)</code>: return previous siblings (which matches the selector).</p>
 <p><code>siblings()/siblings(selector)</code>: return siblings (which matches the selector).</p>
-<h2>Part II : CSS, DOM, Events</h2>
-<h3>CSS Methods</h3>
+<h2 id="part-ii-css-dom-events">Part II : CSS, DOM, Events</h2>
+<h3 id="css-methods">CSS Methods</h3>
 <p><em>Apply CSS Properties</em>: <code>XX.css(PropertyName, PropertyValue);</code>. For example, <code>$("#testId").css("display","none");</code></p>
 <p><em>Apply Multiple CSS Properties</em>: <code>.css({key:value, key:value...})</code>:</p>
 <pre class="code literal-block"><span></span><span class="nx">$</span><span class="p">(</span><span class="s1">'#testId'</span><span class="p">).</span><span class="nx">css</span><span class="p">({</span>
@@ -221,22 +221,22 @@ MathJax.Hub.Config({
 
 
 <p><em>Apply Width and Height</em>: <code>.width(Number)</code> and <code>.height(Number)</code> can be used directly</p>
-<h3>DOM Manipulation Methods</h3>
+<h3 id="dom-manipulation-methods">DOM Manipulation Methods</h3>
 <p><em>Content Manipulation</em>: <code>.html()</code>. Please refer <a href="../../jquery-reading-note-I">Reading Note I</a> for usage.</p>
 <p><em>DOM Element Replacement</em>: <code>XXX.replaceWith(content)</code>. XXX DOM element is replaced by content.</p>
 <p><em>DOM Remove</em>: <code>XXX.empty()</code> remove all child elements from XXX elements. <code>XXX.remove(selector)</code> remove all matched elemetns from DOM.</p>
 <p><em>DOM Insert</em>: <code>XXX.before(content)</code> or <code>XXX.after(content)</code>.</p>
-<h3>Event Handling</h3>
-<h4>Binding Event Handlers</h4>
+<h3 id="event-handling">Event Handling</h3>
+<h4 id="binding-event-handlers">Binding Event Handlers</h4>
 <p><code>selector.bind(eventType, handler)</code> or <code>selector.bind(eventTpe, eventData, handler)</code></p>
 <p><code>eventType</code> is the action, such as <code>click</code> or <code>submit</code></p>
 <p><code>eventData</code> is <em>optional</em>.</p>
 <p><code>handler</code> is the function trriger for this event.</p>
-<h4>Remove Event Handlers</h4>
+<h4 id="remove-event-handlers">Remove Event Handlers</h4>
 <p><code>selector.unbind(eventType, handler)</code> or <code>selector.unbind(eventType)</code></p>
 <p><code>eventType</code>: same as above</p>
 <p><code>handler</code>: the handler that you want to remove</p>
-<h4>Event Object and Attributes</h4>
+<h4 id="event-object-and-attributes">Event Object and Attributes</h4>
 <p><code>event</code> can be used as a parameter in handler callback function. There are several attributes that can be retrived by using <code>event.attributeName</code>. These attribute name returns useful values.</p>
 <p>Example:</p>
 <pre class="code literal-block"><span></span><span class="nx">$</span><span class="p">(</span><span class="s1">'#testId'</span><span class="p">).</span><span class="nx">bind</span><span class="p">(</span><span class="s1">'click'</span><span class="p">,</span><span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
@@ -248,16 +248,16 @@ MathJax.Hub.Config({
 
 <p>List of Attributes:
 images/posts/event-attributes.png </p>
-<h4>Event Methods</h4>
+<h4 id="event-methods">Event Methods</h4>
 <p><code>event</code> parameter can also run some methods to perform specific function. To use it, just do <code>event.XXX();</code> in callback function. Here is a list of event methods:
 images/posts/event-methods.png </p>
 <p>Please note <code>preventDefault()</code> is to prevent current function function working on current element, but <code>stopPropagation()</code> is to prevent <em>parent element's function</em> working on current element.</p>
-<h4>Event Helper Methods</h4>
+<h4 id="event-helper-methods">Event Helper Methods</h4>
 <p>To trigger an event function YY on XX element, just use <code>XX.YY();</code></p>
 <p>There are some already defined methods that you can use <code>XX.YY()</code> format to add event to XX element. For example, <code>$("#testId").click(function(){ ... });</code>. Here is a list:
 images/posts/binding-methods.png </p>
-<h2>Part III : Ajax, Effects</h2>
-<h3>Ajax</h3>
+<h2 id="part-iii-ajax-effects">Part III : Ajax, Effects</h2>
+<h3 id="ajax">Ajax</h3>
 <p>AJAX means <em>Asynchromous JavaScript and XML</em>. It can help load data from server without having to refresh whole page.</p>
 <p><code>XX.load(URL, Optional:data, Optional:callback)</code> is used to load data:</p>
 <ul>
@@ -271,7 +271,7 @@ images/posts/binding-methods.png </p>
 <p>callback: callback function to deal with data after loading. The first parameter passed to this function is the <em>response text</em> received from the server and second parameter is <em>status code</em>.</p>
 </li>
 </ul>
-<h4>Get JSON Data</h4>
+<h4 id="get-json-data">Get JSON Data</h4>
 <p><code>XXX.getJSON(URL, Optional:data, Optional:callback)</code> is used to get JSON string:</p>
 <ul>
 <li>
@@ -284,17 +284,17 @@ images/posts/binding-methods.png </p>
 <p>callback: <em>Optional</em>. Call back function to deal with data after loading. The first parameter is the <em>JSON string</em> which is passed back based on request. The second parameter is the <em>status code</em>.</p>
 </li>
 </ul>
-<h4>Pass Data to Server</h4>
+<h4 id="pass-data-to-server">Pass Data to Server</h4>
 <p>You can use <code>data</code> parameter to pass data to server via any ajax call. For example:</p>
 <pre class="code literal-block"><span></span><span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">'#name'</span><span class="p">).</span><span class="nx">val</span><span class="p">();</span>
 <span class="nx">$</span><span class="p">(</span><span class="s1">'#stage'</span><span class="p">).</span><span class="nx">load</span><span class="p">(</span><span class="s1">'/jquery/result.php'</span><span class="p">,</span> <span class="p">{</span><span class="s1">'name'</span><span class="o">:</span><span class="nx">name</span><span class="p">});</span>
 </pre>
 
 
-<h4>jQuery Ajax Methods and Events</h4>
+<h4 id="jquery-ajax-methods-and-events">jQuery Ajax Methods and Events</h4>
 <p>images/posts/ajax_methods_events.png </p>
-<h3>Events</h3>
-<h4>Show or Hiding or Toggle Elements</h4>
+<h3 id="events">Events</h3>
+<h4 id="show-or-hiding-or-toggle-elements">Show or Hiding or Toggle Elements</h4>
 <p><code>XXX.show(speed,Optional:callback)</code> is used to show the elements. <code>speed</code> can be <code>slow</code>, <code>normal</code>, <code>fast</code> or any milliseconds. <code>callback</code> is optional. You run this function after the animation completes.</p>
 <p><code>XXX.hide(speed,Optional:callback)</code> is the same as above:</p>
 <pre class="code literal-block"><span></span><span class="nx">$</span><span class="p">(</span><span class="s1">'#testDIV'</span><span class="p">).</span><span class="nx">hide</span><span class="p">(</span><span class="mi">10000</span><span class="p">);</span>
@@ -302,7 +302,7 @@ images/posts/binding-methods.png </p>
 
 
 <p><code>XXX.toggle(Optional:speed, Optional: callback)</code> is used to toggel elements.</p>
-<h4>Other jQuery Events</h4>
+<h4 id="other-jquery-events">Other jQuery Events</h4>
 <p>images/posts/jquery_events.png </p>
 </div>
         </div>
@@ -334,7 +334,7 @@ images/posts/binding-methods.png </p>
 
 
     </div>
-                     <footer id="footer"><p>Contents © 2018         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                     <footer id="footer"><p>Contents © 2018         <a href="mailto:pengyin.shan@outlook.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

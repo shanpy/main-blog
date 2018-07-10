@@ -2,7 +2,7 @@
 <p>I found very useful posts: <a href="http://tutorials.jenkov.com/java-collections/hashcode-equals.html">Java Collections - hasCode() and equals()</a>, and <a href="http://eclipsesource.com/blogs/2012/09/04/the-3-things-you-should-know-about-hashcode/">The 3 things you should know about hashCode()</a>.</p>
 <p>Also refer to <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html#hashCode()">Oracle API</a> for <code>hashCode()</code>.</p>
 <p><strong>Try to avoid change hashCode() unless you are writing hash-related application.</strong></p>
-<h3>Basic Usage</h3>
+<h3 id="basic-usage">Basic Usage</h3>
 <p>When you insert <strong>objects</strong> to <code>HashTable</code>, <code>HashMap</code> or <code>HashSet</code>, <code>hashCode()</code> is called, together with <code>equal()</code>. For example, in <code>hashMap.put("A",a);</code>, both <code>equal()</code> and <code>hasCode()</code> are called.</p>
 <p>To insert stuff to hash table, you need a hascode to calculate the key for this object. Later you will need hashCode to search the object: hash code <strong>pointing to some area, where you may found the key.</strong></p>
 <p>From Oracle API, <code>hashCode</code> returns a hash code, which is a <code>int</code> value for the object.</p>
@@ -26,7 +26,7 @@
 </pre>
 
 
-<h3>Important Notes</h3>
+<h3 id="important-notes">Important Notes</h3>
 <p>If two objects are equal, based on <code>equal()</code>, they must also have the <strong>same hash code</strong>.</p>
 <p>If two objects have the same hash code, they <strong>may not be equal</strong>.</p>
 <p>Above means two different objects can pointing to the same grid in a hash code grid table.</p>

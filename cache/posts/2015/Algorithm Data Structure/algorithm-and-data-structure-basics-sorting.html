@@ -1,4 +1,4 @@
-<h3>Reference List</h3>
+<h3 id="reference-list">Reference List</h3>
 <ul>
 <li>
 <p><strong>Introduction to Algorithms (Third Edition/Chinese Version)</strong>, written by <em>Thomas H.Cormen</em>, <em>Charles E.Leiserson</em>, <em>Ronald L.Rivest</em> and <em>Clifford Stein</em>, and translated by <em>Jianping Yin</em>, <em>Yun Xu</em>, <em>Gang Wang</em>, <em>Xiaoguang Liu</em>, <em>Ming Su</em>, <em>Hengming Zou</em> and <em>HongZhi Wang</em>.</p>
@@ -7,11 +7,11 @@
 <p><strong>Data Structures and Algorithms in Java (Second Edition/Chinese Version)</strong>, written by <em>Robert Lafore</em>, and translated by <em>Xiaoyun Ji</em>, <em>Yan Zhao</em>, <em>Xi Zeng</em> and <em>Xiaohan Di</em>.</p>
 </li>
 </ul>
-<h3>Terminology &amp; Runtime Analysis</h3>
+<h3 id="terminology-runtime-analysis">Terminology &amp; Runtime Analysis</h3>
 <p><em>This part serves as a reading note for Introduction to Algorithms (Third Edition), Chapter 1 and Chapter 2, to clarify some basic terms of Algorithms</em>.</p>
 <p><code>Algorithm</code> is the process of reading a value or a collection of value as <strong>input</strong>, and product a value or a collection of value as <strong>output</strong>.</p>
 <p>A sequence of input (with constrains) from a algorithm question is called a <code>instance</code> of that question.</p>
-<h4>Runtime Analysis</h4>
+<h4 id="runtime-analysis">Runtime Analysis</h4>
 <p>From the book <em>Introduction to Algorithms</em>, the reason we are focusing on <strong>worst case running time</strong> is:</p>
 <ol>
 <li>
@@ -24,7 +24,7 @@
 <p>There is lots of times that the <em>average running time</em> is the same as the <em>worst running time</em>.</p>
 </li>
 </ol>
-<h3>Basic Insertion Sort, with Analysis for Algorithm Questions</h3>
+<h3 id="basic-insertion-sort-with-analysis-for-algorithm-questions">Basic Insertion Sort, with Analysis for Algorithm Questions</h3>
 <p>Insertion sort is very useful for a <strong>small</strong> amount of input.</p>
 <p>In book <em>Introduction to Algorithms</em>, insertion sort is described as the same process of someone sorting a group of pokers in a poker game. All elements on one side of your current item (i.e. the item that is supposed to be sorted) is in order.</p>
 <p>Pseudo-code for Insertion Sort:</p>
@@ -44,7 +44,7 @@
 </pre>
 
 
-<h3>Basic Selection Sort</h3>
+<h3 id="basic-selection-sort">Basic Selection Sort</h3>
 <p>To perform selection sort, you are given a array of numbers: <code>A</code>.</p>
 <ol>
 <li>
@@ -73,7 +73,7 @@
 </pre>
 
 
-<h3>Basic Merge Sort</h3>
+<h3 id="basic-merge-sort">Basic Merge Sort</h3>
 <p>Merge sort uses <code>divide-and-concur</code> mode:</p>
 <ol>
 <li>
@@ -102,7 +102,7 @@
 <p>In <em>Introduction to Algorithms</em>, a <strong>poker example</strong> is used to describe the merge process. The merge process is to chose a smaller one from the top of two piled poker, and put that poker to a new pile. Repeat this process until one pile is empty.</p>
 <p>Since we most perform <code>n</code> steps to merge, the running time of merge is $theta (n)$.</p>
 <p>For Merge Sort in Java, please refer to <a href="./blog/algorithm-and-data-structure-basics-recursion">this post</a>.</p>
-<h3>Tips and Comments</h3>
+<h3 id="tips-and-comments">Tips and Comments</h3>
 <ul>
 <li>From <em>Introduction to Algorithms</em>, if you have a binary number, moving all digits one position to left means multiplying it by two. if you move all digits <em>k</em> position to left, you multiply origin number by $2^k$.</li>
 </ul>

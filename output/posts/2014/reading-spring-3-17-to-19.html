@@ -7,7 +7,7 @@ article: http://ogp.me/ns/article#
 <meta charset="utf-8">
 <meta name="description" content="Reading Notes for Spring 3 Core Components Tutorial Part IV (Chapter 17 to Chapter 19)">
 <meta name="viewport" content="width=device-width">
-<title>Reading Notes for Spring 3 Core Components Tutorial Part I Part IV (Chapter 17 to Chapter 19) | I'm Pengyin</title>
+<title>Reading Notes for Spring 3 Core Components Tutorial Part I Part IV (Chapter 17 to Chapter 19) | I'm Pengyin (Wendy)</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2014/reading-spring-3-17-to-19.html">
@@ -26,7 +26,7 @@ MathJax.Hub.Config({
     }
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
-<meta property="og:site_name" content="I'm Pengyin">
+<meta property="og:site_name" content="I'm Pengyin (Wendy)">
 <meta property="og:title" content="Reading Notes for Spring 3 Core Components Tutorial Part I Part IV (Ch">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2014/reading-spring-3-17-to-19.html">
 <meta property="og:description" content="Reading Notes for Spring 3 Core Components Tutorial Part IV (Chapter 17 to Chapter 19)">
@@ -69,7 +69,7 @@ MathJax.Hub.Config({
 <p>This post is transferred from my <a href="http://blogpengyin.herokuapp.com/">old Hexo blog site</a>, created on 2014.</p>
 <p>This is a reading note from Spring Framework 3.1 Tutorial pdf, created by <a href="http://www.tutorialspoint.com/spring"><strong>tutorialspoint</strong></a>. This pdf contains information for Spring 3 Core Basics, which is very useful for understanding defination and practive in Spring programming.</p>
 <p>This note includes Chapter 17 to Chapter 19 in tutorial.</p>
-<h2>Chapter 17: Event Handling in Spring</h2>
+<h2 id="chapter-17-event-handling-in-spring">Chapter 17: Event Handling in Spring</h2>
 <p>In Spring, the <code>ApplicatonContext</code> publishes certain types of <code>events</code> when loading the beans.</p>
 <p><code>ApplicationEvent</code> class and <code>ApplicationListener</code> interface is used in <code>ApplicationContext</code> to deal with event handling.</p>
 <p>If a bean implements <code>ApplicationListener</code>, then every time <code>ApplicatioContext</code> publish an <code>ApplicationEvent</code>, this bean will be notified.</p>
@@ -122,7 +122,7 @@ images/posts/spring_events.png </p>
 </pre>
 
 
-<h2>Chapter 18: Custom Events in Spring**</h2>
+<h2 id="chapter-18-custom-events-in-spring">Chapter 18: Custom Events in Spring**</h2>
 <p>To create a custom event, you need a <code>event</code> class, a <code>event publisher</code> class and a <code>event handler</code> class:</p>
 <p>XML:
     :::xml
@@ -164,7 +164,7 @@ images/posts/spring_events.png </p>
 </pre>
 
 
-<h2>Chapter 19: AOP with Spring Framework</h2>
+<h2 id="chapter-19-aop-with-spring-framework">Chapter 19: AOP with Spring Framework</h2>
 <p><code>Aspect Oriented Programming (AOP)</code> entails <em>breaking down</em> program logic into distinct parts called <code>concerns</code>,or <code>crossing-cutting concerns</code>. These concerns are conceptually separate from the application's bussiness logic.</p>
 <p>Spring AOP modules provides interceptors to intercept an application. For example. when a method is executed, you can <em>add extra functionality</em> before or after the method execution.</p>
 <p><em>AOP Terminologies</em>
@@ -172,7 +172,7 @@ images/posts/AOP_Term1.png
 images/posts/AOP_Term2.png </p>
 <p><em>Type of Advice</em>
 images/posts/AOP_Advice.png </p>
-<h3>XML Schema Based Aspect Implementation</h3>
+<h3 id="xml-schema-based-aspect-implementation">XML Schema Based Aspect Implementation</h3>
 <p>Use regular classes along with <code>xml</code> based configuration</p>
 <p><code>xml</code> needs to be configured:</p>
 <pre class="code literal-block"><span></span><span class="nt">&lt;beans</span> <span class="na">xmlns=</span><span class="s">"..."</span>
@@ -305,7 +305,7 @@ images/posts/AOP_Advice.png </p>
 </pre>
 
 
-<h3>@AspectJ Based AOP with Spring</h3>
+<h3 id="aspectj-based-aop-with-spring">@AspectJ Based AOP with Spring</h3>
 <p><code>@AspectJ</code> refers a style of declaring aspects as regular <em>Java classes</em> with Java 5 annotations.</p>
 <p>You need to add <code>&lt;aop:aspectj-autoproxy&gt;</code> in <code>xml</code> file first.</p>
 <p>You also need AspectJ libraries in your CLASSPATH</p>
@@ -402,7 +402,7 @@ images/posts/AOP_Advice.png </p>
 
 
     </div>
-                     <footer id="footer"><p>Contents © 2018         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                     <footer id="footer"><p>Contents © 2018         <a href="mailto:pengyin.shan@outlook.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

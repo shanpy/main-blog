@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>I'm Pengyin (Posts about Ajax)</title><link>http://pengyin-shan.com/</link><description></description><atom:link href="http://pengyin-shan.com/categories/ajax.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 06 Jul 2018 17:48:43 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Possible Ajax Error Code and Reasons</title><link>http://pengyin-shan.com/posts/2015/JavaScript/possible-ajax-error-code-and-reasons.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3&gt;400 (Bad Request)&lt;/h3&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>I'm Pengyin (Posts about Ajax)</title><link>http://pengyin-shan.com/</link><description></description><atom:link type="application/rss+xml" rel="self" href="http://pengyin-shan.com/categories/ajax.xml"></atom:link><language>en</language><lastBuildDate>Tue, 10 Jul 2018 14:56:12 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Possible Ajax Error Code and Reasons</title><link>http://pengyin-shan.com/posts/2015/JavaScript/possible-ajax-error-code-and-reasons.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3 id="400-bad-request"&gt;400 (Bad Request)&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;In jQuery, no &lt;code&gt;JSON.stringify()&lt;/code&gt; is used to parse JavaScript object to JSON object&lt;/p&gt;
@@ -8,11 +8,11 @@
 &lt;p&gt;Use &lt;code&gt;$.ajax()&lt;/code&gt; but doesn't include &lt;code&gt;type: "GET/POST/etc"&lt;/code&gt; in AJAX body&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;406 (Not Acceptable Response)&lt;/h3&gt;
+&lt;h3 id="406-not-acceptable-response"&gt;406 (Not Acceptable Response)&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Check your authority setting. One of my Spring MVC project has requirement:  user group 1 can only access sub-URL of &lt;code&gt;/test/user1&lt;/code&gt;. So if I make a URL mapping to &lt;code&gt;/test/&lt;/code&gt;, AJAX call will fail and give me a &lt;code&gt;406&lt;/code&gt; error&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;404 (Not Found Errors)&lt;/h3&gt;
+&lt;h3 id="404-not-found-errors"&gt;404 (Not Found Errors)&lt;/h3&gt;
 &lt;p&gt;Very common error. Can have different reasons:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -22,15 +22,15 @@
 &lt;p&gt;In Spring MVC, no &lt;code&gt;@ResponseBody&lt;/code&gt; or &lt;code&gt;@RequestBody&lt;/code&gt; is added in controller. For example: &lt;code&gt;public @ResponseBody String test(@RequestBody final String id)&lt;/code&gt; is good. But &lt;code&gt;public String test(@RequestBody final String id)&lt;/code&gt; can generate a 404 error in client side.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;No response (Back-end finsih processing but front-end give no response)&lt;/h3&gt;
+&lt;h3 id="no-response-back-end-finsih-processing-but-front-end-give-no-response"&gt;No response (Back-end finsih processing but front-end give no response)&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Check your jQuery version and check if you are using &lt;code&gt;$.ajax({done: function(data../){}, fail: function(jqXHR...){}});&lt;/code&gt;. If so, try to check your jQuery to later version, or replace with &lt;code&gt;$.ajax({success: function(data...){}, error: function(jqXHR...) })&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/div&gt;</description><category>Ajax</category><category>Java</category><category>jQuery</category><category>JSON</category><category>Spring MVC</category><guid>http://pengyin-shan.com/posts/2015/JavaScript/possible-ajax-error-code-and-reasons.html</guid><pubDate>Thu, 13 Aug 2015 07:00:00 GMT</pubDate></item><item><title>RequestDispacher and Redirection in Java Web App</title><link>http://pengyin-shan.com/posts/2015/Java/requestdispacher-redirection-in-java.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;This post only talks about &lt;code&gt;RequestDispacher&lt;/code&gt; in Java web app. If you want to know more about using servlet in Java, I have another related post: &lt;a href="http://pengyin-shan.com/blog/ajax-and-java-servlet"&gt;Ajax and Java Servlet&lt;/a&gt;.&lt;/p&gt;
-&lt;h4&gt;Dispach&lt;/h4&gt;
+&lt;h4 id="dispach"&gt;Dispach&lt;/h4&gt;
 &lt;p&gt;This &lt;a href="http://www.xyzws.com/servletfaq/what-is-the-defferent-between-getnameddispatcher-and-getrequestdispatcher/3"&gt;article&lt;/a&gt; from www.xyzws.com is very useful.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;RequestDispacher&lt;/code&gt; is used to formard a client's request to another 'place', which including another servlet, another JSP, etc.&lt;/p&gt;
 &lt;p&gt;In a servlet, there are three ways to get RequestDispacher:&lt;/p&gt;
-&lt;h5&gt;RequestDispatcher dispatch = request.getRequestDispatcher(path);&lt;/h5&gt;
+&lt;h5 id="requestdispatcher-dispatch-requestgetrequestdispatcherpath"&gt;RequestDispatcher dispatch = request.getRequestDispatcher(path);&lt;/h5&gt;
 &lt;p&gt;Using this, &lt;em&gt;path&lt;/em&gt; can be:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -43,9 +43,9 @@
 &lt;p&gt;or a abosute path related to your current contaxt, such as &lt;code&gt;/subpage/subjome.jsp&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h5&gt;RequestDispatcher dispatch = getServletContext.getRequestDispatcher(path)&lt;/h5&gt;
+&lt;h5 id="requestdispatcher-dispatch-getservletcontextgetrequestdispatcherpath"&gt;RequestDispatcher dispatch = getServletContext.getRequestDispatcher(path)&lt;/h5&gt;
 &lt;p&gt;Using this, &lt;em&gt;path&lt;/em&gt; &lt;strong&gt;must&lt;/strong&gt; start with &lt;code&gt;/&lt;/code&gt;, such as &lt;code&gt;/subpage/subjome.jsp&lt;/code&gt;&lt;/p&gt;
-&lt;h5&gt;RequestDispatcher dispatch = getServletContext.getNamedDispatcher("string")&lt;/h5&gt;
+&lt;h5 id="requestdispatcher-dispatch-getservletcontextgetnameddispatcherstring"&gt;RequestDispatcher dispatch = getServletContext.getNamedDispatcher("string")&lt;/h5&gt;
 &lt;p&gt;This method must take the servlet name as its parameter. The servlet name is definded in &lt;code&gt;web.xml&lt;/code&gt; as  &lt;servlet-name&gt; sub-element of the &lt;servlet&gt; element. The request is dispatched to that corresponding servlet.&lt;/servlet&gt;&lt;/servlet-name&gt;&lt;/p&gt;
 &lt;p&gt;Example in &lt;code&gt;web.xml&lt;/code&gt;:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;&amp;lt;servlet&amp;gt;&lt;/span&gt;
@@ -61,9 +61,9 @@
 
 
 &lt;p&gt;Before/After get your RequestDispacher, you can use &lt;code&gt;request.addAttribute(something)&lt;/code&gt; or other functions to add stuff to your request.&lt;/p&gt;
-&lt;h4&gt;Go to another place&lt;/h4&gt;
+&lt;h4 id="go-to-another-place"&gt;Go to another place&lt;/h4&gt;
 &lt;p&gt;After you finish process HttpRequest or HttpResponse, there are three ways to 'leave' for another place:&lt;/p&gt;
-&lt;h5&gt;RequestDispatcher.forward(request, response) | RequestDispatcher.include(request, response)&lt;/h5&gt;
+&lt;h5 id="requestdispatcherforwardrequest-response-requestdispatcherincluderequest-response"&gt;RequestDispatcher.forward(request, response) | RequestDispatcher.include(request, response)&lt;/h5&gt;
 &lt;p&gt;There is a greate &lt;a href="http://way2java.com/servlets/difference-between-include-and-forward-in-requestdispatcher/"&gt;article&lt;/a&gt; from way2java.com to explain the difference between &lt;code&gt;RequestDispatcher.forward()&lt;/code&gt; and &lt;code&gt;RequestDispatcher.include()&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;These are main differences bewtween these two methods:&lt;/p&gt;
 &lt;ul&gt;
@@ -83,7 +83,7 @@
 &lt;p&gt;Generally, you want to use &lt;code&gt;include()&lt;/code&gt; when &lt;strong&gt;static&lt;/strong&gt; information needs to be included, such as Banner Content or Copyright Information. &lt;code&gt;forward()&lt;/code&gt; should be used to include &lt;strong&gt;dynamic&lt;/strong&gt; information, or when you want to use servlet as a Controller.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h5&gt;HttpResponse.sendRedirect(String)&lt;/h5&gt;
+&lt;h5 id="httpresponsesendredirectstring"&gt;HttpResponse.sendRedirect(String)&lt;/h5&gt;
 &lt;p&gt;The differnce between &lt;code&gt;forward()/include()&lt;/code&gt; and &lt;code&gt;HttpResponse.sendRedirect()&lt;/code&gt; is very obvious:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -103,7 +103,7 @@
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;So, if you have a JSP/Servlet Java web app and you want to use AJAX with JSON object, you have to write code in three places:&lt;/p&gt;
-&lt;h4&gt;1. JSP with jQuery&lt;/h4&gt;
+&lt;h4 id="1-jsp-with-jquery"&gt;1. JSP with jQuery&lt;/h4&gt;
 &lt;p&gt;You want to have &lt;code&gt;jQuery&lt;/code&gt; library in your JSP file to make sure you can use AJAX.&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;ajax&lt;/span&gt;&lt;span class="p"&gt;({&lt;/span&gt;
         &lt;span class="nx"&gt;type&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"POST"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
@@ -140,13 +140,13 @@
 &lt;blockquote&gt;
 &lt;p&gt;In the code above, &lt;code&gt;contentType&lt;/code&gt; and &lt;code&gt;dataType&lt;/code&gt; (and &lt;code&gt;mimeType&lt;/code&gt; if exists) is very important because wrong value of these attributes can give you a &lt;code&gt;404&lt;/code&gt; or &lt;code&gt;500&lt;/code&gt; error.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h5&gt;contentType&lt;/h5&gt;
+&lt;h5 id="contenttype"&gt;contentType&lt;/h5&gt;
 &lt;p&gt;Default value: &lt;code&gt;application/x-www-form-urlencoded; charset=UTF-8&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;This is the data type &lt;strong&gt;when you send data to server&lt;/strong&gt;.&lt;/p&gt;
-&lt;h5&gt;dataType&lt;/h5&gt;
+&lt;h5 id="datatype"&gt;dataType&lt;/h5&gt;
 &lt;p&gt;Default value: Guess(&lt;code&gt;xml&lt;/code&gt;, &lt;code&gt;json&lt;/code&gt;, &lt;code&gt;script&lt;/code&gt;, &lt;code&gt;html&lt;/code&gt;)&lt;/p&gt;
 &lt;p&gt;This is the data type &lt;strong&gt;when server pass data back to you&lt;/strong&gt;.&lt;/p&gt;
-&lt;h5&gt;mimeType&lt;/h5&gt;
+&lt;h5 id="mimetype"&gt;mimeType&lt;/h5&gt;
 &lt;p&gt;A mime type to override the XHR mime type. This is the data type &lt;strong&gt;when server pass data back to you&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Form Mozilla, MIME types describe the media type of content either in email or served by web servers or web applications.&lt;/p&gt;
 &lt;p&gt;MIME types are intended to help guide a web browser in &lt;em&gt;how the content is to be processed and displayed&lt;/em&gt;. Examples of MIME types are:&lt;/p&gt;
@@ -158,7 +158,7 @@
 &lt;li&gt;&lt;code&gt;application/pdf&lt;/code&gt; for Adobe® PDF documents.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;So if you want you browser to access data like &lt;code&gt;xml&lt;/code&gt;, &lt;code&gt;json&lt;/code&gt;, &lt;code&gt;script&lt;/code&gt; or &lt;code&gt;html&lt;/code&gt;, &lt;code&gt;dataType&lt;/code&gt; is good enough. However, if you want to let your browser detect PDF file or other data types, you need to set &lt;code&gt;mimeType&lt;/code&gt;.&lt;/p&gt;
-&lt;h4&gt;2. web.xml&lt;/h4&gt;
+&lt;h4 id="2-webxml"&gt;2. web.xml&lt;/h4&gt;
 &lt;blockquote&gt;
 &lt;p&gt;After working with Spring MVC for a while, I realizae I can forget web.xml easily. Make sure you register your servlet in web.xml.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -178,7 +178,7 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;3. Servlet&lt;/h4&gt;
+&lt;h4 id="3-servlet"&gt;3. Servlet&lt;/h4&gt;
 &lt;p&gt;If you pass JSON object to your servlet, you may want to use &lt;code&gt;org.json&lt;/code&gt;, &lt;code&gt;com.fasterxml.jackson&lt;/code&gt; or &lt;code&gt;gson&lt;/code&gt; external library to help you dealing with JSON object in Java.&lt;/p&gt;
 &lt;p&gt;Example code for post operation:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;//You want your class extends HttpServlet&lt;/span&gt;
@@ -208,8 +208,8 @@
 
 
 &lt;p&gt;This post will be udpated when I learned more about AJAX in my work experience.&lt;/p&gt;
-&lt;h4&gt;Tips&lt;/h4&gt;
-&lt;h5&gt;org.apache.catalina.LifecycleException: Failed to start component&lt;/h5&gt;
+&lt;h4 id="tips"&gt;Tips&lt;/h4&gt;
+&lt;h5 id="orgapachecatalinalifecycleexception-failed-to-start-component"&gt;org.apache.catalina.LifecycleException: Failed to start component&lt;/h5&gt;
 &lt;p&gt;If you include &lt;code&gt;org.json&lt;/code&gt; jar file in your project, and you encourter &lt;code&gt;org.apache.catalina.LifecycleException: Failed to start component&lt;/code&gt; exception when you try to deploy to Tomcat:&lt;/p&gt;
 &lt;p&gt;Make sure you add your jar files to &lt;code&gt;Web Deployment Assebly&lt;/code&gt; in your project properies. Following &lt;a href="http://stackoverflow.com/questions/16362302/java-servlet-error-with-jsonobject"&gt;this post&lt;/a&gt; and you will be fine.&lt;/p&gt;&lt;/div&gt;</description><category>Ajax</category><category>Java</category><category>jQuery</category><category>Servlet</category><guid>http://pengyin-shan.com/posts/2015/Java/ajax-and-java-servlet.html</guid><pubDate>Mon, 03 Aug 2015 07:00:00 GMT</pubDate></item><item><title>Ajax and Spring MVC Controller</title><link>http://pengyin-shan.com/posts/2015/Java/ajax-and-spring-mvc-controller.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;Note&lt;/p&gt;
 &lt;blockquote&gt;
@@ -217,7 +217,7 @@
 - If your web.xml set up default url-pattern &lt;code&gt;/&lt;/code&gt;, when you refer a link, you don't need to add any suffix on it.
 - If your web.xml set up any url-pattern, such as &lt;code&gt;html&lt;/code&gt; or &lt;code&gt;htm&lt;/code&gt;, when you refere a link, in &lt;code&gt;ajax&lt;/code&gt; or &lt;code&gt;windown.location.href&lt;/code&gt;, you need to add &lt;code&gt;html&lt;/code&gt; or &lt;code&gt;htm&lt;/code&gt; suffix after it. &lt;em&gt;But don't add these suffix in spring controller request mapping&lt;/em&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3&gt;Case 1. Pass JSON Data to Controller in Ajax Call, using $.ajax()&lt;/h3&gt;
+&lt;h3 id="case-1-pass-json-data-to-controller-in-ajax-call-using-ajax"&gt;Case 1. Pass JSON Data to Controller in Ajax Call, using $.ajax()&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Notes on 01/13/2015: I had trouble using &lt;code&gt;$.post()&lt;/code&gt; to post JSON data. I doubt something is wrong but I haven't figure out why. Currently I just use &lt;code&gt;$.ajax()&lt;/code&gt;*&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -246,7 +246,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;You may want to substitude &lt;code&gt;application/json&lt;/code&gt; with &lt;code&gt;application/html&lt;/code&gt; to avoid possible.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3&gt;Case 2. Pass JSON Data as URL parameter, and Handle it in Spring MVC Controller&lt;/h3&gt;
+&lt;h3 id="case-2-pass-json-data-as-url-parameter-and-handle-it-in-spring-mvc-controller"&gt;Case 2. Pass JSON Data as URL parameter, and Handle it in Spring MVC Controller&lt;/h3&gt;
 &lt;p&gt;PROS&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;You are free to go to another page or call other controllers after you pass data to controller.&lt;/p&gt;

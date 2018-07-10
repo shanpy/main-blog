@@ -1,6 +1,6 @@
-<h2>Ubuntu 15.10</h2>
+<h2 id="ubuntu-1510">Ubuntu 15.10</h2>
 <p>If you want to setup your RoR environment on Ubuntu 14/15, <a href="https://gorails.com/setup/ubuntu/15.04">this post</a> is the best choice for you. I used <code>rvm</code> to install Ruby on my two Ubuntu 15.10 machine, and it worked like a charm.</p>
-<h3>Problem</h3>
+<h3 id="problem">Problem</h3>
 <p>When I tried to run <code>\curl -L https://get.rvm.io | bash -s stable --ruby</code> in terminal to install both RVM and Ruby, I got following error message:</p>
 <pre class="code literal-block"><span></span><span class="nv">Error</span> <span class="s s-Atom">running</span> <span class="s s-Atom">&#39;requirements_debian_update_system ruby-2.2.1&#39;</span><span class="p">,</span>
 <span class="s s-Atom">showing</span> <span class="s s-Atom">last</span> <span class="mi">15</span> <span class="s s-Atom">lines</span> <span class="s s-Atom">of</span> <span class="o">/</span><span class="s s-Atom">usr</span><span class="o">/</span><span class="s s-Atom">local</span><span class="o">/</span><span class="s s-Atom">rvm</span><span class="o">/</span><span class="s s-Atom">log</span><span class="o">/</span><span class="mi">1439385591</span><span class="k">_</span><span class="s s-Atom">ruby</span><span class="o">-</span><span class="mf">2.2.1</span><span class="o">/</span><span class="s s-Atom">update_system</span><span class="p">.</span><span class="s s-Atom">log</span>
@@ -23,7 +23,7 @@
 
 
 <p>The reason of this error is because RVM will bring error if my Ubuntu machine's <code>apt-get update</code> has error in it. I used to install Ninja-IDE through <code>apt-get</code> and I had PPA error when I do <code>apt-get update</code>. You can view <a href="http://stackoverflow.com/questions/23650992/ruby-rvm-apt-get-update-error">this stackoverflow post</a>.</p>
-<h3>Solution</h3>
+<h3 id="solution">Solution</h3>
 <p>A user <strong>Avinash Raj</strong> posted a great solution in <a href="http://askubuntu.com/questions/65911/how-can-i-fix-a-404-error-when-using-a-ppa-or-updating-my-package-lists">Ubuntu community</a> for removing PPA with errors.</p>
 <p>The detail of solution is: create a file called <code>ppa-remove</code> (no <code>.sh</code> extension) as following:</p>
 <pre class="code literal-block"><span></span><span class="ch">#!/bin/bash</span>
@@ -47,9 +47,9 @@ tput sgr0
 
 <p>Run <code>sudo chmod +x ppa-remove</code> after you create this file, then move this file to <code>/usr/bin</code>. Run <code>sudo ppa-remove</code>. Your PPA with errors will be removed and you can then re-run <code>\curl -L https://get.rvm.io | bash -s stable</code> or <code>\curl -L https://get.rvm.io | bash -s stable --ruby</code> to install RVM.</p>
 <p><em>Note: Till Aug 2015, If you run <code>\curl -L https://get.rvm.io | bash -s stable --ruby</code>, you will automatically get Ruby 2.2.1 installed. If you run <code>\curl -L https://get.rvm.io | bash -s stable</code> then install Ruby, you can choose Ruby 2.2.2. These two versions do not have conflict.</em></p>
-<h2>Mac OS Yoemite</h2>
+<h2 id="mac-os-yoemite">Mac OS Yoemite</h2>
 <p>RoR installation process for Mac OS Yosemite is almost the same as Ubuntu. Make sure you have <code>xcode</code> and <code>Homebrew</code> installed first. This <a href="http://railsapps.github.io/installrubyonrails-mac.html">post</a> has very detailed description that you can follow.</p>
-<h2>Project Hydra</h2>
+<h2 id="project-hydra">Project Hydra</h2>
 <p>I had a <a href="http://pengyin-shan.com/blog/dive-into-hydra-and-my-thoughts">post</a> describing my thoughts about Hydra. In this post I will include detail of installation part.</p>
 <p>After you finish RoR setting (make sure you have <code>Bundle</code> installed by <code>RubyGem</code>), you want to generate a basic rails app, then add <code>gem 'hydra', '9.1.0.rc1'</code> to your <code>Gemfile</code>. you can re-run <code>Bundle install</code> to install all necessary ruby gems for Hydra.</p>
 <blockquote>
@@ -57,7 +57,7 @@ tput sgr0
 </blockquote>
 <p>You can use same Gemfile to set up Hydra environment in different machines, but <strong>make sure you run <code>rake jetty:config</code> and <code>rake db:migrate</code></strong> to prevent possible problem.</p>
 <p>You can run <code>Rails.env</code> in rails console to check your current environment.</p>
-<h3>Problem: Data Immigration for Existing Project</h3>
+<h3 id="problem-data-immigration-for-existing-project">Problem: Data Immigration for Existing Project</h3>
 <p>How to transfer previous data (Fedora files, Solr documents and indexes) to your new environment?</p>
-<h3>Solution</h3>
+<h3 id="solution_1">Solution</h3>
 <p>Well, I'm working on solution now :) To figure out a way I did lots of experiments (and made a big mess) in my Hydra project. I started a new post about it <a href="http://pengyin-shan.com/blog/play-with-hydra-data">here</a>.</p>

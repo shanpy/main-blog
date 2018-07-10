@@ -10,38 +10,26 @@
 
 >This is a great book about English
 
-<hr/>
-
-<br/>
+***
 
 ![theElementsOfStyle1](/images/2017/books/the_elements_of_style/the_element_of_style1.jpg)
 
-<hr/>
-
-<br/>
+***
 
 ![theElementsOfStyle2](/images/2017/books/the_elements_of_style/the_element_of_style2.jpg)
 
-<hr/>
-
-<br/>
+***
 
 ![theElementsOfStyle3](/images/2017/books/the_elements_of_style/the_element_of_style3.jpg)
 
-<hr/>
-
-<br/>
+***
 
 ![theElementsOfStyle4](/images/2017/books/the_elements_of_style/the_element_of_style4.jpg)
 
-<hr/>
-
-<br/>
+***
 
 ![theElementsOfStyle5](/images/2017/books/the_elements_of_style/the_element_of_style5.jpg)
 
-<hr/>
-
-<br/>
+***
 
 ![theElementsOfStyle6](/images/2017/books/the_elements_of_style/the_element_of_style6.jpg)

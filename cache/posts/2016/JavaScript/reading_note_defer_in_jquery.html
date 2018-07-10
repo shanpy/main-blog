@@ -1,4 +1,4 @@
-<h1>Reference List</h1>
+<h1 id="reference-list">Reference List</h1>
 <p>This is a <strong>reading note</strong> for following articles/blogs:</p>
 <ul>
 <li>
@@ -14,13 +14,13 @@
 <p>(Chinese) blog of <a href="http://www.cnblogs.com/dojo-lzz/p/5495671.html">dojo-lzz</a></p>
 </li>
 </ul>
-<h1>Promises</h1>
+<h1 id="promises">Promises</h1>
 <p><code>Promises</code>: a <strong>container</strong> which contains everything that has been deferred.</p>
 <blockquote>
 <p>If you are creating a Deferred, keep a reference to the Deferred so that it can be resolved or rejected at some point. Return only the Promise object via deferred.promise() so other code can register callbacks or inspect the current state. - jQuery API</p>
 </blockquote>
 <p>A function which returns a promise <strong>will be run</strong> if the condition in this function is satisfied, no matter if it is a successfully satisfied case or a failure case. i.e. a <strong>fulfilled</strong> promise can be two states: <code>resolved</code>(successfully passing data) or <code>rejected</code> (something is wrong).</p>
-<h2>promise.then</h2>
+<h2 id="promisethen">promise.then</h2>
 <p><code>them</code> method is used to handle the case the future result is available (resolved or rejected). It accepts two parameters, which can be functions. One for successful case. One for failed case. Following is the example:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -38,7 +38,7 @@
 </pre>
 </td></tr></table>
 
-<h2>promise and when method</h2>
+<h2 id="promise-and-when-method">promise and when method</h2>
 <p><code>$.when</code> is used to perform action after all promises have been satisfied. For example:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
@@ -66,10 +66,10 @@
 </pre>
 </td></tr></table>
 
-<h2>Promise in ECMAScript 6</h2>
+<h2 id="promise-in-ecmascript-6">Promise in ECMAScript 6</h2>
 <p><em>Remember to check browser capability before using promise JS object</em></p>
 <p>ECMAScript 6 also have <code>Promise</code> object, which can be used for deferred operations. Similar as promise in jQuery, Promise object in JS has three states: <code>pending</code> (initial), <code>fulfilled</code>, <code>rejected</code>.</p>
-<h2>Generator in ECMAScript 6</h2>
+<h2 id="generator-in-ecmascript-6">Generator in ECMAScript 6</h2>
 <p>ECMAScript 6 has a <code>Generator</code> function, which provides possibility of lazy-loading.</p>
 <p>Generator is a function which generates a Iterator. The iterator iterates every <code>yield</code> statement insider Generator function and <strong>stop</strong> on each <code>yield</code> point. After running <code>.next()</code> method, iterator will <strong>resume</strong> from last <code>yield</code> point.</p>
 <p>Generator function has a <code>*</code> in function header, which can be put in any position.</p>
@@ -94,9 +94,9 @@
 </pre>
 </td></tr></table>
 
-<h2>Others</h2>
+<h2 id="others">Others</h2>
 <p>I like following problem when I read a Chinese blog article from<a href="http://www.cnblogs.com/dojo-lzz/p/5495671.html">dojo-lzz</a>: if you have red light which is on for every 3 seconds, green light which is on every 1 second and yellow light which is on every 2 seconds, how to make three light switch and on without break? (i.e. red -&gt; green -&gt; yellow -&gt; red -&gt; green -&gt; yellow, etc)</p>
-<h2>Deferred in jQuery</h2>
+<h2 id="deferred-in-jquery">Deferred in jQuery</h2>
 <p><code>$.Deferred</code> is used to create new <em>deferred object</em>. This deferred object can be used to check if a promise is exist or not, or to accept an optional function which needs to have deferring effect.</p>
 <blockquote>
 <p>A Deferred object starts in the pending state.  - jQuery API</p>

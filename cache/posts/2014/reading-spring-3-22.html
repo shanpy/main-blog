@@ -1,10 +1,10 @@
 <p>This post is transferred from my <a href="http://blogpengyin.herokuapp.com/">old Hexo blog site</a>, created on 2014.</p>
 <p>This is a reading note from Spring Framework 3.1 Tutorial pdf, created by <a href="http://www.tutorialspoint.com/spring"><strong>tutorialspoint</strong></a>. This pdf contains information for Spring 3 Core Basics, which is very useful for understanding defination and practive in Spring programming.</p>
 <p>This note includes Chapter 22 in tutorial.</p>
-<h1>Spring Web MVC Framework</h1>
-<h2>The Dispacher Servlet</h2>
+<h1 id="spring-web-mvc-framework">Spring Web MVC Framework</h1>
+<h2 id="the-dispacher-servlet">The Dispacher Servlet</h2>
 <p>images/posts/dispatcher_servlet.png </p>
-<h2>Required Configuration</h2>
+<h2 id="required-configuration">Required Configuration</h2>
 <p>XML:</p>
 <pre class="code literal-block"><span></span><span class="c">&lt;!--First: You set up dispacher servlet in web.xml--&gt;</span>
 <span class="nt">&lt;web-app</span> <span class="na">id=</span><span class="s">&quot;testWebApp&quot;</span><span class="nt">&gt;</span>
@@ -47,7 +47,7 @@
 </pre>
 
 
-<h2>Controller</h2>
+<h2 id="controller">Controller</h2>
 <p>You need <code>@Controller</code> annotation to make a controller class, and use <code>@RequestMapping</code> to get path and define type of request.</p>
 <p>Example:</p>
 <pre class="code literal-block"><span></span><span class="nd">@Controller</span>
@@ -61,7 +61,7 @@
 </pre>
 
 
-<h2>Form Submmision Example</h2>
+<h2 id="form-submmision-example">Form Submmision Example</h2>
 <p>HTML:</p>
 <pre class="code literal-block"><span></span><span class="p">&lt;</span><span class="nt">form:form</span> <span class="na">method</span><span class="o">=</span><span class="s">&quot;POST&quot;</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;/HelloWorld/Student&quot;</span> <span class="na">modelAttribute</span><span class="o">=</span><span class="s">&quot;Person&quot;</span><span class="p">&gt;</span>
 <span class="c">&lt;!--You can also do action=&quot;addStudent&quot;, which is corresponding controller--&gt;</span>

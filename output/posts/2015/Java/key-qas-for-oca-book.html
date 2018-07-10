@@ -7,7 +7,7 @@ article: http://ogp.me/ns/article#
 <meta charset="utf-8">
 <meta name="description" content="This post records all Q&amp;As which are important and be easy to make mistake for me. Most of Q&amp;As are taken from OCA Java SE 7 Certification Guide from Manning.">
 <meta name="viewport" content="width=device-width">
-<title>Important Q&amp;A for OCA Java SE7 Certification Guide | I'm Pengyin</title>
+<title>Important Q&amp;A for OCA Java SE7 Certification Guide | I'm Pengyin (Wendy)</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2015/Java/key-qas-for-oca-book.html">
@@ -26,7 +26,7 @@ MathJax.Hub.Config({
     }
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
-<meta property="og:site_name" content="I'm Pengyin">
+<meta property="og:site_name" content="I'm Pengyin (Wendy)">
 <meta property="og:title" content="Important Q&amp;A for OCA Java SE7 Certification Guide">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2015/Java/key-qas-for-oca-book.html">
 <meta property="og:description" content="This post records all Q&amp;As which are important and be easy to make mistake for me. Most of Q&amp;As are taken from OCA Java SE 7 Certification Guide from Manning.">
@@ -66,8 +66,8 @@ MathJax.Hub.Config({
         </div>
         <div class="body">
             <div>
-<h3>Q&amp;As from Chapter 1, OCA Guide from Manning</h3>
-<h4>Q1: which code(s) can be complied as <code>main</code> method?</h4>
+<h3 id="qas-from-chapter-1-oca-guide-from-manning">Q&amp;As from Chapter 1, OCA Guide from Manning</h3>
+<h4 id="q1-which-codes-can-be-complied-as-main-method">Q1: which code(s) can be complied as <code>main</code> method?</h4>
 <p>a.</p>
 <pre class="code literal-block"><span></span><span class="kd">class</span> <span class="nc">EJava</span> <span class="o">{</span>
 <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span> <span class="n">sun</span><span class="o">[])</span> <span class="o">{</span>
@@ -109,7 +109,7 @@ MathJax.Hub.Config({
 <p>The problem of c is <code>main</code> method only accept one-dimention String array.</p>
 <p>The problem of d is <em><em>only <code>public</code> and <code>static</code> can change position. <code>void</code> must be the last modifier for <code>main</code> method</em>.</em></p>
 </blockquote>
-<h4>Q2: Which of the following examples define the correct Java class structure?</h4>
+<h4 id="q2-which-of-the-following-examples-define-the-correct-java-class-structure">Q2: Which of the following examples define the correct Java class structure?</h4>
 <p>a.</p>
 <pre class="code literal-block"><span></span><span class="err">#</span><span class="n">connect</span> <span class="n">java</span> <span class="n">compiler</span><span class="o">;</span>
 <span class="err">#</span><span class="n">connect</span> <span class="n">java</span> <span class="n">virtual</span> <span class="n">machine</span><span class="o">;</span>
@@ -163,7 +163,7 @@ MathJax.Hub.Config({
 <blockquote>
 <p>Problem of f is : <strong>Java is case-sensitive</strong>.</p>
 </blockquote>
-<h4>Q3. Which of the following options, when inserted at //INSERT CODE HERE, will print out EJavaGuru?</h4>
+<h4 id="q3-which-of-the-following-options-when-inserted-at-insert-code-here-will-print-out-ejavaguru">Q3. Which of the following options, when inserted at //INSERT CODE HERE, will print out EJavaGuru?</h4>
 <pre class="code literal-block"><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">EJavaGuru</span> <span class="o">{</span>
     <span class="c1">// INSERT CODE HERE</span>
     <span class="o">{</span>
@@ -194,7 +194,7 @@ MathJax.Hub.Config({
 <blockquote>
 <p><strong>Extra space is ignored by java compiler</strong>.</p>
 </blockquote>
-<h4>Q4: Given the following code, select the correct options:</h4>
+<h4 id="q4-given-the-following-code-select-the-correct-options">Q4: Given the following code, select the correct options:</h4>
 <pre class="code literal-block"><span></span><span class="kn">package</span> <span class="nn">com.ejavaguru.courses</span><span class="o">;</span>
 <span class="kd">class</span> <span class="nc">Course</span> <span class="o">{</span>
     <span class="kd">public</span> <span class="n">String</span> <span class="n">courseName</span><span class="o">;</span>
@@ -223,8 +223,8 @@ MathJax.Hub.Config({
 <blockquote>
 <p><strong>Method argument cannot have any access modifier</strong>.</p>
 </blockquote>
-<h3>Q&amp;As from Chapter 2, OCA Guide from Manning</h3>
-<h4>Q1. Let’s use the primitive variables baseDecimal, octVal, hexVal, and binVal defined earlier in this section and introduce additional code for printing the values of all these variables. Determine the output of the following code:</h4>
+<h3 id="qas-from-chapter-2-oca-guide-from-manning">Q&amp;As from Chapter 2, OCA Guide from Manning</h3>
+<h4 id="q1-lets-use-the-primitive-variables-basedecimal-octval-hexval-and-binval-defined-earlier-in-this-section-and-introduce-additional-code-for-printing-the-values-of-all-these-variables-determine-the-output-of-the-following-code">Q1. Let’s use the primitive variables baseDecimal, octVal, hexVal, and binVal defined earlier in this section and introduce additional code for printing the values of all these variables. Determine the output of the following code:</h4>
 <pre class="code literal-block"><span></span><span class="kd">class</span> <span class="nc">TwistInTaleNumberSystems</span> <span class="o">{</span>
 <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span> <span class="o">(</span><span class="n">String</span> <span class="n">args</span><span class="o">[])</span> <span class="o">{</span>
         <span class="kt">int</span> <span class="n">baseDecimal</span> <span class="o">=</span> <span class="mi">267</span><span class="o">;</span>
@@ -242,7 +242,7 @@ MathJax.Hub.Config({
 <blockquote>
 <p><code>System.out.println()</code> always print out decimal value so all oct, hex and binaray needs to be changed to decimal value. Note the way to calculate binary is use the n square of 2.</p>
 </blockquote>
-<h4>Q2. Select all incorrect statements:</h4>
+<h4 id="q2-select-all-incorrect-statements">Q2. Select all incorrect statements:</h4>
 <p>a. A programmer can’t define a new primitive data type.</p>
 <p>b. A programmer can define a new primitive data type.</p>
 <p>c. Once assigned, the value of a primitive can’t be modified.</p>
@@ -251,7 +251,7 @@ MathJax.Hub.Config({
 <blockquote>
 <p>Note you <strong>can modify value of primary type after it is assigned</strong>.</p>
 </blockquote>
-<h4>Q3. Which of the operations are correct for the following code?</h4>
+<h4 id="q3-which-of-the-operations-are-correct-for-the-following-code">Q3. Which of the operations are correct for the following code?</h4>
 <pre class="code literal-block"><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Prim</span> <span class="o">{</span> <span class="c1">//line1</span>
   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span> <span class="c1">//line 2</span>
   <span class="kt">char</span> <span class="n">a</span> <span class="o">=</span> <span class="sc">'a'</span><span class="o">;</span> <span class="c1">//3</span>
@@ -272,7 +272,7 @@ MathJax.Hub.Config({
 <blockquote>
 <p>Note <code>Integer</code> is <em>not</em> a valid java primary data type!</p>
 </blockquote>
-<h4>Q4. Which of the following options contain correct code to declare and initialize variables to store whole numbers?</h4>
+<h4 id="q4-which-of-the-following-options-contain-correct-code-to-declare-and-initialize-variables-to-store-whole-numbers">Q4. Which of the following options contain correct code to declare and initialize variables to store whole numbers?</h4>
 <p>a. bit a=0;</p>
 <p>b. integer a2 = 7;</p>
 <p>c. long a3 = 0x10C;</p>
@@ -285,7 +285,7 @@ MathJax.Hub.Config({
 <p>Note <code>double</code> can <em>only</em> store <strong>decimal</strong> value. Also <code>byte a7 = 0</code> is valid.</p>
 <p><code>bit</code> and <code>integer</code> are not primary data type for java.</p>
 </blockquote>
-<h4>Q5.  If the functionality of the operators = and &gt; were to be swapped in Java (for the code on line numbers 4, 5, and 6), what would be the result of the following code?</h4>
+<h4 id="q5-if-the-functionality-of-the-operators-and-were-to-be-swapped-in-java-for-the-code-on-line-numbers-4-5-and-6-what-would-be-the-result-of-the-following-code">Q5.  If the functionality of the operators = and &gt; were to be swapped in Java (for the code on line numbers 4, 5, and 6), what would be the result of the following code?</h4>
 <pre class="code literal-block"><span></span><span class="kt">boolean</span> <span class="n">myBool</span> <span class="o">=</span> <span class="kc">false</span><span class="o">;</span>
 <span class="kt">int</span> <span class="n">yourInt</span> <span class="o">=</span> <span class="mi">10</span><span class="o">;</span>
 <span class="kt">float</span> <span class="n">hisFloat</span> <span class="o">=</span> <span class="mf">19.54f</span><span class="o">;</span>
@@ -303,8 +303,8 @@ MathJax.Hub.Config({
 <blockquote>
 <p><code>swapped</code> means change the function of <code>=</code> and <code>&gt;</code>. Note <code>System.out.println(assignment expression)</code> is acceptable in Java.</p>
 </blockquote>
-<h4>Q&amp;As from Chapter 3, OCA Guide from Manning</h4>
-<h4>Q1: Which of the following methods correctly accepts three whole numbers as method arguments and returns their sum as a decimal number?</h4>
+<h4 id="qas-from-chapter-3-oca-guide-from-manning">Q&amp;As from Chapter 3, OCA Guide from Manning</h4>
+<h4 id="q1-which-of-the-following-methods-correctly-accepts-three-whole-numbers-as-method-arguments-and-returns-their-sum-as-a-decimal-number">Q1: Which of the following methods correctly accepts three whole numbers as method arguments and returns their sum as a decimal number?</h4>
 <p>a.</p>
 <pre class="code literal-block"><span></span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">addNumbers</span><span class="o">(</span><span class="kt">byte</span> <span class="n">arg1</span><span class="o">,</span> <span class="kt">int</span> <span class="n">arg2</span><span class="o">,</span> <span class="kt">int</span> <span class="n">arg3</span><span class="o">)</span> <span class="o">{</span>
 <span class="kt">double</span> <span class="n">sum</span> <span class="o">=</span> <span class="n">arg1</span> <span class="o">+</span> <span class="n">arg2</span> <span class="o">+</span> <span class="n">arg3</span><span class="o">;</span>
@@ -339,7 +339,7 @@ MathJax.Hub.Config({
 <blockquote>
 <p>On option d, note that <code>double</code> can accept <code>long</code> and <code>short</code> assignment. There is no data size problem.</p>
 </blockquote>
-<h4>Q2: Which of the following statements are true?</h4>
+<h4 id="q2-which-of-the-following-statements-are-true">Q2: Which of the following statements are true?</h4>
 <p>a. If the return type of a method is <code>int</code> , the method can return a value of type <code>byte</code> .</p>
 <p>b. A method may or may not return a value.</p>
 <p>c. If the return type of a method is void , it can define a return statement without a value, as follows: <code>return;</code></p>
@@ -350,7 +350,7 @@ MathJax.Hub.Config({
 <blockquote>
 <p>Note for opation a, since <code>byte</code> can be transferred succesfully to <code>int</code> without casting, it is safe to return <code>byte</code>.</p>
 </blockquote>
-<h4>Q3: Given the following code,</h4>
+<h4 id="q3-given-the-following-code">Q3: Given the following code,</h4>
 <pre class="code literal-block"><span></span><span class="kd">class</span> <span class="nc">Course</span> <span class="o">{</span>
     <span class="kt">void</span> <span class="nf">enroll</span><span class="o">(</span><span class="kt">long</span> <span class="n">duration</span><span class="o">)</span> <span class="o">{</span>
     <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"long"</span><span class="o">);</span>
@@ -391,7 +391,7 @@ MathJax.Hub.Config({
 - Java found <code>char</code> can use methods that have parameter type <code>int</code> and <code>long</code>.
 - Java found <strong>closest</strong> type for char is <code>int</code>, so Java call method which takes <code>int</code>.</p>
 </blockquote>
-<h4>Q4: Select the incorrect options:</h4>
+<h4 id="q4-select-the-incorrect-options">Q4: Select the incorrect options:</h4>
 <p>a. If a user defines a private constructor for a public class, Java creates a public default constructor for the class.</p>
 <p>b. A class that gets a default constructor doesn’t have overloaded constructors.
 c. A user can overload the default constructor of a class.</p>
@@ -418,8 +418,8 @@ c. A user can overload the default constructor of a class.</p>
 </li>
 </ul>
 </blockquote>
-<h3>Q&amp;As from Chapter 7, OCA Guide from Manning</h3>
-<h4>Q1: Examine the following code and select the correct option(s):</h4>
+<h3 id="qas-from-chapter-7-oca-guide-from-manning">Q&amp;As from Chapter 7, OCA Guide from Manning</h3>
+<h4 id="q1-examine-the-following-code-and-select-the-correct-options">Q1: Examine the following code and select the correct option(s):</h4>
 <pre class="code literal-block"><span></span><span class="kd">class</span> <span class="nc">EJavaGuruExcep2</span> <span class="o">{</span>
 <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span> <span class="n">args</span><span class="o">[])</span> <span class="o">{</span>
 <span class="n">EJavaGuruExcep2</span> <span class="n">var</span> <span class="o">=</span> <span class="k">new</span> <span class="n">EJavaGuruExcep2</span><span class="o">();</span>
@@ -452,7 +452,7 @@ d. The code will fail to compile.</p>
 <p><strong>If you try to catch an exception from its dervied class after the exception of base class, the code will note compile.</strong></p>
 <p>Here <code>ArrayIndexOutOfBoundsException</code> is a derived class of <code>IndexOutOfBoundsException</code>, so it should be throwed out first. The code will fail to compile otherwise.</p>
 </blockquote>
-<h4>Q2: What is the output of the following code?</h4>
+<h4 id="q2-what-is-the-output-of-the-following-code">Q2: What is the output of the following code?</h4>
 <pre class="code literal-block"><span></span><span class="kd">class</span> <span class="nc">EJava</span> <span class="o">{</span>
 <span class="kt">void</span> <span class="nf">method</span><span class="o">()</span> <span class="o">{</span>
 <span class="k">try</span> <span class="o">{</span>
@@ -485,7 +485,7 @@ StackOverflowError</p>
 <blockquote>
 <p><code>throw</code> in code means <strong>an exception must be throwed out</strong></p>
 </blockquote>
-<h4>Q3: What is the output of the following code?</h4>
+<h4 id="q3-what-is-the-output-of-the-following-code">Q3: What is the output of the following code?</h4>
 <pre class="code literal-block"><span></span><span class="kd">class</span> <span class="nc">TryFinally</span> <span class="o">{</span>
 <span class="kt">int</span> <span class="nf">tryAgain</span><span class="o">()</span> <span class="o">{</span>
 <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">10</span><span class="o">;</span>
@@ -517,7 +517,7 @@ StackOverflowError</p>
 <li>Note if there is a <code>return</code> at the end of method block, <code>try</code> and <code>catch</code> cannot have <code>return</code> at the same time.</li>
 </ul>
 </blockquote>
-<h4>Q4: Which of the following statements are true?</h4>
+<h4 id="q4-which-of-the-following-statements-are-true">Q4: Which of the following statements are true?</h4>
 <p>a. A user-defined class may not throw an <code>IllegalStateException</code> . It must be thrown only by Java API classes.</p>
 <p>b. <code>System.out.println</code> will throw <code>NullPointerException</code> if an uninitialized instance variable of type String is passed to it to print its value.</p>
 <p>c. <code>NumberFormatException</code> is thrown by multiple methods from the Java API when invalid numbers are passed on as String s to be converted to the specified number format.</p>
@@ -526,7 +526,7 @@ StackOverflowError</p>
 <blockquote>
 <p>Note the problem of <code>b</code> is <code>System.out.println</code> will print <code>null</code> in option b. When a string is not initialized, it has default value <code>null</code>. It will throw <code>NullPointerException</code> error when you try to access a method using the <code>null</code> variable.</p>
 </blockquote>
-<h4>Q5. Given that <code>file.txt</code> doesn’t exist on your system, what is the output of the following code?</h4>
+<h4 id="q5-given-that-filetxt-doesnt-exist-on-your-system-what-is-the-output-of-the-following-code">Q5. Given that <code>file.txt</code> doesn’t exist on your system, what is the output of the following code?</h4>
 <pre class="code literal-block"><span></span><span class="kn">import</span> <span class="nn">java.io.*</span><span class="o">;</span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">MultipleExceptions</span> <span class="o">{</span>
 <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span> <span class="n">args</span><span class="o">[])</span> <span class="o">{</span>
@@ -573,7 +573,7 @@ StackOverflowError</p>
 <blockquote>
 <p>The code cannot compile because <strong>finally block cannot be put before catch block</strong>.</p>
 </blockquote>
-<h4>Q6. Given that <code>players.txt</code> exists on your system and that the assignment of players, shown in bold, doesn’t throw any exceptions, what is the output of the following code?</h4>
+<h4 id="q6-given-that-playerstxt-exists-on-your-system-and-that-the-assignment-of-players-shown-in-bold-doesnt-throw-any-exceptions-what-is-the-output-of-the-following-code">Q6. Given that <code>players.txt</code> exists on your system and that the assignment of players, shown in bold, doesn’t throw any exceptions, what is the output of the following code?</h4>
 <pre class="code literal-block"><span></span><span class="kn">import</span> <span class="nn">java.io.*</span><span class="o">;</span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">TwistInTaleNestedTryCatch</span> <span class="o">{</span>
 <span class="kd">static</span> <span class="n">FileInputStream</span> <span class="n">players</span><span class="o">,</span> <span class="n">coach</span><span class="o">;</span>
@@ -617,8 +617,8 @@ StackOverflowError</p>
 <blockquote>
 <p>Since <code>coach</code> is a <code>static</code> variable <strong>which hasn't been initialized</strong>, a call to use <strong>a method</strong> of <code>coach</code> will throw <code>NullPointerException</code>.</p>
 </blockquote>
-<h3>Q&amp;As from Chapter 4, OCA Guide from Manning</h3>
-<h4>Q1: Which of the following are valid lines of code to define a <code>multidimensional int array</code>?</h4>
+<h3 id="qas-from-chapter-4-oca-guide-from-manning">Q&amp;As from Chapter 4, OCA Guide from Manning</h3>
+<h4 id="q1-which-of-the-following-are-valid-lines-of-code-to-define-a-multidimensional-int-array">Q1: Which of the following are valid lines of code to define a <code>multidimensional int array</code>?</h4>
 <p>a. <code>int[][] array1 = {{1, 2, 3}, {}, {1, 2,3, 4, 5}};</code></p>
 <p>b. <code>int[][] array2 = new array() {{1, 2, 3}, {}, {1, 2,3, 4, 5}}</code></p>
 <p>c. <code>int[][] array3 = {1, 2, 3}, {0}, {1, 2,3, 4, 5};</code></p>
@@ -627,7 +627,7 @@ StackOverflowError</p>
 <blockquote>
 <p>The option b is wrong. <code>new array()</code> is not valid</p>
 </blockquote>
-<h4>Q2. Which of the following statements are correct?</h4>
+<h4 id="q2-which-of-the-following-statements-are-correct">Q2. Which of the following statements are correct?</h4>
 <p>a. By default, an ArrayList creates an array with an initial size of 16 to store its elements.</p>
 <p>b. Because ArrayList stores
 only objects, you can’t pass an element of an ArrayList to a switch construct.</p>
@@ -639,7 +639,7 @@ only objects, you can’t pass an element of an ArrayList to a switch construct.
 <p>Option a is not right. <code>ArrayList</code> has size <code>10</code>. <code>StringBuilder</code> has size <code>16</code>.
 Option c is right. You can specify a larger capacity of <code>ArrayList</code></p>
 </blockquote>
-<h4>Q3. What is the output of the following code?</h4>
+<h4 id="q3-what-is-the-output-of-the-following-code_1">Q3. What is the output of the following code?</h4>
 <pre class="code literal-block"><span></span><span class="kn">import</span> <span class="nn">java.util.*</span><span class="o">;</span> <span class="c1">//Line 1</span>
 <span class="kd">class</span> <span class="nc">EJavaGuruArrayList</span> <span class="o">{</span> <span class="c1">//Line2</span>
 <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span> <span class="n">args</span><span class="o">[])</span> <span class="o">{</span> <span class="c1">//Line 3</span>
@@ -672,7 +672,7 @@ Option c is right. You can specify a larger capacity of <code>ArrayList</code></
 <p>Option a is right. When <code>contains()</code> is used for String, it call <code>equals()</code> first, which for String, if using <code>new()</code>, means same reference.</p>
 <p>Option h is right. When calling <code>System.out.println()</code>, <code>toString()</code> method is automatically called. For <code>ArrayList</code>, <code>toString()</code> method will print out String value. Since ejg has been cleared, <code>null</code> value will be print out.</p>
 </blockquote>
-<h4>Q4. What is the output of the following code?</h4>
+<h4 id="q4-what-is-the-output-of-the-following-code">Q4. What is the output of the following code?</h4>
 <pre class="code literal-block"><span></span><span class="kd">class</span> <span class="nc">EJavaGuruString</span> <span class="o">{</span>
     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span> <span class="n">args</span><span class="o">[])</span> <span class="o">{</span>
         <span class="n">String</span> <span class="n">ejg1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">String</span><span class="o">(</span><span class="s">"E Java"</span><span class="o">);</span>
@@ -695,7 +695,7 @@ Option c is right. You can specify a larger capacity of <code>ArrayList</code></
 <blockquote>
 <p>String <code>ejg3</code> and <code>ejg4</code> are not created with <code>new()</code>, so Java will find them same in String pool, which gives out a infinite loop.</p>
 </blockquote>
-<h4>Q5. What is the output of the following code?</h4>
+<h4 id="q5-what-is-the-output-of-the-following-code">Q5. What is the output of the following code?</h4>
 <pre class="code literal-block"><span></span><span class="kd">class</span> <span class="nc">EJavaGuruStringBuilder</span> <span class="o">{</span>
     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span> <span class="n">args</span><span class="o">[])</span> <span class="o">{</span>
         <span class="n">StringBuilder</span> <span class="n">ejg</span> <span class="o">=</span> <span class="k">new</span> <span class="n">StringBuilder</span><span class="o">(</span><span class="mi">10</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">+</span> <span class="s">"SUN"</span> <span class="o">+</span> <span class="mi">4</span> <span class="o">+</span> <span class="mi">5</span><span class="o">);</span>
@@ -714,7 +714,7 @@ Option c is right. You can specify a larger capacity of <code>ArrayList</code></
 <blockquote>
 <p><code>ejg.delete(3, 6)</code> means <code>ejg</code> is now <code>12S5</code>. <strong>last index is exclusive.</strong></p>
 </blockquote>
-<h4>Q6. What is the output of the following code?</h4>
+<h4 id="q6-what-is-the-output-of-the-following-code">Q6. What is the output of the following code?</h4>
 <pre class="code literal-block"><span></span><span class="kd">class</span> <span class="nc">EJavaGuruString2</span> <span class="o">{</span>
     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span> <span class="n">args</span><span class="o">[])</span> <span class="o">{</span>
         <span class="n">String</span> <span class="n">ejg</span> <span class="o">=</span> <span class="s">"game"</span><span class="o">;</span>
@@ -735,7 +735,7 @@ Option c is right. You can specify a larger capacity of <code>ArrayList</code></
 <blockquote>
 <p>String is <strong>immmutable</strong>. Since <code>ejg</code> has been initialized, no operation can modify its value.</p>
 </blockquote>
-<h4>Q7. Let’s modify some of the code used in the previous section. Execute this code on your system. Which answer</h4>
+<h4 id="q7-lets-modify-some-of-the-code-used-in-the-previous-section-execute-this-code-on-your-system-which-answer">Q7. Let’s modify some of the code used in the previous section. Execute this code on your system. Which answer</h4>
 <pre class="code literal-block"><span></span><span class="n">String</span> <span class="n">letters</span> <span class="o">=</span> <span class="s">"ABCAB"</span><span class="o">;</span>
 <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">letters</span><span class="o">.</span><span class="na">substring</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="mi">2</span><span class="o">).</span><span class="na">startsWith</span><span class="o">(</span><span class="sc">'A'</span><span class="o">));</span>
 </pre>
@@ -750,7 +750,7 @@ Option c is right. You can specify a larger capacity of <code>ArrayList</code></
 <blockquote>
 <p><code>startsWith()</code> only accept <code>String</code> as argument</p>
 </blockquote>
-<h4>Q8. Modify some of the code used in the previous example as follows:</h4>
+<h4 id="q8-modify-some-of-the-code-used-in-the-previous-example-as-follows">Q8. Modify some of the code used in the previous example as follows:</h4>
 <pre class="code literal-block"><span></span><span class="c1">//Line1</span>
     <span class="n">String</span> <span class="n">multiStrArr</span><span class="o">[][]</span> <span class="o">=</span> <span class="k">new</span> <span class="n">String</span><span class="o">[][]{</span>
 <span class="c1">//Line2</span>
@@ -773,7 +773,7 @@ a. Code on line 4 is the same as <code>{"Jan", "Feb", null, null}</code>,</p>
 <blockquote>
 <p>The probem if option c is, <code>multiStrArr[1][1]</code> does not exist, so we cannot say "no value is stored"</p>
 </blockquote>
-<h4>Q9. What is the output of the following code?</h4>
+<h4 id="q9-what-is-the-output-of-the-following-code">Q9. What is the output of the following code?</h4>
 <pre class="code literal-block"><span></span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">myArrList</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;();</span>
 <span class="n">String</span> <span class="n">one</span> <span class="o">=</span> <span class="s">"One"</span><span class="o">;</span>
 <span class="n">String</span> <span class="n">two</span> <span class="o">=</span> <span class="k">new</span> <span class="n">String</span><span class="o">(</span><span class="s">"Two"</span><span class="o">);</span>
@@ -797,8 +797,8 @@ a. Code on line 4 is the same as <code>{"Jan", "Feb", null, null}</code>,</p>
 <blockquote>
 <p>We cannot change the value of String after it has been initialized.</p>
 </blockquote>
-<h3>Q&amp;As from Chapter 6, OCA Guide from Manning</h3>
-<h4>Q1. Let’s modify the code used in the previous example as follows. Which of the options is correct for this modified code?</h4>
+<h3 id="qas-from-chapter-6-oca-guide-from-manning">Q&amp;As from Chapter 6, OCA Guide from Manning</h3>
+<h4 id="q1-lets-modify-the-code-used-in-the-previous-example-as-follows-which-of-the-options-is-correct-for-this-modified-code">Q1. Let’s modify the code used in the previous example as follows. Which of the options is correct for this modified code?</h4>
 <pre class="code literal-block"><span></span><span class="kd">class</span> <span class="nc">Employee</span> <span class="o">{</span>
     <span class="kd">private</span> <span class="n">String</span> <span class="n">name</span><span class="o">;</span>
     <span class="n">String</span> <span class="n">address</span><span class="o">;</span>
@@ -827,7 +827,7 @@ a. Code on line 4 is the same as <code>{"Jan", "Feb", null, null}</code>,</p>
 <p>d. <code>new Programmer ("Harry").getName();</code> isn’t the right way to create an object of class <code>Programmer</code> .</p>
 <p>e. Compilation error.</p>
 <p>A1. e. <code>name</code> is <code>private</code>.</p>
-<h4>Q2. Let’s modify the definition of the <code>Employee</code> and <code>Programmer</code> classes as follows. What is the output of class <code>TwistInTale3</code> ?</h4>
+<h4 id="q2-lets-modify-the-definition-of-the-employee-and-programmer-classes-as-follows-what-is-the-output-of-class-twistintale3">Q2. Let’s modify the definition of the <code>Employee</code> and <code>Programmer</code> classes as follows. What is the output of class <code>TwistInTale3</code> ?</h4>
 <pre class="code literal-block"><span></span><span class="kd">class</span> <span class="nc">Employee</span> <span class="o">{</span>
     <span class="n">String</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"Emp"</span><span class="o">;</span>
     <span class="n">String</span> <span class="n">address</span> <span class="o">=</span> <span class="s">"EmpAddress"</span><span class="o">;</span>
@@ -854,7 +854,7 @@ a. Code on line 4 is the same as <code>{"Jan", "Feb", null, null}</code>,</p>
 <p>c. <code>Prog::Emp:EmpAddress</code></p>
 <p>d. Compilation error</p>
 <p>A2. b. If a <code>this</code> in derviced class cannot find variable, it will go back to its base class for the value.</p>
-<h4>Q3. Examine the following code and select the correct method declaration to be inserted at <code>//INSERT CODE HERE</code>:</h4>
+<h4 id="q3-examine-the-following-code-and-select-the-correct-method-declaration-to-be-inserted-at-insert-code-here">Q3. Examine the following code and select the correct method declaration to be inserted at <code>//INSERT CODE HERE</code>:</h4>
 <pre class="code literal-block"><span></span><span class="kd">interface</span> <span class="nc">Movable</span> <span class="o">{</span>
     <span class="kt">void</span> <span class="nf">move</span><span class="o">();</span>
 <span class="o">}</span>
@@ -880,7 +880,7 @@ a. Code on line 4 is the same as <code>{"Jan", "Feb", null, null}</code>,</p>
 <blockquote>
 <p>Note option a is available. Although you cannot create instance for a <code>interface</code>, it's ok to put it as a <strong>type of method parameter</strong>.</p>
 </blockquote>
-<h4>Q4. Examine the following code:</h4>
+<h4 id="q4-examine-the-following-code">Q4. Examine the following code:</h4>
 <pre class="code literal-block"><span></span><span class="kd">class</span> <span class="nc">Programmer</span> <span class="o">{</span>
     <span class="kt">void</span> <span class="nf">print</span><span class="o">()</span> <span class="o">{</span>
         <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Programmer - Mala Gupta"</span><span class="o">);</span>
@@ -917,7 +917,7 @@ a. Code on line 4 is the same as <code>{"Jan", "Feb", null, null}</code>,</p>
 <p>Problem of option e: Will compile but has <code>classCastException</code> error. <strong>Base class cannot be cast to derived class. Opposite is fine</strong></p>
 <p>Problem of opetion f: same reason as option e.</p>
 </blockquote>
-<h4>Q5. Given the following code, which of the options, when applied individually, will make it compile successfully?</h4>
+<h4 id="q5-given-the-following-code-which-of-the-options-when-applied-individually-will-make-it-compile-successfully">Q5. Given the following code, which of the options, when applied individually, will make it compile successfully?</h4>
 <pre class="code literal-block"><span></span><span class="n">Line1</span><span class="o">&gt;</span> <span class="kd">interface</span> <span class="nc">Employee</span> <span class="o">{}</span>
 <span class="n">Line2</span><span class="o">&gt;</span> <span class="kd">interface</span> <span class="nc">Printable</span> <span class="kd">extends</span> <span class="n">Employee</span> <span class="o">{</span>
 <span class="n">Line3</span><span class="o">&gt;</span>    <span class="n">String</span> <span class="nf">print</span><span class="o">();</span>
@@ -940,8 +940,8 @@ a. Code on line 4 is the same as <code>{"Jan", "Feb", null, null}</code>,</p>
 <p>Option a, b, d won't cause compile error, but also won't fix compile error.</p>
 <p>Option c: Since all interface method are implictly <code>public</code> and <code>abstract</code>, the problem of the code is <code>print()</code> has to be <code>public</code></p>
 </blockquote>
-<h3>Q&amp;As from Chapter 5, OCA Guide from Manning</h3>
-<h4>Q1. Let’s modify the code used in the previous example as follows. What is the output of this code?</h4>
+<h3 id="qas-from-chapter-5-oca-guide-from-manning">Q&amp;As from Chapter 5, OCA Guide from Manning</h3>
+<h4 id="q1-lets-modify-the-code-used-in-the-previous-example-as-follows-what-is-the-output-of-this-code">Q1. Let’s modify the code used in the previous example as follows. What is the output of this code?</h4>
 <pre class="code literal-block"><span></span><span class="n">String</span> <span class="n">day</span> <span class="o">=</span> <span class="k">new</span> <span class="n">String</span><span class="o">(</span><span class="s">"SUN"</span><span class="o">);</span>
 <span class="k">switch</span> <span class="o">(</span><span class="n">day</span><span class="o">)</span> <span class="o">{</span>
     <span class="k">case</span> <span class="s">"MON"</span><span class="o">:</span>
@@ -967,7 +967,7 @@ a. Code on line 4 is the same as <code>{"Jan", "Feb", null, null}</code>,</p>
 <blockquote>
 <p>String is special for <code>switch</code> case parameter. <code>switch</code> only compare <strong>value of String</strong> when it use String as case parameter.</p>
 </blockquote>
-<h4>Q2. What’s the output of the following code?</h4>
+<h4 id="q2-whats-the-output-of-the-following-code">Q2. What’s the output of the following code?</h4>
 <pre class="code literal-block"><span></span><span class="kd">class</span> <span class="nc">Loop2</span> <span class="o">{</span>
     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
         <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">10</span><span class="o">;</span>
@@ -993,7 +993,7 @@ a. Code on line 4 is the same as <code>{"Jan", "Feb", null, null}</code>,</p>
 - Print out <code>i=32</code>
 - <strong>Note</strong> for i++, alough going out of loop, you still need <code>++</code> operation.</p>
 </blockquote>
-<h4>Q3. What’s the output of the following code?</h4>
+<h4 id="q3-whats-the-output-of-the-following-code">Q3. What’s the output of the following code?</h4>
 <pre class="code literal-block"><span></span><span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">10</span><span class="o">;</span>
 <span class="k">if</span> <span class="o">(</span><span class="n">a</span><span class="o">++</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="o">)</span> <span class="o">{</span>
     <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"true"</span><span class="o">);</span>
@@ -1013,7 +1013,7 @@ a. Code on line 4 is the same as <code>{"Jan", "Feb", null, null}</code>,</p>
 <blockquote>
 <p>Just need to know only <code>{}</code> will not cause compile error.</p>
 </blockquote>
-<h4>Q4. Given the following code, which of the following lines of code can individually replace the <code>//INSERT CODE HERE</code> line so that the code compiles successfully?</h4>
+<h4 id="q4-given-the-following-code-which-of-the-following-lines-of-code-can-individually-replace-the-insert-code-here-line-so-that-the-code-compiles-successfully">Q4. Given the following code, which of the following lines of code can individually replace the <code>//INSERT CODE HERE</code> line so that the code compiles successfully?</h4>
 <pre class="code literal-block"><span></span><span class="kd">class</span> <span class="nc">EJavaGuru</span> <span class="o">{</span>
     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">getVal</span><span class="o">()</span> <span class="o">{</span>
         <span class="k">return</span> <span class="mi">100</span><span class="o">;</span>
@@ -1039,7 +1039,7 @@ a. Code on line 4 is the same as <code>{"Jan", "Feb", null, null}</code>,</p>
 <blockquote>
 <p>If you use <code>/</code> for <code>case</code> parameter, Java will <strong>disard</strong> decimal parts, only leave integer.</p>
 </blockquote>
-<h4>Q5. What’s the output of the following code?</h4>
+<h4 id="q5-whats-the-output-of-the-following-code">Q5. What’s the output of the following code?</h4>
 <pre class="code literal-block"><span></span><span class="kd">class</span> <span class="nc">EJavaGuru</span> <span class="o">{</span>
     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span> <span class="n">args</span><span class="o">[])</span> <span class="o">{</span>
     <span class="kt">int</span> <span class="n">num</span> <span class="o">=</span> <span class="mi">120</span><span class="o">;</span>
@@ -1062,7 +1062,7 @@ a. Code on line 4 is the same as <code>{"Jan", "Feb", null, null}</code>,</p>
 <blockquote>
 <p>Note. last <code>case</code> equasl to <code>case 0</code>. <strong>Duplicate case will get compile error.</strong></p>
 </blockquote>
-<h4>Q6. What’s the output of the following code?</h4>
+<h4 id="q6-whats-the-output-of-the-following-code">Q6. What’s the output of the following code?</h4>
 <pre class="code literal-block"><span></span><span class="kd">class</span> <span class="nc">EJavaGuru5</span> <span class="o">{</span>
     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span> <span class="n">args</span><span class="o">[])</span> <span class="o">{</span>
     <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
@@ -1116,7 +1116,7 @@ a. Code on line 4 is the same as <code>{"Jan", "Feb", null, null}</code>,</p>
 
 
     </div>
-                     <footer id="footer"><p>Contents © 2018         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                     <footer id="footer"><p>Contents © 2018         <a href="mailto:pengyin.shan@outlook.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

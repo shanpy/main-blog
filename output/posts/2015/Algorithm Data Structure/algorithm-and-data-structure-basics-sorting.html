@@ -7,7 +7,7 @@ article: http://ogp.me/ns/article#
 <meta charset="utf-8">
 <meta name="description" content="Recently I got a few free time besides my work, since my team's current project is coming to an end. I want to take this time to review some knowledge about Algorithms and Data Structures, so that I can have better way of solving problems in my next project. The main idea of this post coming from *Introduction to Algorithms (Third Edition/Chinese Version)*.">
 <meta name="viewport" content="width=device-width">
-<title>Algorithm and Data Structure Basics - Sorting | I'm Pengyin</title>
+<title>Algorithm and Data Structure Basics - Sorting | I'm Pengyin (Wendy)</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2015/Algorithm%20Data%20Structure/algorithm-and-data-structure-basics-sorting.html">
@@ -26,7 +26,7 @@ MathJax.Hub.Config({
     }
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
-<meta property="og:site_name" content="I'm Pengyin">
+<meta property="og:site_name" content="I'm Pengyin (Wendy)">
 <meta property="og:title" content="Algorithm and Data Structure Basics - Sorting">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2015/Algorithm%20Data%20Structure/algorithm-and-data-structure-basics-sorting.html">
 <meta property="og:description" content="Recently I got a few free time besides my work, since my team's current project is coming to an end. I want to take this time to review some knowledge about Algorithms and Data Structures, so that I c">
@@ -72,7 +72,7 @@ MathJax.Hub.Config({
         </div>
         <div class="body">
             <div>
-<h4>Reference List</h4>
+<h4 id="reference-list">Reference List</h4>
 <ul>
 <li>
 <p><strong>Introduction to Algorithms (Third Edition/Chinese Version)</strong>, written by <em>Thomas H.Cormen</em>, <em>Charles E.Leiserson</em>, <em>Ronald L.Rivest</em> and <em>Clifford Stein</em>, and translated by <em>Jianping Yin</em>, <em>Yun Xu</em>, <em>Gang Wang</em>, <em>Xiaoguang Liu</em>, <em>Ming Su</em>, <em>Hengming Zou</em> and <em>HongZhi Wang</em>.</p>
@@ -81,11 +81,11 @@ MathJax.Hub.Config({
 <p><strong>Data Structures and Algorithms in Java (Second Edition/Chinese Version)</strong>, written by <em>Robert Lafore</em>, and translated by <em>Xiaoyun Ji</em>, <em>Yan Zhao</em>, <em>Xi Zeng</em> and <em>Xiaohan Di</em>.</p>
 </li>
 </ul>
-<h4>Terminology &amp; Runtime Analysis</h4>
+<h4 id="terminology-runtime-analysis">Terminology &amp; Runtime Analysis</h4>
 <p><em>This part serves as a reading note for Introduction to Algorithms (Third Edition), Chapter 1 and Chapter 2, to clarify some basic terms of Algorithms</em>.</p>
 <p><code>Algorithm</code> is the process of reading a value or a collection of value as <strong>input</strong>, and product a value or a collection of value as <strong>output</strong>.</p>
 <p>A sequence of input (with constrains) from a algorithm question is called a <code>instance</code> of that question.</p>
-<h5>Runtime Analysis</h5>
+<h5 id="runtime-analysis">Runtime Analysis</h5>
 <p>From the book <em>Introduction to Algorithms</em>, the reason we are focusing on <strong>worst case running time</strong> is:</p>
 <ol>
 <li>
@@ -98,7 +98,7 @@ MathJax.Hub.Config({
 <p>There is lots of times that the <em>average running time</em> is the same as the <em>worst running time</em>.</p>
 </li>
 </ol>
-<h4>Basic Insertion Sort, with Analysis for Algorithm Questions</h4>
+<h4 id="basic-insertion-sort-with-analysis-for-algorithm-questions">Basic Insertion Sort, with Analysis for Algorithm Questions</h4>
 <p>Insertion sort is very useful for a <strong>small</strong> amount of input.</p>
 <p>In book <em>Introduction to Algorithms</em>, insertion sort is described as the same process of someone sorting a group of pokers in a poker game. All elements on one side of your current item (i.e. the item that is supposed to be sorted) is in order.</p>
 <p>Pseudo-code for Insertion Sort:</p>
@@ -118,7 +118,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h4>Basic Selection Sort</h4>
+<h4 id="basic-selection-sort">Basic Selection Sort</h4>
 <p>To perform selection sort, you are given a array of numbers: <code>A</code>.</p>
 <ol>
 <li>
@@ -147,7 +147,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h4>Basic Merge Sort</h4>
+<h4 id="basic-merge-sort">Basic Merge Sort</h4>
 <p>Merge sort uses <code>divide-and-concur</code> mode:</p>
 <ol>
 <li>
@@ -176,7 +176,7 @@ MathJax.Hub.Config({
 <p>In <em>Introduction to Algorithms</em>, a <strong>poker example</strong> is used to describe the merge process. The merge process is to chose a smaller one from the top of two piled poker, and put that poker to a new pile. Repeat this process until one pile is empty.</p>
 <p>Since we most perform <code>n</code> steps to merge, the running time of merge is $theta (n)$.</p>
 <p>For Merge Sort in Java, please refer to <a href="../Algorithm%20Data%20Structure/blog/algorithm-and-data-structure-basics-recursion">this post</a>.</p>
-<h4>Tips and Comments</h4>
+<h4 id="tips-and-comments">Tips and Comments</h4>
 <ul>
 <li>From <em>Introduction to Algorithms</em>, if you have a binary number, moving all digits one position to left means multiplying it by two. if you move all digits <em>k</em> position to left, you multiply origin number by $2^k$.</li>
 </ul>
@@ -211,7 +211,7 @@ MathJax.Hub.Config({
 
 
     </div>
-                     <footer id="footer"><p>Contents © 2018         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                     <footer id="footer"><p>Contents © 2018         <a href="mailto:pengyin.shan@outlook.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

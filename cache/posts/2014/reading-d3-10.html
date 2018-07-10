@@ -1,7 +1,7 @@
 <p>This post is transferred from my <a href="http://blogpengyin.herokuapp.com/">old Hexo blog site</a>, created on 2014.</p>
 <p>This is a Reading Note for <em>Interactive Data Visualization for the Web - An Introduction to Designing with D3</em> by <em>Scott Murray</em>, pulished by <em>O'Reilly, 2013</em></p>
 <p>This post will contains concepts that I think it's importa</p>
-<h1>Chapter 10 : Interactive Design</h1>
+<h1 id="chapter-10-interactive-design">Chapter 10 : Interactive Design</h1>
 <p>code example for this chapter is <a href="http://shanpy.github.io/Front-End-Playground/D3/Reading-D3-VI.html"><strong>here</strong></a>. This part involves lots of code practice.</p>
 <p>To add transition to element using <code>css</code>:</p>
 <pre class="code literal-block"><span></span><span class="nt">rect</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
@@ -16,7 +16,7 @@
 <p>We can do same thing using <code>javascript</code>: <code>.on('mouseover',function(){...}</code>; In function, we can use <code>d3.select(this).attr()</code> to adjust attribute of elements. Using <code>.on('mouseout',function(){...}</code> to make sure when moving mouse out, the effect disappears.</p>
 <p>Note: It is the best to set <em>hover</em> effect in <code>css</code>, and set other complex effect to <code>javascript</code>.</p>
 <p><code>pointer-events: none;</code> can be used to let css <em>ingore</em> mouse event for certain element. <code>.style('pointer-events','none')</code> can achieve same effect.</p>
-<h2>Sort Bar</h2>
+<h2 id="sort-bar">Sort Bar</h2>
 <pre class="code literal-block"><span></span><span class="kd">var</span> <span class="nx">sortBars</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
     <span class="nx">svg</span><span class="p">.</span><span class="nx">selectAll</span><span class="p">(</span><span class="s1">&#39;rect&#39;</span><span class="p">)</span>
         <span class="p">.</span><span class="nx">sort</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="nx">b</span><span class="p">){</span>
@@ -31,7 +31,7 @@
 
 
 <p>In the code above, <code>sort</code> needs to know which is front, which is next, so we need to pass it two parameters, and using <code>ascending()</code> to give a order. Now each element in dataset will be compared and sorted.</p>
-<h2>Tool Tip</h2>
+<h2 id="tool-tip">Tool Tip</h2>
 <p>If you want to use <em>default</em> tooltip setting by browser, just add <code>.append('title').text(function(d){...});</code> after appending elements.</p>
 <p>You can also set <em>SVG</em> tooltip. First, re-set <code>x</code> and <code>y</code>, then append <code>text</code> to element:</p>
 <pre class="code literal-block"><span></span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;mouseover&#39;</span><span class="p">,</span><span class="kd">function</span><span class="p">(</span><span class="nx">d</span><span class="p">){</span>
@@ -96,7 +96,7 @@
 </pre>
 
 
-<h2>Code for This Chapter</h2>
+<h2 id="code-for-this-chapter">Code for This Chapter</h2>
 <p>You can view interative version <a href="http://shanpy.github.io/Front-End-Playground/D3/Reading-D3-VI.html"><strong>here</strong></a>.</p>
 <pre class="code literal-block"><span></span><span class="p">&lt;</span><span class="nt">style</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span><span class="p">&gt;</span>
         <span class="nt">rect</span><span class="p">:</span><span class="nd">hover</span><span class="p">{</span>

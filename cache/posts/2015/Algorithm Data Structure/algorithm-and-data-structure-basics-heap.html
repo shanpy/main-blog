@@ -1,8 +1,8 @@
-<h3>Reference List</h3>
+<h3 id="reference-list">Reference List</h3>
 <ul>
 <li><em>Data Structures and Algorithms in Java (Second Edition)</em>, written by <em>Robert Lafore</em>, Chinese Version</li>
 </ul>
-<h3>Basic Information</h3>
+<h3 id="basic-information">Basic Information</h3>
 <p>Heap is a type of tree. If you create a <strong>priority queue</strong> from heap. The time complexity for insertion and deletion is <code>O(logN)</code>. However, heap doesn't support traversal and search by value, because all path in heap is following descending/ascending order.</p>
 <p>Heap has following features:</p>
 <ul>
@@ -25,7 +25,7 @@
 <blockquote>
 <p>All nodes which have index larger than <code>n/2</code> are leaf nodes, assuming there are n elements in array.</p>
 </blockquote>
-<h3>Remove</h3>
+<h3 id="remove">Remove</h3>
 <p>In heap, remove means removing the root of the heap. This root is always the largest/smallest value of all elements. For the heap array, root always has index <code>0</code>.</p>
 <p>You need two steps to find removing process:</p>
 <ol>
@@ -48,7 +48,7 @@
 <p>Move this new root to bottom, until it's smaller than its parent node and larger than its child nodes. To do this, check if root is smaller than it's <strong>larger child</strong>. If so, swap root and its larger child. Repeat this.</p>
 </li>
 </ol>
-<h4>Code</h4>
+<h4 id="code">Code</h4>
 <pre class="code literal-block"><span></span><span class="c1">//We assume each node has a attribute &#39;key&#39;, which determine the value/priority of this node</span>
 <span class="kd">public</span> <span class="n">Node</span> <span class="nf">remove</span><span class="o">(){</span>
     <span class="n">Node</span> <span class="n">root</span> <span class="o">=</span> <span class="n">heapArray</span><span class="o">[</span><span class="mi">0</span><span class="o">];</span>
@@ -89,7 +89,7 @@
 </pre>
 
 
-<h3>Insert</h3>
+<h3 id="insert">Insert</h3>
 <p>Insertion can by down by following step:</p>
 <ol>
 <li>
@@ -99,7 +99,7 @@
 <p>Recursively moving this node so that it will be larger than its child elements and smaller than its parent node. i.e. if node is smaller larger than its parent node, swap this node and its parent node.</p>
 </li>
 </ol>
-<h4>Code</h4>
+<h4 id="code_1">Code</h4>
 <pre class="code literal-block"><span></span><span class="c1">//We assume each node has a attribute &#39;key&#39;, which determine the value/priority of this node</span>
 <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">insert</span><span class="o">(</span><span class="kt">int</span> <span class="n">key</span><span class="o">){</span>
     <span class="k">if</span><span class="o">(</span><span class="n">currentSize</span> <span class="o">==</span> <span class="n">maxSize</span><span class="o">)</span>
@@ -126,5 +126,5 @@
 </pre>
 
 
-<h3>Change Value</h3>
+<h3 id="change-value">Change Value</h3>
 <p>Working in process...</p>

@@ -7,7 +7,7 @@ article: http://ogp.me/ns/article#
 <meta charset="utf-8">
 <meta name="description" content="This post records all error codes (400,401...) from jQuery Ajax call to Java/Spring MVC, with possible reasons of these codes.">
 <meta name="viewport" content="width=device-width">
-<title>Possible Ajax Error Code and Reasons | I'm Pengyin</title>
+<title>Possible Ajax Error Code and Reasons | I'm Pengyin (Wendy)</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2015/JavaScript/possible-ajax-error-code-and-reasons.html">
@@ -26,7 +26,7 @@ MathJax.Hub.Config({
     }
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
-<meta property="og:site_name" content="I'm Pengyin">
+<meta property="og:site_name" content="I'm Pengyin (Wendy)">
 <meta property="og:title" content="Possible Ajax Error Code and Reasons">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2015/JavaScript/possible-ajax-error-code-and-reasons.html">
 <meta property="og:description" content="This post records all error codes (400,401...) from jQuery Ajax call to Java/Spring MVC, with possible reasons of these codes.">
@@ -74,7 +74,7 @@ MathJax.Hub.Config({
         </div>
         <div class="body">
             <div>
-<h3>400 (Bad Request)</h3>
+<h3 id="400-bad-request">400 (Bad Request)</h3>
 <ul>
 <li>
 <p>In jQuery, no <code>JSON.stringify()</code> is used to parse JavaScript object to JSON object</p>
@@ -83,11 +83,11 @@ MathJax.Hub.Config({
 <p>Use <code>$.ajax()</code> but doesn't include <code>type: "GET/POST/etc"</code> in AJAX body</p>
 </li>
 </ul>
-<h3>406 (Not Acceptable Response)</h3>
+<h3 id="406-not-acceptable-response">406 (Not Acceptable Response)</h3>
 <ul>
 <li>Check your authority setting. One of my Spring MVC project has requirement:  user group 1 can only access sub-URL of <code>/test/user1</code>. So if I make a URL mapping to <code>/test/</code>, AJAX call will fail and give me a <code>406</code> error</li>
 </ul>
-<h3>404 (Not Found Errors)</h3>
+<h3 id="404-not-found-errors">404 (Not Found Errors)</h3>
 <p>Very common error. Can have different reasons:</p>
 <ul>
 <li>
@@ -97,7 +97,7 @@ MathJax.Hub.Config({
 <p>In Spring MVC, no <code>@ResponseBody</code> or <code>@RequestBody</code> is added in controller. For example: <code>public @ResponseBody String test(@RequestBody final String id)</code> is good. But <code>public String test(@RequestBody final String id)</code> can generate a 404 error in client side.</p>
 </li>
 </ul>
-<h3>No response (Back-end finsih processing but front-end give no response)</h3>
+<h3 id="no-response-back-end-finsih-processing-but-front-end-give-no-response">No response (Back-end finsih processing but front-end give no response)</h3>
 <ul>
 <li>Check your jQuery version and check if you are using <code>$.ajax({done: function(data../){}, fail: function(jqXHR...){}});</code>. If so, try to check your jQuery to later version, or replace with <code>$.ajax({success: function(data...){}, error: function(jqXHR...) })</code>
 </li>
@@ -132,7 +132,7 @@ MathJax.Hub.Config({
 
 
     </div>
-                     <footer id="footer"><p>Contents © 2018         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                     <footer id="footer"><p>Contents © 2018         <a href="mailto:pengyin.shan@outlook.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

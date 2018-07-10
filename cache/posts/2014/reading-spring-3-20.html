@@ -1,10 +1,10 @@
 <p>This post is transferred from my <a href="http://blogpengyin.herokuapp.com/">old Hexo blog site</a>, created on 2014.</p>
 <p>This is a reading note from Spring Framework 3.1 Tutorial pdf, created by <a href="http://www.tutorialspoint.com/spring"><strong>tutorialspoint</strong></a>. This pdf contains information for Spring 3 Core Basics, which is very useful for understanding defination and practive in Spring programming.</p>
 <p>This note includes Chapter 20 in tutorial.</p>
-<h1>Spring JDBC Framework</h1>
+<h1 id="spring-jdbc-framework">Spring JDBC Framework</h1>
 <p>Spring JDBC Framework takes care of all the low-level details starting from opening the connection, prepare and execute the SQL statement, process exceptions, handing transactions and finally close the connection.</p>
 <p><code>JDBCTemplate</code> is the most popular approach of using Spring JDBC framework.</p>
-<h2>JDBC Template Class</h2>
+<h2 id="jdbc-template-class">JDBC Template Class</h2>
 <p>The <code>JdbcTemplate</code> class executes SQL queries, update statements and stored procedure calls, performs iteration over <code>ResultSets</code> and extraction of returned parameter values. It also catches <code>JDBC exceptions</code> and translates them to the generic, more informative, exception hierarchy defined in the <code>org.springframework.dao</code> package.</p>
 <p>Since instance of <code>JdbcTemplate</code> classes are <em>threadsafe</em> once it is configured, you can just configure <em>one</em> instance of <code>JdbcTemplate</code>, then <em>inject</em> it to different <code>DAO</code>s.</p>
 <p>A comment practice is to configure a <code>DataSource</code> in your spring configuration file, then <em>inject</em> that bean to your <code>DAO</code> classes. For example:</p>
@@ -18,7 +18,7 @@
 </pre>
 
 
-<h2>Executing SQL Statements</h2>
+<h2 id="executing-sql-statements">Executing SQL Statements</h2>
 <p><code>DAO</code> means <code>Data Access Object</code>. DAO often implements an <code>interface</code>, which provides ablity to read/write data from database. Other parts of application access DAO.</p>
 <p>The way to achieve CRUD(Create, Read, Update and Delete) operation is (Assume <code>SQL</code> ia a SQL statement):</p>
 <p><em>Query</em>:</p>
@@ -170,7 +170,7 @@
 
 
 <p>There are other JDBC framework prepared by Spring, such as <code>NamedParameterJdbcTemplate</code> and <code>SimpleJdbcTemplate</code> classes.</p>
-<h2>Stored Procedure</h2>
+<h2 id="stored-procedure">Stored Procedure</h2>
 <p><code>SimpleJdbcCall</code> class is used to call a <em>stored procedure</em> with <code>IN</code> and <code>OUT</code> parameters.</p>
 <p>Example:</p>
 <pre class="code literal-block"><span></span><span class="kn">import</span> <span class="nn">javax.sql.DataSource</span><span class="o">;</span>

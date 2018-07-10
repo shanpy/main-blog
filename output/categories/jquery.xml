@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>I'm Pengyin (Posts about jQuery)</title><link>http://pengyin-shan.com/</link><description></description><atom:link href="http://pengyin-shan.com/categories/jquery.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 06 Jul 2018 17:48:43 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Reading Note - Asynchronous in jQuery and ECMAScript 6</title><link>http://pengyin-shan.com/posts/2016/JavaScript/reading_note_defer_in_jquery.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h2&gt;Reference List&lt;/h2&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>I'm Pengyin (Posts about jQuery)</title><link>http://pengyin-shan.com/</link><description></description><atom:link type="application/rss+xml" rel="self" href="http://pengyin-shan.com/categories/jquery.xml"></atom:link><language>en</language><lastBuildDate>Tue, 10 Jul 2018 14:56:09 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Reading Note - Asynchronous in jQuery and ECMAScript 6</title><link>http://pengyin-shan.com/posts/2016/JavaScript/reading_note_defer_in_jquery.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h2 id="reference-list"&gt;Reference List&lt;/h2&gt;
 &lt;p&gt;This is a &lt;strong&gt;reading note&lt;/strong&gt; for following articles/blogs:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -15,13 +15,13 @@
 &lt;p&gt;(Chinese) blog of &lt;a href="http://www.cnblogs.com/dojo-lzz/p/5495671.html"&gt;dojo-lzz&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;Promises&lt;/h2&gt;
+&lt;h2 id="promises"&gt;Promises&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;Promises&lt;/code&gt;: a &lt;strong&gt;container&lt;/strong&gt; which contains everything that has been deferred.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;If you are creating a Deferred, keep a reference to the Deferred so that it can be resolved or rejected at some point. Return only the Promise object via deferred.promise() so other code can register callbacks or inspect the current state. - jQuery API&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;A function which returns a promise &lt;strong&gt;will be run&lt;/strong&gt; if the condition in this function is satisfied, no matter if it is a successfully satisfied case or a failure case. i.e. a &lt;strong&gt;fulfilled&lt;/strong&gt; promise can be two states: &lt;code&gt;resolved&lt;/code&gt;(successfully passing data) or &lt;code&gt;rejected&lt;/code&gt; (something is wrong).&lt;/p&gt;
-&lt;h3&gt;promise.then&lt;/h3&gt;
+&lt;h3 id="promisethen"&gt;promise.then&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;them&lt;/code&gt; method is used to handle the case the future result is available (resolved or rejected). It accepts two parameters, which can be functions. One for successful case. One for failed case. Following is the example:&lt;/p&gt;
 &lt;table class="codehilitetable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
 2
@@ -39,7 +39,7 @@
 &lt;/pre&gt;
 &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
-&lt;h3&gt;promise and when method&lt;/h3&gt;
+&lt;h3 id="promise-and-when-method"&gt;promise and when method&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;$.when&lt;/code&gt; is used to perform action after all promises have been satisfied. For example:&lt;/p&gt;
 &lt;table class="codehilitetable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt; 1
  2
@@ -67,10 +67,10 @@
 &lt;/pre&gt;
 &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
-&lt;h3&gt;Promise in ECMAScript 6&lt;/h3&gt;
+&lt;h3 id="promise-in-ecmascript-6"&gt;Promise in ECMAScript 6&lt;/h3&gt;
 &lt;p&gt;&lt;em&gt;Remember to check browser capability before using promise JS object&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;ECMAScript 6 also have &lt;code&gt;Promise&lt;/code&gt; object, which can be used for deferred operations. Similar as promise in jQuery, Promise object in JS has three states: &lt;code&gt;pending&lt;/code&gt; (initial), &lt;code&gt;fulfilled&lt;/code&gt;, &lt;code&gt;rejected&lt;/code&gt;.&lt;/p&gt;
-&lt;h3&gt;Generator in ECMAScript 6&lt;/h3&gt;
+&lt;h3 id="generator-in-ecmascript-6"&gt;Generator in ECMAScript 6&lt;/h3&gt;
 &lt;p&gt;ECMAScript 6 has a &lt;code&gt;Generator&lt;/code&gt; function, which provides possibility of lazy-loading.&lt;/p&gt;
 &lt;p&gt;Generator is a function which generates a Iterator. The iterator iterates every &lt;code&gt;yield&lt;/code&gt; statement insider Generator function and &lt;strong&gt;stop&lt;/strong&gt; on each &lt;code&gt;yield&lt;/code&gt; point. After running &lt;code&gt;.next()&lt;/code&gt; method, iterator will &lt;strong&gt;resume&lt;/strong&gt; from last &lt;code&gt;yield&lt;/code&gt; point.&lt;/p&gt;
 &lt;p&gt;Generator function has a &lt;code&gt;*&lt;/code&gt; in function header, which can be put in any position.&lt;/p&gt;
@@ -95,9 +95,9 @@
 &lt;/pre&gt;
 &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
-&lt;h3&gt;Others&lt;/h3&gt;
+&lt;h3 id="others"&gt;Others&lt;/h3&gt;
 &lt;p&gt;I like following problem when I read a Chinese blog article from&lt;a href="http://www.cnblogs.com/dojo-lzz/p/5495671.html"&gt;dojo-lzz&lt;/a&gt;: if you have red light which is on for every 3 seconds, green light which is on every 1 second and yellow light which is on every 2 seconds, how to make three light switch and on without break? (i.e. red -&amp;gt; green -&amp;gt; yellow -&amp;gt; red -&amp;gt; green -&amp;gt; yellow, etc)&lt;/p&gt;
-&lt;h3&gt;Deferred in jQuery&lt;/h3&gt;
+&lt;h3 id="deferred-in-jquery"&gt;Deferred in jQuery&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;$.Deferred&lt;/code&gt; is used to create new &lt;em&gt;deferred object&lt;/em&gt;. This deferred object can be used to check if a promise is exist or not, or to accept an optional function which needs to have deferring effect.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;A Deferred object starts in the pending state.  - jQuery API&lt;/p&gt;
@@ -174,18 +174,18 @@
 &lt;p&gt;Jasmine has good object-oriented support, making code being modular.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3&gt;Describe&lt;/h3&gt;
+&lt;h3 id="describe"&gt;Describe&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;describe&lt;/code&gt; keyword represents the beginning of a &lt;strong&gt;test suite&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;It takes two parameters: a &lt;code&gt;string&lt;/code&gt; and a &lt;code&gt;function&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;The content of string represents the content of the test suite.&lt;/p&gt;
 &lt;p&gt;There can be nested test suites/nested specs exist.&lt;/p&gt;
-&lt;h3&gt;Specs&lt;/h3&gt;
+&lt;h3 id="specs"&gt;Specs&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;it&lt;/code&gt; keyword represents the beginning of a spec.&lt;/p&gt;
 &lt;p&gt;It takes two parameters: a &lt;code&gt;string&lt;/code&gt; and a &lt;code&gt;function&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;The content of string represents that title/introduction of the spec.&lt;/p&gt;
 &lt;p&gt;A spec contains one or more &lt;code&gt;expectation&lt;/code&gt;s that test the state of the code.&lt;/p&gt;
 &lt;p&gt;A spec with all true expectations is a &lt;code&gt;passing spec&lt;/code&gt;. A spec with one or more false expectations is a &lt;code&gt;failing spec&lt;/code&gt;.&lt;/p&gt;
-&lt;h4&gt;Fail a Spec&lt;/h4&gt;
+&lt;h4 id="fail-a-spec"&gt;Fail a Spec&lt;/h4&gt;
 &lt;p&gt;You can use &lt;code&gt;fail&lt;/code&gt; function to manually fail a spec. This function takes a failure message or a Error object as a parameter:&lt;/p&gt;
 &lt;table class="codehilitetable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt; 1
  2
@@ -213,7 +213,7 @@
 &lt;/pre&gt;
 &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
-&lt;h4&gt;Setups&lt;/h4&gt;
+&lt;h4 id="setups"&gt;Setups&lt;/h4&gt;
 &lt;p&gt;&lt;code&gt;beforeEach&lt;/code&gt;, &lt;code&gt;afterEach&lt;/code&gt;, &lt;code&gt;beforeAll&lt;/code&gt;, &lt;code&gt;afterAll&lt;/code&gt; can be used to setup environment before/after test suites/specs.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;beforeEach&lt;/code&gt; function is called once before &lt;strong&gt;each&lt;/strong&gt; spec run in test suite.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;afterEach&lt;/code&gt; function is called once after &lt;strong&gt;each&lt;/strong&gt; spec run.&lt;/p&gt;
@@ -265,7 +265,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;For nested &lt;code&gt;describe&lt;/code&gt; blocks, before one spec running, &lt;code&gt;beforeEach&lt;/code&gt; function &lt;strong&gt;for all describes&lt;/strong&gt; will be run. Similarly, after one spec running, &lt;code&gt;afterEach&lt;/code&gt; function &lt;strong&gt;for all describes&lt;/strong&gt; will be run.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h5&gt;Use &lt;code&gt;this&lt;/code&gt; in Setup&lt;/h5&gt;
+&lt;h5 id="use-this-in-setup"&gt;Use &lt;code&gt;this&lt;/code&gt; in Setup&lt;/h5&gt;
 &lt;p&gt;&lt;code&gt;this&lt;/code&gt; variable can be shared between &lt;code&gt;beforeEach&lt;/code&gt;, &lt;code&gt;it&lt;/code&gt; and &lt;code&gt;afterEach&lt;/code&gt; function.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;this&lt;/code&gt; will be &lt;strong&gt;reset&lt;/strong&gt; every time a spec run.&lt;/p&gt;
 &lt;p&gt;Example:&lt;/p&gt;
@@ -297,9 +297,9 @@
 &lt;/pre&gt;
 &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
-&lt;h4&gt;Disable Suites and Specs&lt;/h4&gt;
+&lt;h4 id="disable-suites-and-specs"&gt;Disable Suites and Specs&lt;/h4&gt;
 &lt;p&gt;Instead of &lt;code&gt;describe&lt;/code&gt; and &lt;code&gt;it&lt;/code&gt;, you can use &lt;code&gt;xdescribe&lt;/code&gt; and &lt;code&gt;xit&lt;/code&gt; to skip this test suite or spec.&lt;/p&gt;
-&lt;h3&gt;Expectations&lt;/h3&gt;
+&lt;h3 id="expectations"&gt;Expectations&lt;/h3&gt;
 &lt;p&gt;An expectation in Jasmine is an &lt;strong&gt;assertion&lt;/strong&gt; that is either &lt;code&gt;true&lt;/code&gt; or &lt;code&gt;false&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Syntax Example:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;expect&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;a&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;toBe&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
@@ -308,7 +308,7 @@
 
 &lt;p&gt;&lt;code&gt;expect&lt;/code&gt; takes a value, called &lt;code&gt;actual&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;expect&lt;/code&gt; take a &lt;code&gt;matcher function&lt;/code&gt; on second part, which takes the &lt;strong&gt;expected value&lt;/strong&gt;.&lt;/p&gt;
-&lt;h4&gt;Matcher&lt;/h4&gt;
+&lt;h4 id="matcher"&gt;Matcher&lt;/h4&gt;
 &lt;p&gt;You can always add a &lt;code&gt;not&lt;/code&gt; in front of any matcher to turn it to a negative assertion.&lt;/p&gt;
 &lt;p&gt;Example:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;expect&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;a&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;toEqual&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;9&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
@@ -316,7 +316,7 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;List of Matcher&lt;/h4&gt;
+&lt;h4 id="list-of-matcher"&gt;List of Matcher&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;toBe&lt;/code&gt;&lt;/p&gt;
@@ -358,9 +358,9 @@
 &lt;p&gt;&lt;code&gt;toThrowError&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4&gt;Custom Matchers&lt;/h4&gt;
+&lt;h4 id="custom-matchers"&gt;Custom Matchers&lt;/h4&gt;
 &lt;p&gt;A custom matcher at its root is a &lt;strong&gt;comparison function&lt;/strong&gt; that takes an &lt;strong&gt;actual value&lt;/strong&gt; and &lt;strong&gt;expected value&lt;/strong&gt;.&lt;/p&gt;
-&lt;h5&gt;Structure of Custom Matcher&lt;/h5&gt;
+&lt;h5 id="structure-of-custom-matcher"&gt;Structure of Custom Matcher&lt;/h5&gt;
 &lt;p&gt;Create a object, which contains one to many custom matchers.&lt;/p&gt;
 &lt;p&gt;Each custom matcher is a function, which takes &lt;code&gt;util&lt;/code&gt; and &lt;code&gt;customEqualityTesters&lt;/code&gt; as parameters.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;util&lt;/code&gt;: contains a set of &lt;strong&gt;utility functions&lt;/strong&gt; for matchers to use. For example:&lt;/p&gt;
@@ -402,7 +402,7 @@
 &lt;p&gt;You can skip defining result.message. jasmine will try to craft one for your custom matcher.&lt;/p&gt;
 &lt;p&gt;If you have too many negative comparison (&lt;code&gt;.not&lt;/code&gt;), you can add &lt;code&gt;negativeCompare&lt;/code&gt; function alongside &lt;code&gt;compare&lt;/code&gt;, using similar structure to include all &lt;code&gt;.not&lt;/code&gt; methods.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h5&gt;How to Use Custom Matcher&lt;/h5&gt;
+&lt;h5 id="how-to-use-custom-matcher"&gt;How to Use Custom Matcher&lt;/h5&gt;
 &lt;p&gt;You should register you custom matchers in &lt;code&gt;beforeEach&lt;/code&gt; block, using a function &lt;code&gt;jasmine.addMatchers&lt;/code&gt;:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;beforeEach&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="c1"&gt;//You can get all matcher methods in customMatchers&lt;/span&gt;
@@ -418,13 +418,13 @@
 &lt;/pre&gt;
 
 
-&lt;h3&gt;Spy&lt;/h3&gt;
+&lt;h3 id="spy"&gt;Spy&lt;/h3&gt;
 &lt;p&gt;A &lt;code&gt;spy&lt;/code&gt; can stub any function and tracks calls to it and all arguments.&lt;/p&gt;
 &lt;p&gt;A spy only exists in the &lt;code&gt;describe&lt;/code&gt; or &lt;code&gt;it&lt;/code&gt; block it is defined, and will be &lt;strong&gt;removed&lt;/strong&gt; after each spec.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;When you put spy &lt;code&gt;spyOn()&lt;/code&gt; in &lt;code&gt;beforeEach()&lt;/code&gt; block, based on how &lt;code&gt;beforeEach()&lt;/code&gt; work, your spy call will be called before each spec function run.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4&gt;toHaveBeenCalled and toHaveBeenCalledWith&lt;/h4&gt;
+&lt;h4 id="tohavebeencalled-and-tohavebeencalledwith"&gt;toHaveBeenCalled and toHaveBeenCalledWith&lt;/h4&gt;
 &lt;p&gt;&lt;code&gt;toHaveBeenCalled&lt;/code&gt; will return &lt;code&gt;true&lt;/code&gt; if the spy was called.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;toHaveBeenCalledWith&lt;/code&gt; will return &lt;code&gt;true&lt;/code&gt; if the argument list matches any of the &lt;strong&gt;recorded calls&lt;/strong&gt; to the spy.&lt;/p&gt;
 &lt;p&gt;Example:&lt;/p&gt;
@@ -456,19 +456,19 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;callThrough&lt;/h4&gt;
+&lt;h4 id="callthrough"&gt;callThrough&lt;/h4&gt;
 &lt;p&gt;You can add &lt;code&gt;and.callThrough()&lt;/code&gt; after spy function to make sure spy will &lt;strong&gt;track all spec calls&lt;/strong&gt;, instead of being removed after each spec call:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;spyOn&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;foo&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'getBar'&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;and&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;callThrough&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
 &lt;/pre&gt;
 
 
-&lt;h4&gt;returnValue&lt;/h4&gt;
+&lt;h4 id="returnvalue"&gt;returnValue&lt;/h4&gt;
 &lt;p&gt;You can add &lt;code&gt;and.returnValue(value)&lt;/code&gt; after spy function to make sure your desired call in spy function will return a value:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;spyOn&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;foo&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;"getBar"&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;and&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;returnValue&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;745&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;//getBar method for foo object will return value `745`&lt;/span&gt;
 &lt;/pre&gt;
 
 
-&lt;h4&gt;callFake&lt;/h4&gt;
+&lt;h4 id="callfake"&gt;callFake&lt;/h4&gt;
 &lt;p&gt;You can add &lt;code&gt;and.callFake(function(){})&lt;/code&gt; to create a fake function which can replace the content of your spied function:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;  &lt;span class="nx"&gt;describe&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"A spy, when configured with an alternate implementation"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
   &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;foo&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;bar&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;fetchedBar&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
@@ -503,7 +503,7 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;stub&lt;/h4&gt;
+&lt;h4 id="stub"&gt;stub&lt;/h4&gt;
 &lt;p&gt;To remember the state of any spy calling method above, use &lt;code&gt;and.stub()&lt;/code&gt; to get the original stubbing behavior:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;describe&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"A spy"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
   &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;foo&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;bar&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;null&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
@@ -529,7 +529,7 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Tracking Properties&lt;/h4&gt;
+&lt;h4 id="tracking-properties"&gt;Tracking Properties&lt;/h4&gt;
 &lt;p&gt;After you having &lt;code&gt;spayOn(obj, spied_method)&lt;/code&gt;, following tracking properties can be used when you call the spied method in &lt;code&gt;expect&lt;/code&gt;:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -582,8 +582,8 @@
 &lt;p&gt;&lt;code&gt;.calls.reset()&lt;/code&gt;: clears all tracking for a spy&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4&gt;jasmine method&lt;/h4&gt;
-&lt;h5&gt;createSpy&lt;/h5&gt;
+&lt;h4 id="jasmine-method"&gt;jasmine method&lt;/h4&gt;
+&lt;h5 id="createspy"&gt;createSpy&lt;/h5&gt;
 &lt;p&gt;&lt;code&gt;jasmine.createSpy()&lt;/code&gt; is a function with &lt;strong&gt;no implementation&lt;/strong&gt;. It acts as other spies:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;whatAmI&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="nx"&gt;beforeEach&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
@@ -595,7 +595,7 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;createSpyObj&lt;/h5&gt;
+&lt;h5 id="createspyobj"&gt;createSpyObj&lt;/h5&gt;
 &lt;p&gt;Similar as above, &lt;code&gt;jasmine.createSpyObj&lt;/code&gt; accept an &lt;strong&gt;array of strings&lt;/strong&gt;, and return a object that has a &lt;strong&gt;property&lt;/strong&gt; for each string of the spy:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;tape&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
  &lt;span class="nx"&gt;beforeEach&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
@@ -607,9 +607,9 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;anything&lt;/h5&gt;
+&lt;h5 id="anything"&gt;anything&lt;/h5&gt;
 &lt;p&gt;&lt;code&gt;jasmine.anything&lt;/code&gt; returns &lt;code&gt;true&lt;/code&gt; if the actual value is &lt;strong&gt;not&lt;/strong&gt; &lt;code&gt;null&lt;/code&gt; or &lt;code&gt;undefined&lt;/code&gt;: &lt;code&gt;expect(1).toEqual(jasmine.anything());&lt;/code&gt;&lt;/p&gt;
-&lt;h5&gt;objectContaining&lt;/h5&gt;
+&lt;h5 id="objectcontaining"&gt;objectContaining&lt;/h5&gt;
 &lt;p&gt;&lt;code&gt;jasmine.objectContaining&lt;/code&gt; tests objects with &lt;strong&gt;key-value&lt;/strong&gt; pairs:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;  &lt;span class="nx"&gt;describe&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"jasmine.objectContaining"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
   &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;foo&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
@@ -631,7 +631,7 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;arrayContaining&lt;/h5&gt;
+&lt;h5 id="arraycontaining"&gt;arrayContaining&lt;/h5&gt;
 &lt;p&gt;&lt;code&gt;jasmine.arrayContaining&lt;/code&gt; test objects with &lt;strong&gt;values in array&lt;/strong&gt;:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;  &lt;span class="nx"&gt;beforeEach&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="nx"&gt;foo&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;];&lt;/span&gt;
@@ -643,7 +643,7 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;stringMatching&lt;/h5&gt;
+&lt;h5 id="stringmatching"&gt;stringMatching&lt;/h5&gt;
 &lt;p&gt;&lt;code&gt;jasmine.stringMatching()&lt;/code&gt; test if you want match &lt;strong&gt;a string in a object&lt;/strong&gt; or &lt;strong&gt;regular expression&lt;/strong&gt; pattern:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;describe&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'jasmine.stringMatching'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
   &lt;span class="nx"&gt;it&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"matches as a regexp"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
@@ -653,7 +653,7 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Custom Equality Tester&lt;/h4&gt;
+&lt;h4 id="custom-equality-tester"&gt;Custom Equality Tester&lt;/h4&gt;
 &lt;p&gt;You can create your own equality tester for your test criteria, using &lt;code&gt;asymmetricMatch&lt;/code&gt; function name:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;  &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;tester&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="c1"&gt;//Use asymmetricMatch as function. No returns&lt;/span&gt;
@@ -668,11 +668,11 @@
 &lt;/pre&gt;
 
 
-&lt;h3&gt;Clock&lt;/h3&gt;
+&lt;h3 id="clock"&gt;Clock&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;jasmine.clock().install()&lt;/code&gt; can be used to setup time dependent testing. To do this, you can put &lt;code&gt;jasmine.clock().install&lt;/code&gt; in &lt;code&gt;beforeEach()&lt;/code&gt; block and &lt;code&gt;jasmine.clock().uninstall()&lt;/code&gt; in &lt;code&gt;afterEach()&lt;/code&gt; block.&lt;/p&gt;
-&lt;h4&gt;Timeout&lt;/h4&gt;
+&lt;h4 id="timeout"&gt;Timeout&lt;/h4&gt;
 &lt;p&gt;Use &lt;code&gt;jasmine.clock().tick(milliseconds)&lt;/code&gt; function to simulate timeout in JavaScript: &lt;code&gt;jasmine.clock().tick(1000)&lt;/code&gt;;&lt;/p&gt;
-&lt;h4&gt;Date&lt;/h4&gt;
+&lt;h4 id="date"&gt;Date&lt;/h4&gt;
 &lt;p&gt;You can create a &lt;code&gt;Date&lt;/code&gt; object in JavaScript, then use &lt;code&gt;jasmine.clock().mockDate(date_object)&lt;/code&gt; to simulate date:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;baseTime&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nb"&gt;Date&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2014&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;9&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;23&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 &lt;span class="nx"&gt;jasmine&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;clock&lt;/span&gt;&lt;span class="p"&gt;().&lt;/span&gt;&lt;span class="nx"&gt;mockDate&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;baseTime&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
@@ -682,10 +682,10 @@
 &lt;blockquote&gt;
 &lt;p&gt;If you don't provide a time object, jasmine will use current Date.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3&gt;Ajax&lt;/h3&gt;
+&lt;h3 id="ajax"&gt;Ajax&lt;/h3&gt;
 &lt;p&gt;You need to include &lt;code&gt;mock-ajax.js&lt;/code&gt; from &lt;a href="https://github.com/jasmine/jasmine-ajax"&gt;here&lt;/a&gt; to test Ajax using jasmine.&lt;/p&gt;
 &lt;p&gt;Make sure you have &lt;code&gt;jasmine.Ajax.install()&lt;/code&gt; in &lt;code&gt;beforeEach()&lt;/code&gt; block and &lt;code&gt;jasmine.Ajax.uninstall()&lt;/code&gt; in &lt;code&gt;afterEach()&lt;/code&gt; to install and uninstall jasmine-ajax.&lt;/p&gt;
-&lt;h4&gt;Define Mock Response&lt;/h4&gt;
+&lt;h4 id="define-mock-response"&gt;Define Mock Response&lt;/h4&gt;
 &lt;p&gt;You may want to define a mock response to test your Ajax call response. A good place to define this is in &lt;code&gt;spec/javascripts/helpers/test_responses&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Example:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;TestResponses&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
@@ -700,7 +700,7 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Trigger Request&lt;/h4&gt;
+&lt;h4 id="trigger-request"&gt;Trigger Request&lt;/h4&gt;
 &lt;p&gt;You need to trigger request before you test your Ajax response. You can set a function call, such as:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;  &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;xhr&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nx"&gt;XMLHttpRequest&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
   &lt;span class="nx"&gt;xhr&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;onreadystatechange&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;args&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
@@ -732,7 +732,7 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Set Response&lt;/h4&gt;
+&lt;h4 id="set-response"&gt;Set Response&lt;/h4&gt;
 &lt;p&gt;Use &lt;code&gt;.respondWith()&lt;/code&gt; to set response. You need to tell jasmine which response you want to test. For example, based on the code in &lt;strong&gt;Define Mock Response&lt;/strong&gt; part, you can test &lt;code&gt;success&lt;/code&gt; response:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;  &lt;span class="nx"&gt;describe&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"on success"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
   &lt;span class="nx"&gt;beforeEach&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
@@ -751,7 +751,7 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Full Steps&lt;/h4&gt;
+&lt;h4 id="full-steps"&gt;Full Steps&lt;/h4&gt;
 &lt;p&gt;After these step, you can create &lt;code&gt;it&lt;/code&gt; blocks to test your Ajax call. Here is a full example for &lt;code&gt;post&lt;/code&gt; from jasmine-ajax Github repo:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;  &lt;span class="nx"&gt;describe&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"FoursquareVenueSearch"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
   &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;foursquare&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;request&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
@@ -786,7 +786,7 @@
 
 
 &lt;p&gt;Other &lt;code&gt;get&lt;/code&gt; Ajax call examples can be found on &lt;a href="http://jasmine.github.io/2.3/ajax.html"&gt;jasmine website&lt;/a&gt;.&lt;/p&gt;
-&lt;h3&gt;Jasmine-jQuery&lt;/h3&gt;
+&lt;h3 id="jasmine-jquery"&gt;Jasmine-jQuery&lt;/h3&gt;
 &lt;p&gt;&lt;a href="https://github.com/velesin/jasmine-jquery"&gt;jasmine-jquery&lt;/a&gt; is great to combine Jasmine with jQuery. It provides:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -796,24 +796,24 @@
 &lt;p&gt;an API for handling HTML, CSS, and JSON fixtures in your specs&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4&gt;Custom Matcher&lt;/h4&gt;
+&lt;h4 id="custom-matcher"&gt;Custom Matcher&lt;/h4&gt;
 &lt;p&gt;You can find a list of useful custom matchers, such as &lt;code&gt;toBeCheck()&lt;/code&gt; or &lt;code&gt;toBeSelected()&lt;/code&gt; &lt;a href="https://github.com/velesin/jasmine-jquery"&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;h4&gt;HTML Fixture&lt;/h4&gt;
+&lt;h4 id="html-fixture"&gt;HTML Fixture&lt;/h4&gt;
 &lt;p&gt;I'm still trying to figure out the best practice to apply HTML Fixture for my working project. HTML Fixture can be used to load HTML content to be used by your tests.&lt;/p&gt;
 &lt;p&gt;You can find more detailed information about HTML Fixture &lt;a href="https://github.com/velesin/jasmine-jquery"&gt;here&lt;/a&gt;. For most of my working projects, I need to limit the complexity of all my JavaScript test. Also, instead of &lt;code&gt;html&lt;/code&gt;, my work is more involved in &lt;code&gt;jsp&lt;/code&gt;, which is really hard to be transferred to pure HTML code for fixture content. Personally I prefer not to write too many fixtures for to simplify my test.&lt;/p&gt;
-&lt;p&gt;I'll continue to research for the best practice of using HTML Fixture.&lt;/p&gt;&lt;/div&gt;</description><category>Jasmine</category><category>JavaScript</category><category>jQuery</category><category>Software Testing</category><guid>http://pengyin-shan.com/posts/2015/JavaScript/jasmine-basics.html</guid><pubDate>Tue, 25 Aug 2015 07:00:00 GMT</pubDate></item><item><title>JavaScript Tips</title><link>http://pengyin-shan.com/posts/2015/JavaScript/javascript-tips.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3&gt;JavaScript String&lt;/h3&gt;
-&lt;h4&gt;Substring&lt;/h4&gt;
+&lt;p&gt;I'll continue to research for the best practice of using HTML Fixture.&lt;/p&gt;&lt;/div&gt;</description><category>Jasmine</category><category>JavaScript</category><category>jQuery</category><category>Software Testing</category><guid>http://pengyin-shan.com/posts/2015/JavaScript/jasmine-basics.html</guid><pubDate>Tue, 25 Aug 2015 07:00:00 GMT</pubDate></item><item><title>JavaScript Tips</title><link>http://pengyin-shan.com/posts/2015/JavaScript/javascript-tips.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3 id="javascript-string"&gt;JavaScript String&lt;/h3&gt;
+&lt;h4 id="substring"&gt;Substring&lt;/h4&gt;
 &lt;p&gt;There are two ways in JavaScript to get substring:&lt;/p&gt;
-&lt;h5&gt;&lt;code&gt;substr(StartIndex, Length)&lt;/code&gt;:&lt;/h5&gt;
+&lt;h5 id="substrstartindex-length"&gt;&lt;code&gt;substr(StartIndex, Length)&lt;/code&gt;:&lt;/h5&gt;
 &lt;p&gt;Takes two parameter: &lt;strong&gt;StartIndex&lt;/strong&gt; and &lt;strong&gt;Length of Substring (Optional)&lt;/strong&gt;&lt;/p&gt;
-&lt;h5&gt;&lt;code&gt;substring(StartIndex, EndIndex)&lt;/code&gt;&lt;/h5&gt;
+&lt;h5 id="substringstartindex-endindex"&gt;&lt;code&gt;substring(StartIndex, EndIndex)&lt;/code&gt;&lt;/h5&gt;
 &lt;p&gt;Takes two parameter: &lt;strong&gt;StartIndex (inclusive)&lt;/strong&gt; and &lt;strong&gt;EndIndex (exclusive)&lt;/strong&gt;. EndIndex is optional.&lt;/p&gt;
 &lt;p&gt;If "start" is greater than "end", this method will swap the two arguments, meaning str.substring(1,4) == str.substring(4,1).&lt;/p&gt;
 &lt;p&gt;If either "start" or "stop" is less than 0, it is treated as if it were 0.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Note: Both methods do not change the original string.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h5&gt;Special Cases&lt;/h5&gt;
+&lt;h5 id="special-cases"&gt;Special Cases&lt;/h5&gt;
 &lt;p&gt;The two methods above have difference usage for following spceial cases:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Negative Value&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;substr()&lt;/code&gt; and &lt;code&gt;substring()&lt;/code&gt; can both take negative value parameters as &lt;code&gt;StartIndex&lt;/code&gt;, which means starting to count from end of string.&lt;/p&gt;
@@ -826,8 +826,8 @@
 &lt;blockquote&gt;
 &lt;p&gt;Remember you substring has same sequence as original string. It's not reversed.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3&gt;JavaScript KeyCode and Related Information&lt;/h3&gt;
-&lt;h4&gt;Two Way of Event Binding&lt;/h4&gt;
+&lt;h3 id="javascript-keycode-and-related-information"&gt;JavaScript KeyCode and Related Information&lt;/h3&gt;
+&lt;h4 id="two-way-of-event-binding"&gt;Two Way of Event Binding&lt;/h4&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'#inputbox_id'&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;bind&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'input'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;event&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
     &lt;span class="c1"&gt;//event.keyCode...&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
@@ -840,7 +840,7 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Common KeyCode&lt;/h4&gt;
+&lt;h4 id="common-keycode"&gt;Common KeyCode&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;Delete&lt;/code&gt;:46&lt;/p&gt;
@@ -856,8 +856,8 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;You can refer this &lt;a href="http://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes"&gt;cheatsheet&lt;/a&gt; for more keycode information.&lt;/p&gt;
-&lt;h4&gt;Special Cases&lt;/h4&gt;
-&lt;p&gt;From &lt;a href="http://stackoverflow.com/questions/4084715/javascript-e-keycode-doesnt-catch-backspace-del-in-ie"&gt;this stackflow post&lt;/a&gt;, IE doesn't fire &lt;strong&gt;keypress&lt;/strong&gt; event for delete, end, enter, escape, function keys, home, insert, pageUp/Down and tab. So use &lt;strong&gt;keydown&lt;/strong&gt; or &lt;strong&gt;keyup&lt;/strong&gt; instead.&lt;/p&gt;&lt;/div&gt;</description><category>JavaScript</category><category>jQuery</category><guid>http://pengyin-shan.com/posts/2015/JavaScript/javascript-tips.html</guid><pubDate>Mon, 17 Aug 2015 07:00:00 GMT</pubDate></item><item><title>Possible Ajax Error Code and Reasons</title><link>http://pengyin-shan.com/posts/2015/JavaScript/possible-ajax-error-code-and-reasons.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3&gt;400 (Bad Request)&lt;/h3&gt;
+&lt;h4 id="special-cases_1"&gt;Special Cases&lt;/h4&gt;
+&lt;p&gt;From &lt;a href="http://stackoverflow.com/questions/4084715/javascript-e-keycode-doesnt-catch-backspace-del-in-ie"&gt;this stackflow post&lt;/a&gt;, IE doesn't fire &lt;strong&gt;keypress&lt;/strong&gt; event for delete, end, enter, escape, function keys, home, insert, pageUp/Down and tab. So use &lt;strong&gt;keydown&lt;/strong&gt; or &lt;strong&gt;keyup&lt;/strong&gt; instead.&lt;/p&gt;&lt;/div&gt;</description><category>JavaScript</category><category>jQuery</category><guid>http://pengyin-shan.com/posts/2015/JavaScript/javascript-tips.html</guid><pubDate>Mon, 17 Aug 2015 07:00:00 GMT</pubDate></item><item><title>Possible Ajax Error Code and Reasons</title><link>http://pengyin-shan.com/posts/2015/JavaScript/possible-ajax-error-code-and-reasons.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3 id="400-bad-request"&gt;400 (Bad Request)&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;In jQuery, no &lt;code&gt;JSON.stringify()&lt;/code&gt; is used to parse JavaScript object to JSON object&lt;/p&gt;
@@ -866,11 +866,11 @@
 &lt;p&gt;Use &lt;code&gt;$.ajax()&lt;/code&gt; but doesn't include &lt;code&gt;type: "GET/POST/etc"&lt;/code&gt; in AJAX body&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;406 (Not Acceptable Response)&lt;/h3&gt;
+&lt;h3 id="406-not-acceptable-response"&gt;406 (Not Acceptable Response)&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Check your authority setting. One of my Spring MVC project has requirement:  user group 1 can only access sub-URL of &lt;code&gt;/test/user1&lt;/code&gt;. So if I make a URL mapping to &lt;code&gt;/test/&lt;/code&gt;, AJAX call will fail and give me a &lt;code&gt;406&lt;/code&gt; error&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;404 (Not Found Errors)&lt;/h3&gt;
+&lt;h3 id="404-not-found-errors"&gt;404 (Not Found Errors)&lt;/h3&gt;
 &lt;p&gt;Very common error. Can have different reasons:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -880,7 +880,7 @@
 &lt;p&gt;In Spring MVC, no &lt;code&gt;@ResponseBody&lt;/code&gt; or &lt;code&gt;@RequestBody&lt;/code&gt; is added in controller. For example: &lt;code&gt;public @ResponseBody String test(@RequestBody final String id)&lt;/code&gt; is good. But &lt;code&gt;public String test(@RequestBody final String id)&lt;/code&gt; can generate a 404 error in client side.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;No response (Back-end finsih processing but front-end give no response)&lt;/h3&gt;
+&lt;h3 id="no-response-back-end-finsih-processing-but-front-end-give-no-response"&gt;No response (Back-end finsih processing but front-end give no response)&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Check your jQuery version and check if you are using &lt;code&gt;$.ajax({done: function(data../){}, fail: function(jqXHR...){}});&lt;/code&gt;. If so, try to check your jQuery to later version, or replace with &lt;code&gt;$.ajax({success: function(data...){}, error: function(jqXHR...) })&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/div&gt;</description><category>Ajax</category><category>Java</category><category>jQuery</category><category>JSON</category><category>Spring MVC</category><guid>http://pengyin-shan.com/posts/2015/JavaScript/possible-ajax-error-code-and-reasons.html</guid><pubDate>Thu, 13 Aug 2015 07:00:00 GMT</pubDate></item><item><title>Ajax and Java Servlet</title><link>http://pengyin-shan.com/posts/2015/Java/ajax-and-java-servlet.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;I was working on an old Java web application today. This java web app used to pass data by using URL parameter, and I wanted to change it to passing data by using AJAX with JSON object, since there will be more data being passed in the future.&lt;/p&gt;
@@ -894,7 +894,7 @@
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;So, if you have a JSP/Servlet Java web app and you want to use AJAX with JSON object, you have to write code in three places:&lt;/p&gt;
-&lt;h4&gt;1. JSP with jQuery&lt;/h4&gt;
+&lt;h4 id="1-jsp-with-jquery"&gt;1. JSP with jQuery&lt;/h4&gt;
 &lt;p&gt;You want to have &lt;code&gt;jQuery&lt;/code&gt; library in your JSP file to make sure you can use AJAX.&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;ajax&lt;/span&gt;&lt;span class="p"&gt;({&lt;/span&gt;
         &lt;span class="nx"&gt;type&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"POST"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
@@ -931,13 +931,13 @@
 &lt;blockquote&gt;
 &lt;p&gt;In the code above, &lt;code&gt;contentType&lt;/code&gt; and &lt;code&gt;dataType&lt;/code&gt; (and &lt;code&gt;mimeType&lt;/code&gt; if exists) is very important because wrong value of these attributes can give you a &lt;code&gt;404&lt;/code&gt; or &lt;code&gt;500&lt;/code&gt; error.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h5&gt;contentType&lt;/h5&gt;
+&lt;h5 id="contenttype"&gt;contentType&lt;/h5&gt;
 &lt;p&gt;Default value: &lt;code&gt;application/x-www-form-urlencoded; charset=UTF-8&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;This is the data type &lt;strong&gt;when you send data to server&lt;/strong&gt;.&lt;/p&gt;
-&lt;h5&gt;dataType&lt;/h5&gt;
+&lt;h5 id="datatype"&gt;dataType&lt;/h5&gt;
 &lt;p&gt;Default value: Guess(&lt;code&gt;xml&lt;/code&gt;, &lt;code&gt;json&lt;/code&gt;, &lt;code&gt;script&lt;/code&gt;, &lt;code&gt;html&lt;/code&gt;)&lt;/p&gt;
 &lt;p&gt;This is the data type &lt;strong&gt;when server pass data back to you&lt;/strong&gt;.&lt;/p&gt;
-&lt;h5&gt;mimeType&lt;/h5&gt;
+&lt;h5 id="mimetype"&gt;mimeType&lt;/h5&gt;
 &lt;p&gt;A mime type to override the XHR mime type. This is the data type &lt;strong&gt;when server pass data back to you&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Form Mozilla, MIME types describe the media type of content either in email or served by web servers or web applications.&lt;/p&gt;
 &lt;p&gt;MIME types are intended to help guide a web browser in &lt;em&gt;how the content is to be processed and displayed&lt;/em&gt;. Examples of MIME types are:&lt;/p&gt;
@@ -949,7 +949,7 @@
 &lt;li&gt;&lt;code&gt;application/pdf&lt;/code&gt; for Adobe® PDF documents.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;So if you want you browser to access data like &lt;code&gt;xml&lt;/code&gt;, &lt;code&gt;json&lt;/code&gt;, &lt;code&gt;script&lt;/code&gt; or &lt;code&gt;html&lt;/code&gt;, &lt;code&gt;dataType&lt;/code&gt; is good enough. However, if you want to let your browser detect PDF file or other data types, you need to set &lt;code&gt;mimeType&lt;/code&gt;.&lt;/p&gt;
-&lt;h4&gt;2. web.xml&lt;/h4&gt;
+&lt;h4 id="2-webxml"&gt;2. web.xml&lt;/h4&gt;
 &lt;blockquote&gt;
 &lt;p&gt;After working with Spring MVC for a while, I realizae I can forget web.xml easily. Make sure you register your servlet in web.xml.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -969,7 +969,7 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;3. Servlet&lt;/h4&gt;
+&lt;h4 id="3-servlet"&gt;3. Servlet&lt;/h4&gt;
 &lt;p&gt;If you pass JSON object to your servlet, you may want to use &lt;code&gt;org.json&lt;/code&gt;, &lt;code&gt;com.fasterxml.jackson&lt;/code&gt; or &lt;code&gt;gson&lt;/code&gt; external library to help you dealing with JSON object in Java.&lt;/p&gt;
 &lt;p&gt;Example code for post operation:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;//You want your class extends HttpServlet&lt;/span&gt;
@@ -999,11 +999,11 @@
 
 
 &lt;p&gt;This post will be udpated when I learned more about AJAX in my work experience.&lt;/p&gt;
-&lt;h4&gt;Tips&lt;/h4&gt;
-&lt;h5&gt;org.apache.catalina.LifecycleException: Failed to start component&lt;/h5&gt;
+&lt;h4 id="tips"&gt;Tips&lt;/h4&gt;
+&lt;h5 id="orgapachecatalinalifecycleexception-failed-to-start-component"&gt;org.apache.catalina.LifecycleException: Failed to start component&lt;/h5&gt;
 &lt;p&gt;If you include &lt;code&gt;org.json&lt;/code&gt; jar file in your project, and you encourter &lt;code&gt;org.apache.catalina.LifecycleException: Failed to start component&lt;/code&gt; exception when you try to deploy to Tomcat:&lt;/p&gt;
 &lt;p&gt;Make sure you add your jar files to &lt;code&gt;Web Deployment Assebly&lt;/code&gt; in your project properies. Following &lt;a href="http://stackoverflow.com/questions/16362302/java-servlet-error-with-jsonobject"&gt;this post&lt;/a&gt; and you will be fine.&lt;/p&gt;&lt;/div&gt;</description><category>Ajax</category><category>Java</category><category>jQuery</category><category>Servlet</category><guid>http://pengyin-shan.com/posts/2015/Java/ajax-and-java-servlet.html</guid><pubDate>Mon, 03 Aug 2015 07:00:00 GMT</pubDate></item><item><title>JavaScript Object and JSON</title><link>http://pengyin-shan.com/posts/2015/JavaScript/javascript-object-and-json.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;Full information about following notes is on &lt;a href="http://www.w3schools.com/js/js_objects.asp"&gt;www3school&lt;/a&gt;.&lt;/p&gt;
-&lt;h3&gt;JavaScript Object&lt;/h3&gt;
+&lt;h3 id="javascript-object"&gt;JavaScript Object&lt;/h3&gt;
 &lt;p&gt;A JavaScript is wrapped by &lt;code&gt;{}&lt;/code&gt; or created by &lt;code&gt;new&lt;/code&gt;. Components inside are like &lt;em&gt;key:value&lt;/em&gt; pairs.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;i.e. JavaScript objects are containers for named values.&lt;/p&gt;
@@ -1021,7 +1021,7 @@
 
 
 &lt;p&gt;Each JavaScript has &lt;strong&gt;properties&lt;/strong&gt; and &lt;strong&gt;methods&lt;/strong&gt;.&lt;/p&gt;
-&lt;h4&gt;Properties&lt;/h4&gt;
+&lt;h4 id="properties"&gt;Properties&lt;/h4&gt;
 &lt;p&gt;In the example above, &lt;code&gt;type&lt;/code&gt;, &lt;code&gt;model&lt;/code&gt; and &lt;code&gt;color&lt;/code&gt; are properties. You can access properties by using &lt;code&gt;object_name.property_name&lt;/code&gt; to get value of certain property.&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;car&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;type&lt;/span&gt; &lt;span class="c1"&gt;//'Fiat'&lt;/span&gt;
 &lt;span class="c1"&gt;//Or&lt;/span&gt;
@@ -1030,7 +1030,7 @@
 
 
 &lt;p&gt;A JavaScript object has two build-in properties: &lt;code&gt;length&lt;/code&gt; and &lt;code&gt;prototype&lt;/code&gt;&lt;/p&gt;
-&lt;h4&gt;Methods&lt;/h4&gt;
+&lt;h4 id="methods"&gt;Methods&lt;/h4&gt;
 &lt;p&gt;You can create methods in a JavaScript object. In code above, &lt;code&gt;butcar&lt;/code&gt; is a method. A method can be defined by a function.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;A method may or may not have parameters
@@ -1041,7 +1041,7 @@ A method may or may not have return values&lt;/p&gt;
 
 
 &lt;p&gt;A JavaScript object has a list of build-in method. You can view them &lt;a href="http://www.tutorialspoint.com/javascript/javascript_builtin_functions.htm"&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;h4&gt;Tips&lt;/h4&gt;
+&lt;h4 id="tips"&gt;Tips&lt;/h4&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;To change JSON to JavaScript object, you can use &lt;code&gt;JSON.parse(json_object)&lt;/code&gt; or jQuery method: &lt;code&gt;$.parseJSON(json_object)&lt;/code&gt;&lt;/p&gt;
@@ -1050,7 +1050,7 @@ A method may or may not have return values&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;String&lt;/code&gt;, &lt;code&gt;Number&lt;/code&gt; and &lt;code&gt;Boolean&lt;/code&gt; should not be declared as objects, which means code like &lt;code&gt;var x = new String()&lt;/code&gt; is not recommended.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3&gt;JSON&lt;/h3&gt;
+&lt;h3 id="json"&gt;JSON&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;JSON&lt;/strong&gt; means &lt;strong&gt;JavaScript Object Notation&lt;/strong&gt;. It has following rules:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -1080,13 +1080,13 @@ A method may or may not have return values&lt;/p&gt;
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Tips&lt;/h4&gt;
+&lt;h4 id="tips_1"&gt;Tips&lt;/h4&gt;
 &lt;ol&gt;
 &lt;li&gt;To change a JavaScript objec to JSON, using &lt;code&gt;JSON.stringify(js_object)&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;&lt;/div&gt;</description><category>JavaScript</category><category>jQuery</category><guid>http://pengyin-shan.com/posts/2015/JavaScript/javascript-object-and-json.html</guid><pubDate>Fri, 10 Jul 2015 07:00:00 GMT</pubDate></item><item><title>Collection of Tips for Creating/Controlling Dropdown on Web Page</title><link>http://pengyin-shan.com/posts/2015/JavaScript/create-controll-dropdown.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;In my job, I always counter problem of creating dropdowns for web development project. Sometimes I can use Bootstrap, jQuery. Sometimes I have to use pure JavaScript. I also need to perform control options to dropdowns ocationally.&lt;/p&gt;
 &lt;p&gt;I want to write this post to record all ways and tips for creating dropdown, for future reference.&lt;/p&gt;
-&lt;h2&gt;Pure JavaScript&lt;/h2&gt;
-&lt;h3&gt;Simpliest Dropdown Option&lt;/h3&gt;
+&lt;h2 id="pure-javascript"&gt;Pure JavaScript&lt;/h2&gt;
+&lt;h3 id="simpliest-dropdown-option"&gt;Simpliest Dropdown Option&lt;/h3&gt;
 &lt;p&gt;The simplest dropdown is just created by &lt;code&gt;&amp;lt;select&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;option&amp;gt;&lt;/code&gt; tag. Usually you wrap a few &lt;code&gt;&amp;lt;option&amp;gt;&lt;/code&gt; blocks in a &lt;code&gt;&amp;lt;select&amp;gt;&lt;/code&gt; block.&lt;/p&gt;
 &lt;p&gt;For each &lt;code&gt;&amp;lt;option&amp;gt;&lt;/code&gt;, You can assign &lt;code&gt;value&lt;/code&gt; attribute to it. There are other attributes such as &lt;code&gt;selected&lt;/code&gt; or &lt;code&gt;label&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;For &lt;code&gt;&amp;lt;select&amp;gt;&lt;/code&gt;, you can also set attributes such as &lt;code&gt;size&lt;/code&gt; or &lt;code&gt;name&lt;/code&gt;.&lt;/p&gt;
@@ -1102,9 +1102,9 @@ A method may or may not have return values&lt;/p&gt;
 &lt;/pre&gt;
 
 
-&lt;h3&gt;Dropdown Menu (One or Multiple Level)&lt;/h3&gt;
+&lt;h3 id="dropdown-menu-one-or-multiple-level"&gt;Dropdown Menu (One or Multiple Level)&lt;/h3&gt;
 &lt;p&gt;I found this &lt;a href="http://javascript-array.com/scripts/simple_drop_down_menu/#"&gt;post&lt;/a&gt; and this &lt;a href="http://javascript-array.com/scripts/multi_level_drop_down_menu/?st"&gt;post&lt;/a&gt; from &lt;a href="http://javascript-array.com/"&gt;JavaScript Array&lt;/a&gt; website are very classical. I've tested them and I highly recommend using them for pure dropdown menu.&lt;/p&gt;
-&lt;h4&gt;Single Level&lt;/h4&gt;
+&lt;h4 id="single-level"&gt;Single Level&lt;/h4&gt;
 &lt;p&gt;I have read through the code. Here are my explanations. You are free to add font or hover effects in real world.&lt;/p&gt;
 &lt;p&gt;HTML Structure:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c"&gt;&amp;lt;!--Container of Many First Level Menus--&amp;gt;&lt;/span&gt;
@@ -1233,17 +1233,17 @@ A method may or may not have return values&lt;/p&gt;
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Mutiple Level&lt;/h4&gt;
-&lt;h2&gt;With jQuery&lt;/h2&gt;
+&lt;h4 id="mutiple-level"&gt;Mutiple Level&lt;/h4&gt;
+&lt;h2 id="with-jquery"&gt;With jQuery&lt;/h2&gt;
 &lt;p&gt;update coming soon...&lt;/p&gt;
-&lt;h2&gt;With Bootstrap3 and jQuery&lt;/h2&gt;
+&lt;h2 id="with-bootstrap3-and-jquery"&gt;With Bootstrap3 and jQuery&lt;/h2&gt;
 &lt;p&gt;update coming soon...&lt;/p&gt;&lt;/div&gt;</description><category>Bootstrap3</category><category>CSS</category><category>Dropdown</category><category>HTML5</category><category>JavaScript</category><category>jQuery</category><guid>http://pengyin-shan.com/posts/2015/JavaScript/create-controll-dropdown.html</guid><pubDate>Thu, 04 Jun 2015 07:00:00 GMT</pubDate></item><item><title>Ajax and Spring MVC Controller</title><link>http://pengyin-shan.com/posts/2015/Java/ajax-and-spring-mvc-controller.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;Note&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Before you through two cases below, make sure you check your &lt;strong&gt;web.xml&lt;/strong&gt; and get the &lt;code&gt;&amp;lt;url-pattern&amp;gt;&lt;/code&gt;:
 - If your web.xml set up default url-pattern &lt;code&gt;/&lt;/code&gt;, when you refer a link, you don't need to add any suffix on it.
 - If your web.xml set up any url-pattern, such as &lt;code&gt;html&lt;/code&gt; or &lt;code&gt;htm&lt;/code&gt;, when you refere a link, in &lt;code&gt;ajax&lt;/code&gt; or &lt;code&gt;windown.location.href&lt;/code&gt;, you need to add &lt;code&gt;html&lt;/code&gt; or &lt;code&gt;htm&lt;/code&gt; suffix after it. &lt;em&gt;But don't add these suffix in spring controller request mapping&lt;/em&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3&gt;Case 1. Pass JSON Data to Controller in Ajax Call, using $.ajax()&lt;/h3&gt;
+&lt;h3 id="case-1-pass-json-data-to-controller-in-ajax-call-using-ajax"&gt;Case 1. Pass JSON Data to Controller in Ajax Call, using $.ajax()&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Notes on 01/13/2015: I had trouble using &lt;code&gt;$.post()&lt;/code&gt; to post JSON data. I doubt something is wrong but I haven't figure out why. Currently I just use &lt;code&gt;$.ajax()&lt;/code&gt;*&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1272,7 +1272,7 @@ A method may or may not have return values&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;You may want to substitude &lt;code&gt;application/json&lt;/code&gt; with &lt;code&gt;application/html&lt;/code&gt; to avoid possible.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3&gt;Case 2. Pass JSON Data as URL parameter, and Handle it in Spring MVC Controller&lt;/h3&gt;
+&lt;h3 id="case-2-pass-json-data-as-url-parameter-and-handle-it-in-spring-mvc-controller"&gt;Case 2. Pass JSON Data as URL parameter, and Handle it in Spring MVC Controller&lt;/h3&gt;
 &lt;p&gt;PROS&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;You are free to go to another page or call other controllers after you pass data to controller.&lt;/p&gt;
@@ -1324,20 +1324,20 @@ A method may or may not have return values&lt;/p&gt;
 &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="n"&gt;ModelAndView&lt;/span&gt; &lt;span class="nf"&gt;test&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nd"&gt;@PathVariable&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"jsonstuff"&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="n"&gt;JSONObject&lt;/span&gt; &lt;span class="n"&gt;json&lt;/span&gt;&lt;span class="o"&gt;){&lt;/span&gt;
 &lt;span class="c1"&gt;//Or @PathVaraible("jsonstuff") String json&lt;/span&gt;
 &lt;span class="o"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</description><category>Ajax</category><category>Java</category><category>jQuery</category><category>Spring</category><guid>http://pengyin-shan.com/posts/2015/Java/ajax-and-spring-mvc-controller.html</guid><pubDate>Tue, 13 Jan 2015 08:00:00 GMT</pubDate></item><item><title>HTML5 Tips</title><link>http://pengyin-shan.com/posts/2015/Front%20End/html5-tips.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h2&gt;Canvas&lt;/h2&gt;
-&lt;h4&gt;HTML&lt;/h4&gt;
+&lt;/pre&gt;&lt;/div&gt;</description><category>Ajax</category><category>Java</category><category>jQuery</category><category>Spring</category><guid>http://pengyin-shan.com/posts/2015/Java/ajax-and-spring-mvc-controller.html</guid><pubDate>Tue, 13 Jan 2015 08:00:00 GMT</pubDate></item><item><title>HTML5 Tips</title><link>http://pengyin-shan.com/posts/2015/Front%20End/html5-tips.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h2 id="canvas"&gt;Canvas&lt;/h2&gt;
+&lt;h4 id="html"&gt;HTML&lt;/h4&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;canvas&lt;/span&gt; &lt;span class="na"&gt;style&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"width:1000px; height:1000px;"&lt;/span&gt; &lt;span class="na"&gt;id&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"thecanvas"&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;canvas&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;
 
 
-&lt;h4&gt;JavaScript Operation&lt;/h4&gt;
-&lt;h5&gt;Get Context (2d)&lt;/h5&gt;
+&lt;h4 id="javascript-operation"&gt;JavaScript Operation&lt;/h4&gt;
+&lt;h5 id="get-context-2d"&gt;Get Context (2d)&lt;/h5&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;oCanvas&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getElementById&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"thecanvas"&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;oCtx&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;oCanvas&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getContext&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"2d"&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 &lt;/pre&gt;
 
 
-&lt;h5&gt;Add Text and Edit Text Style&lt;/h5&gt;
+&lt;h5 id="add-text-and-edit-text-style"&gt;Add Text and Edit Text Style&lt;/h5&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;//Example of Text Shadow. If you make them to 0, you can remove text shadow&lt;/span&gt;
 &lt;span class="nx"&gt;oCtx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;shadowColor&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;"#000000"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="nx"&gt;oCtx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;shadowOffsetX&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mf"&gt;0.5&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
@@ -1351,7 +1351,7 @@ A method may or may not have return values&lt;/p&gt;
 &lt;/pre&gt;
 
 
-&lt;h5&gt;Draw Existing Image to Canvas&lt;/h5&gt;
+&lt;h5 id="draw-existing-image-to-canvas"&gt;Draw Existing Image to Canvas&lt;/h5&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;imageObj&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nx"&gt;Image&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
 &lt;span class="c1"&gt;//get src of existing image&lt;/span&gt;
 &lt;span class="nx"&gt;imageObj&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;src&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getElementById&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'existing_image'&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;src&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
@@ -1359,7 +1359,7 @@ A method may or may not have return values&lt;/p&gt;
 &lt;/pre&gt;
 
 
-&lt;h5&gt;Download Canvas as Image&lt;/h5&gt;
+&lt;h5 id="download-canvas-as-image"&gt;Download Canvas as Image&lt;/h5&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cm"&gt;/**Create a (hidden) image to hold canvas data:&lt;/span&gt;
 &lt;span class="cm"&gt;&amp;lt;img hidden src="" id="downloadCanvas" /&amp;gt;&lt;/span&gt;
 &lt;span class="cm"&gt;**/&lt;/span&gt;
@@ -1376,28 +1376,28 @@ A method may or may not have return values&lt;/p&gt;
 &lt;/pre&gt;
 
 
-&lt;h5&gt;Clear Canvas&lt;/h5&gt;
+&lt;h5 id="clear-canvas"&gt;Clear Canvas&lt;/h5&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;//You may want to do this to remove unwanted elements from canvas&lt;/span&gt;
 &lt;span class="nx"&gt;oCtx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;clearRect&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;oCanvas&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;width&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;oCanvas&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;height&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 &lt;/pre&gt;
 
 
-&lt;h2&gt;Drag and Drop&lt;/h2&gt;
+&lt;h2 id="drag-and-drop"&gt;Drag and Drop&lt;/h2&gt;
 &lt;p&gt;Examples are taken from &lt;a href="http://pengyin-shan.com/posts/2015/Front%20End/www.w3schools.com/html/html5_draganddrop.asp"&gt;w3schools.com&lt;/a&gt;.&lt;/p&gt;
-&lt;h4&gt;General Process&lt;/h4&gt;
+&lt;h4 id="general-process"&gt;General Process&lt;/h4&gt;
 &lt;p&gt;Draable stuff has &lt;code&gt;draggable = 'true'&lt;/code&gt; attribute; has &lt;code&gt;ondragstart&lt;/code&gt; attribute, which takes a method.&lt;/p&gt;
 &lt;p&gt;Destination stuff has &lt;code&gt;ondrop&lt;/code&gt; and &lt;code&gt;ondragover&lt;/code&gt; attribute. Both of them take method.&lt;/p&gt;
-&lt;h4&gt;ondragstart&lt;/h4&gt;
+&lt;h4 id="ondragstart"&gt;ondragstart&lt;/h4&gt;
 &lt;p&gt;This attribute takes a JavaScript method. This method takes a &lt;code&gt;event&lt;/code&gt; parameter and describe what will happen when you start to drag.&lt;/p&gt;
 &lt;p&gt;You need to set the data to drag by using &lt;code&gt;event.dataTransfer.setData(format, event.target.id)&lt;/code&gt;:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;code&gt;format&lt;/code&gt; above can be &lt;code&gt;text&lt;/code&gt;, &lt;code&gt;text/plain&lt;/code&gt;, &lt;code&gt;text/html&lt;/code&gt; etc, or &lt;code&gt;URL&lt;/code&gt; format.&lt;/p&gt;
 &lt;p&gt;This function set up the data that is take via &lt;code&gt;event.target.id&lt;/code&gt;, which is the &lt;code&gt;id&lt;/code&gt; for draggable stuff, and temparary store it. Note &lt;code&gt;event.target&lt;/code&gt; now pointing to draggable stuff.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4&gt;ondragover&lt;/h4&gt;
+&lt;h4 id="ondragover"&gt;ondragover&lt;/h4&gt;
 &lt;p&gt;This attribute takes a JavaScript method. This method takes a &lt;code&gt;event&lt;/code&gt; parameter and describe what will happen when you drag stuff over elements without drop the stuff.&lt;/p&gt;
 &lt;p&gt;Basic set up is &lt;code&gt;event.preventDefault()&lt;/code&gt;, which prevents browser asking elements doing default behavior.&lt;/p&gt;
-&lt;h4&gt;ondrop&lt;/h4&gt;
+&lt;h4 id="ondrop"&gt;ondrop&lt;/h4&gt;
 &lt;p&gt;This attribute takes a JavaScript method. This method takes a &lt;code&gt;event&lt;/code&gt; parameter and describe what will happen when you drop the draggable stuff.&lt;/p&gt;
 &lt;p&gt;First, you should do &lt;code&gt;event.preventDefault()&lt;/code&gt;, which prevents browser asking elements doing default behavior.&lt;/p&gt;
 &lt;p&gt;Then, you need to get the data that you dragged by using &lt;code&gt;event.dataTransfer.getData(format)&lt;/code&gt;. The format should corresponding what you had in &lt;code&gt;event.dataTransfer.setData()&lt;/code&gt; method.&lt;/p&gt;
@@ -1409,7 +1409,7 @@ A method may or may not have return values&lt;/p&gt;
 &lt;/pre&gt;
 
 
-&lt;p&gt;if you passed &lt;code&gt;id&lt;/code&gt; in &lt;code&gt;ondragstart&lt;/code&gt;'s method. Or you can do whatever you want.&lt;/p&gt;&lt;/div&gt;</description><category>HTML5</category><category>JavaScript</category><category>jQuery</category><guid>http://pengyin-shan.com/posts/2015/Front%20End/html5-tips.html</guid><pubDate>Tue, 13 Jan 2015 08:00:00 GMT</pubDate></item><item><title>JavaScript Library Experience: FullCalendar</title><link>http://pengyin-shan.com/posts/2015/JavaScript/javascript-library-experience-fullcalendar.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3&gt;First Impression and Basic Usage&lt;/h3&gt;
+&lt;p&gt;if you passed &lt;code&gt;id&lt;/code&gt; in &lt;code&gt;ondragstart&lt;/code&gt;'s method. Or you can do whatever you want.&lt;/p&gt;&lt;/div&gt;</description><category>HTML5</category><category>JavaScript</category><category>jQuery</category><guid>http://pengyin-shan.com/posts/2015/Front%20End/html5-tips.html</guid><pubDate>Tue, 13 Jan 2015 08:00:00 GMT</pubDate></item><item><title>JavaScript Library Experience: FullCalendar</title><link>http://pengyin-shan.com/posts/2015/JavaScript/javascript-library-experience-fullcalendar.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3 id="first-impression-and-basic-usage"&gt;First Impression and Basic Usage&lt;/h3&gt;
 &lt;p&gt;I got a request in my work, asking me to research a open source JavaScript calendar library. The calendar should be able to do following:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Add/Load/Delete Events, which needs a commucation with back-end. Event content can be configured, which means developer can over write event trigger function. Also developer can set up event time plot.&lt;/p&gt;
@@ -1428,13 +1428,13 @@ $(document).ready(function() {
 
 
 &lt;p&gt;It looks simple, but I encourted following problems and it takes a while to figure out solution:&lt;/p&gt;
-&lt;h3&gt;Problem 1&lt;/h3&gt;
+&lt;h3 id="problem-1"&gt;Problem 1&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;The confusion of CDNJS source&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;FullCalendar official website gives out &lt;code&gt;CDN&lt;/code&gt; host source for &lt;code&gt;css&lt;/code&gt; file and &lt;code&gt;javascript&lt;/code&gt; file, which is the way I preferred, comparing to use local file. However, only three files are given with &lt;code&gt;CDN&lt;/code&gt; url, which misleading me to thought &lt;em&gt;I only need these three files to run FullCalendar&lt;/em&gt;, which is &lt;strong&gt;wrong&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;After I run code in browser, I got error message in console, telling that &lt;strong&gt;moment is not defined as function&lt;/strong&gt;. This error remind me that I need other JavaScript file to provide basic functionality.&lt;/p&gt;
-&lt;h3&gt;Answer 1&lt;/h3&gt;
+&lt;h3 id="answer-1"&gt;Answer 1&lt;/h3&gt;
 &lt;p&gt;Make sure you have &lt;code&gt;fullcalendar.css&lt;/code&gt;, &lt;code&gt;jquery.js&lt;/code&gt;, &lt;code&gt;moment.js&lt;/code&gt;, &lt;code&gt;fullcalendar.js&lt;/code&gt; for basic setup.** &lt;code&gt;moment.js&lt;/code&gt; needs to be put before &lt;code&gt;fullcalendar.js&lt;/code&gt;.&lt;/p&gt;
-&lt;h3&gt;Problem 2&lt;/h3&gt;
+&lt;h3 id="problem-2"&gt;Problem 2&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;CSS Style Problem (Cause my headache :)&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;After I solve the problem above, I was able to see calendar data in browser, but &lt;strong&gt;no style has been applied&lt;/strong&gt;. To solve the problem, I first try following solution:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -1449,7 +1449,7 @@ resources loading successfully. Then replace all &lt;code&gt;CDN&lt;/code&gt; re
 &lt;li&gt;So I have to seek help on Google. A &lt;a href="http://stackoverflow.com/questions/25178565/fullcalendar-layout-broken-because-css-loading-after-javascript-layout-calculati"&gt;post&lt;/a&gt; in &lt;em&gt;StackOverflow&lt;/em&gt; helps with this problem.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h3&gt;Answer2&lt;/h3&gt;
+&lt;h3 id="answer2"&gt;Answer2&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Load Stylesheet in JavaScript&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;I should adjust code as following:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;on&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"ready"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;

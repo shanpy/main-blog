@@ -1,9 +1,9 @@
 <p>This post is transferred from my <a href="http://blogpengyin.herokuapp.com/">old Hexo blog site</a>, created on 2014.</p>
 <p>This is a reading note from Spring Framework 3.1 Tutorial pdf, created by <a href="http://www.tutorialspoint.com/spring"><strong>tutorialspoint</strong></a>. This pdf contains information for Spring 3 Core Basics, which is very useful for understanding defination and practive in Spring programming.</p>
-<h1>Chapter 2: Spring Framework Architecture</h1>
+<h1 id="chapter-2-spring-framework-architecture">Chapter 2: Spring Framework Architecture</h1>
 <p>Spring is a modular framework, which means you can pick the modules that only fits your need. Basic structure of Spring framework is following. There are three <em>main</em> componets: <code>Core Container</code>, <code>Data Access Integration</code> and <code>Web (MVC/Remoting)</code>. Other important componets include <code>AOP</code>, <code>Aspects</code>, <code>Instrumentation</code> and <code>Test</code>:
 images/posts/spring-structure.png </p>
-<h2>Core Container</h2>
+<h2 id="core-container">Core Container</h2>
 <p><code>Core Container</code> contains: <code>Core</code> module, <code>Beans</code> module, <code>Context</code> module and <code>Expression Language</code> module:</p>
 <ul>
 <li>
@@ -19,7 +19,7 @@ images/posts/spring-structure.png </p>
 <p><code>Expression Language</code>: provides language for <em>querying</em> and <em>manipulating</em> an object graph at run time.</p>
 </li>
 </ul>
-<h2>Data Access/Integration</h2>
+<h2 id="data-accessintegration">Data Access/Integration</h2>
 <p><code>Data Access/Integration</code> contains: <code>JDBC</code> module, <code>ORM</code> module, <code>OXM</code>, <code>JMS</code> module and <code>Transaction</code> module:</p>
 <ul>
 <li>
@@ -38,7 +38,7 @@ images/posts/spring-structure.png </p>
 <p><code>Transaction</code>: contains programmatic and declarative <em>transaction management</em> for classes and POJOs.</p>
 </li>
 </ul>
-<h2>Web</h2>
+<h2 id="web">Web</h2>
 <p><code>Web</code> contains: <code>Web</code> module, <code>Web-Servlet</code> module, <code>Web-Struts</code> module and <code>Web-Portlet</code> module:</p>
 <ul>
 <li>
@@ -54,7 +54,7 @@ images/posts/spring-structure.png </p>
 <p><code>Web-Portlet</code>: provide <code>MVC</code> implemention to be used in a <em>portlet</em> environment.</p>
 </li>
 </ul>
-<h2>Other Components</h2>
+<h2 id="other-components">Other Components</h2>
 <ul>
 <li>
 <p><code>AOP</code> module provides <code>aspect-oriented</code> programming implementation, allowing you to define method-interceptor or <em>pointcut</em>s to cleanly <em>decouple</em> code that implements functionality that should be <em>seperated</em>.</p>
@@ -69,7 +69,7 @@ images/posts/spring-structure.png </p>
 <p><code>Test</code>: provides testing support for <code>JUnit</code> or <code>TestNG</code></p>
 </li>
 </ul>
-<h1>Chapter 5: Spring Ioc Containers</h1>
+<h1 id="chapter-5-spring-ioc-containers">Chapter 5: Spring Ioc Containers</h1>
 <p>The main function of Spring IoC Container is to <em>create</em> objects, <em>wire</em> objects together, <em>configure</em> objects and <em>manage</em> objects in their lifecyle.</p>
 <p>Spring IoC containter uses <code>dependency injection/DI</code> to manage objects, which are called spring <code>beans</code>.</p>
 <p>Container gets information from the <code>metadata</code> in <code>xml</code>, <code>Java annotation</code> or <code>Java code</code>.</p>
@@ -117,7 +117,7 @@ images/posts/spring-containers.png </p>
 
 <p><code>ClassPathXmlApplicationContext</code>: example is in <code>BeanFactory Container</code>. You <em>do not</em> need <em>full</em> path of xml file but you need <em>Class Path</em> to let spring find xml configuration file.</p>
 <p><code>WebXmlApplicationContext</code>: loads all beans with in a <code>web</code> application from xml.</p>
-<h1>Chapter 6: Spring Bean Definition</h1>
+<h1 id="chapter-6-spring-bean-definition">Chapter 6: Spring Bean Definition</h1>
 <p><code>Beans</code> are <em>objects</em> that are initialized, assembled, and otherwise managed by Spring IoC <em>Container</em>. They are created with the <code>configuration metadata</code> that supplied by <code>&lt;bean/&gt;</code> defination from <code>xml</code> file.</p>
 <p><code>Configuration MetaData</code> provide following:</p>
 <ul>
@@ -131,7 +131,7 @@ images/posts/spring-containers.png </p>
 <p>Bean's <em>dependencies</em></p>
 </li>
 </ul>
-<h2>Bean Properties</h2>
+<h2 id="bean-properties">Bean Properties</h2>
 <p><code>class</code>: mandatory. Give the java class that is used to create beans.</p>
 <p><code>name</code>: specifies the bean <code>identifier</code> uniquely. In an <code>xml</code>, you need <code>id</code> and/or <code>name</code> to specify the bean identifiers.</p>
 <p><code>scope</code>: specifies bean <em>scope</em>. See notes in chapter 7.</p>
@@ -155,7 +155,7 @@ images/posts/spring-containers.png </p>
 </ul>
 <p>Example of Bean Properties from book:
 images/posts/spring-configuration-metadata.png </p>
-<h1>Chapter 7: Spring Bean Scopes</h1>
+<h1 id="chapter-7-spring-bean-scopes">Chapter 7: Spring Bean Scopes</h1>
 <p>You can declaring <em>scope</em> of beans when you creates <code>&lt;bean/&gt;</code> in xml file. There are five scopes that Spring support:</p>
 <p><code>singleton</code>: <em>Default</em>. Spring IoC container cretes <em>exactly one</em> instance of the object defined by that bean defination. This object is stored in a <em>cache</em> of such singletion beans. A request will return the cached object. Example:</p>
 <p>XML:</p>
@@ -196,7 +196,7 @@ images/posts/spring-configuration-metadata.png </p>
 </pre>
 
 
-<h1>Chapter 8: Spring Bean Life Cycle</h1>
+<h1 id="chapter-8-spring-bean-life-cycle">Chapter 8: Spring Bean Life Cycle</h1>
 <p>In java, <code>initialization</code> work can be done inside <code>afterPropertiesSet()</code> method.</p>
 <p>In xml, you can use <code>init-method</code> attribute to call a self-defined method when a bean instance is created. Then add this method in your bean java class.</p>
 <p>Similarly, <code>destruction</code> can be done insdie <code>destory()</code> method.
@@ -246,7 +246,7 @@ In xml, you can use <code>destroy-method</code> attribute to call a self-defined
 
 
 <p>You can also put <code>default-init-method</code> and <code>defalut-destory-method</code> attributes in the main bean in <code>xml</code> file, such as <code>&lt;bean xmlns="..." xmlns:xsi="..."&gt;&lt;/bean&gt;</code>, to let all beans use same initialization method or destruction method.</p>
-<h1>Chapter 9: Spring Bean Post Processors</h1>
+<h1 id="chapter-9-spring-bean-post-processors">Chapter 9: Spring Bean Post Processors</h1>
 <p><code>BeanPostProcessor</code> <em>interface</em> defines <strong>callback</strong> methods that you can implement to provide your own instantiation logic, dependency-resolution logic, etc.</p>
 <p>You can configure multiple BeanPostProcess interfaces. You can control the <em>order</em> of them.</p>
 <p>Spring IoC container <em>instantiates</em> a bean instance and then BeanPostProcessor works.</p>
@@ -298,7 +298,7 @@ In xml, you can use <code>destroy-method</code> attribute to call a self-defined
 </pre>
 
 
-<h1>Chapter 10: Spring Bean Definition Inheritance**</h1>
+<h1 id="chapter-10-spring-bean-definition-inheritance">Chapter 10: Spring Bean Definition Inheritance**</h1>
 <p>A <code>parent bean</code> can be inherited by a <code>child bean</code>. Child bean can <em>override</em> parent bean's attributes.</p>
 <p><code>parent</code> attribute should be used in <code>xml</code> file to define a parent bean in child bean.</p>
 <p>Example:</p>

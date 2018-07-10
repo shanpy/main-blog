@@ -5,7 +5,7 @@
 <p>Users are allowed to <strong>use</strong> only <strong>existing</strong> <code>enum</code> objects;</p>
 <p>They <strong>can’t create</strong> new enum objects.</p>
 </blockquote>
-<h3>Create Enum</h3>
+<h3 id="create-enum">Create Enum</h3>
 <p>An <code>enum</code> enables you to create a <strong>type</strong>, which has a <strong>fixed</strong> set of <code>constants</code>.</p>
 <p>Code Example:</p>
 <pre class="code literal-block"><span></span><span class="c1">//Assume we have: enum Level {BEGINNER,INTERMEDIATE,EXPERT}</span>
@@ -25,7 +25,7 @@
 <blockquote>
 <p>You can assign <strong>only one constants</strong> defined in the enum level to <code>gameLevel</code>, since it is type <code>Level</code>.</p>
 </blockquote>
-<h3>Detail about a Enum Class</h3>
+<h3 id="detail-about-a-enum-class">Detail about a Enum Class</h3>
 <p>Following is the implicate class for <code>enum Level {BEGINNER,INTERMEDIATE,EXPERT}</code>:</p>
 <pre class="code literal-block"><span></span><span class="kd">final</span> <span class="kd">class</span> <span class="nc">Level</span> <span class="kd">extends</span> <span class="n">Enum</span> <span class="c1">//enum is implicitly final</span>
 <span class="o">{</span>
@@ -63,7 +63,7 @@
 </pre>
 
 
-<h3>java.lang.Enum</h3>
+<h3 id="javalangenum">java.lang.Enum</h3>
 <p>All enums in Java extend the abstract class <code>java.lang.Enum</code>, defined in the Java API.</p>
 <p>Code:</p>
 <pre class="code literal-block"><span></span><span class="kd">public</span> <span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Enum</span><span class="o">&lt;</span><span class="n">E</span> <span class="kd">extends</span> <span class="n">Enum</span><span class="o">&lt;</span><span class="n">E</span><span class="o">&gt;&gt;</span> <span class="kd">implements</span> <span class="n">Comparable</span><span class="o">&lt;</span><span class="n">E</span><span class="o">&gt;,</span> <span class="n">Serializable</span> <span class="o">{</span>

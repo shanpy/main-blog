@@ -1,5 +1,5 @@
 <p>This is a post that I moved from my <a href="blogpengyin.herokuapp.com">old blog site</a>. This is the reading note for <strong>OCA Java SE 7 Certification Guide</strong> from <strong>Manning</strong>. <em>Please note that all definations and examples in this post are taken from the book.</em></p>
-<h1>Chapter 4. String, StringBuilder, Arrays and ArrayList</h1>
+<h1 id="chapter-4-string-stringbuilder-arrays-and-arraylist">Chapter 4. String, StringBuilder, Arrays and ArrayList</h1>
 <p>This chapter mainly covers:</p>
 <ul>
 <li>Creating and manipulating <code>String</code> and <code>StringBuilder</code> objects</li>
@@ -17,8 +17,8 @@ Declaring, creating, and using an <code>ArrayList</code> and understanding the a
 <p>Using methods that add, modify, and delete elements of an ArrayList</p>
 </li>
 </ul>
-<h2>4.1 String</h2>
-<h3>Create a String</h3>
+<h2 id="41-string">4.1 String</h2>
+<h3 id="create-a-string">Create a String</h3>
 <p>You can create objects of the class <code>String</code> by:</p>
 <ul>
 <li>
@@ -83,7 +83,7 @@ Declaring, creating, and using an <code>ArrayList</code> and understanding the a
 <blockquote>
 <p><strong>The literal value for String is null .</strong></p>
 </blockquote>
-<h3>The Class String is Immutable</h3>
+<h3 id="the-class-string-is-immutable">The Class String is Immutable</h3>
 <p>The concept that the class <strong>String is immutable</strong> is an important point to remember. <strong>Once created, the contents of an object of the class String can never be modified</strong>.</p>
 <p>the JVM creates a <strong>pool</strong> of String objects that can be referenced by multiple variables across the JVM . The JVM can make this optimiza-
 tion only because String is immutable.</p>
@@ -103,7 +103,7 @@ tion only because String is immutable.</p>
 </ul>
 <p>All the methods defined in the class String , such as <code>substring()</code> , <code>concat()</code>, <code>toLowerCase()</code>, <code>toUpperCase()</code>, <code>trim()</code>, and so on, which <strong>seem</strong> to modify the contents of the String object on
 which they’re called, <strong>create and return a new String object</strong>, rather than modifying the existing value.</p>
-<h3>Methods of the class String</h3>
+<h3 id="methods-of-the-class-string">Methods of the class String</h3>
 <p><code>charAt(int index)</code> can be used to retrieve a <strong>character</strong> at a specified <strong>index</strong> of a String</p>
 <p><code>indexOf(char c)</code> is used to search a String for the <strong>occurrence</strong> of a char or a String.</p>
 <p>If the specified char or String is found in the target String, this method returns the first matching position; otherwise, it returns -1</p>
@@ -135,7 +135,7 @@ a String or from a particular position. This method returns <code>true</code> if
 </pre>
 
 
-<h3>String Objects and Operators</h3>
+<h3 id="string-objects-and-operators">String Objects and Operators</h3>
 <p>Of all the operators that are on this exam, you can use just a handful with the String objects:</p>
 <ul>
 <li>
@@ -152,7 +152,7 @@ String with a value equal to the concatenated values of multiple Strings .</p>
 <p><code>"" + num + num + aStr;</code> can be used to transfer all nums to string to concatenate</p>
 <p>When you use += to concatenate String values, ensure that the variable you’re using has been <strong>initialized</strong> (and doesn’t contain <code>null</code> )</p>
 <p>However, <strong>no compile or runtime error will appear. Just null value will be print out.</strong></p>
-<h3>Determining Equality of String</h3>
+<h3 id="determining-equality-of-string">Determining Equality of String</h3>
 <p>The correct way to compare two String values for equality is to use the <code>equals()</code> method defined in the String class.</p>
 <p>This method returns a <code>true</code> value if the object being compared to:</p>
 <ul>
@@ -182,11 +182,11 @@ String with a value equal to the concatenated values of multiple Strings .</p>
 </pre>
 
 
-<h2>Mutable Strings: StringBuilder</h2>
+<h2 id="mutable-strings-stringbuilder">Mutable Strings: StringBuilder</h2>
 <p>You must use class <code>StringBuilder</code> when you’re dealing with larger strings or modifying the contents of a string <strong>often</strong>.</p>
-<h3>StringBuilder is Mutable</h3>
+<h3 id="stringbuilder-is-mutable">StringBuilder is Mutable</h3>
 <p>In contrast to the class <code>String</code> , the class <code>StringBuilder</code> uses a <strong>non– final char array</strong> to store its value.</p>
-<h3>Creating StringBuilder Objects</h3>
+<h3 id="creating-stringbuilder-objects">Creating StringBuilder Objects</h3>
 <p>You can create objects of class <code>StringBuilder</code> using multiple overloaded constructors <code>new StringBuilder()</code>:</p>
 <pre class="code literal-block"><span></span><span class="kd">class</span> <span class="nc">CreateStringBuilderObjects</span> <span class="o">{</span>
     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span> <span class="n">args</span><span class="o">[])</span> <span class="o">{</span>
@@ -220,7 +220,7 @@ String with a value equal to the concatenated values of multiple Strings .</p>
 
 
 <p>This means you can extend StringBuilder size when you initialize it*</p>
-<h3>Methods of StringBuilder</h3>
+<h3 id="methods-of-stringbuilder">Methods of StringBuilder</h3>
 <p><code>append()</code> method adds the specified value <strong>at the end of the existing value</strong> of a <code>StringBuilder</code> object.</p>
 <blockquote>
 <p>This method <strong>accepts all the primitives</strong>, <code>String</code> , <code>char array</code>, and <code>Object</code> as method parameters</p>
@@ -258,11 +258,11 @@ StringBuilder.**</p>
 <p>you can also use the method <code>subSequence(int start, int end)</code> to retrieve a subsequence of a StringBuilder object. This method returns objects of type <code>CharSequence</code></p>
 <p><strong>end int is exclusive!</strong></p>
 </blockquote>
-<h3>StringBuffer</h3>
+<h3 id="stringbuffer">StringBuffer</h3>
 <p>The classes <code>StringBuffer</code> and <code>StringBuilder</code> offer the same functionality, with one difference: <strong>the methods of the class <code>StringBuffer</code> are synchronized where necessary, whereas the methods of the class <code>StringBuilder</code> aren’t</strong>.</p>
 <p>So when you work with the class <code>StringBuffer</code> , <strong>only one thread out of multiple threads can execute your method.</strong> Working with synchronized methods and the <code>StringBuffer</code> class affects the performance of your code.</p>
 <p>If you need to access your code <strong>from multiple threads</strong>, use <code>StringBuffer</code> ; otherwise use <code>StringBuilder</code> .</p>
-<h2>Arrays</h2>
+<h2 id="arrays">Arrays</h2>
 <p>an <code>array</code> is an object itself, which implies that it stores references to the data it stores. Arrays can store two types of data:</p>
 <ul>
 <li>
@@ -298,7 +298,7 @@ StringBuilder.**</p>
 <p><strong>Initializing</strong> the array elements</p>
 </li>
 </ul>
-<h3>Array Declaration</h3>
+<h3 id="array-declaration">Array Declaration</h3>
 <p>An <strong>array declaration</strong> includes the <strong>array type</strong> and <strong>array variable</strong>. Ezample:</p>
 <pre class="code literal-block"><span></span><span class="kt">int</span> <span class="n">intArray</span><span class="o">[];</span> <span class="c1">//One dimentional</span>
 <span class="n">String</span><span class="o">[]</span> <span class="n">strArray</span><span class="o">;</span> <span class="c1">//One dimentional</span>
@@ -314,7 +314,7 @@ StringBuilder.**</p>
 
 <p><strong>The array declaration only creates a variable that refers to <code>null</code></strong>.</p>
 <p><strong>it’s invalid to define the size of an array with its declaration</strong>: i.e. <code>int[2] nums</code> is invalid.</p>
-<h3>Array Allocation</h3>
+<h3 id="array-allocation">Array Allocation</h3>
 <p><strong>array allocation</strong> will allocate memory for the elements of an
 array. <strong>When you allocate memory for an array, you should specify its dimensions, such as the number of elements the array should store.</strong></p>
 <p><strong>The size of an array can’t expand or reduce once it is allocated.</strong></p>
@@ -331,7 +331,7 @@ array. <strong>When you allocate memory for an array, you should specify its dim
 <p>Store <code>0.0</code> for <strong>decimal types ( float and double )</strong></p>
 <p>Store <code>false</code> for <strong>boolean</strong></p>
 <p>Store <code>/u0000</code> for <strong>char data</strong>.</p>
-<h3>Array Initialization</h3>
+<h3 id="array-initialization">Array Initialization</h3>
 <pre class="code literal-block"><span></span><span class="c1">//Initialize array in a loop</span>
 <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">intArray</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
 <span class="n">intArray</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">5</span><span class="o">;</span>
@@ -389,7 +389,7 @@ array. <strong>When you allocate memory for an array, you should specify its dim
 </pre>
 
 
-<h3>Asymmetrical Multidimensional Arrays</h3>
+<h3 id="asymmetrical-multidimensional-arrays">Asymmetrical Multidimensional Arrays</h3>
 <p>A <code>multidimensional array</code> can be <strong>asymmetrical</strong> (i.e. two parts are not corresponding each other in shape).</p>
 <p>Arrays can define a <strong>different number of columns</strong> for each of its rows.</p>
 <p>For example, for code below:</p>
@@ -402,7 +402,7 @@ array. <strong>When you allocate memory for an array, you should specify its dim
 
 
 <p>An attempt to access any element of this array, such as <code>multiStrArr[1][0]</code>, will throw an exception, since second postion is <code>null</code></p>
-<h3>Arrays of type interface, abstract class, and class Object</h3>
+<h3 id="arrays-of-type-interface-abstract-class-and-class-object">Arrays of type interface, abstract class, and class Object</h3>
 <p>If the type of an array is an <code>interface</code>, its elements are <strong>either <code>null</code> or objects that implement the relevant interface type</strong>.</p>
 <p>For example:</p>
 <pre class="code literal-block"><span></span><span class="kd">interface</span> <span class="nc">MyInterface</span> <span class="o">{}</span>
@@ -454,7 +454,7 @@ array. <strong>When you allocate memory for an array, you should specify its dim
 </pre>
 
 
-<h3>Members of an array</h3>
+<h3 id="members-of-an-array">Members of an array</h3>
 <p>Array objects have the following <strong>public members</strong>:</p>
 <ul>
 <li>
@@ -476,7 +476,7 @@ array. <strong>When you allocate memory for an array, you should specify its dim
 <p><code>Array</code> — Determine element count using the <strong>variable</strong> <code>length</code></p>
 </li>
 </ul>
-<h2>ArrayList</h2>
+<h2 id="arraylist">ArrayList</h2>
 <p><strong>Important Notes about <code>ArrayList</code></strong></p>
 <p>It implements the <strong>interface</strong> <code>List</code>.</p>
 <p>It <strong>allow</strong>s <code>null</code> values to be added to it.</p>
@@ -485,15 +485,15 @@ array. <strong>When you allocate memory for an array, you should specify its dim
 <p>It maintains its <strong>insertion order</strong>.</p>
 <p>You can use either <code>Iterator</code> or <code>ListIterator</code> (an implementation of the Iterator interface) to <strong>iterate</strong> over the items of an ArrayList .</p>
 <p>It supports <code>generics</code>, making it type safe. (<strong>You have to declare the type of the elements that should be added to an ArrayList with its declaration</strong>.)</p>
-<h3>Create ArrayList</h3>
+<h3 id="create-arraylist">Create ArrayList</h3>
 <p>Starting with Java version 7, you <strong>can omit the object type on the right side</strong> of the equal sign and create an ArrayList as follows: <code>ArrayList&lt;String&gt; myArrList = new ArrayList&lt;&gt;();</code></p>
 <p>An ArrayList <strong>uses an array</strong> to store its elements. It provides you with the functionality of a dynamic array.</p>
-<h3>Add Element to ArrayList</h3>
+<h3 id="add-element-to-arraylist">Add Element to ArrayList</h3>
 <p>When you add an element to the <strong>end</strong> of the list, the ArrayList first checks whether its instance variable elementData <strong>has an empty slot</strong> at the end.</p>
 <p>If no empty slots exist, the method <code>ensureCapacity()</code> <strong>creates another array with a higher capacity</strong> and <strong>copies</strong> the existing values to this newly created array. It then copies the newly added
 value at the first available empty slot in the array.</p>
 <p>When you add an element at a particular position, an ArrayList creates a new array and <strong>inserts all its elements at positions other than the position you specified</strong>. If there are any subsequent elements to the right of the position that you specified, it <strong>shifts them by one position. Then it adds the new element at the requested position</strong>.</p>
-<h3>Accessing Elements of an ArrayList</h3>
+<h3 id="accessing-elements-of-an-arraylist">Accessing Elements of an ArrayList</h3>
 <p>To access the elements of an ArrayList, you can either use Java’s enhanced <code>for</code> loop, <code>Iterator</code> , or <code>ListIterator</code>.</p>
 <p>Code Example:</p>
 <pre class="code literal-block"><span></span><span class="k">for</span> <span class="o">(</span><span class="n">String</span> <span class="n">element</span> <span class="o">:</span> <span class="n">myArrList</span><span class="o">)</span> <span class="o">{</span>
@@ -513,13 +513,13 @@ value at the first available empty slot in the array.</p>
 <p>An ArrayList <strong>preserves the order of insertion</strong> of its elements.</p>
 <p><code>Iterator</code> , <code>ListIterator</code> , and the enhanced <code>for</code> loop will return the elements in the order in which they were added to the ArrayList . - - An <strong>iterator</strong> ( <code>Iterator</code> or <code>ListIterator</code> ) lets you <strong>remove</strong> elements as you iterate an ArrayList.</p>
 <p><strong>It’s not possible to remove elements from an ArrayList while iterating it using a <code>for</code> loop</strong>.</p>
-<h3>Modify Elements of an ArrayList</h3>
+<h3 id="modify-elements-of-an-arraylist">Modify Elements of an ArrayList</h3>
 <p>You can modify an ArrayList by either <strong>replacing an existing element</strong> in ArrayList or <strong>modifying all of its existing values</strong>.</p>
 <pre class="code literal-block"><span></span><span class="n">myArrList</span><span class="o">.</span><span class="na">set</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span> <span class="s">&quot;One and Half&quot;</span><span class="o">);</span>
 </pre>
 
 
-<h3>Deleting the Elements of an ArrayList</h3>
+<h3 id="deleting-the-elements-of-an-arraylist">Deleting the Elements of an ArrayList</h3>
 <p>ArrayList defines two methods to remove its elements, as follows:</p>
 <ul>
 <li>
@@ -547,7 +547,7 @@ System.out.println(element);
 <p>The removal of the specified element fails because of <strong>the manner in which the object references are compared for equality.</strong></p>
 <p>Two objects are equal if their object references (the variables that store them) point to the same object.</p>
 <p>When elements of an ArrayList are removed, the remaining elements are re-arranged at their correct positions.</p>
-<h3>Other methods of ArrayList</h3>
+<h3 id="other-methods-of-arraylist">Other methods of ArrayList</h3>
 <p>You can <strong>add multiple elements to an ArrayList from another ArrayList or any other class that is a subclass of Collection</strong> by using the following overloaded versions of method <code>addAll()</code> :</p>
 <blockquote>
 <p><code>addAll(Collection&lt;? extends E&gt; c)</code> : <strong>appends</strong> all of the elements in the specified collection to <strong>the end of this list</strong> in the order in which they’re returned by the specified collection’s Iterator .</p>
@@ -607,7 +607,7 @@ themselves are not.</strong></p>
 </pre>
 
 
-<h3>Create an Array from ArrayList</h3>
+<h3 id="create-an-array-from-arraylist">Create an Array from ArrayList</h3>
 <p>You can use the method <code>toArray()</code> to return an array containing all of the elements in an ArrayList in sequence from the first to the last element.</p>
 <p>Method <code>toArray()</code> doesn’t return a reference to this array. It <strong>ceates a new array, copies the elements of the ArrayList
 to it and then returns it</strong></p>
@@ -615,7 +615,7 @@ to it and then returns it</strong></p>
 <p>So if you <strong>modify the returned array</strong> by, say, swapping the position of its elements or by assigning new objects to its elements, the elements of <strong>ArrayList won’t be affected</strong>.</p>
 <p>But, if you <strong>modify the state of (mutable) elements of the returned
 array</strong>, then the modified state of elements <strong>will be reflected</strong> in the ArrayList .</p>
-<h2>Comparing Objects for Equality</h2>
+<h2 id="comparing-objects-for-equality">Comparing Objects for Equality</h2>
 <p>The default implementation of the <code>quals()</code> method <strong>only compares
 whether two object variables refer to the same object</strong>.</p>
 <p>Because <code>instance variable</code>s are used to store the <strong>state</strong> of an object, <strong>it’s common to compare the values of the instance variables</strong> to determine whether two objects should be considered <code>equal()</code>.</p>

@@ -1,5 +1,5 @@
 <p>This is a post that I moved from <a href="blogpengyin.herokuapp.com"> my old blog site</a>. This is the reading note for <strong>OCA Java SE 7 Certification Guide</strong> from <strong>Manning</strong>. <em>Please note that all definations and examples in this post are taken from the book.</em></p>
-<h1>Chapter 3: Methods and Encapsulation</h1>
+<h1 id="chapter-3-methods-and-encapsulation">Chapter 3: Methods and Encapsulation</h1>
 <p>This chapter mainly covers:</p>
 <ul>
 <li>
@@ -24,7 +24,7 @@
 <p>Applying <strong>encapsulation</strong> principles to a class</p>
 </li>
 </ul>
-<h2>3.1 Scope of Variables</h2>
+<h2 id="31-scope-of-variables">3.1 Scope of Variables</h2>
 <p>Valid scope of variable:</p>
 <ul>
 <li>
@@ -41,11 +41,11 @@
 </li>
 </ul>
 <p>The <strong>life span</strong> of a variable is determined by its <strong>scope</strong>.</p>
-<h3>Local Variable, Method Parameter</h3>
+<h3 id="local-variable-method-parameter">Local Variable, Method Parameter</h3>
 <p>Local variables are defined <strong>within method</strong>, with the <strong>shortest scope (life span)</strong>.</p>
 <p>The variables that accept values in a method are called <strong>method parameters</strong>. They’re accessible <strong>only in the method</strong> that defines them.</p>
 <p>The scope of methods parameters can never be shorter than scope of local variables.</p>
-<h3>Instance Variables, Class Variables</h3>
+<h3 id="instance-variables-class-variables">Instance Variables, Class Variables</h3>
 <p><strong>Instance is another name for an object.</strong></p>
 <blockquote>
 <p>Hence, an <strong>instance variable</strong> is available for the <strong>life of an object</strong>. An instance variable is declared <strong>within a class, outside of all of the methods</strong>. It’s accessible to <strong>all the nonstatic methods</strong> defined in a class.</p>
@@ -75,7 +75,7 @@
 
 <p>The scope of an instance variable is longer than that of a local vari-
 able or a method parameter.</p>
-<h3>Compare Scopes, Overlapping Scopes</h3>
+<h3 id="compare-scopes-overlapping-scopes">Compare Scopes, Overlapping Scopes</h3>
 <p><code>Local variables</code> are defined <strong>within</strong> a method and are normally used to store the intermediate results of a calculation.</p>
 <p><code>Method parameters</code> are used to pass values to a method. These values can be manipulated and may also be stored as the state of an object by assigning them to instance variables.</p>
 <p><code>Instance variables</code> are used to store the <strong>state</strong> of an object. These are the values that need to be accessed by multiple methods.</p>
@@ -92,12 +92,12 @@ able or a method parameter.</p>
 <p>A class can define <code>local variable</code>s with the same name as the <code>instance or class variable</code>s.</p>
 </li>
 </ul>
-<h2>3.2 Object's Life Cycle</h2>
+<h2 id="32-objects-life-cycle">3.2 Object's Life Cycle</h2>
 <p>Java doesn’t allow you to allocate or deallocate memory yourself when you create or destroy objects. Java manages memory for <strong>allocating</strong> objects and reclaiming the memory occupied by unused objects, using Java's <strong>garbage collector</strong>.</p>
 <p>Java also provides a method called <code>finalize</code>, which is accessible to all of the classes.</p>
 <p>All Java classes can <strong>override</strong> the method <code>finalize</code>, which executes just before an object is garbage collected;</p>
 <p>An object’s life cycle starts when it’s <strong>created</strong> and lasts until it <strong>goes out of its scope</strong> or is <strong>no longer referenced</strong> by a variable.</p>
-<h3>Create Object</h3>
+<h3 id="create-object">Create Object</h3>
 <p>An object is <strong>created</strong> when you use the keyword <code>new</code>. You need to <strong>declare</strong> and <strong>initialize</strong> it.</p>
 <p>If you just do <code>ClassName myclass;</code>, no objects of class <code>ClassName</code> are created in the class Object Life Cycle; it <strong>declares</strong> only a <strong>variable</strong> of type <code>ClassName</code>; Only <strong>declaration</strong> step is done.</p>
 <p>Since <strong>String</strong>s can also be initialized using the <code>=</code> operator, you can just do <code>String a = "a";</code> to create a String object.</p>
@@ -105,7 +105,7 @@ able or a method parameter.</p>
 <p>If you just do <code>new ClassName()</code>, you only finish <strong>initialize</strong> step.</p>
 <p>Creating an object in this manner will execute the relevant <strong>constructor</strong>s of the class.</p>
 </blockquote>
-<h3>Access Object</h3>
+<h3 id="access-object">Access Object</h3>
 <p>Once an object is created, it can be <strong>accessed </strong>using its <strong>reference variable</strong>.</p>
 <p>It become <strong>inaccessible/eligible to be garbage collected</strong> when it:</p>
 <ul>
@@ -124,9 +124,9 @@ able or a method parameter.</p>
 <blockquote>
 <p>i.e. "which objects are sure to be col- lected during the next GC cycle" is <strong>unknown</strong>.</p>
 </blockquote>
-<h2>3.3 Create Methods with Arguments and Return Values</h2>
+<h2 id="33-create-methods-with-arguments-and-return-values">3.3 Create Methods with Arguments and Return Values</h2>
 <p>Methods are used to define the <strong>behavior</strong> of an object.</p>
-<h3>Return</h3>
+<h3 id="return">Return</h3>
 <p>A method may or may not return a value.</p>
 <blockquote>
 <p>One that doesn’t return a value has a return type of <code>void</code>.</p>
@@ -144,7 +144,7 @@ able or a method parameter.</p>
 <p>Usually this statement is used to define an <strong>early exit</strong> from a method</p>
 <p>However, the return statement must be the <strong>last statement to execute</strong> in a method, if present. Othewise code will failt to compile.</p>
 <p>The return statement need not be the last statement in a method. i.e. You can <code>return</code> in a leaf of if loop.</p>
-<h3>Method Parameters</h3>
+<h3 id="method-parameters">Method Parameters</h3>
 <ul>
 <li>
 <p><strong>Method parameter</strong>s are the variables that appear in the definition of a method.</p>
@@ -184,7 +184,7 @@ parameter must have an <strong>explicit type declared with its name</strong>.</p
 <p>A method can take zero or more parameters but can <strong>return only zero or one values</strong>.</p>
 </li>
 </ul>
-<h2>3.4 Create an Overloaded Method</h2>
+<h2 id="34-create-an-overloaded-method">3.4 Create an Overloaded Method</h2>
 <p><strong>Overloaded methods</strong> are methods with the <strong>same name</strong> but <strong>different method parameter lists</strong>.</p>
 <p><strong>Rules to Remember</strong></p>
 <ul>
@@ -201,7 +201,7 @@ parameter must have an <strong>explicit type declared with its name</strong>.</p
 <p>Overloaded methods <strong>can’t be defined by only changing their return type or access modifiers</strong>.</p>
 </li>
 </ul>
-<h3>Argument List</h3>
+<h3 id="argument-list">Argument List</h3>
 <p>The argument lists can differ in terms of any of the following:</p>
 <ul>
 <li>
@@ -229,7 +229,7 @@ parameter must have an <strong>explicit type declared with its name</strong>.</p
 </pre>
 
 
-<h2>3.5 Contructor of a Class</h2>
+<h2 id="35-contructor-of-a-class">3.5 Contructor of a Class</h2>
 <p>Constructors are special methods that create and return an object of the class in which they’redefined.</p>
 <p>Constructors have the <strong>same name as the name of the class</strong> in which they’re defined, and they <strong>don’t specify a return type—not even <code>void</code></strong> .</p>
 <blockquote>
@@ -245,7 +245,7 @@ parameter must have an <strong>explicit type declared with its name</strong>.</p
 <p><strong>Initialize</strong> all of the <strong>instance variables</strong> of a class with their default values.</p>
 </li>
 </ul>
-<h3>User-Defined Constructors</h3>
+<h3 id="user-defined-constructors">User-Defined Constructors</h3>
 <p>An author may or may not define a constructor in a class. If the author does define a constructor in a class, it’s known as a <strong>user-defined constructor</strong>.</p>
 <p>Because a constructor is called as soon as an object is created, you can use it to <strong>assign default values</strong> to the instance variable of your class:</p>
 <pre class="code literal-block"><span></span><span class="kd">class</span> <span class="nc">Employee</span> <span class="o">{</span>
@@ -302,7 +302,7 @@ parameter must have an <strong>explicit type declared with its name</strong>.</p
 
 <p>Initializer blocks are used to initialize the variables of <strong>anonymous classes</strong>.</p>
 <p>An anonymous class is a type of <strong>inner class</strong>. In the absence of a name, anonymous classes can’t define a constructor and rely on an initializer block to initialize their variables upon the creation of an object of their class.</p>
-<h3>Default Constructor</h3>
+<h3 id="default-constructor">Default Constructor</h3>
 <p>In the absence of a user-defined constructor, Java inserts a <strong>default constructor</strong>.</p>
 <p>This constructor <strong>doesn’t accept any method arguments</strong>.</p>
 <blockquote>
@@ -322,7 +322,7 @@ parameter must have an <strong>explicit type declared with its name</strong>.</p
 <p>i.e. <strong>Java defines a default constructor if and only if you don’t define a constructor.</strong></p>
 </blockquote>
 <p>So if you defined a constructor which takes parameters, but when you create instance you just do <code>new ClassName()</code>, the code will fail to compile.</p>
-<h3>Overloaded Constructors</h3>
+<h3 id="overloaded-constructors">Overloaded Constructors</h3>
 <p>Similar as overloaded methods, overloaded constructor must:</p>
 <ul>
 <li>
@@ -373,7 +373,7 @@ an implicit reference that’s accessible to all objects that <strong>refer to a
 <p>A constructor can’t invoke a constructor by using its class’s name.</p>
 </li>
 </ul>
-<h2>3.6 Accessing Object Fields</h2>
+<h2 id="36-accessing-object-fields">3.6 Accessing Object Fields</h2>
 <p>An <strong>object field</strong> is another name for an <strong>instance variable</strong> defined in a class.</p>
 <p>A <strong>setter method</strong> is used to set the value of a variable.</p>
 <p>A <strong>getter method</strong> is used to retrieve the value of a variable.</p>
@@ -395,7 +395,7 @@ an implicit reference that’s accessible to all objects that <strong>refer to a
 </pre>
 
 
-<h2>3.7 Apply Encapsulation Principles to a Class</h2>
+<h2 id="37-apply-encapsulation-principles-to-a-class">3.7 Apply Encapsulation Principles to a Class</h2>
 <p><strong>A well-encapsulated object doesn’t expose its internal parts to the outside world.</strong></p>
 <p>the object fields of a class that <strong>isn’t well encapsulated are exposed outside of the class</strong>. This approach enables the users of the class to <strong>assign arbitrary values</strong> to the object fields.</p>
 <p><strong>Information Hiding</strong></p>
@@ -407,8 +407,8 @@ changeably.</p>
 <strong>prevent your private variables from being assigned any values</strong> that don’t fit your requirements.</p>
 <p>One of the best ways to <strong>create a well-encapsulated class</strong> is
 to <strong>define its instance variables as private variables</strong> and <strong>allow access to these variables using public methods</strong>.</p>
-<h2>3.8 Passing Objects and Primitives to Methods</h2>
-<h3>Passing Primitives to Methods</h3>
+<h2 id="38-passing-objects-and-primitives-to-methods">3.8 Passing Objects and Primitives to Methods</h2>
+<h3 id="passing-primitives-to-methods">Passing Primitives to Methods</h3>
 <p>The value of a primitive data type is <strong>copied</strong> and <strong>passed</strong> on to a method. Hence, <strong>the variable whose value was copied doesn’t change</strong>.</p>
 <blockquote>
 <p>i.e. When you pass a primitive variable to a method, its value remains the same after the execution of the method.</p>
@@ -436,7 +436,7 @@ to <strong>define its instance variables as private variables</strong> and <stro
 <p>Within a method, <strong>a method parameter takes precedence over an object field</strong>.</p>
 <p>On the code above, when the method <code>modifyVal</code> refers to the variable <code>age</code> , it refers to the <strong>method parameter</strong> <code>age</code> , not the <strong>instance variable</strong> <code>age</code> .</p>
 <p>To access the instance variable <code>age</code> within the method <code>modifyVal</code> , the variable name <code>age</code> needs to be <strong>prefixed with the keyword <code>this</code></strong> ( <code>this</code> is a keyword that refers to the object itself).</p>
-<h3>Passing Object References to Methods</h3>
+<h3 id="passing-object-references-to-methods">Passing Object References to Methods</h3>
 <p>When you pass an <strong>object reference</strong> to a method, <strong>the method can assign it to another variable</strong>.</p>
 <p>In this case, the <strong>state</strong> of the object, which was passed on to the method, remains intact/complete.</p>
 <p>Code Example:</p>

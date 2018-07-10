@@ -1,5 +1,5 @@
 <p>This is a post that I moved from <a href="blogpengyin.herokuapp.com">my old blog site</a>. This is the reading note for <strong>OCA Java SE 7 Certification Guide</strong> from <strong>Manning</strong>. <em>Please note that all definations and examples in this post are taken from the book.</em></p>
-<h1>Chapter 6 Working with Inheritance</h1>
+<h1 id="chapter-6-working-with-inheritance">Chapter 6 Working with Inheritance</h1>
 <p>This chapter main talks about:</p>
 <ul>
 <li>
@@ -21,7 +21,7 @@
 <p>Using <code>abstract classe</code>s and <code>interface</code>s</p>
 </li>
 </ul>
-<h2>Inheritance with Classes</h2>
+<h2 id="inheritance-with-classes">Inheritance with Classes</h2>
 <p>a class can <strong>inherit</strong> the <code>propertie</code>s and <code>behavior</code> of another class. The class that inherits from another class can also define additional properties and behaviors.</p>
 <p><strong>A class uses the keyword <code>extends</code> to inherit a class</strong>:</p>
 <pre class="code literal-block"><span></span><span class="kd">class</span> <span class="nc">Employee</span> <span class="o">{</span>
@@ -48,7 +48,7 @@
 <p>When multiple classes inherit a base class, it creates a <strong>logical group</strong>.</p>
 <p>Inheritance enables you to <strong>reuse</strong> code that has already been
 defined by a class. Inheritance can be implemented by extending a class.</p>
-<h3>Derived Class</h3>
+<h3 id="derived-class">Derived Class</h3>
 <pre class="code literal-block"><span></span><span class="kd">class</span> <span class="nc">Employee</span> <span class="o">{</span>
     <span class="n">String</span> <span class="n">name</span><span class="o">;</span>
     <span class="n">String</span> <span class="n">address</span><span class="o">;</span>
@@ -72,7 +72,7 @@ defined by a class. Inheritance can be implemented by extending a class.</p>
 
 <p>When a class inherits another class, it encloses within it an object of the inherited class.</p>
 <p>For example, for the code above, the <code>Programer</code> is a large circle, enclosing a small circle of <code>Employee</code></p>
-<h3>A derived class can't inherit all the members of its base class</h3>
+<h3 id="a-derived-class-cant-inherit-all-the-members-of-its-base-class">A derived class can't inherit all the members of its base class</h3>
 <p>Based on <strong>access modifiers</strong>:</p>
 <ul>
 <li>
@@ -103,7 +103,7 @@ defined by a class. Inheritance can be implemented by extending a class.</p>
 <p>When a derived class defines an <code>instance</code> or <code>class variable</code> with <strong>the same name</strong> as one defined from its base class, <strong>only these new variables and methods are visible to code using the derived class</strong>.</p>
 <p>When a derived class defines different code for a <code>method</code> inherited from a base class by defining the method again, <strong>this method is treated as a special method—an <code>overridden</code> method</strong>.</p>
 <p>You can implement inheritance by using either a <code>concrete</code> class or an <code>abstract</code> class as a <code>base</code> class</p>
-<h3>Abstract Base Class v.s Concreate Base Class</h3>
+<h3 id="abstract-base-class-vs-concreate-base-class">Abstract Base Class v.s Concreate Base Class</h3>
 <p><strong>Abstract Class</strong></p>
 <p>It groups the common properties and behavior of its derived classes, but it <strong>prevents itself from being instantiated</strong>.</p>
 <p>An <code>abstract class</code> can <strong>force</strong> all its derived classes to <strong>define their own implementations</strong> for a behavior by defining it as an <code>abstract method</code> (<strong>a method without a body</strong>)</p>
@@ -124,7 +124,7 @@ defined by a class. Inheritance can be implemented by extending a class.</p>
 <p>You can use variables of an abstract base class to refer to objects of its derived class.</p>
 </li>
 </ul>
-<h3>Important Term and Defination</h3>
+<h3 id="important-term-and-defination">Important Term and Defination</h3>
 <ul>
 <li>
 <p><code>Base class</code>— A class inherited by another class. The class <code>Employee</code> is a base class for the classes <code>Programmer</code> and <code>Manager</code> in the previous examples.</p>
@@ -145,7 +145,7 @@ defined by a class. Inheritance can be implemented by extending a class.</p>
 <p><code>Extended class</code> — A derived class is also known as an extended class.</p>
 </li>
 </ul>
-<h2>Inteface</h2>
+<h2 id="inteface">Inteface</h2>
 <p>An <code>interface</code> can define <strong>only <code>abstract methods</code> and <code>constants</code></strong>.</p>
 <p>All the members of an interface are <strong>implicitly <code>public</code></strong> .</p>
 <p><code>interface</code> <strong>can't have <code>constructor</code></strong>.</p>
@@ -225,7 +225,7 @@ defined by a class. Inheritance can be implemented by extending a class.</p>
 <p>The <strong>first</strong> <code>concrete class</code> in the hierarchy must <strong>supply actual method implementations for all abstract methods</strong>.</p>
 </li>
 </ul>
-<h2>Reference Variable and Object Type</h2>
+<h2 id="reference-variable-and-object-type">Reference Variable and Object Type</h2>
 <p>objects of derived classes can be referred to using a <strong>reference
 variable of either of the following types</strong>:</p>
 <ul>
@@ -303,12 +303,12 @@ variable of either of the following types</strong>:</p>
 </pre>
 
 
-<h2>Casting</h2>
+<h2 id="casting">Casting</h2>
 <p><code>Casting</code> is the process of forcefully making a variable behave as a variable of another type.</p>
 <p>If a <code>class</code> shares an <code>IS-A</code> or <code>inheritance</code> relationship with another <code>class</code> or <code>interface</code>, their variables can be cast to each other’s type.</p>
 <p>Example: <code>((HRExecutive)interviewer).specialization = new String[] {"Staffing"};</code></p>
-<h2>Use this and super to access objects and constructors</h2>
-<h3>this</h3>
+<h2 id="use-this-and-super-to-access-objects-and-constructors">Use this and super to access objects and constructors</h2>
+<h3 id="this">this</h3>
 <p>The <code>this</code> reference always points to an <strong>object’s own instance</strong>.</p>
 <p>Any object can use the this reference to refer to its own instance.</p>
 <p>You can use the keyword <code>this</code> to refer to all methods and variables that are <strong>accessible to a class</strong>.</p>
@@ -355,7 +355,7 @@ variable of either of the following types</strong>:</p>
 
 
 <p><strong>If present, a call to a constructorfrom another constructor must be done on the first line of code of the calling constructor</strong>.</p>
-<h3>super</h3>
+<h3 id="super">super</h3>
 <p><code>super</code> is also an object reference, but <code>super</code> refers to the <strong>parent or base class of a class</strong>.</p>
 <p>Example:</p>
 <pre class="code literal-block"><span></span><span class="kt">void</span> <span class="nf">printNames</span><span class="o">()</span> <span class="o">{</span>
@@ -390,8 +390,8 @@ variable of either of the following types</strong>:</p>
 <p><strong>If present, a call to a superclass’s constructor must be the <em>first
 statement in a derived class’s constructor</em>. Otherwise, a call to <code>super();</code> (the no-arg constructor) is inserted automatically by the compiler.</strong></p>
 <p>Because <code>static method</code>s belong to a class, not to objects of a class, <strong>you can’t use <code>this</code> and <code>super</code> in <code>static method</code>s.</strong></p>
-<h2>Polymorphism</h2>
-<h3>Polymorphism with classes</h3>
+<h2 id="polymorphism">Polymorphism</h2>
+<h3 id="polymorphism-with-classes">Polymorphism with classes</h3>
 <p><code>Polymorphism</code></p>
 <ul>
 <li>
@@ -432,7 +432,7 @@ statement in a derived class’s constructor</em>. Otherwise, a call to <code>su
 <p>Review: <code>overloaded method</code>s define a method argument list with <strong>either a different number or type of method parameters</strong>.</p>
 <p><strong><code>Overloaded method</code>s only share the same name</strong>; the <code>JRE</code> treats them like <strong>different methods</strong>.</p>
 <p>In the case of <code>overridden method</code>s, <strong>the <code>JRE</code> decides at <code>runtime</code> which method should be called based on <em>the exact type of the object on which it’s called</em>.</strong></p>
-<h3>Binding of variables and methods at compile time and runtime</h3>
+<h3 id="binding-of-variables-and-methods-at-compile-time-and-runtime">Binding of variables and methods at compile time and runtime</h3>
 <p>With inheritance, the <code>instance variable</code>s bind at <strong>compile time</strong></p>
 <p><code>Method</code>s bind at <strong>runtime</strong>.</p>
 <p>Example:</p>
@@ -461,7 +461,7 @@ statement in a derived class’s constructor</em>. Otherwise, a call to <code>su
 </pre>
 
 
-<h3>Polymorphism with Interfaces</h3>
+<h3 id="polymorphism-with-interfaces">Polymorphism with Interfaces</h3>
 <p>Polymorphism can also be implemented using <code>interfaces</code>.</p>
 <p>Polymorphism with interfaces requires a <code>class</code> to <strong>implement</strong> an interface.</p>
 <p>Polymorphism with interfaces <strong>always involves <code>abstract method</code>s from the implemented interface</strong> because interfaces can define only abstract methods.</p>

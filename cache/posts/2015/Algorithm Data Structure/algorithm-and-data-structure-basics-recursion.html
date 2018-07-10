@@ -1,4 +1,4 @@
-<h3>Reference List</h3>
+<h3 id="reference-list">Reference List</h3>
 <ul>
 <li>
 <p><a href="http://www.nowamagic.net/librarys/veda/detail/2314">Understand Recursion (Chinese)</a></p>
@@ -7,7 +7,7 @@
 <p><a href="http://blog.csdn.net/wangjinyu501/article/details/8248492">Recursion (Chinese)</a></p>
 </li>
 </ul>
-<h3>Common Model of Recursion</h3>
+<h3 id="common-model-of-recursion">Common Model of Recursion</h3>
 <pre class="code literal-block"><span></span><span class="n">Obj</span> <span class="nf">recursion</span><span class="o">(</span><span class="n">Obj</span> <span class="n">o</span><span class="o">){</span>
     <span class="k">if</span><span class="o">(</span><span class="n">baseCondition</span><span class="o">){</span>
         <span class="cm">/*</span>
@@ -23,10 +23,10 @@
 
 
 <p><em>If there are other expression before or after recursion call, make sure you run it after each call back, because these expressions are part of method, and you want to call the full method for each recursion. Check "Hanoi" example below for detail.</em></p>
-<h3>Problem in Recursion</h3>
+<h3 id="problem-in-recursion">Problem in Recursion</h3>
 <p>Since system using <strong>stack</strong> to save return values from each callback, it's really easy to get memory overflow problem.</p>
-<h3>Hanoi</h3>
-<h4>Rule</h4>
+<h3 id="hanoi">Hanoi</h3>
+<h4 id="rule">Rule</h4>
 <ol>
 <li>
 <p>Move plate when number of plate is <code>1</code> (In code below, we want to printout basic value);</p>
@@ -35,7 +35,7 @@
 <p>If number of plates on a tower is more than <code>1</code> (assume <code>n</code>), move first <code>n-1</code> plate, then move the bottom plate.</p>
 </li>
 </ol>
-<h4>Code</h4>
+<h4 id="code">Code</h4>
 <pre class="code literal-block"><span></span><span class="cm">/**</span>
 <span class="cm">Result:</span>
 <span class="cm">    Dist 1 from A  to C</span>
@@ -72,8 +72,8 @@
 
 <p>To make code looks clear, I draw a draft of the sequence of recursion call for the code above. Note the purpose numbers are the sequence of call:</p>
 <p>../images/articles/2015/algorithm/hanoi_graph.png </p>
-<h3>Merge Sort</h3>
-<h4>Code</h4>
+<h3 id="merge-sort">Merge Sort</h3>
+<h4 id="code_1">Code</h4>
 <pre class="code literal-block"><span></span><span class="cm">/*</span>
 <span class="cm">Output:</span>
 <span class="cm">72 90 45 126 54</span>
@@ -161,7 +161,7 @@
 </pre>
 
 
-<h3>Binary Search</h3>
+<h3 id="binary-search">Binary Search</h3>
 <pre class="code literal-block"><span></span><span class="cm">/**</span>
 <span class="cm">Output:</span>
 <span class="cm">    45 54 72 90 126</span>
@@ -245,8 +245,8 @@
 </pre>
 
 
-<h3>Word Recursion (Anagram)</h3>
-<h4>Idea</h4>
+<h3 id="word-recursion-anagram">Word Recursion (Anagram)</h3>
+<h4 id="idea">Idea</h4>
 <p>Assume a word has <code>n</code> letters:</p>
 <ol>
 <li>
@@ -259,7 +259,7 @@
 <p>Do two steps above <code>n</code> times</p>
 </li>
 </ol>
-<h4>Code</h4>
+<h4 id="code_2">Code</h4>
 <pre class="code literal-block"><span></span><span class="cm">/**</span>
 <span class="cm">If you input &#39;test&#39;, you will get:</span>
 <span class="cm">  1 test</span>
@@ -347,8 +347,8 @@
 </pre>
 
 
-<h3>Height of B-Tree</h3>
-<h4>Code</h4>
+<h3 id="height-of-b-tree">Height of B-Tree</h3>
+<h4 id="code_3">Code</h4>
 <p>This is my code from hankerrank.com:</p>
 <pre class="code literal-block"><span></span>    <span class="cm">/*</span>
 <span class="cm">    class Node</span>
@@ -370,7 +370,7 @@
 </pre>
 
 
-<h3>Decide if B-Tree is Balanced</h3>
+<h3 id="decide-if-b-tree-is-balanced">Decide if B-Tree is Balanced</h3>
 <p>Following method is taken from <a href ="http://www.nowamagic.net/librarys/veda/detail/2314">this post</a>:</p>
 <pre class="code literal-block"><span></span><span class="cm">/*</span>
 <span class="cm">class Node</span>

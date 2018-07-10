@@ -7,7 +7,7 @@ article: http://ogp.me/ns/article#
 <meta charset="utf-8">
 <meta name="description" content="This posts will be continously updated, including intersting serach engine knowledge I found online, with introduction to Lucene">
 <meta name="viewport" content="width=device-width">
-<title>Search Engine Basics (Including Lucene) | I'm Pengyin</title>
+<title>Search Engine Basics (Including Lucene) | I'm Pengyin (Wendy)</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2015/Data%20Science/search-engine-basics-lucene.html">
@@ -26,7 +26,7 @@ MathJax.Hub.Config({
     }
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
-<meta property="og:site_name" content="I'm Pengyin">
+<meta property="og:site_name" content="I'm Pengyin (Wendy)">
 <meta property="og:title" content="Search Engine Basics (Including Lucene)">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2015/Data%20Science/search-engine-basics-lucene.html">
 <meta property="og:description" content="This posts will be continously updated, including intersting serach engine knowledge I found online, with introduction to Lucene">
@@ -72,12 +72,12 @@ MathJax.Hub.Config({
         </div>
         <div class="body">
             <div>
-<h3>Reference List</h3>
+<h3 id="reference-list">Reference List</h3>
 <ul>
 <li><a href="http://www.tutorialspoint.com/lucene/lucene_overview.htm">Lucene Tutorial from TutorialPoint.com</a></li>
 </ul>
-<h3>Search Engine Basics</h3>
-<h4>Search Application Operation List</h4>
+<h3 id="search-engine-basics">Search Engine Basics</h3>
+<h4 id="search-application-operation-list">Search Application Operation List</h4>
 <ol>
 <li>
 <p><strong>Acquire Raw Content</strong>: Collect the target contents on which search are to be conducted.</p>
@@ -104,18 +104,18 @@ MathJax.Hub.Config({
 <p><strong>Render Results</strong>: Once result is received the application should decide how to show the results to the user using User Interface. How much information is to be shown at first look and so on.</p>
 </li>
 </ol>
-<h3>Lucene Basics</h3>
-<h4>Setup</h4>
+<h3 id="lucene-basics">Lucene Basics</h3>
+<h4 id="setup">Setup</h4>
 <p>Lucene performs step 2 to step 7 in <code>Search Application Operation List</code> section above.</p>
 <p>You need <code>JDK</code> for Lucene setup. You can view setup process <a href="http://www.tutorialspoint.com/lucene/lucene_environment.htm">here</a>.</p>
-<h4>Index Process</h4>
+<h4 id="index-process">Index Process</h4>
 <p>In Lucene, <code>IndexWriter</code> is the most important and core component of the indexing process.</p>
 <p>Process Chart for TutorialsPoint:</p>
 <p>images/articles/2015/data/indexing_process.jpg </p>
 <blockquote>
 <p>We add Document(s) containing Field(s) to IndexWriter which analyzes the Document(s) using the Analyzer and then creates/open/edit indexes as required and store/update them in a Directory. IndexWriter is used to <em>update or create</em> indexes. It is not used to read indexes.</p>
 </blockquote>
-<h5>List of Indexing Classes</h5>
+<h5 id="list-of-indexing-classes">List of Indexing Classes</h5>
 <ol>
 <li>
 <p><a href="http://www.tutorialspoint.com/lucene/lucene_indexwriter.htm">IndexWriter</a>: This class acts as a core component which <strong>creates/updates indexes</strong> during indexing process.</p>
@@ -133,7 +133,7 @@ MathJax.Hub.Config({
 <p><a href="http://www.tutorialspoint.com/lucene/lucene_field.htm">Field</a>: Field is the <strong>lowest unit or the starting point</strong> of the indexing process. It represents the <code>key-value</code> pair relationship where a key is used to identify the value to be indexed. Say a field used to represent contents of a document will have key as "contents" and the value may contain the part or all of the text or numeric content of the document. Lucene can index only <strong>text or numeric</strong> contents only.</p>
 </li>
 </ol>
-<h5>List of Search Classes</h5>
+<h5 id="list-of-search-classes">List of Search Classes</h5>
 <p>Searching process is again one of the core functionality provided by Lucene.</p>
 <p>It's flow is similar to that of indexing process. Basic search of lucene can be made using following classes which can also be termed as foundation classes for all search related operations:</p>
 <ol>
@@ -153,7 +153,7 @@ MathJax.Hub.Config({
 <p><a href="http://www.tutorialspoint.com/lucene/lucene_topdocs.htm">TopDocs</a> : TopDocs points to the top N search results which matches the search criteria. It is simple container of pointers to point to documents which are output of search result.</p>
 </li>
 </ol>
-<h5>Create a Document</h5>
+<h5 id="create-a-document">Create a Document</h5>
 <ol>
 <li>
 <p>Create a method to <strong>get a lucene document</strong> from a text file.</p>
@@ -182,7 +182,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h5>Create a IndexWriter</h5>
+<h5 id="create-a-indexwriter">Create a IndexWriter</h5>
 <ol>
 <li>
 <p>IndexWriter class acts as a core component which <strong>creates/updates</strong> indexes during indexing process.</p>
@@ -208,7 +208,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h5>Start Indexing Process</h5>
+<h5 id="start-indexing-process">Start Indexing Process</h5>
 <pre class="code literal-block"><span></span><span class="kd">private</span> <span class="kt">void</span> <span class="nf">indexFile</span><span class="o">(</span><span class="n">File</span> <span class="n">file</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">IOException</span><span class="o">{</span>
    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Indexing "</span><span class="o">+</span><span class="n">file</span><span class="o">.</span><span class="na">getCanonicalPath</span><span class="o">());</span>
    <span class="n">Document</span> <span class="n">document</span> <span class="o">=</span> <span class="n">getDocument</span><span class="o">(</span><span class="n">file</span><span class="o">);</span>
@@ -217,8 +217,8 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h4>Basic Indexing Operations</h4>
-<h5>Add Document Operation</h5>
+<h4 id="basic-indexing-operations">Basic Indexing Operations</h4>
+<h5 id="add-document-operation">Add Document Operation</h5>
 <p>Add document is one of the core operation as part of indexing process.</p>
 <ol>
 <li>
@@ -236,7 +236,7 @@ MathJax.Hub.Config({
 <p>Way 2: <strong>addDocument(Document,Analyzer)</strong> - Adds the document using the provided analyzer.</p>
 </blockquote>
 <p>Refer "Start Indexing Process" section above for code reference.</p>
-<h5>Update Document Operation</h5>
+<h5 id="update-document-operation">Update Document Operation</h5>
 <p>Update document is another important operation as part of indexing process.</p>
 <p>This operation is used when already indexed contents are updated and indexes become invalid. This operation is also known as <code>re-indexing</code>.</p>
 <p>We update Document(s) containing Field(s) to <code>IndexWriter</code> where <code>IndexWriter</code> is used to update indexes.</p>
@@ -279,7 +279,7 @@ MathJax.Hub.Config({
 
 
 </blockquote>
-<h5>Delete Document Operation</h5>
+<h5 id="delete-document-operation">Delete Document Operation</h5>
 <p>Delete document is another important operation as part of indexing process.</p>
 <p>This operation is used when already indexed contents are updated and indexes become invalid or indexes become very large in size then <em>in order to reduce the size and update the index</em>, delete operations are carried out.</p>
 <p>We delete Document(s) containing Field(s) to <code>IndexWriter</code> where <code>IndexWriter</code> is used to update indexes.</p>
@@ -322,11 +322,11 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h5>Field Options</h5>
+<h5 id="field-options">Field Options</h5>
 <p>Field is the most important and the foundation unit of indexing process.</p>
 <p>It is the actual object containing the contents to be indexed. When we add a field, lucene provides numerous controls on the field using Field Options which states how much a field is to be searchable.</p>
 <p>We add Document(s) containing Field(s) to <code>IndexWriter</code> where <code>IndexWriter</code> is used to update or create indexes.</p>
-<h6>List of Field Options</h6>
+<h6 id="list-of-field-options">List of Field Options</h6>
 <ul>
 <li>
 <p><code>Index.ANALYZED</code>: First analyze then do indexing. Used for <em>normal text indexing</em>. Analyzer will break the field's value into stream of tokens and each token is searcable sepearately.</p>
@@ -344,7 +344,7 @@ MathJax.Hub.Config({
 <p><code>Index.NO</code>: Field value is not searchable.</p>
 </li>
 </ul>
-<h6>Use of Field Options</h6>
+<h6 id="use-of-field-options">Use of Field Options</h6>
 <ol>
 <li>
 <p>Same steps as <code>Create a Document</code> section</p>
@@ -353,7 +353,7 @@ MathJax.Hub.Config({
 <p>Add the newly created fields to the document object and return it to the caller method.</p>
 </li>
 </ol>
-<h4>Search Operations</h4>
+<h4 id="search-operations">Search Operations</h4>
 <p>Searching process is one of the core functionality provided by Lucene.</p>
 <p><code>IndexSearcher</code> is the most important and core component of the searching process.</p>
 <p>Process Chart for TutorialsPoint:</p>
@@ -361,7 +361,7 @@ MathJax.Hub.Config({
 <p>We first create <code>Directory</code>(s) containing <code>index</code>es and then pass it to <code>IndexSearcher</code> which opens the <code>Directory</code> using <code>IndexReader</code>.</p>
 <p>Then we create a <code>Query</code> with a <code>Term</code> and make a search using <code>IndexSearcher</code> by passing the <code>Query</code> to the searcher.</p>
 <p><code>IndexSearcher</code> returns a <code>TopDocs</code> object which contains the search details along with document <code>ID</code>(s) of the Document which is the result of the search operation.</p>
-<h5>Create a QueryParser</h5>
+<h5 id="create-a-queryparser">Create a QueryParser</h5>
 <ol>
 <li>
 <p>QueryParser class parses the user entered input into <strong>lucene understandable format query</strong>.</p>
@@ -384,7 +384,7 @@ MathJax.Hub.Config({
 
 
 </blockquote>
-<h5>Create a IndexSearch</h5>
+<h5 id="create-a-indexsearch">Create a IndexSearch</h5>
 <ol>
 <li>
 <p><code>IndexSearcher</code> class acts as a core component which searcher indexes created during indexing process.</p>
@@ -410,7 +410,7 @@ MathJax.Hub.Config({
 
 
 </blockquote>
-<h5>Make search</h5>
+<h5 id="make-search">Make search</h5>
 <ul>
 <li>
 <p>To start search, create a <code>Query</code> object by parsing search expression through QueryParser.</p>
@@ -429,7 +429,7 @@ MathJax.Hub.Config({
 
 
 </blockquote>
-<h5>Get the document</h5>
+<h5 id="get-the-document">Get the document</h5>
 <pre class="code literal-block"><span></span><span class="kd">public</span> <span class="n">Document</span> <span class="nf">getDocument</span><span class="o">(</span><span class="n">ScoreDoc</span> <span class="n">scoreDoc</span><span class="o">)</span>
    <span class="kd">throws</span> <span class="n">CorruptIndexException</span><span class="o">,</span> <span class="n">IOException</span><span class="o">{</span>
    <span class="k">return</span> <span class="n">indexSearcher</span><span class="o">.</span><span class="na">doc</span><span class="o">(</span><span class="n">scoreDoc</span><span class="o">.</span><span class="na">doc</span><span class="o">);</span>
@@ -437,14 +437,14 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h5>Close IndexSearcher</h5>
+<h5 id="close-indexsearcher">Close IndexSearcher</h5>
 <pre class="code literal-block"><span></span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">close</span><span class="o">()</span> <span class="kd">throws</span> <span class="n">IOException</span><span class="o">{</span>
    <span class="n">indexSearcher</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
 <span class="o">}</span>
 </pre>
 
 
-<h4>Query Programming</h4>
+<h4 id="query-programming">Query Programming</h4>
 <p><a href="http://www.tutorialspoint.com/lucene/lucene_termquery1.htm">TermQuery</a>: TermQuery is the most commonly used query object and is the foundation of many complex queries that lucene can make use of. TermQuery is normally used to retrieve documents based on the key which is case sensitive.</p>
 <p><a href="http://www.tutorialspoint.com/lucene/lucene_termrangequery.htm">TermRangeQuery</a>: TermRangeQuery is the used when a range of textual terms are to be searched.</p>
 <p><a href="http://www.tutorialspoint.com/lucene/lucene_prefixquery.htm">PrefixQuery</a>: PrefixQuery is used to match documents whose <em>index starts with a specified string</em>.</p>
@@ -453,7 +453,7 @@ MathJax.Hub.Config({
 <p>WhildCardQuery: WildcardQuery is used to search documents using wildcards like <code>*</code> for any character sequence,<code>?</code> matching a single character.</p>
 <p><a href="http://www.tutorialspoint.com/lucene/lucene_fuzzyquery.htm">FuzzyQuery</a>: FuzzyQuery is used to search documents using <strong>fuzzy implementation</strong> that is an approximate search based on edit distance algorithm.</p>
 <p><a href="http://www.tutorialspoint.com/lucene/lucene_matchalldocsquery.htm">MatchAllDocsQuery</a>: MatchAllDocsQuery as name suggests <em>matches all the documents</em>.</p>
-<h4>Analysis Objects</h4>
+<h4 id="analysis-objects">Analysis Objects</h4>
 <p><a href="http://www.tutorialspoint.com/lucene/lucene_token.htm">Token</a>: Token represents text or word in a document with relevant details like its <strong>metadata</strong> (position, start offset, end offset, token type and its position increment).</p>
 <p><a href="http://www.tutorialspoint.com/lucene/lucene_tokenstream.htm">TokenStream</a>: TokenStream is an output of analysis process and it comprises of series of tokens. It is an abstract class.</p>
 <p><a href="http://www.tutorialspoint.com/lucene/lucene_analyzer_class.htm">Analyzer</a>: Analyzer class is responsible to analyze a document and get the tokens/words from the text which is to be indexed. Without analysis done, IndexWriter can not create index.</p>
@@ -461,8 +461,8 @@ MathJax.Hub.Config({
 <p><a href="http://www.tutorialspoint.com/lucene/lucene_simpleanalyzer.htm">SimpleAnalyzer</a>: This analyzer spilts the text in a document based on <strong>non-letter characters</strong> and then lowercase them.</p>
 <p><a href="http://www.tutorialspoint.com/lucene/lucene_stopanalyzer.htm">StopAnalyzer</a>: This analyzer works similar to SimpleAnalyzer and remove the common words like <code>a</code>,<code>an</code>,<code>the</code> etc.</p>
 <p><a href="http://www.tutorialspoint.com/lucene/lucene_standardanalyzer.htm">StandardAnalyzer</a>: This is the most sofisticated analyzer and is capable of handling <code>names</code>, <code>email address</code> etc. It lowercases each token and removes common words and punctuation if any.</p>
-<h4>Sorting</h4>
-<h5>Sorting By Relevance</h5>
+<h4 id="sorting">Sorting</h4>
+<h5 id="sorting-by-relevance">Sorting By Relevance</h5>
 <p>This is <strong>default</strong> sorting mode used by lucene.</p>
 <p>Lucene provides results by the most relevant hit at the top.</p>
 <p>Example Code from TutorialsPoint:</p>
@@ -490,7 +490,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h5>Sorting By IndexOrder</h5>
+<h5 id="sorting-by-indexorder">Sorting By IndexOrder</h5>
 <p>This is sorting mode used by lucene in which first document indexed is shown first in the search results.</p>
 <pre class="code literal-block"><span></span><span class="kd">private</span> <span class="kt">void</span> <span class="nf">sortUsingIndex</span><span class="o">(</span><span class="n">String</span> <span class="n">searchQuery</span><span class="o">)</span>
  <span class="kd">throws</span> <span class="n">IOException</span><span class="o">,</span> <span class="n">ParseException</span><span class="o">{</span>
@@ -544,7 +544,7 @@ MathJax.Hub.Config({
 
 
     </div>
-                     <footer id="footer"><p>Contents © 2018         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                     <footer id="footer"><p>Contents © 2018         <a href="mailto:pengyin.shan@outlook.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

@@ -7,7 +7,7 @@ article: http://ogp.me/ns/article#
 <meta charset="utf-8">
 <meta name="description" content="My job may requires me to use AngularJS in future projects, so I write this post to review some useful information about AngularJS.">
 <meta name="viewport" content="width=device-width">
-<title>AngularJS Basics | I'm Pengyin</title>
+<title>AngularJS Basics | I'm Pengyin (Wendy)</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2015/JavaScript/angularjs-basics.html">
@@ -26,7 +26,7 @@ MathJax.Hub.Config({
     }
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
-<meta property="og:site_name" content="I'm Pengyin">
+<meta property="og:site_name" content="I'm Pengyin (Wendy)">
 <meta property="og:title" content="AngularJS Basics">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2015/JavaScript/angularjs-basics.html">
 <meta property="og:description" content="My job may requires me to use AngularJS in future projects, so I write this post to review some useful information about AngularJS.">
@@ -68,7 +68,7 @@ MathJax.Hub.Config({
         </div>
         <div class="body">
             <div>
-<h3>Resouce List</h3>
+<h3 id="resouce-list">Resouce List</h3>
 <ul>
 <li>
 <p><a href="http://www.tutorialspoint.com/angularjs">AngularJS Tutorial on tutorialspoint.com</a></p>
@@ -77,7 +77,7 @@ MathJax.Hub.Config({
 <p><a href="https://docs.angularjs.org">AngularJS Official API Doc</a></p>
 </li>
 </ul>
-<h3>Core Features</h3>
+<h3 id="core-features">Core Features</h3>
 <ul>
 <li>
 <p><code>Data-binding</code>: Two-way data-binding between model and view components.</p>
@@ -115,7 +115,7 @@ MathJax.Hub.Config({
 </ul>
 <p>A description graph from tutorialspoint.com:</p>
 <p>../images/articles/2015/javascript/angularjs_concepts.jpg </p>
-<h3>Three Major Parts</h3>
+<h3 id="three-major-parts">Three Major Parts</h3>
 <ul>
 <li>
 <p><code>ng-app</code>: Link a AngularJS application to HTML.</p>
@@ -127,7 +127,7 @@ MathJax.Hub.Config({
 <p><code>ng-bind</code>: Bind angularJS application to HTML tags.</p>
 </li>
 </ul>
-<h3>Controller</h3>
+<h3 id="controller">Controller</h3>
 <p>HTML:</p>
 <pre class="code literal-block"><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">ng-app</span><span class="o">=</span><span class="s">""</span> <span class="na">ng-controller</span><span class="o">=</span><span class="s">"testController"</span><span class="p">&gt;</span>
     Test Name 1: {{names.name1}}
@@ -150,7 +150,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h3>Type of Filters</h3>
+<h3 id="type-of-filters">Type of Filters</h3>
 <ul>
 <li>
 <p><code>uppercase</code></p>
@@ -168,7 +168,7 @@ MathJax.Hub.Config({
 <p><code>orderby</code></p>
 </li>
 </ul>
-<h3>HTML DOM Control</h3>
+<h3 id="html-dom-control">HTML DOM Control</h3>
 <ul>
 <li>
 <p><code>ng-disabled</code>: disable a given control.</p>
@@ -189,7 +189,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h3>Module</h3>
+<h3 id="module">Module</h3>
 <ul>
 <li>
 <p><code>Application Module</code>: Initialize application with controller</p>
@@ -202,7 +202,7 @@ MathJax.Hub.Config({
 <p><code>Controller Module</code>: Define the controller. Example is in "Controller" section</p>
 </li>
 </ul>
-<h3>ng-events</h3>
+<h3 id="ng-events">ng-events</h3>
 <ul>
 <li>
 <p><code>ng-click</code></p>
@@ -241,8 +241,8 @@ MathJax.Hub.Config({
 <p><code>ng-change</code></p>
 </li>
 </ul>
-<h3>Forms</h3>
-<h4>Data Validation</h4>
+<h3 id="forms">Forms</h3>
+<h4 id="data-validation">Data Validation</h4>
 <ul>
 <li>
 <p><code>$dirty</code>: Notify when a value is changed</p>
@@ -267,7 +267,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h3>ng-includes</h3>
+<h3 id="ng-includes">ng-includes</h3>
 <p><code>ng-includes</code> is used to include partial views, which is similar to
 <code>&lt;jsp:include page = "../../test.jsp"/&gt;</code> in JSP page.</p>
 <p>Example from tutorialspoint.com:</p>
@@ -278,7 +278,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h3>AJAX in AngularJS</h3>
+<h3 id="ajax-in-angularjs">AJAX in AngularJS</h3>
 <p>Similar as jQuery, the format of AJAX is following:</p>
 <pre class="code literal-block"><span></span><span class="nx">$http</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">'/someUrl'</span><span class="p">).</span>
   <span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
@@ -303,14 +303,14 @@ MathJax.Hub.Config({
 
 
 <p>Since AngularJS Ajax involves in some other knowledge, I will write extra post about this.</p>
-<h3>Views</h3>
-<h4>ng-view</h4>
+<h3 id="views">Views</h3>
+<h4 id="ng-view">ng-view</h4>
 <p>Just create a placeholder for easier configuration:</p>
 <pre class="code literal-block"><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">ng-view</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </pre>
 
 
-<h4>ng-template</h4>
+<h4 id="ng-template">ng-template</h4>
 <p>Create a view with <code>id</code>. This view will be map to a controller using <code>$routeProvider</code>.</p>
 <p>Example from tutorialspoint.com:</p>
 <pre class="code literal-block"><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">ng-app</span><span class="o">=</span><span class="s">"mainApp"</span><span class="p">&gt;</span>
@@ -322,7 +322,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h4>$routeProvider</h4>
+<h4 id="routeprovider">$routeProvider</h4>
 <p><code>$routeProvider</code> configure urls and map to corresponding views. The controller for that corresponding view will also be attached. It works similar to <code>@RequestMapping(value='...')</code> function in Spring MVC framework.</p>
 <p>Example from tutorialspoint.com:</p>
 <pre class="code literal-block"><span></span><span class="c1">//You need to add ngRoute to application controller</span>
@@ -348,7 +348,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h3>Scope</h3>
+<h3 id="scope">Scope</h3>
 <p><code>$scope</code> is passed as first argument to controller during its constructor definition.</p>
 <ul>
 <li>
@@ -375,11 +375,11 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h3>Service</h3>
+<h3 id="service">Service</h3>
 <p>Services are JavaScript functions and are responsible to do a <strong>specific tasks</strong> **only.</p>
 <p>Services are normally injected using <strong>dependency injection</strong> mechanism of AngularJS.</p>
 <p>There are two types of service.</p>
-<h4>Factory</h4>
+<h4 id="factory">Factory</h4>
 <p>Define a factory then assign method to it.</p>
 <p>Example from tutorialspoint.com:</p>
 <pre class="code literal-block"><span></span> <span class="kd">var</span> <span class="nx">mainApp</span> <span class="o">=</span> <span class="nx">angular</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s2">"mainApp"</span><span class="p">,</span> <span class="p">[]);</span>
@@ -395,7 +395,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h4>Service</h4>
+<h4 id="service_1">Service</h4>
 <p>Call Factory and perform methods defined in Factory:</p>
 <pre class="code literal-block"><span></span><span class="c1">//take MathService factory as a parameter</span>
 <span class="nx">mainApp</span><span class="p">.</span><span class="nx">service</span><span class="p">(</span><span class="s1">'CalcService'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">MathService</span><span class="p">){</span>
@@ -419,7 +419,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h3>Dependency Injection</h3>
+<h3 id="dependency-injection">Dependency Injection</h3>
 <p>Following component of AngulaJS can be injected into other components:</p>
 <ul>
 <li>
@@ -464,7 +464,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h3>Custom Directives</h3>
+<h3 id="custom-directives">Custom Directives</h3>
 <p>Custom directives are defined using <code>directive</code> function. <strong>A custom directive simply replaces the element for which it is activated</strong>.</p>
 <p>AngularJS use its <code>compile()</code> method of the custom directive then process the element using <code>link()</code> method of the custom directive based on the scope of the directive.</p>
 <p>You can create custom directives for following type of elements:</p>
@@ -570,7 +570,7 @@ MathJax.Hub.Config({
 
 
     </div>
-                     <footer id="footer"><p>Contents © 2018         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                     <footer id="footer"><p>Contents © 2018         <a href="mailto:pengyin.shan@outlook.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

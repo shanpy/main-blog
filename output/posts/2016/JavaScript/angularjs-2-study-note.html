@@ -6,7 +6,7 @@ article: http://ogp.me/ns/article#
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>AngularJS 2 Study Note (Continually Update) | I'm Pengyin</title>
+<title>AngularJS 2 Study Note (Continually Update) | I'm Pengyin (Wendy)</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2016/JavaScript/angularjs-2-study-note.html">
@@ -25,7 +25,7 @@ MathJax.Hub.Config({
     }
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
-<meta property="og:site_name" content="I'm Pengyin">
+<meta property="og:site_name" content="I'm Pengyin (Wendy)">
 <meta property="og:title" content="AngularJS 2 Study Note (Continually Update)">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2016/JavaScript/angularjs-2-study-note.html">
 <meta property="og:description" content="While my recent project involving in processing data, I think this is a good chance for to touch AngularJS 2, and a little bit TypeScript. This study note follows BASICS and DEVELOPER GUIDE part in of">
@@ -68,7 +68,7 @@ MathJax.Hub.Config({
 <p>While my recent project involving in processing data, I think this is a good chance for to touch AngularJS 2, and a little bit TypeScript. <em>This study note follows BASICS and DEVELOPER GUIDE part in official document</em>.</p>
 <!-- TEASER_END -->
 
-<h2>Reference List</h2>
+<h2 id="reference-list">Reference List</h2>
 <ul>
 <li>
 <p><a href="https://angular.cn">AngularJS 2 Official Website (Chinese)</a></p>
@@ -77,7 +77,7 @@ MathJax.Hub.Config({
 <p><a href="https://angular.io/">AngularJS 2 Office Website (English)</a></p>
 </li>
 </ul>
-<h2>Architecture</h2>
+<h2 id="architecture">Architecture</h2>
 <p>Based on official suggestion, an angular app should contains following parts:</p>
 <ul>
 <li>
@@ -95,7 +95,7 @@ MathJax.Hub.Config({
 </ul>
 <p>Other parts includes MetaData, Directives, etc. Angular website has a very clear graph which describe how things works together:</p>
 <p>img-responsive images/articles/2016/javascript/angular-architecture.png </p>
-<h2>Module</h2>
+<h2 id="module">Module</h2>
 <p>Angular Module is also called <code>NgModule</code>.</p>
 <p>Generally, module is used to:</p>
 <ol>
@@ -111,7 +111,7 @@ MathJax.Hub.Config({
 <blockquote>
 <p>A <strong>decorator</strong> is used to add <code>metadata</code> to class, like <code>@randomly</code> or <code>@superhero</code>.</p>
 </blockquote>
-<h3>AppModule</h3>
+<h3 id="appmodule">AppModule</h3>
 <p>Every angular app has a <strong>root module</strong>, called <code>AppModule</code>. It is in <code>app.module.ts</code> file.</p>
 <p>The minimal <code>app.module.ts</code>:</p>
 <pre class="code literal-block"><span></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">NgModule</span> <span class="p">}</span>      <span class="nx">from</span> <span class="s1">'@angular/core'</span><span class="p">;</span>
@@ -145,7 +145,7 @@ MathJax.Hub.Config({
 
 
 <p>Bootstrap process can be done dynamically or statically. Official document has detail.</p>
-<h3>NgModule</h3>
+<h3 id="ngmodule">NgModule</h3>
 <p>NgModule is a decorator class. It has following properties:</p>
 <ul>
 <li>
@@ -185,7 +185,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h3>Angular Module Library</h3>
+<h3 id="angular-module-library">Angular Module Library</h3>
 <p>Angular has a series of module libraries. User can use <code>import {} from '@angular/XXX</code> format to import and use it.</p>
 <p>Use <code>npm</code> to install these modules.</p>
 </div>
@@ -211,7 +211,7 @@ MathJax.Hub.Config({
 
 
     </div>
-                     <footer id="footer"><p>Contents © 2018         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                     <footer id="footer"><p>Contents © 2018         <a href="mailto:pengyin.shan@outlook.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

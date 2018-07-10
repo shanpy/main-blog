@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>I'm Pengyin (Posts about Sorting)</title><link>http://pengyin-shan.com/</link><description></description><atom:link href="http://pengyin-shan.com/categories/sorting.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 06 Jul 2018 17:48:44 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Algorithm and Data Structure Basics - Sorting</title><link>http://pengyin-shan.com/posts/2015/Algorithm%20Data%20Structure/algorithm-and-data-structure-basics-sorting.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h4&gt;Reference List&lt;/h4&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>I'm Pengyin (Posts about Sorting)</title><link>http://pengyin-shan.com/</link><description></description><atom:link type="application/rss+xml" rel="self" href="http://pengyin-shan.com/categories/sorting.xml"></atom:link><language>en</language><lastBuildDate>Tue, 10 Jul 2018 14:56:12 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Algorithm and Data Structure Basics - Sorting</title><link>http://pengyin-shan.com/posts/2015/Algorithm%20Data%20Structure/algorithm-and-data-structure-basics-sorting.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h4 id="reference-list"&gt;Reference List&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Introduction to Algorithms (Third Edition/Chinese Version)&lt;/strong&gt;, written by &lt;em&gt;Thomas H.Cormen&lt;/em&gt;, &lt;em&gt;Charles E.Leiserson&lt;/em&gt;, &lt;em&gt;Ronald L.Rivest&lt;/em&gt; and &lt;em&gt;Clifford Stein&lt;/em&gt;, and translated by &lt;em&gt;Jianping Yin&lt;/em&gt;, &lt;em&gt;Yun Xu&lt;/em&gt;, &lt;em&gt;Gang Wang&lt;/em&gt;, &lt;em&gt;Xiaoguang Liu&lt;/em&gt;, &lt;em&gt;Ming Su&lt;/em&gt;, &lt;em&gt;Hengming Zou&lt;/em&gt; and &lt;em&gt;HongZhi Wang&lt;/em&gt;.&lt;/p&gt;
@@ -8,11 +8,11 @@
 &lt;p&gt;&lt;strong&gt;Data Structures and Algorithms in Java (Second Edition/Chinese Version)&lt;/strong&gt;, written by &lt;em&gt;Robert Lafore&lt;/em&gt;, and translated by &lt;em&gt;Xiaoyun Ji&lt;/em&gt;, &lt;em&gt;Yan Zhao&lt;/em&gt;, &lt;em&gt;Xi Zeng&lt;/em&gt; and &lt;em&gt;Xiaohan Di&lt;/em&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4&gt;Terminology &amp;amp; Runtime Analysis&lt;/h4&gt;
+&lt;h4 id="terminology-runtime-analysis"&gt;Terminology &amp;amp; Runtime Analysis&lt;/h4&gt;
 &lt;p&gt;&lt;em&gt;This part serves as a reading note for Introduction to Algorithms (Third Edition), Chapter 1 and Chapter 2, to clarify some basic terms of Algorithms&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;Algorithm&lt;/code&gt; is the process of reading a value or a collection of value as &lt;strong&gt;input&lt;/strong&gt;, and product a value or a collection of value as &lt;strong&gt;output&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;A sequence of input (with constrains) from a algorithm question is called a &lt;code&gt;instance&lt;/code&gt; of that question.&lt;/p&gt;
-&lt;h5&gt;Runtime Analysis&lt;/h5&gt;
+&lt;h5 id="runtime-analysis"&gt;Runtime Analysis&lt;/h5&gt;
 &lt;p&gt;From the book &lt;em&gt;Introduction to Algorithms&lt;/em&gt;, the reason we are focusing on &lt;strong&gt;worst case running time&lt;/strong&gt; is:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -25,7 +25,7 @@
 &lt;p&gt;There is lots of times that the &lt;em&gt;average running time&lt;/em&gt; is the same as the &lt;em&gt;worst running time&lt;/em&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h4&gt;Basic Insertion Sort, with Analysis for Algorithm Questions&lt;/h4&gt;
+&lt;h4 id="basic-insertion-sort-with-analysis-for-algorithm-questions"&gt;Basic Insertion Sort, with Analysis for Algorithm Questions&lt;/h4&gt;
 &lt;p&gt;Insertion sort is very useful for a &lt;strong&gt;small&lt;/strong&gt; amount of input.&lt;/p&gt;
 &lt;p&gt;In book &lt;em&gt;Introduction to Algorithms&lt;/em&gt;, insertion sort is described as the same process of someone sorting a group of pokers in a poker game. All elements on one side of your current item (i.e. the item that is supposed to be sorted) is in order.&lt;/p&gt;
 &lt;p&gt;Pseudo-code for Insertion Sort:&lt;/p&gt;
@@ -45,7 +45,7 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Basic Selection Sort&lt;/h4&gt;
+&lt;h4 id="basic-selection-sort"&gt;Basic Selection Sort&lt;/h4&gt;
 &lt;p&gt;To perform selection sort, you are given a array of numbers: &lt;code&gt;A&lt;/code&gt;.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -74,7 +74,7 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Basic Merge Sort&lt;/h4&gt;
+&lt;h4 id="basic-merge-sort"&gt;Basic Merge Sort&lt;/h4&gt;
 &lt;p&gt;Merge sort uses &lt;code&gt;divide-and-concur&lt;/code&gt; mode:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -103,7 +103,7 @@
 &lt;p&gt;In &lt;em&gt;Introduction to Algorithms&lt;/em&gt;, a &lt;strong&gt;poker example&lt;/strong&gt; is used to describe the merge process. The merge process is to chose a smaller one from the top of two piled poker, and put that poker to a new pile. Repeat this process until one pile is empty.&lt;/p&gt;
 &lt;p&gt;Since we most perform &lt;code&gt;n&lt;/code&gt; steps to merge, the running time of merge is $theta (n)$.&lt;/p&gt;
 &lt;p&gt;For Merge Sort in Java, please refer to &lt;a href="http://pengyin-shan.com/posts/2015/Algorithm%20Data%20Structure/blog/algorithm-and-data-structure-basics-recursion"&gt;this post&lt;/a&gt;.&lt;/p&gt;
-&lt;h4&gt;Tips and Comments&lt;/h4&gt;
+&lt;h4 id="tips-and-comments"&gt;Tips and Comments&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;From &lt;em&gt;Introduction to Algorithms&lt;/em&gt;, if you have a binary number, moving all digits one position to left means multiplying it by two. if you move all digits &lt;em&gt;k&lt;/em&gt; position to left, you multiply origin number by $2^k$.&lt;/li&gt;
 &lt;/ul&gt;

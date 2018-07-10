@@ -7,7 +7,7 @@ article: http://ogp.me/ns/article#
 <meta charset="utf-8">
 <meta name="description" content="Project Hydra is a powerful repository solution, which are used by lots of institutions. To learn more about Hydra, I tried the Dive into Hytra tutorial. This posts includes my thoughts about it.">
 <meta name="viewport" content="width=device-width">
-<title>Dive into Hydra and My Thoughts | I'm Pengyin</title>
+<title>Dive into Hydra and My Thoughts | I'm Pengyin (Wendy)</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2015/Others/dive-into-hydra-and-my-thoughts.html">
@@ -26,7 +26,7 @@ MathJax.Hub.Config({
     }
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
-<meta property="og:site_name" content="I'm Pengyin">
+<meta property="og:site_name" content="I'm Pengyin (Wendy)">
 <meta property="og:title" content="Dive into Hydra and My Thoughts">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2015/Others/dive-into-hydra-and-my-thoughts.html">
 <meta property="og:description" content="Project Hydra is a powerful repository solution, which are used by lots of institutions. To learn more about Hydra, I tried the Dive into Hytra tutorial. This posts includes my thoughts about it.">
@@ -69,11 +69,11 @@ MathJax.Hub.Config({
         <div class="body">
             <div>
 <p><em>This post is being updated while I'm learning more about Hydra</em></p>
-<h4>Main Idea</h4>
+<h4 id="main-idea">Main Idea</h4>
 <p>I used to create a small Spring MVC web app <a href="https://github.com/shanpy/RDFExperiment">RDF Experiment</a> to experiment the ideas behind Hydra. Following is a graph about my assumption of Hydra Idea:</p>
 <p>../images/articles/2015/digital_library/ProjectHydra.png </p>
 <p>Behind this large frame, there are lots of small classes/methods that will push through stages above.</p>
-<h5>Key Concerns</h5>
+<h5 id="key-concerns">Key Concerns</h5>
 <p>Following key concerns should be evaluated carefully during the processes above:</p>
 <ul>
 <li>
@@ -86,12 +86,12 @@ MathJax.Hub.Config({
 <p>Is there any visualization job can be done to let user understand more about results?</p>
 </li>
 </ul>
-<h4>Problems and Thoughts</h4>
-<h5>Installation</h5>
+<h4 id="problems-and-thoughts">Problems and Thoughts</h4>
+<h5 id="installation">Installation</h5>
 <p>Although RubyInstaller is available in Windows, I still encountered lots of unexpected errors when setting up environment in Windows 10. I took much less time in Linux. I used to run CygWin for virtual Linux environment in Windows, but it's not work well for any environment setup process, including Python and RoR.</p>
 <p>If anyone is like me who are starting a taste of Hydra, I suggest using Unix-Based system first.</p>
 <p><em>Update on 8/12/15</em>: I created a <a href="http://pengyin-shan.com/blog/setting-up-ror-hydra-environment-problems-and-solutions">post</a> talking about installation of RoR and Hydra. If you need to install RoR or Hydra, feel free to use this post.</p>
-<h5>RoR</h5>
+<h5 id="ror">RoR</h5>
 <p>Since both Spring and Rails framework are holding MVC structure, it's not hard to transfer idea from Spring to RoR. Subfolders in <code>app</code> folder self-explained themselves:</p>
 <ul>
 <li>
@@ -105,7 +105,7 @@ MathJax.Hub.Config({
 </li>
 </ul>
 <p>The basic structure of Hydra-Demo is similar to the a Node.js app, and <code>Gemfile</code> is similar to <code>requirements.txt</code> file in Python.</p>
-<h5>Deployment</h5>
+<h5 id="deployment">Deployment</h5>
 <p>Unfortunately, although Hydra is can be deployed on development environment easily for a single developer, there's no hosting platform that fully host a production environment of it. Following problem needs to be considered:</p>
 <p>First, the default database needs to be changed in <code>database.yml</code>. Obviously not a lot of institutions will use SQLite3 (Default) in production environment.</p>
 <p><em>Solution</em>: I have tried to replace it by MySQL and PostgreSQL, and these two solution all work. I believe other RDBMS should also work well. Just need to change <code>Gemfile</code>. Replace <code>gem 'sqlite3'</code> to <code>gem 'pg'</code> or <code>gem 'mysql2'</code>.</p>
@@ -157,7 +157,7 @@ production: #...
 
 
     </div>
-                     <footer id="footer"><p>Contents © 2018         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                     <footer id="footer"><p>Contents © 2018         <a href="mailto:pengyin.shan@outlook.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

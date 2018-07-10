@@ -7,7 +7,7 @@ article: http://ogp.me/ns/article#
 <meta charset="utf-8">
 <meta name="description" content="A recent project involves in using SVG (Scalable Vector Graphics) to create triangle borders. This is a quick study note of using SVG in web development.">
 <meta name="viewport" content="width=device-width">
-<title>SVG Study Note | I'm Pengyin</title>
+<title>SVG Study Note | I'm Pengyin (Wendy)</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2016/Front%20End/svg-study-note.html">
@@ -26,7 +26,7 @@ MathJax.Hub.Config({
     }
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
-<meta property="og:site_name" content="I'm Pengyin">
+<meta property="og:site_name" content="I'm Pengyin (Wendy)">
 <meta property="og:title" content="SVG Study Note">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2016/Front%20End/svg-study-note.html">
 <meta property="og:description" content="A recent project involves in using SVG (Scalable Vector Graphics) to create triangle borders. This is a quick study note of using SVG in web development.">
@@ -66,7 +66,7 @@ MathJax.Hub.Config({
         </div>
         <div class="body">
             <div>
-<h2>Reference List</h2>
+<h2 id="reference-list">Reference List</h2>
 <ul>
 <li>
 <p>(Chinese) <a href="http://waylau.com/svg-viewport-view-box/?utm_source=tuicool&amp;utm_medium=referral">SVG Viewport and View Box</a> written by <em>Way Lau</em>.</p>
@@ -75,7 +75,7 @@ MathJax.Hub.Config({
 <p>(Chinese) <a href="http://www.zhangxinxu.com/wordpress/2014/08/svg-viewport-viewbox-preserveaspectratio/">Understand viewport, viewVox, preserveAspectRatio in SVG</a> by <em>zhangxinxu</em>.</p>
 </li>
 </ul>
-<h2><code>viewport</code></h2>
+<h2 id="viewport"><code>viewport</code></h2>
 <p><code>viewport</code> creates a new axis inside svg area. It provides a new scale inside svg.</p>
 <p>It has two attribute: <code>width</code> and <code>height</code>. These two attributes is defined as <strong>unit</strong>, such as <code>em</code>, <code>px</code> or <code>%</code>, depends on css setting. The default unit is <code>px</code>.</p>
 <p>Example code:</p>
@@ -84,12 +84,12 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h2><code>viewbox</code></h2>
+<h2 id="viewbox"><code>viewbox</code></h2>
 <p><code>viewbox</code> is a way of scaling svg view-able space. it has four attributes: <code>x-position</code>, <code>y-position</code>, <code>width</code>, <code>height</code>. <strong>Note a positive value in y-position meaning counting down from start point.</strong></p>
 <p>The use of <code>viewbox</code> is to expand item to full svg area, following the scale defined in <code>viewbox</code>. For example, <code>&lt;svg width="500" height="300" viewbox="0 0 150 300"&gt;&lt;/svg&gt;</code> means define a area width a width of 150 and height of 300 from zero-point, then <strong>expand it to full svg (width 500 height 300)</strong>. Everything inside viewbox will be also re-scaled.</p>
 <p>A great demo (Chinese) created by <strong>zhangxinyu</strong> can be found <a href="http://www.zhangxinxu.com/study/201408/svg-viewbox-explain.html">here</a>.</p>
 <p>img-responsive images/articles/2016/frontend/viewbox.gif </p>
-<h2><code>preserveAspectRatio</code></h2>
+<h2 id="preserveaspectratio"><code>preserveAspectRatio</code></h2>
 <p><code>preserveAspectRatio</code> has two attributes: <code>how viewBox align with viewport</code>, <code>ratio of height and width</code>.</p>
 <p>The first attribute has two parts: <code>x alignment</code> and <code>y alignment</code>. Options are:</p>
 <ul>
@@ -114,7 +114,7 @@ MathJax.Hub.Config({
 </ul>
 <p>So, a full option for first attribute is something like <code>xMinYMid</code> or <code>xMaxYMax</code>.</p>
 <p>The second attribute has following option:</p>
-<h3><code>meet</code></h3>
+<h3 id="meet"><code>meet</code></h3>
 <p><code>viewbox</code> following its ratio, even the graph is out of svg area.</p>
 <p>Example Code:</p>
 <pre class="code literal-block"><span></span><span class="p">&lt;</span><span class="nt">svg</span> <span class="na">width</span><span class="o">=</span><span class="s">"400"</span> <span class="na">height</span><span class="o">=</span><span class="s">"200"</span> <span class="na">viewBox</span><span class="o">=</span><span class="s">"0 0 200 300"</span> <span class="na">preserveAspectRatio</span><span class="o">=</span><span class="s">"xMinYMin meet"</span> <span class="na">style</span><span class="o">=</span><span class="s">"border:1px solid #cd0000;"</span><span class="p">&gt;</span>
@@ -125,11 +125,11 @@ MathJax.Hub.Config({
 
 <p>Result from code above. Notice the rectangle is still in <em>2:3</em> ratio for <em>width:height</em>.</p>
 <p>img-responsive images/articles/2016/frontend/ratio-meet </p>
-<h3><code>slice</code></h3>
+<h3 id="slice"><code>slice</code></h3>
 <p>Keep current ratio, while expanding <code>viewbox</code> till <strong>short slide</strong> of <code>viewport</code> is <strong>filled</strong> (Even though the inner shape is smaller width/height than svg, the short side of svg is still be filled).</p>
 <p>Result from code above. Note <em>height</em> is filled first, since it's the shorter side:</p>
 <p>img-responsive images/articles/2016/frontend/ratio-slice </p>
-<h3><code>none</code></h3>
+<h3 id="none"><code>none</code></h3>
 <p>Shapes inside <code>viewbox</code> is hardly defined by its own width and height, without following any ratio.</p>
 <p>Result from code above. :</p>
 <p>img-responsive images/articles/2016/frontend/ratio-slice </p>
@@ -166,7 +166,7 @@ MathJax.Hub.Config({
 
 
     </div>
-                     <footer id="footer"><p>Contents © 2018         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                     <footer id="footer"><p>Contents © 2018         <a href="mailto:pengyin.shan@outlook.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

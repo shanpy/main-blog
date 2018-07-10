@@ -6,6 +6,8 @@
 .. authors: Pengyin Shan
 .. description: This is a highlight list (Kindle Exported) for book 'How to read a book effectively', written by 奥野宣之. I read Chinese version.
 
+[TOC]
+
 #读书笔记的好处
 
 至于能否得心应手地做好读书笔记，进而熟练地参考记录过的笔记，都是坚持写读书笔记几年甚至是几十年后才能收到的效果。所以，为了达到这样的境界，一切都应该以“能坚持下去”为先。

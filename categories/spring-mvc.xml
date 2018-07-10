@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>I'm Pengyin (Posts about Spring MVC)</title><link>http://pengyin-shan.com/</link><description></description><atom:link href="http://pengyin-shan.com/categories/spring-mvc.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 06 Jul 2018 17:48:42 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Possible Ajax Error Code and Reasons</title><link>http://pengyin-shan.com/posts/2015/JavaScript/possible-ajax-error-code-and-reasons.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3&gt;400 (Bad Request)&lt;/h3&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>I'm Pengyin (Posts about Spring MVC)</title><link>http://pengyin-shan.com/</link><description></description><atom:link type="application/rss+xml" rel="self" href="http://pengyin-shan.com/categories/spring-mvc.xml"></atom:link><language>en</language><lastBuildDate>Tue, 10 Jul 2018 14:56:11 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Possible Ajax Error Code and Reasons</title><link>http://pengyin-shan.com/posts/2015/JavaScript/possible-ajax-error-code-and-reasons.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3 id="400-bad-request"&gt;400 (Bad Request)&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;In jQuery, no &lt;code&gt;JSON.stringify()&lt;/code&gt; is used to parse JavaScript object to JSON object&lt;/p&gt;
@@ -8,11 +8,11 @@
 &lt;p&gt;Use &lt;code&gt;$.ajax()&lt;/code&gt; but doesn't include &lt;code&gt;type: "GET/POST/etc"&lt;/code&gt; in AJAX body&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;406 (Not Acceptable Response)&lt;/h3&gt;
+&lt;h3 id="406-not-acceptable-response"&gt;406 (Not Acceptable Response)&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Check your authority setting. One of my Spring MVC project has requirement:  user group 1 can only access sub-URL of &lt;code&gt;/test/user1&lt;/code&gt;. So if I make a URL mapping to &lt;code&gt;/test/&lt;/code&gt;, AJAX call will fail and give me a &lt;code&gt;406&lt;/code&gt; error&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;404 (Not Found Errors)&lt;/h3&gt;
+&lt;h3 id="404-not-found-errors"&gt;404 (Not Found Errors)&lt;/h3&gt;
 &lt;p&gt;Very common error. Can have different reasons:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -22,7 +22,7 @@
 &lt;p&gt;In Spring MVC, no &lt;code&gt;@ResponseBody&lt;/code&gt; or &lt;code&gt;@RequestBody&lt;/code&gt; is added in controller. For example: &lt;code&gt;public @ResponseBody String test(@RequestBody final String id)&lt;/code&gt; is good. But &lt;code&gt;public String test(@RequestBody final String id)&lt;/code&gt; can generate a 404 error in client side.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;No response (Back-end finsih processing but front-end give no response)&lt;/h3&gt;
+&lt;h3 id="no-response-back-end-finsih-processing-but-front-end-give-no-response"&gt;No response (Back-end finsih processing but front-end give no response)&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Check your jQuery version and check if you are using &lt;code&gt;$.ajax({done: function(data../){}, fail: function(jqXHR...){}});&lt;/code&gt;. If so, try to check your jQuery to later version, or replace with &lt;code&gt;$.ajax({success: function(data...){}, error: function(jqXHR...) })&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/div&gt;</description><category>Ajax</category><category>Java</category><category>jQuery</category><category>JSON</category><category>Spring MVC</category><guid>http://pengyin-shan.com/posts/2015/JavaScript/possible-ajax-error-code-and-reasons.html</guid><pubDate>Thu, 13 Aug 2015 07:00:00 GMT</pubDate></item></channel></rss>

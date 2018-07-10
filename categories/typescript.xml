@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>I'm Pengyin (Posts about TypeScript)</title><link>http://pengyin-shan.com/</link><description></description><atom:link href="http://pengyin-shan.com/categories/typescript.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 06 Jul 2018 17:48:42 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>TypeScript Basics</title><link>http://pengyin-shan.com/posts/2016/JavaScript/typescript-basics.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;em&gt;This is a brief reading note for TypeScript &lt;a href="http://www.typescriptlang.org/docs/handbook"&gt;official handbook&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
-&lt;h2&gt;Gulp Setup&lt;/h2&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>I'm Pengyin (Posts about TypeScript)</title><link>http://pengyin-shan.com/</link><description></description><atom:link type="application/rss+xml" rel="self" href="http://pengyin-shan.com/categories/typescript.xml"></atom:link><language>en</language><lastBuildDate>Tue, 10 Jul 2018 14:56:08 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>TypeScript Basics</title><link>http://pengyin-shan.com/posts/2016/JavaScript/typescript-basics.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;em&gt;This is a brief reading note for TypeScript &lt;a href="http://www.typescriptlang.org/docs/handbook"&gt;official handbook&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
+&lt;h2 id="gulp-setup"&gt;Gulp Setup&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;Gulp&lt;/code&gt; can be used with TypeScript to provide powerful compiling process. See &lt;a href="http://www.typescriptlang.org/docs/handbook/gulp.html"&gt;here&lt;/a&gt; for a detailed description.&lt;/p&gt;
 &lt;p&gt;My new project requires Typescript, Jade and SASS. Here is a sample &lt;code&gt;gulpfile.js&lt;/code&gt;:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;gulp&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;require&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"gulp"&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
@@ -45,14 +45,14 @@
 &lt;/pre&gt;
 
 
-&lt;h2&gt;Types and Variables&lt;/h2&gt;
-&lt;h3&gt;Number&lt;/h3&gt;
+&lt;h2 id="types-and-variables"&gt;Types and Variables&lt;/h2&gt;
+&lt;h3 id="number"&gt;Number&lt;/h3&gt;
 &lt;p&gt;Integer, Floating Point, Hexadecimal and Decimal Literals can all be declared as &lt;code&gt;number&lt;/code&gt; type.&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;let&lt;/span&gt; &lt;span class="nx"&gt;decimal&lt;/span&gt;: &lt;span class="kt"&gt;number&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;6&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c1"&gt;//declare a variable called 'decimal', with value equaling to 6&lt;/span&gt;
 &lt;/pre&gt;
 
 
-&lt;h3&gt;String&lt;/h3&gt;
+&lt;h3 id="string"&gt;String&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;Template Strings&lt;/code&gt; can be used to span multiple lines and have embedded expressions. Also &lt;code&gt;+&lt;/code&gt; can be used to concatenate strings with variables.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Remember to use lower case &lt;code&gt;string&lt;/code&gt;.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Example:&lt;/p&gt;
@@ -74,7 +74,7 @@
 &lt;/pre&gt;
 
 
-&lt;h3&gt;Array &amp;amp; Tuple&lt;/h3&gt;
+&lt;h3 id="array-tuple"&gt;Array &amp;amp; Tuple&lt;/h3&gt;
 &lt;p&gt;To create an array, just use &lt;code&gt;[]&lt;/code&gt; to construct array, or use &lt;code&gt;Array&amp;lt;elemType&amp;gt;&lt;/code&gt; to do so: &lt;code&gt;let list: number[] = [1,2,3]&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;To create a tuple (mixed type of variables), declare it first, then insert element to it:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;let&lt;/span&gt; &lt;span class="nx"&gt;x&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="kt"&gt;string&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kt"&gt;number&lt;/span&gt;&lt;span class="p"&gt;];&lt;/span&gt;
@@ -83,7 +83,7 @@
 &lt;/pre&gt;
 
 
-&lt;h3&gt;Enum&lt;/h3&gt;
+&lt;h3 id="enum"&gt;Enum&lt;/h3&gt;
 &lt;p&gt;In &lt;a href="https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html"&gt;Java&lt;/a&gt;, &lt;code&gt;Enum&lt;/code&gt; is a special data type that enables for a variable to be a set of &lt;strong&gt;predefined constants&lt;/strong&gt;. The variable must be equal to one of the values that have been predefined for it. Java example is below:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;enum&lt;/span&gt; &lt;span class="n"&gt;Day&lt;/span&gt;&lt;span class="o"&gt;{&lt;/span&gt;
     &lt;span class="n"&gt;SUNDAY&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;MONDAY&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;TUESDAY&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;WEDNESDAY&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;THURSDAY&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;FRIDAY&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;SATURDAY&lt;/span&gt;
@@ -137,7 +137,7 @@
 &lt;/pre&gt;
 
 
-&lt;h3&gt;Any &amp;amp; Void&lt;/h3&gt;
+&lt;h3 id="any-void"&gt;Any &amp;amp; Void&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;Any&lt;/code&gt; is used to describe the variables with unknown type, like data from user or 3rd party. Use &lt;code&gt;any&lt;/code&gt; to let variable passing compiler's type-checking:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;let&lt;/span&gt; &lt;span class="nx"&gt;notSure&lt;/span&gt;: &lt;span class="kt"&gt;any&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="kd"&gt;let&lt;/span&gt; &lt;span class="nx"&gt;notSure2&lt;/span&gt;: &lt;span class="kt"&gt;any&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'test'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
@@ -165,7 +165,7 @@
 &lt;/pre&gt;
 
 
-&lt;h3&gt;Type Assertion&lt;/h3&gt;
+&lt;h3 id="type-assertion"&gt;Type Assertion&lt;/h3&gt;
 &lt;p&gt;Similar as &lt;code&gt;cast&lt;/code&gt; in other languages, type assertion can be used to pass compiler's type checking. It should be used when certain type checking has been down and there is a guarantee of correct type.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;&amp;lt;type&amp;gt;variable&lt;/code&gt; and &lt;code&gt;variable as type&lt;/code&gt; can all be used to do type assertion. &lt;code&gt;JSX&lt;/code&gt; only use &lt;code&gt;variable as type&lt;/code&gt; style:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;let&lt;/span&gt; &lt;span class="nx"&gt;typeassertion&lt;/span&gt;: &lt;span class="kt"&gt;string&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;"test type assertion string"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;

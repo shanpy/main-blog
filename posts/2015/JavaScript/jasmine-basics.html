@@ -7,7 +7,7 @@ article: http://ogp.me/ns/article#
 <meta charset="utf-8">
 <meta name="description" content="To automated the testing process of my JavaScript code, I decided to learn Jasmine, a behavior-driven development framework for testing JavaScript code. This post includes basic usage and my learning experience in Jasmine.">
 <meta name="viewport" content="width=device-width">
-<title>Jasmine Basics | I'm Pengyin</title>
+<title>Jasmine Basics | I'm Pengyin (Wendy)</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2015/JavaScript/jasmine-basics.html">
@@ -26,7 +26,7 @@ MathJax.Hub.Config({
     }
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
-<meta property="og:site_name" content="I'm Pengyin">
+<meta property="og:site_name" content="I'm Pengyin (Wendy)">
 <meta property="og:title" content="Jasmine Basics">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2015/JavaScript/jasmine-basics.html">
 <meta property="og:description" content="To automated the testing process of my JavaScript code, I decided to learn Jasmine, a behavior-driven development framework for testing JavaScript code. This post includes basic usage and my learning ">
@@ -84,18 +84,18 @@ MathJax.Hub.Config({
 <p>Jasmine has good object-oriented support, making code being modular.</p>
 </li>
 </ol>
-<h3>Describe</h3>
+<h3 id="describe">Describe</h3>
 <p><code>describe</code> keyword represents the beginning of a <strong>test suite</strong>.</p>
 <p>It takes two parameters: a <code>string</code> and a <code>function</code>.</p>
 <p>The content of string represents the content of the test suite.</p>
 <p>There can be nested test suites/nested specs exist.</p>
-<h3>Specs</h3>
+<h3 id="specs">Specs</h3>
 <p><code>it</code> keyword represents the beginning of a spec.</p>
 <p>It takes two parameters: a <code>string</code> and a <code>function</code>.</p>
 <p>The content of string represents that title/introduction of the spec.</p>
 <p>A spec contains one or more <code>expectation</code>s that test the state of the code.</p>
 <p>A spec with all true expectations is a <code>passing spec</code>. A spec with one or more false expectations is a <code>failing spec</code>.</p>
-<h4>Fail a Spec</h4>
+<h4 id="fail-a-spec">Fail a Spec</h4>
 <p>You can use <code>fail</code> function to manually fail a spec. This function takes a failure message or a Error object as a parameter:</p>
 <table class="codehilitetable"><tr>
 <td class="linenos"><div class="linenodiv"><pre> 1
@@ -126,7 +126,7 @@ MathJax.Hub.Config({
 </pre>
 </td>
 </tr></table>
-<h4>Setups</h4>
+<h4 id="setups">Setups</h4>
 <p><code>beforeEach</code>, <code>afterEach</code>, <code>beforeAll</code>, <code>afterAll</code> can be used to setup environment before/after test suites/specs.</p>
 <p><code>beforeEach</code> function is called once before <strong>each</strong> spec run in test suite.</p>
 <p><code>afterEach</code> function is called once after <strong>each</strong> spec run.</p>
@@ -181,7 +181,7 @@ MathJax.Hub.Config({
 <blockquote>
 <p>For nested <code>describe</code> blocks, before one spec running, <code>beforeEach</code> function <strong>for all describes</strong> will be run. Similarly, after one spec running, <code>afterEach</code> function <strong>for all describes</strong> will be run.</p>
 </blockquote>
-<h5>Use <code>this</code> in Setup</h5>
+<h5 id="use-this-in-setup">Use <code>this</code> in Setup</h5>
 <p><code>this</code> variable can be shared between <code>beforeEach</code>, <code>it</code> and <code>afterEach</code> function.</p>
 <p><code>this</code> will be <strong>reset</strong> every time a spec run.</p>
 <p>Example:</p>
@@ -216,9 +216,9 @@ MathJax.Hub.Config({
 </pre>
 </td>
 </tr></table>
-<h4>Disable Suites and Specs</h4>
+<h4 id="disable-suites-and-specs">Disable Suites and Specs</h4>
 <p>Instead of <code>describe</code> and <code>it</code>, you can use <code>xdescribe</code> and <code>xit</code> to skip this test suite or spec.</p>
-<h3>Expectations</h3>
+<h3 id="expectations">Expectations</h3>
 <p>An expectation in Jasmine is an <strong>assertion</strong> that is either <code>true</code> or <code>false</code>.</p>
 <p>Syntax Example:</p>
 <pre class="code literal-block"><span></span><span class="nx">expect</span><span class="p">(</span><span class="nx">a</span><span class="p">).</span><span class="nx">toBe</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
@@ -227,7 +227,7 @@ MathJax.Hub.Config({
 
 <p><code>expect</code> takes a value, called <code>actual</code>.</p>
 <p><code>expect</code> take a <code>matcher function</code> on second part, which takes the <strong>expected value</strong>.</p>
-<h4>Matcher</h4>
+<h4 id="matcher">Matcher</h4>
 <p>You can always add a <code>not</code> in front of any matcher to turn it to a negative assertion.</p>
 <p>Example:</p>
 <pre class="code literal-block"><span></span><span class="nx">expect</span><span class="p">(</span><span class="nx">a</span><span class="p">).</span><span class="nx">toEqual</span><span class="p">(</span><span class="mi">9</span><span class="p">);</span>
@@ -235,7 +235,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h4>List of Matcher</h4>
+<h4 id="list-of-matcher">List of Matcher</h4>
 <ul>
 <li>
 <p><code>toBe</code></p>
@@ -277,9 +277,9 @@ MathJax.Hub.Config({
 <p><code>toThrowError</code></p>
 </li>
 </ul>
-<h4>Custom Matchers</h4>
+<h4 id="custom-matchers">Custom Matchers</h4>
 <p>A custom matcher at its root is a <strong>comparison function</strong> that takes an <strong>actual value</strong> and <strong>expected value</strong>.</p>
-<h5>Structure of Custom Matcher</h5>
+<h5 id="structure-of-custom-matcher">Structure of Custom Matcher</h5>
 <p>Create a object, which contains one to many custom matchers.</p>
 <p>Each custom matcher is a function, which takes <code>util</code> and <code>customEqualityTesters</code> as parameters.</p>
 <p><code>util</code>: contains a set of <strong>utility functions</strong> for matchers to use. For example:</p>
@@ -322,7 +322,7 @@ MathJax.Hub.Config({
 <p>You can skip defining result.message. jasmine will try to craft one for your custom matcher.</p>
 <p>If you have too many negative comparison (<code>.not</code>), you can add <code>negativeCompare</code> function alongside <code>compare</code>, using similar structure to include all <code>.not</code> methods.</p>
 </blockquote>
-<h5>How to Use Custom Matcher</h5>
+<h5 id="how-to-use-custom-matcher">How to Use Custom Matcher</h5>
 <p>You should register you custom matchers in <code>beforeEach</code> block, using a function <code>jasmine.addMatchers</code>:</p>
 <pre class="code literal-block"><span></span><span class="nx">beforeEach</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
     <span class="c1">//You can get all matcher methods in customMatchers</span>
@@ -338,13 +338,13 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h3>Spy</h3>
+<h3 id="spy">Spy</h3>
 <p>A <code>spy</code> can stub any function and tracks calls to it and all arguments.</p>
 <p>A spy only exists in the <code>describe</code> or <code>it</code> block it is defined, and will be <strong>removed</strong> after each spec.</p>
 <blockquote>
 <p>When you put spy <code>spyOn()</code> in <code>beforeEach()</code> block, based on how <code>beforeEach()</code> work, your spy call will be called before each spec function run.</p>
 </blockquote>
-<h4>toHaveBeenCalled and toHaveBeenCalledWith</h4>
+<h4 id="tohavebeencalled-and-tohavebeencalledwith">toHaveBeenCalled and toHaveBeenCalledWith</h4>
 <p><code>toHaveBeenCalled</code> will return <code>true</code> if the spy was called.</p>
 <p><code>toHaveBeenCalledWith</code> will return <code>true</code> if the argument list matches any of the <strong>recorded calls</strong> to the spy.</p>
 <p>Example:</p>
@@ -376,19 +376,19 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h4>callThrough</h4>
+<h4 id="callthrough">callThrough</h4>
 <p>You can add <code>and.callThrough()</code> after spy function to make sure spy will <strong>track all spec calls</strong>, instead of being removed after each spec call:</p>
 <pre class="code literal-block"><span></span><span class="nx">spyOn</span><span class="p">(</span><span class="nx">foo</span><span class="p">,</span> <span class="s1">'getBar'</span><span class="p">).</span><span class="nx">and</span><span class="p">.</span><span class="nx">callThrough</span><span class="p">();</span>
 </pre>
 
 
-<h4>returnValue</h4>
+<h4 id="returnvalue">returnValue</h4>
 <p>You can add <code>and.returnValue(value)</code> after spy function to make sure your desired call in spy function will return a value:</p>
 <pre class="code literal-block"><span></span><span class="nx">spyOn</span><span class="p">(</span><span class="nx">foo</span><span class="p">,</span> <span class="s2">"getBar"</span><span class="p">).</span><span class="nx">and</span><span class="p">.</span><span class="nx">returnValue</span><span class="p">(</span><span class="mi">745</span><span class="p">);</span> <span class="c1">//getBar method for foo object will return value `745`</span>
 </pre>
 
 
-<h4>callFake</h4>
+<h4 id="callfake">callFake</h4>
 <p>You can add <code>and.callFake(function(){})</code> to create a fake function which can replace the content of your spied function:</p>
 <pre class="code literal-block"><span></span>  <span class="nx">describe</span><span class="p">(</span><span class="s2">"A spy, when configured with an alternate implementation"</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
   <span class="kd">var</span> <span class="nx">foo</span><span class="p">,</span> <span class="nx">bar</span><span class="p">,</span> <span class="nx">fetchedBar</span><span class="p">;</span>
@@ -423,7 +423,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h4>stub</h4>
+<h4 id="stub">stub</h4>
 <p>To remember the state of any spy calling method above, use <code>and.stub()</code> to get the original stubbing behavior:</p>
 <pre class="code literal-block"><span></span><span class="nx">describe</span><span class="p">(</span><span class="s2">"A spy"</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
   <span class="kd">var</span> <span class="nx">foo</span><span class="p">,</span> <span class="nx">bar</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
@@ -449,7 +449,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h4>Tracking Properties</h4>
+<h4 id="tracking-properties">Tracking Properties</h4>
 <p>After you having <code>spayOn(obj, spied_method)</code>, following tracking properties can be used when you call the spied method in <code>expect</code>:</p>
 <ul>
 <li>
@@ -503,8 +503,8 @@ MathJax.Hub.Config({
 <p><code>.calls.reset()</code>: clears all tracking for a spy</p>
 </li>
 </ul>
-<h4>jasmine method</h4>
-<h5>createSpy</h5>
+<h4 id="jasmine-method">jasmine method</h4>
+<h5 id="createspy">createSpy</h5>
 <p><code>jasmine.createSpy()</code> is a function with <strong>no implementation</strong>. It acts as other spies:</p>
 <pre class="code literal-block"><span></span><span class="kd">var</span> <span class="nx">whatAmI</span><span class="p">;</span>
 <span class="nx">beforeEach</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
@@ -516,7 +516,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h5>createSpyObj</h5>
+<h5 id="createspyobj">createSpyObj</h5>
 <p>Similar as above, <code>jasmine.createSpyObj</code> accept an <strong>array of strings</strong>, and return a object that has a <strong>property</strong> for each string of the spy:</p>
 <pre class="code literal-block"><span></span><span class="kd">var</span> <span class="nx">tape</span><span class="p">;</span>
  <span class="nx">beforeEach</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
@@ -528,9 +528,9 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h5>anything</h5>
+<h5 id="anything">anything</h5>
 <p><code>jasmine.anything</code> returns <code>true</code> if the actual value is <strong>not</strong> <code>null</code> or <code>undefined</code>: <code>expect(1).toEqual(jasmine.anything());</code></p>
-<h5>objectContaining</h5>
+<h5 id="objectcontaining">objectContaining</h5>
 <p><code>jasmine.objectContaining</code> tests objects with <strong>key-value</strong> pairs:</p>
 <pre class="code literal-block"><span></span>  <span class="nx">describe</span><span class="p">(</span><span class="s2">"jasmine.objectContaining"</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
   <span class="kd">var</span> <span class="nx">foo</span><span class="p">;</span>
@@ -552,7 +552,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h5>arrayContaining</h5>
+<h5 id="arraycontaining">arrayContaining</h5>
 <p><code>jasmine.arrayContaining</code> test objects with <strong>values in array</strong>:</p>
 <pre class="code literal-block"><span></span>  <span class="nx">beforeEach</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
     <span class="nx">foo</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">];</span>
@@ -564,7 +564,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h5>stringMatching</h5>
+<h5 id="stringmatching">stringMatching</h5>
 <p><code>jasmine.stringMatching()</code> test if you want match <strong>a string in a object</strong> or <strong>regular expression</strong> pattern:</p>
 <pre class="code literal-block"><span></span><span class="nx">describe</span><span class="p">(</span><span class="s1">'jasmine.stringMatching'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
   <span class="nx">it</span><span class="p">(</span><span class="s2">"matches as a regexp"</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
@@ -574,7 +574,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h4>Custom Equality Tester</h4>
+<h4 id="custom-equality-tester">Custom Equality Tester</h4>
 <p>You can create your own equality tester for your test criteria, using <code>asymmetricMatch</code> function name:</p>
 <pre class="code literal-block"><span></span>  <span class="kd">var</span> <span class="nx">tester</span> <span class="o">=</span> <span class="p">{</span>
     <span class="c1">//Use asymmetricMatch as function. No returns</span>
@@ -589,11 +589,11 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h3>Clock</h3>
+<h3 id="clock">Clock</h3>
 <p><code>jasmine.clock().install()</code> can be used to setup time dependent testing. To do this, you can put <code>jasmine.clock().install</code> in <code>beforeEach()</code> block and <code>jasmine.clock().uninstall()</code> in <code>afterEach()</code> block.</p>
-<h4>Timeout</h4>
+<h4 id="timeout">Timeout</h4>
 <p>Use <code>jasmine.clock().tick(milliseconds)</code> function to simulate timeout in JavaScript: <code>jasmine.clock().tick(1000)</code>;</p>
-<h4>Date</h4>
+<h4 id="date">Date</h4>
 <p>You can create a <code>Date</code> object in JavaScript, then use <code>jasmine.clock().mockDate(date_object)</code> to simulate date:</p>
 <pre class="code literal-block"><span></span><span class="kd">var</span> <span class="nx">baseTime</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="mi">2014</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">23</span><span class="p">);</span>
 <span class="nx">jasmine</span><span class="p">.</span><span class="nx">clock</span><span class="p">().</span><span class="nx">mockDate</span><span class="p">(</span><span class="nx">baseTime</span><span class="p">);</span>
@@ -603,10 +603,10 @@ MathJax.Hub.Config({
 <blockquote>
 <p>If you don't provide a time object, jasmine will use current Date.</p>
 </blockquote>
-<h3>Ajax</h3>
+<h3 id="ajax">Ajax</h3>
 <p>You need to include <code>mock-ajax.js</code> from <a href="https://github.com/jasmine/jasmine-ajax">here</a> to test Ajax using jasmine.</p>
 <p>Make sure you have <code>jasmine.Ajax.install()</code> in <code>beforeEach()</code> block and <code>jasmine.Ajax.uninstall()</code> in <code>afterEach()</code> to install and uninstall jasmine-ajax.</p>
-<h4>Define Mock Response</h4>
+<h4 id="define-mock-response">Define Mock Response</h4>
 <p>You may want to define a mock response to test your Ajax call response. A good place to define this is in <code>spec/javascripts/helpers/test_responses</code>.</p>
 <p>Example:</p>
 <pre class="code literal-block"><span></span><span class="kd">var</span> <span class="nx">TestResponses</span> <span class="o">=</span> <span class="p">{</span>
@@ -621,7 +621,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h4>Trigger Request</h4>
+<h4 id="trigger-request">Trigger Request</h4>
 <p>You need to trigger request before you test your Ajax response. You can set a function call, such as:</p>
 <pre class="code literal-block"><span></span>  <span class="kd">var</span> <span class="nx">xhr</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
   <span class="nx">xhr</span><span class="p">.</span><span class="nx">onreadystatechange</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">args</span><span class="p">)</span> <span class="p">{</span>
@@ -653,7 +653,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h4>Set Response</h4>
+<h4 id="set-response">Set Response</h4>
 <p>Use <code>.respondWith()</code> to set response. You need to tell jasmine which response you want to test. For example, based on the code in <strong>Define Mock Response</strong> part, you can test <code>success</code> response:</p>
 <pre class="code literal-block"><span></span>  <span class="nx">describe</span><span class="p">(</span><span class="s2">"on success"</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
   <span class="nx">beforeEach</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
@@ -672,7 +672,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h4>Full Steps</h4>
+<h4 id="full-steps">Full Steps</h4>
 <p>After these step, you can create <code>it</code> blocks to test your Ajax call. Here is a full example for <code>post</code> from jasmine-ajax Github repo:</p>
 <pre class="code literal-block"><span></span>  <span class="nx">describe</span><span class="p">(</span><span class="s2">"FoursquareVenueSearch"</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
   <span class="kd">var</span> <span class="nx">foursquare</span><span class="p">,</span> <span class="nx">request</span><span class="p">;</span>
@@ -707,7 +707,7 @@ MathJax.Hub.Config({
 
 
 <p>Other <code>get</code> Ajax call examples can be found on <a href="http://jasmine.github.io/2.3/ajax.html">jasmine website</a>.</p>
-<h3>Jasmine-jQuery</h3>
+<h3 id="jasmine-jquery">Jasmine-jQuery</h3>
 <p><a href="https://github.com/velesin/jasmine-jquery">jasmine-jquery</a> is great to combine Jasmine with jQuery. It provides:</p>
 <ul>
 <li>
@@ -717,9 +717,9 @@ MathJax.Hub.Config({
 <p>an API for handling HTML, CSS, and JSON fixtures in your specs</p>
 </li>
 </ul>
-<h4>Custom Matcher</h4>
+<h4 id="custom-matcher">Custom Matcher</h4>
 <p>You can find a list of useful custom matchers, such as <code>toBeCheck()</code> or <code>toBeSelected()</code> <a href="https://github.com/velesin/jasmine-jquery">here</a>.</p>
-<h4>HTML Fixture</h4>
+<h4 id="html-fixture">HTML Fixture</h4>
 <p>I'm still trying to figure out the best practice to apply HTML Fixture for my working project. HTML Fixture can be used to load HTML content to be used by your tests.</p>
 <p>You can find more detailed information about HTML Fixture <a href="https://github.com/velesin/jasmine-jquery">here</a>. For most of my working projects, I need to limit the complexity of all my JavaScript test. Also, instead of <code>html</code>, my work is more involved in <code>jsp</code>, which is really hard to be transferred to pure HTML code for fixture content. Personally I prefer not to write too many fixtures for to simplify my test.</p>
 <p>I'll continue to research for the best practice of using HTML Fixture.</p>
@@ -753,7 +753,7 @@ MathJax.Hub.Config({
 
 
     </div>
-                     <footer id="footer"><p>Contents © 2018         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                     <footer id="footer"><p>Contents © 2018         <a href="mailto:pengyin.shan@outlook.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

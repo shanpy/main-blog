@@ -7,7 +7,7 @@ article: http://ogp.me/ns/article#
 <meta charset="utf-8">
 <meta name="description" content="This posts includes basic knowledge I found online about RDF(Resource Description Framework), a standard from W3C to describe resources.">
 <meta name="viewport" content="width=device-width">
-<title>RDF Basics | I'm Pengyin</title>
+<title>RDF Basics | I'm Pengyin (Wendy)</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2015/Others/rdf-basics.html">
@@ -26,7 +26,7 @@ MathJax.Hub.Config({
     }
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
-<meta property="og:site_name" content="I'm Pengyin">
+<meta property="og:site_name" content="I'm Pengyin (Wendy)">
 <meta property="og:title" content="RDF Basics">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2015/Others/rdf-basics.html">
 <meta property="og:description" content="This posts includes basic knowledge I found online about RDF(Resource Description Framework), a standard from W3C to describe resources.">
@@ -72,12 +72,12 @@ MathJax.Hub.Config({
         </div>
         <div class="body">
             <div>
-<h4>Resource</h4>
+<h4 id="resource">Resource</h4>
 <p><a href="http://www.w3schools.com/webservices/ws_rdf_intro.asp">Introduction to RDF From W3C</a></p>
-<h4>Intro to RDF</h4>
+<h4 id="intro-to-rdf">Intro to RDF</h4>
 <p>RDF (Resource Description Framework) is standard from W3C to describe describe title, author, content, and copyright information of web pages.</p>
 <p>It is really useful for search engines or digital library.</p>
-<h5>Realities of RDF</h5>
+<h5 id="realities-of-rdf">Realities of RDF</h5>
 <ul>
 <li>
 <p>RDF is designed to be read and understood by computers, instead ofbeing displayed to people. <em>RDF descriptions are not designed to be displayed on the web</em>.</p>
@@ -106,7 +106,7 @@ MathJax.Hub.Config({
 </li>
 </ul>
 </blockquote>
-<h4>RDF Rules</h4>
+<h4 id="rdf-rules">RDF Rules</h4>
 <p>RDF identifies things using <strong>Web identifiers</strong> (URIs), and describes resources with <strong>properties</strong> and <strong>property values</strong>.</p>
 <ul>
 <li>
@@ -130,7 +130,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h4>RDF Statements</h4>
+<h4 id="rdf-statements">RDF Statements</h4>
 <p>The <strong>combination</strong> of a <code>Resource</code>, a <code>Property</code>, and a <code>Property value</code> forms a <code>Statement</code> .</p>
 <ul>
 <li>
@@ -158,7 +158,7 @@ MathJax.Hub.Config({
 <p>Object: Jan Egil Refsnes</p>
 </li>
 </ul>
-<h4>RDF Main Elements</h4>
+<h4 id="rdf-main-elements">RDF Main Elements</h4>
 <p>A full RDF example with from W3C:</p>
 <pre class="code literal-block"><span></span><span class="cp">&lt;?xml version="1.0"?&gt;</span>
 <span class="c">&lt;!-- Declare RDF --&gt;</span>
@@ -197,14 +197,14 @@ MathJax.Hub.Config({
 <p><code>&lt;Description&gt;</code> element</p>
 </li>
 </ol>
-<h5><rdf></rdf></h5>
+<h5 id="_1"><rdf></rdf></h5>
 <p><code>&lt;rdf:RDF&gt;</code> is the root element of an RDF document.</p>
 <p>It defines the XML document to be an RDF document.</p>
 <p>It also contains a reference to the RDF namespace.</p>
-<h5><description></description></h5>
+<h5 id="_2"><description></description></h5>
 <p>The <code>&lt;rdf:Description&gt;</code> element identifies a resource with the <code>about</code> attribute.</p>
 <p>The <code>&lt;rdf:Description&gt;</code> element contains elements that <em>describe</em> the resource.</p>
-<h5><cd></cd></h5>
+<h5 id="_3"><cd></cd></h5>
 <p>Elements with <code>&lt;cd&gt;</code> namespace is not part of RDF. RDF defines only the framework.</p>
 <p>So the elements, artist, country, company, price, and year, <em>must be defined by someone else</em> (company, organization, person, etc).</p>
 <p>You can also define these <strong>properties as attributes</strong> of <code>&lt;rdf:Description&gt;</code>. For example:</p>
@@ -234,10 +234,10 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h4>RDF Container Elements</h4>
+<h4 id="rdf-container-elements">RDF Container Elements</h4>
 <p>RDF containers are used to describe <strong>group of things</strong>.</p>
 <p>The following RDF elements are used to describe groups: <code>&lt;Bag&gt;</code>, <code>&lt;Seq&gt;</code>, and <code>&lt;Alt&gt;</code>.</p>
-<h4><bag></bag></h4>
+<h4 id="_4"><bag></bag></h4>
 <p>The <code>&lt;rdf:Bag&gt;</code> element is used to describe a list of values that <em>do not have to be in a specific order</em>.</p>
 <p>The <code>&lt;rdf:Bag&gt;</code> element <em>may contain duplicate values</em>.</p>
 <p>Example from W3C:</p>
@@ -260,11 +260,11 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h4><seq></seq></h4>
+<h4 id="_5"><seq></seq></h4>
 <p>The <code>&lt;rdf:Seq&gt;</code> element is used to describe an <em>ordered list of values</em> (For example, in alphabetical order).</p>
 <p>The <code>&lt;rdf:Seq&gt;</code> element <em>may contain duplicate values</em>.</p>
 <p>If you want to see an example, just replace <code>&lt;rdf:Bag&gt;</code> with <code>&lt;rdf:Seq&gt;</code> from example abpve.</p>
-<h4><alt></alt></h4>
+<h4 id="_6"><alt></alt></h4>
 <p>The <code>&lt;rdf:Alt&gt;</code> element is used to describe a list of alternative values (<em>the user can select only one of the values</em>).</p>
 <p>Example from W3C:</p>
 <pre class="code literal-block"><span></span><span class="cp">&lt;?xml version="1.0"?&gt;</span>
@@ -285,7 +285,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h5>RDF Terms</h5>
+<h5 id="rdf-terms">RDF Terms</h5>
 <ul>
 <li>
 <p>A <code>container</code> is a resource that contains things</p>
@@ -294,7 +294,7 @@ MathJax.Hub.Config({
 <p>The contained things are called <code>member</code>s (not list of values)</p>
 </li>
 </ul>
-<h4>RDF Collections</h4>
+<h4 id="rdf-collections">RDF Collections</h4>
 <p>RDF collections describe groups that can <strong>ONLY</strong> contain the specified members.</p>
 <p>A collection is described by the attribute <code>rdf:parseType="Collection"</code>.</p>
 <p>Example from W3C:</p>
@@ -316,7 +316,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h4>RDF Schema (RDFS)</h4>
+<h4 id="rdf-schema-rdfs">RDF Schema (RDFS)</h4>
 <p>RDF Schema does not provide actual application-specific classes and properties.</p>
 <p>Instead RDF Schema provides <strong>the framework to describe</strong> application-specific classes and properties.</p>
 <p><em>Classes in RDF Schema are much like classes in object oriented programming languages</em>. This allows resources to be defined as instances of classes, and subclasses of classes.</p>
@@ -353,7 +353,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h4>OWL</h4>
+<h4 id="owl">OWL</h4>
 <p>OWL is a language for processing web information. It is built on top of RDF, and also written in <code>XML</code>.</p>
 <p><code>Ontology</code> is about the exact description of things and their relationships.</p>
 <p>For the web, ontology is about the exact description of web information and relationships between web information.</p>
@@ -390,7 +390,7 @@ MathJax.Hub.Config({
 
 
     </div>
-                     <footer id="footer"><p>Contents © 2018         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                     <footer id="footer"><p>Contents © 2018         <a href="mailto:pengyin.shan@outlook.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

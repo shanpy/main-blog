@@ -6,6 +6,8 @@
 .. authors: Pengyin Shan
 .. description: (This post is in Chinese) [彼得考夫曼]《穷查理宝典》书本经典语句摘抄 （巴菲特教你读财报部分）/ Book Highlight: Poor Charlie's Almanack: The Wit and Wisdom of Charles T. Munger written by Peter D.Kaufman (Corporate Finance Part)
 
+[TOC]
+
 > 想知道股票值多少钱：首先要知道公司值多少钱
 
 #价值投资

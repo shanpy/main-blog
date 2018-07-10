@@ -7,7 +7,7 @@ article: http://ogp.me/ns/article#
 <meta charset="utf-8">
 <meta name="description" content="Manning OCA Java SE 7 Reading Note: Chapter 5">
 <meta name="viewport" content="width=device-width">
-<title>Manning OCA Java SE 7 Reading Note: Chapter 5 | I'm Pengyin</title>
+<title>Manning OCA Java SE 7 Reading Note: Chapter 5 | I'm Pengyin (Wendy)</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2015/Java/manning-oca-java-se7-reading-note-chapter-5.html">
@@ -26,7 +26,7 @@ MathJax.Hub.Config({
     }
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
-<meta property="og:site_name" content="I'm Pengyin">
+<meta property="og:site_name" content="I'm Pengyin (Wendy)">
 <meta property="og:title" content="Manning OCA Java SE 7 Reading Note: Chapter 5">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2015/Java/manning-oca-java-se7-reading-note-chapter-5.html">
 <meta property="og:description" content="Manning OCA Java SE 7 Reading Note: Chapter 5">
@@ -67,7 +67,7 @@ MathJax.Hub.Config({
         <div class="body">
             <div>
 <p>This is a post that I moved from my <a href="blogpengyin.herokuapp.com">old blog site</a>. This is the reading note for <strong>OCA Java SE 7 Certification Guide</strong> from <strong>Manning</strong>. <em>Please note that all definations and examples in this post are taken from the book.</em></p>
-<h2>Chapter 5 Flow Control</h2>
+<h2 id="chapter-5-flow-control">Chapter 5 Flow Control</h2>
 <p>This chapter has following content:</p>
 <ul>
 <li>
@@ -86,7 +86,7 @@ MathJax.Hub.Config({
 <p>Using <code>break</code> and <code>continue</code> statements</p>
 </li>
 </ul>
-<h3>If and If-Else</h3>
+<h3 id="if-and-if-else">If and If-Else</h3>
 <p>In Java, <strong><code>then</code> isn’t a keyword</strong>, so it shouldn’t be used with the <code>if</code> statement.</p>
 <p>It’s acceptable to define one course of action for an if construct:</p>
 <pre class="code literal-block"><span></span><span class="kt">boolean</span> <span class="n">testValue</span> <span class="o">=</span> <span class="kc">false</span><span class="o">;</span>
@@ -128,7 +128,7 @@ MathJax.Hub.Config({
 <p>i.e. <code>if(exp)</code> must have a <code>boolean</code> expression.</p>
 </blockquote>
 <p>However, <strong>if you use <code>=</code> as assignment in <code>if</code> construct, no compile error.</strong> It will become a simple assignment operation.</p>
-<h3>Switch Statement</h3>
+<h3 id="switch-statement">Switch Statement</h3>
 <p>A <code>switch</code> statement can define multiple case labels within its switch block, but <strong>only a single <code>default</code> label</strong>.
 - The default label executes when no matching value is found in
 the case labels.</p>
@@ -249,7 +249,7 @@ the case labels.</p>
 
 <p>In the absence of the <code>break</code> statement, control will <strong>fall through
 the remaining code and execute the code corresponding to all the remaining cases that follow that matching case</strong>.</p>
-<h3>For Loop</h3>
+<h3 id="for-loop">For Loop</h3>
 <p>Code Structure:</p>
 <pre class="code literal-block"><span></span><span class="k">for</span> <span class="o">(</span><span class="n">initialization</span><span class="o">;</span> <span class="n">condition</span><span class="o">;</span> <span class="n">update</span><span class="o">)</span> <span class="o">{</span>
     <span class="n">statements</span><span class="o">;</span>
@@ -274,7 +274,7 @@ the remaining code and execute the code corresponding to all the remaining cases
 </pre>
 
 
-<h4>Block Variables</h4>
+<h4 id="block-variables">Block Variables</h4>
 <p>An <code>initialization</code> block executes <strong>only once</strong>.</p>
 <p>A <code>for</code> loop can declare and initialize multiple variables in its initialization block, but <strong>the variables it declares should be of the same type</strong>:</p>
 <pre class="code literal-block"><span></span><span class="c1">//Won't compile</span>
@@ -295,9 +295,9 @@ they appear</strong>, at the <strong>end</strong> of all the statements defined 
 </pre>
 
 
-<h4>Nested For Loop</h4>
+<h4 id="nested-for-loop">Nested For Loop</h4>
 <p>The loop that encloses another loop is called the <code>outer loop</code>, and the enclosed loop is called the <code>inner loop</code>.</p>
-<h3>The Enhanced For Loop</h3>
+<h3 id="the-enhanced-for-loop">The Enhanced For Loop</h3>
 <p>The <code>enhanced for loop</code> is also called the <code>for-each</code> loop, and it offers some advantages over the regular for loop.</p>
 <p>You can read the colon ( <code>:</code> ) in a for- each loop as <strong>“in”</strong>.</p>
 <p>Code Example:</p>
@@ -341,7 +341,7 @@ they appear</strong>, at the <strong>end</strong> of all the statements defined 
 
 
 <p>A <code>nested loop</code> executes all its iterations for each single iteration of its immediate outer loop.</p>
-<h5>Limitations of the enhanced for loop</h5>
+<h5 id="limitations-of-the-enhanced-for-loop">Limitations of the enhanced for loop</h5>
 <p>Can't be used to <strong>initialize</strong> an <code>array</code> and <strong>modify</strong> its elements</p>
 <p>Can't be used to <strong>delete</strong> or <strong>remove</strong> the elements in a collection:</p>
 <blockquote>
@@ -356,9 +356,9 @@ they appear</strong>, at the <strong>end</strong> of all the statements defined 
 <p>Can't be used to <strong>iterate over multiple <code>collection</code>s or <code>array</code>s in the same loop</strong></p>
 <p>You can’t iterate over multiple collections or arrays in the same <code>for-each</code> loop because the <code>for-each</code> loop allows for the <strong>creation of only one looping variable</strong>.</p>
 <p>Unlike the regular for loop, you <strong>can’t define multiple looping variables</strong> in a <code>for-each</code> loop.</p>
-<h4>The while and do-while loops</h4>
+<h4 id="the-while-and-do-while-loops">The while and do-while loops</h4>
 <p>The <code>while</code> loops checks its condition before evaluating its loop body, and the <code>do-while</code> loop checks its condition <strong>after executing the statements</strong> defined in its loop body.</p>
-<h4>while Loop</h4>
+<h4 id="while-loop">while Loop</h4>
 <p>This loop checks the condition <strong>before</strong> it starts the execution of
 the statement.</p>
 <p>The condition used in the while loop to check whether or not to
@@ -377,7 +377,7 @@ execute the loop body again <strong>should evaluate to <code>false</code> at som
 </pre>
 
 
-<h4>do-while loop</h4>
+<h4 id="do-while-loop">do-while loop</h4>
 <p>This loop checks the condition <strong>after it completes the execution of all the statements in its loop body</strong>.</p>
 <p><strong>Don’t forget to use a semicolon ( <code>;</code> ) to end the <code>do-while</code> loop after specifying its condition</strong>.</p>
 <p>Code Example:</p>
@@ -394,7 +394,7 @@ execute the loop body again <strong>should evaluate to <code>false</code> at som
 
 <p>You can use the curly braces <code>{}</code> with <code>while</code> and <code>do-while</code> loops to define multiple lines of code to execute for every iteration.</p>
 <p>Without the use of curly braces, <strong>only the first line of code will be considered a part of the <code>while</code> or <code>do-while</code> loop</strong></p>
-<h3>Comparing Loop Constrcuts</h3>
+<h3 id="comparing-loop-constrcuts">Comparing Loop Constrcuts</h3>
 <p>The <code>do-while</code> loop executes the code <strong>at least once</strong>.</p>
 <pre class="code literal-block"><span></span><span class="kt">int</span> <span class="n">num</span><span class="o">=</span><span class="mi">10</span><span class="o">;</span>
 <span class="k">do</span> <span class="o">{</span>
@@ -412,8 +412,8 @@ execute the loop body again <strong>should evaluate to <code>false</code> at som
 </pre>
 
 
-<h3>Loop Statements: break and continue</h3>
-<h4>break</h4>
+<h3 id="loop-statements-break-and-continue">Loop Statements: break and continue</h3>
+<h4 id="break">break</h4>
 <p>The <code>break</code> statement is used to <strong>exit</strong> — or <strong>break out of</strong> —the <code>for</code>, <code>for-each</code>, <code>do</code> , and <code>do-while</code> loops, as well as <code>switch</code> constructs.</p>
 <p>Alternatively, the <code>continue</code> statement can be used to
 <strong><em>skip</em> the remaining steps in the current iteration and <em>start</em> with the next loop iteration</strong>.</p>
@@ -430,7 +430,7 @@ execute the loop body again <strong>should evaluate to <code>false</code> at som
 </pre>
 
 
-<h4>continue</h4>
+<h4 id="continue">continue</h4>
 <p>The <code>continue</code> statement is used to <strong>skip</strong> the remaining steps in the current iteration and <strong>start</strong> with the next loop iteration.</p>
 <p>As soon as a loop encounters <code>continue</code> , it <strong>exits the current iteration</strong> of the loop</p>
 <p>Unlike the <code>break</code> statement, <code>continue</code> doesn’t exit the loop — it <strong>restarts</strong> with the next loop iteration</p>
@@ -446,7 +446,7 @@ execute the loop body again <strong>should evaluate to <code>false</code> at som
 </pre>
 
 
-<h4>Labeled Statements</h4>
+<h4 id="labeled-statements">Labeled Statements</h4>
 <p>In Java, you can add <code>label</code>s to the following types of statements:</p>
 <ul>
 <li>
@@ -553,7 +553,7 @@ execute the loop body again <strong>should evaluate to <code>false</code> at som
 
 
     </div>
-                     <footer id="footer"><p>Contents © 2018         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                     <footer id="footer"><p>Contents © 2018         <a href="mailto:pengyin.shan@outlook.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

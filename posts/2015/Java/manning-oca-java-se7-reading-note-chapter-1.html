@@ -7,7 +7,7 @@ article: http://ogp.me/ns/article#
 <meta charset="utf-8">
 <meta name="description" content="Manning OCA Java SE 7 Reading Note: Chapter 1">
 <meta name="viewport" content="width=device-width">
-<title>Manning OCA Java SE 7 Reading Note: Chapter 1 | I'm Pengyin</title>
+<title>Manning OCA Java SE 7 Reading Note: Chapter 1 | I'm Pengyin (Wendy)</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2015/Java/manning-oca-java-se7-reading-note-chapter-1.html">
@@ -26,7 +26,7 @@ MathJax.Hub.Config({
     }
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
-<meta property="og:site_name" content="I'm Pengyin">
+<meta property="og:site_name" content="I'm Pengyin (Wendy)">
 <meta property="og:title" content="Manning OCA Java SE 7 Reading Note: Chapter 1">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2015/Java/manning-oca-java-se7-reading-note-chapter-1.html">
 <meta property="og:description" content="Manning OCA Java SE 7 Reading Note: Chapter 1">
@@ -67,7 +67,7 @@ MathJax.Hub.Config({
         <div class="body">
             <div>
 <p>This is a post that I moved from <a href="http://blogpengyin.herokuapp.com/">my old blog site</a>. This is the reading note for <strong>OCA Java SE 7 Certification Guide</strong> from <strong>Manning</strong>. <em>Please note that all definations and examples in this post are taken from the book.</em></p>
-<h2>Chapter 1: Java Basics</h2>
+<h2 id="chapter-1-java-basics">Chapter 1: Java Basics</h2>
 <p>Topics Covered in Chapter 1</p>
 <blockquote>
 <p>Understanding the structure and components of a Java class</p>
@@ -76,8 +76,8 @@ MathJax.Hub.Config({
 <p>Importing Java packages into your code</p>
 <p>Applying access and nonaccess modifiers</p>
 </blockquote>
-<h3>1.1: The Structrue of a Java Class and Source Code File</h3>
-<h4>1.1.1 Struture of a Java Class</h4>
+<h3 id="11-the-structrue-of-a-java-class-and-source-code-file">1.1: The Structrue of a Java Class and Source Code File</h3>
+<h4 id="111-struture-of-a-java-class">1.1.1 Struture of a Java Class</h4>
 <p>Java source code file: xxx.<strong>java</strong>. A Java source code file (.java file) can define <strong>multiple classes and interfaces</strong>.</p>
 <blockquote>
 <p>in Java compiler: <strong>javac</strong> (.exe)</p>
@@ -188,7 +188,7 @@ All Java classes are part of a package.</p>
 <p><strong>Constructors</strong></p>
 <p>A <code>class constructor</code> is used to create and initialize the objects of a class.</p>
 <p>A class can define <strong>multiple</strong> constructors that accept different sets of method parameters.</p>
-<h4>1.1.2 Structure and Components of a Java Source Code File</h4>
+<h4 id="112-structure-and-components-of-a-java-source-code-file">1.1.2 Structure and Components of a Java Source Code File</h4>
 <p>A Java source code file is used to define classes and interfaces.</p>
 <p>An <code>interface</code> is a grouping of related methods and constants, but the methods in an interface <strong>cannot define any implementation</strong>. An interface specifies a <strong>contract</strong> for the classes to implement.</p>
 <p>The definition of an interface starts with the keyword <code>interface</code>. An interface can define <code>constant</code>s and <code>method</code>s. <strong>You can’t use the word Interface (with a capital I) to define an interface.</strong></p>
@@ -197,8 +197,8 @@ All Java classes are part of a package.</p>
 <p>When you use a package or import statement within such Java files, both the package and import statements apply to <strong>all of the classes and interfaces</strong> defined in that source code file.</p>
 <p>Classes and interfaces defined in the same Java source code file <strong>can’t be defined in separate packages</strong>.</p>
 <p>Classes and interfaces imported using the <code>import</code> statement are <strong>available to all the classes and interfaces</strong> defined in the same Java source code file.</p>
-<h3>1.2 Executable Java Applications</h3>
-<h4>1.2.1 Executable Java Classes versus Non-executable Java Classes</h4>
+<h3 id="12-executable-java-applications">1.2 Executable Java Applications</h3>
+<h4 id="121-executable-java-classes-versus-non-executable-java-classes">1.2.1 Executable Java Classes versus Non-executable Java Classes</h4>
 <p>The <code>JVM</code> executes the code that is defined in the <code>main</code> method.</p>
 <p>The <code>main</code> method should comply with the following rules:</p>
 <ul>
@@ -224,9 +224,9 @@ All Java classes are part of a package.</p>
 <blockquote>
 <p><strong>Important:</strong> As long as you do <code>java class_name_of_main (parameters)</code> in command line, you are calling <code>main</code> method. If you do <code>java name_of_other_class (parameters)</code>, you will be recogized as calling other methods.</p>
 </blockquote>
-<h3>1.3 Java Packages</h3>
+<h3 id="13-java-packages">1.3 Java Packages</h3>
 <p>If you don’t include an explicit package statement in a class or an interface, it’s part of a <code>default</code> package.</p>
-<h4>1.3.2 Defining classes in a package using the package statement</h4>
+<h4 id="132-defining-classes-in-a-package-using-the-package-statement">1.3.2 Defining classes in a package using the package statement</h4>
 <p>It’s common for organiza- tions to use <strong>subpackages</strong> to define all their classes, such as <code>com.test.example</code>.</p>
 <p>A few of important rules about packages:</p>
 <ul>
@@ -251,14 +251,14 @@ All Java classes are part of a package.</p>
 </ul>
 <p>A <strong>fully qualified name</strong> for a class or interface is formed by prefixing its package name with its name (separated by a period), such as <code>packagename.Classname</code>.</p>
 <p>To enable the Java Runtime Environment (<code>JRE</code>) to find your classes, add the base directory that contains your packaged Java code to the <strong>classpath</strong>.</p>
-<h4>1.3.3 - 1.3.8</h4>
+<h4 id="133-138">1.3.3 - 1.3.8</h4>
 <p>Importing more classes doesn’t increase the size of your own class.</p>
 <p>It is possible to use a packaged class or interface without using the import statement, by using its <strong>fully qualified name</strong>.</p>
 <p>You can’t use the import statement to access multiple classes or interfaces with the <strong>same names from different packages</strong>. For example, you cannot import <code>java.util.Date</code> and <code>java.sql.Date</code> at the same time.</p>
 <p>By using the wildcard character, an asterisk (<code>*</code>), you can import all of the public members, classes, and interfaces of a package. However, you can only use <code>*</code> to import <strong>current level class</strong>. You cannot import <strong>sub-level classes</strong>.</p>
 <p>The <strong>default</strong> package is <strong>automatically imported</strong> in the Java classes and interfaces defined within the same directory on your system. However, <strong>A class from a default package can’t be used in any named packaged class</strong>, regardless of whether they are defined within the same directory or not.</p>
 <p>You can import an individual <strong>static</strong> member of a class or all its static members by using the <code>import static</code> statement. <strong>Note correct statement is <code>import static</code>, not <code>static import</code>.</strong></p>
-<h3>1.4 Java Access Modifiers</h3>
+<h3 id="14-java-access-modifiers">1.4 Java Access Modifiers</h3>
 <p>A <strong>top-level class</strong> is a class that isn’t defined within any other class. A class that is defined within another class is called a <strong>nested or inner class</strong>.</p>
 <blockquote>
 <p><strong>Important: Local variables</strong> and <strong>method parameters</strong> can’t be defined using access modifiers.</p>
@@ -336,10 +336,10 @@ All Java classes are part of a package.</p>
 <p><strong>None of the four perspectives are accessiable</strong>.</p>
 </li>
 </ul>
-<h3>1.5 Nonaccess Modifiers</h3>
+<h3 id="15-nonaccess-modifiers">1.5 Nonaccess Modifiers</h3>
 <p>]Access modifiers control the <strong>accessibility</strong> of your class and its members outside the class and the package.</p>
 <p>Nonaccess modifiers change <strong>the default properties</strong> of a Java class and its members.</p>
-<h4>1.5.1 Abstract Modifier</h4>
+<h4 id="151-abstract-modifier">1.5.1 Abstract Modifier</h4>
 <p>Only <code>variable</code> cannot use <code>abstract</code>.</p>
 <p><strong>An abstract <code>class</code> can’t be instantiated</strong>. i.e You cannot do <code>new abstract_class</code>.</p>
 <p>An abstract class may or may not define an abstract method; <strong>you can define an abstract class without any abstract methods. But a concrete class can’t define an abstract method.</strong></p>
@@ -348,14 +348,14 @@ All Java classes are part of a package.</p>
 <p>An abstract <code>method</code> doesn’t have a body.</p>
 <p>Usually, an abstract method is implemented by a derived class.</p>
 <p>A method with an empty body isn’t an abstract method. i.e. a method that havs <code>{}</code> is not a abstract method. a method that has <code>abstract</code> buy doesn't have <code>{}</code> is abstract method.</p>
-<h4>1.5.2 Final Modifier</h4>
+<h4 id="152-final-modifier">1.5.2 Final Modifier</h4>
 <p>Only <code>interface</code> cannot use <code>final</code></p>
 <p>A class that is marked final <strong>cannot be extended</strong> by another class.</p>
 <p>An <code>interface</code> cannot be marked as final.</p>
 <p>A final <code>variable</code> can’t be reassigned a value. <strong>It can be assigned a value only once.</strong></p>
 <p>You can call methods on a final variable, such as <code>a.append(b)</code>,assuming <code>b</code> is a final variable. But you cannot reassign another object to a final variable.</p>
 <p>A final <code>method</code> defined in a base class <strong>can’t be overridden</strong> by a derived class.</p>
-<h4>1.5.3 Static Modifier</h4>
+<h4 id="153-static-modifier">1.5.3 Static Modifier</h4>
 <p>Variables, methods, classes and interfaces can all use <code>static</code> modifier.</p>
 <p><code>static variables</code> belong to a class.</p>
 <blockquote>
@@ -401,7 +401,7 @@ reference variable or the name of a class.</p>
 
 
     </div>
-                     <footer id="footer"><p>Contents © 2018         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                     <footer id="footer"><p>Contents © 2018         <a href="mailto:pengyin.shan@outlook.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

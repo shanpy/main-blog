@@ -7,7 +7,7 @@ article: http://ogp.me/ns/article#
 <meta charset="utf-8">
 <meta name="description" content="Reading Notes for D3.js Part VIII (Chapter 12)">
 <meta name="viewport" content="width=device-width">
-<title>Reading Notes for D3.js Part VIII (Chapter 12) | I'm Pengyin</title>
+<title>Reading Notes for D3.js Part VIII (Chapter 12) | I'm Pengyin (Wendy)</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2014/reading-d3-12.html">
@@ -26,7 +26,7 @@ MathJax.Hub.Config({
     }
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
-<meta property="og:site_name" content="I'm Pengyin">
+<meta property="og:site_name" content="I'm Pengyin (Wendy)">
 <meta property="og:title" content="Reading Notes for D3.js Part VIII (Chapter 12)">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2014/reading-d3-12.html">
 <meta property="og:description" content="Reading Notes for D3.js Part VIII (Chapter 12)">
@@ -71,7 +71,7 @@ MathJax.Hub.Config({
 <p>This post is transferred from my <a href="http://blogpengyin.herokuapp.com/">old Hexo blog site</a>, created on 2014.</p>
 <p>This is a Reading Note for <em>Interactive Data Visualization for the Web - An Introduction to Designing with D3</em> by <em>Scott Murray</em>, pulished by <em>O'Reilly, 2013</em></p>
 <p>This post will contains concepts that I think it's important for me to be familiar with in D3 book.</p>
-<h2>Chapter 12 : Map</h2>
+<h2 id="chapter-12-map">Chapter 12 : Map</h2>
 <p>code example for Chapter 12 is <a href="http://shanpy.github.io/Front-End-Playground/D3/Reading-D3-VIII.html"><strong>here</strong></a>.</p>
 <p><code>GeoJSON</code> is a special format for <code>JSON</code>, which is used specially for geography. A typical <code>GeoJSON</code> file is an object with two attributes: <code>type</code> and <code>features</code>. The <code>features</code> attibute is an array of objects. Each objects have geography attributes, such as <code>type</code>,<code>id</code>,<code>properties</code>,<code>geometry</code>.</p>
 <p><code>geometry</code> is a vary useful attributes. It can include <code>coordinate</code> attribue, which inludes <code>longitude,latitude</code> pairs. Note <code>longitude</code> is <em>vertical</em> on map, <code>latitude</code> is <em>horizontal</em> on map. Here is a sample:
@@ -100,7 +100,7 @@ images/posts/sampleGeoJSON.png </p>
 </pre>
 
 
-<h3>Use Color to Quantize Map</h3>
+<h3 id="use-color-to-quantize-map">Use Color to Quantize Map</h3>
 <p>We can add color with different combination to map to show data difference in map. For example, the place that has more populatio with dark blue and less population with light green, etc.</p>
 <p>Step1: create a <em>quantize</em> scale with <em>color</em> as output. A combination of color can be found in https://github.com/mbostock/d3/tree/master/lib/colorbrewer, from D3 library. Now we output <em>discreate</em> value as color. The number of colors decides how precise the map will be. Less color group will make map has less color combination:</p>
 <pre class="code literal-block"><span></span><span class="kd">var</span> <span class="nx">color</span> <span class="o">=</span> <span class="nx">d3</span><span class="p">.</span><span class="nx">scale</span><span class="p">.</span><span class="nx">quantize</span><span class="p">()</span>
@@ -164,7 +164,7 @@ images/posts/sampleGeoJSON.png </p>
 
 
 <p>Step 5: create and add projection. Note you need to do this step <em>outside</em> of callback function so that your result will not be affected.</p>
-<h3>Add Circle as Data Point on Map</h3>
+<h3 id="add-circle-as-data-point-on-map">Add Circle as Data Point on Map</h3>
 <p>If we have json/csv file that have city names, value, and cities longitude, latitude data, we can make it on map.</p>
 <p>Step1, Step2, Step3, Step4: Same as example above.</p>
 <p>Step 5: load new data and add circle to map. You need create projection function <em>before</em> this step, buy don't apply it to all map. Also, you need to put this part <em>inside</em> callback function, so that your circle will not be covered by map since map will be loaded later than outside functions:</p>
@@ -191,7 +191,7 @@ images/posts/sampleGeoJSON.png </p>
 </pre>
 
 
-<h3>Code For This Chapter</h3>
+<h3 id="code-for-this-chapter">Code For This Chapter</h3>
 <p>code example for Chapter 12 is <a href="http://shanpy.github.io/Front-End-Playground/D3/Reading-D3-VIII.html"><strong>here</strong></a>.</p>
 <pre class="code literal-block"><span></span><span class="c1">//Part I Code</span>
 <span class="kd">function</span> <span class="nx">part1</span><span class="p">(){</span>
@@ -405,7 +405,7 @@ images/posts/sampleGeoJSON.png </p>
 
 
     </div>
-                     <footer id="footer"><p>Contents © 2018         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                     <footer id="footer"><p>Contents © 2018         <a href="mailto:pengyin.shan@outlook.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

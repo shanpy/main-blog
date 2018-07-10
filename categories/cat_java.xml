@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>I'm Pengyin (Posts about Java)</title><link>http://pengyin-shan.com/</link><description></description><atom:link href="http://pengyin-shan.com/categories/cat_java.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 06 Jul 2018 17:48:41 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Apache Velocity Language Basics</title><link>http://pengyin-shan.com/posts/2015/Java/apache-velocity-basics.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3&gt;Syntax Basics&lt;/h3&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>I'm Pengyin (Posts about Java)</title><link>http://pengyin-shan.com/</link><description></description><atom:link type="application/rss+xml" rel="self" href="http://pengyin-shan.com/categories/cat_java.xml"></atom:link><language>en</language><lastBuildDate>Tue, 10 Jul 2018 14:56:06 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Apache Velocity Language Basics</title><link>http://pengyin-shan.com/posts/2015/Java/apache-velocity-basics.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3 id="syntax-basics"&gt;Syntax Basics&lt;/h3&gt;
 &lt;p&gt;All VTL statements, begins with the &lt;code&gt;#&lt;/code&gt; character. For rendering process: the &lt;strong&gt;Velocity Templating Engine&lt;/strong&gt; will:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -12,12 +12,12 @@
 &lt;blockquote&gt;
 &lt;p&gt;It is recommended to start each VTL statement on a &lt;strong&gt;new line&lt;/strong&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4&gt;References&lt;/h4&gt;
+&lt;h4 id="references"&gt;References&lt;/h4&gt;
 &lt;p&gt;There are &lt;strong&gt;three&lt;/strong&gt; types of references in the VTL: &lt;code&gt;variables&lt;/code&gt;, &lt;code&gt;properties&lt;/code&gt; and &lt;code&gt;methods&lt;/code&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;In VTL, References begin with $ and are used to &lt;strong&gt;get&lt;/strong&gt; something. Directives begin with # and are used to &lt;strong&gt;do&lt;/strong&gt; something.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h5&gt;Variables&lt;/h5&gt;
+&lt;h5 id="variables"&gt;Variables&lt;/h5&gt;
 &lt;p&gt;All variables/references in VTL begins with the &lt;code&gt;$&lt;/code&gt; character,followed by a &lt;strong&gt;VTL Identifier&lt;/strong&gt;.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;A &lt;strong&gt;VTL Identifier&lt;/strong&gt; must start with an alphabetic character (i.e. a to z case insensitive). The rest of the characters are limited to the following types of characters: alphabetic, numeric, &lt;code&gt;-&lt;/code&gt; or &lt;code&gt;_&lt;/code&gt;.&lt;/li&gt;
@@ -33,7 +33,7 @@
 &lt;/pre&gt;
 
 
-&lt;h6&gt;String&lt;/h6&gt;
+&lt;h6 id="string"&gt;String&lt;/h6&gt;
 &lt;p&gt;String values are always enclosed in &lt;em&gt;quotes&lt;/em&gt;, either &lt;em&gt;single&lt;/em&gt; or &lt;em&gt;double&lt;/em&gt; quotes:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -46,7 +46,7 @@
 &lt;p&gt;Example: for &lt;code&gt;"Hello $name"&lt;/code&gt;, the &lt;code&gt;$name&lt;/code&gt; will be replaced by the referenced value.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h5&gt;Properties&lt;/h5&gt;
+&lt;h5 id="properties"&gt;Properties&lt;/h5&gt;
 &lt;p&gt;Properties have a distinctive format.&lt;/p&gt;
 &lt;p&gt;The shorthand notation consists of a leading &lt;code&gt;$&lt;/code&gt; character followed a &lt;strong&gt;VTL Identifier&lt;/strong&gt;, followed by a dot character &lt;code&gt;.&lt;/code&gt; and another &lt;strong&gt;VTL Identifier&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Example: &lt;code&gt;$customer.Address&lt;/code&gt; has &lt;strong&gt;two meanings&lt;/strong&gt;:&lt;/p&gt;
@@ -58,7 +58,7 @@
 &lt;p&gt;VTL should find a referring to a &lt;strong&gt;method&lt;/strong&gt; called &lt;code&gt;$customer.getAddress()&lt;/code&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h5&gt;Methods&lt;/h5&gt;
+&lt;h5 id="methods"&gt;Methods&lt;/h5&gt;
 &lt;p&gt;Methods are references that consist of a leading &lt;code&gt;$&lt;/code&gt; character followed a &lt;strong&gt;VTL Identifier&lt;/strong&gt;, followed by a &lt;strong&gt;VTL Method Body&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;A &lt;strong&gt;VTL Method Body&lt;/strong&gt; consists of a &lt;strong&gt;VTL Identifier&lt;/strong&gt; followed by an left parenthesis character &lt;code&gt;(&lt;/code&gt;, followed by an &lt;strong&gt;optional parameter list&lt;/strong&gt;, followed by right parenthesis character &lt;code&gt;)&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Example:&lt;/p&gt;
@@ -69,13 +69,13 @@
 &lt;/pre&gt;
 
 
-&lt;h6&gt;a &lt;em&gt;shorthand notation&lt;/em&gt; for &lt;strong&gt;VTL Methods&lt;/strong&gt;&lt;/h6&gt;
+&lt;h6 id="a-shorthand-notation-for-vtl-methods"&gt;a &lt;em&gt;shorthand notation&lt;/em&gt; for &lt;strong&gt;VTL Methods&lt;/strong&gt;&lt;/h6&gt;
 &lt;p&gt;In the example above, The &lt;strong&gt;property&lt;/strong&gt; &lt;code&gt;$customer.Address&lt;/code&gt; has the exact same effect as using the &lt;strong&gt;method&lt;/strong&gt; &lt;code&gt;$customer.getAddress()&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;It is generally &lt;strong&gt;preferable&lt;/strong&gt; to use a &lt;strong&gt;Property&lt;/strong&gt; when available.&lt;/em&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;The main difference between Properties and Methods is that you can specify a &lt;strong&gt;parameter list&lt;/strong&gt; to a Method.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h6&gt;Array as Lists&lt;/h6&gt;
+&lt;h6 id="array-as-lists"&gt;Array as Lists&lt;/h6&gt;
 &lt;p&gt;As of Velocity 1.6, all &lt;strong&gt;array&lt;/strong&gt; references are treated as &lt;strong&gt;fixed-length lists&lt;/strong&gt;. User can call &lt;code&gt;java.util.List&lt;/code&gt; methods on array references. Example:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;myarray&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nv"&gt;isEmpty&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
 &lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;myarray&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nv"&gt;size&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
@@ -84,7 +84,7 @@
 &lt;/pre&gt;
 
 
-&lt;h6&gt;vararg methods&lt;/h6&gt;
+&lt;h6 id="vararg-methods"&gt;vararg methods&lt;/h6&gt;
 &lt;p&gt;From Velocity 1.6, &lt;strong&gt;setter&lt;/strong&gt; methods can have different parameter list:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;sun&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nv"&gt;setPlanets&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'Earth'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'Mars'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'Neptune'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
 &lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;sun&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nv"&gt;setPlanets&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'Mercury'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
@@ -93,8 +93,8 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Other Syntax Information&lt;/h4&gt;
-&lt;h5&gt;Comments&lt;/h5&gt;
+&lt;h4 id="other-syntax-information"&gt;Other Syntax Information&lt;/h4&gt;
+&lt;h5 id="comments"&gt;Comments&lt;/h5&gt;
 &lt;p&gt;In VTL, A single line comment begins with &lt;code&gt;##&lt;/code&gt; and finishes at the end of the line. Example: &lt;code&gt;## This is a single line comment.&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Multi-line&lt;/strong&gt; comments, which begin with &lt;code&gt;#*&lt;/code&gt; and end with &lt;code&gt;*#&lt;/code&gt;, are available to handle this scenario.&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="x"&gt;This is text that is outside the multi-line comment.&lt;/span&gt;
@@ -118,11 +118,11 @@
 &lt;span class="c"&gt;@version 5&lt;/span&gt;
 &lt;span class="c"&gt;*&lt;/span&gt;&lt;span class="cp"&gt;#&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;</description><category>Java</category><category>Velocity</category><guid>http://pengyin-shan.com/posts/2015/Java/apache-velocity-basics.html</guid><pubDate>Wed, 11 Nov 2015 08:00:00 GMT</pubDate></item><item><title>RequestDispacher and Redirection in Java Web App</title><link>http://pengyin-shan.com/posts/2015/Java/requestdispacher-redirection-in-java.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;This post only talks about &lt;code&gt;RequestDispacher&lt;/code&gt; in Java web app. If you want to know more about using servlet in Java, I have another related post: &lt;a href="http://pengyin-shan.com/blog/ajax-and-java-servlet"&gt;Ajax and Java Servlet&lt;/a&gt;.&lt;/p&gt;
-&lt;h4&gt;Dispach&lt;/h4&gt;
+&lt;h4 id="dispach"&gt;Dispach&lt;/h4&gt;
 &lt;p&gt;This &lt;a href="http://www.xyzws.com/servletfaq/what-is-the-defferent-between-getnameddispatcher-and-getrequestdispatcher/3"&gt;article&lt;/a&gt; from www.xyzws.com is very useful.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;RequestDispacher&lt;/code&gt; is used to formard a client's request to another 'place', which including another servlet, another JSP, etc.&lt;/p&gt;
 &lt;p&gt;In a servlet, there are three ways to get RequestDispacher:&lt;/p&gt;
-&lt;h5&gt;RequestDispatcher dispatch = request.getRequestDispatcher(path);&lt;/h5&gt;
+&lt;h5 id="requestdispatcher-dispatch-requestgetrequestdispatcherpath"&gt;RequestDispatcher dispatch = request.getRequestDispatcher(path);&lt;/h5&gt;
 &lt;p&gt;Using this, &lt;em&gt;path&lt;/em&gt; can be:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -135,9 +135,9 @@
 &lt;p&gt;or a abosute path related to your current contaxt, such as &lt;code&gt;/subpage/subjome.jsp&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h5&gt;RequestDispatcher dispatch = getServletContext.getRequestDispatcher(path)&lt;/h5&gt;
+&lt;h5 id="requestdispatcher-dispatch-getservletcontextgetrequestdispatcherpath"&gt;RequestDispatcher dispatch = getServletContext.getRequestDispatcher(path)&lt;/h5&gt;
 &lt;p&gt;Using this, &lt;em&gt;path&lt;/em&gt; &lt;strong&gt;must&lt;/strong&gt; start with &lt;code&gt;/&lt;/code&gt;, such as &lt;code&gt;/subpage/subjome.jsp&lt;/code&gt;&lt;/p&gt;
-&lt;h5&gt;RequestDispatcher dispatch = getServletContext.getNamedDispatcher("string")&lt;/h5&gt;
+&lt;h5 id="requestdispatcher-dispatch-getservletcontextgetnameddispatcherstring"&gt;RequestDispatcher dispatch = getServletContext.getNamedDispatcher("string")&lt;/h5&gt;
 &lt;p&gt;This method must take the servlet name as its parameter. The servlet name is definded in &lt;code&gt;web.xml&lt;/code&gt; as  &lt;servlet-name&gt; sub-element of the &lt;servlet&gt; element. The request is dispatched to that corresponding servlet.&lt;/servlet&gt;&lt;/servlet-name&gt;&lt;/p&gt;
 &lt;p&gt;Example in &lt;code&gt;web.xml&lt;/code&gt;:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;&amp;lt;servlet&amp;gt;&lt;/span&gt;
@@ -153,9 +153,9 @@
 
 
 &lt;p&gt;Before/After get your RequestDispacher, you can use &lt;code&gt;request.addAttribute(something)&lt;/code&gt; or other functions to add stuff to your request.&lt;/p&gt;
-&lt;h4&gt;Go to another place&lt;/h4&gt;
+&lt;h4 id="go-to-another-place"&gt;Go to another place&lt;/h4&gt;
 &lt;p&gt;After you finish process HttpRequest or HttpResponse, there are three ways to 'leave' for another place:&lt;/p&gt;
-&lt;h5&gt;RequestDispatcher.forward(request, response) | RequestDispatcher.include(request, response)&lt;/h5&gt;
+&lt;h5 id="requestdispatcherforwardrequest-response-requestdispatcherincluderequest-response"&gt;RequestDispatcher.forward(request, response) | RequestDispatcher.include(request, response)&lt;/h5&gt;
 &lt;p&gt;There is a greate &lt;a href="http://way2java.com/servlets/difference-between-include-and-forward-in-requestdispatcher/"&gt;article&lt;/a&gt; from way2java.com to explain the difference between &lt;code&gt;RequestDispatcher.forward()&lt;/code&gt; and &lt;code&gt;RequestDispatcher.include()&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;These are main differences bewtween these two methods:&lt;/p&gt;
 &lt;ul&gt;
@@ -175,7 +175,7 @@
 &lt;p&gt;Generally, you want to use &lt;code&gt;include()&lt;/code&gt; when &lt;strong&gt;static&lt;/strong&gt; information needs to be included, such as Banner Content or Copyright Information. &lt;code&gt;forward()&lt;/code&gt; should be used to include &lt;strong&gt;dynamic&lt;/strong&gt; information, or when you want to use servlet as a Controller.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h5&gt;HttpResponse.sendRedirect(String)&lt;/h5&gt;
+&lt;h5 id="httpresponsesendredirectstring"&gt;HttpResponse.sendRedirect(String)&lt;/h5&gt;
 &lt;p&gt;The differnce between &lt;code&gt;forward()/include()&lt;/code&gt; and &lt;code&gt;HttpResponse.sendRedirect()&lt;/code&gt; is very obvious:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -195,7 +195,7 @@
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;So, if you have a JSP/Servlet Java web app and you want to use AJAX with JSON object, you have to write code in three places:&lt;/p&gt;
-&lt;h4&gt;1. JSP with jQuery&lt;/h4&gt;
+&lt;h4 id="1-jsp-with-jquery"&gt;1. JSP with jQuery&lt;/h4&gt;
 &lt;p&gt;You want to have &lt;code&gt;jQuery&lt;/code&gt; library in your JSP file to make sure you can use AJAX.&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;ajax&lt;/span&gt;&lt;span class="p"&gt;({&lt;/span&gt;
         &lt;span class="nx"&gt;type&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"POST"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
@@ -232,13 +232,13 @@
 &lt;blockquote&gt;
 &lt;p&gt;In the code above, &lt;code&gt;contentType&lt;/code&gt; and &lt;code&gt;dataType&lt;/code&gt; (and &lt;code&gt;mimeType&lt;/code&gt; if exists) is very important because wrong value of these attributes can give you a &lt;code&gt;404&lt;/code&gt; or &lt;code&gt;500&lt;/code&gt; error.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h5&gt;contentType&lt;/h5&gt;
+&lt;h5 id="contenttype"&gt;contentType&lt;/h5&gt;
 &lt;p&gt;Default value: &lt;code&gt;application/x-www-form-urlencoded; charset=UTF-8&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;This is the data type &lt;strong&gt;when you send data to server&lt;/strong&gt;.&lt;/p&gt;
-&lt;h5&gt;dataType&lt;/h5&gt;
+&lt;h5 id="datatype"&gt;dataType&lt;/h5&gt;
 &lt;p&gt;Default value: Guess(&lt;code&gt;xml&lt;/code&gt;, &lt;code&gt;json&lt;/code&gt;, &lt;code&gt;script&lt;/code&gt;, &lt;code&gt;html&lt;/code&gt;)&lt;/p&gt;
 &lt;p&gt;This is the data type &lt;strong&gt;when server pass data back to you&lt;/strong&gt;.&lt;/p&gt;
-&lt;h5&gt;mimeType&lt;/h5&gt;
+&lt;h5 id="mimetype"&gt;mimeType&lt;/h5&gt;
 &lt;p&gt;A mime type to override the XHR mime type. This is the data type &lt;strong&gt;when server pass data back to you&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Form Mozilla, MIME types describe the media type of content either in email or served by web servers or web applications.&lt;/p&gt;
 &lt;p&gt;MIME types are intended to help guide a web browser in &lt;em&gt;how the content is to be processed and displayed&lt;/em&gt;. Examples of MIME types are:&lt;/p&gt;
@@ -250,7 +250,7 @@
 &lt;li&gt;&lt;code&gt;application/pdf&lt;/code&gt; for Adobe® PDF documents.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;So if you want you browser to access data like &lt;code&gt;xml&lt;/code&gt;, &lt;code&gt;json&lt;/code&gt;, &lt;code&gt;script&lt;/code&gt; or &lt;code&gt;html&lt;/code&gt;, &lt;code&gt;dataType&lt;/code&gt; is good enough. However, if you want to let your browser detect PDF file or other data types, you need to set &lt;code&gt;mimeType&lt;/code&gt;.&lt;/p&gt;
-&lt;h4&gt;2. web.xml&lt;/h4&gt;
+&lt;h4 id="2-webxml"&gt;2. web.xml&lt;/h4&gt;
 &lt;blockquote&gt;
 &lt;p&gt;After working with Spring MVC for a while, I realizae I can forget web.xml easily. Make sure you register your servlet in web.xml.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -270,7 +270,7 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;3. Servlet&lt;/h4&gt;
+&lt;h4 id="3-servlet"&gt;3. Servlet&lt;/h4&gt;
 &lt;p&gt;If you pass JSON object to your servlet, you may want to use &lt;code&gt;org.json&lt;/code&gt;, &lt;code&gt;com.fasterxml.jackson&lt;/code&gt; or &lt;code&gt;gson&lt;/code&gt; external library to help you dealing with JSON object in Java.&lt;/p&gt;
 &lt;p&gt;Example code for post operation:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;//You want your class extends HttpServlet&lt;/span&gt;
@@ -300,18 +300,18 @@
 
 
 &lt;p&gt;This post will be udpated when I learned more about AJAX in my work experience.&lt;/p&gt;
-&lt;h4&gt;Tips&lt;/h4&gt;
-&lt;h5&gt;org.apache.catalina.LifecycleException: Failed to start component&lt;/h5&gt;
+&lt;h4 id="tips"&gt;Tips&lt;/h4&gt;
+&lt;h5 id="orgapachecatalinalifecycleexception-failed-to-start-component"&gt;org.apache.catalina.LifecycleException: Failed to start component&lt;/h5&gt;
 &lt;p&gt;If you include &lt;code&gt;org.json&lt;/code&gt; jar file in your project, and you encourter &lt;code&gt;org.apache.catalina.LifecycleException: Failed to start component&lt;/code&gt; exception when you try to deploy to Tomcat:&lt;/p&gt;
-&lt;p&gt;Make sure you add your jar files to &lt;code&gt;Web Deployment Assebly&lt;/code&gt; in your project properies. Following &lt;a href="http://stackoverflow.com/questions/16362302/java-servlet-error-with-jsonobject"&gt;this post&lt;/a&gt; and you will be fine.&lt;/p&gt;&lt;/div&gt;</description><category>Ajax</category><category>Java</category><category>jQuery</category><category>Servlet</category><guid>http://pengyin-shan.com/posts/2015/Java/ajax-and-java-servlet.html</guid><pubDate>Mon, 03 Aug 2015 07:00:00 GMT</pubDate></item><item><title>JUnit Basics</title><link>http://pengyin-shan.com/posts/2015/Java/junit-basics.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3&gt;Reference&lt;/h3&gt;
+&lt;p&gt;Make sure you add your jar files to &lt;code&gt;Web Deployment Assebly&lt;/code&gt; in your project properies. Following &lt;a href="http://stackoverflow.com/questions/16362302/java-servlet-error-with-jsonobject"&gt;this post&lt;/a&gt; and you will be fine.&lt;/p&gt;&lt;/div&gt;</description><category>Ajax</category><category>Java</category><category>jQuery</category><category>Servlet</category><guid>http://pengyin-shan.com/posts/2015/Java/ajax-and-java-servlet.html</guid><pubDate>Mon, 03 Aug 2015 07:00:00 GMT</pubDate></item><item><title>JUnit Basics</title><link>http://pengyin-shan.com/posts/2015/Java/junit-basics.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3 id="reference"&gt;Reference&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://www.tutorialspoint.com//junit/index.htm"&gt;JUnit Tutorial from Tutorialspoint.com&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Overview&lt;/h3&gt;
+&lt;h3 id="overview"&gt;Overview&lt;/h3&gt;
 &lt;p&gt;A &lt;code&gt;Unit Test Case&lt;/code&gt; is a part of code which ensures that the another part of code (method) works as expected. To achieve those desired results quickly, test framework is required.&lt;/p&gt;
 &lt;p&gt;JUnit is perfect unit test framework for java programming language.&lt;/p&gt;
-&lt;h3&gt;Test Framework&lt;/h3&gt;
-&lt;h4&gt;Features&lt;/h4&gt;
+&lt;h3 id="test-framework"&gt;Test Framework&lt;/h3&gt;
+&lt;h4 id="features"&gt;Features&lt;/h4&gt;
 &lt;p&gt;JUnit test framework provides following important features:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -327,7 +327,7 @@
 &lt;p&gt;&lt;code&gt;JUnit classes&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h5&gt;Fixtures&lt;/h5&gt;
+&lt;h5 id="fixtures"&gt;Fixtures&lt;/h5&gt;
 &lt;p&gt;&lt;code&gt;Fixtures&lt;/code&gt; is a fixed state of a set of &lt;strong&gt;objects&lt;/strong&gt; used as a baseline for running tests.&lt;/p&gt;
 &lt;p&gt;The purpose of a test fixture is to ensure that there is a well known and &lt;strong&gt;fixed environment&lt;/strong&gt; in which tests are run so that results are repeatable. It includes:&lt;/p&gt;
 &lt;ul&gt;
@@ -357,7 +357,7 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;Test Suite&lt;/h5&gt;
+&lt;h5 id="test-suite"&gt;Test Suite&lt;/h5&gt;
 &lt;p&gt;&lt;code&gt;Test suite&lt;/code&gt; means &lt;strong&gt;bundle&lt;/strong&gt; a few unit test cases and run it together.&lt;/p&gt;
 &lt;p&gt;In JUnit, both &lt;code&gt;@RunWith&lt;/code&gt; and &lt;code&gt;@Suite&lt;/code&gt; annotation are used to run the suite test.&lt;/p&gt;
 &lt;p&gt;Here is an example which uses TestJunit1 &amp;amp; TestJunit2 test classes from Tutorialspoint.com:&lt;/p&gt;
@@ -403,7 +403,7 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;Test Runner&lt;/h5&gt;
+&lt;h5 id="test-runner"&gt;Test Runner&lt;/h5&gt;
 &lt;p&gt;&lt;code&gt;Test runner&lt;/code&gt; is used for &lt;strong&gt;executing&lt;/strong&gt; the test cases.&lt;/p&gt;
 &lt;p&gt;Here is an example which assumes TestJunit test class already exists, from Tutorialspoint.com:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.junit.runner.JUnitCore&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -422,7 +422,7 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;JUnit Classes&lt;/h5&gt;
+&lt;h5 id="junit-classes"&gt;JUnit Classes&lt;/h5&gt;
 &lt;p&gt;JUnit classes are important classes which is used in writing and testing JUnits.&lt;/p&gt;
 &lt;p&gt;Some of the important classes are:&lt;/p&gt;
 &lt;ul&gt;
@@ -436,8 +436,8 @@
 &lt;p&gt;&lt;code&gt;TestResult&lt;/code&gt; which contain methods to collect the results of executing a test case.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4&gt;JUnit Basic Usage&lt;/h4&gt;
-&lt;h5&gt;1. Create a Message Class&lt;/h5&gt;
+&lt;h4 id="junit-basic-usage"&gt;JUnit Basic Usage&lt;/h4&gt;
+&lt;h5 id="1-create-a-message-class"&gt;1. Create a Message Class&lt;/h5&gt;
 &lt;p&gt;Example code from Tutorialspoint.com:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cm"&gt;/*&lt;/span&gt;
 &lt;span class="cm"&gt;* This class prints the given message on console.&lt;/span&gt;
@@ -458,7 +458,7 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;2. Create a Test Case Class&lt;/h5&gt;
+&lt;h5 id="2-create-a-test-case-class"&gt;2. Create a Test Case Class&lt;/h5&gt;
 &lt;p&gt;Example code from Tutorialspoint.com&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.junit.Test&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;span class="kn"&gt;import static&lt;/span&gt; &lt;span class="nn"&gt;org.junit.Assert.assertEquals&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -475,7 +475,7 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;3. Create a Test Runner Class&lt;/h5&gt;
+&lt;h5 id="3-create-a-test-runner-class"&gt;3. Create a Test Runner Class&lt;/h5&gt;
 &lt;p&gt;Example code from Tutorialspoint.com&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.junit.runner.JUnitCore&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.junit.runner.Result&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -494,7 +494,7 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Writing Test with POJOs&lt;/h4&gt;
+&lt;h4 id="writing-test-with-pojos"&gt;Writing Test with POJOs&lt;/h4&gt;
 &lt;p&gt;To write a test for a POJO class, we need following:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -578,10 +578,10 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Assertion and Annotation&lt;/h4&gt;
-&lt;h5&gt;Assertion&lt;/h5&gt;
+&lt;h4 id="assertion-and-annotation"&gt;Assertion and Annotation&lt;/h4&gt;
+&lt;h5 id="assertion"&gt;Assertion&lt;/h5&gt;
 &lt;p&gt;This class provides a set of assertion methods useful for writing tests. &lt;em&gt;Only failed assertions are recorded.&lt;/em&gt;&lt;/p&gt;
-&lt;h6&gt;List of Assertion Methods&lt;/h6&gt;
+&lt;h6 id="list-of-assertion-methods"&gt;List of Assertion Methods&lt;/h6&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;assertEquals&lt;/code&gt;: Check that two primitives/Objectes are equal&lt;/p&gt;
@@ -599,7 +599,7 @@
 &lt;p&gt;&lt;strong&gt;assertArrayEquals&lt;/strong&gt;: Check whether two arrays are equal to each other&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h5&gt;Annotation&lt;/h5&gt;
+&lt;h5 id="annotation"&gt;Annotation&lt;/h5&gt;
 &lt;p&gt;The annotation in JUnit gives us information about test methods, include:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -612,7 +612,7 @@
 &lt;p&gt;which methods or class will be ignore during execution.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h6&gt;List of Annotations&lt;/h6&gt;
+&lt;h6 id="list-of-annotations"&gt;List of Annotations&lt;/h6&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;@Test&lt;/code&gt;: The Test annotation tells JUnit that the &lt;strong&gt;public void method&lt;/strong&gt; to which it is attached can be run as a test case.&lt;/p&gt;
@@ -633,9 +633,9 @@
 &lt;p&gt;&lt;code&gt;@Ignore&lt;/code&gt;: The Ignore annotation is used to ignore the test and that &lt;strong&gt;test will not be executed&lt;/strong&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4&gt;Suite Test&lt;/h4&gt;
+&lt;h4 id="suite-test"&gt;Suite Test&lt;/h4&gt;
 &lt;p&gt;Test suites means bundle a few unit test cases and run it together. In JUnit, both &lt;code&gt;@RunWith&lt;/code&gt; and &lt;code&gt;@Suite&lt;/code&gt; annotation are used to run the suite test.&lt;/p&gt;
-&lt;h5&gt;Step 1: Create a Message Class&lt;/h5&gt;
+&lt;h5 id="step-1-create-a-message-class"&gt;Step 1: Create a Message Class&lt;/h5&gt;
 &lt;p&gt;Example code from Tutorialspoint.com:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cm"&gt;/*&lt;/span&gt;
 &lt;span class="cm"&gt;* This class prints the given message on console.&lt;/span&gt;
@@ -662,7 +662,7 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;Step 2: Create Business Login Class with Business Login Test Class&lt;/h5&gt;
+&lt;h5 id="step-2-create-business-login-class-with-business-login-test-class"&gt;Step 2: Create Business Login Class with Business Login Test Class&lt;/h5&gt;
 &lt;p&gt;Business Logic class with Methods for testing:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.junit.Test&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.junit.Ignore&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -696,7 +696,7 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;Step3: Create Test Suite Class using @RunWith and @Suite annotation&lt;/h5&gt;
+&lt;h5 id="step3-create-test-suite-class-using-runwith-and-suite-annotation"&gt;Step3: Create Test Suite Class using @RunWith and @Suite annotation&lt;/h5&gt;
 &lt;p&gt;Example code from Tutorialspoint.com:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.junit.runner.RunWith&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.junit.runners.Suite&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -712,17 +712,17 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;Create Test Runner Classes&lt;/h5&gt;
+&lt;h5 id="create-test-runner-classes"&gt;Create Test Runner Classes&lt;/h5&gt;
 &lt;p&gt;Same code as examples above&lt;/p&gt;
-&lt;h4&gt;Ignore Test&lt;/h4&gt;
+&lt;h4 id="ignore-test"&gt;Ignore Test&lt;/h4&gt;
 &lt;p&gt;Sometimes it happens that our code is not ready and test case written to test that method/code will fail if run. The &lt;code&gt;@Ignore&lt;/code&gt; annotation helps in this regards.&lt;/p&gt;
 &lt;p&gt;A test method annotated with @Ignore &lt;strong&gt;will not be executed&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;If a test class is annotated with @Ignore then none of its test methods will be executed.&lt;/p&gt;
-&lt;h5&gt;Step 1: Create a Message Class&lt;/h5&gt;
+&lt;h5 id="step-1-create-a-message-class_1"&gt;Step 1: Create a Message Class&lt;/h5&gt;
 &lt;p&gt;Same as example above.&lt;/p&gt;
-&lt;h5&gt;Step 2: Create Business Login Class with Business Login Test Class&lt;/h5&gt;
+&lt;h5 id="step-2-create-business-login-class-with-business-login-test-class_1"&gt;Step 2: Create Business Login Class with Business Login Test Class&lt;/h5&gt;
 &lt;p&gt;Same as example above.&lt;/p&gt;
-&lt;h5&gt;Step 3: Create Test Runner Class with @Ignore Annotation&lt;/h5&gt;
+&lt;h5 id="step-3-create-test-runner-class-with-ignore-annotation"&gt;Step 3: Create Test Runner Class with @Ignore Annotation&lt;/h5&gt;
 &lt;p&gt;Example code from Tutorialspoint.com:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.junit.Test&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.junit.Ignore&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -749,12 +749,12 @@
 
 
 &lt;p&gt;If you run the code above, you will always pass all test because none of test with @Test annotation above is excuted.&lt;/p&gt;
-&lt;h4&gt;Time Test&lt;/h4&gt;
+&lt;h4 id="time-test"&gt;Time Test&lt;/h4&gt;
 &lt;p&gt;If a test case takes more time than specified number of milliseconds then JUnit will automatically mark it as failed.&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;timeout&lt;/code&gt; parameter is used along with @Test annotation.&lt;/p&gt;
-&lt;h5&gt;Step 1: Create a Message Class&lt;/h5&gt;
+&lt;h5 id="step-1-create-a-message-class_2"&gt;Step 1: Create a Message Class&lt;/h5&gt;
 &lt;p&gt;Same as example above.&lt;/p&gt;
-&lt;h5&gt;Step 2: Create Test Class with Timeout Setting&lt;/h5&gt;
+&lt;h5 id="step-2-create-test-class-with-timeout-setting"&gt;Step 2: Create Test Class with Timeout Setting&lt;/h5&gt;
 &lt;p&gt;Example code from Tutorialspoint.com:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.junit.Test&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.junit.Ignore&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -778,14 +778,14 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;Step 3: Create Test Runner Class&lt;/h5&gt;
+&lt;h5 id="step-3-create-test-runner-class"&gt;Step 3: Create Test Runner Class&lt;/h5&gt;
 &lt;p&gt;Same regular Test Runner class as examples above&lt;/p&gt;
-&lt;h4&gt;Exceptions Test&lt;/h4&gt;
+&lt;h4 id="exceptions-test"&gt;Exceptions Test&lt;/h4&gt;
 &lt;p&gt;You can test the code &lt;em&gt;whether code throws desired exception or not&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;The &lt;strong&gt;expected&lt;/strong&gt; parameter is used along with @Test annotation.&lt;/p&gt;
-&lt;h5&gt;Step 1: Create a Message Class&lt;/h5&gt;
+&lt;h5 id="step-1-create-a-message-class_3"&gt;Step 1: Create a Message Class&lt;/h5&gt;
 &lt;p&gt;Same as example above.&lt;/p&gt;
-&lt;h5&gt;Step 2: Create Test Class with Exception Setting&lt;/h5&gt;
+&lt;h5 id="step-2-create-test-class-with-exception-setting"&gt;Step 2: Create Test Class with Exception Setting&lt;/h5&gt;
 &lt;p&gt;Example code from Tutorialspoint.com:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.junit.Test&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.junit.Ignore&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -809,9 +809,9 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;Step 3: Create Test Runner Class&lt;/h5&gt;
+&lt;h5 id="step-3-create-test-runner-class_1"&gt;Step 3: Create Test Runner Class&lt;/h5&gt;
 &lt;p&gt;Same regular Test Runner class as examples above&lt;/p&gt;
-&lt;h4&gt;Parameterized Test&lt;/h4&gt;
+&lt;h4 id="parameterized-test"&gt;Parameterized Test&lt;/h4&gt;
 &lt;p&gt;Parameterized tests allow developer to &lt;em&gt;run the same test over and over again using different values&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Five steps to follow for parameterized test:&lt;/p&gt;
 &lt;ol&gt;
@@ -832,7 +832,7 @@
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;The test case will be invoked once per each row of data.&lt;/p&gt;
-&lt;h5&gt;Step 1: Create a Business Logic class with Methods for Testing&lt;/h5&gt;
+&lt;h5 id="step-1-create-a-business-logic-class-with-methods-for-testing"&gt;Step 1: Create a Business Logic class with Methods for Testing&lt;/h5&gt;
 &lt;p&gt;Exmaple code from Tutorialspoint.com:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;PrimeNumberChecker&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
    &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="n"&gt;Boolean&lt;/span&gt; &lt;span class="nf"&gt;validate&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;final&lt;/span&gt; &lt;span class="n"&gt;Integer&lt;/span&gt; &lt;span class="n"&gt;primeNumber&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
@@ -847,7 +847,7 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;Step 2: Create a Business Logic Parameterized Test Class&lt;/h5&gt;
+&lt;h5 id="step-2-create-a-business-logic-parameterized-test-class"&gt;Step 2: Create a Business Logic Parameterized Test Class&lt;/h5&gt;
 &lt;p&gt;Exmaple code from Tutorialspoint.com:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;java.util.Arrays&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;java.util.Collection&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -897,11 +897,11 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;Step 3: Create Test Runner Class&lt;/h5&gt;
+&lt;h5 id="step-3-create-test-runner-class_2"&gt;Step 3: Create Test Runner Class&lt;/h5&gt;
 &lt;p&gt;Same regular Test Runner class as examples above&lt;/p&gt;&lt;/div&gt;</description><category>Java</category><category>JUnit</category><category>Software Testing</category><guid>http://pengyin-shan.com/posts/2015/Java/junit-basics.html</guid><pubDate>Fri, 24 Jul 2015 07:00:00 GMT</pubDate></item><item><title>Spring Tips</title><link>http://pengyin-shan.com/posts/2015/Java/spring-tips.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;hr&gt;
 &lt;p&gt;In Spring MVC, if AJAX pass back a &lt;code&gt;String&lt;/code&gt;, use &lt;code&gt;JSON.parse()&lt;/code&gt; to transfer it to JSON object first.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h4&gt;Use Session Object in Controller&lt;/h4&gt;
+&lt;h4 id="use-session-object-in-controller"&gt;Use Session Object in Controller&lt;/h4&gt;
 &lt;p&gt;Way1:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;\\&lt;/span&gt;&lt;span class="o"&gt;...(...&lt;/span&gt;&lt;span class="na"&gt;HttpSession&lt;/span&gt; &lt;span class="n"&gt;sessionObj&lt;/span&gt;&lt;span class="o"&gt;){&lt;/span&gt;
     &lt;span class="n"&gt;sessionobj&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;setAttribute&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="err"&gt;'&lt;/span&gt;&lt;span class="n"&gt;name_of_attribute&lt;/span&gt;&lt;span class="err"&gt;'&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;attribute_object&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
@@ -921,8 +921,8 @@
 
 &lt;p&gt;Different from &lt;code&gt;flash attribute&lt;/code&gt;, if we use session, attribute in front-end will not be erased after reloading.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3&gt;Spring MVC Form Tips&lt;/h3&gt;
-&lt;h4&gt;Spring Form Validation:&lt;/h4&gt;
+&lt;h3 id="spring-mvc-form-tips"&gt;Spring MVC Form Tips&lt;/h3&gt;
+&lt;h4 id="spring-form-validation"&gt;Spring Form Validation:&lt;/h4&gt;
 &lt;p&gt;Way 1:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;form:form&lt;/span&gt; &lt;span class="err"&gt;...&lt;/span&gt; &lt;span class="na"&gt;onsubmit&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;'return valid()'&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
     &lt;span class="c"&gt;&amp;lt;!--. Code... --&amp;gt;&lt;/span&gt;
@@ -952,7 +952,7 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Submit Spring Form in jQuery:&lt;/h4&gt;
+&lt;h4 id="submit-spring-form-in-jquery"&gt;Submit Spring Form in jQuery:&lt;/h4&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'#Form_ID'&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;submit&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;e&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
         &lt;span class="nx"&gt;e&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;preventDefault&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
         &lt;span class="c1"&gt;//...&lt;/span&gt;
@@ -970,7 +970,7 @@
 &lt;p&gt;If you are using Eclipse, comment your unwanted Spring code will not work! You should remove unwanted Spring code instead of commenting them, because Eclipse will compile Spring code anyway, and you may get error because of that.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h3&gt;Spring and AJAX&lt;/h3&gt;
+&lt;h3 id="spring-and-ajax"&gt;Spring and AJAX&lt;/h3&gt;
 &lt;p&gt;I wrote any post about Spring and AJAX &lt;a href="http://pengyin-shan.com/ajax-and-spring-mvc-controller.html"&gt;here&lt;/a&gt;.
 Post Method in jQuery:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;ajax&lt;/span&gt;&lt;span class="p"&gt;({&lt;/span&gt;
@@ -1008,7 +1008,7 @@ Post Method in jQuery:&lt;/p&gt;
 - If your web.xml set up default url-pattern &lt;code&gt;/&lt;/code&gt;, when you refer a link, you don't need to add any suffix on it.
 - If your web.xml set up any url-pattern, such as &lt;code&gt;html&lt;/code&gt; or &lt;code&gt;htm&lt;/code&gt;, when you refere a link, in &lt;code&gt;ajax&lt;/code&gt; or &lt;code&gt;windown.location.href&lt;/code&gt;, you need to add &lt;code&gt;html&lt;/code&gt; or &lt;code&gt;htm&lt;/code&gt; suffix after it. &lt;em&gt;But don't add these suffix in spring controller request mapping&lt;/em&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3&gt;Case 1. Pass JSON Data to Controller in Ajax Call, using $.ajax()&lt;/h3&gt;
+&lt;h3 id="case-1-pass-json-data-to-controller-in-ajax-call-using-ajax"&gt;Case 1. Pass JSON Data to Controller in Ajax Call, using $.ajax()&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Notes on 01/13/2015: I had trouble using &lt;code&gt;$.post()&lt;/code&gt; to post JSON data. I doubt something is wrong but I haven't figure out why. Currently I just use &lt;code&gt;$.ajax()&lt;/code&gt;*&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1037,7 +1037,7 @@ Post Method in jQuery:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;You may want to substitude &lt;code&gt;application/json&lt;/code&gt; with &lt;code&gt;application/html&lt;/code&gt; to avoid possible.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3&gt;Case 2. Pass JSON Data as URL parameter, and Handle it in Spring MVC Controller&lt;/h3&gt;
+&lt;h3 id="case-2-pass-json-data-as-url-parameter-and-handle-it-in-spring-mvc-controller"&gt;Case 2. Pass JSON Data as URL parameter, and Handle it in Spring MVC Controller&lt;/h3&gt;
 &lt;p&gt;PROS&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;You are free to go to another page or call other controllers after you pass data to controller.&lt;/p&gt;
@@ -1089,8 +1089,8 @@ Post Method in jQuery:&lt;/p&gt;
 &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="n"&gt;ModelAndView&lt;/span&gt; &lt;span class="nf"&gt;test&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nd"&gt;@PathVariable&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"jsonstuff"&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="n"&gt;JSONObject&lt;/span&gt; &lt;span class="n"&gt;json&lt;/span&gt;&lt;span class="o"&gt;){&lt;/span&gt;
 &lt;span class="c1"&gt;//Or @PathVaraible("jsonstuff") String json&lt;/span&gt;
 &lt;span class="o"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</description><category>Ajax</category><category>Java</category><category>jQuery</category><category>Spring</category><guid>http://pengyin-shan.com/posts/2015/Java/ajax-and-spring-mvc-controller.html</guid><pubDate>Tue, 13 Jan 2015 08:00:00 GMT</pubDate></item><item><title>Important Q&amp;A for OCA Java SE7 Certification Guide</title><link>http://pengyin-shan.com/posts/2015/Java/key-qas-for-oca-book.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3&gt;Q&amp;amp;As from Chapter 1, OCA Guide from Manning&lt;/h3&gt;
-&lt;h4&gt;Q1: which code(s) can be complied as &lt;code&gt;main&lt;/code&gt; method?&lt;/h4&gt;
+&lt;/pre&gt;&lt;/div&gt;</description><category>Ajax</category><category>Java</category><category>jQuery</category><category>Spring</category><guid>http://pengyin-shan.com/posts/2015/Java/ajax-and-spring-mvc-controller.html</guid><pubDate>Tue, 13 Jan 2015 08:00:00 GMT</pubDate></item><item><title>Important Q&amp;A for OCA Java SE7 Certification Guide</title><link>http://pengyin-shan.com/posts/2015/Java/key-qas-for-oca-book.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3 id="qas-from-chapter-1-oca-guide-from-manning"&gt;Q&amp;amp;As from Chapter 1, OCA Guide from Manning&lt;/h3&gt;
+&lt;h4 id="q1-which-codes-can-be-complied-as-main-method"&gt;Q1: which code(s) can be complied as &lt;code&gt;main&lt;/code&gt; method?&lt;/h4&gt;
 &lt;p&gt;a.&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;EJava&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
 &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;static&lt;/span&gt; &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;sun&lt;/span&gt;&lt;span class="o"&gt;[])&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
@@ -1132,7 +1132,7 @@ Post Method in jQuery:&lt;/p&gt;
 &lt;p&gt;The problem of c is &lt;code&gt;main&lt;/code&gt; method only accept one-dimention String array.&lt;/p&gt;
 &lt;p&gt;The problem of d is &lt;em&gt;&lt;em&gt;only &lt;code&gt;public&lt;/code&gt; and &lt;code&gt;static&lt;/code&gt; can change position. &lt;code&gt;void&lt;/code&gt; must be the last modifier for &lt;code&gt;main&lt;/code&gt; method&lt;/em&gt;.&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4&gt;Q2: Which of the following examples define the correct Java class structure?&lt;/h4&gt;
+&lt;h4 id="q2-which-of-the-following-examples-define-the-correct-java-class-structure"&gt;Q2: Which of the following examples define the correct Java class structure?&lt;/h4&gt;
 &lt;p&gt;a.&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="n"&gt;connect&lt;/span&gt; &lt;span class="n"&gt;java&lt;/span&gt; &lt;span class="n"&gt;compiler&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="n"&gt;connect&lt;/span&gt; &lt;span class="n"&gt;java&lt;/span&gt; &lt;span class="n"&gt;virtual&lt;/span&gt; &lt;span class="n"&gt;machine&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -1186,7 +1186,7 @@ Post Method in jQuery:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Problem of f is : &lt;strong&gt;Java is case-sensitive&lt;/strong&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4&gt;Q3. Which of the following options, when inserted at //INSERT CODE HERE, will print out EJavaGuru?&lt;/h4&gt;
+&lt;h4 id="q3-which-of-the-following-options-when-inserted-at-insert-code-here-will-print-out-ejavaguru"&gt;Q3. Which of the following options, when inserted at //INSERT CODE HERE, will print out EJavaGuru?&lt;/h4&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;EJavaGuru&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
     &lt;span class="c1"&gt;// INSERT CODE HERE&lt;/span&gt;
     &lt;span class="o"&gt;{&lt;/span&gt;
@@ -1217,7 +1217,7 @@ Post Method in jQuery:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Extra space is ignored by java compiler&lt;/strong&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4&gt;Q4: Given the following code, select the correct options:&lt;/h4&gt;
+&lt;h4 id="q4-given-the-following-code-select-the-correct-options"&gt;Q4: Given the following code, select the correct options:&lt;/h4&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;package&lt;/span&gt; &lt;span class="nn"&gt;com.ejavaguru.courses&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Course&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
     &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;courseName&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -1246,8 +1246,8 @@ Post Method in jQuery:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Method argument cannot have any access modifier&lt;/strong&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3&gt;Q&amp;amp;As from Chapter 2, OCA Guide from Manning&lt;/h3&gt;
-&lt;h4&gt;Q1. Let’s use the primitive variables baseDecimal, octVal, hexVal, and binVal defined earlier in this section and introduce additional code for printing the values of all these variables. Determine the output of the following code:&lt;/h4&gt;
+&lt;h3 id="qas-from-chapter-2-oca-guide-from-manning"&gt;Q&amp;amp;As from Chapter 2, OCA Guide from Manning&lt;/h3&gt;
+&lt;h4 id="q1-lets-use-the-primitive-variables-basedecimal-octval-hexval-and-binval-defined-earlier-in-this-section-and-introduce-additional-code-for-printing-the-values-of-all-these-variables-determine-the-output-of-the-following-code"&gt;Q1. Let’s use the primitive variables baseDecimal, octVal, hexVal, and binVal defined earlier in this section and introduce additional code for printing the values of all these variables. Determine the output of the following code:&lt;/h4&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;TwistInTaleNumberSystems&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
 &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;static&lt;/span&gt; &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="o"&gt;[])&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
         &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;baseDecimal&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;267&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -1265,7 +1265,7 @@ Post Method in jQuery:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;code&gt;System.out.println()&lt;/code&gt; always print out decimal value so all oct, hex and binaray needs to be changed to decimal value. Note the way to calculate binary is use the n square of 2.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4&gt;Q2. Select all incorrect statements:&lt;/h4&gt;
+&lt;h4 id="q2-select-all-incorrect-statements"&gt;Q2. Select all incorrect statements:&lt;/h4&gt;
 &lt;p&gt;a. A programmer can’t define a new primitive data type.&lt;/p&gt;
 &lt;p&gt;b. A programmer can define a new primitive data type.&lt;/p&gt;
 &lt;p&gt;c. Once assigned, the value of a primitive can’t be modified.&lt;/p&gt;
@@ -1274,7 +1274,7 @@ Post Method in jQuery:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Note you &lt;strong&gt;can modify value of primary type after it is assigned&lt;/strong&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4&gt;Q3. Which of the operations are correct for the following code?&lt;/h4&gt;
+&lt;h4 id="q3-which-of-the-operations-are-correct-for-the-following-code"&gt;Q3. Which of the operations are correct for the following code?&lt;/h4&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Prim&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt; &lt;span class="c1"&gt;//line1&lt;/span&gt;
   &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;static&lt;/span&gt; &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt;&lt;span class="o"&gt;[]&lt;/span&gt; &lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt; &lt;span class="c1"&gt;//line 2&lt;/span&gt;
   &lt;span class="kt"&gt;char&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="sc"&gt;'a'&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="c1"&gt;//3&lt;/span&gt;
@@ -1295,7 +1295,7 @@ Post Method in jQuery:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Note &lt;code&gt;Integer&lt;/code&gt; is &lt;em&gt;not&lt;/em&gt; a valid java primary data type!&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4&gt;Q4. Which of the following options contain correct code to declare and initialize variables to store whole numbers?&lt;/h4&gt;
+&lt;h4 id="q4-which-of-the-following-options-contain-correct-code-to-declare-and-initialize-variables-to-store-whole-numbers"&gt;Q4. Which of the following options contain correct code to declare and initialize variables to store whole numbers?&lt;/h4&gt;
 &lt;p&gt;a. bit a=0;&lt;/p&gt;
 &lt;p&gt;b. integer a2 = 7;&lt;/p&gt;
 &lt;p&gt;c. long a3 = 0x10C;&lt;/p&gt;
@@ -1308,7 +1308,7 @@ Post Method in jQuery:&lt;/p&gt;
 &lt;p&gt;Note &lt;code&gt;double&lt;/code&gt; can &lt;em&gt;only&lt;/em&gt; store &lt;strong&gt;decimal&lt;/strong&gt; value. Also &lt;code&gt;byte a7 = 0&lt;/code&gt; is valid.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;bit&lt;/code&gt; and &lt;code&gt;integer&lt;/code&gt; are not primary data type for java.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4&gt;Q5.  If the functionality of the operators = and &amp;gt; were to be swapped in Java (for the code on line numbers 4, 5, and 6), what would be the result of the following code?&lt;/h4&gt;
+&lt;h4 id="q5-if-the-functionality-of-the-operators-and-were-to-be-swapped-in-java-for-the-code-on-line-numbers-4-5-and-6-what-would-be-the-result-of-the-following-code"&gt;Q5.  If the functionality of the operators = and &amp;gt; were to be swapped in Java (for the code on line numbers 4, 5, and 6), what would be the result of the following code?&lt;/h4&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kt"&gt;boolean&lt;/span&gt; &lt;span class="n"&gt;myBool&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;yourInt&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;span class="kt"&gt;float&lt;/span&gt; &lt;span class="n"&gt;hisFloat&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mf"&gt;19.54f&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -1326,8 +1326,8 @@ Post Method in jQuery:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;code&gt;swapped&lt;/code&gt; means change the function of &lt;code&gt;=&lt;/code&gt; and &lt;code&gt;&amp;gt;&lt;/code&gt;. Note &lt;code&gt;System.out.println(assignment expression)&lt;/code&gt; is acceptable in Java.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4&gt;Q&amp;amp;As from Chapter 3, OCA Guide from Manning&lt;/h4&gt;
-&lt;h4&gt;Q1: Which of the following methods correctly accepts three whole numbers as method arguments and returns their sum as a decimal number?&lt;/h4&gt;
+&lt;h4 id="qas-from-chapter-3-oca-guide-from-manning"&gt;Q&amp;amp;As from Chapter 3, OCA Guide from Manning&lt;/h4&gt;
+&lt;h4 id="q1-which-of-the-following-methods-correctly-accepts-three-whole-numbers-as-method-arguments-and-returns-their-sum-as-a-decimal-number"&gt;Q1: Which of the following methods correctly accepts three whole numbers as method arguments and returns their sum as a decimal number?&lt;/h4&gt;
 &lt;p&gt;a.&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;addNumbers&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;byte&lt;/span&gt; &lt;span class="n"&gt;arg1&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;arg2&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;arg3&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
 &lt;span class="kt"&gt;double&lt;/span&gt; &lt;span class="n"&gt;sum&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;arg1&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;arg2&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;arg3&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -1362,7 +1362,7 @@ Post Method in jQuery:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;On option d, note that &lt;code&gt;double&lt;/code&gt; can accept &lt;code&gt;long&lt;/code&gt; and &lt;code&gt;short&lt;/code&gt; assignment. There is no data size problem.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4&gt;Q2: Which of the following statements are true?&lt;/h4&gt;
+&lt;h4 id="q2-which-of-the-following-statements-are-true"&gt;Q2: Which of the following statements are true?&lt;/h4&gt;
 &lt;p&gt;a. If the return type of a method is &lt;code&gt;int&lt;/code&gt; , the method can return a value of type &lt;code&gt;byte&lt;/code&gt; .&lt;/p&gt;
 &lt;p&gt;b. A method may or may not return a value.&lt;/p&gt;
 &lt;p&gt;c. If the return type of a method is void , it can define a return statement without a value, as follows: &lt;code&gt;return;&lt;/code&gt;&lt;/p&gt;
@@ -1373,7 +1373,7 @@ Post Method in jQuery:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Note for opation a, since &lt;code&gt;byte&lt;/code&gt; can be transferred succesfully to &lt;code&gt;int&lt;/code&gt; without casting, it is safe to return &lt;code&gt;byte&lt;/code&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4&gt;Q3: Given the following code,&lt;/h4&gt;
+&lt;h4 id="q3-given-the-following-code"&gt;Q3: Given the following code,&lt;/h4&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Course&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
     &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;enroll&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;long&lt;/span&gt; &lt;span class="n"&gt;duration&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
     &lt;span class="n"&gt;System&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;out&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;println&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"long"&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
@@ -1414,7 +1414,7 @@ Post Method in jQuery:&lt;/p&gt;
 - Java found &lt;code&gt;char&lt;/code&gt; can use methods that have parameter type &lt;code&gt;int&lt;/code&gt; and &lt;code&gt;long&lt;/code&gt;.
 - Java found &lt;strong&gt;closest&lt;/strong&gt; type for char is &lt;code&gt;int&lt;/code&gt;, so Java call method which takes &lt;code&gt;int&lt;/code&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4&gt;Q4: Select the incorrect options:&lt;/h4&gt;
+&lt;h4 id="q4-select-the-incorrect-options"&gt;Q4: Select the incorrect options:&lt;/h4&gt;
 &lt;p&gt;a. If a user defines a private constructor for a public class, Java creates a public default constructor for the class.&lt;/p&gt;
 &lt;p&gt;b. A class that gets a default constructor doesn’t have overloaded constructors.
 c. A user can overload the default constructor of a class.&lt;/p&gt;
@@ -1441,8 +1441,8 @@ c. A user can overload the default constructor of a class.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h3&gt;Q&amp;amp;As from Chapter 7, OCA Guide from Manning&lt;/h3&gt;
-&lt;h4&gt;Q1: Examine the following code and select the correct option(s):&lt;/h4&gt;
+&lt;h3 id="qas-from-chapter-7-oca-guide-from-manning"&gt;Q&amp;amp;As from Chapter 7, OCA Guide from Manning&lt;/h3&gt;
+&lt;h4 id="q1-examine-the-following-code-and-select-the-correct-options"&gt;Q1: Examine the following code and select the correct option(s):&lt;/h4&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;EJavaGuruExcep2&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
 &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;static&lt;/span&gt; &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="o"&gt;[])&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
 &lt;span class="n"&gt;EJavaGuruExcep2&lt;/span&gt; &lt;span class="n"&gt;var&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="n"&gt;EJavaGuruExcep2&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;
@@ -1475,7 +1475,7 @@ d. The code will fail to compile.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;If you try to catch an exception from its dervied class after the exception of base class, the code will note compile.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Here &lt;code&gt;ArrayIndexOutOfBoundsException&lt;/code&gt; is a derived class of &lt;code&gt;IndexOutOfBoundsException&lt;/code&gt;, so it should be throwed out first. The code will fail to compile otherwise.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4&gt;Q2: What is the output of the following code?&lt;/h4&gt;
+&lt;h4 id="q2-what-is-the-output-of-the-following-code"&gt;Q2: What is the output of the following code?&lt;/h4&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;EJava&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
 &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;method&lt;/span&gt;&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
 &lt;span class="k"&gt;try&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
@@ -1508,7 +1508,7 @@ StackOverflowError&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;code&gt;throw&lt;/code&gt; in code means &lt;strong&gt;an exception must be throwed out&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4&gt;Q3: What is the output of the following code?&lt;/h4&gt;
+&lt;h4 id="q3-what-is-the-output-of-the-following-code"&gt;Q3: What is the output of the following code?&lt;/h4&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;TryFinally&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
 &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="nf"&gt;tryAgain&lt;/span&gt;&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
 &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -1540,7 +1540,7 @@ StackOverflowError&lt;/p&gt;
 &lt;li&gt;Note if there is a &lt;code&gt;return&lt;/code&gt; at the end of method block, &lt;code&gt;try&lt;/code&gt; and &lt;code&gt;catch&lt;/code&gt; cannot have &lt;code&gt;return&lt;/code&gt; at the same time.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h4&gt;Q4: Which of the following statements are true?&lt;/h4&gt;
+&lt;h4 id="q4-which-of-the-following-statements-are-true"&gt;Q4: Which of the following statements are true?&lt;/h4&gt;
 &lt;p&gt;a. A user-defined class may not throw an &lt;code&gt;IllegalStateException&lt;/code&gt; . It must be thrown only by Java API classes.&lt;/p&gt;
 &lt;p&gt;b. &lt;code&gt;System.out.println&lt;/code&gt; will throw &lt;code&gt;NullPointerException&lt;/code&gt; if an uninitialized instance variable of type String is passed to it to print its value.&lt;/p&gt;
 &lt;p&gt;c. &lt;code&gt;NumberFormatException&lt;/code&gt; is thrown by multiple methods from the Java API when invalid numbers are passed on as String s to be converted to the specified number format.&lt;/p&gt;
@@ -1549,7 +1549,7 @@ StackOverflowError&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Note the problem of &lt;code&gt;b&lt;/code&gt; is &lt;code&gt;System.out.println&lt;/code&gt; will print &lt;code&gt;null&lt;/code&gt; in option b. When a string is not initialized, it has default value &lt;code&gt;null&lt;/code&gt;. It will throw &lt;code&gt;NullPointerException&lt;/code&gt; error when you try to access a method using the &lt;code&gt;null&lt;/code&gt; variable.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4&gt;Q5. Given that &lt;code&gt;file.txt&lt;/code&gt; doesn’t exist on your system, what is the output of the following code?&lt;/h4&gt;
+&lt;h4 id="q5-given-that-filetxt-doesnt-exist-on-your-system-what-is-the-output-of-the-following-code"&gt;Q5. Given that &lt;code&gt;file.txt&lt;/code&gt; doesn’t exist on your system, what is the output of the following code?&lt;/h4&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;java.io.*&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;MultipleExceptions&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
 &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;static&lt;/span&gt; &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="o"&gt;[])&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
@@ -1596,7 +1596,7 @@ StackOverflowError&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;The code cannot compile because &lt;strong&gt;finally block cannot be put before catch block&lt;/strong&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4&gt;Q6. Given that &lt;code&gt;players.txt&lt;/code&gt; exists on your system and that the assignment of players, shown in bold, doesn’t throw any exceptions, what is the output of the following code?&lt;/h4&gt;
+&lt;h4 id="q6-given-that-playerstxt-exists-on-your-system-and-that-the-assignment-of-players-shown-in-bold-doesnt-throw-any-exceptions-what-is-the-output-of-the-following-code"&gt;Q6. Given that &lt;code&gt;players.txt&lt;/code&gt; exists on your system and that the assignment of players, shown in bold, doesn’t throw any exceptions, what is the output of the following code?&lt;/h4&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;java.io.*&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;TwistInTaleNestedTryCatch&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
 &lt;span class="kd"&gt;static&lt;/span&gt; &lt;span class="n"&gt;FileInputStream&lt;/span&gt; &lt;span class="n"&gt;players&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="n"&gt;coach&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -1640,8 +1640,8 @@ StackOverflowError&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Since &lt;code&gt;coach&lt;/code&gt; is a &lt;code&gt;static&lt;/code&gt; variable &lt;strong&gt;which hasn't been initialized&lt;/strong&gt;, a call to use &lt;strong&gt;a method&lt;/strong&gt; of &lt;code&gt;coach&lt;/code&gt; will throw &lt;code&gt;NullPointerException&lt;/code&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3&gt;Q&amp;amp;As from Chapter 4, OCA Guide from Manning&lt;/h3&gt;
-&lt;h4&gt;Q1: Which of the following are valid lines of code to define a &lt;code&gt;multidimensional int array&lt;/code&gt;?&lt;/h4&gt;
+&lt;h3 id="qas-from-chapter-4-oca-guide-from-manning"&gt;Q&amp;amp;As from Chapter 4, OCA Guide from Manning&lt;/h3&gt;
+&lt;h4 id="q1-which-of-the-following-are-valid-lines-of-code-to-define-a-multidimensional-int-array"&gt;Q1: Which of the following are valid lines of code to define a &lt;code&gt;multidimensional int array&lt;/code&gt;?&lt;/h4&gt;
 &lt;p&gt;a. &lt;code&gt;int[][] array1 = {{1, 2, 3}, {}, {1, 2,3, 4, 5}};&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;b. &lt;code&gt;int[][] array2 = new array() {{1, 2, 3}, {}, {1, 2,3, 4, 5}}&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;c. &lt;code&gt;int[][] array3 = {1, 2, 3}, {0}, {1, 2,3, 4, 5};&lt;/code&gt;&lt;/p&gt;
@@ -1650,7 +1650,7 @@ StackOverflowError&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;The option b is wrong. &lt;code&gt;new array()&lt;/code&gt; is not valid&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4&gt;Q2. Which of the following statements are correct?&lt;/h4&gt;
+&lt;h4 id="q2-which-of-the-following-statements-are-correct"&gt;Q2. Which of the following statements are correct?&lt;/h4&gt;
 &lt;p&gt;a. By default, an ArrayList creates an array with an initial size of 16 to store its elements.&lt;/p&gt;
 &lt;p&gt;b. Because ArrayList stores
 only objects, you can’t pass an element of an ArrayList to a switch construct.&lt;/p&gt;
@@ -1662,7 +1662,7 @@ only objects, you can’t pass an element of an ArrayList to a switch construct.
 &lt;p&gt;Option a is not right. &lt;code&gt;ArrayList&lt;/code&gt; has size &lt;code&gt;10&lt;/code&gt;. &lt;code&gt;StringBuilder&lt;/code&gt; has size &lt;code&gt;16&lt;/code&gt;.
 Option c is right. You can specify a larger capacity of &lt;code&gt;ArrayList&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4&gt;Q3. What is the output of the following code?&lt;/h4&gt;
+&lt;h4 id="q3-what-is-the-output-of-the-following-code_1"&gt;Q3. What is the output of the following code?&lt;/h4&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;java.util.*&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="c1"&gt;//Line 1&lt;/span&gt;
 &lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;EJavaGuruArrayList&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt; &lt;span class="c1"&gt;//Line2&lt;/span&gt;
 &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;static&lt;/span&gt; &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="o"&gt;[])&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt; &lt;span class="c1"&gt;//Line 3&lt;/span&gt;
@@ -1695,7 +1695,7 @@ Option c is right. You can specify a larger capacity of &lt;code&gt;ArrayList&lt
 &lt;p&gt;Option a is right. When &lt;code&gt;contains()&lt;/code&gt; is used for String, it call &lt;code&gt;equals()&lt;/code&gt; first, which for String, if using &lt;code&gt;new()&lt;/code&gt;, means same reference.&lt;/p&gt;
 &lt;p&gt;Option h is right. When calling &lt;code&gt;System.out.println()&lt;/code&gt;, &lt;code&gt;toString()&lt;/code&gt; method is automatically called. For &lt;code&gt;ArrayList&lt;/code&gt;, &lt;code&gt;toString()&lt;/code&gt; method will print out String value. Since ejg has been cleared, &lt;code&gt;null&lt;/code&gt; value will be print out.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4&gt;Q4. What is the output of the following code?&lt;/h4&gt;
+&lt;h4 id="q4-what-is-the-output-of-the-following-code"&gt;Q4. What is the output of the following code?&lt;/h4&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;EJavaGuruString&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
     &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;static&lt;/span&gt; &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="o"&gt;[])&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
         &lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;ejg1&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="n"&gt;String&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"E Java"&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
@@ -1718,7 +1718,7 @@ Option c is right. You can specify a larger capacity of &lt;code&gt;ArrayList&lt
 &lt;blockquote&gt;
 &lt;p&gt;String &lt;code&gt;ejg3&lt;/code&gt; and &lt;code&gt;ejg4&lt;/code&gt; are not created with &lt;code&gt;new()&lt;/code&gt;, so Java will find them same in String pool, which gives out a infinite loop.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4&gt;Q5. What is the output of the following code?&lt;/h4&gt;
+&lt;h4 id="q5-what-is-the-output-of-the-following-code"&gt;Q5. What is the output of the following code?&lt;/h4&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;EJavaGuruStringBuilder&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
     &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;static&lt;/span&gt; &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="o"&gt;[])&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
         &lt;span class="n"&gt;StringBuilder&lt;/span&gt; &lt;span class="n"&gt;ejg&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="n"&gt;StringBuilder&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"SUN"&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
@@ -1737,7 +1737,7 @@ Option c is right. You can specify a larger capacity of &lt;code&gt;ArrayList&lt
 &lt;blockquote&gt;
 &lt;p&gt;&lt;code&gt;ejg.delete(3, 6)&lt;/code&gt; means &lt;code&gt;ejg&lt;/code&gt; is now &lt;code&gt;12S5&lt;/code&gt;. &lt;strong&gt;last index is exclusive.&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4&gt;Q6. What is the output of the following code?&lt;/h4&gt;
+&lt;h4 id="q6-what-is-the-output-of-the-following-code"&gt;Q6. What is the output of the following code?&lt;/h4&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;EJavaGuruString2&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
     &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;static&lt;/span&gt; &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="o"&gt;[])&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
         &lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;ejg&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"game"&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -1758,7 +1758,7 @@ Option c is right. You can specify a larger capacity of &lt;code&gt;ArrayList&lt
 &lt;blockquote&gt;
 &lt;p&gt;String is &lt;strong&gt;immmutable&lt;/strong&gt;. Since &lt;code&gt;ejg&lt;/code&gt; has been initialized, no operation can modify its value.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4&gt;Q7. Let’s modify some of the code used in the previous section. Execute this code on your system. Which answer&lt;/h4&gt;
+&lt;h4 id="q7-lets-modify-some-of-the-code-used-in-the-previous-section-execute-this-code-on-your-system-which-answer"&gt;Q7. Let’s modify some of the code used in the previous section. Execute this code on your system. Which answer&lt;/h4&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;letters&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"ABCAB"&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;span class="n"&gt;System&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;out&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;println&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;letters&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;substring&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="o"&gt;).&lt;/span&gt;&lt;span class="na"&gt;startsWith&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="sc"&gt;'A'&lt;/span&gt;&lt;span class="o"&gt;));&lt;/span&gt;
 &lt;/pre&gt;
@@ -1773,7 +1773,7 @@ Option c is right. You can specify a larger capacity of &lt;code&gt;ArrayList&lt
 &lt;blockquote&gt;
 &lt;p&gt;&lt;code&gt;startsWith()&lt;/code&gt; only accept &lt;code&gt;String&lt;/code&gt; as argument&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4&gt;Q8. Modify some of the code used in the previous example as follows:&lt;/h4&gt;
+&lt;h4 id="q8-modify-some-of-the-code-used-in-the-previous-example-as-follows"&gt;Q8. Modify some of the code used in the previous example as follows:&lt;/h4&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;//Line1&lt;/span&gt;
     &lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;multiStrArr&lt;/span&gt;&lt;span class="o"&gt;[][]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="n"&gt;String&lt;/span&gt;&lt;span class="o"&gt;[][]{&lt;/span&gt;
 &lt;span class="c1"&gt;//Line2&lt;/span&gt;
@@ -1796,7 +1796,7 @@ a. Code on line 4 is the same as &lt;code&gt;{"Jan", "Feb", null, null}&lt;/code
 &lt;blockquote&gt;
 &lt;p&gt;The probem if option c is, &lt;code&gt;multiStrArr[1][1]&lt;/code&gt; does not exist, so we cannot say "no value is stored"&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4&gt;Q9. What is the output of the following code?&lt;/h4&gt;
+&lt;h4 id="q9-what-is-the-output-of-the-following-code"&gt;Q9. What is the output of the following code?&lt;/h4&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;ArrayList&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;myArrList&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="n"&gt;ArrayList&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;();&lt;/span&gt;
 &lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;one&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"One"&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;two&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="n"&gt;String&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"Two"&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
@@ -1820,8 +1820,8 @@ a. Code on line 4 is the same as &lt;code&gt;{"Jan", "Feb", null, null}&lt;/code
 &lt;blockquote&gt;
 &lt;p&gt;We cannot change the value of String after it has been initialized.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3&gt;Q&amp;amp;As from Chapter 6, OCA Guide from Manning&lt;/h3&gt;
-&lt;h4&gt;Q1. Let’s modify the code used in the previous example as follows. Which of the options is correct for this modified code?&lt;/h4&gt;
+&lt;h3 id="qas-from-chapter-6-oca-guide-from-manning"&gt;Q&amp;amp;As from Chapter 6, OCA Guide from Manning&lt;/h3&gt;
+&lt;h4 id="q1-lets-modify-the-code-used-in-the-previous-example-as-follows-which-of-the-options-is-correct-for-this-modified-code"&gt;Q1. Let’s modify the code used in the previous example as follows. Which of the options is correct for this modified code?&lt;/h4&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Employee&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
     &lt;span class="kd"&gt;private&lt;/span&gt; &lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
     &lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;address&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -1850,7 +1850,7 @@ a. Code on line 4 is the same as &lt;code&gt;{"Jan", "Feb", null, null}&lt;/code
 &lt;p&gt;d. &lt;code&gt;new Programmer ("Harry").getName();&lt;/code&gt; isn’t the right way to create an object of class &lt;code&gt;Programmer&lt;/code&gt; .&lt;/p&gt;
 &lt;p&gt;e. Compilation error.&lt;/p&gt;
 &lt;p&gt;A1. e. &lt;code&gt;name&lt;/code&gt; is &lt;code&gt;private&lt;/code&gt;.&lt;/p&gt;
-&lt;h4&gt;Q2. Let’s modify the definition of the &lt;code&gt;Employee&lt;/code&gt; and &lt;code&gt;Programmer&lt;/code&gt; classes as follows. What is the output of class &lt;code&gt;TwistInTale3&lt;/code&gt; ?&lt;/h4&gt;
+&lt;h4 id="q2-lets-modify-the-definition-of-the-employee-and-programmer-classes-as-follows-what-is-the-output-of-class-twistintale3"&gt;Q2. Let’s modify the definition of the &lt;code&gt;Employee&lt;/code&gt; and &lt;code&gt;Programmer&lt;/code&gt; classes as follows. What is the output of class &lt;code&gt;TwistInTale3&lt;/code&gt; ?&lt;/h4&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Employee&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
     &lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;name&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"Emp"&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
     &lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;address&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"EmpAddress"&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -1877,7 +1877,7 @@ a. Code on line 4 is the same as &lt;code&gt;{"Jan", "Feb", null, null}&lt;/code
 &lt;p&gt;c. &lt;code&gt;Prog::Emp:EmpAddress&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;d. Compilation error&lt;/p&gt;
 &lt;p&gt;A2. b. If a &lt;code&gt;this&lt;/code&gt; in derviced class cannot find variable, it will go back to its base class for the value.&lt;/p&gt;
-&lt;h4&gt;Q3. Examine the following code and select the correct method declaration to be inserted at &lt;code&gt;//INSERT CODE HERE&lt;/code&gt;:&lt;/h4&gt;
+&lt;h4 id="q3-examine-the-following-code-and-select-the-correct-method-declaration-to-be-inserted-at-insert-code-here"&gt;Q3. Examine the following code and select the correct method declaration to be inserted at &lt;code&gt;//INSERT CODE HERE&lt;/code&gt;:&lt;/h4&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;interface&lt;/span&gt; &lt;span class="nc"&gt;Movable&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
     &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;move&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;
 &lt;span class="o"&gt;}&lt;/span&gt;
@@ -1903,7 +1903,7 @@ a. Code on line 4 is the same as &lt;code&gt;{"Jan", "Feb", null, null}&lt;/code
 &lt;blockquote&gt;
 &lt;p&gt;Note option a is available. Although you cannot create instance for a &lt;code&gt;interface&lt;/code&gt;, it's ok to put it as a &lt;strong&gt;type of method parameter&lt;/strong&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4&gt;Q4. Examine the following code:&lt;/h4&gt;
+&lt;h4 id="q4-examine-the-following-code"&gt;Q4. Examine the following code:&lt;/h4&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Programmer&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
     &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;print&lt;/span&gt;&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
         &lt;span class="n"&gt;System&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;out&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;println&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"Programmer - Mala Gupta"&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
@@ -1940,7 +1940,7 @@ a. Code on line 4 is the same as &lt;code&gt;{"Jan", "Feb", null, null}&lt;/code
 &lt;p&gt;Problem of option e: Will compile but has &lt;code&gt;classCastException&lt;/code&gt; error. &lt;strong&gt;Base class cannot be cast to derived class. Opposite is fine&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Problem of opetion f: same reason as option e.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4&gt;Q5. Given the following code, which of the options, when applied individually, will make it compile successfully?&lt;/h4&gt;
+&lt;h4 id="q5-given-the-following-code-which-of-the-options-when-applied-individually-will-make-it-compile-successfully"&gt;Q5. Given the following code, which of the options, when applied individually, will make it compile successfully?&lt;/h4&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;Line1&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="kd"&gt;interface&lt;/span&gt; &lt;span class="nc"&gt;Employee&lt;/span&gt; &lt;span class="o"&gt;{}&lt;/span&gt;
 &lt;span class="n"&gt;Line2&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="kd"&gt;interface&lt;/span&gt; &lt;span class="nc"&gt;Printable&lt;/span&gt; &lt;span class="kd"&gt;extends&lt;/span&gt; &lt;span class="n"&gt;Employee&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
 &lt;span class="n"&gt;Line3&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;    &lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="nf"&gt;print&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;
@@ -1963,8 +1963,8 @@ a. Code on line 4 is the same as &lt;code&gt;{"Jan", "Feb", null, null}&lt;/code
 &lt;p&gt;Option a, b, d won't cause compile error, but also won't fix compile error.&lt;/p&gt;
 &lt;p&gt;Option c: Since all interface method are implictly &lt;code&gt;public&lt;/code&gt; and &lt;code&gt;abstract&lt;/code&gt;, the problem of the code is &lt;code&gt;print()&lt;/code&gt; has to be &lt;code&gt;public&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3&gt;Q&amp;amp;As from Chapter 5, OCA Guide from Manning&lt;/h3&gt;
-&lt;h4&gt;Q1. Let’s modify the code used in the previous example as follows. What is the output of this code?&lt;/h4&gt;
+&lt;h3 id="qas-from-chapter-5-oca-guide-from-manning"&gt;Q&amp;amp;As from Chapter 5, OCA Guide from Manning&lt;/h3&gt;
+&lt;h4 id="q1-lets-modify-the-code-used-in-the-previous-example-as-follows-what-is-the-output-of-this-code"&gt;Q1. Let’s modify the code used in the previous example as follows. What is the output of this code?&lt;/h4&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;day&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="n"&gt;String&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"SUN"&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
 &lt;span class="k"&gt;switch&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;day&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
     &lt;span class="k"&gt;case&lt;/span&gt; &lt;span class="s"&gt;"MON"&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
@@ -1990,7 +1990,7 @@ a. Code on line 4 is the same as &lt;code&gt;{"Jan", "Feb", null, null}&lt;/code
 &lt;blockquote&gt;
 &lt;p&gt;String is special for &lt;code&gt;switch&lt;/code&gt; case parameter. &lt;code&gt;switch&lt;/code&gt; only compare &lt;strong&gt;value of String&lt;/strong&gt; when it use String as case parameter.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4&gt;Q2. What’s the output of the following code?&lt;/h4&gt;
+&lt;h4 id="q2-whats-the-output-of-the-following-code"&gt;Q2. What’s the output of the following code?&lt;/h4&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Loop2&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
     &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;static&lt;/span&gt; &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt;&lt;span class="o"&gt;[]&lt;/span&gt; &lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
         &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -2016,7 +2016,7 @@ a. Code on line 4 is the same as &lt;code&gt;{"Jan", "Feb", null, null}&lt;/code
 - Print out &lt;code&gt;i=32&lt;/code&gt;
 - &lt;strong&gt;Note&lt;/strong&gt; for i++, alough going out of loop, you still need &lt;code&gt;++&lt;/code&gt; operation.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4&gt;Q3. What’s the output of the following code?&lt;/h4&gt;
+&lt;h4 id="q3-whats-the-output-of-the-following-code"&gt;Q3. What’s the output of the following code?&lt;/h4&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
     &lt;span class="n"&gt;System&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;out&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;println&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"true"&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
@@ -2036,7 +2036,7 @@ a. Code on line 4 is the same as &lt;code&gt;{"Jan", "Feb", null, null}&lt;/code
 &lt;blockquote&gt;
 &lt;p&gt;Just need to know only &lt;code&gt;{}&lt;/code&gt; will not cause compile error.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4&gt;Q4. Given the following code, which of the following lines of code can individually replace the &lt;code&gt;//INSERT CODE HERE&lt;/code&gt; line so that the code compiles successfully?&lt;/h4&gt;
+&lt;h4 id="q4-given-the-following-code-which-of-the-following-lines-of-code-can-individually-replace-the-insert-code-here-line-so-that-the-code-compiles-successfully"&gt;Q4. Given the following code, which of the following lines of code can individually replace the &lt;code&gt;//INSERT CODE HERE&lt;/code&gt; line so that the code compiles successfully?&lt;/h4&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;EJavaGuru&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
     &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;static&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="nf"&gt;getVal&lt;/span&gt;&lt;span class="o"&gt;()&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
         &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -2062,7 +2062,7 @@ a. Code on line 4 is the same as &lt;code&gt;{"Jan", "Feb", null, null}&lt;/code
 &lt;blockquote&gt;
 &lt;p&gt;If you use &lt;code&gt;/&lt;/code&gt; for &lt;code&gt;case&lt;/code&gt; parameter, Java will &lt;strong&gt;disard&lt;/strong&gt; decimal parts, only leave integer.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4&gt;Q5. What’s the output of the following code?&lt;/h4&gt;
+&lt;h4 id="q5-whats-the-output-of-the-following-code"&gt;Q5. What’s the output of the following code?&lt;/h4&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;EJavaGuru&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
     &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;static&lt;/span&gt; &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="o"&gt;[])&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
     &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;num&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;120&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -2085,7 +2085,7 @@ a. Code on line 4 is the same as &lt;code&gt;{"Jan", "Feb", null, null}&lt;/code
 &lt;blockquote&gt;
 &lt;p&gt;Note. last &lt;code&gt;case&lt;/code&gt; equasl to &lt;code&gt;case 0&lt;/code&gt;. &lt;strong&gt;Duplicate case will get compile error.&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4&gt;Q6. What’s the output of the following code?&lt;/h4&gt;
+&lt;h4 id="q6-whats-the-output-of-the-following-code"&gt;Q6. What’s the output of the following code?&lt;/h4&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;EJavaGuru5&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
     &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;static&lt;/span&gt; &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="o"&gt;[])&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
     &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -2115,7 +2115,7 @@ a. Code on line 4 is the same as &lt;code&gt;{"Jan", "Feb", null, null}&lt;/code
 &lt;p&gt;Users are allowed to &lt;strong&gt;use&lt;/strong&gt; only &lt;strong&gt;existing&lt;/strong&gt; &lt;code&gt;enum&lt;/code&gt; objects;&lt;/p&gt;
 &lt;p&gt;They &lt;strong&gt;can’t create&lt;/strong&gt; new enum objects.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4&gt;Create Enum&lt;/h4&gt;
+&lt;h4 id="create-enum"&gt;Create Enum&lt;/h4&gt;
 &lt;p&gt;An &lt;code&gt;enum&lt;/code&gt; enables you to create a &lt;strong&gt;type&lt;/strong&gt;, which has a &lt;strong&gt;fixed&lt;/strong&gt; set of &lt;code&gt;constants&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Code Example:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;//Assume we have: enum Level {BEGINNER,INTERMEDIATE,EXPERT}&lt;/span&gt;
@@ -2135,7 +2135,7 @@ a. Code on line 4 is the same as &lt;code&gt;{"Jan", "Feb", null, null}&lt;/code
 &lt;blockquote&gt;
 &lt;p&gt;You can assign &lt;strong&gt;only one constants&lt;/strong&gt; defined in the enum level to &lt;code&gt;gameLevel&lt;/code&gt;, since it is type &lt;code&gt;Level&lt;/code&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4&gt;Detail about a Enum Class&lt;/h4&gt;
+&lt;h4 id="detail-about-a-enum-class"&gt;Detail about a Enum Class&lt;/h4&gt;
 &lt;p&gt;Following is the implicate class for &lt;code&gt;enum Level {BEGINNER,INTERMEDIATE,EXPERT}&lt;/code&gt;:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;final&lt;/span&gt; &lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Level&lt;/span&gt; &lt;span class="kd"&gt;extends&lt;/span&gt; &lt;span class="n"&gt;Enum&lt;/span&gt; &lt;span class="c1"&gt;//enum is implicitly final&lt;/span&gt;
 &lt;span class="o"&gt;{&lt;/span&gt;
@@ -2173,7 +2173,7 @@ a. Code on line 4 is the same as &lt;code&gt;{"Jan", "Feb", null, null}&lt;/code
 &lt;/pre&gt;
 
 
-&lt;h4&gt;java.lang.Enum&lt;/h4&gt;
+&lt;h4 id="javalangenum"&gt;java.lang.Enum&lt;/h4&gt;
 &lt;p&gt;All enums in Java extend the abstract class &lt;code&gt;java.lang.Enum&lt;/code&gt;, defined in the Java API.&lt;/p&gt;
 &lt;p&gt;Code:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;abstract&lt;/span&gt; &lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Enum&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;E&lt;/span&gt; &lt;span class="kd"&gt;extends&lt;/span&gt; &lt;span class="n"&gt;Enum&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;E&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="kd"&gt;implements&lt;/span&gt; &lt;span class="n"&gt;Comparable&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;E&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;,&lt;/span&gt; &lt;span class="n"&gt;Serializable&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
@@ -2218,7 +2218,7 @@ a. Code on line 4 is the same as &lt;code&gt;{"Jan", "Feb", null, null}&lt;/code
 &lt;p&gt;I found very useful posts: &lt;a href="http://tutorials.jenkov.com/java-collections/hashcode-equals.html"&gt;Java Collections - hasCode() and equals()&lt;/a&gt;, and &lt;a href="http://eclipsesource.com/blogs/2012/09/04/the-3-things-you-should-know-about-hashcode/"&gt;The 3 things you should know about hashCode()&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Also refer to &lt;a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html#hashCode()"&gt;Oracle API&lt;/a&gt; for &lt;code&gt;hashCode()&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Try to avoid change hashCode() unless you are writing hash-related application.&lt;/strong&gt;&lt;/p&gt;
-&lt;h4&gt;Basic Usage&lt;/h4&gt;
+&lt;h4 id="basic-usage"&gt;Basic Usage&lt;/h4&gt;
 &lt;p&gt;When you insert &lt;strong&gt;objects&lt;/strong&gt; to &lt;code&gt;HashTable&lt;/code&gt;, &lt;code&gt;HashMap&lt;/code&gt; or &lt;code&gt;HashSet&lt;/code&gt;, &lt;code&gt;hashCode()&lt;/code&gt; is called, together with &lt;code&gt;equal()&lt;/code&gt;. For example, in &lt;code&gt;hashMap.put("A",a);&lt;/code&gt;, both &lt;code&gt;equal()&lt;/code&gt; and &lt;code&gt;hasCode()&lt;/code&gt; are called.&lt;/p&gt;
 &lt;p&gt;To insert stuff to hash table, you need a hascode to calculate the key for this object. Later you will need hashCode to search the object: hash code &lt;strong&gt;pointing to some area, where you may found the key.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;From Oracle API, &lt;code&gt;hashCode&lt;/code&gt; returns a hash code, which is a &lt;code&gt;int&lt;/code&gt; value for the object.&lt;/p&gt;
@@ -2242,7 +2242,7 @@ a. Code on line 4 is the same as &lt;code&gt;{"Jan", "Feb", null, null}&lt;/code
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Important Notes&lt;/h4&gt;
+&lt;h4 id="important-notes"&gt;Important Notes&lt;/h4&gt;
 &lt;p&gt;If two objects are equal, based on &lt;code&gt;equal()&lt;/code&gt;, they must also have the &lt;strong&gt;same hash code&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;If two objects have the same hash code, they &lt;strong&gt;may not be equal&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Above means two different objects can pointing to the same grid in a hash code grid table.&lt;/p&gt;
@@ -2269,7 +2269,7 @@ a. Code on line 4 is the same as &lt;code&gt;{"Jan", "Feb", null, null}&lt;/code
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Before you use JSTL library, you need to download it and put it to &lt;code&gt;webapps\ROOT\WEB-INF\lib&lt;/code&gt; directoy.&lt;/p&gt;
-&lt;h3&gt;Core Tages&lt;/h3&gt;
+&lt;h3 id="core-tages"&gt;Core Tages&lt;/h3&gt;
 &lt;p&gt;Make sure you include core tag library in your JSP file: &lt;code&gt;&amp;lt;%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %&amp;gt;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Following tags are common core tags with an explaination of their usage:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;&amp;lt;c:out&amp;gt;&lt;/code&gt;: Display the result of an expression. Similar to &lt;code&gt;&amp;lt;%= %&amp;gt;&lt;/code&gt; exception you use a &lt;code&gt;.&lt;/code&gt; notation to access property now.&lt;/p&gt;
@@ -2362,7 +2362,7 @@ ${theCount.index}
 &lt;/pre&gt;
 
 
-&lt;h3&gt;Formatting Tags&lt;/h3&gt;
+&lt;h3 id="formatting-tags"&gt;Formatting Tags&lt;/h3&gt;
 &lt;p&gt;Make sure you include formatting tag library in your JSP file: &lt;code&gt;&amp;lt;%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %&amp;gt;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Following tags are common formatting tags with an explaination of their usage:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;&amp;lt;fmt:formatNumber&amp;gt;&lt;/code&gt;: format numbers, percentages and currencies. It has lots of parameters for configuration. You can view &lt;a href="http://www.tutorialspoint.com/jsp/jstl_format_formatnumber_tag.htm"&gt;here&lt;/a&gt; for detail.&lt;/p&gt;
@@ -2420,7 +2420,7 @@ ${theCount.index}
 &lt;/pre&gt;
 
 
-&lt;h3&gt;SQL Tags&lt;/h3&gt;
+&lt;h3 id="sql-tags"&gt;SQL Tags&lt;/h3&gt;
 &lt;p&gt;Make sure you include sql tag library in your JSP file: &lt;code&gt;&amp;lt;%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql" %&amp;gt;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Following tags are common sql tags with an explaination of their usage:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;&amp;lt;sql:setDateSource&amp;gt;&lt;/code&gt;: Takes several parameters and set data source.&lt;/p&gt;
@@ -2465,7 +2465,7 @@ SELECT * from Employees;
 &lt;/pre&gt;
 
 
-&lt;h3&gt;JSTL Functions&lt;/h3&gt;
+&lt;h3 id="jstl-functions"&gt;JSTL Functions&lt;/h3&gt;
 &lt;p&gt;Make sure you include function tag library in your JSP file: &lt;code&gt;&amp;lt;%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %&amp;gt;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Normally JSTL functions are used within &lt;strong&gt;${}&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Following tags are common function tags with an explaination of their usage:&lt;/p&gt;

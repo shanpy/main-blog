@@ -7,7 +7,7 @@ article: http://ogp.me/ns/article#
 <meta charset="utf-8">
 <meta name="description" content="Reading Notes for Spring 3 Core Components Tutorial Part I (Chapter 1 to Chapter 10)">
 <meta name="viewport" content="width=device-width">
-<title>Reading Notes for Spring 3 Core Components Tutorial Part I (Chapter 1 to Chapter 10) | I'm Pengyin</title>
+<title>Reading Notes for Spring 3 Core Components Tutorial Part I (Chapter 1 to Chapter 10) | I'm Pengyin (Wendy)</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2014/reading-spring-3-1-to-10.html">
@@ -26,7 +26,7 @@ MathJax.Hub.Config({
     }
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
-<meta property="og:site_name" content="I'm Pengyin">
+<meta property="og:site_name" content="I'm Pengyin (Wendy)">
 <meta property="og:title" content="Reading Notes for Spring 3 Core Components Tutorial Part I (Chapter 1 ">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2014/reading-spring-3-1-to-10.html">
 <meta property="og:description" content="Reading Notes for Spring 3 Core Components Tutorial Part I (Chapter 1 to Chapter 10)">
@@ -68,10 +68,10 @@ MathJax.Hub.Config({
             <div>
 <p>This post is transferred from my <a href="http://blogpengyin.herokuapp.com/">old Hexo blog site</a>, created on 2014.</p>
 <p>This is a reading note from Spring Framework 3.1 Tutorial pdf, created by <a href="http://www.tutorialspoint.com/spring"><strong>tutorialspoint</strong></a>. This pdf contains information for Spring 3 Core Basics, which is very useful for understanding defination and practive in Spring programming.</p>
-<h2>Chapter 2: Spring Framework Architecture</h2>
+<h2 id="chapter-2-spring-framework-architecture">Chapter 2: Spring Framework Architecture</h2>
 <p>Spring is a modular framework, which means you can pick the modules that only fits your need. Basic structure of Spring framework is following. There are three <em>main</em> componets: <code>Core Container</code>, <code>Data Access Integration</code> and <code>Web (MVC/Remoting)</code>. Other important componets include <code>AOP</code>, <code>Aspects</code>, <code>Instrumentation</code> and <code>Test</code>:
 images/posts/spring-structure.png </p>
-<h3>Core Container</h3>
+<h3 id="core-container">Core Container</h3>
 <p><code>Core Container</code> contains: <code>Core</code> module, <code>Beans</code> module, <code>Context</code> module and <code>Expression Language</code> module:</p>
 <ul>
 <li>
@@ -87,7 +87,7 @@ images/posts/spring-structure.png </p>
 <p><code>Expression Language</code>: provides language for <em>querying</em> and <em>manipulating</em> an object graph at run time.</p>
 </li>
 </ul>
-<h3>Data Access/Integration</h3>
+<h3 id="data-accessintegration">Data Access/Integration</h3>
 <p><code>Data Access/Integration</code> contains: <code>JDBC</code> module, <code>ORM</code> module, <code>OXM</code>, <code>JMS</code> module and <code>Transaction</code> module:</p>
 <ul>
 <li>
@@ -106,7 +106,7 @@ images/posts/spring-structure.png </p>
 <p><code>Transaction</code>: contains programmatic and declarative <em>transaction management</em> for classes and POJOs.</p>
 </li>
 </ul>
-<h3>Web</h3>
+<h3 id="web">Web</h3>
 <p><code>Web</code> contains: <code>Web</code> module, <code>Web-Servlet</code> module, <code>Web-Struts</code> module and <code>Web-Portlet</code> module:</p>
 <ul>
 <li>
@@ -122,7 +122,7 @@ images/posts/spring-structure.png </p>
 <p><code>Web-Portlet</code>: provide <code>MVC</code> implemention to be used in a <em>portlet</em> environment.</p>
 </li>
 </ul>
-<h3>Other Components</h3>
+<h3 id="other-components">Other Components</h3>
 <ul>
 <li>
 <p><code>AOP</code> module provides <code>aspect-oriented</code> programming implementation, allowing you to define method-interceptor or <em>pointcut</em>s to cleanly <em>decouple</em> code that implements functionality that should be <em>seperated</em>.</p>
@@ -137,7 +137,7 @@ images/posts/spring-structure.png </p>
 <p><code>Test</code>: provides testing support for <code>JUnit</code> or <code>TestNG</code></p>
 </li>
 </ul>
-<h2>Chapter 5: Spring Ioc Containers</h2>
+<h2 id="chapter-5-spring-ioc-containers">Chapter 5: Spring Ioc Containers</h2>
 <p>The main function of Spring IoC Container is to <em>create</em> objects, <em>wire</em> objects together, <em>configure</em> objects and <em>manage</em> objects in their lifecyle.</p>
 <p>Spring IoC containter uses <code>dependency injection/DI</code> to manage objects, which are called spring <code>beans</code>.</p>
 <p>Container gets information from the <code>metadata</code> in <code>xml</code>, <code>Java annotation</code> or <code>Java code</code>.</p>
@@ -185,7 +185,7 @@ images/posts/spring-containers.png </p>
 
 <p><code>ClassPathXmlApplicationContext</code>: example is in <code>BeanFactory Container</code>. You <em>do not</em> need <em>full</em> path of xml file but you need <em>Class Path</em> to let spring find xml configuration file.</p>
 <p><code>WebXmlApplicationContext</code>: loads all beans with in a <code>web</code> application from xml.</p>
-<h2>Chapter 6: Spring Bean Definition</h2>
+<h2 id="chapter-6-spring-bean-definition">Chapter 6: Spring Bean Definition</h2>
 <p><code>Beans</code> are <em>objects</em> that are initialized, assembled, and otherwise managed by Spring IoC <em>Container</em>. They are created with the <code>configuration metadata</code> that supplied by <code>&lt;bean/&gt;</code> defination from <code>xml</code> file.</p>
 <p><code>Configuration MetaData</code> provide following:</p>
 <ul>
@@ -199,7 +199,7 @@ images/posts/spring-containers.png </p>
 <p>Bean's <em>dependencies</em></p>
 </li>
 </ul>
-<h3>Bean Properties</h3>
+<h3 id="bean-properties">Bean Properties</h3>
 <p><code>class</code>: mandatory. Give the java class that is used to create beans.</p>
 <p><code>name</code>: specifies the bean <code>identifier</code> uniquely. In an <code>xml</code>, you need <code>id</code> and/or <code>name</code> to specify the bean identifiers.</p>
 <p><code>scope</code>: specifies bean <em>scope</em>. See notes in chapter 7.</p>
@@ -223,7 +223,7 @@ images/posts/spring-containers.png </p>
 </ul>
 <p>Example of Bean Properties from book:
 images/posts/spring-configuration-metadata.png </p>
-<h2>Chapter 7: Spring Bean Scopes</h2>
+<h2 id="chapter-7-spring-bean-scopes">Chapter 7: Spring Bean Scopes</h2>
 <p>You can declaring <em>scope</em> of beans when you creates <code>&lt;bean/&gt;</code> in xml file. There are five scopes that Spring support:</p>
 <p><code>singleton</code>: <em>Default</em>. Spring IoC container cretes <em>exactly one</em> instance of the object defined by that bean defination. This object is stored in a <em>cache</em> of such singletion beans. A request will return the cached object. Example:</p>
 <p>XML:</p>
@@ -264,7 +264,7 @@ images/posts/spring-configuration-metadata.png </p>
 </pre>
 
 
-<h2>Chapter 8: Spring Bean Life Cycle</h2>
+<h2 id="chapter-8-spring-bean-life-cycle">Chapter 8: Spring Bean Life Cycle</h2>
 <p>In java, <code>initialization</code> work can be done inside <code>afterPropertiesSet()</code> method.</p>
 <p>In xml, you can use <code>init-method</code> attribute to call a self-defined method when a bean instance is created. Then add this method in your bean java class.</p>
 <p>Similarly, <code>destruction</code> can be done insdie <code>destory()</code> method.
@@ -314,7 +314,7 @@ In xml, you can use <code>destroy-method</code> attribute to call a self-defined
 
 
 <p>You can also put <code>default-init-method</code> and <code>defalut-destory-method</code> attributes in the main bean in <code>xml</code> file, such as <code>&lt;bean xmlns="..." xmlns:xsi="..."&gt;&lt;/bean&gt;</code>, to let all beans use same initialization method or destruction method.</p>
-<h2>Chapter 9: Spring Bean Post Processors</h2>
+<h2 id="chapter-9-spring-bean-post-processors">Chapter 9: Spring Bean Post Processors</h2>
 <p><code>BeanPostProcessor</code> <em>interface</em> defines <strong>callback</strong> methods that you can implement to provide your own instantiation logic, dependency-resolution logic, etc.</p>
 <p>You can configure multiple BeanPostProcess interfaces. You can control the <em>order</em> of them.</p>
 <p>Spring IoC container <em>instantiates</em> a bean instance and then BeanPostProcessor works.</p>
@@ -366,7 +366,7 @@ In xml, you can use <code>destroy-method</code> attribute to call a self-defined
 </pre>
 
 
-<h2>Chapter 10: Spring Bean Definition Inheritance**</h2>
+<h2 id="chapter-10-spring-bean-definition-inheritance">Chapter 10: Spring Bean Definition Inheritance**</h2>
 <p>A <code>parent bean</code> can be inherited by a <code>child bean</code>. Child bean can <em>override</em> parent bean's attributes.</p>
 <p><code>parent</code> attribute should be used in <code>xml</code> file to define a parent bean in child bean.</p>
 <p>Example:</p>
@@ -449,7 +449,7 @@ In xml, you can use <code>destroy-method</code> attribute to call a self-defined
 
 
     </div>
-                     <footer id="footer"><p>Contents © 2018         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                     <footer id="footer"><p>Contents © 2018         <a href="mailto:pengyin.shan@outlook.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

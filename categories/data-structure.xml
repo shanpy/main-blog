@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>I'm Pengyin (Posts about Data Structure)</title><link>http://pengyin-shan.com/</link><description></description><atom:link href="http://pengyin-shan.com/categories/data-structure.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 06 Jul 2018 17:48:42 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Algorithm and Data Structure Basics - Sorting</title><link>http://pengyin-shan.com/posts/2015/Algorithm%20Data%20Structure/algorithm-and-data-structure-basics-sorting.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h4&gt;Reference List&lt;/h4&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>I'm Pengyin (Posts about Data Structure)</title><link>http://pengyin-shan.com/</link><description></description><atom:link type="application/rss+xml" rel="self" href="http://pengyin-shan.com/categories/data-structure.xml"></atom:link><language>en</language><lastBuildDate>Tue, 10 Jul 2018 14:56:08 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Algorithm and Data Structure Basics - Sorting</title><link>http://pengyin-shan.com/posts/2015/Algorithm%20Data%20Structure/algorithm-and-data-structure-basics-sorting.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h4 id="reference-list"&gt;Reference List&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Introduction to Algorithms (Third Edition/Chinese Version)&lt;/strong&gt;, written by &lt;em&gt;Thomas H.Cormen&lt;/em&gt;, &lt;em&gt;Charles E.Leiserson&lt;/em&gt;, &lt;em&gt;Ronald L.Rivest&lt;/em&gt; and &lt;em&gt;Clifford Stein&lt;/em&gt;, and translated by &lt;em&gt;Jianping Yin&lt;/em&gt;, &lt;em&gt;Yun Xu&lt;/em&gt;, &lt;em&gt;Gang Wang&lt;/em&gt;, &lt;em&gt;Xiaoguang Liu&lt;/em&gt;, &lt;em&gt;Ming Su&lt;/em&gt;, &lt;em&gt;Hengming Zou&lt;/em&gt; and &lt;em&gt;HongZhi Wang&lt;/em&gt;.&lt;/p&gt;
@@ -8,11 +8,11 @@
 &lt;p&gt;&lt;strong&gt;Data Structures and Algorithms in Java (Second Edition/Chinese Version)&lt;/strong&gt;, written by &lt;em&gt;Robert Lafore&lt;/em&gt;, and translated by &lt;em&gt;Xiaoyun Ji&lt;/em&gt;, &lt;em&gt;Yan Zhao&lt;/em&gt;, &lt;em&gt;Xi Zeng&lt;/em&gt; and &lt;em&gt;Xiaohan Di&lt;/em&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4&gt;Terminology &amp;amp; Runtime Analysis&lt;/h4&gt;
+&lt;h4 id="terminology-runtime-analysis"&gt;Terminology &amp;amp; Runtime Analysis&lt;/h4&gt;
 &lt;p&gt;&lt;em&gt;This part serves as a reading note for Introduction to Algorithms (Third Edition), Chapter 1 and Chapter 2, to clarify some basic terms of Algorithms&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;Algorithm&lt;/code&gt; is the process of reading a value or a collection of value as &lt;strong&gt;input&lt;/strong&gt;, and product a value or a collection of value as &lt;strong&gt;output&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;A sequence of input (with constrains) from a algorithm question is called a &lt;code&gt;instance&lt;/code&gt; of that question.&lt;/p&gt;
-&lt;h5&gt;Runtime Analysis&lt;/h5&gt;
+&lt;h5 id="runtime-analysis"&gt;Runtime Analysis&lt;/h5&gt;
 &lt;p&gt;From the book &lt;em&gt;Introduction to Algorithms&lt;/em&gt;, the reason we are focusing on &lt;strong&gt;worst case running time&lt;/strong&gt; is:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -25,7 +25,7 @@
 &lt;p&gt;There is lots of times that the &lt;em&gt;average running time&lt;/em&gt; is the same as the &lt;em&gt;worst running time&lt;/em&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h4&gt;Basic Insertion Sort, with Analysis for Algorithm Questions&lt;/h4&gt;
+&lt;h4 id="basic-insertion-sort-with-analysis-for-algorithm-questions"&gt;Basic Insertion Sort, with Analysis for Algorithm Questions&lt;/h4&gt;
 &lt;p&gt;Insertion sort is very useful for a &lt;strong&gt;small&lt;/strong&gt; amount of input.&lt;/p&gt;
 &lt;p&gt;In book &lt;em&gt;Introduction to Algorithms&lt;/em&gt;, insertion sort is described as the same process of someone sorting a group of pokers in a poker game. All elements on one side of your current item (i.e. the item that is supposed to be sorted) is in order.&lt;/p&gt;
 &lt;p&gt;Pseudo-code for Insertion Sort:&lt;/p&gt;
@@ -45,7 +45,7 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Basic Selection Sort&lt;/h4&gt;
+&lt;h4 id="basic-selection-sort"&gt;Basic Selection Sort&lt;/h4&gt;
 &lt;p&gt;To perform selection sort, you are given a array of numbers: &lt;code&gt;A&lt;/code&gt;.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -74,7 +74,7 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Basic Merge Sort&lt;/h4&gt;
+&lt;h4 id="basic-merge-sort"&gt;Basic Merge Sort&lt;/h4&gt;
 &lt;p&gt;Merge sort uses &lt;code&gt;divide-and-concur&lt;/code&gt; mode:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -103,15 +103,15 @@
 &lt;p&gt;In &lt;em&gt;Introduction to Algorithms&lt;/em&gt;, a &lt;strong&gt;poker example&lt;/strong&gt; is used to describe the merge process. The merge process is to chose a smaller one from the top of two piled poker, and put that poker to a new pile. Repeat this process until one pile is empty.&lt;/p&gt;
 &lt;p&gt;Since we most perform &lt;code&gt;n&lt;/code&gt; steps to merge, the running time of merge is $theta (n)$.&lt;/p&gt;
 &lt;p&gt;For Merge Sort in Java, please refer to &lt;a href="http://pengyin-shan.com/posts/2015/Algorithm%20Data%20Structure/blog/algorithm-and-data-structure-basics-recursion"&gt;this post&lt;/a&gt;.&lt;/p&gt;
-&lt;h4&gt;Tips and Comments&lt;/h4&gt;
+&lt;h4 id="tips-and-comments"&gt;Tips and Comments&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;From &lt;em&gt;Introduction to Algorithms&lt;/em&gt;, if you have a binary number, moving all digits one position to left means multiplying it by two. if you move all digits &lt;em&gt;k&lt;/em&gt; position to left, you multiply origin number by $2^k$.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Other parts are working in process :)&lt;/p&gt;&lt;/div&gt;</description><category>Algorithm</category><category>Data Structure</category><category>Java</category><category>Sorting</category><guid>http://pengyin-shan.com/posts/2015/Algorithm%20Data%20Structure/algorithm-and-data-structure-basics-sorting.html</guid><pubDate>Fri, 11 Sep 2015 07:00:00 GMT</pubDate></item><item><title>Algorithm and Data Structure Basics - Heap</title><link>http://pengyin-shan.com/posts/2015/Algorithm%20Data%20Structure/algorithm-and-data-structure-basics-heap.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h4&gt;Reference List&lt;/h4&gt;
+&lt;p&gt;Other parts are working in process :)&lt;/p&gt;&lt;/div&gt;</description><category>Algorithm</category><category>Data Structure</category><category>Java</category><category>Sorting</category><guid>http://pengyin-shan.com/posts/2015/Algorithm%20Data%20Structure/algorithm-and-data-structure-basics-sorting.html</guid><pubDate>Fri, 11 Sep 2015 07:00:00 GMT</pubDate></item><item><title>Algorithm and Data Structure Basics - Heap</title><link>http://pengyin-shan.com/posts/2015/Algorithm%20Data%20Structure/algorithm-and-data-structure-basics-heap.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h4 id="reference-list"&gt;Reference List&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;em&gt;Data Structures and Algorithms in Java (Second Edition)&lt;/em&gt;, written by &lt;em&gt;Robert Lafore&lt;/em&gt;, Chinese Version&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4&gt;Basic Information&lt;/h4&gt;
+&lt;h4 id="basic-information"&gt;Basic Information&lt;/h4&gt;
 &lt;p&gt;Heap is a type of tree. If you create a &lt;strong&gt;priority queue&lt;/strong&gt; from heap. The time complexity for insertion and deletion is &lt;code&gt;O(logN)&lt;/code&gt;. However, heap doesn't support traversal and search by value, because all path in heap is following descending/ascending order.&lt;/p&gt;
 &lt;p&gt;Heap has following features:&lt;/p&gt;
 &lt;ul&gt;
@@ -134,7 +134,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;All nodes which have index larger than &lt;code&gt;n/2&lt;/code&gt; are leaf nodes, assuming there are n elements in array.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4&gt;Remove&lt;/h4&gt;
+&lt;h4 id="remove"&gt;Remove&lt;/h4&gt;
 &lt;p&gt;In heap, remove means removing the root of the heap. This root is always the largest/smallest value of all elements. For the heap array, root always has index &lt;code&gt;0&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;You need two steps to find removing process:&lt;/p&gt;
 &lt;ol&gt;
@@ -157,7 +157,7 @@
 &lt;p&gt;Move this new root to bottom, until it's smaller than its parent node and larger than its child nodes. To do this, check if root is smaller than it's &lt;strong&gt;larger child&lt;/strong&gt;. If so, swap root and its larger child. Repeat this.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h5&gt;Code&lt;/h5&gt;
+&lt;h5 id="code"&gt;Code&lt;/h5&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;//We assume each node has a attribute 'key', which determine the value/priority of this node&lt;/span&gt;
 &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="n"&gt;Node&lt;/span&gt; &lt;span class="nf"&gt;remove&lt;/span&gt;&lt;span class="o"&gt;(){&lt;/span&gt;
     &lt;span class="n"&gt;Node&lt;/span&gt; &lt;span class="n"&gt;root&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;heapArray&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;];&lt;/span&gt;
@@ -198,7 +198,7 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Insert&lt;/h4&gt;
+&lt;h4 id="insert"&gt;Insert&lt;/h4&gt;
 &lt;p&gt;Insertion can by down by following step:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -208,7 +208,7 @@
 &lt;p&gt;Recursively moving this node so that it will be larger than its child elements and smaller than its parent node. i.e. if node is smaller larger than its parent node, swap this node and its parent node.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h5&gt;Code&lt;/h5&gt;
+&lt;h5 id="code_1"&gt;Code&lt;/h5&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;//We assume each node has a attribute 'key', which determine the value/priority of this node&lt;/span&gt;
 &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kt"&gt;boolean&lt;/span&gt; &lt;span class="nf"&gt;insert&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;key&lt;/span&gt;&lt;span class="o"&gt;){&lt;/span&gt;
     &lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;currentSize&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="n"&gt;maxSize&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
@@ -235,8 +235,8 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Change Value&lt;/h4&gt;
-&lt;p&gt;Working in process...&lt;/p&gt;&lt;/div&gt;</description><category>Algorithm</category><category>Data Structure</category><category>Heap</category><category>Java</category><guid>http://pengyin-shan.com/posts/2015/Algorithm%20Data%20Structure/algorithm-and-data-structure-basics-heap.html</guid><pubDate>Thu, 03 Sep 2015 07:00:00 GMT</pubDate></item><item><title>Algorithm and Data Structure Basics - Linked List</title><link>http://pengyin-shan.com/posts/2015/Algorithm%20Data%20Structure/algorithm-and-data-structure-basics-linkedlist.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h4&gt;Reference List&lt;/h4&gt;
+&lt;h4 id="change-value"&gt;Change Value&lt;/h4&gt;
+&lt;p&gt;Working in process...&lt;/p&gt;&lt;/div&gt;</description><category>Algorithm</category><category>Data Structure</category><category>Heap</category><category>Java</category><guid>http://pengyin-shan.com/posts/2015/Algorithm%20Data%20Structure/algorithm-and-data-structure-basics-heap.html</guid><pubDate>Thu, 03 Sep 2015 07:00:00 GMT</pubDate></item><item><title>Algorithm and Data Structure Basics - Linked List</title><link>http://pengyin-shan.com/posts/2015/Algorithm%20Data%20Structure/algorithm-and-data-structure-basics-linkedlist.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h4 id="reference-list"&gt;Reference List&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href="http://www.linuxidc.com/Linux/2014-04/99926.htm"&gt;Merge Sort for Single Linked List Java (Chinese)&lt;/a&gt;&lt;/p&gt;
@@ -245,15 +245,15 @@
 &lt;p&gt;&lt;em&gt;Data Structures and Algorithms in Java (Second Edition)&lt;/em&gt;, written by &lt;em&gt;Robert Lafore&lt;/em&gt;, Chinese Version&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4&gt;Efficiency of Linked List&lt;/h4&gt;
+&lt;h4 id="efficiency-of-linked-list"&gt;Efficiency of Linked List&lt;/h4&gt;
 &lt;p&gt;Insertion and Deletion &lt;strong&gt;at the head of linked list&lt;/strong&gt; is really quick. It need &lt;code&gt;O(1)&lt;/code&gt; time complexity.&lt;/p&gt;
-&lt;h5&gt;Compare with Array&lt;/h5&gt;
+&lt;h5 id="compare-with-array"&gt;Compare with Array&lt;/h5&gt;
 &lt;p&gt;Both array and linked list need &lt;code&gt;O(N)&lt;/code&gt; time complexity for searching and insertion/deletion to certain node. However, linked list may still be a better option, because it &lt;strong&gt;does not need to move&lt;/strong&gt; anything when it does these operations. Linked list can save lots of time expecially if there exists a large amount of elements.&lt;/p&gt;
 &lt;p&gt;Linked list is also better at saving space. Linked list also gives flexibility of expanding size.&lt;/p&gt;
 &lt;p&gt;So if we don't know exact size of data, linked list can be a better option comparing to array.&lt;/p&gt;
-&lt;h4&gt;ADT&lt;/h4&gt;
+&lt;h4 id="adt"&gt;ADT&lt;/h4&gt;
 &lt;p&gt;You can create &lt;code&gt;stack&lt;/code&gt; using linked list. When you create &lt;code&gt;push&lt;/code&gt; and &lt;code&gt;pop&lt;/code&gt; method, just insert/remove first element from head of linked list.&lt;/p&gt;
-&lt;h4&gt;Insertion Sort for Sorted Linked List&lt;/h4&gt;
+&lt;h4 id="insertion-sort-for-sorted-linked-list"&gt;Insertion Sort for Sorted Linked List&lt;/h4&gt;
 &lt;p&gt;If you have a un-sorted array, you can take all elements out, and insert them to a sorted linked list. Then after you deleting all elements and re-put them to array, this array will become a sorted one.&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cm"&gt;/*&lt;/span&gt;
 &lt;span class="cm"&gt;  Insert Node at the end of a linked list&lt;/span&gt;
@@ -300,9 +300,9 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Iterator&lt;/h4&gt;
+&lt;h4 id="iterator"&gt;Iterator&lt;/h4&gt;
 &lt;p&gt;Iterator is used as a reference so that it can point to any node in linked list, in order to find and change certain node.&lt;/p&gt;
-&lt;h5&gt;Class of Iterator&lt;/h5&gt;
+&lt;h5 id="class-of-iterator"&gt;Class of Iterator&lt;/h5&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nf"&gt;ListIterator&lt;/span&gt;&lt;span class="o"&gt;(){&lt;/span&gt;
   &lt;span class="kd"&gt;private&lt;/span&gt; &lt;span class="n"&gt;Node&lt;/span&gt; &lt;span class="n"&gt;current&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt; &lt;span class="c1"&gt;//current node in linked list that iterator is pointing to&lt;/span&gt;
   &lt;span class="c1"&gt;//private Node previous;  for doubly linked list&lt;/span&gt;
@@ -311,7 +311,7 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;Main Class&lt;/h5&gt;
+&lt;h5 id="main-class"&gt;Main Class&lt;/h5&gt;
 &lt;p&gt;You may have different iterators for one linked list. Each iterator points to a certain node.&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;static&lt;/span&gt; &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="o"&gt;(...){&lt;/span&gt;
   &lt;span class="n"&gt;LinkedList&lt;/span&gt; &lt;span class="n"&gt;l&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="n"&gt;LinkedList&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;
@@ -322,7 +322,7 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;Possible Methods&lt;/h5&gt;
+&lt;h5 id="possible-methods"&gt;Possible Methods&lt;/h5&gt;
 &lt;p&gt;You can add following possible methods to your iterator:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -341,14 +341,14 @@
 &lt;p&gt;insertAfter()/insertBefore()/deletCurretn(): operation for insertion/deletion&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4&gt;Merge Two Sorted Linked Lists/Merge Sort Single Linked List&lt;/h4&gt;
+&lt;h4 id="merge-two-sorted-linked-listsmerge-sort-single-linked-list"&gt;Merge Two Sorted Linked Lists/Merge Sort Single Linked List&lt;/h4&gt;
 &lt;p&gt;You can check &lt;strong&gt;Merge Two Sorted Linked Lists&lt;/strong&gt; on &lt;a href="https://www.hackerrank.com/challenges/merge-two-sorted-linked-lists/submissions/code/13529242"&gt;hackerrank.com&lt;/a&gt;.&lt;/p&gt;
-&lt;h5&gt;Idea&lt;/h5&gt;
+&lt;h5 id="idea"&gt;Idea&lt;/h5&gt;
 &lt;p&gt;To merge two sorted linked lists, you just need to create a new node and always get the smaller node from two source linked lists. Every time a node is passed, move &lt;code&gt;header&lt;/code&gt; to next node.&lt;/p&gt;
 &lt;p&gt;To merge sort a single linked list, you need to have two pointer: &lt;code&gt;p&lt;/code&gt; and &lt;code&gt;f&lt;/code&gt;. Every time if &lt;code&gt;p&lt;/code&gt; points to next node, &lt;code&gt;f&lt;/code&gt; should point to the node after the next one. In this case, when &lt;code&gt;f&lt;/code&gt; finish walking through &lt;strong&gt;a certain part of linked list&lt;/strong&gt;, &lt;code&gt;p&lt;/code&gt; is &lt;strong&gt;on the half&lt;/strong&gt; of that linked list.&lt;/p&gt;
 &lt;p&gt;Recursively call the method above for first part(start from origin head) of linked list and second part(start from &lt;code&gt;p&lt;/code&gt;) for division process. Then merge result using same method as merging two sorted linked lists&lt;/p&gt;
-&lt;h5&gt;Code&lt;/h5&gt;
-&lt;h6&gt;Code for merging two sorted linked list, on hackerrank.com:&lt;/h6&gt;
+&lt;h5 id="code"&gt;Code&lt;/h5&gt;
+&lt;h6 id="code-for-merging-two-sorted-linked-list-on-hackerrankcom"&gt;Code for merging two sorted linked list, on hackerrank.com:&lt;/h6&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cm"&gt;/*&lt;/span&gt;
 &lt;span class="cm"&gt;  Insert Node at the end of a linked list&lt;/span&gt;
 &lt;span class="cm"&gt;  head pointer input could be NULL as well for empty list&lt;/span&gt;
@@ -386,7 +386,7 @@
 &lt;/pre&gt;
 
 
-&lt;h6&gt;Code for merging single linked list, divide part:&lt;/h6&gt;
+&lt;h6 id="code-for-merging-single-linked-list-divide-part"&gt;Code for merging single linked list, divide part:&lt;/h6&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cm"&gt;/*&lt;/span&gt;
 &lt;span class="cm"&gt;  Insert Node at the end of a linked list&lt;/span&gt;
 &lt;span class="cm"&gt;  head pointer input could be NULL as well for empty list&lt;/span&gt;
@@ -424,10 +424,10 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Flatten a Doubly Linked List&lt;/h4&gt;
+&lt;h4 id="flatten-a-doubly-linked-list"&gt;Flatten a Doubly Linked List&lt;/h4&gt;
 &lt;p&gt;This is a question from the book &lt;em&gt;Programming Interview Exposed&lt;/em&gt;. Following graph is a example of a doubly linked list, from &lt;a href="http://www.geeksforgeeks.org/flatten-a-linked-list-with-next-and-child-pointers/"&gt;this post&lt;/a&gt;:&lt;/p&gt;
 &lt;p&gt;../images/articles/2015/algorithm/double_linkedlist.png &lt;/p&gt;
-&lt;h5&gt;Idea&lt;/h5&gt;
+&lt;h5 id="idea_1"&gt;Idea&lt;/h5&gt;
 &lt;p&gt;Generally, each child linked list can be flattened as a single linked list, which can be appended to the end of result linked list. Each time you encounter a node with a child, append the child (and thus the child list) to the &lt;strong&gt;end of the first level&lt;/strong&gt; and update the &lt;strong&gt;tail pointer&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;This is a description of algorithm:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;Start at the beginning of the first level
@@ -439,7 +439,7 @@ While you are not at the end of the first level
 &lt;/pre&gt;
 
 
-&lt;h5&gt;Code&lt;/h5&gt;
+&lt;h5 id="code_1"&gt;Code&lt;/h5&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cm"&gt;/*&lt;/span&gt;
 &lt;span class="cm"&gt;  Insert Node at the end of a linked list&lt;/span&gt;
 &lt;span class="cm"&gt;  head pointer input could be NULL as well for empty list&lt;/span&gt;
@@ -484,8 +484,8 @@ While you are not at the end of the first level
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Unflatten Previous Linked List&lt;/h4&gt;
-&lt;h5&gt;Idea&lt;/h5&gt;
+&lt;h4 id="unflatten-previous-linked-list"&gt;Unflatten Previous Linked List&lt;/h4&gt;
+&lt;h5 id="idea_2"&gt;Idea&lt;/h5&gt;
 &lt;p&gt;To unflatten previous linked list, you can do following:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;Explore Path:
     While not at the end
@@ -496,7 +496,7 @@ While you are not at the end of the first level
 &lt;/pre&gt;
 
 
-&lt;h5&gt;Code&lt;/h5&gt;
+&lt;h5 id="code_2"&gt;Code&lt;/h5&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cm"&gt;/*&lt;/span&gt;
 &lt;span class="cm"&gt;  Insert Node at the end of a linked list&lt;/span&gt;
 &lt;span class="cm"&gt;  head pointer input could be NULL as well for empty list&lt;/span&gt;
@@ -539,7 +539,7 @@ While you are not at the end of the first level
         &lt;span class="n"&gt;currentNode&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;currentNode&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;next&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
     &lt;span class="o"&gt;}&lt;/span&gt;
 &lt;span class="o"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</description><category>Algorithm</category><category>Data Structure</category><category>Java</category><category>Linked List</category><guid>http://pengyin-shan.com/posts/2015/Algorithm%20Data%20Structure/algorithm-and-data-structure-basics-linkedlist.html</guid><pubDate>Wed, 02 Sep 2015 07:00:00 GMT</pubDate></item><item><title>Algorithm and Data Structure Basics - Recursion</title><link>http://pengyin-shan.com/posts/2015/Algorithm%20Data%20Structure/algorithm-and-data-structure-basics-recursion.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h4&gt;Reference List&lt;/h4&gt;
+&lt;/pre&gt;&lt;/div&gt;</description><category>Algorithm</category><category>Data Structure</category><category>Java</category><category>Linked List</category><guid>http://pengyin-shan.com/posts/2015/Algorithm%20Data%20Structure/algorithm-and-data-structure-basics-linkedlist.html</guid><pubDate>Wed, 02 Sep 2015 07:00:00 GMT</pubDate></item><item><title>Algorithm and Data Structure Basics - Recursion</title><link>http://pengyin-shan.com/posts/2015/Algorithm%20Data%20Structure/algorithm-and-data-structure-basics-recursion.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h4 id="reference-list"&gt;Reference List&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href="http://www.nowamagic.net/librarys/veda/detail/2314"&gt;Understand Recursion (Chinese)&lt;/a&gt;&lt;/p&gt;
@@ -548,7 +548,7 @@ While you are not at the end of the first level
 &lt;p&gt;&lt;a href="http://blog.csdn.net/wangjinyu501/article/details/8248492"&gt;Recursion (Chinese)&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4&gt;Common Model of Recursion&lt;/h4&gt;
+&lt;h4 id="common-model-of-recursion"&gt;Common Model of Recursion&lt;/h4&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;Obj&lt;/span&gt; &lt;span class="nf"&gt;recursion&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Obj&lt;/span&gt; &lt;span class="n"&gt;o&lt;/span&gt;&lt;span class="o"&gt;){&lt;/span&gt;
     &lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;baseCondition&lt;/span&gt;&lt;span class="o"&gt;){&lt;/span&gt;
         &lt;span class="cm"&gt;/*&lt;/span&gt;
@@ -564,10 +564,10 @@ While you are not at the end of the first level
 
 
 &lt;p&gt;&lt;em&gt;If there are other expression before or after recursion call, make sure you run it after each call back, because these expressions are part of method, and you want to call the full method for each recursion. Check "Hanoi" example below for detail.&lt;/em&gt;&lt;/p&gt;
-&lt;h4&gt;Problem in Recursion&lt;/h4&gt;
+&lt;h4 id="problem-in-recursion"&gt;Problem in Recursion&lt;/h4&gt;
 &lt;p&gt;Since system using &lt;strong&gt;stack&lt;/strong&gt; to save return values from each callback, it's really easy to get memory overflow problem.&lt;/p&gt;
-&lt;h4&gt;Hanoi&lt;/h4&gt;
-&lt;h5&gt;Rule&lt;/h5&gt;
+&lt;h4 id="hanoi"&gt;Hanoi&lt;/h4&gt;
+&lt;h5 id="rule"&gt;Rule&lt;/h5&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Move plate when number of plate is &lt;code&gt;1&lt;/code&gt; (In code below, we want to printout basic value);&lt;/p&gt;
@@ -576,7 +576,7 @@ While you are not at the end of the first level
 &lt;p&gt;If number of plates on a tower is more than &lt;code&gt;1&lt;/code&gt; (assume &lt;code&gt;n&lt;/code&gt;), move first &lt;code&gt;n-1&lt;/code&gt; plate, then move the bottom plate.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h5&gt;Code&lt;/h5&gt;
+&lt;h5 id="code"&gt;Code&lt;/h5&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cm"&gt;/**&lt;/span&gt;
 &lt;span class="cm"&gt;Result:&lt;/span&gt;
 &lt;span class="cm"&gt;    Dist 1 from A  to C&lt;/span&gt;
@@ -613,8 +613,8 @@ While you are not at the end of the first level
 
 &lt;p&gt;To make code looks clear, I draw a draft of the sequence of recursion call for the code above. Note the purpose numbers are the sequence of call:&lt;/p&gt;
 &lt;p&gt;../images/articles/2015/algorithm/hanoi_graph.png &lt;/p&gt;
-&lt;h4&gt;Merge Sort&lt;/h4&gt;
-&lt;h5&gt;Code&lt;/h5&gt;
+&lt;h4 id="merge-sort"&gt;Merge Sort&lt;/h4&gt;
+&lt;h5 id="code_1"&gt;Code&lt;/h5&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cm"&gt;/*&lt;/span&gt;
 &lt;span class="cm"&gt;Output:&lt;/span&gt;
 &lt;span class="cm"&gt;72 90 45 126 54&lt;/span&gt;
@@ -702,7 +702,7 @@ While you are not at the end of the first level
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Binary Search&lt;/h4&gt;
+&lt;h4 id="binary-search"&gt;Binary Search&lt;/h4&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cm"&gt;/**&lt;/span&gt;
 &lt;span class="cm"&gt;Output:&lt;/span&gt;
 &lt;span class="cm"&gt;    45 54 72 90 126&lt;/span&gt;
@@ -786,8 +786,8 @@ While you are not at the end of the first level
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Word Recursion (Anagram)&lt;/h4&gt;
-&lt;h5&gt;Idea&lt;/h5&gt;
+&lt;h4 id="word-recursion-anagram"&gt;Word Recursion (Anagram)&lt;/h4&gt;
+&lt;h5 id="idea"&gt;Idea&lt;/h5&gt;
 &lt;p&gt;Assume a word has &lt;code&gt;n&lt;/code&gt; letters:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -800,7 +800,7 @@ While you are not at the end of the first level
 &lt;p&gt;Do two steps above &lt;code&gt;n&lt;/code&gt; times&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h5&gt;Code&lt;/h5&gt;
+&lt;h5 id="code_2"&gt;Code&lt;/h5&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cm"&gt;/**&lt;/span&gt;
 &lt;span class="cm"&gt;If you input 'test', you will get:&lt;/span&gt;
 &lt;span class="cm"&gt;  1 test&lt;/span&gt;
@@ -888,8 +888,8 @@ While you are not at the end of the first level
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Height of B-Tree&lt;/h4&gt;
-&lt;h5&gt;Code&lt;/h5&gt;
+&lt;h4 id="height-of-b-tree"&gt;Height of B-Tree&lt;/h4&gt;
+&lt;h5 id="code_3"&gt;Code&lt;/h5&gt;
 &lt;p&gt;This is my code from hankerrank.com:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;    &lt;span class="cm"&gt;/*&lt;/span&gt;
 &lt;span class="cm"&gt;    class Node&lt;/span&gt;
@@ -911,7 +911,7 @@ While you are not at the end of the first level
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Decide if B-Tree is Balanced&lt;/h4&gt;
+&lt;h4 id="decide-if-b-tree-is-balanced"&gt;Decide if B-Tree is Balanced&lt;/h4&gt;
 &lt;p&gt;Following method is taken from &lt;a href="http://www.nowamagic.net/librarys/veda/detail/2314"&gt;this post&lt;/a&gt;:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cm"&gt;/*&lt;/span&gt;
 &lt;span class="cm"&gt;class Node&lt;/span&gt;
@@ -939,7 +939,7 @@ While you are not at the end of the first level
         &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
     &lt;span class="o"&gt;}&lt;/span&gt;
 &lt;span class="o"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</description><category>Algorithm</category><category>Data Structure</category><category>Java</category><category>Recursion</category><guid>http://pengyin-shan.com/posts/2015/Algorithm%20Data%20Structure/algorithm-and-data-structure-basics-recursion.html</guid><pubDate>Wed, 02 Sep 2015 07:00:00 GMT</pubDate></item><item><title>Algorithm and Data Structure Basics - Dynamic Programming</title><link>http://pengyin-shan.com/posts/2015/Algorithm%20Data%20Structure/algorithm-and-data-structure-basics-dynamic-programming.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h4&gt;Reference List&lt;/h4&gt;
+&lt;/pre&gt;&lt;/div&gt;</description><category>Algorithm</category><category>Data Structure</category><category>Java</category><category>Recursion</category><guid>http://pengyin-shan.com/posts/2015/Algorithm%20Data%20Structure/algorithm-and-data-structure-basics-recursion.html</guid><pubDate>Wed, 02 Sep 2015 07:00:00 GMT</pubDate></item><item><title>Algorithm and Data Structure Basics - Dynamic Programming</title><link>http://pengyin-shan.com/posts/2015/Algorithm%20Data%20Structure/algorithm-and-data-structure-basics-dynamic-programming.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h4 id="reference-list"&gt;Reference List&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href="http://www.th7.cn/Program/java/2011-07-07/29801.shtml"&gt;Dynamic Programming (Chinese)&lt;/a&gt;&lt;/p&gt;
@@ -954,12 +954,12 @@ While you are not at the end of the first level
 &lt;p&gt;&lt;a href="http://www.programcreek.com/2013/02/leetcode-maximum-subarray-java/"&gt;LeetCode - Maximum Subarray (Java)&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4&gt;Basic Idea&lt;/h4&gt;
+&lt;h4 id="basic-idea"&gt;Basic Idea&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;Dynamic Programming (DP)&lt;/strong&gt; is used to get the &lt;strong&gt;best result&lt;/strong&gt; in the process of making decisions. It is for a problem with &lt;strong&gt;multiple stages&lt;/strong&gt; of decision making.&lt;/p&gt;
 &lt;p&gt;For one problem, A decision of &lt;strong&gt;best solution&lt;/strong&gt; may depend on the best solutions in smaller problems.&lt;/p&gt;
 &lt;p&gt;In this case, DP suggests to get the best solution for &lt;strong&gt;all&lt;/strong&gt; small stages &lt;strong&gt;only once&lt;/strong&gt;, and &lt;strong&gt;store&lt;/strong&gt; these solutions, no matter if they'll be useful in the future or not.&lt;/p&gt;
 &lt;p&gt;Finally, user can combine small best solutions to get the final solution. &lt;em&gt;Never repeat the process of getting same small solution.&lt;/em&gt;&lt;/p&gt;
-&lt;h5&gt;Four Steps of Dynamic Programming&lt;/h5&gt;
+&lt;h5 id="four-steps-of-dynamic-programming"&gt;Four Steps of Dynamic Programming&lt;/h5&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Describe the structure of the best solution.&lt;/p&gt;
@@ -974,12 +974,12 @@ While you are not at the end of the first level
 &lt;p&gt;Combine all results to get the final solution&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h4&gt;Longest Common Sequence, LCS&lt;/h4&gt;
+&lt;h4 id="longest-common-sequence-lcs"&gt;Longest Common Sequence, LCS&lt;/h4&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Assume you have two strings. Output their longest common sub-string. Sub-string has two cases: continuous from origin string or non-continuous from original string.
 For example, you have two string: &lt;code&gt;BDCABA&lt;/code&gt; and &lt;code&gt;ABCBDAB&lt;/code&gt;. You can output BCBA or BDAB for non-continuous longest sub-string, with length of 4.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h5&gt;Idea&lt;/h5&gt;
+&lt;h5 id="idea"&gt;Idea&lt;/h5&gt;
 &lt;p&gt;Assume we have two input strings: &lt;code&gt;A="a0,a1,...,am-1"&lt;/code&gt;, &lt;code&gt;B="b0,b1,...bn-1"&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Assume we have a LCS &lt;code&gt;Z="z0,z1,...zk-1"&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;There are three possibilities for this assumption:&lt;/p&gt;
@@ -995,7 +995,7 @@ For example, you have two string: &lt;code&gt;BDCABA&lt;/code&gt; and &lt;code&g
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Based on rules above, we can divide this problem to many smaller problem. For example, if we want to get LCS for &lt;code&gt;a0,a1,...am-2&lt;/code&gt; and &lt;code&gt;b0,b1,...bn-2&lt;/code&gt;, then we need to apply rules above to get &lt;code&gt;z0,z1z...zk-3&lt;/code&gt; for &lt;code&gt;a0,a1,...am-3&lt;/code&gt; and &lt;code&gt;b0,b1,...bn-3&lt;/code&gt;, assuming &lt;code&gt;am-2 = bm-2&lt;/code&gt;.&lt;/p&gt;
-&lt;h5&gt;Create Array to Store Solutions&lt;/h5&gt;
+&lt;h5 id="create-array-to-store-solutions"&gt;Create Array to Store Solutions&lt;/h5&gt;
 &lt;p&gt;We want to create a two-dimensional array &lt;code&gt;c[i][j]&lt;/code&gt;. It is used to record the length of LCS for &lt;code&gt;X[i]&lt;/code&gt; and &lt;code&gt;Y[j]&lt;/code&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Since we are calculating &lt;strong&gt;from bottom to top&lt;/strong&gt;, we already get &lt;code&gt;c[i-1][j-1]&lt;/code&gt;, &lt;code&gt;c[i-1][j]&lt;/code&gt; and &lt;code&gt;c[i][j-1]&lt;/code&gt; before we get &lt;code&gt;c[i][j]&lt;/code&gt;. Since we can know if &lt;code&gt;X[i]=Y[j]&lt;/code&gt; or not, we can calculate the value of &lt;code&gt;c[i][j]&lt;/code&gt; based on three rules above.&lt;/p&gt;
@@ -1007,7 +1007,7 @@ For example, you have two string: &lt;code&gt;BDCABA&lt;/code&gt; and &lt;code&g
 &lt;blockquote&gt;
 &lt;p&gt;You may notice only when we move to left-top direction, we can find a character for LCS. So we need to create another two-dimensional array to record moving direction&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h5&gt;Code for Non-continuous LCS&lt;/h5&gt;
+&lt;h5 id="code-for-non-continuous-lcs"&gt;Code for Non-continuous LCS&lt;/h5&gt;
 &lt;p&gt;Following code is from &lt;a href="http://blog.sina.com.cn/s/blog_5d4646fd0100qitg.html"&gt;this post&lt;/a&gt;, written by &lt;em&gt;BirdMan&lt;/em&gt;:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;LCS&lt;/span&gt;&lt;span class="o"&gt;{&lt;/span&gt;
 
@@ -1067,7 +1067,7 @@ For example, you have two string: &lt;code&gt;BDCABA&lt;/code&gt; and &lt;code&g
 
 
 &lt;p&gt;}&lt;/p&gt;
-&lt;h4&gt;Maximum Subarray&lt;/h4&gt;
+&lt;h4 id="maximum-subarray"&gt;Maximum Subarray&lt;/h4&gt;
 &lt;p&gt;I learned this problem main from &lt;a href="http://www.programcreek.com/2013/02/leetcode-maximum-subarray-java/"&gt;LeetCode - Maximum Subarray (Java)&lt;/a&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;You have a array of integers(may include negative number). You want to find a continuous subarray so that the sum of subarray is maximized. For example, assume you have &lt;code&gt;{-12, 1, -3, 4, -1, 2, 1, -5, 4}&lt;/code&gt;. The maximum subarray is &lt;code&gt;6&lt;/code&gt;.&lt;/p&gt;
@@ -1204,11 +1204,11 @@ For example, you have two string: &lt;code&gt;BDCABA&lt;/code&gt; and &lt;code&g
 &lt;blockquote&gt;
 &lt;p&gt;My current problem is both methods above has time complexity of O(n), which is not very efficient if there exists lot of numbers. Is there any way to improve it?&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4&gt;Stock Problem&lt;/h4&gt;
+&lt;h4 id="stock-problem"&gt;Stock Problem&lt;/h4&gt;
 &lt;p&gt;&lt;em&gt;This problem can be done by DP or Non-DP method.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Stock problem can be concluded to a &lt;strong&gt;finding maximum sum of array elements' differences&lt;/strong&gt;, with different constrains.&lt;/p&gt;
 &lt;p&gt;Following problems assume you cannot sell and buy stock on the same day:&lt;/p&gt;
-&lt;h5&gt;What if you can sell/maintain/buy stocks with unlimited time?&lt;/h5&gt;
+&lt;h5 id="what-if-you-can-sellmaintainbuy-stocks-with-unlimited-time"&gt;What if you can sell/maintain/buy stocks with unlimited time?&lt;/h5&gt;
 &lt;p&gt;I met this problem on &lt;a href="https://www.hackerrank.com/challenges/stockmax"&gt;hackerank.com&lt;/a&gt;. In this problem, you can only buy one stock once per day, but you can choose to sell all your current stocks in one day.&lt;/p&gt;
 &lt;p&gt;So far I figured a solution with &lt;code&gt;O(n)&lt;/code&gt; runtime complexity:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cm"&gt;/*&lt;/span&gt;
@@ -1283,7 +1283,7 @@ For example, you have two string: &lt;code&gt;BDCABA&lt;/code&gt; and &lt;code&g
 &lt;/pre&gt;
 
 
-&lt;h5&gt;What if you can only buy stock once and sell stock once?&lt;/h5&gt;
+&lt;h5 id="what-if-you-can-only-buy-stock-once-and-sell-stock-once"&gt;What if you can only buy stock once and sell stock once?&lt;/h5&gt;
 &lt;p&gt;Then the problem is turning to &lt;em&gt;finding out the largest different between two elements in array&lt;/em&gt;. i.e.Find smallest and largest elements in array, while smallest element should in the front of the largest element. Following is my code:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;static&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="nf"&gt;countStock&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="o"&gt;[]&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="o"&gt;){&lt;/span&gt;
     &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;smallest&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;];&lt;/span&gt;
@@ -1316,7 +1316,7 @@ For example, you have two string: &lt;code&gt;BDCABA&lt;/code&gt; and &lt;code&g
 &lt;/pre&gt;
 
 
-&lt;h5&gt;What if you can only trade stock with a maximum of n times?&lt;/h5&gt;
+&lt;h5 id="what-if-you-can-only-trade-stock-with-a-maximum-of-n-times"&gt;What if you can only trade stock with a maximum of n times?&lt;/h5&gt;
 &lt;p&gt;My idea is that we can use same idea as the first stock problem (2 pointers). Since we can only count &lt;code&gt;n&lt;/code&gt; times of benefits, we can store all benefits in a sorted array (in descending order), then get the sum of first &lt;code&gt;n&lt;/code&gt; elements.&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt; &lt;span class="c1"&gt;//O(mn): m is the size of input array, n is the size of times&lt;/span&gt;
  &lt;span class="kd"&gt;static&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="nf"&gt;countStockNTimes&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="o"&gt;[]&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="o"&gt;){&lt;/span&gt;

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>I'm Pengyin (Posts about Software Testing)</title><link>http://pengyin-shan.com/</link><description></description><atom:link href="http://pengyin-shan.com/categories/software-testing.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 06 Jul 2018 17:48:41 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Jasmine Basics</title><link>http://pengyin-shan.com/posts/2015/JavaScript/jasmine-basics.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;You can find Jasmine &lt;a href="http://jasmine.github.io/2.3/introduction.html"&gt;here&lt;/a&gt;. I choose it because:&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>I'm Pengyin (Posts about Software Testing)</title><link>http://pengyin-shan.com/</link><description></description><atom:link type="application/rss+xml" rel="self" href="http://pengyin-shan.com/categories/software-testing.xml"></atom:link><language>en</language><lastBuildDate>Tue, 10 Jul 2018 14:56:10 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Jasmine Basics</title><link>http://pengyin-shan.com/posts/2015/JavaScript/jasmine-basics.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;You can find Jasmine &lt;a href="http://jasmine.github.io/2.3/introduction.html"&gt;here&lt;/a&gt;. I choose it because:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;It's a JavaScript framework which does not depend on any other JavaScript frameworks, and it does not require a DOM. So I can apply it on different web apps and platforms.&lt;/p&gt;
@@ -11,18 +11,18 @@
 &lt;p&gt;Jasmine has good object-oriented support, making code being modular.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3&gt;Describe&lt;/h3&gt;
+&lt;h3 id="describe"&gt;Describe&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;describe&lt;/code&gt; keyword represents the beginning of a &lt;strong&gt;test suite&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;It takes two parameters: a &lt;code&gt;string&lt;/code&gt; and a &lt;code&gt;function&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;The content of string represents the content of the test suite.&lt;/p&gt;
 &lt;p&gt;There can be nested test suites/nested specs exist.&lt;/p&gt;
-&lt;h3&gt;Specs&lt;/h3&gt;
+&lt;h3 id="specs"&gt;Specs&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;it&lt;/code&gt; keyword represents the beginning of a spec.&lt;/p&gt;
 &lt;p&gt;It takes two parameters: a &lt;code&gt;string&lt;/code&gt; and a &lt;code&gt;function&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;The content of string represents that title/introduction of the spec.&lt;/p&gt;
 &lt;p&gt;A spec contains one or more &lt;code&gt;expectation&lt;/code&gt;s that test the state of the code.&lt;/p&gt;
 &lt;p&gt;A spec with all true expectations is a &lt;code&gt;passing spec&lt;/code&gt;. A spec with one or more false expectations is a &lt;code&gt;failing spec&lt;/code&gt;.&lt;/p&gt;
-&lt;h4&gt;Fail a Spec&lt;/h4&gt;
+&lt;h4 id="fail-a-spec"&gt;Fail a Spec&lt;/h4&gt;
 &lt;p&gt;You can use &lt;code&gt;fail&lt;/code&gt; function to manually fail a spec. This function takes a failure message or a Error object as a parameter:&lt;/p&gt;
 &lt;table class="codehilitetable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt; 1
  2
@@ -50,7 +50,7 @@
 &lt;/pre&gt;
 &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
-&lt;h4&gt;Setups&lt;/h4&gt;
+&lt;h4 id="setups"&gt;Setups&lt;/h4&gt;
 &lt;p&gt;&lt;code&gt;beforeEach&lt;/code&gt;, &lt;code&gt;afterEach&lt;/code&gt;, &lt;code&gt;beforeAll&lt;/code&gt;, &lt;code&gt;afterAll&lt;/code&gt; can be used to setup environment before/after test suites/specs.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;beforeEach&lt;/code&gt; function is called once before &lt;strong&gt;each&lt;/strong&gt; spec run in test suite.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;afterEach&lt;/code&gt; function is called once after &lt;strong&gt;each&lt;/strong&gt; spec run.&lt;/p&gt;
@@ -102,7 +102,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;For nested &lt;code&gt;describe&lt;/code&gt; blocks, before one spec running, &lt;code&gt;beforeEach&lt;/code&gt; function &lt;strong&gt;for all describes&lt;/strong&gt; will be run. Similarly, after one spec running, &lt;code&gt;afterEach&lt;/code&gt; function &lt;strong&gt;for all describes&lt;/strong&gt; will be run.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h5&gt;Use &lt;code&gt;this&lt;/code&gt; in Setup&lt;/h5&gt;
+&lt;h5 id="use-this-in-setup"&gt;Use &lt;code&gt;this&lt;/code&gt; in Setup&lt;/h5&gt;
 &lt;p&gt;&lt;code&gt;this&lt;/code&gt; variable can be shared between &lt;code&gt;beforeEach&lt;/code&gt;, &lt;code&gt;it&lt;/code&gt; and &lt;code&gt;afterEach&lt;/code&gt; function.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;this&lt;/code&gt; will be &lt;strong&gt;reset&lt;/strong&gt; every time a spec run.&lt;/p&gt;
 &lt;p&gt;Example:&lt;/p&gt;
@@ -134,9 +134,9 @@
 &lt;/pre&gt;
 &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
-&lt;h4&gt;Disable Suites and Specs&lt;/h4&gt;
+&lt;h4 id="disable-suites-and-specs"&gt;Disable Suites and Specs&lt;/h4&gt;
 &lt;p&gt;Instead of &lt;code&gt;describe&lt;/code&gt; and &lt;code&gt;it&lt;/code&gt;, you can use &lt;code&gt;xdescribe&lt;/code&gt; and &lt;code&gt;xit&lt;/code&gt; to skip this test suite or spec.&lt;/p&gt;
-&lt;h3&gt;Expectations&lt;/h3&gt;
+&lt;h3 id="expectations"&gt;Expectations&lt;/h3&gt;
 &lt;p&gt;An expectation in Jasmine is an &lt;strong&gt;assertion&lt;/strong&gt; that is either &lt;code&gt;true&lt;/code&gt; or &lt;code&gt;false&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Syntax Example:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;expect&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;a&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;toBe&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
@@ -145,7 +145,7 @@
 
 &lt;p&gt;&lt;code&gt;expect&lt;/code&gt; takes a value, called &lt;code&gt;actual&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;expect&lt;/code&gt; take a &lt;code&gt;matcher function&lt;/code&gt; on second part, which takes the &lt;strong&gt;expected value&lt;/strong&gt;.&lt;/p&gt;
-&lt;h4&gt;Matcher&lt;/h4&gt;
+&lt;h4 id="matcher"&gt;Matcher&lt;/h4&gt;
 &lt;p&gt;You can always add a &lt;code&gt;not&lt;/code&gt; in front of any matcher to turn it to a negative assertion.&lt;/p&gt;
 &lt;p&gt;Example:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;expect&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;a&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;toEqual&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;9&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
@@ -153,7 +153,7 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;List of Matcher&lt;/h4&gt;
+&lt;h4 id="list-of-matcher"&gt;List of Matcher&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;toBe&lt;/code&gt;&lt;/p&gt;
@@ -195,9 +195,9 @@
 &lt;p&gt;&lt;code&gt;toThrowError&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4&gt;Custom Matchers&lt;/h4&gt;
+&lt;h4 id="custom-matchers"&gt;Custom Matchers&lt;/h4&gt;
 &lt;p&gt;A custom matcher at its root is a &lt;strong&gt;comparison function&lt;/strong&gt; that takes an &lt;strong&gt;actual value&lt;/strong&gt; and &lt;strong&gt;expected value&lt;/strong&gt;.&lt;/p&gt;
-&lt;h5&gt;Structure of Custom Matcher&lt;/h5&gt;
+&lt;h5 id="structure-of-custom-matcher"&gt;Structure of Custom Matcher&lt;/h5&gt;
 &lt;p&gt;Create a object, which contains one to many custom matchers.&lt;/p&gt;
 &lt;p&gt;Each custom matcher is a function, which takes &lt;code&gt;util&lt;/code&gt; and &lt;code&gt;customEqualityTesters&lt;/code&gt; as parameters.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;util&lt;/code&gt;: contains a set of &lt;strong&gt;utility functions&lt;/strong&gt; for matchers to use. For example:&lt;/p&gt;
@@ -239,7 +239,7 @@
 &lt;p&gt;You can skip defining result.message. jasmine will try to craft one for your custom matcher.&lt;/p&gt;
 &lt;p&gt;If you have too many negative comparison (&lt;code&gt;.not&lt;/code&gt;), you can add &lt;code&gt;negativeCompare&lt;/code&gt; function alongside &lt;code&gt;compare&lt;/code&gt;, using similar structure to include all &lt;code&gt;.not&lt;/code&gt; methods.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h5&gt;How to Use Custom Matcher&lt;/h5&gt;
+&lt;h5 id="how-to-use-custom-matcher"&gt;How to Use Custom Matcher&lt;/h5&gt;
 &lt;p&gt;You should register you custom matchers in &lt;code&gt;beforeEach&lt;/code&gt; block, using a function &lt;code&gt;jasmine.addMatchers&lt;/code&gt;:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;beforeEach&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="c1"&gt;//You can get all matcher methods in customMatchers&lt;/span&gt;
@@ -255,13 +255,13 @@
 &lt;/pre&gt;
 
 
-&lt;h3&gt;Spy&lt;/h3&gt;
+&lt;h3 id="spy"&gt;Spy&lt;/h3&gt;
 &lt;p&gt;A &lt;code&gt;spy&lt;/code&gt; can stub any function and tracks calls to it and all arguments.&lt;/p&gt;
 &lt;p&gt;A spy only exists in the &lt;code&gt;describe&lt;/code&gt; or &lt;code&gt;it&lt;/code&gt; block it is defined, and will be &lt;strong&gt;removed&lt;/strong&gt; after each spec.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;When you put spy &lt;code&gt;spyOn()&lt;/code&gt; in &lt;code&gt;beforeEach()&lt;/code&gt; block, based on how &lt;code&gt;beforeEach()&lt;/code&gt; work, your spy call will be called before each spec function run.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4&gt;toHaveBeenCalled and toHaveBeenCalledWith&lt;/h4&gt;
+&lt;h4 id="tohavebeencalled-and-tohavebeencalledwith"&gt;toHaveBeenCalled and toHaveBeenCalledWith&lt;/h4&gt;
 &lt;p&gt;&lt;code&gt;toHaveBeenCalled&lt;/code&gt; will return &lt;code&gt;true&lt;/code&gt; if the spy was called.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;toHaveBeenCalledWith&lt;/code&gt; will return &lt;code&gt;true&lt;/code&gt; if the argument list matches any of the &lt;strong&gt;recorded calls&lt;/strong&gt; to the spy.&lt;/p&gt;
 &lt;p&gt;Example:&lt;/p&gt;
@@ -293,19 +293,19 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;callThrough&lt;/h4&gt;
+&lt;h4 id="callthrough"&gt;callThrough&lt;/h4&gt;
 &lt;p&gt;You can add &lt;code&gt;and.callThrough()&lt;/code&gt; after spy function to make sure spy will &lt;strong&gt;track all spec calls&lt;/strong&gt;, instead of being removed after each spec call:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;spyOn&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;foo&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'getBar'&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;and&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;callThrough&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
 &lt;/pre&gt;
 
 
-&lt;h4&gt;returnValue&lt;/h4&gt;
+&lt;h4 id="returnvalue"&gt;returnValue&lt;/h4&gt;
 &lt;p&gt;You can add &lt;code&gt;and.returnValue(value)&lt;/code&gt; after spy function to make sure your desired call in spy function will return a value:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;spyOn&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;foo&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;"getBar"&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;and&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;returnValue&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;745&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;//getBar method for foo object will return value `745`&lt;/span&gt;
 &lt;/pre&gt;
 
 
-&lt;h4&gt;callFake&lt;/h4&gt;
+&lt;h4 id="callfake"&gt;callFake&lt;/h4&gt;
 &lt;p&gt;You can add &lt;code&gt;and.callFake(function(){})&lt;/code&gt; to create a fake function which can replace the content of your spied function:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;  &lt;span class="nx"&gt;describe&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"A spy, when configured with an alternate implementation"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
   &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;foo&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;bar&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;fetchedBar&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
@@ -340,7 +340,7 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;stub&lt;/h4&gt;
+&lt;h4 id="stub"&gt;stub&lt;/h4&gt;
 &lt;p&gt;To remember the state of any spy calling method above, use &lt;code&gt;and.stub()&lt;/code&gt; to get the original stubbing behavior:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;describe&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"A spy"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
   &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;foo&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;bar&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;null&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
@@ -366,7 +366,7 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Tracking Properties&lt;/h4&gt;
+&lt;h4 id="tracking-properties"&gt;Tracking Properties&lt;/h4&gt;
 &lt;p&gt;After you having &lt;code&gt;spayOn(obj, spied_method)&lt;/code&gt;, following tracking properties can be used when you call the spied method in &lt;code&gt;expect&lt;/code&gt;:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -419,8 +419,8 @@
 &lt;p&gt;&lt;code&gt;.calls.reset()&lt;/code&gt;: clears all tracking for a spy&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4&gt;jasmine method&lt;/h4&gt;
-&lt;h5&gt;createSpy&lt;/h5&gt;
+&lt;h4 id="jasmine-method"&gt;jasmine method&lt;/h4&gt;
+&lt;h5 id="createspy"&gt;createSpy&lt;/h5&gt;
 &lt;p&gt;&lt;code&gt;jasmine.createSpy()&lt;/code&gt; is a function with &lt;strong&gt;no implementation&lt;/strong&gt;. It acts as other spies:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;whatAmI&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="nx"&gt;beforeEach&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
@@ -432,7 +432,7 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;createSpyObj&lt;/h5&gt;
+&lt;h5 id="createspyobj"&gt;createSpyObj&lt;/h5&gt;
 &lt;p&gt;Similar as above, &lt;code&gt;jasmine.createSpyObj&lt;/code&gt; accept an &lt;strong&gt;array of strings&lt;/strong&gt;, and return a object that has a &lt;strong&gt;property&lt;/strong&gt; for each string of the spy:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;tape&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
  &lt;span class="nx"&gt;beforeEach&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
@@ -444,9 +444,9 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;anything&lt;/h5&gt;
+&lt;h5 id="anything"&gt;anything&lt;/h5&gt;
 &lt;p&gt;&lt;code&gt;jasmine.anything&lt;/code&gt; returns &lt;code&gt;true&lt;/code&gt; if the actual value is &lt;strong&gt;not&lt;/strong&gt; &lt;code&gt;null&lt;/code&gt; or &lt;code&gt;undefined&lt;/code&gt;: &lt;code&gt;expect(1).toEqual(jasmine.anything());&lt;/code&gt;&lt;/p&gt;
-&lt;h5&gt;objectContaining&lt;/h5&gt;
+&lt;h5 id="objectcontaining"&gt;objectContaining&lt;/h5&gt;
 &lt;p&gt;&lt;code&gt;jasmine.objectContaining&lt;/code&gt; tests objects with &lt;strong&gt;key-value&lt;/strong&gt; pairs:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;  &lt;span class="nx"&gt;describe&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"jasmine.objectContaining"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
   &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;foo&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
@@ -468,7 +468,7 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;arrayContaining&lt;/h5&gt;
+&lt;h5 id="arraycontaining"&gt;arrayContaining&lt;/h5&gt;
 &lt;p&gt;&lt;code&gt;jasmine.arrayContaining&lt;/code&gt; test objects with &lt;strong&gt;values in array&lt;/strong&gt;:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;  &lt;span class="nx"&gt;beforeEach&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="nx"&gt;foo&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;];&lt;/span&gt;
@@ -480,7 +480,7 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;stringMatching&lt;/h5&gt;
+&lt;h5 id="stringmatching"&gt;stringMatching&lt;/h5&gt;
 &lt;p&gt;&lt;code&gt;jasmine.stringMatching()&lt;/code&gt; test if you want match &lt;strong&gt;a string in a object&lt;/strong&gt; or &lt;strong&gt;regular expression&lt;/strong&gt; pattern:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;describe&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'jasmine.stringMatching'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
   &lt;span class="nx"&gt;it&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"matches as a regexp"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
@@ -490,7 +490,7 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Custom Equality Tester&lt;/h4&gt;
+&lt;h4 id="custom-equality-tester"&gt;Custom Equality Tester&lt;/h4&gt;
 &lt;p&gt;You can create your own equality tester for your test criteria, using &lt;code&gt;asymmetricMatch&lt;/code&gt; function name:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;  &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;tester&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="c1"&gt;//Use asymmetricMatch as function. No returns&lt;/span&gt;
@@ -505,11 +505,11 @@
 &lt;/pre&gt;
 
 
-&lt;h3&gt;Clock&lt;/h3&gt;
+&lt;h3 id="clock"&gt;Clock&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;jasmine.clock().install()&lt;/code&gt; can be used to setup time dependent testing. To do this, you can put &lt;code&gt;jasmine.clock().install&lt;/code&gt; in &lt;code&gt;beforeEach()&lt;/code&gt; block and &lt;code&gt;jasmine.clock().uninstall()&lt;/code&gt; in &lt;code&gt;afterEach()&lt;/code&gt; block.&lt;/p&gt;
-&lt;h4&gt;Timeout&lt;/h4&gt;
+&lt;h4 id="timeout"&gt;Timeout&lt;/h4&gt;
 &lt;p&gt;Use &lt;code&gt;jasmine.clock().tick(milliseconds)&lt;/code&gt; function to simulate timeout in JavaScript: &lt;code&gt;jasmine.clock().tick(1000)&lt;/code&gt;;&lt;/p&gt;
-&lt;h4&gt;Date&lt;/h4&gt;
+&lt;h4 id="date"&gt;Date&lt;/h4&gt;
 &lt;p&gt;You can create a &lt;code&gt;Date&lt;/code&gt; object in JavaScript, then use &lt;code&gt;jasmine.clock().mockDate(date_object)&lt;/code&gt; to simulate date:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;baseTime&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nb"&gt;Date&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2014&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;9&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;23&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 &lt;span class="nx"&gt;jasmine&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;clock&lt;/span&gt;&lt;span class="p"&gt;().&lt;/span&gt;&lt;span class="nx"&gt;mockDate&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;baseTime&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
@@ -519,10 +519,10 @@
 &lt;blockquote&gt;
 &lt;p&gt;If you don't provide a time object, jasmine will use current Date.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3&gt;Ajax&lt;/h3&gt;
+&lt;h3 id="ajax"&gt;Ajax&lt;/h3&gt;
 &lt;p&gt;You need to include &lt;code&gt;mock-ajax.js&lt;/code&gt; from &lt;a href="https://github.com/jasmine/jasmine-ajax"&gt;here&lt;/a&gt; to test Ajax using jasmine.&lt;/p&gt;
 &lt;p&gt;Make sure you have &lt;code&gt;jasmine.Ajax.install()&lt;/code&gt; in &lt;code&gt;beforeEach()&lt;/code&gt; block and &lt;code&gt;jasmine.Ajax.uninstall()&lt;/code&gt; in &lt;code&gt;afterEach()&lt;/code&gt; to install and uninstall jasmine-ajax.&lt;/p&gt;
-&lt;h4&gt;Define Mock Response&lt;/h4&gt;
+&lt;h4 id="define-mock-response"&gt;Define Mock Response&lt;/h4&gt;
 &lt;p&gt;You may want to define a mock response to test your Ajax call response. A good place to define this is in &lt;code&gt;spec/javascripts/helpers/test_responses&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Example:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;TestResponses&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
@@ -537,7 +537,7 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Trigger Request&lt;/h4&gt;
+&lt;h4 id="trigger-request"&gt;Trigger Request&lt;/h4&gt;
 &lt;p&gt;You need to trigger request before you test your Ajax response. You can set a function call, such as:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;  &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;xhr&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nx"&gt;XMLHttpRequest&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
   &lt;span class="nx"&gt;xhr&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;onreadystatechange&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;args&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
@@ -569,7 +569,7 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Set Response&lt;/h4&gt;
+&lt;h4 id="set-response"&gt;Set Response&lt;/h4&gt;
 &lt;p&gt;Use &lt;code&gt;.respondWith()&lt;/code&gt; to set response. You need to tell jasmine which response you want to test. For example, based on the code in &lt;strong&gt;Define Mock Response&lt;/strong&gt; part, you can test &lt;code&gt;success&lt;/code&gt; response:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;  &lt;span class="nx"&gt;describe&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"on success"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
   &lt;span class="nx"&gt;beforeEach&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
@@ -588,7 +588,7 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Full Steps&lt;/h4&gt;
+&lt;h4 id="full-steps"&gt;Full Steps&lt;/h4&gt;
 &lt;p&gt;After these step, you can create &lt;code&gt;it&lt;/code&gt; blocks to test your Ajax call. Here is a full example for &lt;code&gt;post&lt;/code&gt; from jasmine-ajax Github repo:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;  &lt;span class="nx"&gt;describe&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"FoursquareVenueSearch"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
   &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;foursquare&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;request&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
@@ -623,7 +623,7 @@
 
 
 &lt;p&gt;Other &lt;code&gt;get&lt;/code&gt; Ajax call examples can be found on &lt;a href="http://jasmine.github.io/2.3/ajax.html"&gt;jasmine website&lt;/a&gt;.&lt;/p&gt;
-&lt;h3&gt;Jasmine-jQuery&lt;/h3&gt;
+&lt;h3 id="jasmine-jquery"&gt;Jasmine-jQuery&lt;/h3&gt;
 &lt;p&gt;&lt;a href="https://github.com/velesin/jasmine-jquery"&gt;jasmine-jquery&lt;/a&gt; is great to combine Jasmine with jQuery. It provides:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -633,20 +633,20 @@
 &lt;p&gt;an API for handling HTML, CSS, and JSON fixtures in your specs&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4&gt;Custom Matcher&lt;/h4&gt;
+&lt;h4 id="custom-matcher"&gt;Custom Matcher&lt;/h4&gt;
 &lt;p&gt;You can find a list of useful custom matchers, such as &lt;code&gt;toBeCheck()&lt;/code&gt; or &lt;code&gt;toBeSelected()&lt;/code&gt; &lt;a href="https://github.com/velesin/jasmine-jquery"&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;h4&gt;HTML Fixture&lt;/h4&gt;
+&lt;h4 id="html-fixture"&gt;HTML Fixture&lt;/h4&gt;
 &lt;p&gt;I'm still trying to figure out the best practice to apply HTML Fixture for my working project. HTML Fixture can be used to load HTML content to be used by your tests.&lt;/p&gt;
 &lt;p&gt;You can find more detailed information about HTML Fixture &lt;a href="https://github.com/velesin/jasmine-jquery"&gt;here&lt;/a&gt;. For most of my working projects, I need to limit the complexity of all my JavaScript test. Also, instead of &lt;code&gt;html&lt;/code&gt;, my work is more involved in &lt;code&gt;jsp&lt;/code&gt;, which is really hard to be transferred to pure HTML code for fixture content. Personally I prefer not to write too many fixtures for to simplify my test.&lt;/p&gt;
-&lt;p&gt;I'll continue to research for the best practice of using HTML Fixture.&lt;/p&gt;&lt;/div&gt;</description><category>Jasmine</category><category>JavaScript</category><category>jQuery</category><category>Software Testing</category><guid>http://pengyin-shan.com/posts/2015/JavaScript/jasmine-basics.html</guid><pubDate>Tue, 25 Aug 2015 07:00:00 GMT</pubDate></item><item><title>JUnit Basics</title><link>http://pengyin-shan.com/posts/2015/Java/junit-basics.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3&gt;Reference&lt;/h3&gt;
+&lt;p&gt;I'll continue to research for the best practice of using HTML Fixture.&lt;/p&gt;&lt;/div&gt;</description><category>Jasmine</category><category>JavaScript</category><category>jQuery</category><category>Software Testing</category><guid>http://pengyin-shan.com/posts/2015/JavaScript/jasmine-basics.html</guid><pubDate>Tue, 25 Aug 2015 07:00:00 GMT</pubDate></item><item><title>JUnit Basics</title><link>http://pengyin-shan.com/posts/2015/Java/junit-basics.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3 id="reference"&gt;Reference&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://www.tutorialspoint.com//junit/index.htm"&gt;JUnit Tutorial from Tutorialspoint.com&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Overview&lt;/h3&gt;
+&lt;h3 id="overview"&gt;Overview&lt;/h3&gt;
 &lt;p&gt;A &lt;code&gt;Unit Test Case&lt;/code&gt; is a part of code which ensures that the another part of code (method) works as expected. To achieve those desired results quickly, test framework is required.&lt;/p&gt;
 &lt;p&gt;JUnit is perfect unit test framework for java programming language.&lt;/p&gt;
-&lt;h3&gt;Test Framework&lt;/h3&gt;
-&lt;h4&gt;Features&lt;/h4&gt;
+&lt;h3 id="test-framework"&gt;Test Framework&lt;/h3&gt;
+&lt;h4 id="features"&gt;Features&lt;/h4&gt;
 &lt;p&gt;JUnit test framework provides following important features:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -662,7 +662,7 @@
 &lt;p&gt;&lt;code&gt;JUnit classes&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h5&gt;Fixtures&lt;/h5&gt;
+&lt;h5 id="fixtures"&gt;Fixtures&lt;/h5&gt;
 &lt;p&gt;&lt;code&gt;Fixtures&lt;/code&gt; is a fixed state of a set of &lt;strong&gt;objects&lt;/strong&gt; used as a baseline for running tests.&lt;/p&gt;
 &lt;p&gt;The purpose of a test fixture is to ensure that there is a well known and &lt;strong&gt;fixed environment&lt;/strong&gt; in which tests are run so that results are repeatable. It includes:&lt;/p&gt;
 &lt;ul&gt;
@@ -692,7 +692,7 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;Test Suite&lt;/h5&gt;
+&lt;h5 id="test-suite"&gt;Test Suite&lt;/h5&gt;
 &lt;p&gt;&lt;code&gt;Test suite&lt;/code&gt; means &lt;strong&gt;bundle&lt;/strong&gt; a few unit test cases and run it together.&lt;/p&gt;
 &lt;p&gt;In JUnit, both &lt;code&gt;@RunWith&lt;/code&gt; and &lt;code&gt;@Suite&lt;/code&gt; annotation are used to run the suite test.&lt;/p&gt;
 &lt;p&gt;Here is an example which uses TestJunit1 &amp;amp; TestJunit2 test classes from Tutorialspoint.com:&lt;/p&gt;
@@ -738,7 +738,7 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;Test Runner&lt;/h5&gt;
+&lt;h5 id="test-runner"&gt;Test Runner&lt;/h5&gt;
 &lt;p&gt;&lt;code&gt;Test runner&lt;/code&gt; is used for &lt;strong&gt;executing&lt;/strong&gt; the test cases.&lt;/p&gt;
 &lt;p&gt;Here is an example which assumes TestJunit test class already exists, from Tutorialspoint.com:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.junit.runner.JUnitCore&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -757,7 +757,7 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;JUnit Classes&lt;/h5&gt;
+&lt;h5 id="junit-classes"&gt;JUnit Classes&lt;/h5&gt;
 &lt;p&gt;JUnit classes are important classes which is used in writing and testing JUnits.&lt;/p&gt;
 &lt;p&gt;Some of the important classes are:&lt;/p&gt;
 &lt;ul&gt;
@@ -771,8 +771,8 @@
 &lt;p&gt;&lt;code&gt;TestResult&lt;/code&gt; which contain methods to collect the results of executing a test case.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4&gt;JUnit Basic Usage&lt;/h4&gt;
-&lt;h5&gt;1. Create a Message Class&lt;/h5&gt;
+&lt;h4 id="junit-basic-usage"&gt;JUnit Basic Usage&lt;/h4&gt;
+&lt;h5 id="1-create-a-message-class"&gt;1. Create a Message Class&lt;/h5&gt;
 &lt;p&gt;Example code from Tutorialspoint.com:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cm"&gt;/*&lt;/span&gt;
 &lt;span class="cm"&gt;* This class prints the given message on console.&lt;/span&gt;
@@ -793,7 +793,7 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;2. Create a Test Case Class&lt;/h5&gt;
+&lt;h5 id="2-create-a-test-case-class"&gt;2. Create a Test Case Class&lt;/h5&gt;
 &lt;p&gt;Example code from Tutorialspoint.com&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.junit.Test&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;span class="kn"&gt;import static&lt;/span&gt; &lt;span class="nn"&gt;org.junit.Assert.assertEquals&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -810,7 +810,7 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;3. Create a Test Runner Class&lt;/h5&gt;
+&lt;h5 id="3-create-a-test-runner-class"&gt;3. Create a Test Runner Class&lt;/h5&gt;
 &lt;p&gt;Example code from Tutorialspoint.com&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.junit.runner.JUnitCore&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.junit.runner.Result&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -829,7 +829,7 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Writing Test with POJOs&lt;/h4&gt;
+&lt;h4 id="writing-test-with-pojos"&gt;Writing Test with POJOs&lt;/h4&gt;
 &lt;p&gt;To write a test for a POJO class, we need following:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -913,10 +913,10 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Assertion and Annotation&lt;/h4&gt;
-&lt;h5&gt;Assertion&lt;/h5&gt;
+&lt;h4 id="assertion-and-annotation"&gt;Assertion and Annotation&lt;/h4&gt;
+&lt;h5 id="assertion"&gt;Assertion&lt;/h5&gt;
 &lt;p&gt;This class provides a set of assertion methods useful for writing tests. &lt;em&gt;Only failed assertions are recorded.&lt;/em&gt;&lt;/p&gt;
-&lt;h6&gt;List of Assertion Methods&lt;/h6&gt;
+&lt;h6 id="list-of-assertion-methods"&gt;List of Assertion Methods&lt;/h6&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;assertEquals&lt;/code&gt;: Check that two primitives/Objectes are equal&lt;/p&gt;
@@ -934,7 +934,7 @@
 &lt;p&gt;&lt;strong&gt;assertArrayEquals&lt;/strong&gt;: Check whether two arrays are equal to each other&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h5&gt;Annotation&lt;/h5&gt;
+&lt;h5 id="annotation"&gt;Annotation&lt;/h5&gt;
 &lt;p&gt;The annotation in JUnit gives us information about test methods, include:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -947,7 +947,7 @@
 &lt;p&gt;which methods or class will be ignore during execution.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h6&gt;List of Annotations&lt;/h6&gt;
+&lt;h6 id="list-of-annotations"&gt;List of Annotations&lt;/h6&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;@Test&lt;/code&gt;: The Test annotation tells JUnit that the &lt;strong&gt;public void method&lt;/strong&gt; to which it is attached can be run as a test case.&lt;/p&gt;
@@ -968,9 +968,9 @@
 &lt;p&gt;&lt;code&gt;@Ignore&lt;/code&gt;: The Ignore annotation is used to ignore the test and that &lt;strong&gt;test will not be executed&lt;/strong&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4&gt;Suite Test&lt;/h4&gt;
+&lt;h4 id="suite-test"&gt;Suite Test&lt;/h4&gt;
 &lt;p&gt;Test suites means bundle a few unit test cases and run it together. In JUnit, both &lt;code&gt;@RunWith&lt;/code&gt; and &lt;code&gt;@Suite&lt;/code&gt; annotation are used to run the suite test.&lt;/p&gt;
-&lt;h5&gt;Step 1: Create a Message Class&lt;/h5&gt;
+&lt;h5 id="step-1-create-a-message-class"&gt;Step 1: Create a Message Class&lt;/h5&gt;
 &lt;p&gt;Example code from Tutorialspoint.com:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cm"&gt;/*&lt;/span&gt;
 &lt;span class="cm"&gt;* This class prints the given message on console.&lt;/span&gt;
@@ -997,7 +997,7 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;Step 2: Create Business Login Class with Business Login Test Class&lt;/h5&gt;
+&lt;h5 id="step-2-create-business-login-class-with-business-login-test-class"&gt;Step 2: Create Business Login Class with Business Login Test Class&lt;/h5&gt;
 &lt;p&gt;Business Logic class with Methods for testing:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.junit.Test&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.junit.Ignore&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -1031,7 +1031,7 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;Step3: Create Test Suite Class using @RunWith and @Suite annotation&lt;/h5&gt;
+&lt;h5 id="step3-create-test-suite-class-using-runwith-and-suite-annotation"&gt;Step3: Create Test Suite Class using @RunWith and @Suite annotation&lt;/h5&gt;
 &lt;p&gt;Example code from Tutorialspoint.com:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.junit.runner.RunWith&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.junit.runners.Suite&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -1047,17 +1047,17 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;Create Test Runner Classes&lt;/h5&gt;
+&lt;h5 id="create-test-runner-classes"&gt;Create Test Runner Classes&lt;/h5&gt;
 &lt;p&gt;Same code as examples above&lt;/p&gt;
-&lt;h4&gt;Ignore Test&lt;/h4&gt;
+&lt;h4 id="ignore-test"&gt;Ignore Test&lt;/h4&gt;
 &lt;p&gt;Sometimes it happens that our code is not ready and test case written to test that method/code will fail if run. The &lt;code&gt;@Ignore&lt;/code&gt; annotation helps in this regards.&lt;/p&gt;
 &lt;p&gt;A test method annotated with @Ignore &lt;strong&gt;will not be executed&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;If a test class is annotated with @Ignore then none of its test methods will be executed.&lt;/p&gt;
-&lt;h5&gt;Step 1: Create a Message Class&lt;/h5&gt;
+&lt;h5 id="step-1-create-a-message-class_1"&gt;Step 1: Create a Message Class&lt;/h5&gt;
 &lt;p&gt;Same as example above.&lt;/p&gt;
-&lt;h5&gt;Step 2: Create Business Login Class with Business Login Test Class&lt;/h5&gt;
+&lt;h5 id="step-2-create-business-login-class-with-business-login-test-class_1"&gt;Step 2: Create Business Login Class with Business Login Test Class&lt;/h5&gt;
 &lt;p&gt;Same as example above.&lt;/p&gt;
-&lt;h5&gt;Step 3: Create Test Runner Class with @Ignore Annotation&lt;/h5&gt;
+&lt;h5 id="step-3-create-test-runner-class-with-ignore-annotation"&gt;Step 3: Create Test Runner Class with @Ignore Annotation&lt;/h5&gt;
 &lt;p&gt;Example code from Tutorialspoint.com:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.junit.Test&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.junit.Ignore&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -1084,12 +1084,12 @@
 
 
 &lt;p&gt;If you run the code above, you will always pass all test because none of test with @Test annotation above is excuted.&lt;/p&gt;
-&lt;h4&gt;Time Test&lt;/h4&gt;
+&lt;h4 id="time-test"&gt;Time Test&lt;/h4&gt;
 &lt;p&gt;If a test case takes more time than specified number of milliseconds then JUnit will automatically mark it as failed.&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;timeout&lt;/code&gt; parameter is used along with @Test annotation.&lt;/p&gt;
-&lt;h5&gt;Step 1: Create a Message Class&lt;/h5&gt;
+&lt;h5 id="step-1-create-a-message-class_2"&gt;Step 1: Create a Message Class&lt;/h5&gt;
 &lt;p&gt;Same as example above.&lt;/p&gt;
-&lt;h5&gt;Step 2: Create Test Class with Timeout Setting&lt;/h5&gt;
+&lt;h5 id="step-2-create-test-class-with-timeout-setting"&gt;Step 2: Create Test Class with Timeout Setting&lt;/h5&gt;
 &lt;p&gt;Example code from Tutorialspoint.com:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.junit.Test&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.junit.Ignore&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -1113,14 +1113,14 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;Step 3: Create Test Runner Class&lt;/h5&gt;
+&lt;h5 id="step-3-create-test-runner-class"&gt;Step 3: Create Test Runner Class&lt;/h5&gt;
 &lt;p&gt;Same regular Test Runner class as examples above&lt;/p&gt;
-&lt;h4&gt;Exceptions Test&lt;/h4&gt;
+&lt;h4 id="exceptions-test"&gt;Exceptions Test&lt;/h4&gt;
 &lt;p&gt;You can test the code &lt;em&gt;whether code throws desired exception or not&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;The &lt;strong&gt;expected&lt;/strong&gt; parameter is used along with @Test annotation.&lt;/p&gt;
-&lt;h5&gt;Step 1: Create a Message Class&lt;/h5&gt;
+&lt;h5 id="step-1-create-a-message-class_3"&gt;Step 1: Create a Message Class&lt;/h5&gt;
 &lt;p&gt;Same as example above.&lt;/p&gt;
-&lt;h5&gt;Step 2: Create Test Class with Exception Setting&lt;/h5&gt;
+&lt;h5 id="step-2-create-test-class-with-exception-setting"&gt;Step 2: Create Test Class with Exception Setting&lt;/h5&gt;
 &lt;p&gt;Example code from Tutorialspoint.com:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.junit.Test&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.junit.Ignore&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -1144,9 +1144,9 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;Step 3: Create Test Runner Class&lt;/h5&gt;
+&lt;h5 id="step-3-create-test-runner-class_1"&gt;Step 3: Create Test Runner Class&lt;/h5&gt;
 &lt;p&gt;Same regular Test Runner class as examples above&lt;/p&gt;
-&lt;h4&gt;Parameterized Test&lt;/h4&gt;
+&lt;h4 id="parameterized-test"&gt;Parameterized Test&lt;/h4&gt;
 &lt;p&gt;Parameterized tests allow developer to &lt;em&gt;run the same test over and over again using different values&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Five steps to follow for parameterized test:&lt;/p&gt;
 &lt;ol&gt;
@@ -1167,7 +1167,7 @@
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;The test case will be invoked once per each row of data.&lt;/p&gt;
-&lt;h5&gt;Step 1: Create a Business Logic class with Methods for Testing&lt;/h5&gt;
+&lt;h5 id="step-1-create-a-business-logic-class-with-methods-for-testing"&gt;Step 1: Create a Business Logic class with Methods for Testing&lt;/h5&gt;
 &lt;p&gt;Exmaple code from Tutorialspoint.com:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;PrimeNumberChecker&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
    &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="n"&gt;Boolean&lt;/span&gt; &lt;span class="nf"&gt;validate&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;final&lt;/span&gt; &lt;span class="n"&gt;Integer&lt;/span&gt; &lt;span class="n"&gt;primeNumber&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
@@ -1182,7 +1182,7 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;Step 2: Create a Business Logic Parameterized Test Class&lt;/h5&gt;
+&lt;h5 id="step-2-create-a-business-logic-parameterized-test-class"&gt;Step 2: Create a Business Logic Parameterized Test Class&lt;/h5&gt;
 &lt;p&gt;Exmaple code from Tutorialspoint.com:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;java.util.Arrays&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;java.util.Collection&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
@@ -1232,5 +1232,5 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;Step 3: Create Test Runner Class&lt;/h5&gt;
+&lt;h5 id="step-3-create-test-runner-class_2"&gt;Step 3: Create Test Runner Class&lt;/h5&gt;
 &lt;p&gt;Same regular Test Runner class as examples above&lt;/p&gt;&lt;/div&gt;</description><category>Java</category><category>JUnit</category><category>Software Testing</category><guid>http://pengyin-shan.com/posts/2015/Java/junit-basics.html</guid><pubDate>Fri, 24 Jul 2015 07:00:00 GMT</pubDate></item></channel></rss>

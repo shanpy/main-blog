@@ -7,7 +7,7 @@ article: http://ogp.me/ns/article#
 <meta charset="utf-8">
 <meta name="description" content="This post contains the knowledge I just learned about hashCode().">
 <meta name="viewport" content="width=device-width">
-<title>Java Knowledge: HashCode | I'm Pengyin</title>
+<title>Java Knowledge: HashCode | I'm Pengyin (Wendy)</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2015/Java/java-knowledge-hashcode.html">
@@ -26,7 +26,7 @@ MathJax.Hub.Config({
     }
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
-<meta property="og:site_name" content="I'm Pengyin">
+<meta property="og:site_name" content="I'm Pengyin (Wendy)">
 <meta property="og:title" content="Java Knowledge: HashCode">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2015/Java/java-knowledge-hashcode.html">
 <meta property="og:description" content="This post contains the knowledge I just learned about hashCode().">
@@ -70,7 +70,7 @@ MathJax.Hub.Config({
 <p>I found very useful posts: <a href="http://tutorials.jenkov.com/java-collections/hashcode-equals.html">Java Collections - hasCode() and equals()</a>, and <a href="http://eclipsesource.com/blogs/2012/09/04/the-3-things-you-should-know-about-hashcode/">The 3 things you should know about hashCode()</a>.</p>
 <p>Also refer to <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html#hashCode()">Oracle API</a> for <code>hashCode()</code>.</p>
 <p><strong>Try to avoid change hashCode() unless you are writing hash-related application.</strong></p>
-<h4>Basic Usage</h4>
+<h4 id="basic-usage">Basic Usage</h4>
 <p>When you insert <strong>objects</strong> to <code>HashTable</code>, <code>HashMap</code> or <code>HashSet</code>, <code>hashCode()</code> is called, together with <code>equal()</code>. For example, in <code>hashMap.put("A",a);</code>, both <code>equal()</code> and <code>hasCode()</code> are called.</p>
 <p>To insert stuff to hash table, you need a hascode to calculate the key for this object. Later you will need hashCode to search the object: hash code <strong>pointing to some area, where you may found the key.</strong></p>
 <p>From Oracle API, <code>hashCode</code> returns a hash code, which is a <code>int</code> value for the object.</p>
@@ -94,7 +94,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h4>Important Notes</h4>
+<h4 id="important-notes">Important Notes</h4>
 <p>If two objects are equal, based on <code>equal()</code>, they must also have the <strong>same hash code</strong>.</p>
 <p>If two objects have the same hash code, they <strong>may not be equal</strong>.</p>
 <p>Above means two different objects can pointing to the same grid in a hash code grid table.</p>
@@ -133,7 +133,7 @@ MathJax.Hub.Config({
 
 
     </div>
-                     <footer id="footer"><p>Contents © 2018         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                     <footer id="footer"><p>Contents © 2018         <a href="mailto:pengyin.shan@outlook.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

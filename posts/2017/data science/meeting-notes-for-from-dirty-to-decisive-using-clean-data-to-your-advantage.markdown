@@ -6,6 +6,8 @@
 .. authors: Pengyin Shan
 .. description: I attended USGWeb 2017 and found the presentation 'From Dirty to Decisive: Using Clean Data to Your Advantage', presented by Mr. Johann Lohrmann being very useful for opening my mind of starting projects with massive data sets, so I wrote this post as a record of his presentation.
 
+[TOC]
+
 #Solution for Making Decision based on Large Set of Data
 
 ##How Data Impacts Decision

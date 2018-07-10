@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>I'm Pengyin (Posts about Recursion)</title><link>http://pengyin-shan.com/</link><description></description><atom:link href="http://pengyin-shan.com/categories/recursion.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 06 Jul 2018 17:48:41 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Algorithm and Data Structure Basics - Recursion</title><link>http://pengyin-shan.com/posts/2015/Algorithm%20Data%20Structure/algorithm-and-data-structure-basics-recursion.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h4&gt;Reference List&lt;/h4&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>I'm Pengyin (Posts about Recursion)</title><link>http://pengyin-shan.com/</link><description></description><atom:link type="application/rss+xml" rel="self" href="http://pengyin-shan.com/categories/recursion.xml"></atom:link><language>en</language><lastBuildDate>Tue, 10 Jul 2018 14:56:11 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Algorithm and Data Structure Basics - Recursion</title><link>http://pengyin-shan.com/posts/2015/Algorithm%20Data%20Structure/algorithm-and-data-structure-basics-recursion.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h4 id="reference-list"&gt;Reference List&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href="http://www.nowamagic.net/librarys/veda/detail/2314"&gt;Understand Recursion (Chinese)&lt;/a&gt;&lt;/p&gt;
@@ -8,7 +8,7 @@
 &lt;p&gt;&lt;a href="http://blog.csdn.net/wangjinyu501/article/details/8248492"&gt;Recursion (Chinese)&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4&gt;Common Model of Recursion&lt;/h4&gt;
+&lt;h4 id="common-model-of-recursion"&gt;Common Model of Recursion&lt;/h4&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;Obj&lt;/span&gt; &lt;span class="nf"&gt;recursion&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Obj&lt;/span&gt; &lt;span class="n"&gt;o&lt;/span&gt;&lt;span class="o"&gt;){&lt;/span&gt;
     &lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;baseCondition&lt;/span&gt;&lt;span class="o"&gt;){&lt;/span&gt;
         &lt;span class="cm"&gt;/*&lt;/span&gt;
@@ -24,10 +24,10 @@
 
 
 &lt;p&gt;&lt;em&gt;If there are other expression before or after recursion call, make sure you run it after each call back, because these expressions are part of method, and you want to call the full method for each recursion. Check "Hanoi" example below for detail.&lt;/em&gt;&lt;/p&gt;
-&lt;h4&gt;Problem in Recursion&lt;/h4&gt;
+&lt;h4 id="problem-in-recursion"&gt;Problem in Recursion&lt;/h4&gt;
 &lt;p&gt;Since system using &lt;strong&gt;stack&lt;/strong&gt; to save return values from each callback, it's really easy to get memory overflow problem.&lt;/p&gt;
-&lt;h4&gt;Hanoi&lt;/h4&gt;
-&lt;h5&gt;Rule&lt;/h5&gt;
+&lt;h4 id="hanoi"&gt;Hanoi&lt;/h4&gt;
+&lt;h5 id="rule"&gt;Rule&lt;/h5&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Move plate when number of plate is &lt;code&gt;1&lt;/code&gt; (In code below, we want to printout basic value);&lt;/p&gt;
@@ -36,7 +36,7 @@
 &lt;p&gt;If number of plates on a tower is more than &lt;code&gt;1&lt;/code&gt; (assume &lt;code&gt;n&lt;/code&gt;), move first &lt;code&gt;n-1&lt;/code&gt; plate, then move the bottom plate.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h5&gt;Code&lt;/h5&gt;
+&lt;h5 id="code"&gt;Code&lt;/h5&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cm"&gt;/**&lt;/span&gt;
 &lt;span class="cm"&gt;Result:&lt;/span&gt;
 &lt;span class="cm"&gt;    Dist 1 from A  to C&lt;/span&gt;
@@ -73,8 +73,8 @@
 
 &lt;p&gt;To make code looks clear, I draw a draft of the sequence of recursion call for the code above. Note the purpose numbers are the sequence of call:&lt;/p&gt;
 &lt;p&gt;../images/articles/2015/algorithm/hanoi_graph.png &lt;/p&gt;
-&lt;h4&gt;Merge Sort&lt;/h4&gt;
-&lt;h5&gt;Code&lt;/h5&gt;
+&lt;h4 id="merge-sort"&gt;Merge Sort&lt;/h4&gt;
+&lt;h5 id="code_1"&gt;Code&lt;/h5&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cm"&gt;/*&lt;/span&gt;
 &lt;span class="cm"&gt;Output:&lt;/span&gt;
 &lt;span class="cm"&gt;72 90 45 126 54&lt;/span&gt;
@@ -162,7 +162,7 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Binary Search&lt;/h4&gt;
+&lt;h4 id="binary-search"&gt;Binary Search&lt;/h4&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cm"&gt;/**&lt;/span&gt;
 &lt;span class="cm"&gt;Output:&lt;/span&gt;
 &lt;span class="cm"&gt;    45 54 72 90 126&lt;/span&gt;
@@ -246,8 +246,8 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Word Recursion (Anagram)&lt;/h4&gt;
-&lt;h5&gt;Idea&lt;/h5&gt;
+&lt;h4 id="word-recursion-anagram"&gt;Word Recursion (Anagram)&lt;/h4&gt;
+&lt;h5 id="idea"&gt;Idea&lt;/h5&gt;
 &lt;p&gt;Assume a word has &lt;code&gt;n&lt;/code&gt; letters:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -260,7 +260,7 @@
 &lt;p&gt;Do two steps above &lt;code&gt;n&lt;/code&gt; times&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h5&gt;Code&lt;/h5&gt;
+&lt;h5 id="code_2"&gt;Code&lt;/h5&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cm"&gt;/**&lt;/span&gt;
 &lt;span class="cm"&gt;If you input 'test', you will get:&lt;/span&gt;
 &lt;span class="cm"&gt;  1 test&lt;/span&gt;
@@ -348,8 +348,8 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Height of B-Tree&lt;/h4&gt;
-&lt;h5&gt;Code&lt;/h5&gt;
+&lt;h4 id="height-of-b-tree"&gt;Height of B-Tree&lt;/h4&gt;
+&lt;h5 id="code_3"&gt;Code&lt;/h5&gt;
 &lt;p&gt;This is my code from hankerrank.com:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;    &lt;span class="cm"&gt;/*&lt;/span&gt;
 &lt;span class="cm"&gt;    class Node&lt;/span&gt;
@@ -371,7 +371,7 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Decide if B-Tree is Balanced&lt;/h4&gt;
+&lt;h4 id="decide-if-b-tree-is-balanced"&gt;Decide if B-Tree is Balanced&lt;/h4&gt;
 &lt;p&gt;Following method is taken from &lt;a href="http://www.nowamagic.net/librarys/veda/detail/2314"&gt;this post&lt;/a&gt;:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cm"&gt;/*&lt;/span&gt;
 &lt;span class="cm"&gt;class Node&lt;/span&gt;

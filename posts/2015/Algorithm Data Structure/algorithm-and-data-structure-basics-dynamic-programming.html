@@ -7,7 +7,7 @@ article: http://ogp.me/ns/article#
 <meta charset="utf-8">
 <meta name="description" content="I wrote this post to record some basic knowledge about dynamic programming algorithm for future reference. Code is written mainly in Java.">
 <meta name="viewport" content="width=device-width">
-<title>Algorithm and Data Structure Basics - Dynamic Programming | I'm Pengyin</title>
+<title>Algorithm and Data Structure Basics - Dynamic Programming | I'm Pengyin (Wendy)</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2015/Algorithm%20Data%20Structure/algorithm-and-data-structure-basics-dynamic-programming.html">
@@ -26,7 +26,7 @@ MathJax.Hub.Config({
     }
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
-<meta property="og:site_name" content="I'm Pengyin">
+<meta property="og:site_name" content="I'm Pengyin (Wendy)">
 <meta property="og:title" content="Algorithm and Data Structure Basics - Dynamic Programming">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2015/Algorithm%20Data%20Structure/algorithm-and-data-structure-basics-dynamic-programming.html">
 <meta property="og:description" content="I wrote this post to record some basic knowledge about dynamic programming algorithm for future reference. Code is written mainly in Java.">
@@ -72,7 +72,7 @@ MathJax.Hub.Config({
         </div>
         <div class="body">
             <div>
-<h4>Reference List</h4>
+<h4 id="reference-list">Reference List</h4>
 <ul>
 <li>
 <p><a href="http://www.th7.cn/Program/java/2011-07-07/29801.shtml">Dynamic Programming (Chinese)</a></p>
@@ -87,12 +87,12 @@ MathJax.Hub.Config({
 <p><a href="http://www.programcreek.com/2013/02/leetcode-maximum-subarray-java/">LeetCode - Maximum Subarray (Java)</a></p>
 </li>
 </ul>
-<h4>Basic Idea</h4>
+<h4 id="basic-idea">Basic Idea</h4>
 <p><strong>Dynamic Programming (DP)</strong> is used to get the <strong>best result</strong> in the process of making decisions. It is for a problem with <strong>multiple stages</strong> of decision making.</p>
 <p>For one problem, A decision of <strong>best solution</strong> may depend on the best solutions in smaller problems.</p>
 <p>In this case, DP suggests to get the best solution for <strong>all</strong> small stages <strong>only once</strong>, and <strong>store</strong> these solutions, no matter if they'll be useful in the future or not.</p>
 <p>Finally, user can combine small best solutions to get the final solution. <em>Never repeat the process of getting same small solution.</em></p>
-<h5>Four Steps of Dynamic Programming</h5>
+<h5 id="four-steps-of-dynamic-programming">Four Steps of Dynamic Programming</h5>
 <ol>
 <li>
 <p>Describe the structure of the best solution.</p>
@@ -107,12 +107,12 @@ MathJax.Hub.Config({
 <p>Combine all results to get the final solution</p>
 </li>
 </ol>
-<h4>Longest Common Sequence, LCS</h4>
+<h4 id="longest-common-sequence-lcs">Longest Common Sequence, LCS</h4>
 <blockquote>
 <p>Assume you have two strings. Output their longest common sub-string. Sub-string has two cases: continuous from origin string or non-continuous from original string.
 For example, you have two string: <code>BDCABA</code> and <code>ABCBDAB</code>. You can output BCBA or BDAB for non-continuous longest sub-string, with length of 4.</p>
 </blockquote>
-<h5>Idea</h5>
+<h5 id="idea">Idea</h5>
 <p>Assume we have two input strings: <code>A="a0,a1,...,am-1"</code>, <code>B="b0,b1,...bn-1"</code>.</p>
 <p>Assume we have a LCS <code>Z="z0,z1,...zk-1"</code>.</p>
 <p>There are three possibilities for this assumption:</p>
@@ -128,7 +128,7 @@ For example, you have two string: <code>BDCABA</code> and <code>ABCBDAB</code>. 
 </li>
 </ol>
 <p>Based on rules above, we can divide this problem to many smaller problem. For example, if we want to get LCS for <code>a0,a1,...am-2</code> and <code>b0,b1,...bn-2</code>, then we need to apply rules above to get <code>z0,z1z...zk-3</code> for <code>a0,a1,...am-3</code> and <code>b0,b1,...bn-3</code>, assuming <code>am-2 = bm-2</code>.</p>
-<h5>Create Array to Store Solutions</h5>
+<h5 id="create-array-to-store-solutions">Create Array to Store Solutions</h5>
 <p>We want to create a two-dimensional array <code>c[i][j]</code>. It is used to record the length of LCS for <code>X[i]</code> and <code>Y[j]</code>.</p>
 <blockquote>
 <p>Since we are calculating <strong>from bottom to top</strong>, we already get <code>c[i-1][j-1]</code>, <code>c[i-1][j]</code> and <code>c[i][j-1]</code> before we get <code>c[i][j]</code>. Since we can know if <code>X[i]=Y[j]</code> or not, we can calculate the value of <code>c[i][j]</code> based on three rules above.</p>
@@ -140,7 +140,7 @@ For example, you have two string: <code>BDCABA</code> and <code>ABCBDAB</code>. 
 <blockquote>
 <p>You may notice only when we move to left-top direction, we can find a character for LCS. So we need to create another two-dimensional array to record moving direction</p>
 </blockquote>
-<h5>Code for Non-continuous LCS</h5>
+<h5 id="code-for-non-continuous-lcs">Code for Non-continuous LCS</h5>
 <p>Following code is from <a href="http://blog.sina.com.cn/s/blog_5d4646fd0100qitg.html">this post</a>, written by <em>BirdMan</em>:</p>
 <pre class="code literal-block"><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">LCS</span><span class="o">{</span>
 
@@ -200,7 +200,7 @@ For example, you have two string: <code>BDCABA</code> and <code>ABCBDAB</code>. 
 
 
 <p>}</p>
-<h4>Maximum Subarray</h4>
+<h4 id="maximum-subarray">Maximum Subarray</h4>
 <p>I learned this problem main from <a href="http://www.programcreek.com/2013/02/leetcode-maximum-subarray-java/">LeetCode - Maximum Subarray (Java)</a>.</p>
 <blockquote>
 <p>You have a array of integers(may include negative number). You want to find a continuous subarray so that the sum of subarray is maximized. For example, assume you have <code>{-12, 1, -3, 4, -1, 2, 1, -5, 4}</code>. The maximum subarray is <code>6</code>.</p>
@@ -337,11 +337,11 @@ For example, you have two string: <code>BDCABA</code> and <code>ABCBDAB</code>. 
 <blockquote>
 <p>My current problem is both methods above has time complexity of O(n), which is not very efficient if there exists lot of numbers. Is there any way to improve it?</p>
 </blockquote>
-<h4>Stock Problem</h4>
+<h4 id="stock-problem">Stock Problem</h4>
 <p><em>This problem can be done by DP or Non-DP method.</em></p>
 <p>Stock problem can be concluded to a <strong>finding maximum sum of array elements' differences</strong>, with different constrains.</p>
 <p>Following problems assume you cannot sell and buy stock on the same day:</p>
-<h5>What if you can sell/maintain/buy stocks with unlimited time?</h5>
+<h5 id="what-if-you-can-sellmaintainbuy-stocks-with-unlimited-time">What if you can sell/maintain/buy stocks with unlimited time?</h5>
 <p>I met this problem on <a href="https://www.hackerrank.com/challenges/stockmax">hackerank.com</a>. In this problem, you can only buy one stock once per day, but you can choose to sell all your current stocks in one day.</p>
 <p>So far I figured a solution with <code>O(n)</code> runtime complexity:</p>
 <pre class="code literal-block"><span></span><span class="cm">/*</span>
@@ -416,7 +416,7 @@ For example, you have two string: <code>BDCABA</code> and <code>ABCBDAB</code>. 
 </pre>
 
 
-<h5>What if you can only buy stock once and sell stock once?</h5>
+<h5 id="what-if-you-can-only-buy-stock-once-and-sell-stock-once">What if you can only buy stock once and sell stock once?</h5>
 <p>Then the problem is turning to <em>finding out the largest different between two elements in array</em>. i.e.Find smallest and largest elements in array, while smallest element should in the front of the largest element. Following is my code:</p>
 <pre class="code literal-block"><span></span><span class="kd">static</span> <span class="kt">int</span> <span class="nf">countStock</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">a</span><span class="o">){</span>
     <span class="kt">int</span> <span class="n">smallest</span> <span class="o">=</span> <span class="n">a</span><span class="o">[</span><span class="mi">0</span><span class="o">];</span>
@@ -449,7 +449,7 @@ For example, you have two string: <code>BDCABA</code> and <code>ABCBDAB</code>. 
 </pre>
 
 
-<h5>What if you can only trade stock with a maximum of n times?</h5>
+<h5 id="what-if-you-can-only-trade-stock-with-a-maximum-of-n-times">What if you can only trade stock with a maximum of n times?</h5>
 <p>My idea is that we can use same idea as the first stock problem (2 pointers). Since we can only count <code>n</code> times of benefits, we can store all benefits in a sorted array (in descending order), then get the sum of first <code>n</code> elements.</p>
 <pre class="code literal-block"><span></span> <span class="c1">//O(mn): m is the size of input array, n is the size of times</span>
  <span class="kd">static</span> <span class="kt">int</span> <span class="nf">countStockNTimes</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">a</span><span class="o">,</span> <span class="kt">int</span> <span class="n">n</span><span class="o">){</span>
@@ -512,7 +512,7 @@ For example, you have two string: <code>BDCABA</code> and <code>ABCBDAB</code>. 
 
 
     </div>
-                     <footer id="footer"><p>Contents © 2018         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                     <footer id="footer"><p>Contents © 2018         <a href="mailto:pengyin.shan@outlook.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

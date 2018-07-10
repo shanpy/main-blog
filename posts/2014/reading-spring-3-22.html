@@ -7,7 +7,7 @@ article: http://ogp.me/ns/article#
 <meta charset="utf-8">
 <meta name="description" content="Reading Notes for Spring 3 Core Components Tutorial Part VI (Chapter 22)">
 <meta name="viewport" content="width=device-width">
-<title>Reading Notes for Spring 3 Core Components Tutorial Part VI (Chapter 22) | I'm Pengyin</title>
+<title>Reading Notes for Spring 3 Core Components Tutorial Part VI (Chapter 22) | I'm Pengyin (Wendy)</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2014/reading-spring-3-22.html">
@@ -26,7 +26,7 @@ MathJax.Hub.Config({
     }
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
-<meta property="og:site_name" content="I'm Pengyin">
+<meta property="og:site_name" content="I'm Pengyin (Wendy)">
 <meta property="og:title" content="Reading Notes for Spring 3 Core Components Tutorial Part VI (Chapter 2">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2014/reading-spring-3-22.html">
 <meta property="og:description" content="Reading Notes for Spring 3 Core Components Tutorial Part VI (Chapter 22)">
@@ -69,10 +69,10 @@ MathJax.Hub.Config({
 <p>This post is transferred from my <a href="http://blogpengyin.herokuapp.com/">old Hexo blog site</a>, created on 2014.</p>
 <p>This is a reading note from Spring Framework 3.1 Tutorial pdf, created by <a href="http://www.tutorialspoint.com/spring"><strong>tutorialspoint</strong></a>. This pdf contains information for Spring 3 Core Basics, which is very useful for understanding defination and practive in Spring programming.</p>
 <p>This note includes Chapter 22 in tutorial.</p>
-<h2>Spring Web MVC Framework</h2>
-<h3>The Dispacher Servlet</h3>
+<h2 id="spring-web-mvc-framework">Spring Web MVC Framework</h2>
+<h3 id="the-dispacher-servlet">The Dispacher Servlet</h3>
 <p>images/posts/dispatcher_servlet.png </p>
-<h3>Required Configuration</h3>
+<h3 id="required-configuration">Required Configuration</h3>
 <p>XML:</p>
 <pre class="code literal-block"><span></span><span class="c">&lt;!--First: You set up dispacher servlet in web.xml--&gt;</span>
 <span class="nt">&lt;web-app</span> <span class="na">id=</span><span class="s">"testWebApp"</span><span class="nt">&gt;</span>
@@ -115,7 +115,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h3>Controller</h3>
+<h3 id="controller">Controller</h3>
 <p>You need <code>@Controller</code> annotation to make a controller class, and use <code>@RequestMapping</code> to get path and define type of request.</p>
 <p>Example:</p>
 <pre class="code literal-block"><span></span><span class="nd">@Controller</span>
@@ -129,7 +129,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h3>Form Submmision Example</h3>
+<h3 id="form-submmision-example">Form Submmision Example</h3>
 <p>HTML:</p>
 <pre class="code literal-block"><span></span><span class="p">&lt;</span><span class="nt">form:form</span> <span class="na">method</span><span class="o">=</span><span class="s">"POST"</span> <span class="na">action</span><span class="o">=</span><span class="s">"/HelloWorld/Student"</span> <span class="na">modelAttribute</span><span class="o">=</span><span class="s">"Person"</span><span class="p">&gt;</span>
 <span class="c">&lt;!--You can also do action="addStudent", which is corresponding controller--&gt;</span>
@@ -209,7 +209,7 @@ MathJax.Hub.Config({
 
 
     </div>
-                     <footer id="footer"><p>Contents © 2018         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                     <footer id="footer"><p>Contents © 2018         <a href="mailto:pengyin.shan@outlook.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

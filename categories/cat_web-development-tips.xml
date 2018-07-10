@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>I'm Pengyin (Posts about Web Development Tips)</title><link>http://pengyin-shan.com/</link><description></description><atom:link href="http://pengyin-shan.com/categories/cat_web-development-tips.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 06 Jul 2018 17:48:41 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Regular Expression</title><link>http://pengyin-shan.com/posts/2015/Web%20Development%20Tips/regular-expression.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;A JavaScript Regex Cheatsheet &lt;a href="https://www.debuggex.com/cheatsheet/regex/javascript"&gt;online&lt;/a&gt;.&lt;/p&gt;
-&lt;h3&gt;JavaScript Regular Expression&lt;/h3&gt;
-&lt;h4&gt;Method&lt;/h4&gt;
-&lt;h5&gt;search&lt;/h5&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>I'm Pengyin (Posts about Web Development Tips)</title><link>http://pengyin-shan.com/</link><description></description><atom:link type="application/rss+xml" rel="self" href="http://pengyin-shan.com/categories/cat_web-development-tips.xml"></atom:link><language>en</language><lastBuildDate>Tue, 10 Jul 2018 14:56:07 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Regular Expression</title><link>http://pengyin-shan.com/posts/2015/Web%20Development%20Tips/regular-expression.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;A JavaScript Regex Cheatsheet &lt;a href="https://www.debuggex.com/cheatsheet/regex/javascript"&gt;online&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id="javascript-regular-expression"&gt;JavaScript Regular Expression&lt;/h3&gt;
+&lt;h4 id="method"&gt;Method&lt;/h4&gt;
+&lt;h5 id="search"&gt;search&lt;/h5&gt;
 &lt;p&gt;&lt;code&gt;search()&lt;/code&gt; uses an expression to search for a match, and returns the position of the match. Return &lt;code&gt;-1&lt;/code&gt; if regular expression not match:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;str&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;"test"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;n&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;str&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;search&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sr"&gt;/^(test)+$/i&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;//n=0&lt;/span&gt;
 &lt;/pre&gt;
 
 
-&lt;h5&gt;replace&lt;/h5&gt;
+&lt;h5 id="replace"&gt;replace&lt;/h5&gt;
 &lt;p&gt;&lt;code&gt;replace&lt;/code&gt;: search pattern and replace it&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;str&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;"test"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;res&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;str&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;replace&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sr"&gt;/test/i&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;"new-test"&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 &lt;/pre&gt;
 
 
-&lt;h5&gt;test&lt;/h5&gt;
+&lt;h5 id="test"&gt;test&lt;/h5&gt;
 &lt;p&gt;&lt;code&gt;test()&lt;/code&gt; searches a string for a pattern, and returns &lt;code&gt;true&lt;/code&gt; or &lt;code&gt;false&lt;/code&gt;, depending on the result.&lt;/p&gt;
 &lt;p&gt;Example code from w3cschool:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;patt&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="sr"&gt;/e/&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
@@ -24,14 +24,14 @@
 &lt;/pre&gt;
 
 
-&lt;h5&gt;exec&lt;/h5&gt;
+&lt;h5 id="exec"&gt;exec&lt;/h5&gt;
 &lt;p&gt;&lt;code&gt;exec()&lt;/code&gt; searches a string for a specified pattern, and returns &lt;strong&gt;the found text&lt;/strong&gt;. If nothing is founded, return &lt;code&gt;null&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Example code from w3cschool:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="sr"&gt;/e/&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;exec&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"The best things in life are free!"&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;//e&lt;/span&gt;
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Modifiers&lt;/h4&gt;
+&lt;h4 id="modifiers"&gt;Modifiers&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;i&lt;/code&gt;: Perform case-insensitive matching&lt;/p&gt;
@@ -43,13 +43,13 @@
 &lt;p&gt;&lt;code&gt;m&lt;/code&gt;: Perform a mutiline matching&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4&gt;Escape&lt;/h4&gt;
+&lt;h4 id="escape"&gt;Escape&lt;/h4&gt;
 &lt;p&gt;Use &lt;code&gt;\&lt;/code&gt; to &lt;strong&gt;escape&lt;/strong&gt; to following items in regular expression: &lt;code&gt;^&lt;/code&gt;, &lt;code&gt;$&lt;/code&gt;, &lt;code&gt;.&lt;/code&gt;, &lt;code&gt;*&lt;/code&gt;, &lt;code&gt;+&lt;/code&gt;, &lt;code&gt;?&lt;/code&gt;, &lt;code&gt;=&lt;/code&gt;, &lt;code&gt;!&lt;/code&gt;, &lt;code&gt;:&lt;/code&gt;, &lt;code&gt;|&lt;/code&gt;, &lt;code&gt;\&lt;/code&gt;, &lt;code&gt;/&lt;/code&gt;, &lt;code&gt;(&lt;/code&gt;, &lt;code&gt;)&lt;/code&gt;, &lt;code&gt;[&lt;/code&gt;, &lt;code&gt;]&lt;/code&gt;, &lt;code&gt;{&lt;/code&gt;, &lt;code&gt;}&lt;/code&gt;&lt;/p&gt;
-&lt;h4&gt;OR&lt;/h4&gt;
+&lt;h4 id="or"&gt;OR&lt;/h4&gt;
 &lt;p&gt;&lt;code&gt;[]&lt;/code&gt;: &lt;code&gt;/[abc]/&lt;/code&gt; means &lt;code&gt;a&lt;/code&gt; or &lt;code&gt;b&lt;/code&gt; or &lt;code&gt;c&lt;/code&gt;&lt;/p&gt;
-&lt;h4&gt;Except&lt;/h4&gt;
+&lt;h4 id="except"&gt;Except&lt;/h4&gt;
 &lt;p&gt;&lt;code&gt;[^]&lt;/code&gt;: &lt;code&gt;/[^abc]/&lt;/code&gt; anything except &lt;code&gt;a&lt;/code&gt; or &lt;code&gt;b&lt;/code&gt; or &lt;code&gt;c&lt;/code&gt;&lt;/p&gt;
-&lt;h4&gt;Character&lt;/h4&gt;
+&lt;h4 id="character"&gt;Character&lt;/h4&gt;
 &lt;p&gt;&lt;code&gt;.&lt;/code&gt;: any single character &lt;em&gt;except next-line and white-space&lt;/em&gt;. i.e. &lt;code&gt;[^\n\r]&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;\w&lt;/code&gt;: any ASCII single character. i.e. &lt;code&gt;[a-zA-Z0-9]&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;\W&lt;/code&gt;: any non-ASCII single character. i.e. &lt;code&gt;[^a-zA-Z0-9]&lt;/code&gt;&lt;/p&gt;
@@ -57,13 +57,13 @@
 &lt;p&gt;&lt;code&gt;\D&lt;/code&gt;: any non-digital single character. i.e.e &lt;code&gt;[^0-9]&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;\s&lt;/code&gt;: white-space&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;\S&lt;/code&gt;: non-white-space&lt;/p&gt;
-&lt;h4&gt;Meta Character&lt;/h4&gt;
+&lt;h4 id="meta-character"&gt;Meta Character&lt;/h4&gt;
 &lt;p&gt;&lt;code&gt;\r&lt;/code&gt;: Assume you hit &lt;code&gt;Enter&lt;/code&gt; key&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;\t&lt;/code&gt;: Tab&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;\n&lt;/code&gt;: change new line&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;\f&lt;/code&gt;: change page&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;\0&lt;/code&gt;: empty character&lt;/p&gt;
-&lt;h4&gt;Repeat&lt;/h4&gt;
+&lt;h4 id="repeat"&gt;Repeat&lt;/h4&gt;
 &lt;p&gt;&lt;code&gt;{min, max}&lt;/code&gt;: Repeat from min times to max times. Example: &lt;code&gt;/[test]{4,6}/&lt;/code&gt; means 't' or &lt;code&gt;e&lt;/code&gt; or &lt;code&gt;s&lt;/code&gt; or &lt;code&gt;t&lt;/code&gt; should be repeated at least 4 times and as most 6 times.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;{min,}&lt;/code&gt; or &lt;code&gt;{,max}&lt;/code&gt;: Repeat at least &lt;code&gt;min&lt;/code&gt; or at most &lt;code&gt;max&lt;/code&gt; times. Example: &lt;code&gt;/[test]{4,}&lt;/code&gt; means 't' or &lt;code&gt;e&lt;/code&gt; or &lt;code&gt;s&lt;/code&gt; or &lt;code&gt;t&lt;/code&gt; should be repeated at least 4 times. No maximum times.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;{n}&lt;/code&gt;: Repeat exactly n times.&lt;/p&gt;
@@ -79,7 +79,7 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Group and Border&lt;/h4&gt;
+&lt;h4 id="group-and-border"&gt;Group and Border&lt;/h4&gt;
 &lt;p&gt;&lt;code&gt;^&lt;/code&gt;: Mark start point&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;$&lt;/code&gt;: Mark end point&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;\b&lt;/code&gt;: all characters except &lt;code&gt;[a-zA-Z0-9]&lt;/code&gt;&lt;/p&gt;
@@ -93,7 +93,7 @@
 &lt;p&gt;&lt;code&gt;\B&lt;/code&gt;: opposite from above&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;()&lt;/code&gt;: AND. Example: &lt;code&gt;/(abc)+/&lt;/code&gt; means &lt;code&gt;abc&lt;/code&gt; or &lt;code&gt;abcabc&lt;/code&gt; or more.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;|&lt;/code&gt;: OR. Example: &lt;code&gt;/a|b/&lt;/code&gt; means &lt;code&gt;a&lt;/code&gt; or &lt;code&gt;b&lt;/code&gt;&lt;/p&gt;
-&lt;h4&gt;Frequently Used Regular Expressions&lt;/h4&gt;
+&lt;h4 id="frequently-used-regular-expressions"&gt;Frequently Used Regular Expressions&lt;/h4&gt;
 &lt;p&gt;Examples below are taken from &lt;a href="http://kb.cnblogs.com/page/80965/"&gt;this post&lt;/a&gt;:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -150,9 +150,9 @@
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;HTML Tag&lt;/strong&gt;: &lt;code&gt;&amp;lt;\s*(\S+)(\s[^&amp;gt;]*)?&amp;gt;(.*?)&amp;lt;\s*\/\1\s*&amp;gt;&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;</description><category>JavaScript</category><guid>http://pengyin-shan.com/posts/2015/Web%20Development%20Tips/regular-expression.html</guid><pubDate>Thu, 20 Aug 2015 07:00:00 GMT</pubDate></item><item><title>Setting up RoR/Hydra Environment - Problems and Solutions</title><link>http://pengyin-shan.com/posts/2015/Web%20Development%20Tips/setting-up-ror-hydra-environment-problems-and-solutions.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3&gt;Ubuntu 15.10&lt;/h3&gt;
+&lt;/ul&gt;&lt;/div&gt;</description><category>JavaScript</category><guid>http://pengyin-shan.com/posts/2015/Web%20Development%20Tips/regular-expression.html</guid><pubDate>Thu, 20 Aug 2015 07:00:00 GMT</pubDate></item><item><title>Setting up RoR/Hydra Environment - Problems and Solutions</title><link>http://pengyin-shan.com/posts/2015/Web%20Development%20Tips/setting-up-ror-hydra-environment-problems-and-solutions.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3 id="ubuntu-1510"&gt;Ubuntu 15.10&lt;/h3&gt;
 &lt;p&gt;If you want to setup your RoR environment on Ubuntu 14/15, &lt;a href="https://gorails.com/setup/ubuntu/15.04"&gt;this post&lt;/a&gt; is the best choice for you. I used &lt;code&gt;rvm&lt;/code&gt; to install Ruby on my two Ubuntu 15.10 machine, and it worked like a charm.&lt;/p&gt;
-&lt;h4&gt;Problem&lt;/h4&gt;
+&lt;h4 id="problem"&gt;Problem&lt;/h4&gt;
 &lt;p&gt;When I tried to run &lt;code&gt;\curl -L https://get.rvm.io | bash -s stable --ruby&lt;/code&gt; in terminal to install both RVM and Ruby, I got following error message:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nv"&gt;Error&lt;/span&gt; &lt;span class="s s-Atom"&gt;running&lt;/span&gt; &lt;span class="s s-Atom"&gt;'requirements_debian_update_system ruby-2.2.1'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
 &lt;span class="s s-Atom"&gt;showing&lt;/span&gt; &lt;span class="s s-Atom"&gt;last&lt;/span&gt; &lt;span class="mi"&gt;15&lt;/span&gt; &lt;span class="s s-Atom"&gt;lines&lt;/span&gt; &lt;span class="s s-Atom"&gt;of&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="s s-Atom"&gt;usr&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="s s-Atom"&gt;local&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="s s-Atom"&gt;rvm&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="s s-Atom"&gt;log&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;1439385591&lt;/span&gt;&lt;span class="k"&gt;_&lt;/span&gt;&lt;span class="s s-Atom"&gt;ruby&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;2.2.1&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="s s-Atom"&gt;update_system&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="s s-Atom"&gt;log&lt;/span&gt;
@@ -175,7 +175,7 @@
 
 
 &lt;p&gt;The reason of this error is because RVM will bring error if my Ubuntu machine's &lt;code&gt;apt-get update&lt;/code&gt; has error in it. I used to install Ninja-IDE through &lt;code&gt;apt-get&lt;/code&gt; and I had PPA error when I do &lt;code&gt;apt-get update&lt;/code&gt;. You can view &lt;a href="http://stackoverflow.com/questions/23650992/ruby-rvm-apt-get-update-error"&gt;this stackoverflow post&lt;/a&gt;.&lt;/p&gt;
-&lt;h4&gt;Solution&lt;/h4&gt;
+&lt;h4 id="solution"&gt;Solution&lt;/h4&gt;
 &lt;p&gt;A user &lt;strong&gt;Avinash Raj&lt;/strong&gt; posted a great solution in &lt;a href="http://askubuntu.com/questions/65911/how-can-i-fix-a-404-error-when-using-a-ppa-or-updating-my-package-lists"&gt;Ubuntu community&lt;/a&gt; for removing PPA with errors.&lt;/p&gt;
 &lt;p&gt;The detail of solution is: create a file called &lt;code&gt;ppa-remove&lt;/code&gt; (no &lt;code&gt;.sh&lt;/code&gt; extension) as following:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="ch"&gt;#!/bin/bash&lt;/span&gt;
@@ -199,9 +199,9 @@ tput sgr0
 
 &lt;p&gt;Run &lt;code&gt;sudo chmod +x ppa-remove&lt;/code&gt; after you create this file, then move this file to &lt;code&gt;/usr/bin&lt;/code&gt;. Run &lt;code&gt;sudo ppa-remove&lt;/code&gt;. Your PPA with errors will be removed and you can then re-run &lt;code&gt;\curl -L https://get.rvm.io | bash -s stable&lt;/code&gt; or &lt;code&gt;\curl -L https://get.rvm.io | bash -s stable --ruby&lt;/code&gt; to install RVM.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Note: Till Aug 2015, If you run &lt;code&gt;\curl -L https://get.rvm.io | bash -s stable --ruby&lt;/code&gt;, you will automatically get Ruby 2.2.1 installed. If you run &lt;code&gt;\curl -L https://get.rvm.io | bash -s stable&lt;/code&gt; then install Ruby, you can choose Ruby 2.2.2. These two versions do not have conflict.&lt;/em&gt;&lt;/p&gt;
-&lt;h3&gt;Mac OS Yoemite&lt;/h3&gt;
+&lt;h3 id="mac-os-yoemite"&gt;Mac OS Yoemite&lt;/h3&gt;
 &lt;p&gt;RoR installation process for Mac OS Yosemite is almost the same as Ubuntu. Make sure you have &lt;code&gt;xcode&lt;/code&gt; and &lt;code&gt;Homebrew&lt;/code&gt; installed first. This &lt;a href="http://railsapps.github.io/installrubyonrails-mac.html"&gt;post&lt;/a&gt; has very detailed description that you can follow.&lt;/p&gt;
-&lt;h3&gt;Project Hydra&lt;/h3&gt;
+&lt;h3 id="project-hydra"&gt;Project Hydra&lt;/h3&gt;
 &lt;p&gt;I had a &lt;a href="http://pengyin-shan.com/blog/dive-into-hydra-and-my-thoughts"&gt;post&lt;/a&gt; describing my thoughts about Hydra. In this post I will include detail of installation part.&lt;/p&gt;
 &lt;p&gt;After you finish RoR setting (make sure you have &lt;code&gt;Bundle&lt;/code&gt; installed by &lt;code&gt;RubyGem&lt;/code&gt;), you want to generate a basic rails app, then add &lt;code&gt;gem 'hydra', '9.1.0.rc1'&lt;/code&gt; to your &lt;code&gt;Gemfile&lt;/code&gt;. you can re-run &lt;code&gt;Bundle install&lt;/code&gt; to install all necessary ruby gems for Hydra.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -209,9 +209,9 @@ tput sgr0
 &lt;/blockquote&gt;
 &lt;p&gt;You can use same Gemfile to set up Hydra environment in different machines, but &lt;strong&gt;make sure you run &lt;code&gt;rake jetty:config&lt;/code&gt; and &lt;code&gt;rake db:migrate&lt;/code&gt;&lt;/strong&gt; to prevent possible problem.&lt;/p&gt;
 &lt;p&gt;You can run &lt;code&gt;Rails.env&lt;/code&gt; in rails console to check your current environment.&lt;/p&gt;
-&lt;h4&gt;Problem: Data Immigration for Existing Project&lt;/h4&gt;
+&lt;h4 id="problem-data-immigration-for-existing-project"&gt;Problem: Data Immigration for Existing Project&lt;/h4&gt;
 &lt;p&gt;How to transfer previous data (Fedora files, Solr documents and indexes) to your new environment?&lt;/p&gt;
-&lt;h4&gt;Solution&lt;/h4&gt;
+&lt;h4 id="solution_1"&gt;Solution&lt;/h4&gt;
 &lt;p&gt;Well, I'm working on solution now :) To figure out a way I did lots of experiments (and made a big mess) in my Hydra project. I started a new post about it &lt;a href="http://pengyin-shan.com/blog/play-with-hydra-data"&gt;here&lt;/a&gt;.&lt;/p&gt;&lt;/div&gt;</description><category>Hydra</category><category>Linux</category><category>Ruby on Rails</category><category>Ubuntu</category><guid>http://pengyin-shan.com/posts/2015/Web%20Development%20Tips/setting-up-ror-hydra-environment-problems-and-solutions.html</guid><pubDate>Wed, 12 Aug 2015 07:00:00 GMT</pubDate></item><item><title>The Benefit of Hosting Content Library with CDN</title><link>http://pengyin-shan.com/posts/2014/benefit-of-hosting-content-library-with-CDN.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;Dave Ward gave three reasons for host jQuery on Google: "&lt;strong&gt;decreased latency&lt;/strong&gt;", "&lt;strong&gt;increased parallelism&lt;/strong&gt;" and "&lt;strong&gt;better caching&lt;/strong&gt;"&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;decreased latency&lt;/strong&gt;, based on what I understand, is the distance between your server and users, comparing with the distance between CDN's servers and users. Since CDN is able to locate user's location, it can ask the server that is &lt;em&gt;closest&lt;/em&gt; to user to give response. For example, CDN may tell user to find server that it's only 1 mile from him. Your server, however, only stay in one place. This means the user on other side of earch needs to make a long request to your server here.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;increased parallelism&lt;/strong&gt;: Broswers all have limitation for how many connection can be established at the same time. When user send request to CDN instead to your server, CDN can move one connection from your server to its server, which means your server can deliver more information to user, using the connection gap created by CDN.&lt;/p&gt;

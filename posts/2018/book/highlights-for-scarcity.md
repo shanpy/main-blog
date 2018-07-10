@@ -6,6 +6,8 @@
 .. authors: Pengyin Shan
 .. description: My highlights for this great book to answer my question about deadline and time management
 
+[TOC]
+
 ## 第二部分 贫穷和忙碌是如何让“带宽”变窄的
 
 经济学家们称这种现象为`边际效用递减`，即你拥有的越多，对你而言，每一样额外增加的物品的价值就会越低。

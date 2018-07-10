@@ -9,22 +9,33 @@
 .. type: text
 -->
 
-<br/>
+***
 
-###Hello! My name is Pengyin Shan (单芃茵). 
-<br/>
-<p>
-This is my blog containing all my study materials: book highlights/notes, my thoughts in learning, or even my hand-writing study notes ;) 
-</p>
-<br/>
-<p>Materials include computer science, data science, math/statistics, economics/financial, career development, etc.
-</p>
-<br/> 
-<img src="/images/pengyin.JPG" style="margin-left: auto; margin-right: auto; display:block" width="80%"/>
-<br/>
-<p>I enjoy learning anything from anyone. I'm living in Vancouver, British Columbia, Canada.</p>
-<br/>
-<a href="/Pengyin Shan.pdf" target="_blank"> My Resume</a>
-
-
+<h2>Hello! My name is Pengyin(Wendy) Shan - 单芃茵</h2>
+<table style="overflow-x:auto;">
+    <tr>
+        <td style="vertical-align: top">
+            <p>
+                My blog contains all my study notes: 
+                <li>Book highlights</li>
+                <li>My thoughts in learning</li>
+                <li>My hand-writing notes</li>
+            </p>
+            <hr/>
+            <p>Materials include:
+                <li>CCareer development skills</li>
+                <li>computer science/data science</li>
+                <li>Math/statistics</li>
+                <li>Economics/finance</li>
+            </p>
+            <hr/>
+            <p>I enjoy learning anything from anyone. I'm living in Vancouver, British Columbia, Canada.</p>
+            <hr/>
+            <a href="/Pengyin Shan.pdf" target="_blank">View My Resume</a>
+        </td>
+        <td>
+            <img src="/images/Pengyin.jpg" style="display: block; max-width: 60%" />
+        </td>
+    </tr> 
+</table>
 

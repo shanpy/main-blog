@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>I'm Pengyin (Posts about Bootstrap3)</title><link>http://pengyin-shan.com/</link><description></description><atom:link href="http://pengyin-shan.com/categories/bootstrap3.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 06 Jul 2018 17:48:41 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Bootstrap 3 Sticky Footer by Martin Bean and Ryan Fait</title><link>http://pengyin-shan.com/posts/2015/Front%20End/bootstrap3_sticky_footer.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;You can view introduction page &lt;a href="http://getbootstrap.com/2.3.2/examples/sticky-footer.html"&gt;here&lt;/a&gt;.&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>I'm Pengyin (Posts about Bootstrap3)</title><link>http://pengyin-shan.com/</link><description></description><atom:link type="application/rss+xml" rel="self" href="http://pengyin-shan.com/categories/bootstrap3.xml"></atom:link><language>en</language><lastBuildDate>Tue, 10 Jul 2018 14:56:12 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Bootstrap 3 Sticky Footer by Martin Bean and Ryan Fait</title><link>http://pengyin-shan.com/posts/2015/Front%20End/bootstrap3_sticky_footer.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;You can view introduction page &lt;a href="http://getbootstrap.com/2.3.2/examples/sticky-footer.html"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Generally A sticky footer is created just like the &lt;code&gt;fixed-nav&lt;/code&gt; bar in Bootstrap3. This footer will always stay at the bottom of page, even though there isn't enough content.&lt;/p&gt;
 &lt;p&gt;Martin Bean and Ryan Fait also have a Sticky Footer with Fixed Nav Bar page &lt;a href="http://getbootstrap.com/2.3.2/examples/sticky-footer-navbar.html"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Following is part of basic code for Sticky Nav bar with my analysis (You need Bootstrap3 css library):&lt;/p&gt;
@@ -50,8 +50,8 @@
   &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;</description><category>Bootstrap3</category><category>CSS</category><category>HTML5</category><category>JavaScript</category><guid>http://pengyin-shan.com/posts/2015/Front%20End/bootstrap3_sticky_footer.html</guid><pubDate>Thu, 09 Jul 2015 07:00:00 GMT</pubDate></item><item><title>Collection of Tips for Creating/Controlling Dropdown on Web Page</title><link>http://pengyin-shan.com/posts/2015/JavaScript/create-controll-dropdown.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;In my job, I always counter problem of creating dropdowns for web development project. Sometimes I can use Bootstrap, jQuery. Sometimes I have to use pure JavaScript. I also need to perform control options to dropdowns ocationally.&lt;/p&gt;
 &lt;p&gt;I want to write this post to record all ways and tips for creating dropdown, for future reference.&lt;/p&gt;
-&lt;h2&gt;Pure JavaScript&lt;/h2&gt;
-&lt;h3&gt;Simpliest Dropdown Option&lt;/h3&gt;
+&lt;h2 id="pure-javascript"&gt;Pure JavaScript&lt;/h2&gt;
+&lt;h3 id="simpliest-dropdown-option"&gt;Simpliest Dropdown Option&lt;/h3&gt;
 &lt;p&gt;The simplest dropdown is just created by &lt;code&gt;&amp;lt;select&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;option&amp;gt;&lt;/code&gt; tag. Usually you wrap a few &lt;code&gt;&amp;lt;option&amp;gt;&lt;/code&gt; blocks in a &lt;code&gt;&amp;lt;select&amp;gt;&lt;/code&gt; block.&lt;/p&gt;
 &lt;p&gt;For each &lt;code&gt;&amp;lt;option&amp;gt;&lt;/code&gt;, You can assign &lt;code&gt;value&lt;/code&gt; attribute to it. There are other attributes such as &lt;code&gt;selected&lt;/code&gt; or &lt;code&gt;label&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;For &lt;code&gt;&amp;lt;select&amp;gt;&lt;/code&gt;, you can also set attributes such as &lt;code&gt;size&lt;/code&gt; or &lt;code&gt;name&lt;/code&gt;.&lt;/p&gt;
@@ -67,9 +67,9 @@
 &lt;/pre&gt;
 
 
-&lt;h3&gt;Dropdown Menu (One or Multiple Level)&lt;/h3&gt;
+&lt;h3 id="dropdown-menu-one-or-multiple-level"&gt;Dropdown Menu (One or Multiple Level)&lt;/h3&gt;
 &lt;p&gt;I found this &lt;a href="http://javascript-array.com/scripts/simple_drop_down_menu/#"&gt;post&lt;/a&gt; and this &lt;a href="http://javascript-array.com/scripts/multi_level_drop_down_menu/?st"&gt;post&lt;/a&gt; from &lt;a href="http://javascript-array.com/"&gt;JavaScript Array&lt;/a&gt; website are very classical. I've tested them and I highly recommend using them for pure dropdown menu.&lt;/p&gt;
-&lt;h4&gt;Single Level&lt;/h4&gt;
+&lt;h4 id="single-level"&gt;Single Level&lt;/h4&gt;
 &lt;p&gt;I have read through the code. Here are my explanations. You are free to add font or hover effects in real world.&lt;/p&gt;
 &lt;p&gt;HTML Structure:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c"&gt;&amp;lt;!--Container of Many First Level Menus--&amp;gt;&lt;/span&gt;
@@ -198,11 +198,11 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Mutiple Level&lt;/h4&gt;
-&lt;h2&gt;With jQuery&lt;/h2&gt;
+&lt;h4 id="mutiple-level"&gt;Mutiple Level&lt;/h4&gt;
+&lt;h2 id="with-jquery"&gt;With jQuery&lt;/h2&gt;
 &lt;p&gt;update coming soon...&lt;/p&gt;
-&lt;h2&gt;With Bootstrap3 and jQuery&lt;/h2&gt;
-&lt;p&gt;update coming soon...&lt;/p&gt;&lt;/div&gt;</description><category>Bootstrap3</category><category>CSS</category><category>Dropdown</category><category>HTML5</category><category>JavaScript</category><category>jQuery</category><guid>http://pengyin-shan.com/posts/2015/JavaScript/create-controll-dropdown.html</guid><pubDate>Thu, 04 Jun 2015 07:00:00 GMT</pubDate></item><item><title>JavaScript Library Experience: FullCalendar</title><link>http://pengyin-shan.com/posts/2015/JavaScript/javascript-library-experience-fullcalendar.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3&gt;First Impression and Basic Usage&lt;/h3&gt;
+&lt;h2 id="with-bootstrap3-and-jquery"&gt;With Bootstrap3 and jQuery&lt;/h2&gt;
+&lt;p&gt;update coming soon...&lt;/p&gt;&lt;/div&gt;</description><category>Bootstrap3</category><category>CSS</category><category>Dropdown</category><category>HTML5</category><category>JavaScript</category><category>jQuery</category><guid>http://pengyin-shan.com/posts/2015/JavaScript/create-controll-dropdown.html</guid><pubDate>Thu, 04 Jun 2015 07:00:00 GMT</pubDate></item><item><title>JavaScript Library Experience: FullCalendar</title><link>http://pengyin-shan.com/posts/2015/JavaScript/javascript-library-experience-fullcalendar.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3 id="first-impression-and-basic-usage"&gt;First Impression and Basic Usage&lt;/h3&gt;
 &lt;p&gt;I got a request in my work, asking me to research a open source JavaScript calendar library. The calendar should be able to do following:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Add/Load/Delete Events, which needs a commucation with back-end. Event content can be configured, which means developer can over write event trigger function. Also developer can set up event time plot.&lt;/p&gt;
@@ -221,13 +221,13 @@ $(document).ready(function() {
 
 
 &lt;p&gt;It looks simple, but I encourted following problems and it takes a while to figure out solution:&lt;/p&gt;
-&lt;h3&gt;Problem 1&lt;/h3&gt;
+&lt;h3 id="problem-1"&gt;Problem 1&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;The confusion of CDNJS source&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;FullCalendar official website gives out &lt;code&gt;CDN&lt;/code&gt; host source for &lt;code&gt;css&lt;/code&gt; file and &lt;code&gt;javascript&lt;/code&gt; file, which is the way I preferred, comparing to use local file. However, only three files are given with &lt;code&gt;CDN&lt;/code&gt; url, which misleading me to thought &lt;em&gt;I only need these three files to run FullCalendar&lt;/em&gt;, which is &lt;strong&gt;wrong&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;After I run code in browser, I got error message in console, telling that &lt;strong&gt;moment is not defined as function&lt;/strong&gt;. This error remind me that I need other JavaScript file to provide basic functionality.&lt;/p&gt;
-&lt;h3&gt;Answer 1&lt;/h3&gt;
+&lt;h3 id="answer-1"&gt;Answer 1&lt;/h3&gt;
 &lt;p&gt;Make sure you have &lt;code&gt;fullcalendar.css&lt;/code&gt;, &lt;code&gt;jquery.js&lt;/code&gt;, &lt;code&gt;moment.js&lt;/code&gt;, &lt;code&gt;fullcalendar.js&lt;/code&gt; for basic setup.** &lt;code&gt;moment.js&lt;/code&gt; needs to be put before &lt;code&gt;fullcalendar.js&lt;/code&gt;.&lt;/p&gt;
-&lt;h3&gt;Problem 2&lt;/h3&gt;
+&lt;h3 id="problem-2"&gt;Problem 2&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;CSS Style Problem (Cause my headache :)&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;After I solve the problem above, I was able to see calendar data in browser, but &lt;strong&gt;no style has been applied&lt;/strong&gt;. To solve the problem, I first try following solution:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -242,7 +242,7 @@ resources loading successfully. Then replace all &lt;code&gt;CDN&lt;/code&gt; re
 &lt;li&gt;So I have to seek help on Google. A &lt;a href="http://stackoverflow.com/questions/25178565/fullcalendar-layout-broken-because-css-loading-after-javascript-layout-calculati"&gt;post&lt;/a&gt; in &lt;em&gt;StackOverflow&lt;/em&gt; helps with this problem.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h3&gt;Answer2&lt;/h3&gt;
+&lt;h3 id="answer2"&gt;Answer2&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Load Stylesheet in JavaScript&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;I should adjust code as following:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;on&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"ready"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
@@ -264,7 +264,7 @@ resources loading successfully. Then replace all &lt;code&gt;CDN&lt;/code&gt; re
 - &lt;code&gt;$(document).ready&lt;/code&gt; triggers after &lt;code&gt;HTML&lt;/code&gt; elements has been loaded.
 - &lt;code&gt;onload&lt;/code&gt; event occurs later, after all content elements, such as &lt;code&gt;image&lt;/code&gt;, has been loaded.
 - Next time I get this probelm, I should try to load stylesheet later, using &lt;code&gt;"&amp;lt;link/&amp;gt;".appendTo("head")&lt;/code&gt;.&lt;/p&gt;&lt;/div&gt;</description><category>Bootstrap3</category><category>JavaScript</category><category>jQuery</category><guid>http://pengyin-shan.com/posts/2015/JavaScript/javascript-library-experience-fullcalendar.html</guid><pubDate>Tue, 13 Jan 2015 08:00:00 GMT</pubDate></item><item><title>Bootstrap3 API Reading Notes</title><link>http://pengyin-shan.com/posts/2014/bootstrap3-api-reading-notes.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;This post is transferred from my &lt;a href="http://blogpengyin.herokuapp.com/"&gt;old Hexo blog site&lt;/a&gt;, created on 2014.&lt;/p&gt;
-&lt;h2&gt;CSS Part&lt;/h2&gt;
+&lt;h2 id="css-part"&gt;CSS Part&lt;/h2&gt;
 &lt;p&gt;This is a reading note for Bootstrap 3 Official API CSS part, including everything I think that will be useful for future web development.&lt;/p&gt;
 &lt;p&gt;Bootstrap3 needs to have &lt;code&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/code&gt; on top for html5 recogization purpose.&lt;/p&gt;
 &lt;p&gt;Bootstrap3 has "Mobile first" principle, so &lt;code&gt;&amp;lt;meta name="viewport" content="width=device-width, initial-scale=1"&amp;gt;&lt;/code&gt; should be added in &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; tag.&lt;/p&gt;
@@ -280,7 +280,7 @@ resources loading successfully. Then replace all &lt;code&gt;CDN&lt;/code&gt; re
 &lt;/pre&gt;
 
 
-&lt;h3&gt;Grid System&lt;/h3&gt;
+&lt;h3 id="grid-system"&gt;Grid System&lt;/h3&gt;
 &lt;p&gt;In Aug 2014, I read a very good tutorial about grid system in bootstrap3 from http://www.tutorialrepublic.com/twitter-bootstrap-tutorial and wrote some notes:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -371,8 +371,8 @@ resources loading successfully. Then replace all &lt;code&gt;CDN&lt;/code&gt; re
 
 
 &lt;p&gt;It is safe to use &lt;strong&gt;nested column&lt;/strong&gt;. But make sure &lt;code&gt;class="row"&lt;/code&gt; is added to nested part.&lt;/p&gt;
-&lt;h2&gt;Components Part&lt;/h2&gt;
-&lt;h3&gt;Pannels*&lt;/h3&gt;
+&lt;h2 id="components-part"&gt;Components Part&lt;/h2&gt;
+&lt;h3 id="pannels"&gt;Pannels*&lt;/h3&gt;
 &lt;p&gt;Table or List can be added in panel body for format.&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="na"&gt;class&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"panel panel-default"&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
 &lt;span class="c"&gt;&amp;lt;!--panel-default can be changed to panel-primary, panel-success, etc--&amp;gt;&lt;/span&gt;
@@ -403,7 +403,7 @@ resources loading successfully. Then replace all &lt;code&gt;CDN&lt;/code&gt; re
 &lt;/pre&gt;
 
 
-&lt;h3&gt;Breadcrumb&lt;/h3&gt;
+&lt;h3 id="breadcrumb"&gt;Breadcrumb&lt;/h3&gt;
 &lt;p&gt;A breadcrumb is a navigation scheme that indicates the user's location in a website or web application. For example: &lt;code&gt;Home/Library/Data&lt;/code&gt;.&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="na"&gt;class&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"breadcrumb"&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
     &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;a&lt;/span&gt; &lt;span class="na"&gt;href&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"#"&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;Home&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
@@ -413,7 +413,7 @@ resources loading successfully. Then replace all &lt;code&gt;CDN&lt;/code&gt; re
 &lt;/pre&gt;
 
 
-&lt;h3&gt;Pagination (Page Number Indicator)&lt;/h3&gt;
+&lt;h3 id="pagination-page-number-indicator"&gt;Pagination (Page Number Indicator)&lt;/h3&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;ul&lt;/span&gt; &lt;span class="na"&gt;class&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"pagination pagination-sm"&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
 &lt;span class="c"&gt;&amp;lt;!--'pagination-sm' can be skipped or change to -xs/-lg, etc. This is used to define size of pagination--&amp;gt;&lt;/span&gt;
     &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;a&lt;/span&gt; &lt;span class="na"&gt;href&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"#"&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;&lt;span class="ni"&gt;&amp;amp;laquo;&lt;/span&gt;&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;li&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
@@ -438,7 +438,7 @@ resources loading successfully. Then replace all &lt;code&gt;CDN&lt;/code&gt; re
 &lt;/pre&gt;
 
 
-&lt;h3&gt;Labels and Badges&lt;/h3&gt;
+&lt;h3 id="labels-and-badges"&gt;Labels and Badges&lt;/h3&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;h2&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;Bootstrap heading
 &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;span&lt;/span&gt; &lt;span class="na"&gt;class&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"label label-default"&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;New&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;span&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
 &lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;h2&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
@@ -450,7 +450,7 @@ resources loading successfully. Then replace all &lt;code&gt;CDN&lt;/code&gt; re
 &lt;/pre&gt;
 
 
-&lt;h3&gt;Progress Bar&lt;/h3&gt;
+&lt;h3 id="progress-bar"&gt;Progress Bar&lt;/h3&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c"&gt;&amp;lt;!-- .progress-stripped is a class to make colorful effect. .active is a class to make animate effect --&amp;gt;&lt;/span&gt;
 &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="na"&gt;class&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"progress progress-stripped active"&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
     &lt;span class="c"&gt;&amp;lt;!-- process-bar-success can be replaced by process-bar-warning, etc --&amp;gt;&lt;/span&gt;
@@ -462,7 +462,7 @@ resources loading successfully. Then replace all &lt;code&gt;CDN&lt;/code&gt; re
 
 
 &lt;p&gt;Process bar can also add label to indicate the numbered process. Reference: http://getbootstrap.com/components/#progress-label.&lt;/p&gt;
-&lt;h3&gt;Jumbotron&lt;/h3&gt;
+&lt;h3 id="jumbotron"&gt;Jumbotron&lt;/h3&gt;
 &lt;p&gt;Jumbotron is used as a header panel with important content, that can be put on top of homepage. For example, a Header combined with a paragraph and a read-more button&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="na"&gt;class&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"jumbotron"&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
     &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;h1&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;Welcome to Website&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;h1&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
@@ -472,7 +472,7 @@ resources loading successfully. Then replace all &lt;code&gt;CDN&lt;/code&gt; re
 &lt;/pre&gt;
 
 
-&lt;h3&gt;Wells&lt;/h3&gt;
+&lt;h3 id="wells"&gt;Wells&lt;/h3&gt;
 &lt;p&gt;Wells componet make a part of content like sink in well. Used for static text.&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="na"&gt;class&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"well well-large/well-small"&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
 In a well...
@@ -480,7 +480,7 @@ In a well...
 &lt;/pre&gt;
 
 
-&lt;h3&gt;Close icons&lt;/h3&gt;
+&lt;h3 id="close-icons"&gt;Close icons&lt;/h3&gt;
 &lt;p&gt;A X icon on right of panel so that user can close this panel after read it&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="na"&gt;class&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"alert alert-warning"&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
     &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;a&lt;/span&gt; &lt;span class="na"&gt;href&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"#"&lt;/span&gt; &lt;span class="na"&gt;class&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"close"&lt;/span&gt; &lt;span class="na"&gt;data-dismiss&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"alert"&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt; &lt;span class="ni"&gt;&amp;amp;times;&lt;/span&gt;&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
@@ -489,19 +489,19 @@ In a well...
 &lt;/pre&gt;
 
 
-&lt;h3&gt;Bootstarp3 Help Class&lt;/h3&gt;
+&lt;h3 id="bootstarp3-help-class"&gt;Bootstarp3 Help Class&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;.pull-left/.pull-right&lt;/code&gt; will floats an element to left or right&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;.text-muted&lt;/code&gt; make a element grayed out by change its color value&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;.clearfix&lt;/code&gt; clear the float of any element&lt;/p&gt;
-&lt;h3&gt;Buttons&lt;/h3&gt;
-&lt;h4&gt;Available Classes:&lt;/h4&gt;
+&lt;h3 id="buttons"&gt;Buttons&lt;/h3&gt;
+&lt;h4 id="available-classes"&gt;Available Classes:&lt;/h4&gt;
 &lt;p&gt;&lt;code&gt;btn-default/primary/info/success/warning/danger/link&lt;/code&gt;: define attributes of button&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;btn-lg/sm/xs&lt;/code&gt;: define size of button&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;btn-block&lt;/code&gt;: define a button that covers full width of parent element&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;diabled&lt;/code&gt;: disable a button&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;data-loading-text="Loading..."&lt;/code&gt;: can be add when a button is in loading state (automatically turn off in firefox)&lt;/p&gt;
 &lt;p&gt;Toggle Button (hover effect): &lt;code&gt;data-toggle="button"&lt;/code&gt;&lt;/p&gt;
-&lt;h4&gt;Button group:&lt;/h4&gt;
+&lt;h4 id="button-group"&gt;Button group:&lt;/h4&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="na"&gt;class&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"btn-group/btn-group-vertical btn-group-lg/sm/xs"&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
 &lt;span class="c"&gt;&amp;lt;!-- Can add btn-group-justified to make group buttons alignment justified --&amp;gt;&lt;/span&gt;
     &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;button&lt;/span&gt; &lt;span class="na"&gt;type&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"button"&lt;/span&gt; &lt;span class="na"&gt;class&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"btn btn-primary"&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;Left&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;button&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
@@ -528,7 +528,7 @@ In a well...
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Available Methods for Button&lt;/h4&gt;
+&lt;h4 id="available-methods-for-button"&gt;Available Methods for Button&lt;/h4&gt;
 &lt;p&gt;&lt;code&gt;$().button('toggle')&lt;/code&gt;: change any button to toggle state&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;ready&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(){&lt;/span&gt;
     &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'#myButton'&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;click&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(){&lt;/span&gt;
@@ -541,7 +541,7 @@ In a well...
 &lt;p&gt;&lt;code&gt;$().button('loading')&lt;/code&gt;: when loading, button is disabled and text is swapped with the value of 'data-loading-text' attribute of button element&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;$().button('reset')&lt;/code&gt;: reset button state by swapping text to original text&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;$().button(string)&lt;/code&gt;: reset button to show this string&lt;/p&gt;
-&lt;h3&gt;Dropdown&lt;/h3&gt;
+&lt;h3 id="dropdown"&gt;Dropdown&lt;/h3&gt;
 &lt;p&gt;Dropdown can be done within navabar, nav or buttons. Reference: http://getbootstrap.com/components/#btn-dropdowns-single&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c"&gt;&amp;lt;!-- 'nav nav-pills' is nav, 'btn-group' is button --&amp;gt;&lt;/span&gt;
 &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="na"&gt;class&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"navbar navbar-static"&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
@@ -566,9 +566,9 @@ In a well...
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Available Methods for Dropdown&lt;/h4&gt;
+&lt;h4 id="available-methods-for-dropdown"&gt;Available Methods for Dropdown&lt;/h4&gt;
 &lt;p&gt;&lt;code&gt;$().dropdown('toggle')&lt;/code&gt;: toggle item for a given dropdown&lt;/p&gt;
-&lt;h4&gt;Available Events for Dropdown&lt;/h4&gt;
+&lt;h4 id="available-events-for-dropdown"&gt;Available Events for Dropdown&lt;/h4&gt;
 &lt;p&gt;&lt;code&gt;show.bs.dropdown&lt;/code&gt;: trigger when show instance method is called. can be reached by &lt;code&gt;event.relatedTarget&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;shown.bs.dropdown&lt;/code&gt;: triger when a dropdown is visible. Will wait for css.
 can be reached by event.relatedTarget&lt;/p&gt;
@@ -584,7 +584,7 @@ can be reached by event.relatedTarget&lt;/p&gt;
 &lt;/pre&gt;
 
 
-&lt;h3&gt;Tooltip&lt;/h3&gt;
+&lt;h3 id="tooltip"&gt;Tooltip&lt;/h3&gt;
 &lt;p&gt;For performance reasons, tooltip must be initialized first&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;ready&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(){&lt;/span&gt;
     &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;".classOfItem a"&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;tooltip&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
@@ -598,10 +598,10 @@ can be reached by event.relatedTarget&lt;/p&gt;
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Available Method for Tooltip&lt;/h4&gt;
+&lt;h4 id="available-method-for-tooltip"&gt;Available Method for Tooltip&lt;/h4&gt;
 &lt;p&gt;&lt;code&gt;$().tooltip(options)&lt;/code&gt;: attach tooltip to elements, options can be found online, include titile, delay, etc&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;$().tooltip('show'/'hide'/'toggle'/'destory')&lt;/code&gt;: show/hide/toggle/destroy tooltip&lt;/p&gt;
-&lt;h3&gt;Popover&lt;/h3&gt;
+&lt;h3 id="popover"&gt;Popover&lt;/h3&gt;
 &lt;p&gt;Popover is like tooltip but is a panel with header and body content. It also needs to be initialize first&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;ready&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;funtion&lt;/span&gt;&lt;span class="p"&gt;(){&lt;/span&gt;
     &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;".classOfItem a"&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;popover&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
@@ -611,7 +611,7 @@ can be reached by event.relatedTarget&lt;/p&gt;
 
 
 &lt;p&gt;Popover has similar method as tooltip: options/show/hide/toggle/destroy.&lt;/p&gt;
-&lt;h3&gt;Alerts&lt;/h3&gt;
+&lt;h3 id="alerts"&gt;Alerts&lt;/h3&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="na"&gt;class&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"alert alert-warning"&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
     &lt;span class="c"&gt;&amp;lt;!-- 'alert-warning' can be changed to error/success/info --&amp;gt;&lt;/span&gt;
     &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;a&lt;/span&gt; &lt;span class="na"&gt;href&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"#"&lt;/span&gt; &lt;span class="na"&gt;class&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"close"&lt;/span&gt; &lt;span class="na"&gt;data-dismiss&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"alert"&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;&lt;span class="ni"&gt;&amp;amp;times;&lt;/span&gt;&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
@@ -628,7 +628,7 @@ can be reached by event.relatedTarget&lt;/p&gt;
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Available Methods for Alerts&lt;/h4&gt;
+&lt;h4 id="available-methods-for-alerts"&gt;Available Methods for Alerts&lt;/h4&gt;
 &lt;p&gt;&lt;code&gt;$().alert&lt;/code&gt;: wrap all alert with close functionality&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(.&lt;/span&gt;&lt;span class="nx"&gt;close&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;click&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(){&lt;/span&gt;
     &lt;span class="nx"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;".alert"&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;alert&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
@@ -637,7 +637,7 @@ can be reached by event.relatedTarget&lt;/p&gt;
 
 
 &lt;p&gt;&lt;code&gt;$().alert('close')&lt;/code&gt;: close a alert box&lt;/p&gt;
-&lt;h3&gt;Tabs&lt;/h3&gt;
+&lt;h3 id="tabs"&gt;Tabs&lt;/h3&gt;
 &lt;p&gt;To use tab in nav bar, create &lt;code&gt;&amp;lt;ul&amp;gt;&lt;/code&gt; with &lt;code&gt;class="nav nav-tab"&lt;/code&gt; and each &lt;code&gt;&amp;lt;li&amp;gt;&lt;/code&gt; has a &lt;code&gt;href&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Tabs can be add dynamically with any javascript: simply specify the &lt;code&gt;data-toggle="tab"&lt;/code&gt; on each tab, as well as create a &lt;code&gt;.tab-pane&lt;/code&gt; with unque ID for every tab and wrap them in &lt;code&gt;.tab-content&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Create dynamic tab with javascript:&lt;/p&gt;
@@ -652,7 +652,7 @@ can be reached by event.relatedTarget&lt;/p&gt;
 &lt;/pre&gt;
 
 
-&lt;h2&gt;Form Part&lt;/h2&gt;
+&lt;h2 id="form-part"&gt;Form Part&lt;/h2&gt;
 &lt;p&gt;Any element with &lt;code&gt;.form-control&lt;/code&gt; has &lt;code&gt;width:100%;&lt;/code&gt; by default.&lt;/p&gt;
 &lt;p&gt;You can nest the &lt;code&gt;.input-group&lt;/code&gt; in &lt;code&gt;.form-group&lt;/code&gt; but don't mix them directly.&lt;/p&gt;
 &lt;p&gt;Vertical Form in Bootstrap3:&lt;/p&gt;
@@ -676,7 +676,7 @@ can be reached by event.relatedTarget&lt;/p&gt;
 &lt;/pre&gt;
 
 
-&lt;h3&gt;Supported Form Controls&lt;/h3&gt;
+&lt;h3 id="supported-form-controls"&gt;Supported Form Controls&lt;/h3&gt;
 &lt;p&gt;All html5 input type are supported: &lt;code&gt;text&lt;/code&gt;, &lt;code&gt;password&lt;/code&gt;, &lt;code&gt;datetime&lt;/code&gt;, &lt;code&gt;datetime-local&lt;/code&gt;, &lt;code&gt;date&lt;/code&gt;, &lt;code&gt;month&lt;/code&gt;, &lt;code&gt;time&lt;/code&gt;, &lt;code&gt;week&lt;/code&gt;, &lt;code&gt;number&lt;/code&gt;, &lt;code&gt;email&lt;/code&gt;, &lt;code&gt;url&lt;/code&gt;, &lt;code&gt;search&lt;/code&gt;, &lt;code&gt;tel&lt;/code&gt;, &lt;code&gt;color&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;&amp;lt;fieldset&amp;gt;&lt;/code&gt; can be used to wrap a few form-group in order to easily apply style.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;.disabled&lt;/code&gt; can be added to &lt;code&gt;.radio&lt;/code&gt; or &lt;code&gt;.checkbox&lt;/code&gt; or &lt;code&gt;&amp;lt;fieldset&amp;gt;&lt;/code&gt; to disable these elements.&lt;/p&gt;
@@ -698,11 +698,11 @@ can be reached by event.relatedTarget&lt;/p&gt;
 
 &lt;p&gt;After using Javascript to valid data in input field, '.has-warning',&lt;code&gt;.has-error&lt;/code&gt; or &lt;code&gt;.has-success&lt;/code&gt; can be added to input fields to show validation result. &lt;code&gt;&amp;lt;span class="glyphicon plyphicon-warning-sign form-control-feedback&amp;gt;&lt;/code&gt; can be added after &lt;code&gt;&amp;lt;input&amp;gt;&lt;/code&gt; field if optional icons are needed.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;&amp;lt;span class=".help-block"&lt;/code&gt; can add help text under input field&lt;/p&gt;
-&lt;h3&gt;Input Group&lt;/h3&gt;
+&lt;h3 id="input-group"&gt;Input Group&lt;/h3&gt;
 &lt;p&gt;To add icon, put &lt;code&gt;&amp;lt;span class='input-group-addon'&amp;gt;&amp;lt;/span&amp;gt;&lt;/code&gt; inside a input-group class&lt;/p&gt;
 &lt;p&gt;To add button attched to input, use &lt;code&gt;.input-group-btn&lt;/code&gt;for a span and add button in span. Put this span right after input box.&lt;/p&gt;
 &lt;p&gt;Input group can have height class &lt;code&gt;.input-group-lg&lt;/code&gt;.&lt;/p&gt;
-&lt;h2&gt;Image and Media Part&lt;/h2&gt;
+&lt;h2 id="image-and-media-part"&gt;Image and Media Part&lt;/h2&gt;
 &lt;p&gt;Use Bootstrap3 to modify shape of image: &lt;code&gt;.img-rouned&lt;/code&gt;,&lt;code&gt;.img-circle&lt;/code&gt;,&lt;code&gt;.img-thumbnail&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;.thumbnail&lt;/code&gt; define a div with shape of thumbnail. div can include jpg file. Best use with grid class.&lt;/p&gt;
 &lt;p&gt;Media Objects: create layout like twitter or Linkedin name signature&lt;/p&gt;
@@ -723,8 +723,8 @@ can be reached by event.relatedTarget&lt;/p&gt;
 
 
 &lt;p&gt;Reference Glyphicon library: &lt;code&gt;&amp;lt;span class="glyphicon glyphicon-class-name"&amp;gt;&amp;lt;/span&amp;gt;&lt;/code&gt;.&lt;/p&gt;
-&lt;h2&gt;List and Nav Part&lt;/h2&gt;
-&lt;h3&gt;List&lt;/h3&gt;
+&lt;h2 id="list-and-nav-part"&gt;List and Nav Part&lt;/h2&gt;
+&lt;h3 id="list"&gt;List&lt;/h3&gt;
 &lt;p&gt;Horizontal list: &lt;/p&gt;&lt;ul class="list-inline"&gt;
 &lt;p&gt;Horizonal Defination List: work is on left, corresponding explanation is on right&lt;/p&gt;
 &lt;/ul&gt;&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;dl&lt;/span&gt; &lt;span class="na"&gt;class&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"dl-horizontal"&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
@@ -752,7 +752,7 @@ can be reached by event.relatedTarget&lt;/p&gt;
 &lt;/pre&gt;
 
 
-&lt;h3&gt;Nav Bar&lt;/h3&gt;
+&lt;h3 id="nav-bar"&gt;Nav Bar&lt;/h3&gt;
 &lt;p&gt;Create nav bar in tabs: &lt;code&gt;&amp;lt;ul class="nav nav-tabs"&amp;gt;&amp;lt;li class="active"&amp;gt;&lt;/code&gt;. To add icon to tabs, just put span.&lt;/p&gt;
 &lt;p&gt;Create nav bar in pills: &lt;code&gt;&amp;lt;ul class="nav nav-pills"&amp;gt;&amp;lt;li&amp;gt;&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Create vertical nav bar: &lt;code&gt;&amp;lt;ul class="nav nav-pills nav-stacked"&amp;gt;&lt;/code&gt;.&lt;/p&gt;
@@ -818,7 +818,7 @@ can be reached by event.relatedTarget&lt;/p&gt;
 
 
 &lt;p&gt;Inversed navbar (color): add &lt;code&gt;.navbar-inverse&lt;/code&gt; in &lt;code&gt;nav&lt;/code&gt; tag&lt;/p&gt;
-&lt;h2&gt;Table Part&lt;/h2&gt;
+&lt;h2 id="table-part"&gt;Table Part&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;.table-striped&lt;/code&gt; make table's nth row has different color than n-1th row&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;.table-bordered&lt;/code&gt; add border&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;.table-hover&lt;/code&gt; add hover effect&lt;/p&gt;
@@ -831,7 +831,7 @@ can be reached by event.relatedTarget&lt;/p&gt;
 
 
 &lt;p&gt;Responsive Table in Bootstrap3: &lt;code&gt;.table-responsive&lt;/code&gt;. Will add scroll bar if table width is larger than container width, when device size is under 768px(i.e.&lt;code&gt;.xs&lt;/code&gt;);&lt;/p&gt;
-&lt;h2&gt;Text Part&lt;/h2&gt;
+&lt;h2 id="text-part"&gt;Text Part&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;.small&lt;/code&gt; crates grey and smaller font&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;.lead&lt;/code&gt; creates standing-out font&lt;/p&gt;
 &lt;p&gt;text alignment class: &lt;code&gt;text-left&lt;/code&gt;, &lt;code&gt;text-center&lt;/code&gt;, &lt;code&gt;text-right&lt;/code&gt;, &lt;code&gt;text-justify&lt;/code&gt;, &lt;code&gt;text-nowrap&lt;/code&gt;&lt;/p&gt;
@@ -852,7 +852,7 @@ can be reached by event.relatedTarget&lt;/p&gt;
 &lt;p&gt;-&lt;code&gt;&amp;lt;cite&amp;gt;&lt;/code&gt;: cite author name&lt;/p&gt;
 &lt;p&gt;-&lt;code&gt;.pull-right&lt;/code&gt;: all block text align is right&lt;/p&gt;&lt;/div&gt;</description><category>Bootstrap3</category><category>CSS</category><category>JavaScript</category><category>jQuery</category><guid>http://pengyin-shan.com/posts/2014/bootstrap3-api-reading-notes.html</guid><pubDate>Wed, 10 Dec 2014 08:00:00 GMT</pubDate></item><item><title>Bootstrap3 Tips CONTINUALLY UPDATE</title><link>http://pengyin-shan.com/posts/2015/Front%20End/bootstrap3-tricks.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;This post is transferred from my &lt;a href="http://blogpengyin.herokuapp.com/"&gt;old Hexo blog site&lt;/a&gt;, created on 2014. This blog will be &lt;strong&gt;updating continually&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;If you want to find specific topic, feel free to use &lt;code&gt;ctrl + F&lt;/code&gt; to search for keyword.&lt;/p&gt;
-&lt;h2&gt;Change Glyphicon when Bootstrap Collapse Show or Hide&lt;/h2&gt;
+&lt;h2 id="change-glyphicon-when-bootstrap-collapse-show-or-hide"&gt;Change Glyphicon when Bootstrap Collapse Show or Hide&lt;/h2&gt;
 &lt;p&gt;This is what I learned from: http://stackoverflow.com/questions/18325779/bootstrap-3-collapse-show-state-with-chevron-icon . The answer is from &lt;code&gt;zessx&lt;/code&gt;.&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="na"&gt;class&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"panel-heading"&lt;/span&gt; &lt;span class="na"&gt;role&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"tab"&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
     &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;a&lt;/span&gt; &lt;span class="na"&gt;class&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"collapsed"&lt;/span&gt; &lt;span class="na"&gt;data-toggle&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"collapse"&lt;/span&gt; &lt;span class="na"&gt;data-parent&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"#accordion"&lt;/span&gt; &lt;span class="na"&gt;href&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"#test"&lt;/span&gt; &lt;span class="na"&gt;aria-expanede&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"true"&lt;/span&gt; &lt;span class="na"&gt;aria-controls&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"test"&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
@@ -875,27 +875,27 @@ can be reached by event.relatedTarget&lt;/p&gt;
 &lt;/pre&gt;
 
 
-&lt;h2&gt;Collapse Panel Hide or Show&lt;/h2&gt;
+&lt;h2 id="collapse-panel-hide-or-show"&gt;Collapse Panel Hide or Show&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;hide&lt;/code&gt;: will hide panel&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;show&lt;/code&gt;: will show panel&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;toggle&lt;/code&gt;: will change to opposite status&lt;/p&gt;
 &lt;p&gt;To use this, try &lt;code&gt;$('.class_name').collapse('toggle');&lt;/code&gt; or &lt;code&gt;$('#id_name').collapse('hide')&lt;/code&gt;.&lt;/p&gt;
-&lt;h2&gt;Sticky Header/Footer&lt;/h2&gt;
+&lt;h2 id="sticky-headerfooter"&gt;Sticky Header/Footer&lt;/h2&gt;
 &lt;p&gt;Bootstrap has two classes: &lt;code&gt;navbar-fixed-top&lt;/code&gt; and &lt;code&gt;navbar-fixed-bottom&lt;/code&gt; that can be served as sticky header and footer. Make sure add &lt;code&gt;body{ padding-top: 50px;}&lt;/code&gt; or &lt;code&gt;body{ padding-bottom: 50px;}&lt;/code&gt; when you use them.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Note: the default height for navbar in Bootstrap3 is 50px high.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2&gt;Dynamically Edit Checkbox&lt;/h2&gt;
-&lt;h3&gt;Default Status&lt;/h3&gt;
+&lt;h2 id="dynamically-edit-checkbox"&gt;Dynamically Edit Checkbox&lt;/h2&gt;
+&lt;h3 id="default-status"&gt;Default Status&lt;/h3&gt;
 &lt;p&gt;In Bootstrap3, when you add a simple check box, the default code is &lt;code&gt;&amp;lt;input type="checkbox" /&amp;gt;&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;This checkbox will keep un-checked. When you check it, this default code will keep the same.&lt;/p&gt;
 &lt;p&gt;If you use &lt;code&gt;this.getAttribute('checked')&lt;/code&gt; to check if checkbox is checked or not, you always get &lt;code&gt;undefined&lt;/code&gt;.&lt;/p&gt;
-&lt;h3&gt;Default Checked Status&lt;/h3&gt;
+&lt;h3 id="default-checked-status"&gt;Default Checked Status&lt;/h3&gt;
 &lt;p&gt;In Bootstrap3, you can set a default &lt;code&gt;checked&lt;/code&gt; attribute to checkbox to make it default checked: &lt;code&gt;&amp;lt;input type='checkbox' checked/&amp;gt;&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;If you use &lt;code&gt;$(this).attr('checked')&lt;/code&gt; to check status, it will return &lt;code&gt;checked&lt;/code&gt; or &lt;code&gt;undefined&lt;/code&gt;. But if you use &lt;code&gt;this.getAttribute("checked")&lt;/code&gt;, you will always get &lt;code&gt;empty&lt;/code&gt; value returned.&lt;/p&gt;
 &lt;p&gt;If you use &lt;code&gt;&amp;lt;input type='checkbox' checked = "checked"/&amp;gt;&lt;/code&gt;, &lt;code&gt;$(this).attr('checked')&lt;/code&gt; will return same result as above, but &lt;code&gt;this.getAttribute("checked")&lt;/code&gt; will always get &lt;code&gt;checked&lt;/code&gt; no matter if you check it or not.&lt;/p&gt;
 &lt;p&gt;You can also set &lt;code&gt;&amp;lt;input type='checkbox' checked="checked"/&amp;gt;&lt;/code&gt; to make it default checked.&lt;/p&gt;
-&lt;h3&gt;Change Status&lt;/h3&gt;
+&lt;h3 id="change-status"&gt;Change Status&lt;/h3&gt;
 &lt;p&gt;Following JQuery Code can divide status of checkbox if someone check or uncheck it:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;$document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;ready&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(){&lt;/span&gt;
     &lt;span class="c1"&gt;//You should change 'type=checkbox' based on your code. 'name' can be skipped&lt;/span&gt;
@@ -914,7 +914,7 @@ can be reached by event.relatedTarget&lt;/p&gt;
 
 &lt;p&gt;The usage of code above: when you check the checkbox, this default code will become &lt;code&gt;&amp;lt;input type='checkbox' checked='checked'&amp;gt;&lt;/code&gt;. If you un-check it, code will change back to &lt;code&gt;&amp;lt;input type="checkbox" /&amp;gt;&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;In this case, if you use &lt;code&gt;$(this).attr(checked)&lt;/code&gt; or &lt;code&gt;this.getAttribute(&lt;/code&gt;checked&lt;code&gt;)&lt;/code&gt; to check the status of checkbox, the &lt;em&gt;un-checked&lt;/em&gt; checkbox will return &lt;code&gt;undefined&lt;/code&gt;. the &lt;em&gt;checked&lt;/em&gt; checkbox will return &lt;code&gt;checked&lt;/code&gt;.&lt;/p&gt;
-&lt;h3&gt;Check/UnCheck Checkbox Using JavaScirpt&lt;/h3&gt;
+&lt;h3 id="checkuncheck-checkbox-using-javascirpt"&gt;Check/UnCheck Checkbox Using JavaScirpt&lt;/h3&gt;
 &lt;p&gt;In Bootstrap3, you can also set the &lt;code&gt;checked&lt;/code&gt; attribute of checkbox to &lt;code&gt;true&lt;/code&gt; or &lt;code&gt;false&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;If you use JQuery, &lt;code&gt;$(this).attr("checked",false)&lt;/code&gt; will remove &lt;code&gt;checked&lt;/code&gt; attribute in code.&lt;/p&gt;
 &lt;p&gt;If you use pure JavaScript, You have two steps to do this:&lt;/p&gt;

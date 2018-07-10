@@ -7,7 +7,7 @@ article: http://ogp.me/ns/article#
 <meta charset="utf-8">
 <meta name="description" content="This post includes useful SQL basic knowledge I read online or learned in work. This post will be updated continually.">
 <meta name="viewport" content="width=device-width">
-<title>SQL Basics | I'm Pengyin</title>
+<title>SQL Basics | I'm Pengyin (Wendy)</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2015/Data%20Science/sql-basics.html">
@@ -26,7 +26,7 @@ MathJax.Hub.Config({
     }
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
-<meta property="og:site_name" content="I'm Pengyin">
+<meta property="og:site_name" content="I'm Pengyin (Wendy)">
 <meta property="og:title" content="SQL Basics">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2015/Data%20Science/sql-basics.html">
 <meta property="og:description" content="This post includes useful SQL basic knowledge I read online or learned in work. This post will be updated continually.">
@@ -68,7 +68,7 @@ MathJax.Hub.Config({
         </div>
         <div class="body">
             <div>
-<h4>Reference List</h4>
+<h4 id="reference-list">Reference List</h4>
 <ul>
 <li>
 <p><a href="https://en.wikibooks.org/wiki/Oracle_Programming/SQL_Cheatsheet">Oracle Programming/SQL Cheatsheet</a></p>
@@ -77,8 +77,8 @@ MathJax.Hub.Config({
 <p><a href="http://www.tutorialspoint.com/sql/index.htm">SQL Tutorial on TutorialsPoint</a></p>
 </li>
 </ul>
-<h4>Basic SQL Commands</h4>
-<h6>DDL - Data Definition Language</h6>
+<h4 id="basic-sql-commands">Basic SQL Commands</h4>
+<h6 id="ddl-data-definition-language">DDL - Data Definition Language</h6>
 <ul>
 <li>
 <p><code>CREATE</code>: Creates a new table, a view of a table, or other object in database</p>
@@ -90,7 +90,7 @@ MathJax.Hub.Config({
 <p><code>DROP</code>: Deletes an entire table, a view of a table or other object in the database.</p>
 </li>
 </ul>
-<h6>DML - Data Manipulation Language</h6>
+<h6 id="dml-data-manipulation-language">DML - Data Manipulation Language</h6>
 <ul>
 <li>
 <p><code>INSERT</code>: Creates a record</p>
@@ -102,7 +102,7 @@ MathJax.Hub.Config({
 <p><code>DELETE</code>: Deletes records</p>
 </li>
 </ul>
-<h6>DCL - Data Control Language</h6>
+<h6 id="dcl-data-control-language">DCL - Data Control Language</h6>
 <ul>
 <li>
 <p><code>GRANT</code>: Gives a privilege to user</p>
@@ -111,12 +111,12 @@ MathJax.Hub.Config({
 <p><code>REVOKE</code>: Takes back privileges granted from user</p>
 </li>
 </ul>
-<h6>DQL - Data Query Language</h6>
+<h6 id="dql-data-query-language">DQL - Data Query Language</h6>
 <ul>
 <li>
 <code>SELECT</code>: Retrieves certain records from one or more tables</li>
 </ul>
-<h4>Data Integrity</h4>
+<h4 id="data-integrity">Data Integrity</h4>
 <p>The following categories of the data integrity exist with each RDBMS:</p>
 <ul>
 <li>
@@ -132,7 +132,7 @@ MathJax.Hub.Config({
 <p><code>User-Defined Integrity</code>: Enforces some specific business rules that do not fall into entity, domain or referential integrity.</p>
 </li>
 </ul>
-<h4>Database Normalization</h4>
+<h4 id="database-normalization">Database Normalization</h4>
 <p>Database normalization is the process of efficiently organizing data in a database.</p>
 <p>There are two reasons of the normalization process:</p>
 <ul>
@@ -144,7 +144,7 @@ MathJax.Hub.Config({
 </li>
 </ul>
 <p>Normalization guidelines are divided into normal forms; The aim of normal forms is to organize the database structure so that it complies with the rules of <code>first normal form</code>, then <code>second normal form</code>, and finally <code>third normal form</code>.</p>
-<h6>First Normal Form (1NF)</h6>
+<h6 id="first-normal-form-1nf">First Normal Form (1NF)</h6>
 <p>First normal form (<code>1NF</code>) sets the very basic rules for an organized database:</p>
 <ul>
 <li>
@@ -157,14 +157,14 @@ MathJax.Hub.Config({
 <p>Ensure that there is a <em>primary key</em>.</p>
 </li>
 </ul>
-<h6>First Rule of 1NF</h6>
+<h6 id="first-rule-of-1nf">First Rule of 1NF</h6>
 <p>You must define the data items.</p>
 <p>This means looking at the data to be stored, organizing the data into columns, defining what type of data each column contains, and finally putting related columns into their own table.</p>
-<h6>Second Rule of 1NF</h6>
+<h6 id="second-rule-of-1nf">Second Rule of 1NF</h6>
 <p>Ensure that there are no repeating groups of data: you may need to <code>JOIN</code> tables.</p>
-<h6>Third Rule of 1NF</h6>
+<h6 id="third-rule-of-1nf">Third Rule of 1NF</h6>
 <p>Create primary key: <code>CREATE TABLE CUSTOMERS(PRIMARY KEY (ID));</code></p>
-<h6>Second Normal Form (2NF)</h6>
+<h6 id="second-normal-form-2nf">Second Normal Form (2NF)</h6>
 <p>Second normal form states that it should meet all the rules for 1NF and there must be no partial dependences of any of the columns on the primary key.</p>
 <p>Example:</p>
 <p>Consider a customer-order relation and you want to store customer ID, customer name, order ID and order detail, and date of purchase:</p>
@@ -195,7 +195,7 @@ MathJax.Hub.Config({
 <blockquote>
 <p>To make this table comply with second normal form, you need to separate the columns into three tables.</p>
 </blockquote>
-<h6>Third Normal Form (3NF)</h6>
+<h6 id="third-normal-form-3nf">Third Normal Form (3NF)</h6>
 <p>A table is in third normal form when the following conditions are met:</p>
 <ul>
 <li>
@@ -230,9 +230,9 @@ MathJax.Hub.Config({
 <blockquote>
 <p>When duplicated data changes, there's a big risk of updating only some of the data, especially if it's spread out in a number of different places in the database.</p>
 </blockquote>
-<h4>SELECT</h4>
+<h4 id="select">SELECT</h4>
 <p><code>SELECT INTO</code> can only retrieve <strong>one</strong> line of item. Empty line will get <em>NO_DATA_FOUND</em> error. Mutiple lines will get <em>TOO_MANY_ROWS</em> error.</p>
-<h4>LIKE</h4>
+<h4 id="like">LIKE</h4>
 <p>User <code>LIKE</code> to compare a value to similar values using wildcard operators.</p>
 <p>There are two wildcards used in conjunction with the LIKE operator:</p>
 <ul>
@@ -245,7 +245,7 @@ MathJax.Hub.Config({
 </ul>
 <p>Example:</p>
 <p><code>WHERE SALARY LIKE '2_%_%'</code>: Finds any values that start with 2 and are at least 3 characters in length</p>
-<h4>TOP</h4>
+<h4 id="top">TOP</h4>
 <p>The SQL <code>TOP</code> clause is used to fetch a TOP N number or X percent records from a table.</p>
 <p>Note: All the databases do not support TOP clause. For example MySQL supports <code>LIMIT</code> clause to fetch limited number of records and Oracle uses <code>ROWNUM</code> to fetch limited number of records.</p>
 <p>Syntax:</p>
@@ -269,7 +269,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h4>ORDER BY</h4>
+<h4 id="order-by">ORDER BY</h4>
 <p>The SQL <code>ORDER BY</code> clause is used to sort the data in ascending or descending order, based on one or more columns.</p>
 <p>Some database sorts query results in ascending order by default.</p>
 <p>You can use more than one column in the <code>ORDER BY</code> clause. Make sure whatever column you are using to sort, that column should be in column-list.</p>
@@ -281,7 +281,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h4>GROUP BY</h4>
+<h4 id="group-by">GROUP BY</h4>
 <p>The SQL <code>GROUP BY</code> clause is used in collaboration with the <code>SELECT</code> statement to arrange identical data into groups.</p>
 <p>The <code>GROUP BY</code> clause follows the <code>WHERE</code> clause in a <code>SELECT</code> statement and must precedes the <code>ORDER BY</code> clause.</p>
 <p>Syntax:</p>
@@ -293,7 +293,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h4>DISTINCT</h4>
+<h4 id="distinct">DISTINCT</h4>
 <p>The SQL <code>DISTINCT</code> keyword is used in conjunction with <code>SELECT</code> statement to eliminate all the duplicate records and fetching only unique records.</p>
 <p>Syntax:</p>
 <pre class="code literal-block"><span></span><span class="k">SELECT</span> <span class="k">DISTINCT</span> <span class="n">column1</span><span class="p">,</span> <span class="n">column2</span><span class="p">,.....</span><span class="n">columnN</span>
@@ -302,7 +302,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h4>SQL Constraints</h4>
+<h4 id="sql-constraints">SQL Constraints</h4>
 <p>Constraints could be column level or table level.</p>
 <p>Commonly used constraints:</p>
 <ul>
@@ -328,10 +328,10 @@ MathJax.Hub.Config({
 <p><code>INDEX</code>: Use to create and retrieve data from the database very quickly.</p>
 </li>
 </ul>
-<h6>NOT NULL</h6>
+<h6 id="not-null">NOT NULL</h6>
 <p>A NULL is not the same as no data, rather, it represents unknown data.</p>
 <p>Example: <code>CREATE TABLE CUSTOMERS( ID  INT  NOT NULL);</code></p>
-<h6>DEFAULT</h6>
+<h6 id="default">DEFAULT</h6>
 <p>In case <code>INSERT INTO</code> or <code>INSERT</code> statement does not provide a value for such column, then the column will have a default value.</p>
 <p>Example:</p>
 <ul>
@@ -342,7 +342,7 @@ MathJax.Hub.Config({
 <p><code>ALTER COLUMN SALARY DROP DEFAULT;</code></p>
 </li>
 </ul>
-<h6>PRIMARY KEY</h6>
+<h6 id="primary-key">PRIMARY KEY</h6>
 <p>A primary key is a field in a table which uniquely identifies each row/record in a database table.</p>
 <p>Primary keys must contain unique values. A primary key column cannot have <code>NULL</code> values.</p>
 <p>A table can have only one primary key. When multiple fields are used as a primary key, they are called a <code>composite key</code>.</p>
@@ -350,7 +350,7 @@ MathJax.Hub.Config({
 <p>NOTE: If you use the <code>ALTER TABLE</code> statement to add a primary key, the primary key column(s) must already have been declared to not contain <code>NULL</code> values (when the table was first created).</p>
 </blockquote>
 <p>Example: <code>CREATE TABLE CUSTOMERS( PRIMARY KEY (ID, NAME) );</code></p>
-<h6>FOREIGN KEY</h6>
+<h6 id="foreign-key">FOREIGN KEY</h6>
 <p>A <code>foreign key</code> is a key used to link two tables together. This is sometimes called a <code>referencing key</code>.</p>
 <p>Foreign Key is a column or a combination of columns whose values match a Primary Key in a different table.</p>
 <p>The relationship between 2 tables matches the Primary Key in one of the tables with a Foreign Key in the second table.</p>
@@ -367,7 +367,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h6>CHECK</h6>
+<h6 id="check">CHECK</h6>
 <p>The <code>CHECK</code> Constraint enables a condition to check the value being entered into a record. If the condition evaluates to false, the record violates the constraint and isn't entered into the table.</p>
 <p>Example:</p>
 <p><code>CREATE TABLE CUSTOMERS(AGE INT NOT NULL CHECK (AGE &gt;= 18));</code></p>
@@ -380,7 +380,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h6>INDEX</h6>
+<h6 id="index">INDEX</h6>
 <p>The <code>INDEX</code> is used to create and retrieve data from the database very quickly.</p>
 <p>Index can be created by using single or group of columns in a table.</p>
 <p>When index is created, it is assigned a <code>ROWID</code> for each row before it sorts out the data.</p>
@@ -392,7 +392,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h4>JOIN</h4>
+<h4 id="join">JOIN</h4>
 <p>JOIN is performed in the WHERE clause. Several operators can be used to join tables, such as =, &lt;, &gt;, &lt;&gt;, &lt;=, &gt;=, !=, BETWEEN, LIKE, and NOT;</p>
 <p>There are different types of joins available in SQL:</p>
 <ul>
@@ -415,7 +415,7 @@ MathJax.Hub.Config({
 <p><code>CARTESIAN JOIN</code>: returns the <strong>Cartesian product</strong> of the sets of records from the two or more joined tables.</p>
 </li>
 </ul>
-<h6>INNER JOIN</h6>
+<h6 id="inner-join">INNER JOIN</h6>
 <p>When the join-predicate is satisfied, column values for each matched pair of rows of A and B are combined into a result row.</p>
 <p>Example:</p>
 <pre class="code literal-block"><span></span><span class="k">SQL</span><span class="o">&gt;</span> <span class="k">SELECT</span>  <span class="n">ID</span><span class="p">,</span> <span class="n">NAME</span><span class="p">,</span> <span class="n">AMOUNT</span><span class="p">,</span> <span class="nb">DATE</span>
@@ -425,7 +425,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h6>LEFT JOIN</h6>
+<h6 id="left-join">LEFT JOIN</h6>
 <p>The SQL LEFT JOIN returns all rows from the left table, even if there are no matches in the right table.</p>
 <p>This means that if the ON clause matches 0 (zero) records in right table, the join will still return a row in the result, but with <code>NULL</code> in each column <strong>from right table</strong>.</p>
 <p>This means that a left join returns all the values from the left table, plus matched values from the right table or NULL in case of no matching join predicate.</p>
@@ -438,10 +438,10 @@ MathJax.Hub.Config({
 
 
 <p>RIGHT JOIN is similar.</p>
-<h6>FULL JOIN</h6>
+<h6 id="full-join">FULL JOIN</h6>
 <p>The SQL FULL JOIN combines <strong>the results of both left and right outer joins</strong>.</p>
 <p>The joined table will contain all records from both tables, and fill in NULLs for missing matches on either side.</p>
-<h6>SELF JOIN</h6>
+<h6 id="self-join">SELF JOIN</h6>
 <p>Syntax:</p>
 <pre class="code literal-block"><span></span><span class="k">SELECT</span> <span class="n">a</span><span class="p">.</span><span class="k">column_name</span><span class="p">,</span> <span class="n">b</span><span class="p">.</span><span class="k">column_name</span><span class="p">...</span>
 <span class="k">FROM</span> <span class="n">table1</span> <span class="n">a</span><span class="p">,</span> <span class="n">table1</span> <span class="n">b</span>
@@ -449,7 +449,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h6>CARTESIAN JOIN/CROSS JOIN</h6>
+<h6 id="cartesian-joincross-join">CARTESIAN JOIN/CROSS JOIN</h6>
 <p>The <code>CARTESIAN JOIN</code> or <code>CROSS JOIN</code> returns the Cartesian product of the sets of records from the two or more joined tables.</p>
 <p>Thus, it equates to <em>an inner join where the join-condition always evaluates to True</em> or <em>where the join-condition is absent</em> from the statement.</p>
 <p>Syntax:</p>
@@ -458,7 +458,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h4>UNION</h4>
+<h4 id="union">UNION</h4>
 <p>The SQL <code>UNION</code> clause/operator is used to combine the results of two or more SELECT statements <strong>without returning any duplicate rows</strong>.</p>
 <p>To use UNION, each SELECT must have <em>the same number of columns selected, the same number of column expressions, the same data type, and have them in the same order</em>, but they do not have to be the same length.</p>
 <p>Syntax:</p>
@@ -482,7 +482,7 @@ MathJax.Hub.Config({
 <p>SQL <code>EXCEPT</code> Clause</p>
 </li>
 </ul>
-<h6>INTERSECT</h6>
+<h6 id="intersect">INTERSECT</h6>
 <p>The SQL <code>INTERSECT</code> clause/operator is used to combine two SELECT statements, but returns rows only from the first SELECT statement that are identical to a row in the second SELECT statement.</p>
 <p>This means INTERSECT returns <em>only common rows returned by the two SELECT statements</em>.</p>
 <p>Syntax:</p>
@@ -496,15 +496,15 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h6>EXCEPT</h6>
+<h6 id="except">EXCEPT</h6>
 <p>The SQL <code>EXCEPT</code> clause/operator is used to combine two SELECT statements and returns rows from the first SELECT statement that are not returned by the second SELECT statement.</p>
 <p>This means EXCEPT returns only rows, which <em>are not available in second SELECT statement</em>.</p>
 <p>Syntax is similar to <code>INTERSECT</code>.</p>
-<h4>NULL VALUES</h4>
+<h4 id="null-values">NULL VALUES</h4>
 <p>SQL NULL is the term used to represent <strong>no</strong> value.</p>
 <p>It is very important to understand that a NULL value is different than a zero value or a field that contains spaces.</p>
 <p>You must use the <code>IS NULL</code> or <code>IS NOT NULL</code> operators in order to check for a NULL value.</p>
-<h4>SQL Alias</h4>
+<h4 id="sql-alias">SQL Alias</h4>
 <p>User can rename a table or a column <strong>temporarily</strong> by giving another name known as <code>alias</code>.</p>
 <p>Syntax:</p>
 <pre class="code literal-block"><span></span><span class="k">SELECT</span> <span class="n">column1</span><span class="p">,</span> <span class="n">column2</span><span class="p">....</span>
@@ -525,10 +525,10 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h4>SQL INDEX</h4>
+<h4 id="sql-index">SQL INDEX</h4>
 <p><code>Index</code> is special lookup table that the database search engine can use to speed up data retrieval. i.e. an index is a <strong>pointer to data</strong> in a table.</p>
 <p>An index helps <strong>speed up</strong> <code>SELECT</code> queries and <code>WHERE</code> clauses, but it <strong>slows down</strong> data input, with <code>UPDATE</code> and <code>INSERT</code> statements. Indexes can be created or dropped with no effect on the data.</p>
-<h6>CREATE</h6>
+<h6 id="create">CREATE</h6>
 <p>Creating index involves the <code>CREATE INDEX</code> statement, which allows you to name the index, to specify the table and which column or columns to index, and to indicate whether the index is in ascending or descending
 order.</p>
 <p>Indexes can also be <strong>unique</strong>, similar to the UNIQUE constraint, in that the index prevents duplicate entries in the column or combination of columns on which there's an index.</p>
@@ -543,14 +543,14 @@ order.</p>
 </pre>
 
 
-<h6>Unique Indexes</h6>
+<h6 id="unique-indexes">Unique Indexes</h6>
 <p>A unique index does not allow any duplicate values to be inserted into the table.</p>
 <p>Syntax:</p>
 <pre class="code literal-block"><span></span><span class="k">CREATE</span> <span class="k">UNIQUE</span> <span class="k">INDEX</span> <span class="n">index_name</span> <span class="k">on</span> <span class="k">table_name</span><span class="p">(</span><span class="k">column_name</span><span class="p">);</span>
 </pre>
 
 
-<h6>Composite Indexes</h6>
+<h6 id="composite-indexes">Composite Indexes</h6>
 <p>Should there be only one column used, a single-column index should be the choice.</p>
 <p>Should there be two or more columns that are frequently used in the WHERE clause as filters, the composite index would be the best choice.</p>
 <pre class="code literal-block"><span></span><span class="k">CREATE</span> <span class="k">INDEX</span> <span class="n">index_name</span>
@@ -558,16 +558,16 @@ order.</p>
 </pre>
 
 
-<h6>Implicit Indexed</h6>
+<h6 id="implicit-indexed">Implicit Indexed</h6>
 <p>Implicit indexes are indexes that are automatically created by the database server when an object is created.</p>
 <p>Indexes are automatically created for <strong>primary key constraints and unique constraints</strong>.</p>
-<h6>DROP</h6>
+<h6 id="drop">DROP</h6>
 <p>Syntax:</p>
 <pre class="code literal-block"><span></span><span class="k">DROP</span> <span class="k">INDEX</span> <span class="n">index_name</span><span class="p">;</span>
 </pre>
 
 
-<h6>WHEN TO AVOID INDEX</h6>
+<h6 id="when-to-avoid-index">WHEN TO AVOID INDEX</h6>
 <p>The following guidelines indicate when the use of an index should be reconsidered:</p>
 <ul>
 <li>
@@ -583,7 +583,7 @@ order.</p>
 <p>Columns that are <strong>frequently manipulated</strong> should not be indexed.</p>
 </li>
 </ul>
-<h4>ALTER TABLE</h4>
+<h4 id="alter-table">ALTER TABLE</h4>
 <p>SQL <code>ALTER TABLE</code> command is used to add, delete or modify columns in an existing table.</p>
 <p>Syntax:</p>
 <pre class="code literal-block"><span></span><span class="k">ALTER</span> <span class="k">TABLE</span> <span class="k">table_name</span>
@@ -591,19 +591,19 @@ order.</p>
 </pre>
 
 
-<h4>TRUNACTE TABLE</h4>
+<h4 id="trunacte-table">TRUNACTE TABLE</h4>
 <p>SQL <code>TRUNCATE TABLE</code> command is used to <strong>delete complete data</strong> from an existing table.</p>
 <p>Syntax:</p>
 <pre class="code literal-block"><span></span><span class="k">TRUNCATE</span> <span class="k">TABLE</span> <span class="k">table_name</span><span class="p">;</span>
 </pre>
 
 
-<h4>VIEWS</h4>
+<h4 id="views">VIEWS</h4>
 <p>View is nothing more than a SQL statement that is stored in the database with an associated name.</p>
 <p>A view is actually a composition of a table in the form of a predefined SQL query.</p>
 <p>A view can contain all rows of a table or select rows from a table.</p>
 <p>A view can be created from one or many tables which depends on the written SQL query to create a view.</p>
-<h6>CREATING VIEW</h6>
+<h6 id="creating-view">CREATING VIEW</h6>
 <p>Database views are created using the <code>CREATE VIEW</code> statement.</p>
 <p>Views can be created from a single table, multiple tables, or another view.</p>
 <pre class="code literal-block"><span></span><span class="k">CREATE</span> <span class="k">VIEW</span> <span class="n">view_name</span> <span class="k">AS</span>
@@ -616,7 +616,7 @@ order.</p>
 </pre>
 
 
-<h6>WITH CHECK OPTION</h6>
+<h6 id="with-check-option">WITH CHECK OPTION</h6>
 <p>The <code>WITH CHECK OPTION</code> is a <code>CREATE VIEW</code> statement option.</p>
 <p>The purpose of the WITH CHECK OPTION is to ensure that <strong>all UPDATE and INSERTs satisfy the condition(s) in the view definition</strong>.</p>
 <p>If they do not satisfy the condition(s), the UPDATE or INSERT returns an error.</p>
@@ -630,7 +630,7 @@ order.</p>
 
 
 <p>The WITH CHECK OPTION in this case should deny the entry of any NULL values in the view's AGE column.</p>
-<h6>UPDATE VIEW</h6>
+<h6 id="update-view">UPDATE VIEW</h6>
 <p>A VIEW can be updated in certain conditions:</p>
 <ul>
 <li>
@@ -672,7 +672,7 @@ order.</p>
 
 
 <p>This would ultimately update the base table CUSTOMERS <strong>and</strong> same would reflect in the view itself.</p>
-<h6>INSERT OR DELETE ROWS</h6>
+<h6 id="insert-or-delete-rows">INSERT OR DELETE ROWS</h6>
 <p>Rows of data can be inserted/deleted from a view.</p>
 <p>Example:</p>
 <pre class="code literal-block"><span></span><span class="k">SQL</span> <span class="o">&gt;</span> <span class="k">DELETE</span> <span class="k">FROM</span> <span class="n">CUSTOMERS_VIEW</span>
@@ -681,13 +681,13 @@ order.</p>
 
 
 <p>This would ultimately delete a row from the base table CUSTOMERS <strong>and</strong> same would reflect in the view itself.</p>
-<h6>DROP VIEW</h6>
+<h6 id="drop-view">DROP VIEW</h6>
 <p>Syntax:</p>
 <pre class="code literal-block"><span></span><span class="k">DROP</span> <span class="k">VIEW</span> <span class="n">view_name</span><span class="p">;</span>
 </pre>
 
 
-<h4>HAVING CLAUSE</h4>
+<h4 id="having-clause">HAVING CLAUSE</h4>
 <p>HAVING clause enables you to specify conditions that filter which group results appear in the final results.</p>
 <p><code>HAVING</code> clause places conditions on groups created by the <code>GROUP BY</code> clause.</p>
 <p>Syntax:</p>
@@ -711,12 +711,12 @@ order.</p>
 </pre>
 
 
-<h4>TANSACTIONS</h4>
+<h4 id="tansactions">TANSACTIONS</h4>
 <p>Transaction is a unit of work that is performed <strong>against a database</strong>.</p>
 <p>Transactions are <strong>units</strong> or <strong>sequences</strong> of work accomplished in a logical order, whether in a manual fashion by a user or automatically by some sort of a database program.</p>
 <p>A transaction is the propagation of one or more changes to the database.</p>
 <p>Practically, you will club many SQL queries into a group and you will execute all of them together as a part of a transaction.</p>
-<h6>PROPERTIES OF TRANSACTIONS</h6>
+<h6 id="properties-of-transactions">PROPERTIES OF TRANSACTIONS</h6>
 <p>Transactions have the following four standard properties, usually referred to by the acronym <code>ACID</code>:</p>
 <ul>
 <li>
@@ -732,7 +732,7 @@ order.</p>
 <p><code>Durability</code>: ensures that the result or effect of a committed transaction persists in case of a system failure.</p>
 </li>
 </ul>
-<h6>TRANSACTION CONTROL</h6>
+<h6 id="transaction-control">TRANSACTION CONTROL</h6>
 <p>There are following commands used to control transactions:</p>
 <ul>
 <li>
@@ -750,7 +750,7 @@ order.</p>
 </ul>
 <p>Transactional control commands are only used with the DML commands <code>INSERT</code>, <code>UPDATE</code> and <code>DELETE</code> only.</p>
 <p>They can not be used while creating tables or dropping them because these operations are automatically committed in the database.</p>
-<h6>COMMIT</h6>
+<h6 id="commit">COMMIT</h6>
 <p>The COMMIT command is the transactional command used to <strong>save changes</strong> invoked by a transaction to the database.</p>
 <p>The COMMIT command saves all transactions to the database since the last <code>COMMIT</code> or <code>ROLLBACK</code> command.</p>
 <p>The syntax for COMMIT command is as follows:</p>
@@ -758,7 +758,7 @@ order.</p>
 </pre>
 
 
-<h6>ROLLBACK</h6>
+<h6 id="rollback">ROLLBACK</h6>
 <p>The ROLLBACK command is the transactional command used to <strong>undo transactions</strong> that <strong>have not already been saved</strong> to the database.</p>
 <p>The ROLLBACK command can only be used to undo transactions since the last <code>COMMIT</code> or <code>ROLLBACK</code> command was issued.</p>
 <p>The syntax for ROLLBACK command is as follows:</p>
@@ -766,7 +766,7 @@ order.</p>
 </pre>
 
 
-<h6>SAVEPOINT</h6>
+<h6 id="savepoint">SAVEPOINT</h6>
 <p>A SAVEPOINT is a point in a transaction when you can roll the transaction back to a certain point without rolling back the entire transaction.</p>
 <p>The syntax for SAVEPOINT command is as follows:</p>
 <pre class="code literal-block"><span></span><span class="n">SAVEPOINT</span> <span class="n">SAVEPOINT_NAME</span><span class="p">;</span>
@@ -780,21 +780,21 @@ order.</p>
 </pre>
 
 
-<h6>RELEASE SAVEPOINT</h6>
+<h6 id="release-savepoint">RELEASE SAVEPOINT</h6>
 <p>The RELEASE SAVEPOINT command is used to <strong>remove</strong> a <code>SAVEPOINT</code> that you have created.</p>
 <p>Syntax:</p>
 <pre class="code literal-block"><span></span><span class="n">RELEASE</span> <span class="n">SAVEPOINT</span> <span class="n">SAVEPOINT_NAME</span><span class="p">;</span>
 </pre>
 
 
-<h6>SET TRANSACTION</h6>
+<h6 id="set-transaction">SET TRANSACTION</h6>
 <p>The SET TRANSACTION command can be used to <strong>initiate</strong> a database transaction.</p>
 <pre class="code literal-block"><span></span><span class="k">SET</span> <span class="n">TRANSACTION</span> <span class="p">[</span> <span class="k">READ</span> <span class="k">WRITE</span> <span class="o">|</span> <span class="k">READ</span> <span class="k">ONLY</span> <span class="p">];</span>
 </pre>
 
 
-<h4>WILDCARD IN SQL</h4>
-<h6>TYPES</h6>
+<h4 id="wildcard-in-sql">WILDCARD IN SQL</h4>
+<h6 id="types">TYPES</h6>
 <ul>
 <li>
 <p><code>%</code>: Matches <strong>one or more</strong> characters. Note that MS Access uses the asterisk (<code>*</code>) wildcard character instead of the percent sign (<code>%</code>) wildcard character.</p>
@@ -804,9 +804,9 @@ order.</p>
 </li>
 </ul>
 <p>The percent sign represents zero, one, or multiple characters. The underscore represents a single number or character. The symbols can be used in combinations.</p>
-<h6>Example</h6>
+<h6 id="example">Example</h6>
 <p><code>WHERE SALARY LIKE '2_%_%'</code>: Finds any values that start with 2 and are at least 3 characters in length</p>
-<h4>TEMPORARY TABLE</h4>
+<h4 id="temporary-table">TEMPORARY TABLE</h4>
 <p>Temporary Tables are a great feature that lets you store and process intermediate results by using the same selection, update, and join capabilities that you can use with typical SQL Server tables.</p>
 <p>The temporary tables could be very useful in some cases to <strong>keep temporary data</strong>.</p>
 <blockquote>
@@ -827,7 +827,7 @@ order.</p>
 <p>Now if you will log out of the MySQL session and then you will issue a SELECT command, then you will find no data available in the database.</p>
 <p>Even your temporary table would also not exist.</p>
 <p>By default, all the temporary tables are deleted by MySQL when your database connection gets terminated.</p>
-<h4>SQL CLONE TABLES</h4>
+<h4 id="sql-clone-tables">SQL CLONE TABLES</h4>
 <p>If you are using MySQL RDBMS, you can handle this situation by the following steps:</p>
 <ul>
 <li>
@@ -840,7 +840,7 @@ order.</p>
 <p>Optionally, if you need the table contents copied as well, issue an <code>INSERT INTO ... SELECT</code> statement, too.</p>
 </li>
 </ul>
-<h4>SQL SUBQUERY</h4>
+<h4 id="sql-subquery">SQL SUBQUERY</h4>
 <p><code>Subquery</code> or <code>Inner query</code> or <code>Nested query</code> is a query within another SQL query and embedded within the WHERE clause.</p>
 <p>There are a few rules that subqueries must follow:</p>
 <ul>
@@ -866,14 +866,14 @@ order.</p>
 <p>The BETWEEN operator cannot be used with a subquery; however, the BETWEEN operator can be used within the subquery.</p>
 </li>
 </ul>
-<h6>SELECT EXAMPLE</h6>
+<h6 id="select-example">SELECT EXAMPLE</h6>
 <pre class="code literal-block"><span></span><span class="p">(</span><span class="k">SELECT</span> <span class="k">column_name</span> <span class="p">[,</span> <span class="k">column_name</span> <span class="p">]</span>
 <span class="k">FROM</span> <span class="n">table1</span> <span class="p">[,</span> <span class="n">table2</span> <span class="p">]</span>
 <span class="p">[</span><span class="k">WHERE</span><span class="p">])</span>
 </pre>
 
 
-<h6>INSERT EXAMPLE</h6>
+<h6 id="insert-example">INSERT EXAMPLE</h6>
 <pre class="code literal-block"><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="k">table_name</span> <span class="p">[</span> <span class="p">(</span><span class="n">column1</span> <span class="p">[,</span> <span class="n">column2</span> <span class="p">])</span> <span class="p">]</span>
 <span class="k">SELECT</span> <span class="p">[</span> <span class="o">*|</span><span class="n">column1</span> <span class="p">[,</span> <span class="n">column2</span> <span class="p">]</span>
 <span class="k">FROM</span> <span class="n">table1</span> <span class="p">[,</span> <span class="n">table2</span> <span class="p">]</span>
@@ -881,7 +881,7 @@ order.</p>
 </pre>
 
 
-<h6>UPDATE EXAMPLE</h6>
+<h6 id="update-example">UPDATE EXAMPLE</h6>
 <pre class="code literal-block"><span></span><span class="k">UPDATE</span> <span class="k">table</span>
 <span class="k">SET</span> <span class="k">column_name</span> <span class="o">=</span> <span class="n">new_value</span>
 <span class="p">[</span> <span class="k">WHERE</span> <span class="k">OPERATOR</span> <span class="p">[</span> <span class="n">VALUE</span> <span class="p">]</span>
@@ -891,7 +891,7 @@ order.</p>
 </pre>
 
 
-<h6>DELETE EXAMPLE</h6>
+<h6 id="delete-example">DELETE EXAMPLE</h6>
 <pre class="code literal-block"><span></span><span class="k">DELETE</span> <span class="k">FROM</span> <span class="k">TABLE_NAME</span>
 <span class="p">[</span> <span class="k">WHERE</span> <span class="k">OPERATOR</span> <span class="p">[</span> <span class="n">VALUE</span> <span class="p">]</span>
 <span class="p">(</span><span class="k">SELECT</span> <span class="k">COLUMN_NAME</span>
@@ -900,9 +900,9 @@ order.</p>
 </pre>
 
 
-<h4>SEQUENCE</h4>
+<h4 id="sequence">SEQUENCE</h4>
 <p>Sequence is <strong>a set of integers</strong> 1, 2, 3, ... that are generated in order on demand.</p>
-<h6>CREATING</h6>
+<h6 id="creating">CREATING</h6>
 <p>The simplest way in MySQL to use sequences is to define a column as <code>AUTO_INCREMENT</code> and leave rest of the things to MySQL to take care.</p>
 <pre class="code literal-block"><span></span><span class="n">mysql</span><span class="o">&gt;</span> <span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">INSECT</span>
 <span class="o">-&gt;</span> <span class="p">(</span>
@@ -916,7 +916,7 @@ order.</p>
 </pre>
 
 
-<h6>RENUMBERING</h6>
+<h6 id="renumbering">RENUMBERING</h6>
 <p>There may be a case when you have deleted many records from a table and you want to resequence all the records.</p>
 <p>This can be done by using a simple trick but you should be very careful to do so if your table is having joins with other table.</p>
 <p>If you determine that resequencing an AUTO_INCREMENT column is unavoidable, the way to do it is to:</p>
@@ -937,7 +937,7 @@ table using this technique:</p>
 </pre>
 
 
-<h6>ASSIGN START VALUE</h6>
+<h6 id="assign-start-value">ASSIGN START VALUE</h6>
 <p>By default, MySQL will start sequence from 1 but you can specify any other number as well at the time of table creation.</p>
 <pre class="code literal-block"><span></span><span class="n">id</span> <span class="nb">INT</span> <span class="n">UNSIGNED</span> <span class="k">NOT</span> <span class="k">NULL</span> <span class="n">AUTO_INCREMENT</span> <span class="o">=</span> <span class="mi">100</span>
 </pre>
@@ -948,7 +948,7 @@ table using this technique:</p>
 </pre>
 
 
-<h4>DUPLICATES</h4>
+<h4 id="duplicates">DUPLICATES</h4>
 <p>The SQL <code>DISTINCT</code> keyword, which we already have discussed, is used in conjunction with <code>SELECT</code> statement to eliminate all the duplicate records and fetching only unique records.</p>
 <p>Syntax:</p>
 <pre class="code literal-block"><span></span><span class="k">SELECT</span> <span class="k">DISTINCT</span> <span class="n">column1</span><span class="p">,</span> <span class="n">column2</span><span class="p">,.....</span><span class="n">columnN</span>
@@ -957,7 +957,7 @@ table using this technique:</p>
 </pre>
 
 
-<h4>SQL USFUL FUNCTIONS</h4>
+<h4 id="sql-usful-functions">SQL USFUL FUNCTIONS</h4>
 <ul>
 <li>
 <p>SQL <code>COUNT</code> Function - The SQL COUNT aggregate function is used to count the number of rows in a database table.</p>
@@ -1020,7 +1020,7 @@ table using this technique:</p>
 
 
     </div>
-                     <footer id="footer"><p>Contents © 2018         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                     <footer id="footer"><p>Contents © 2018         <a href="mailto:pengyin.shan@outlook.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

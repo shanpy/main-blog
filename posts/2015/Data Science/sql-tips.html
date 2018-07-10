@@ -7,7 +7,7 @@ article: http://ogp.me/ns/article#
 <meta charset="utf-8">
 <meta name="description" content="This post includes useful SQL tips I read online or learned in work, including using RDBMS directly or programming for it. This post will be updated continually.">
 <meta name="viewport" content="width=device-width">
-<title>SQL Tips | I'm Pengyin</title>
+<title>SQL Tips | I'm Pengyin (Wendy)</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2015/Data%20Science/sql-tips.html">
@@ -26,7 +26,7 @@ MathJax.Hub.Config({
     }
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
-<meta property="og:site_name" content="I'm Pengyin">
+<meta property="og:site_name" content="I'm Pengyin (Wendy)">
 <meta property="og:title" content="SQL Tips">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2015/Data%20Science/sql-tips.html">
 <meta property="og:description" content="This post includes useful SQL tips I read online or learned in work, including using RDBMS directly or programming for it. This post will be updated continually.">
@@ -68,9 +68,9 @@ MathJax.Hub.Config({
         </div>
         <div class="body">
             <div>
-<h4>Using SQLProcessor in Java</h4>
+<h4 id="using-sqlprocessor-in-java">Using SQLProcessor in Java</h4>
 <p>My current job requires me to work on some old Java web application, which involves in connecting to Oracle SQL database using <code>SQLProcesoor</code>.</p>
-<h5>Basic Syntax</h5>
+<h5 id="basic-syntax">Basic Syntax</h5>
 <pre class="code literal-block"><span></span><span class="c1">//Assume you want to return an ArrayList of 'Course' objects</span>
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">SQLProcessorExample</span><span class="o">{</span>
     <span class="kd">public</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Course</span><span class="o">&gt;</span> <span class="nf">selectSQLExample</span><span class="o">(</span><span class="kd">final</span> <span class="n">String</span> <span class="n">anyParameter</span><span class="o">){</span>
@@ -106,7 +106,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h5>Important Tips</h5>
+<h5 id="important-tips">Important Tips</h5>
 <p>If you have any trouble in your query and have no idea after checking with error message, try run this query in your <strong>DB workbench</strong> first. This may help with possible syntax error.</p>
 <p>If you run query sucessfully in your DB workbench, but you get a <code>Invalid Indentifer</code> or <code>Invalid Keyword</code> exception in your Java app. <strong>Make sure you check your query in code with all necessary white spaces. You may have muliple lines of query code and you forget spaces at the end of one line.</strong></p>
 <p>Example:</p>
@@ -145,7 +145,7 @@ String sql = "select * from table_test a, table_test2 b" +
 
 
     </div>
-                     <footer id="footer"><p>Contents © 2018         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                     <footer id="footer"><p>Contents © 2018         <a href="mailto:pengyin.shan@outlook.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

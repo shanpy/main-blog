@@ -10,7 +10,7 @@ article: http://ogp.me/ns/article#
 <body>
 <p>Apache Velocity User Guide, with basic information about Apache Velocity's Template Language(**VTL**) information."&gt;
     <meta name="viewport" content="width=device-width"></p>
-<title>Apache Velocity Language Basics | I'm Pengyin</title>
+<title>Apache Velocity Language Basics | I'm Pengyin (Wendy)</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2015/Java/apache-velocity-basics.html">
@@ -29,7 +29,7 @@ MathJax.Hub.Config({
     }
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
-<meta property="og:site_name" content="I'm Pengyin">
+<meta property="og:site_name" content="I'm Pengyin (Wendy)">
 <meta property="og:title" content="Apache Velocity Language Basics">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2015/Java/apache-velocity-basics.html">
 <meta property="og:description" content="This post is a reading notes for &lt;a href=&quot;http://velocity.apache.org/engine/releases/velocity-1.7/user-guide.html&quot;&gt;Apache Velocity User Guide&lt;/a&gt;, with basic information about Apache Velocity's Templa">
@@ -69,7 +69,7 @@ MathJax.Hub.Config({
         </div>
         <div class="body">
             <div>
-<h3>Syntax Basics</h3>
+<h3 id="syntax-basics">Syntax Basics</h3>
 <p>All VTL statements, begins with the <code>#</code> character. For rendering process: the <strong>Velocity Templating Engine</strong> will:</p>
 <ol>
 <li>
@@ -82,12 +82,12 @@ MathJax.Hub.Config({
 <blockquote>
 <p>It is recommended to start each VTL statement on a <strong>new line</strong>.</p>
 </blockquote>
-<h4>References</h4>
+<h4 id="references">References</h4>
 <p>There are <strong>three</strong> types of references in the VTL: <code>variables</code>, <code>properties</code> and <code>methods</code>.</p>
 <blockquote>
 <p>In VTL, References begin with $ and are used to <strong>get</strong> something. Directives begin with # and are used to <strong>do</strong> something.</p>
 </blockquote>
-<h5>Variables</h5>
+<h5 id="variables">Variables</h5>
 <p>All variables/references in VTL begins with the <code>$</code> character,followed by a <strong>VTL Identifier</strong>.</p>
 <ul>
 <li>A <strong>VTL Identifier</strong> must start with an alphabetic character (i.e. a to z case insensitive). The rest of the characters are limited to the following types of characters: alphabetic, numeric, <code>-</code> or <code>_</code>.</li>
@@ -103,7 +103,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h6>String</h6>
+<h6 id="string">String</h6>
 <p>String values are always enclosed in <em>quotes</em>, either <em>single</em> or <em>double</em> quotes:</p>
 <ul>
 <li>
@@ -116,7 +116,7 @@ MathJax.Hub.Config({
 <p>Example: for <code>"Hello $name"</code>, the <code>$name</code> will be replaced by the referenced value.</p>
 </li>
 </ul>
-<h5>Properties</h5>
+<h5 id="properties">Properties</h5>
 <p>Properties have a distinctive format.</p>
 <p>The shorthand notation consists of a leading <code>$</code> character followed a <strong>VTL Identifier</strong>, followed by a dot character <code>.</code> and another <strong>VTL Identifier</strong></p>
 <p>Example: <code>$customer.Address</code> has <strong>two meanings</strong>:</p>
@@ -128,7 +128,7 @@ MathJax.Hub.Config({
 <p>VTL should find a referring to a <strong>method</strong> called <code>$customer.getAddress()</code>.</p>
 </li>
 </ol>
-<h5>Methods</h5>
+<h5 id="methods">Methods</h5>
 <p>Methods are references that consist of a leading <code>$</code> character followed a <strong>VTL Identifier</strong>, followed by a <strong>VTL Method Body</strong>.</p>
 <p>A <strong>VTL Method Body</strong> consists of a <strong>VTL Identifier</strong> followed by an left parenthesis character <code>(</code>, followed by an <strong>optional parameter list</strong>, followed by right parenthesis character <code>)</code>.</p>
 <p>Example:</p>
@@ -139,14 +139,14 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h6>a <em>shorthand notation</em> for <strong>VTL Methods</strong>
+<h6 id="a-shorthand-notation-for-vtl-methods">a <em>shorthand notation</em> for <strong>VTL Methods</strong>
 </h6>
 <p>In the example above, The <strong>property</strong> <code>$customer.Address</code> has the exact same effect as using the <strong>method</strong> <code>$customer.getAddress()</code>.</p>
 <p><em>It is generally <strong>preferable</strong> to use a <strong>Property</strong> when available.</em></p>
 <blockquote>
 <p>The main difference between Properties and Methods is that you can specify a <strong>parameter list</strong> to a Method.</p>
 </blockquote>
-<h6>Array as Lists</h6>
+<h6 id="array-as-lists">Array as Lists</h6>
 <p>As of Velocity 1.6, all <strong>array</strong> references are treated as <strong>fixed-length lists</strong>. User can call <code>java.util.List</code> methods on array references. Example:</p>
 <pre class="code literal-block"><span></span><span class="p">$</span><span class="nv">myarray</span><span class="p">.</span><span class="nv">isEmpty</span><span class="p">()</span><span class="x"></span>
 <span class="p">$</span><span class="nv">myarray</span><span class="p">.</span><span class="nv">size</span><span class="p">()</span><span class="x"></span>
@@ -155,7 +155,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h6>vararg methods</h6>
+<h6 id="vararg-methods">vararg methods</h6>
 <p>From Velocity 1.6, <strong>setter</strong> methods can have different parameter list:</p>
 <pre class="code literal-block"><span></span><span class="p">$</span><span class="nv">sun</span><span class="p">.</span><span class="nv">setPlanets</span><span class="p">(</span><span class="s1">'Earth'</span><span class="p">,</span> <span class="s1">'Mars'</span><span class="p">,</span> <span class="s1">'Neptune'</span><span class="p">)</span><span class="x"></span>
 <span class="p">$</span><span class="nv">sun</span><span class="p">.</span><span class="nv">setPlanets</span><span class="p">(</span><span class="s1">'Mercury'</span><span class="p">)</span><span class="x"></span>
@@ -164,8 +164,8 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h4>Other Syntax Information</h4>
-<h5>Comments</h5>
+<h4 id="other-syntax-information">Other Syntax Information</h4>
+<h5 id="comments">Comments</h5>
 <p>In VTL, A single line comment begins with <code>##</code> and finishes at the end of the line. Example: <code>## This is a single line comment.</code></p>
 <p><strong>Multi-line</strong> comments, which begin with <code>#*</code> and end with <code>*#</code>, are available to handle this scenario.</p>
 <pre class="code literal-block"><span></span><span class="x">This is text that is outside the multi-line comment.</span>
@@ -219,7 +219,7 @@ MathJax.Hub.Config({
 
 
     </div>
-                     <footer id="footer"><p>Contents © 2018         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                     <footer id="footer"><p>Contents © 2018         <a href="mailto:pengyin.shan@outlook.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

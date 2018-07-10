@@ -10,7 +10,7 @@ article: http://ogp.me/ns/article#
 <body>
 <p>old blog site, about using Amazon EC2 to host IPython Notebook."&gt;
     <meta name="viewport" content="width=device-width"></p>
-<title>Use Amazon EC2 to Host IPython Notebook | I'm Pengyin</title>
+<title>Use Amazon EC2 to Host IPython Notebook | I'm Pengyin (Wendy)</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2015/Data%20Science/use-amazon-ec2-to-host-ipython-notebook.html">
@@ -29,7 +29,7 @@ MathJax.Hub.Config({
     }
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
-<meta property="og:site_name" content="I'm Pengyin">
+<meta property="og:site_name" content="I'm Pengyin (Wendy)">
 <meta property="og:title" content="Use Amazon EC2 to Host IPython Notebook">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2015/Data%20Science/use-amazon-ec2-to-host-ipython-notebook.html">
 <meta property="og:description" content='This post is trannsferred from my &lt;a href="shanpy.github.io/techblog"&gt;old blog site&lt;/a&gt;, about using Amazon EC2 to host IPython Notebook.'>
@@ -72,14 +72,14 @@ MathJax.Hub.Config({
 <p>Recentely I read a great article about <a href="https://gist.github.com/iamatypeofwalrus/5183133">Hosting IPython Notebook on Amazon AWS Free Tier from Scratch</a>. This tutorial explains the way to host IPython Notebook using a Amazon EC2 Micro Instance.</p>
 <p>I followed this tutorial and successfully hosted an IPython notebook on a Ubuntu 14 Guest AMI. I want to record some of important steps I took while following this tutorial:</p>
 <p>Note: You can use <strong>nano</strong> to edit <code>ipython_notebook_config.py</code> file. It is located at <code>~/.ipython/profile_nbserver/</code>.</p>
-<h3>Security Group</h3>
+<h3 id="security-group">Security Group</h3>
 <p>When you set up rules for <em>Security Groups</em>, make sure you include <code>SSH</code>, <code>HTTPS</code> and <code>8888</code> all of these. Lack of one can make your IPython Notebook fail. If you forget to do so when you set up the machine, you can set up later in your EC2 management console.</p>
-<h3>Elastic Ip</h3>
+<h3 id="elastic-ip">Elastic Ip</h3>
 <p>The tutorial suggest you link an <strong>Elastic IP</strong> to your instance so that everytime you try to access your instance in browser, you can type new ip address instead of long public DNS.</p>
 <p>To do this, click <strong>Elastic IPs</strong> option in you EC2 Dashboard menu, which is in <strong>NETWORK &amp; SECURITY</strong> section. On right panel, click <strong>Allocate New Address</strong> button. Then click <strong>Yes</strong> in the pop-up window.</p>
 <p>Now a IP address should be generated. Rememeber to <em>associate</em> your instance with this IP address. Select this IP address, then click <strong>Associate Address</strong> button. A pop-up window will appear. Click <strong>Instance</strong> then select your instance in drop-dowm menu. You can also do other setting here. Click <strong>Associate</strong> to associate your instance to this IP.</p>
 <p>Now you just need to type: <code>https://your_elastic_ip:port_number</code> to your IPython Notebook.</p>
-<h3>Make IPython Run as Service</h3>
+<h3 id="make-ipython-run-as-service">Make IPython Run as Service</h3>
 <p>You may want you IPython notebook still works after you shutdown your terminal/SSH. I got solution from this <a href="http://stackoverflow.com/questions/16418477/how-to-keep-server-running-on-ec2-after-ssh-is-terminated">StackOverflow post</a>. I got <strong>screen</strong> by typing <code>sudo apt-get install screen</code>, then do <code>ipython server &amp;</code>.</p>
 <p>If this not work for you, try <code>screen ipython s</code> instead</p>
 </div>
@@ -112,7 +112,7 @@ MathJax.Hub.Config({
 
 
     </div>
-                     <footer id="footer"><p>Contents © 2018         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                     <footer id="footer"><p>Contents © 2018         <a href="mailto:pengyin.shan@outlook.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

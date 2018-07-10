@@ -6,6 +6,8 @@
 .. authors: Pengyin Shan
 .. description: (This post is in Chinese) [彼得考夫曼]《穷查理宝典》书本经典语句摘抄（个人发展）/Book Highlight: Poor Charlie's Almanack: The Wit and Wisdom of Charles T. Munger written by Peter D.Kaufman (Personal Development Part)
 
+[TOC]
+
 > 愿你们在漫长的人生中日日以避免失败为目标而成长。
 
 #性格与品行

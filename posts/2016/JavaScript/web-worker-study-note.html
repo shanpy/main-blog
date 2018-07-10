@@ -7,7 +7,7 @@ article: http://ogp.me/ns/article#
 <meta charset="utf-8">
 <meta name="description" content="Web worker provides a probabiliy to implement concurrent JavaScript. This is a study note for it.">
 <meta name="viewport" content="width=device-width">
-<title>Web Worker Study Note | I'm Pengyin</title>
+<title>Web Worker Study Note | I'm Pengyin (Wendy)</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2016/JavaScript/web-worker-study-note.html">
@@ -26,7 +26,7 @@ MathJax.Hub.Config({
     }
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
-<meta property="og:site_name" content="I'm Pengyin">
+<meta property="og:site_name" content="I'm Pengyin (Wendy)">
 <meta property="og:title" content="Web Worker Study Note">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2016/JavaScript/web-worker-study-note.html">
 <meta property="og:description" content="Web worker provides a probabiliy to implement concurrent JavaScript. This is a study note for it.">
@@ -66,7 +66,7 @@ MathJax.Hub.Config({
         </div>
         <div class="body">
             <div>
-<h2>Reference List</h2>
+<h2 id="reference-list">Reference List</h2>
 <ul>
 <li>
 <p><a href="http://www.html5rocks.com/en/tutorials/workers/basics/">The Basics with Web Workers</a> written by <em>Eric Bidelman</em>, <em>www.html5rocks.com</em>.</p>
@@ -75,7 +75,7 @@ MathJax.Hub.Config({
 <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers">Using Web Workers</a> by <em>MDN</em></p>
 </li>
 </ul>
-<h2>Basics</h2>
+<h2 id="basics">Basics</h2>
 <p>Web worker create a extra thread. The JS file running by this work will run through this thread.</p>
 <p>There are some special things to be noticed when using web worker:</p>
 <ol>
@@ -91,7 +91,7 @@ MathJax.Hub.Config({
 <p>During this process, the data passed between main thread and web worker is <strong>copied</strong> instead of shared.</p>
 </blockquote>
 <p>There are two workers: <code>dedicated worker</code> and <code>shared worker</code>. Dedicated worker is only accessible from the script that first spawned it. Shared worker can be accessed from multiple scripts.</p>
-<h2>Dedicated Worker</h2>
+<h2 id="dedicated-worker">Dedicated Worker</h2>
 <p>The best practice is to wrap web worker code in following if loop:</p>
 <pre class="code literal-block"><span></span><span class="k">if</span><span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">Worker</span><span class="p">){</span>
     <span class="c1">//Add Web Worker Code</span>
@@ -100,7 +100,7 @@ MathJax.Hub.Config({
 
 
 <p>Message being sent/received can be a <code>string/array</code> or <code>JSON</code> object. <code>JSON</code> is supported by most modern browers.</p>
-<h3>Basics</h3>
+<h3 id="basics_1">Basics</h3>
 <p>Basic operations are: <strong>create</strong>, <strong>post and receive message</strong>, <strong>handler errors</strong> and <strong>terminate works</strong>. see code below:</p>
 <pre class="code literal-block"><span></span><span class="c1">//main thread</span>
 <span class="kd">var</span> <span class="nx">myWorker</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Worker</span><span class="p">(</span><span class="s1">'worker.js'</span><span class="p">);</span> <span class="c1">//Declare new web worker</span>
@@ -137,16 +137,16 @@ MathJax.Hub.Config({
 <blockquote>
 <p>If execution fails, <code>NETWORK_ERROR</code> will be thrown out. However, function declarations after <code>importScripts()</code> will still work because they are hoisted.</p>
 </blockquote>
-<h3>Data Passing</h3>
+<h3 id="data-passing">Data Passing</h3>
 <p>When web worker passing data, the data is always serialized on one hand and de-serialized on the other hand.</p>
 <blockquote>
 <p>Main thread and worker thread <strong>do not share the same instance</strong>, so the end result is <strong>duplicated</strong>.</p>
 </blockquote>
-<h2>Shared Worker</h2>
-<h3>Basics</h3>
+<h2 id="shared-worker">Shared Worker</h2>
+<h3 id="basics_2">Basics</h3>
 <p>Shared worker is accessible by multiple scripts.</p>
 <p>Similar to dedicated worker, shared work can be declared by statement like <code>var myWorker = new SharedWorker("worker.js");</code>.</p>
-<h3>Port</h3>
+<h3 id="port">Port</h3>
 <p>Shared worker communicate via a <code>port</code> object. Scripts can communicate with workers in a opened port.</p>
 <p>Port can be started by:</p>
 <ol>
@@ -163,7 +163,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h3>Message</h3>
+<h3 id="message">Message</h3>
 <p>For shared worker, <code>postMessage()</code> should be used from <code>port</code> object:</p>
 <pre class="code literal-block"><span></span><span class="c1">//main.js</span>
 <span class="nx">testpart</span><span class="p">.</span><span class="nx">onchange</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
@@ -185,8 +185,8 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h2>Examples</h2>
-<h3>Compute in Background</h3>
+<h2 id="examples">Examples</h2>
+<h3 id="compute-in-background">Compute in Background</h3>
 <p>This example is from MDN, counting fibonacii in worker thread:</p>
 <pre class="code literal-block"><span></span><span class="c1">//main.js</span>
 <span class="kd">var</span> <span class="nx">worker</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Worker</span><span class="p">(</span><span class="s2">"fibonacci.js"</span><span class="p">);</span>
@@ -236,7 +236,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h3>A very clean/simple example from html5rocks.com</h3>
+<h3 id="a-very-cleansimple-example-from-html5rockscom">A very clean/simple example from html5rocks.com</h3>
 <p>This example cerate clean function to handle difference cases. Functions can be added to attribute of an object to be more organized.</p>
 <pre class="code literal-block"><span></span><span class="c1">//main.js</span>
 <span class="kd">function</span> <span class="nx">sayHI</span><span class="p">()</span> <span class="p">{</span>
@@ -304,7 +304,7 @@ MathJax.Hub.Config({
 
 
     </div>
-                     <footer id="footer"><p>Contents © 2018         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                     <footer id="footer"><p>Contents © 2018         <a href="mailto:pengyin.shan@outlook.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

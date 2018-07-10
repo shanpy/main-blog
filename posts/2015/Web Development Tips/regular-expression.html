@@ -7,7 +7,7 @@ article: http://ogp.me/ns/article#
 <meta charset="utf-8">
 <meta name="description" content="This post includes information about regular expression. This post will be update when I learn anything new about it.">
 <meta name="viewport" content="width=device-width">
-<title>Regular Expression | I'm Pengyin</title>
+<title>Regular Expression | I'm Pengyin (Wendy)</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2015/Web%20Development%20Tips/regular-expression.html">
@@ -26,7 +26,7 @@ MathJax.Hub.Config({
     }
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
-<meta property="og:site_name" content="I'm Pengyin">
+<meta property="og:site_name" content="I'm Pengyin (Wendy)">
 <meta property="og:title" content="Regular Expression">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2015/Web%20Development%20Tips/regular-expression.html">
 <meta property="og:description" content="This post includes information about regular expression. This post will be update when I learn anything new about it.">
@@ -67,23 +67,23 @@ MathJax.Hub.Config({
         <div class="body">
             <div>
 <p>A JavaScript Regex Cheatsheet <a href="https://www.debuggex.com/cheatsheet/regex/javascript">online</a>.</p>
-<h3>JavaScript Regular Expression</h3>
-<h4>Method</h4>
-<h5>search</h5>
+<h3 id="javascript-regular-expression">JavaScript Regular Expression</h3>
+<h4 id="method">Method</h4>
+<h5 id="search">search</h5>
 <p><code>search()</code> uses an expression to search for a match, and returns the position of the match. Return <code>-1</code> if regular expression not match:</p>
 <pre class="code literal-block"><span></span><span class="kd">var</span> <span class="nx">str</span> <span class="o">=</span> <span class="s2">"test"</span><span class="p">;</span>
 <span class="kd">var</span> <span class="nx">n</span> <span class="o">=</span> <span class="nx">str</span><span class="p">.</span><span class="nx">search</span><span class="p">(</span><span class="sr">/^(test)+$/i</span><span class="p">);</span> <span class="c1">//n=0</span>
 </pre>
 
 
-<h5>replace</h5>
+<h5 id="replace">replace</h5>
 <p><code>replace</code>: search pattern and replace it</p>
 <pre class="code literal-block"><span></span><span class="kd">var</span> <span class="nx">str</span> <span class="o">=</span> <span class="s2">"test"</span><span class="p">;</span>
 <span class="kd">var</span> <span class="nx">res</span> <span class="o">=</span> <span class="nx">str</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/test/i</span><span class="p">,</span> <span class="s2">"new-test"</span><span class="p">);</span>
 </pre>
 
 
-<h5>test</h5>
+<h5 id="test">test</h5>
 <p><code>test()</code> searches a string for a pattern, and returns <code>true</code> or <code>false</code>, depending on the result.</p>
 <p>Example code from w3cschool:</p>
 <pre class="code literal-block"><span></span><span class="kd">var</span> <span class="nx">patt</span> <span class="o">=</span> <span class="sr">/e/</span><span class="p">;</span>
@@ -91,14 +91,14 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h5>exec</h5>
+<h5 id="exec">exec</h5>
 <p><code>exec()</code> searches a string for a specified pattern, and returns <strong>the found text</strong>. If nothing is founded, return <code>null</code>.</p>
 <p>Example code from w3cschool:</p>
 <pre class="code literal-block"><span></span><span class="sr">/e/</span><span class="p">.</span><span class="nx">exec</span><span class="p">(</span><span class="s2">"The best things in life are free!"</span><span class="p">);</span> <span class="c1">//e</span>
 </pre>
 
 
-<h4>Modifiers</h4>
+<h4 id="modifiers">Modifiers</h4>
 <ul>
 <li>
 <p><code>i</code>: Perform case-insensitive matching</p>
@@ -110,13 +110,13 @@ MathJax.Hub.Config({
 <p><code>m</code>: Perform a mutiline matching</p>
 </li>
 </ul>
-<h4>Escape</h4>
+<h4 id="escape">Escape</h4>
 <p>Use <code>\</code> to <strong>escape</strong> to following items in regular expression: <code>^</code>, <code>$</code>, <code>.</code>, <code>*</code>, <code>+</code>, <code>?</code>, <code>=</code>, <code>!</code>, <code>:</code>, <code>|</code>, <code>\</code>, <code>/</code>, <code>(</code>, <code>)</code>, <code>[</code>, <code>]</code>, <code>{</code>, <code>}</code></p>
-<h4>OR</h4>
+<h4 id="or">OR</h4>
 <p><code>[]</code>: <code>/[abc]/</code> means <code>a</code> or <code>b</code> or <code>c</code></p>
-<h4>Except</h4>
+<h4 id="except">Except</h4>
 <p><code>[^]</code>: <code>/[^abc]/</code> anything except <code>a</code> or <code>b</code> or <code>c</code></p>
-<h4>Character</h4>
+<h4 id="character">Character</h4>
 <p><code>.</code>: any single character <em>except next-line and white-space</em>. i.e. <code>[^\n\r]</code></p>
 <p><code>\w</code>: any ASCII single character. i.e. <code>[a-zA-Z0-9]</code></p>
 <p><code>\W</code>: any non-ASCII single character. i.e. <code>[^a-zA-Z0-9]</code></p>
@@ -124,13 +124,13 @@ MathJax.Hub.Config({
 <p><code>\D</code>: any non-digital single character. i.e.e <code>[^0-9]</code></p>
 <p><code>\s</code>: white-space</p>
 <p><code>\S</code>: non-white-space</p>
-<h4>Meta Character</h4>
+<h4 id="meta-character">Meta Character</h4>
 <p><code>\r</code>: Assume you hit <code>Enter</code> key</p>
 <p><code>\t</code>: Tab</p>
 <p><code>\n</code>: change new line</p>
 <p><code>\f</code>: change page</p>
 <p><code>\0</code>: empty character</p>
-<h4>Repeat</h4>
+<h4 id="repeat">Repeat</h4>
 <p><code>{min, max}</code>: Repeat from min times to max times. Example: <code>/[test]{4,6}/</code> means 't' or <code>e</code> or <code>s</code> or <code>t</code> should be repeated at least 4 times and as most 6 times.</p>
 <p><code>{min,}</code> or <code>{,max}</code>: Repeat at least <code>min</code> or at most <code>max</code> times. Example: <code>/[test]{4,}</code> means 't' or <code>e</code> or <code>s</code> or <code>t</code> should be repeated at least 4 times. No maximum times.</p>
 <p><code>{n}</code>: Repeat exactly n times.</p>
@@ -146,7 +146,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h4>Group and Border</h4>
+<h4 id="group-and-border">Group and Border</h4>
 <p><code>^</code>: Mark start point</p>
 <p><code>$</code>: Mark end point</p>
 <p><code>\b</code>: all characters except <code>[a-zA-Z0-9]</code></p>
@@ -160,7 +160,7 @@ MathJax.Hub.Config({
 <p><code>\B</code>: opposite from above</p>
 <p><code>()</code>: AND. Example: <code>/(abc)+/</code> means <code>abc</code> or <code>abcabc</code> or more.</p>
 <p><code>|</code>: OR. Example: <code>/a|b/</code> means <code>a</code> or <code>b</code></p>
-<h4>Frequently Used Regular Expressions</h4>
+<h4 id="frequently-used-regular-expressions">Frequently Used Regular Expressions</h4>
 <p>Examples below are taken from <a href="http://kb.cnblogs.com/page/80965/">this post</a>:</p>
 <ul>
 <li>
@@ -248,7 +248,7 @@ MathJax.Hub.Config({
 
 
     </div>
-                     <footer id="footer"><p>Contents © 2018         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                     <footer id="footer"><p>Contents © 2018         <a href="mailto:pengyin.shan@outlook.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

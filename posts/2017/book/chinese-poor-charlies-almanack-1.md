@@ -6,6 +6,8 @@
 .. authors: Pengyin Shan
 .. description: (This post is in Chinese) [彼得考夫曼]《穷查理宝典》书本经典语句摘抄 （企业与投资部分）/ Book Highlight: Poor Charlie's Almanack: The Wit and Wisdom of Charles T. Munger written by Peter D.Kaufman (Enterprise and Investment Part)
 
+[TOC]
+
 #简介
 
 ##巴菲特说

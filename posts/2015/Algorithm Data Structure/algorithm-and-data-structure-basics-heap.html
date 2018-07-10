@@ -7,7 +7,7 @@ article: http://ogp.me/ns/article#
 <meta charset="utf-8">
 <meta name="description" content="I wrote this post to record some basic knowledge about using Heap for future reference. Code is written mainly in Java.">
 <meta name="viewport" content="width=device-width">
-<title>Algorithm and Data Structure Basics - Heap | I'm Pengyin</title>
+<title>Algorithm and Data Structure Basics - Heap | I'm Pengyin (Wendy)</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2015/Algorithm%20Data%20Structure/algorithm-and-data-structure-basics-heap.html">
@@ -26,7 +26,7 @@ MathJax.Hub.Config({
     }
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
-<meta property="og:site_name" content="I'm Pengyin">
+<meta property="og:site_name" content="I'm Pengyin (Wendy)">
 <meta property="og:title" content="Algorithm and Data Structure Basics - Heap">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2015/Algorithm%20Data%20Structure/algorithm-and-data-structure-basics-heap.html">
 <meta property="og:description" content="I wrote this post to record some basic knowledge about using Heap for future reference. Code is written mainly in Java.">
@@ -72,12 +72,12 @@ MathJax.Hub.Config({
         </div>
         <div class="body">
             <div>
-<h4>Reference List</h4>
+<h4 id="reference-list">Reference List</h4>
 <ul>
 <li>
 <em>Data Structures and Algorithms in Java (Second Edition)</em>, written by <em>Robert Lafore</em>, Chinese Version</li>
 </ul>
-<h4>Basic Information</h4>
+<h4 id="basic-information">Basic Information</h4>
 <p>Heap is a type of tree. If you create a <strong>priority queue</strong> from heap. The time complexity for insertion and deletion is <code>O(logN)</code>. However, heap doesn't support traversal and search by value, because all path in heap is following descending/ascending order.</p>
 <p>Heap has following features:</p>
 <ul>
@@ -100,7 +100,7 @@ MathJax.Hub.Config({
 <blockquote>
 <p>All nodes which have index larger than <code>n/2</code> are leaf nodes, assuming there are n elements in array.</p>
 </blockquote>
-<h4>Remove</h4>
+<h4 id="remove">Remove</h4>
 <p>In heap, remove means removing the root of the heap. This root is always the largest/smallest value of all elements. For the heap array, root always has index <code>0</code>.</p>
 <p>You need two steps to find removing process:</p>
 <ol>
@@ -123,7 +123,7 @@ MathJax.Hub.Config({
 <p>Move this new root to bottom, until it's smaller than its parent node and larger than its child nodes. To do this, check if root is smaller than it's <strong>larger child</strong>. If so, swap root and its larger child. Repeat this.</p>
 </li>
 </ol>
-<h5>Code</h5>
+<h5 id="code">Code</h5>
 <pre class="code literal-block"><span></span><span class="c1">//We assume each node has a attribute 'key', which determine the value/priority of this node</span>
 <span class="kd">public</span> <span class="n">Node</span> <span class="nf">remove</span><span class="o">(){</span>
     <span class="n">Node</span> <span class="n">root</span> <span class="o">=</span> <span class="n">heapArray</span><span class="o">[</span><span class="mi">0</span><span class="o">];</span>
@@ -164,7 +164,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h4>Insert</h4>
+<h4 id="insert">Insert</h4>
 <p>Insertion can by down by following step:</p>
 <ol>
 <li>
@@ -174,7 +174,7 @@ MathJax.Hub.Config({
 <p>Recursively moving this node so that it will be larger than its child elements and smaller than its parent node. i.e. if node is smaller larger than its parent node, swap this node and its parent node.</p>
 </li>
 </ol>
-<h5>Code</h5>
+<h5 id="code_1">Code</h5>
 <pre class="code literal-block"><span></span><span class="c1">//We assume each node has a attribute 'key', which determine the value/priority of this node</span>
 <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">insert</span><span class="o">(</span><span class="kt">int</span> <span class="n">key</span><span class="o">){</span>
     <span class="k">if</span><span class="o">(</span><span class="n">currentSize</span> <span class="o">==</span> <span class="n">maxSize</span><span class="o">)</span>
@@ -201,7 +201,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h4>Change Value</h4>
+<h4 id="change-value">Change Value</h4>
 <p>Working in process...</p>
 </div>
         </div>
@@ -233,7 +233,7 @@ MathJax.Hub.Config({
 
 
     </div>
-                     <footer id="footer"><p>Contents © 2018         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                     <footer id="footer"><p>Contents © 2018         <a href="mailto:pengyin.shan@outlook.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

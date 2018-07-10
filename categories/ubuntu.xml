@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>I'm Pengyin (Posts about Ubuntu)</title><link>http://pengyin-shan.com/</link><description></description><atom:link href="http://pengyin-shan.com/categories/ubuntu.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 06 Jul 2018 17:48:44 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Setting up RoR/Hydra Environment - Problems and Solutions</title><link>http://pengyin-shan.com/posts/2015/Web%20Development%20Tips/setting-up-ror-hydra-environment-problems-and-solutions.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3&gt;Ubuntu 15.10&lt;/h3&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>I'm Pengyin (Posts about Ubuntu)</title><link>http://pengyin-shan.com/</link><description></description><atom:link type="application/rss+xml" rel="self" href="http://pengyin-shan.com/categories/ubuntu.xml"></atom:link><language>en</language><lastBuildDate>Tue, 10 Jul 2018 14:56:12 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Setting up RoR/Hydra Environment - Problems and Solutions</title><link>http://pengyin-shan.com/posts/2015/Web%20Development%20Tips/setting-up-ror-hydra-environment-problems-and-solutions.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3 id="ubuntu-1510"&gt;Ubuntu 15.10&lt;/h3&gt;
 &lt;p&gt;If you want to setup your RoR environment on Ubuntu 14/15, &lt;a href="https://gorails.com/setup/ubuntu/15.04"&gt;this post&lt;/a&gt; is the best choice for you. I used &lt;code&gt;rvm&lt;/code&gt; to install Ruby on my two Ubuntu 15.10 machine, and it worked like a charm.&lt;/p&gt;
-&lt;h4&gt;Problem&lt;/h4&gt;
+&lt;h4 id="problem"&gt;Problem&lt;/h4&gt;
 &lt;p&gt;When I tried to run &lt;code&gt;\curl -L https://get.rvm.io | bash -s stable --ruby&lt;/code&gt; in terminal to install both RVM and Ruby, I got following error message:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nv"&gt;Error&lt;/span&gt; &lt;span class="s s-Atom"&gt;running&lt;/span&gt; &lt;span class="s s-Atom"&gt;'requirements_debian_update_system ruby-2.2.1'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
 &lt;span class="s s-Atom"&gt;showing&lt;/span&gt; &lt;span class="s s-Atom"&gt;last&lt;/span&gt; &lt;span class="mi"&gt;15&lt;/span&gt; &lt;span class="s s-Atom"&gt;lines&lt;/span&gt; &lt;span class="s s-Atom"&gt;of&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="s s-Atom"&gt;usr&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="s s-Atom"&gt;local&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="s s-Atom"&gt;rvm&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="s s-Atom"&gt;log&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;1439385591&lt;/span&gt;&lt;span class="k"&gt;_&lt;/span&gt;&lt;span class="s s-Atom"&gt;ruby&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;2.2.1&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="s s-Atom"&gt;update_system&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="s s-Atom"&gt;log&lt;/span&gt;
@@ -24,7 +24,7 @@
 
 
 &lt;p&gt;The reason of this error is because RVM will bring error if my Ubuntu machine's &lt;code&gt;apt-get update&lt;/code&gt; has error in it. I used to install Ninja-IDE through &lt;code&gt;apt-get&lt;/code&gt; and I had PPA error when I do &lt;code&gt;apt-get update&lt;/code&gt;. You can view &lt;a href="http://stackoverflow.com/questions/23650992/ruby-rvm-apt-get-update-error"&gt;this stackoverflow post&lt;/a&gt;.&lt;/p&gt;
-&lt;h4&gt;Solution&lt;/h4&gt;
+&lt;h4 id="solution"&gt;Solution&lt;/h4&gt;
 &lt;p&gt;A user &lt;strong&gt;Avinash Raj&lt;/strong&gt; posted a great solution in &lt;a href="http://askubuntu.com/questions/65911/how-can-i-fix-a-404-error-when-using-a-ppa-or-updating-my-package-lists"&gt;Ubuntu community&lt;/a&gt; for removing PPA with errors.&lt;/p&gt;
 &lt;p&gt;The detail of solution is: create a file called &lt;code&gt;ppa-remove&lt;/code&gt; (no &lt;code&gt;.sh&lt;/code&gt; extension) as following:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="ch"&gt;#!/bin/bash&lt;/span&gt;
@@ -48,9 +48,9 @@ tput sgr0
 
 &lt;p&gt;Run &lt;code&gt;sudo chmod +x ppa-remove&lt;/code&gt; after you create this file, then move this file to &lt;code&gt;/usr/bin&lt;/code&gt;. Run &lt;code&gt;sudo ppa-remove&lt;/code&gt;. Your PPA with errors will be removed and you can then re-run &lt;code&gt;\curl -L https://get.rvm.io | bash -s stable&lt;/code&gt; or &lt;code&gt;\curl -L https://get.rvm.io | bash -s stable --ruby&lt;/code&gt; to install RVM.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Note: Till Aug 2015, If you run &lt;code&gt;\curl -L https://get.rvm.io | bash -s stable --ruby&lt;/code&gt;, you will automatically get Ruby 2.2.1 installed. If you run &lt;code&gt;\curl -L https://get.rvm.io | bash -s stable&lt;/code&gt; then install Ruby, you can choose Ruby 2.2.2. These two versions do not have conflict.&lt;/em&gt;&lt;/p&gt;
-&lt;h3&gt;Mac OS Yoemite&lt;/h3&gt;
+&lt;h3 id="mac-os-yoemite"&gt;Mac OS Yoemite&lt;/h3&gt;
 &lt;p&gt;RoR installation process for Mac OS Yosemite is almost the same as Ubuntu. Make sure you have &lt;code&gt;xcode&lt;/code&gt; and &lt;code&gt;Homebrew&lt;/code&gt; installed first. This &lt;a href="http://railsapps.github.io/installrubyonrails-mac.html"&gt;post&lt;/a&gt; has very detailed description that you can follow.&lt;/p&gt;
-&lt;h3&gt;Project Hydra&lt;/h3&gt;
+&lt;h3 id="project-hydra"&gt;Project Hydra&lt;/h3&gt;
 &lt;p&gt;I had a &lt;a href="http://pengyin-shan.com/blog/dive-into-hydra-and-my-thoughts"&gt;post&lt;/a&gt; describing my thoughts about Hydra. In this post I will include detail of installation part.&lt;/p&gt;
 &lt;p&gt;After you finish RoR setting (make sure you have &lt;code&gt;Bundle&lt;/code&gt; installed by &lt;code&gt;RubyGem&lt;/code&gt;), you want to generate a basic rails app, then add &lt;code&gt;gem 'hydra', '9.1.0.rc1'&lt;/code&gt; to your &lt;code&gt;Gemfile&lt;/code&gt;. you can re-run &lt;code&gt;Bundle install&lt;/code&gt; to install all necessary ruby gems for Hydra.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -58,10 +58,10 @@ tput sgr0
 &lt;/blockquote&gt;
 &lt;p&gt;You can use same Gemfile to set up Hydra environment in different machines, but &lt;strong&gt;make sure you run &lt;code&gt;rake jetty:config&lt;/code&gt; and &lt;code&gt;rake db:migrate&lt;/code&gt;&lt;/strong&gt; to prevent possible problem.&lt;/p&gt;
 &lt;p&gt;You can run &lt;code&gt;Rails.env&lt;/code&gt; in rails console to check your current environment.&lt;/p&gt;
-&lt;h4&gt;Problem: Data Immigration for Existing Project&lt;/h4&gt;
+&lt;h4 id="problem-data-immigration-for-existing-project"&gt;Problem: Data Immigration for Existing Project&lt;/h4&gt;
 &lt;p&gt;How to transfer previous data (Fedora files, Solr documents and indexes) to your new environment?&lt;/p&gt;
-&lt;h4&gt;Solution&lt;/h4&gt;
-&lt;p&gt;Well, I'm working on solution now :) To figure out a way I did lots of experiments (and made a big mess) in my Hydra project. I started a new post about it &lt;a href="http://pengyin-shan.com/blog/play-with-hydra-data"&gt;here&lt;/a&gt;.&lt;/p&gt;&lt;/div&gt;</description><category>Hydra</category><category>Linux</category><category>Ruby on Rails</category><category>Ubuntu</category><guid>http://pengyin-shan.com/posts/2015/Web%20Development%20Tips/setting-up-ror-hydra-environment-problems-and-solutions.html</guid><pubDate>Wed, 12 Aug 2015 07:00:00 GMT</pubDate></item><item><title>Ubuntu Tips</title><link>http://pengyin-shan.com/posts/2015/Linux/ubuntu-tips.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h4&gt;JAVA_HOME Errors&lt;/h4&gt;
+&lt;h4 id="solution_1"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;Well, I'm working on solution now :) To figure out a way I did lots of experiments (and made a big mess) in my Hydra project. I started a new post about it &lt;a href="http://pengyin-shan.com/blog/play-with-hydra-data"&gt;here&lt;/a&gt;.&lt;/p&gt;&lt;/div&gt;</description><category>Hydra</category><category>Linux</category><category>Ruby on Rails</category><category>Ubuntu</category><guid>http://pengyin-shan.com/posts/2015/Web%20Development%20Tips/setting-up-ror-hydra-environment-problems-and-solutions.html</guid><pubDate>Wed, 12 Aug 2015 07:00:00 GMT</pubDate></item><item><title>Ubuntu Tips</title><link>http://pengyin-shan.com/posts/2015/Linux/ubuntu-tips.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h4 id="java_home-errors"&gt;JAVA_HOME Errors&lt;/h4&gt;
 &lt;p&gt;When you final setting up &lt;code&gt;JAVA_HOME&lt;/code&gt;, you are supposed to set its path in two different places:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -72,12 +72,12 @@ tput sgr0
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;If your &lt;code&gt;JAVA_HOME&lt;/code&gt; is not correctly set up, you may get following error in you Ubuntu:&lt;/p&gt;
-&lt;h5&gt;Cannot Update/Remove Software&lt;/h5&gt;
+&lt;h5 id="cannot-updateremove-software"&gt;Cannot Update/Remove Software&lt;/h5&gt;
 &lt;p&gt;You can find a official forum &lt;a href="https://bugs.launchpad.net/ubuntu/+source/texinfo/+bug/993407"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;One of my application, &lt;code&gt;xpad&lt;/code&gt;, cannot be removed because of this. When I run &lt;code&gt;sudo apt-get remove xpad&lt;/code&gt;, a error message &lt;em&gt;install-info can fail to install due to syntax errors in /etc/environment&lt;/em&gt; appears.&lt;/p&gt;
 &lt;p&gt;I check my &lt;code&gt;/etc/environment&lt;/code&gt; file. It turns out I had extra spaces in my JAVA_HOME, which cause the problem.&lt;/p&gt;
 &lt;p&gt;Also, if your &lt;code&gt;software updater&lt;/code&gt; in Ubuntu failed to download necessary packages, you may have a wrong setup of &lt;code&gt;JAVA_HOME&lt;/code&gt;.&lt;/p&gt;
-&lt;h5&gt;Reminder in Terminal&lt;/h5&gt;
+&lt;h5 id="reminder-in-terminal"&gt;Reminder in Terminal&lt;/h5&gt;
 &lt;p&gt;When you open terminal, you may get some error message such as &lt;code&gt;bash: export: ``/usr/lib/jvm/java-8-oracle': not a valid identifier&lt;/code&gt;. In this case, you need to check your ~/.bashrc file to make sure your JAVA_HOME format is correct.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;If you forget extact format of JAVA_HOME, you can open ~/.bashrc file using gedit, then following the format of other variables. You can varify by checking the color highlight of your JAVA_HOME line should be the same as all lines above.&lt;/p&gt;

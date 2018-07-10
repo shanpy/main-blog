@@ -7,7 +7,7 @@ article: http://ogp.me/ns/article#
 <meta charset="utf-8">
 <meta name="description" content="This post includes my experience when working with AJAX and JSON, using jQuery with Spring MVC Framework.">
 <meta name="viewport" content="width=device-width">
-<title>Ajax and Spring MVC Controller | I'm Pengyin</title>
+<title>Ajax and Spring MVC Controller | I'm Pengyin (Wendy)</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2015/Java/ajax-and-spring-mvc-controller.html">
@@ -26,7 +26,7 @@ MathJax.Hub.Config({
     }
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
-<meta property="og:site_name" content="I'm Pengyin">
+<meta property="og:site_name" content="I'm Pengyin (Wendy)">
 <meta property="og:title" content="Ajax and Spring MVC Controller">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2015/Java/ajax-and-spring-mvc-controller.html">
 <meta property="og:description" content="This post includes my experience when working with AJAX and JSON, using jQuery with Spring MVC Framework.">
@@ -78,7 +78,7 @@ MathJax.Hub.Config({
 - If your web.xml set up default url-pattern <code>/</code>, when you refer a link, you don't need to add any suffix on it.
 - If your web.xml set up any url-pattern, such as <code>html</code> or <code>htm</code>, when you refere a link, in <code>ajax</code> or <code>windown.location.href</code>, you need to add <code>html</code> or <code>htm</code> suffix after it. <em>But don't add these suffix in spring controller request mapping</em>.</p>
 </blockquote>
-<h3>Case 1. Pass JSON Data to Controller in Ajax Call, using $.ajax()</h3>
+<h3 id="case-1-pass-json-data-to-controller-in-ajax-call-using-ajax">Case 1. Pass JSON Data to Controller in Ajax Call, using $.ajax()</h3>
 <blockquote>
 <p>Notes on 01/13/2015: I had trouble using <code>$.post()</code> to post JSON data. I doubt something is wrong but I haven't figure out why. Currently I just use <code>$.ajax()</code>*</p>
 </blockquote>
@@ -107,7 +107,7 @@ MathJax.Hub.Config({
 <blockquote>
 <p>You may want to substitude <code>application/json</code> with <code>application/html</code> to avoid possible.</p>
 </blockquote>
-<h3>Case 2. Pass JSON Data as URL parameter, and Handle it in Spring MVC Controller</h3>
+<h3 id="case-2-pass-json-data-as-url-parameter-and-handle-it-in-spring-mvc-controller">Case 2. Pass JSON Data as URL parameter, and Handle it in Spring MVC Controller</h3>
 <p>PROS</p>
 <blockquote>
 <p>You are free to go to another page or call other controllers after you pass data to controller.</p>
@@ -190,7 +190,7 @@ MathJax.Hub.Config({
 
 
     </div>
-                     <footer id="footer"><p>Contents © 2018         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                     <footer id="footer"><p>Contents © 2018         <a href="mailto:pengyin.shan@outlook.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

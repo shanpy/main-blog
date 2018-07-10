@@ -10,7 +10,7 @@ article: http://ogp.me/ns/article#
 <body>
 <p>official handbook and record some important knowledges about TypeScript."&gt;
     <meta name="viewport" content="width=device-width"></p>
-<title>TypeScript Basics | I'm Pengyin</title>
+<title>TypeScript Basics | I'm Pengyin (Wendy)</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2016/JavaScript/typescript-basics.html">
@@ -29,7 +29,7 @@ MathJax.Hub.Config({
     }
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
-<meta property="og:site_name" content="I'm Pengyin">
+<meta property="og:site_name" content="I'm Pengyin (Wendy)">
 <meta property="og:title" content="TypeScript Basics">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2016/JavaScript/typescript-basics.html">
 <meta property="og:description" content='The next project in my work involves in using TypeScript. This reading note is to go through &lt;a href="http://www.typescriptlang.org/docs/handbook/"&gt;official handbook&lt;/a&gt; and record some important know'>
@@ -68,7 +68,7 @@ MathJax.Hub.Config({
         <div class="body">
             <div>
 <p><em>This is a brief reading note for TypeScript <a href="http://www.typescriptlang.org/docs/handbook">official handbook</a></em>.</p>
-<h2>Gulp Setup</h2>
+<h2 id="gulp-setup">Gulp Setup</h2>
 <p><code>Gulp</code> can be used with TypeScript to provide powerful compiling process. See <a href="http://www.typescriptlang.org/docs/handbook/gulp.html">here</a> for a detailed description.</p>
 <p>My new project requires Typescript, Jade and SASS. Here is a sample <code>gulpfile.js</code>:</p>
 <pre class="code literal-block"><span></span><span class="kd">var</span> <span class="nx">gulp</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">"gulp"</span><span class="p">);</span>
@@ -113,14 +113,14 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h2>Types and Variables</h2>
-<h3>Number</h3>
+<h2 id="types-and-variables">Types and Variables</h2>
+<h3 id="number">Number</h3>
 <p>Integer, Floating Point, Hexadecimal and Decimal Literals can all be declared as <code>number</code> type.</p>
 <pre class="code literal-block"><span></span><span class="kd">let</span> <span class="nx">decimal</span>: <span class="kt">number</span> <span class="o">=</span> <span class="mi">6</span><span class="p">;</span> <span class="c1">//declare a variable called 'decimal', with value equaling to 6</span>
 </pre>
 
 
-<h3>String</h3>
+<h3 id="string">String</h3>
 <p><code>Template Strings</code> can be used to span multiple lines and have embedded expressions. Also <code>+</code> can be used to concatenate strings with variables.</p>
 <p><em>Remember to use lower case <code>string</code>.</em></p>
 <p>Example:</p>
@@ -142,7 +142,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h3>Array &amp; Tuple</h3>
+<h3 id="array-tuple">Array &amp; Tuple</h3>
 <p>To create an array, just use <code>[]</code> to construct array, or use <code>Array&lt;elemType&gt;</code> to do so: <code>let list: number[] = [1,2,3]</code></p>
 <p>To create a tuple (mixed type of variables), declare it first, then insert element to it:</p>
 <pre class="code literal-block"><span></span><span class="kd">let</span> <span class="nx">x</span><span class="o">:</span> <span class="p">[</span><span class="kt">string</span><span class="p">,</span> <span class="kt">number</span><span class="p">];</span>
@@ -151,7 +151,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h3>Enum</h3>
+<h3 id="enum">Enum</h3>
 <p>In <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html">Java</a>, <code>Enum</code> is a special data type that enables for a variable to be a set of <strong>predefined constants</strong>. The variable must be equal to one of the values that have been predefined for it. Java example is below:</p>
 <pre class="code literal-block"><span></span><span class="kd">public</span> <span class="kd">enum</span> <span class="n">Day</span><span class="o">{</span>
     <span class="n">SUNDAY</span><span class="o">,</span> <span class="n">MONDAY</span><span class="o">,</span> <span class="n">TUESDAY</span><span class="o">,</span> <span class="n">WEDNESDAY</span><span class="o">,</span> <span class="n">THURSDAY</span><span class="o">,</span> <span class="n">FRIDAY</span><span class="o">,</span> <span class="n">SATURDAY</span>
@@ -205,7 +205,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h3>Any &amp; Void</h3>
+<h3 id="any-void">Any &amp; Void</h3>
 <p><code>Any</code> is used to describe the variables with unknown type, like data from user or 3rd party. Use <code>any</code> to let variable passing compiler's type-checking:</p>
 <pre class="code literal-block"><span></span><span class="kd">let</span> <span class="nx">notSure</span>: <span class="kt">any</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>
 <span class="kd">let</span> <span class="nx">notSure2</span>: <span class="kt">any</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="s1">'test'</span><span class="p">,</span> <span class="kc">false</span><span class="p">]</span>
@@ -233,7 +233,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h3>Type Assertion</h3>
+<h3 id="type-assertion">Type Assertion</h3>
 <p>Similar as <code>cast</code> in other languages, type assertion can be used to pass compiler's type checking. It should be used when certain type checking has been down and there is a guarantee of correct type.</p>
 <p><code>&lt;type&gt;variable</code> and <code>variable as type</code> can all be used to do type assertion. <code>JSX</code> only use <code>variable as type</code> style:</p>
 <pre class="code literal-block"><span></span><span class="kd">let</span> <span class="nx">typeassertion</span>: <span class="kt">string</span> <span class="o">=</span> <span class="s2">"test type assertion string"</span><span class="p">;</span>
@@ -272,7 +272,7 @@ MathJax.Hub.Config({
 
 
     </div>
-                     <footer id="footer"><p>Contents © 2018         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                     <footer id="footer"><p>Contents © 2018         <a href="mailto:pengyin.shan@outlook.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

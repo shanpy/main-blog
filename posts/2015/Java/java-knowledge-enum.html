@@ -7,7 +7,7 @@ article: http://ogp.me/ns/article#
 <meta charset="utf-8">
 <meta name="description" content="Enum is a very useful type in Java, and I'm not very familiar with it. This post records some basic knowledge of using Enum in Java, mainly are my reading notes for OCP Java SE7 MEAP V12 from Manning Publican, Chapter 2.3.">
 <meta name="viewport" content="width=device-width">
-<title>Java Knowledge: Enum | I'm Pengyin</title>
+<title>Java Knowledge: Enum | I'm Pengyin (Wendy)</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2015/Java/java-knowledge-enum.html">
@@ -26,7 +26,7 @@ MathJax.Hub.Config({
     }
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
-<meta property="og:site_name" content="I'm Pengyin">
+<meta property="og:site_name" content="I'm Pengyin (Wendy)">
 <meta property="og:title" content="Java Knowledge: Enum">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2015/Java/java-knowledge-enum.html">
 <meta property="og:description" content="Enum is a very useful type in Java, and I'm not very familiar with it. This post records some basic knowledge of using Enum in Java, mainly are my reading notes for OCP Java SE7 MEAP V12 from Manning ">
@@ -73,7 +73,7 @@ MathJax.Hub.Config({
 <p>Users are allowed to <strong>use</strong> only <strong>existing</strong> <code>enum</code> objects;</p>
 <p>They <strong>can’t create</strong> new enum objects.</p>
 </blockquote>
-<h4>Create Enum</h4>
+<h4 id="create-enum">Create Enum</h4>
 <p>An <code>enum</code> enables you to create a <strong>type</strong>, which has a <strong>fixed</strong> set of <code>constants</code>.</p>
 <p>Code Example:</p>
 <pre class="code literal-block"><span></span><span class="c1">//Assume we have: enum Level {BEGINNER,INTERMEDIATE,EXPERT}</span>
@@ -93,7 +93,7 @@ MathJax.Hub.Config({
 <blockquote>
 <p>You can assign <strong>only one constants</strong> defined in the enum level to <code>gameLevel</code>, since it is type <code>Level</code>.</p>
 </blockquote>
-<h4>Detail about a Enum Class</h4>
+<h4 id="detail-about-a-enum-class">Detail about a Enum Class</h4>
 <p>Following is the implicate class for <code>enum Level {BEGINNER,INTERMEDIATE,EXPERT}</code>:</p>
 <pre class="code literal-block"><span></span><span class="kd">final</span> <span class="kd">class</span> <span class="nc">Level</span> <span class="kd">extends</span> <span class="n">Enum</span> <span class="c1">//enum is implicitly final</span>
 <span class="o">{</span>
@@ -131,7 +131,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h4>java.lang.Enum</h4>
+<h4 id="javalangenum">java.lang.Enum</h4>
 <p>All enums in Java extend the abstract class <code>java.lang.Enum</code>, defined in the Java API.</p>
 <p>Code:</p>
 <pre class="code literal-block"><span></span><span class="kd">public</span> <span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Enum</span><span class="o">&lt;</span><span class="n">E</span> <span class="kd">extends</span> <span class="n">Enum</span><span class="o">&lt;</span><span class="n">E</span><span class="o">&gt;&gt;</span> <span class="kd">implements</span> <span class="n">Comparable</span><span class="o">&lt;</span><span class="n">E</span><span class="o">&gt;,</span> <span class="n">Serializable</span> <span class="o">{</span>
@@ -203,7 +203,7 @@ MathJax.Hub.Config({
 
 
     </div>
-                     <footer id="footer"><p>Contents © 2018         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                     <footer id="footer"><p>Contents © 2018         <a href="mailto:pengyin.shan@outlook.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

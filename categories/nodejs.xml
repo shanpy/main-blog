@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>I'm Pengyin (Posts about Node.js)</title><link>http://pengyin-shan.com/</link><description></description><atom:link href="http://pengyin-shan.com/categories/nodejs.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 06 Jul 2018 17:48:42 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Node.js Basics</title><link>http://pengyin-shan.com/posts/2016/JavaScript/node-js-basics.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;em&gt;This is a reading note for node.js part on &lt;a href="http://www.tutorialspoint.com/nodejs/index.htm"&gt;tutorialspoint&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-&lt;h2&gt;Introduction&lt;/h2&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>I'm Pengyin (Posts about Node.js)</title><link>http://pengyin-shan.com/</link><description></description><atom:link type="application/rss+xml" rel="self" href="http://pengyin-shan.com/categories/nodejs.xml"></atom:link><language>en</language><lastBuildDate>Tue, 10 Jul 2018 14:56:09 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Node.js Basics</title><link>http://pengyin-shan.com/posts/2016/JavaScript/node-js-basics.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;em&gt;This is a reading note for node.js part on &lt;a href="http://www.tutorialspoint.com/nodejs/index.htm"&gt;tutorialspoint&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Node.js (MIT License) is a server-side framework built on Good V8 Engine. From Tutorialpoints.com, it has following features:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -13,7 +13,7 @@
 &lt;p&gt;Node.js does not buffer any data.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;Components&lt;/h2&gt;
+&lt;h2 id="components"&gt;Components&lt;/h2&gt;
 &lt;p&gt;One node.js application has following three parts:&lt;/p&gt;
 &lt;p&gt;Import Required Modules: use &lt;code&gt;require&lt;/code&gt; to import node.js modules. Example: &lt;code&gt;var http = require("http")&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Create server: user &lt;code&gt;http.createServer()&lt;/code&gt; to create server instance. This method includes callbacks for response information, such as port number, content-type, etc:&lt;/p&gt;
@@ -26,7 +26,7 @@
 
 
 &lt;p&gt;Start Server: use &lt;code&gt;node xxx.js&lt;/code&gt; in terminal to start server. Use name of server js file. Example: &lt;code&gt;node config.js&lt;/code&gt;.&lt;/p&gt;
-&lt;h2&gt;NPM&lt;/h2&gt;
+&lt;h2 id="npm"&gt;NPM&lt;/h2&gt;
 &lt;p&gt;node.js use &lt;code&gt;npm&lt;/code&gt; (Node Package Manager) to install/control node modules. &lt;code&gt;npm install package_name [-g] [--save/--save-dev]&lt;/code&gt; can be used to install package (&lt;strong&gt;&lt;code&gt;--save&lt;/code&gt; or &lt;code&gt;--save-dev&lt;/code&gt; is used to add dependencies to your package.json file&lt;/strong&gt;). There are two way of installation: &lt;strong&gt;Global&lt;/strong&gt; and &lt;strong&gt;Local&lt;/strong&gt;:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -48,7 +48,7 @@
 &lt;p&gt;&lt;code&gt;npm search package_name&lt;/code&gt;: search package name using npm.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;package.json&lt;/h3&gt;
+&lt;h3 id="packagejson"&gt;package.json&lt;/h3&gt;
 &lt;p&gt;For project: Run &lt;code&gt;npm init&lt;/code&gt; at top level of a project can be used to generate &lt;code&gt;package.json&lt;/code&gt; for &lt;strong&gt;this project&lt;/strong&gt;, which is a JSON file defining the property of &lt;strong&gt;this project&lt;/strong&gt;.  A few questions will be asked during initialization process.&lt;/p&gt;
 &lt;p&gt;A &lt;code&gt;package.json&lt;/code&gt; for project contains &lt;code&gt;dependencies&lt;/code&gt;, which is for publication pages, and &lt;code&gt;devDependencies&lt;/code&gt; for dev/test only packages. Following is an example:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
@@ -146,8 +146,8 @@
 
 
 &lt;p&gt;&lt;code&gt;npm adduser&lt;/code&gt; to register current user to npm repository, then &lt;code&gt;npm publish&lt;/code&gt; can be used to publish current module to &lt;code&gt;repository&lt;/code&gt; address in &lt;code&gt;package.json&lt;/code&gt;.&lt;/p&gt;
-&lt;h2&gt;Concurrency: Callback and Events&lt;/h2&gt;
-&lt;h3&gt;Callbacks&lt;/h3&gt;
+&lt;h2 id="concurrency-callback-and-events"&gt;Concurrency: Callback and Events&lt;/h2&gt;
+&lt;h3 id="callbacks"&gt;Callbacks&lt;/h3&gt;
 &lt;p&gt;JavaScript callback functions are heavily used in node.js to make sure no block exists. Following is an example:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;//Assume 'input.txt' has one line 'Hello World!'&lt;/span&gt;
 &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;fs&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;require&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'fs'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
@@ -160,7 +160,7 @@
 
 
 &lt;p&gt;The code above should output: &lt;code&gt;End Program! Hello World!&lt;/code&gt;. Program goes till &lt;code&gt;readFile()&lt;/code&gt; finished, then callback statements will run.&lt;/p&gt;
-&lt;h3&gt;Events&lt;/h3&gt;
+&lt;h3 id="events"&gt;Events&lt;/h3&gt;
 &lt;p&gt;Node.js use &lt;strong&gt;observer pattern&lt;/strong&gt;, which means there exists dependency from one to many. Many observers (i.e. event listeners) will observe one subject (i.e. event). When subjects changes, all observers will be notified and updated based on the update.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Node thread keeps an event loop and whenever any task get completed, it fires the corresponding event which signals the event listener function to get executed.&lt;/p&gt;
@@ -227,7 +227,7 @@ data received
 
 &lt;p&gt;&lt;em&gt;If no &lt;code&gt;setTimeout&lt;/code&gt; (i.e. &lt;code&gt;data_received&lt;/code&gt; event finish immediately), 'data received' will output before 'Program Ended'.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;In Node Application, any async function accepts a callback as a &lt;strong&gt;last&lt;/strong&gt; parameter and the callback function accepts error as a &lt;strong&gt;first&lt;/strong&gt; parameter.&lt;/p&gt;
-&lt;h2&gt;Streams&lt;/h2&gt;
+&lt;h2 id="streams"&gt;Streams&lt;/h2&gt;
 &lt;p&gt;Reading/Writing files needs &lt;code&gt;require('fs')&lt;/code&gt; module.&lt;/p&gt;
 &lt;p&gt;Streams is used to read/write data. In node.js, there are four type of streams:&lt;/p&gt;
 &lt;ol&gt;
@@ -278,7 +278,7 @@ data received
 &lt;/pre&gt;
 
 
-&lt;h2&gt;Global Variables and Common Modules in node.js&lt;/h2&gt;
+&lt;h2 id="global-variables-and-common-modules-in-nodejs"&gt;Global Variables and Common Modules in node.js&lt;/h2&gt;
 &lt;p&gt;Following are some global variables in node.js, which can be used directly, instead of requiring it first:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -311,7 +311,7 @@ data received
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;There are two ways to handle error: &lt;code&gt;Internal Binding&lt;/code&gt;, meaning error emmitter is executing its code within &lt;code&gt;run&lt;/code&gt; method of a domain; &lt;code&gt;External Binding&lt;/code&gt;, meaning error emmitter is added explicitly to a domain using its add method.&lt;/p&gt;
-&lt;h3&gt;Error Object&lt;/h3&gt;
+&lt;h3 id="error-object"&gt;Error Object&lt;/h3&gt;
 &lt;p&gt;Reference to &lt;a href="https://docs.nodejitsu.com/articles/errors/what-is-the-error-object/"&gt;this site&lt;/a&gt;: in node.js, &lt;code&gt;error&lt;/code&gt; is a build-in object that provides a standard set of useful information when an error occurs. such as a stack trace and the error message:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;error&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nb"&gt;Error&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'The error message'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 &lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;error&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
@@ -385,7 +385,7 @@ Error: Converted to exception. System will crash!
 &lt;/pre&gt;
 
 
-&lt;h2&gt;Node.js as Web Server/Client&lt;/h2&gt;
+&lt;h2 id="nodejs-as-web-serverclient"&gt;Node.js as Web Server/Client&lt;/h2&gt;
 &lt;p&gt;Following is the image to describe web application architecture in tutorialspoint.com:&lt;/p&gt;
 &lt;p&gt;Following code is to use node.js as web server (&lt;code&gt;server.js&lt;/code&gt;):&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;http&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;require&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'http'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
@@ -485,7 +485,7 @@ Error: Converted to exception. System will crash!
 &lt;p&gt;If you don't have &lt;code&gt;index.htm&lt;/code&gt; file available, on step 2 terminal will give out error message, which is the code handled in server.js (404 part)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2&gt;Express&lt;/h2&gt;
+&lt;h2 id="express"&gt;Express&lt;/h2&gt;
 &lt;p&gt;Express is a popular Node.js framework. It has following features:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -510,7 +510,7 @@ Error: Converted to exception. System will crash!
 &lt;p&gt;multer - the middle-ware for handling multipart/form-data.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3&gt;Routing&lt;/h3&gt;
+&lt;h3 id="routing"&gt;Routing&lt;/h3&gt;
 &lt;p&gt;Express uses &lt;code&gt;request&lt;/code&gt; and &lt;code&gt;response&lt;/code&gt; objects in a &lt;em&gt;callback&lt;/em&gt; function. Basic usage is following:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;app&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'/'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;req&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nx"&gt;res&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
   &lt;span class="c1"&gt;//deal with request and response objects&lt;/span&gt;
@@ -552,7 +552,7 @@ Error: Converted to exception. System will crash!
 
 
 &lt;p&gt;The console information for &lt;code&gt;server.address&lt;/code&gt; may return &lt;code&gt;address&lt;/code&gt; attribute as &lt;code&gt;::&lt;/code&gt;. This is because if the host name is omitted, the IPv6 address will show &lt;code&gt;::&lt;/code&gt; and IPv4 address will return &lt;code&gt;0.0.0.0&lt;/code&gt;. See &lt;a href="http://stackoverflow.com/questions/33853695/node-js-server-address-address-returns"&gt;this Stack Overflow post&lt;/a&gt; for detail.&lt;/p&gt;
-&lt;h3&gt;Static Files in Express&lt;/h3&gt;
+&lt;h3 id="static-files-in-express"&gt;Static Files in Express&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;express.static&lt;/code&gt; middleware is used to serve static files, such as images, stylesheets or JS files. An example is following:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cm"&gt;/*&lt;/span&gt;
 &lt;span class="cm"&gt;now files in public folder (based on root) can be detected in browser&lt;/span&gt;
@@ -565,7 +565,7 @@ Error: Converted to exception. System will crash!
 
 
 &lt;p&gt;After running code above, URL such as &lt;code&gt;http://localhost:8081/images/test.png&lt;/code&gt; can be typed and viewed in browser, as long as &lt;code&gt;image/test.png&lt;/code&gt; is under &lt;code&gt;public&lt;/code&gt; folder and &lt;code&gt;public&lt;/code&gt; folder is in root.&lt;/p&gt;
-&lt;h3&gt;Cookie&lt;/h3&gt;
+&lt;h3 id="cookie"&gt;Cookie&lt;/h3&gt;
 &lt;p&gt;Use &lt;code&gt;cookie-parser&lt;/code&gt; middleware to print out cookie information. Example:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;express&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;require&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'express'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;cookieParser&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;require&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'cookie-parser'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;

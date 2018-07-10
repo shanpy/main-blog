@@ -7,7 +7,7 @@ article: http://ogp.me/ns/article#
 <meta charset="utf-8">
 <meta name="description" content="I'm attending an " introduction to spark online course using python and pyspark. i want create an development environment on my ubuntu machine.>
 <meta name="viewport" content="width=device-width">
-<title>Install Apache Spark with IPython Notebook Configuration on Ubuntu 15 | I'm Pengyin</title>
+<title>Install Apache Spark with IPython Notebook Configuration on Ubuntu 15 | I'm Pengyin (Wendy)</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2015/Data%20Science/ipython-notebook-pyspark.html">
@@ -26,7 +26,7 @@ MathJax.Hub.Config({
     }
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
-<meta property="og:site_name" content="I'm Pengyin">
+<meta property="og:site_name" content="I'm Pengyin (Wendy)">
 <meta property="og:title" content="Install Apache Spark with IPython Notebook Configuration on Ubuntu 15">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2015/Data%20Science/ipython-notebook-pyspark.html">
 <meta property="og:description" content="I'm attending an &quot;Introduction to Spark&quot; online course, using Python and PySpark. I want to create an development environment on my Ubuntu 15 machine.">
@@ -78,7 +78,7 @@ MathJax.Hub.Config({
 <p><a href="http://ramhiser.com/2015/02/01/configuring-ipython-notebook-support-for-pyspark/">Configuring IPython Notebook Support for PySpark</a>, written by John Ramey.</p>
 <p><a href="https://beingzy.github.io/tutorial/2014/10/13/spark-tutorial-Part-I-setting-up-spark-and-ipython-notebook-within-10-minutes.html">Spark Tutorial (Part I): Setting Up Spark and IPython Notebook within 10 minutes</a>, written by Yi Zhang.</p>
 <p><a href="https://ipython.org/ipython-doc/dev/config/intro.html">Introduction to IPython Configuration</a></p>
-<h3>Install Python and IPython Notebook</h3>
+<h3 id="install-python-and-ipython-notebook">Install Python and IPython Notebook</h3>
 <p>I highly recommend you using <a href="https://virtualenv.pypa.io/en/latest/">Virtualenv</a> or <a href="https://store.continuum.io/cshop/anaconda/">Anacona</a> for Python package control.</p>
 <p>You need to install <strong>Python</strong> and <strong>pip</strong> first (You can find installation documents through Google Search). Then in terminal, type following:</p>
 <pre class="code literal-block"><span></span><span class="gp">$</span>pip install <span class="s2">"ipython[notebook]"</span>
@@ -96,7 +96,7 @@ MathJax.Hub.Config({
 
 
 <p>Your default browser should open a window with IPython Notebook interface.</p>
-<h3>Install Spark and PySpark</h3>
+<h3 id="install-spark-and-pyspark">Install Spark and PySpark</h3>
 <p>You can download Spark from <a href="https://spark.apache.org/downloads.html">here</a>. You can install either source code package, or a pre-build package. All packages can be installed and configured for IPython Notebook.</p>
 <p>Pre-build package can be extracted and being used directly. If you download source package, you need to do this after extracting:</p>
 <pre class="code literal-block"><span></span><span class="gp">$</span><span class="nb">cd</span> your_spark_source_folder
@@ -123,7 +123,7 @@ MathJax.Hub.Config({
 </blockquote>
 <p>You should see following in your terminal. Type <code>sc</code> and you should see output as <code>SparkContext</code>:</p>
 <p>../images/articles/2015/python/test_pyspark.png </p>
-<h3>Configure PySpark and IPython Notebook</h3>
+<h3 id="configure-pyspark-and-ipython-notebook">Configure PySpark and IPython Notebook</h3>
 <p>Based on my experience, PySpark has good support for Python 2.7, but not Python 3. I recommend you use <strong>Python 2.7</strong> in this step.</p>
 <p><a href="http://ramhiser.com/2015/02/01/configuring-ipython-notebook-support-for-pyspark/">Configuring IPython Notebook Support for PySpark</a>, written by John Ramey, gave a very good description of steps you need to follow. However, you need to remember doing following:</p>
 <p>In <code>.bashrc</code> and <code>00-pyspark-setup.py</code>, make sure you have your own Spark folder name. Check your <code>your_spark_folder/python/lib</code> for py4j version.</p>
@@ -164,7 +164,7 @@ MathJax.Hub.Config({
 
 
     </div>
-                     <footer id="footer"><p>Contents © 2018         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                     <footer id="footer"><p>Contents © 2018         <a href="mailto:pengyin.shan@outlook.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

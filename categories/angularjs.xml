@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>I'm Pengyin (Posts about AngularJS)</title><link>http://pengyin-shan.com/</link><description></description><atom:link href="http://pengyin-shan.com/categories/angularjs.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 06 Jul 2018 17:48:43 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>AngularJS Basics</title><link>http://pengyin-shan.com/posts/2015/JavaScript/angularjs-basics.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3&gt;Resouce List&lt;/h3&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>I'm Pengyin (Posts about AngularJS)</title><link>http://pengyin-shan.com/</link><description></description><atom:link type="application/rss+xml" rel="self" href="http://pengyin-shan.com/categories/angularjs.xml"></atom:link><language>en</language><lastBuildDate>Tue, 10 Jul 2018 14:56:10 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>AngularJS Basics</title><link>http://pengyin-shan.com/posts/2015/JavaScript/angularjs-basics.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h3 id="resouce-list"&gt;Resouce List&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href="http://www.tutorialspoint.com/angularjs"&gt;AngularJS Tutorial on tutorialspoint.com&lt;/a&gt;&lt;/p&gt;
@@ -8,7 +8,7 @@
 &lt;p&gt;&lt;a href="https://docs.angularjs.org"&gt;AngularJS Official API Doc&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Core Features&lt;/h3&gt;
+&lt;h3 id="core-features"&gt;Core Features&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;Data-binding&lt;/code&gt;: Two-way data-binding between model and view components.&lt;/p&gt;
@@ -46,7 +46,7 @@
 &lt;/ul&gt;
 &lt;p&gt;A description graph from tutorialspoint.com:&lt;/p&gt;
 &lt;p&gt;../images/articles/2015/javascript/angularjs_concepts.jpg &lt;/p&gt;
-&lt;h3&gt;Three Major Parts&lt;/h3&gt;
+&lt;h3 id="three-major-parts"&gt;Three Major Parts&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;ng-app&lt;/code&gt;: Link a AngularJS application to HTML.&lt;/p&gt;
@@ -58,7 +58,7 @@
 &lt;p&gt;&lt;code&gt;ng-bind&lt;/code&gt;: Bind angularJS application to HTML tags.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Controller&lt;/h3&gt;
+&lt;h3 id="controller"&gt;Controller&lt;/h3&gt;
 &lt;p&gt;HTML:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="na"&gt;ng-app&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;""&lt;/span&gt; &lt;span class="na"&gt;ng-controller&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"testController"&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
     Test Name 1: {{names.name1}}
@@ -81,7 +81,7 @@
 &lt;/pre&gt;
 
 
-&lt;h3&gt;Type of Filters&lt;/h3&gt;
+&lt;h3 id="type-of-filters"&gt;Type of Filters&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;uppercase&lt;/code&gt;&lt;/p&gt;
@@ -99,7 +99,7 @@
 &lt;p&gt;&lt;code&gt;orderby&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;HTML DOM Control&lt;/h3&gt;
+&lt;h3 id="html-dom-control"&gt;HTML DOM Control&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;ng-disabled&lt;/code&gt;: disable a given control.&lt;/p&gt;
@@ -120,7 +120,7 @@
 &lt;/pre&gt;
 
 
-&lt;h3&gt;Module&lt;/h3&gt;
+&lt;h3 id="module"&gt;Module&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;Application Module&lt;/code&gt;: Initialize application with controller&lt;/p&gt;
@@ -132,7 +132,7 @@
 &lt;p&gt;&lt;code&gt;Controller Module&lt;/code&gt;: Define the controller. Example is in "Controller" section&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;ng-events&lt;/h3&gt;
+&lt;h3 id="ng-events"&gt;ng-events&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;ng-click&lt;/code&gt;&lt;/p&gt;
@@ -171,8 +171,8 @@
 &lt;p&gt;&lt;code&gt;ng-change&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Forms&lt;/h3&gt;
-&lt;h4&gt;Data Validation&lt;/h4&gt;
+&lt;h3 id="forms"&gt;Forms&lt;/h3&gt;
+&lt;h4 id="data-validation"&gt;Data Validation&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;$dirty&lt;/code&gt;: Notify when a value is changed&lt;/p&gt;
@@ -197,7 +197,7 @@
 &lt;/pre&gt;
 
 
-&lt;h3&gt;ng-includes&lt;/h3&gt;
+&lt;h3 id="ng-includes"&gt;ng-includes&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;ng-includes&lt;/code&gt; is used to include partial views, which is similar to
 &lt;code&gt;&amp;lt;jsp:include page = "../../test.jsp"/&amp;gt;&lt;/code&gt; in JSP page.&lt;/p&gt;
 &lt;p&gt;Example from tutorialspoint.com:&lt;/p&gt;
@@ -208,7 +208,7 @@
 &lt;/pre&gt;
 
 
-&lt;h3&gt;AJAX in AngularJS&lt;/h3&gt;
+&lt;h3 id="ajax-in-angularjs"&gt;AJAX in AngularJS&lt;/h3&gt;
 &lt;p&gt;Similar as jQuery, the format of AJAX is following:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;$http&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'/someUrl'&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;
   &lt;span class="nx"&gt;then&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;response&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
@@ -233,14 +233,14 @@
 
 
 &lt;p&gt;Since AngularJS Ajax involves in some other knowledge, I will write extra post about this.&lt;/p&gt;
-&lt;h3&gt;Views&lt;/h3&gt;
-&lt;h4&gt;ng-view&lt;/h4&gt;
+&lt;h3 id="views"&gt;Views&lt;/h3&gt;
+&lt;h4 id="ng-view"&gt;ng-view&lt;/h4&gt;
 &lt;p&gt;Just create a placeholder for easier configuration:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="na"&gt;ng-view&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;
 
 
-&lt;h4&gt;ng-template&lt;/h4&gt;
+&lt;h4 id="ng-template"&gt;ng-template&lt;/h4&gt;
 &lt;p&gt;Create a view with &lt;code&gt;id&lt;/code&gt;. This view will be map to a controller using &lt;code&gt;$routeProvider&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Example from tutorialspoint.com:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="na"&gt;ng-app&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;"mainApp"&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
@@ -252,7 +252,7 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;$routeProvider&lt;/h4&gt;
+&lt;h4 id="routeprovider"&gt;$routeProvider&lt;/h4&gt;
 &lt;p&gt;&lt;code&gt;$routeProvider&lt;/code&gt; configure urls and map to corresponding views. The controller for that corresponding view will also be attached. It works similar to &lt;code&gt;@RequestMapping(value='...')&lt;/code&gt; function in Spring MVC framework.&lt;/p&gt;
 &lt;p&gt;Example from tutorialspoint.com:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;//You need to add ngRoute to application controller&lt;/span&gt;
@@ -278,7 +278,7 @@
 &lt;/pre&gt;
 
 
-&lt;h3&gt;Scope&lt;/h3&gt;
+&lt;h3 id="scope"&gt;Scope&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;$scope&lt;/code&gt; is passed as first argument to controller during its constructor definition.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -305,11 +305,11 @@
 &lt;/pre&gt;
 
 
-&lt;h3&gt;Service&lt;/h3&gt;
+&lt;h3 id="service"&gt;Service&lt;/h3&gt;
 &lt;p&gt;Services are JavaScript functions and are responsible to do a &lt;strong&gt;specific tasks&lt;/strong&gt; **only.&lt;/p&gt;
 &lt;p&gt;Services are normally injected using &lt;strong&gt;dependency injection&lt;/strong&gt; mechanism of AngularJS.&lt;/p&gt;
 &lt;p&gt;There are two types of service.&lt;/p&gt;
-&lt;h4&gt;Factory&lt;/h4&gt;
+&lt;h4 id="factory"&gt;Factory&lt;/h4&gt;
 &lt;p&gt;Define a factory then assign method to it.&lt;/p&gt;
 &lt;p&gt;Example from tutorialspoint.com:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt; &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;mainApp&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;angular&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;module&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"mainApp"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;[]);&lt;/span&gt;
@@ -325,7 +325,7 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Service&lt;/h4&gt;
+&lt;h4 id="service_1"&gt;Service&lt;/h4&gt;
 &lt;p&gt;Call Factory and perform methods defined in Factory:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;//take MathService factory as a parameter&lt;/span&gt;
 &lt;span class="nx"&gt;mainApp&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;service&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'CalcService'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;MathService&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
@@ -349,7 +349,7 @@
 &lt;/pre&gt;
 
 
-&lt;h3&gt;Dependency Injection&lt;/h3&gt;
+&lt;h3 id="dependency-injection"&gt;Dependency Injection&lt;/h3&gt;
 &lt;p&gt;Following component of AngulaJS can be injected into other components:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -394,7 +394,7 @@
 &lt;/pre&gt;
 
 
-&lt;h3&gt;Custom Directives&lt;/h3&gt;
+&lt;h3 id="custom-directives"&gt;Custom Directives&lt;/h3&gt;
 &lt;p&gt;Custom directives are defined using &lt;code&gt;directive&lt;/code&gt; function. &lt;strong&gt;A custom directive simply replaces the element for which it is activated&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;AngularJS use its &lt;code&gt;compile()&lt;/code&gt; method of the custom directive then process the element using &lt;code&gt;link()&lt;/code&gt; method of the custom directive based on the scope of the directive.&lt;/p&gt;
 &lt;p&gt;You can create custom directives for following type of elements:&lt;/p&gt;

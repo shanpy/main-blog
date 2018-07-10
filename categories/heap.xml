@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>I'm Pengyin (Posts about Heap)</title><link>http://pengyin-shan.com/</link><description></description><atom:link href="http://pengyin-shan.com/categories/heap.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 06 Jul 2018 17:48:44 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Algorithm and Data Structure Basics - Heap</title><link>http://pengyin-shan.com/posts/2015/Algorithm%20Data%20Structure/algorithm-and-data-structure-basics-heap.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h4&gt;Reference List&lt;/h4&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>I'm Pengyin (Posts about Heap)</title><link>http://pengyin-shan.com/</link><description></description><atom:link type="application/rss+xml" rel="self" href="http://pengyin-shan.com/categories/heap.xml"></atom:link><language>en</language><lastBuildDate>Tue, 10 Jul 2018 14:56:12 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Algorithm and Data Structure Basics - Heap</title><link>http://pengyin-shan.com/posts/2015/Algorithm%20Data%20Structure/algorithm-and-data-structure-basics-heap.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h4 id="reference-list"&gt;Reference List&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;em&gt;Data Structures and Algorithms in Java (Second Edition)&lt;/em&gt;, written by &lt;em&gt;Robert Lafore&lt;/em&gt;, Chinese Version&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4&gt;Basic Information&lt;/h4&gt;
+&lt;h4 id="basic-information"&gt;Basic Information&lt;/h4&gt;
 &lt;p&gt;Heap is a type of tree. If you create a &lt;strong&gt;priority queue&lt;/strong&gt; from heap. The time complexity for insertion and deletion is &lt;code&gt;O(logN)&lt;/code&gt;. However, heap doesn't support traversal and search by value, because all path in heap is following descending/ascending order.&lt;/p&gt;
 &lt;p&gt;Heap has following features:&lt;/p&gt;
 &lt;ul&gt;
@@ -26,7 +26,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;All nodes which have index larger than &lt;code&gt;n/2&lt;/code&gt; are leaf nodes, assuming there are n elements in array.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4&gt;Remove&lt;/h4&gt;
+&lt;h4 id="remove"&gt;Remove&lt;/h4&gt;
 &lt;p&gt;In heap, remove means removing the root of the heap. This root is always the largest/smallest value of all elements. For the heap array, root always has index &lt;code&gt;0&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;You need two steps to find removing process:&lt;/p&gt;
 &lt;ol&gt;
@@ -49,7 +49,7 @@
 &lt;p&gt;Move this new root to bottom, until it's smaller than its parent node and larger than its child nodes. To do this, check if root is smaller than it's &lt;strong&gt;larger child&lt;/strong&gt;. If so, swap root and its larger child. Repeat this.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h5&gt;Code&lt;/h5&gt;
+&lt;h5 id="code"&gt;Code&lt;/h5&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;//We assume each node has a attribute 'key', which determine the value/priority of this node&lt;/span&gt;
 &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="n"&gt;Node&lt;/span&gt; &lt;span class="nf"&gt;remove&lt;/span&gt;&lt;span class="o"&gt;(){&lt;/span&gt;
     &lt;span class="n"&gt;Node&lt;/span&gt; &lt;span class="n"&gt;root&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;heapArray&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;];&lt;/span&gt;
@@ -90,7 +90,7 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Insert&lt;/h4&gt;
+&lt;h4 id="insert"&gt;Insert&lt;/h4&gt;
 &lt;p&gt;Insertion can by down by following step:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -100,7 +100,7 @@
 &lt;p&gt;Recursively moving this node so that it will be larger than its child elements and smaller than its parent node. i.e. if node is smaller larger than its parent node, swap this node and its parent node.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h5&gt;Code&lt;/h5&gt;
+&lt;h5 id="code_1"&gt;Code&lt;/h5&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;//We assume each node has a attribute 'key', which determine the value/priority of this node&lt;/span&gt;
 &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kt"&gt;boolean&lt;/span&gt; &lt;span class="nf"&gt;insert&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;key&lt;/span&gt;&lt;span class="o"&gt;){&lt;/span&gt;
     &lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;currentSize&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="n"&gt;maxSize&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
@@ -127,5 +127,5 @@
 &lt;/pre&gt;
 
 
-&lt;h4&gt;Change Value&lt;/h4&gt;
+&lt;h4 id="change-value"&gt;Change Value&lt;/h4&gt;
 &lt;p&gt;Working in process...&lt;/p&gt;&lt;/div&gt;</description><category>Algorithm</category><category>Data Structure</category><category>Heap</category><category>Java</category><guid>http://pengyin-shan.com/posts/2015/Algorithm%20Data%20Structure/algorithm-and-data-structure-basics-heap.html</guid><pubDate>Thu, 03 Sep 2015 07:00:00 GMT</pubDate></item></channel></rss>

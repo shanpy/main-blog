@@ -10,7 +10,7 @@ article: http://ogp.me/ns/article#
 <body>
 <p>bootstrap-datepicker, a date-picker that is built for Bootstrap including different functions. It is created by <a href="https://github.com/eternicode">eternicode</a>."&gt;
     <meta name="viewport" content="width=device-width"></p>
-<title>Boostrap3 Date Picker | I'm Pengyin</title>
+<title>Boostrap3 Date Picker | I'm Pengyin (Wendy)</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2015/JavaScript/bootstrap3-date-picker.html">
@@ -29,7 +29,7 @@ MathJax.Hub.Config({
     }
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
-<meta property="og:site_name" content="I'm Pengyin">
+<meta property="og:site_name" content="I'm Pengyin (Wendy)">
 <meta property="og:title" content="Boostrap3 Date Picker">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2015/JavaScript/bootstrap3-date-picker.html">
 <meta property="og:description" content='This is a brief introduction about &lt;a href="https://github.com/eternicode/bootstrap-datepicker"&gt;bootstrap-datepicker&lt;/a&gt;, a date-picker that is built for Bootstrap including different functions. It is'>
@@ -67,22 +67,22 @@ MathJax.Hub.Config({
         </div>
         <div class="body">
             <div>
-<h3>Usage</h3>
+<h3 id="usage">Usage</h3>
 <p>You can try a sandbox <a href="http://eternicode.github.io/bootstrap-datepicker/?markup=input&amp;format=&amp;weekStart=&amp;startDate=&amp;endDate=&amp;startView=0&amp;minViewMode=0&amp;todayBtn=false&amp;clearBtn=false&amp;language=en&amp;orientation=auto&amp;multidate=&amp;multidateSeparator=&amp;keyboardNavigation=on&amp;forceParse=on#sandbox">here</a> to expore more about bootstrap-datepicker.</p>
-<h4>General Usage</h4>
+<h4 id="general-usage">General Usage</h4>
 <p>Generally everything is easy. After you refer source file (stylesheet and js) in code, create a <code>&lt;input type="input"&gt;</code> element. Then write following JavaScript code:</p>
 <pre class="code literal-block"><span></span><span class="nx">$</span><span class="p">(</span><span class="s2">"#your_container input"</span><span class="p">).</span><span class="nx">datepicker</span><span class="p">();</span>
 </pre>
 
 
 <p>Now when you click input box, a calendar will appear.</p>
-<h4>Embeded Full Calander</h4>
+<h4 id="embeded-full-calander">Embeded Full Calander</h4>
 <p>You may want a full calender instead of a input box. First you make a <code>&lt;div&gt;</code> with id/className, The do same JavaScript code as above:</p>
 <pre class="code literal-block"><span></span><span class="nx">$</span><span class="p">(</span><span class="s2">"#your_div"</span><span class="p">).</span><span class="nx">datepicker</span><span class="p">();</span>
 </pre>
 
 
-<h4>Disable Special Dates</h4>
+<h4 id="disable-special-dates">Disable Special Dates</h4>
 <p>One of the function I use very often is to disable some dates (Or only make a few dates available). You need <code>beforeShowDay</code> option to do this:</p>
 <pre class="code literal-block"><span></span><span class="kd">var</span> <span class="nx">avialableDates</span><span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">18</span><span class="p">,</span><span class="mi">20</span><span class="p">];</span>
 <span class="nx">$</span><span class="p">(</span><span class="s2">"#date_picker"</span><span class="p">).</span><span class="nx">datepicker</span><span class="p">({</span>
@@ -102,7 +102,7 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h4>Do Something after User Choose Date</h4>
+<h4 id="do-something-after-user-choose-date">Do Something after User Choose Date</h4>
 <p>You may want to perform something after user click on a date. Use <code>.change()</code> and <code>.on</code> to detect user's selection and assign function to it:</p>
 <pre class="code literal-block"><span></span><span class="nx">$</span><span class="p">(</span><span class="s2">"#your_div"</span><span class="p">).</span><span class="nx">datepicker</span><span class="p">({</span>
   <span class="c1">//assign options, such as beforeShowDay</span>
@@ -119,8 +119,8 @@ MathJax.Hub.Config({
 </pre>
 
 
-<h3>Problems and Solutions</h3>
-<h4>P1: "cannot call method 'split' of undefined" error</h4>
+<h3 id="problems-and-solutions">Problems and Solutions</h3>
+<h4 id="p1-cannot-call-method-split-of-undefined-error">P1: "cannot call method 'split' of undefined" error</h4>
 <p>S1: I find following steps to solve this problem:</p>
 <ul>
 <li>
@@ -163,7 +163,7 @@ MathJax.Hub.Config({
 
 
     </div>
-                     <footer id="footer"><p>Contents © 2018         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                     <footer id="footer"><p>Contents © 2018         <a href="mailto:pengyin.shan@outlook.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

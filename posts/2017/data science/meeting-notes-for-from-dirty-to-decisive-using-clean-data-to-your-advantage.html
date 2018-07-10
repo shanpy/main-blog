@@ -7,7 +7,7 @@ article: http://ogp.me/ns/article#
 <meta charset="utf-8">
 <meta name="description" content="I attended USGWeb 2017 and found the presentation 'From Dirty to Decisive: Using Clean Data to Your Advantage', presented by Mr. Johann Lohrmann being very useful for opening my mind of starting projects with massive data sets, so I wrote this post as a record of his presentation.">
 <meta name="viewport" content="width=device-width">
-<title>Meeting Notes for 'From Dirty to Decisive: Using Clean Data to Your Advantage' | I'm Pengyin</title>
+<title>Meeting Notes for 'From Dirty to Decisive: Using Clean Data to Your Advantage' | I'm Pengyin (Wendy)</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://pengyin-shan.com/posts/2017/data%20science/meeting-notes-for-from-dirty-to-decisive-using-clean-data-to-your-advantage.html">
@@ -26,7 +26,7 @@ MathJax.Hub.Config({
     }
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
-<meta property="og:site_name" content="I'm Pengyin">
+<meta property="og:site_name" content="I'm Pengyin (Wendy)">
 <meta property="og:title" content="Meeting Notes for 'From Dirty to Decisive: Using Clean Data to Your Ad">
 <meta property="og:url" content="http://pengyin-shan.com/posts/2017/data%20science/meeting-notes-for-from-dirty-to-decisive-using-clean-data-to-your-advantage.html">
 <meta property="og:description" content="I attended USGWeb 2017 and found the presentation 'From Dirty to Decisive: Using Clean Data to Your Advantage', presented by Mr. Johann Lohrmann being very useful for opening my mind of starting proje">
@@ -70,35 +70,84 @@ MathJax.Hub.Config({
         </div>
         <div class="body">
             <div>
-<h2>Solution for Making Decision based on Large Set of Data</h2>
-<h3>How Data Impacts Decision</h3>
-<h4>Two Kinds of People in Decision Making Process</h4>
+<div class="toc">
+<ul>
+<li>
+<a href="../data%20science/meeting-notes-for-from-dirty-to-decisive-using-clean-data-to-your-advantage.html#solution-for-making-decision-based-on-large-set-of-data">Solution for Making Decision based on Large Set of Data</a><ul>
+<li>
+<a href="../data%20science/meeting-notes-for-from-dirty-to-decisive-using-clean-data-to-your-advantage.html#how-data-impacts-decision">How Data Impacts Decision</a><ul>
+<li><a href="../data%20science/meeting-notes-for-from-dirty-to-decisive-using-clean-data-to-your-advantage.html#two-kinds-of-people-in-decision-making-process">Two Kinds of People in Decision Making Process</a></li>
+<li><a href="../data%20science/meeting-notes-for-from-dirty-to-decisive-using-clean-data-to-your-advantage.html#ignore-data-scraps-and-less-hunting">Ignore Data Scraps and Less Hunting</a></li>
+</ul>
+</li>
+<li>
+<a href="../data%20science/meeting-notes-for-from-dirty-to-decisive-using-clean-data-to-your-advantage.html#the-decision-making-modal">The Decision Making Modal</a><ul>
+<li><a href="../data%20science/meeting-notes-for-from-dirty-to-decisive-using-clean-data-to-your-advantage.html#decision">Decision</a></li>
+<li><a href="../data%20science/meeting-notes-for-from-dirty-to-decisive-using-clean-data-to-your-advantage.html#supported-materials">Supported Materials</a></li>
+<li><a href="../data%20science/meeting-notes-for-from-dirty-to-decisive-using-clean-data-to-your-advantage.html#modals">Modals</a></li>
+</ul>
+</li>
+<li>
+<a href="../data%20science/meeting-notes-for-from-dirty-to-decisive-using-clean-data-to-your-advantage.html#the-decision-making-process">The Decision Making Process</a><ul>
+<li>
+<a href="../data%20science/meeting-notes-for-from-dirty-to-decisive-using-clean-data-to-your-advantage.html#step-1-decision-driven-decision-making">Step 1: Decision-Driven Decision Making</a><ul>
+<li><a href="../data%20science/meeting-notes-for-from-dirty-to-decisive-using-clean-data-to-your-advantage.html#what-do-we-want-to-achieve">What do we want to achieve?</a></li>
+</ul>
+</li>
+<li><a href="../data%20science/meeting-notes-for-from-dirty-to-decisive-using-clean-data-to-your-advantage.html#step-2-find-answers-to-questions">Step 2: Find answers to questions</a></li>
+<li>
+<a href="../data%20science/meeting-notes-for-from-dirty-to-decisive-using-clean-data-to-your-advantage.html#step-3-clean-it-up">Step 3: Clean it up</a><ul>
+<li><a href="../data%20science/meeting-notes-for-from-dirty-to-decisive-using-clean-data-to-your-advantage.html#process-in-place-before-cleaning">Process in place before cleaning</a></li>
+<li><a href="../data%20science/meeting-notes-for-from-dirty-to-decisive-using-clean-data-to-your-advantage.html#how-to-clean-data">How to clean data?</a></li>
+</ul>
+</li>
+<li><a href="../data%20science/meeting-notes-for-from-dirty-to-decisive-using-clean-data-to-your-advantage.html#step-4-present">Step 4: Present</a></li>
+<li>
+<a href="../data%20science/meeting-notes-for-from-dirty-to-decisive-using-clean-data-to-your-advantage.html#step-5-distribute-the-insights">Step 5: Distribute the insights</a><ul>
+<li><a href="../data%20science/meeting-notes-for-from-dirty-to-decisive-using-clean-data-to-your-advantage.html#three-panels-for-evaluating-action">Three Panels for Evaluating Action</a></li>
+</ul>
+</li>
+<li>
+<a href="../data%20science/meeting-notes-for-from-dirty-to-decisive-using-clean-data-to-your-advantage.html#examples-and-conclusions">Examples and Conclusions</a><ul>
+<li><a href="../data%20science/meeting-notes-for-from-dirty-to-decisive-using-clean-data-to-your-advantage.html#composition-of-data">Composition of Data</a></li>
+</ul>
+</li>
+<li><a href="../data%20science/meeting-notes-for-from-dirty-to-decisive-using-clean-data-to-your-advantage.html#tools-recommendation">Tools Recommendation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="solution-for-making-decision-based-on-large-set-of-data">Solution for Making Decision based on Large Set of Data</h2>
+<h3 id="how-data-impacts-decision">How Data Impacts Decision</h3>
+<h4 id="two-kinds-of-people-in-decision-making-process">Two Kinds of People in Decision Making Process</h4>
 <ol>
 <li>
 <code>Liability</code>: people who know materials well, but not involved in decision making process</li>
 <li>
 <code>Assets</code>: people who can access materials and impact on decision making process</li>
 </ol>
-<h4>Ignore Data Scraps and Less Hunting</h4>
+<h4 id="ignore-data-scraps-and-less-hunting">Ignore Data Scraps and Less Hunting</h4>
 <blockquote>
 <p>Need clear actions: Less Time Hunting Data, More Time Getting Actions</p>
 </blockquote>
-<h3>The Decision Making Modal</h3>
+<h3 id="the-decision-making-modal">The Decision Making Modal</h3>
 <blockquote>
 <p>Stream Line</p>
 </blockquote>
-<h4>Decision</h4>
+<h4 id="decision">Decision</h4>
 <blockquote>
 <p>A choice or determination made after considering a set of presented materials</p>
 </blockquote>
-<h4>Supported Materials</h4>
+<h4 id="supported-materials">Supported Materials</h4>
 <ol>
 <li>
 <code>Road Map</code> before decision</li>
 <li>
 <code>Guidance</code> for decision</li>
 </ol>
-<h4>Modals</h4>
+<h4 id="modals">Modals</h4>
 <ol>
 <li><code>Informed-ness</code></li>
 <li>
@@ -110,19 +159,19 @@ MathJax.Hub.Config({
 <li>
 <code>Optimality of Outcome</code>: degree to which decision gets best result. This is the <em>environment</em> for best decision</li>
 </ol>
-<h3>The Decision Making Process</h3>
-<h4>Step 1: Decision-Driven Decision Making</h4>
+<h3 id="the-decision-making-process">The Decision Making Process</h3>
+<h4 id="step-1-decision-driven-decision-making">Step 1: Decision-Driven Decision Making</h4>
 <blockquote>
 <p>Always start from decision</p>
 </blockquote>
-<h5>What do we want to achieve?</h5>
+<h5 id="what-do-we-want-to-achieve">What do we want to achieve?</h5>
 <ol>
 <li>
 <del>What DATA can I access?</del> </li>
 <li>
 <code>Problem-Solve-Targeted</code>: We want to have our data <strong>available to subscribers</strong>. </li>
 </ol>
-<h4>Step 2: Find answers to questions</h4>
+<h4 id="step-2-find-answers-to-questions">Step 2: Find answers to questions</h4>
 <ol>
 <li>Know questions <code>before see the data</code>
 </li>
@@ -131,8 +180,8 @@ MathJax.Hub.Config({
 <li>Draw three panels: <img alt="three panels" src="../../../images/2017/data-science/three-panels.png">
 </li>
 </ol>
-<h4>Step 3: Clean it up</h4>
-<h5>Process in place before cleaning</h5>
+<h4 id="step-3-clean-it-up">Step 3: Clean it up</h4>
+<h5 id="process-in-place-before-cleaning">Process in place before cleaning</h5>
 <blockquote>
 <p>Goal: Get to decision point</p>
 </blockquote>
@@ -141,7 +190,7 @@ MathJax.Hub.Config({
 <li>Make data run under this process</li>
 <li>Example: Get Excel File =&gt; Data Visualization =&gt; Find Rules to Clean File =&gt;Get Cleaned File</li>
 </ol>
-<h5>How to clean data?</h5>
+<h5 id="how-to-clean-data">How to clean data?</h5>
 <ol>
 <li>
 <code>Capture</code>: what <strong>bring</strong> attention? =&gt; Based on rules (<em>error</em>)</li>
@@ -155,24 +204,24 @@ MathJax.Hub.Config({
 <li>
 <code>Engage</code>: <strong>implementation</strong> with data</li>
 </ol>
-<h4>Step 4: Present</h4>
+<h4 id="step-4-present">Step 4: Present</h4>
 <blockquote>
 <p>Target to the right stakeholder, right time, right way</p>
 </blockquote>
 <p>Remember different people use data differently, so when present data to clients, remember to use data that client only cares.</p>
-<h4>Step 5: Distribute the insights</h4>
+<h4 id="step-5-distribute-the-insights">Step 5: Distribute the insights</h4>
 <p>Apply <code>insights</code> to decision making process: Turn Data into Action</p>
-<h5>Three Panels for Evaluating Action</h5>
+<h5 id="three-panels-for-evaluating-action">Three Panels for Evaluating Action</h5>
 <p><img alt="three panels2" src="../../../images/2017/data-science/three-panels2.png"></p>
-<h4>Examples and Conclusions</h4>
+<h4 id="examples-and-conclusions">Examples and Conclusions</h4>
 <p>data.geogria.gov</p>
-<h5>Composition of Data</h5>
+<h5 id="composition-of-data">Composition of Data</h5>
 <ol>
 <li>Based on decision I want to make</li>
 <li>Bring historical data in</li>
 <li>Ask questions: what <strong>cause</strong> the gap? What's the <strong>impact</strong> of gap?</li>
 </ol>
-<h4>Tools Recommendation</h4>
+<h4 id="tools-recommendation">Tools Recommendation</h4>
 <ol>
 <li>
 <code>CSV</code>s</li>
@@ -214,7 +263,7 @@ MathJax.Hub.Config({
 
 
     </div>
-                     <footer id="footer"><p>Contents © 2018         <a href="mailto:shanpy901115@gmail.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+                     <footer id="footer"><p>Contents © 2018         <a href="mailto:pengyin.shan@outlook.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
             
         </footer>
 </div>

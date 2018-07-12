@@ -7,8 +7,13 @@
 .. description: My reading map for the two great books: "Say It with Charts" and "Say It with Presentations", written by Gene Zelazny
 .. type: text
 
-To view full content, right-click on image and choose 'open image in new tab' option
+
+
+*To view full content, right-click on image and choose 'open image in new tab' option*
+
+
 ------------
+
 
 .. image:: /images/2018/reading/say-it-with-1.jpg
 .. image:: /images/2018/reading/say-it-with-2.jpg
@@ -17,7 +22,9 @@ To view full content, right-click on image and choose 'open image in new tab' op
 
 ------------
 
+
 *Gene Zelany, the author of Say It with Presentations, suggests to make a copy of lists at the end of book.*
+
 
 .. image:: /images/2018/reading/say-it-with-presentation-list page 1.jpg
 .. image:: /images/2018/reading/say-it-with-presentation-list page 2.jpg

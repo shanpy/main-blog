@@ -23,11 +23,11 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/2018/index.html</loc>
-  <lastmod>2018-07-12T04:48:00Z</lastmod>
+  <lastmod>2018-07-12T17:41:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/archive.html</loc>
-  <lastmod>2018-07-12T04:48:00Z</lastmod>
+  <lastmod>2018-07-12T17:13:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/ajax.html</loc>
@@ -67,7 +67,7 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/cat_book-highlight.html</loc>
-  <lastmod>2018-07-12T04:48:00Z</lastmod>
+  <lastmod>2018-07-12T17:41:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/cat_data-science.html</loc>
@@ -207,7 +207,7 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/index.html</loc>
-  <lastmod>2018-07-12T04:48:00Z</lastmod>
+  <lastmod>2018-07-12T17:13:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/ipython.html</loc>
@@ -279,7 +279,7 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/reading-notes.html</loc>
-  <lastmod>2018-07-12T04:48:00Z</lastmod>
+  <lastmod>2018-07-12T17:41:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/recursion.html</loc>
@@ -303,7 +303,7 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/self-improvement.html</loc>
-  <lastmod>2018-07-12T04:48:00Z</lastmod>
+  <lastmod>2018-07-12T17:41:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/seo.html</loc>
@@ -375,7 +375,7 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/index-10.html</loc>
-  <lastmod>2018-07-12T04:48:00Z</lastmod>
+  <lastmod>2018-07-12T17:13:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/index-2.html</loc>
@@ -411,7 +411,7 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/index.html</loc>
-  <lastmod>2018-07-12T04:48:00Z</lastmod>
+  <lastmod>2018-07-12T17:41:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/posts/2014/benefit-of-hosting-content-library-with-CDN.html</loc>
@@ -791,7 +791,7 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/posts/2018/book/highlights-for-fully-engaged.html</loc>
-  <lastmod>2018-07-12T04:48:00Z</lastmod>
+  <lastmod>2018-07-12T17:13:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/posts/2018/book/highlights-for-jingzhunmuli.html</loc>
@@ -806,8 +806,12 @@
   <lastmod>2018-07-12T04:48:00Z</lastmod>
  </url>
  <url>
+  <loc>http://pengyin-shan.com/posts/2018/book/reading-map-for-say-it-with-chartspresentations.html</loc>
+  <lastmod>2018-07-12T17:41:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://pengyin-shan.com/posts/2018/book/reading-map-for-what-smart-student-know-and-mind-map-book.html</loc>
-  <lastmod>2018-07-12T04:48:00Z</lastmod>
+  <lastmod>2018-07-12T17:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/posts/2018/finance/finance-private-reading-notes-1.html</loc>
@@ -816,6 +820,10 @@
  <url>
   <loc>http://pengyin-shan.com/posts/2018/math/chinese-permutation-combination-brief-note.html</loc>
   <lastmod>2018-07-12T04:48:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://pengyin-shan.com/posts/reading-map-for-say-it-with-chartspresentations.html</loc>
+  <lastmod>2018-07-12T17:11:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/stories/about_me.html</loc>

@@ -9,4 +9,6 @@
 
 *To view full content, right-click on image and choose 'open image in new tab' option*
 
-![What_Smart_Student_Know](/images/2018/reading/What_Smart_Student_Know.jpg)
+![What_Smart_Student_Know1](/images/2018/reading/what-smart-student-know1.jpg)
+
+![What_Smart_Student_Know2](/images/2018/reading/what-smart-student-know2.jpg)

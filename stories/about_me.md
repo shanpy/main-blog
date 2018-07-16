@@ -16,20 +16,20 @@
     <tr>
         <td style="vertical-align: top">
             <p>
-                My blog contains all my study notes: 
+                My knowledge base contains all my study notes: 
                 <li>Book highlights</li>
                 <li>My thoughts in learning</li>
                 <li>My hand-writing notes</li>
             </p>
             <hr/>
             <p>Materials include:
-                <li>CCareer development skills</li>
-                <li>computer science/data science</li>
-                <li>Math/statistics</li>
-                <li>Economics/finance</li>
+                <li>Career development skills</li>
+                <li>Computer science/Data science</li>
+                <li>Maths/Statistics</li>
+                <li>Economics/Finance</li>
             </p>
             <hr/>
-            <p>I enjoy learning anything from anyone. I'm living in Vancouver, British Columbia, Canada.</p>
+            <p>I enjoy learning anything from anyone. I'm moving to Toronto, Canada in August 2018.</p>
             <hr/>
             <a href="/Pengyin Shan.pdf" target="_blank">View My Resume</a>
         </td>

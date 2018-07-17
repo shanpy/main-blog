@@ -46,6 +46,10 @@
   <lastmod>2018-07-12T17:43:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>http://pengyin-shan.com/categories/cat_consulting.xml</loc>
+  <lastmod>2018-07-17T16:51:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://pengyin-shan.com/categories/cat_data-science.xml</loc>
   <lastmod>2018-07-12T04:48:00Z</lastmod>
  </sitemap>
@@ -96,6 +100,10 @@
  <sitemap>
   <loc>http://pengyin-shan.com/categories/compass.xml</loc>
   <lastmod>2018-07-12T04:48:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://pengyin-shan.com/categories/consulting.xml</loc>
+  <lastmod>2018-07-17T16:51:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://pengyin-shan.com/categories/css.xml</loc>
@@ -251,7 +259,7 @@
  </sitemap>
  <sitemap>
   <loc>http://pengyin-shan.com/categories/reading-notes.xml</loc>
-  <lastmod>2018-07-12T17:43:00Z</lastmod>
+  <lastmod>2018-07-17T16:51:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://pengyin-shan.com/categories/recursion.xml</loc>
@@ -343,10 +351,10 @@
  </sitemap>
  <sitemap>
   <loc>http://pengyin-shan.com/rss.xml</loc>
-  <lastmod>2018-07-12T17:43:00Z</lastmod>
+  <lastmod>2018-07-17T16:51:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://pengyin-shan.com/sitemap.xml</loc>
-  <lastmod>2018-07-16T15:02:00Z</lastmod>
+  <lastmod>2018-07-17T16:51:00Z</lastmod>
  </sitemap>
 </sitemapindex>

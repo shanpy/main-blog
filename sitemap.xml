@@ -23,11 +23,11 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/2018/index.html</loc>
-  <lastmod>2018-07-17T16:51:00Z</lastmod>
+  <lastmod>2018-07-26T04:28:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/archive.html</loc>
-  <lastmod>2018-07-17T16:51:00Z</lastmod>
+  <lastmod>2018-07-26T04:16:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/ajax.html</loc>
@@ -68,6 +68,10 @@
  <url>
   <loc>http://pengyin-shan.com/categories/cat_book-highlight.html</loc>
   <lastmod>2018-07-17T16:51:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://pengyin-shan.com/categories/cat_book-highlights.html</loc>
+  <lastmod>2018-07-26T04:28:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/cat_consulting.html</loc>
@@ -187,7 +191,7 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/finance.html</loc>
-  <lastmod>2018-07-17T16:51:00Z</lastmod>
+  <lastmod>2018-07-26T04:28:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/github.html</loc>
@@ -215,7 +219,7 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/index.html</loc>
-  <lastmod>2018-07-17T16:51:00Z</lastmod>
+  <lastmod>2018-07-26T04:16:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/ipython.html</loc>
@@ -287,7 +291,7 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/reading-notes.html</loc>
-  <lastmod>2018-07-17T16:51:00Z</lastmod>
+  <lastmod>2018-07-26T04:28:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/recursion.html</loc>
@@ -383,7 +387,7 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/index-10.html</loc>
-  <lastmod>2018-07-17T16:51:00Z</lastmod>
+  <lastmod>2018-07-26T04:16:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/index-2.html</loc>
@@ -419,7 +423,7 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/index.html</loc>
-  <lastmod>2018-07-17T16:51:00Z</lastmod>
+  <lastmod>2018-07-26T04:28:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/posts/2014/benefit-of-hosting-content-library-with-CDN.html</loc>
@@ -823,7 +827,11 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/posts/2018/consulting/reading-map-for-case-in-point-chapter-1-to-5.html</loc>
-  <lastmod>2018-07-17T16:51:00Z</lastmod>
+  <lastmod>2018-07-26T04:16:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://pengyin-shan.com/posts/2018/finance/book-highlights-for-learn-to-earn.html</loc>
+  <lastmod>2018-07-26T04:28:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/posts/2018/finance/finance-private-reading-notes-1.html</loc>

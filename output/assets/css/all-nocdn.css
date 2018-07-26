@@ -2293,9 +2293,11 @@ a:focus {
   font-style: normal;
 }
 blockquote {
-  padding: 0 0 0 15px;
-  margin: 0 0 24px;
+  padding: 1em;
+  margin: 1em;
   border-left: 5px solid #eeeeee;
+  background: #eee;
+  font-size: larger;
 }
 blockquote p {
   margin-bottom: 0;

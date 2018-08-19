@@ -2161,12 +2161,12 @@ a:focus {
   }
 }
 .social a .label {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Arial, sans-serif;
   font-weight: bold;
   font-size: 26.25px;
 }
 .page-content {
-  font-family: "SQMarket","Helvetica Neue",sans-serif;
+  font-family: Arial,sans-serif;
 }
 .page-content > .content {
   text-rendering: optimizeLegibility;
@@ -2375,7 +2375,7 @@ a.thumbnail:focus {
 code,
 pre {
   padding: 0 3px 2px;
-  font-family: "SQMarket","Helvetica Neue",sans-serif;;
+  font-family: Arial,sans-serif;;
   font-size: 13px;
   color: #333333;
   -webkit-border-radius: 3px;
@@ -2877,7 +2877,7 @@ body {
 pre {
   padding: 0.4em;
   margin: 0px;
-  font-family: Helvetica Neue, sans-serif;
+  font-family: Arial, sans-serif;
   border: none;
 }
 

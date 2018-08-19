@@ -1,48 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>I'm Pengyin (Wendy) (Posts about Finance)</title><link>http://pengyin-shan.com/</link><description></description><atom:link rel="self" href="http://pengyin-shan.com/categories/cat_finance.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Thu, 12 Jul 2018 04:48:17 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Reading Notes In Process</title><link>http://pengyin-shan.com/posts/2018/finance/finance-private-reading-notes-1.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;script&gt;
-function rc4(key, str) {
-    var s = [], j = 0, x, res = '';
-    for (var i = 0; i &lt; 256; i++) {
-        s[i] = i;
-    }
-    for (i = 0; i &lt; 256; i++) {
-        j = (j + s[i] + key.charCodeAt(i % key.length)) % 256;
-        x = s[i];
-        s[i] = s[j];
-        s[j] = x;
-    }
-    i = 0;
-    j = 0;
-    for (var y = 0; y &lt; str.length; y++) {
-        i = (i + 1) % 256;
-        j = (j + s[i]) % 256;
-        x = s[i];
-        s[i] = s[j];
-        s[j] = x;
-        res += String.fromCharCode(str.charCodeAt(y) ^ s[(s[i] + s[j]) % 256]);
-    }
-    return res;
-}
-function decrypt() {
-    key = $("#key").val();
-    crypt_div = $("#encr")
-    crypted = crypt_div.html();
-    decrypted = rc4(key, window.atob(crypted));
-    if (decrypted.substr(decrypted.length - 11) == "&lt;!--tail--&gt;"){
-        crypt_div.html(decrypted);
-        $("#pwform").hide();
-        crypt_div.show();
-    } else { alert("Wrong password"); };
-}
-&lt;/script&gt;
-
-&lt;div id="encr" style="display: none;"&gt;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&lt;/div&gt;
-&lt;div id="pwform"&gt;
-&lt;form onsubmit="javascript:decrypt(); return false;" class="form-inline"&gt;
-&lt;fieldset&gt;
-&lt;legend&gt;This post is password-protected.&lt;/legend&gt;
-&lt;input type="password" id="key" placeholder="Type password here"&gt;
-&lt;button type="submit" class="btn"&gt;Show Content&lt;/button&gt;
-&lt;/fieldset&gt;
-&lt;/form&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>Reading Notes</category><guid>http://pengyin-shan.com/posts/2018/finance/finance-private-reading-notes-1.html</guid><pubDate>Tue, 17 Apr 2018 07:00:00 GMT</pubDate></item></channel></rss>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>I'm Pengyin (Wendy) (Posts about Finance)</title><link>http://pengyin-shan.com/</link><description></description><atom:link type="application/rss+xml" href="http://pengyin-shan.com/categories/cat_finance.xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sun, 19 Aug 2018 21:57:41 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Reading Notes for CFA1 Program Curriculum Volume 1 - QUANTITATIVE METHODS part</title><link>http://pengyin-shan.com/posts/2018/finance/cfa-reading-notes-1.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h4 id="reading-notes-for-cfa1-program-curriculum-volume-1-quantitative-methods-part"&gt;Reading Notes for CFA1 Program Curriculum Volume 1 - QUANTITATIVE METHODS part&lt;/h4&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img alt="quantity 1" src="http://pengyin-shan.com/images/2018/finance/CFA1/Quantity1.jpg"&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img alt="quantity 2" src="http://pengyin-shan.com/images/2018/finance/CFA1/Quantity2.jpg"&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img alt="quantity 3" src="http://pengyin-shan.com/images/2018/finance/CFA1/Quantity3.jpg"&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img alt="quantity 4" src="http://pengyin-shan.com/images/2018/finance/CFA1/Quantity4.jpg"&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img alt="quantity 5" src="http://pengyin-shan.com/images/2018/finance/CFA1/Quantity5.jpg"&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img alt="quantity 6" src="http://pengyin-shan.com/images/2018/finance/CFA1/Quantity6.jpg"&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img alt="quantity 7" src="http://pengyin-shan.com/images/2018/finance/CFA1/Quantity7.jpg"&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img alt="quantity 8" src="http://pengyin-shan.com/images/2018/finance/CFA1/Quantity8.jpg"&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img alt="quantity 9" src="http://pengyin-shan.com/images/2018/finance/CFA1/Quantity9.jpg"&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img alt="quantity 10" src="http://pengyin-shan.com/images/2018/finance/CFA1/Quantity10.jpg"&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img alt="quantity 11" src="http://pengyin-shan.com/images/2018/finance/CFA1/Quantity11.jpg"&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img alt="quantity 12" src="http://pengyin-shan.com/images/2018/finance/CFA1/Quantity12.jpg"&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img alt="quantity 13" src="http://pengyin-shan.com/images/2018/finance/CFA1/Quantity13.jpg"&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img alt="quantity 14" src="http://pengyin-shan.com/images/2018/finance/CFA1/Quantity14.jpg"&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img alt="quantity 15" src="http://pengyin-shan.com/images/2018/finance/CFA1/Quantity15.jpg"&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img alt="quantity 16" src="http://pengyin-shan.com/images/2018/finance/CFA1/Quantity16.jpg"&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img alt="quantity 17" src="http://pengyin-shan.com/images/2018/finance/CFA1/Quantity17.jpg"&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img alt="quantity 18" src="http://pengyin-shan.com/images/2018/finance/CFA1/Quantity18.jpg"&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img alt="quantity 19" src="http://pengyin-shan.com/images/2018/finance/CFA1/Quantity19.jpg"&gt;&lt;/p&gt;
+&lt;hr&gt;&lt;/div&gt;</description><category>Reading Notes</category><guid>http://pengyin-shan.com/posts/2018/finance/cfa-reading-notes-1.html</guid><pubDate>Tue, 17 Apr 2018 07:00:00 GMT</pubDate></item></channel></rss>

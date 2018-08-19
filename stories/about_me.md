@@ -16,7 +16,7 @@
     <tr>
         <td style="vertical-align: top">
             <p>
-                My knowledge base contains all my study notes: 
+                My knowledge base contains notes of what I've learned: 
                 <li>Book highlights</li>
                 <li>My thoughts in learning</li>
                 <li>My hand-writing notes</li>
@@ -24,12 +24,13 @@
             <hr/>
             <p>Materials include:
                 <li>Career development skills</li>
+                <li>Consulting Cases</li>
                 <li>Computer science/Data science</li>
                 <li>Maths/Statistics</li>
                 <li>Economics/Finance</li>
             </p>
             <hr/>
-            <p>I enjoy learning anything from anyone. I'm moving to Toronto, Canada in August 2018.</p>
+            <p>I enjoy learning anything from anyone. I'm in Toronto, Canada.</p>
             <hr/>
             <a href="/Pengyin Shan.pdf" target="_blank">View My Resume</a>
         </td>

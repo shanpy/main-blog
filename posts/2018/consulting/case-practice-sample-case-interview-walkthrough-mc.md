@@ -12,7 +12,7 @@
 
 ### Case Introduction
 
-https://managementconsulted.com/sample-case-interview-question-walkthrough/
+https://managementconsulted.com/sample-case-interview-question-walkthrough
 
 ***
 

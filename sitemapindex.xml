@@ -110,10 +110,6 @@
   <lastmod>2018-07-12T04:48:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://pengyin-shan.com/categories/consulting.xml</loc>
-  <lastmod>2018-07-17T16:51:00Z</lastmod>
- </sitemap>
- <sitemap>
   <loc>http://pengyin-shan.com/categories/css.xml</loc>
   <lastmod>2018-07-12T04:48:00Z</lastmod>
  </sitemap>
@@ -363,6 +359,6 @@
  </sitemap>
  <sitemap>
   <loc>http://pengyin-shan.com/sitemap.xml</loc>
-  <lastmod>2018-08-19T22:06:00Z</lastmod>
+  <lastmod>2018-08-19T22:08:00Z</lastmod>
  </sitemap>
 </sitemapindex>

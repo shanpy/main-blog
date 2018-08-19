@@ -136,7 +136,6 @@ NAVIGATION_LINKS = {
         ('/stories/about_me.html', 'About Me', 'icon-user'),
         ('/categories/index.html', 'Tags', 'icon-tags'),
         ('https://www.linkedin.com/in/pengyinshan', 'My LinkedIn', 'icon-linkedin'),
-        ('https://github.com/shanpy', 'My Github', 'icon-github'),
         ('/archive.html', 'Archives', 'icon-folder-open-alt'),
         ('/rss.xml', 'RSS', 'icon-rss'),
     ),

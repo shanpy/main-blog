@@ -187,7 +187,7 @@ Split money amount to difference cells
 
 ![excel_split_cell](/images/2018/business/excel_split_cell.png)
 
-![excel_split_cell2](/images/2018/business/excel_split_cell2.png)
+![excel_split_cell2](/images/2018/business/excel_split_cell_2.png)
 
 #### Find and Substract Characters Before
 

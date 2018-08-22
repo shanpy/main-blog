@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>I'm Pengyin (Wendy) (Posts about Business)</title><link>http://pengyin-shan.com/</link><description></description><atom:link rel="self" href="http://pengyin-shan.com/categories/cat_business.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 22 Aug 2018 17:46:49 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>(In Process)Reading Notes for "别怕, Excel函数其实很简单I" Written by Excel Home</title><link>http://pengyin-shan.com/posts/2018/business/reading-notes-for-excel-hanshu-hen-jian-dan.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;div class="toc"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>I'm Pengyin (Wendy) (Posts about Business)</title><link>http://pengyin-shan.com/</link><description></description><atom:link type="application/rss+xml" rel="self" href="http://pengyin-shan.com/categories/cat_business.xml"></atom:link><language>en</language><lastBuildDate>Wed, 22 Aug 2018 17:48:43 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>(In Process)Reading Notes for "别怕, Excel函数其实很简单I" Written by Excel Home</title><link>http://pengyin-shan.com/posts/2018/business/reading-notes-for-excel-hanshu-hen-jian-dan.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;div class="toc"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://pengyin-shan.com/posts/2018/business/reading-notes-for-excel-hanshu-hen-jian-dan.html#i-2-formulas"&gt;I-2: Formulas&lt;/a&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href="http://pengyin-shan.com/posts/2018/business/reading-notes-for-excel-hanshu-hen-jian-dan.html#auto-fill-formula"&gt;Auto Fill Formula&lt;/a&gt;&lt;/li&gt;
@@ -237,7 +237,7 @@
 &lt;h6 id="practice-question_1"&gt;Practice Question&lt;/h6&gt;
 &lt;p&gt;Split money amount to difference cells&lt;/p&gt;
 &lt;p&gt;&lt;img alt="excel_split_cell" src="http://pengyin-shan.com/images/2018/business/excel_split_cell.png"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="excel_split_cell2" src="http://pengyin-shan.com/images/2018/business/excel_split_cell2.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="excel_split_cell2" src="http://pengyin-shan.com/images/2018/business/excel_split_cell_2.png"&gt;&lt;/p&gt;
 &lt;h5 id="find-and-substract-characters-before"&gt;Find and Substract Characters Before&lt;/h5&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;LEFT(cell, FIND(find_text, within_text, [start_num])-1)&lt;/code&gt;&lt;/li&gt;

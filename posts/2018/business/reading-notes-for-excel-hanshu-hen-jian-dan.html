@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="A review of Excel Functions before new school year: The study notes for the Chinese book " excel produced by home>
+<meta name="viewport" content="width=device-width">
+<title>(In Process)Reading Notes for "别怕, Excel函数其实很简单I" Written by Excel Home | I'm Pengyin (Wendy)</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
+<link rel="canonical" href="http://pengyin-shan.com/posts/2018/business/reading-notes-for-excel-hanshu-hen-jian-dan.html">
+<link rel="icon" href="../../../pengyin.ico" sizes="16x16">
+<link rel="icon" href="../../../pengyin.ico" sizes="128x128">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+    },
+    displayAlign: 'left', // Change this to 'center' to center equations.
+    "HTML-CSS": {
+        styles: {'.MathJax_Display': {"margin": 0}}
+    }
+});
+</script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script><meta name="author" content="Pengyin Shan">
+<meta property="og:site_name" content="I'm Pengyin (Wendy)">
+<meta property="og:title" content='(In Process)Reading Notes for "别怕, Excel函数其实很简单I" Written by Excel Hom'>
+<meta property="og:url" content="http://pengyin-shan.com/posts/2018/business/reading-notes-for-excel-hanshu-hen-jian-dan.html">
+<meta property="og:description" content='A review of Excel Functions before new school year: The study notes for the Chinese book "别怕, Excel函数其实很简单I", produced by Excel Home'>
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2018-08-22T00:00:00-07:00">
+<meta property="article:tag" content="Excel">
+<meta property="article:tag" content="Reading Notes">
+</head>
+<body>
+    <section class="social"><ul>
+<li><a href="../../../index.html" title="Home"><i class="icon-home"></i></a></li>
+            <li><a href="../../../stories/about_me.html" title="About Me"><i class="icon-user"></i></a></li>
+            <li><a href="../../../categories/index.html" title="Tags"><i class="icon-tags"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/pengyinshan" title="My LinkedIn"><i class="icon-linkedin"></i></a></li>
+            <li><a href="../../../archive.html" title="Archives"><i class="icon-folder-open-alt"></i></a></li>
+            <li><a href="../../../rss.xml" title="RSS"><i class="icon-rss"></i></a></li>
+
+        </ul></section><section class="page-content"><div class="content" rel="main">
+    <div class="post">
+        <h3 class="p-name entry-title" itemprop="headline name">(In Process)Reading Notes for "别怕, Excel函数其实很简单I" Written by Excel Home</h3>
+
+        <div class="meta">
+            <div class="authordate">
+                <time class="timeago" datetime="2018-08-22T00:00:00-07:00">2018-08-22</time>
+            
+                      |  
+        <a href="reading-notes-for-excel-hanshu-hen-jian-dan.md" id="sourcelink">Source</a>
+
+            </div>
+                    <div itemprop="keywords" class="tags">
+        <ul>
+        Tags : 
+           <li><a class="tag p-category" href="../../../categories/excel.html" rel="tag">Excel</a></li>
+           <li><a class="tag p-category" href="../../../categories/reading-notes.html" rel="tag">Reading Notes</a></li>
+        </ul>
+</div>
+
+        </div>
+        <div class="body">
+            <div>
+<div class="toc">
+<ul>
+<li>
+<a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#i-2-formulas">I-2: Formulas</a><ul>
+<li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#auto-fill-formula">Auto Fill Formula</a></li>
+<li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#format-cell-for-formula">Format Cell for Formula</a></li>
+<li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#copy-formulas-to-other-cells">Copy Formulas to Other Cells</a></li>
+<li>
+<a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#variables-and-values">Variables and Values</a><ul>
+<li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#compare-values-in-excel">Compare Values in Excel</a></li>
+<li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#special-characters">Special Characters</a></li>
+</ul>
+</li>
+<li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#reference">Reference</a></li>
+<li>
+<a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#basic-formulas">Basic Formulas</a><ul>
+<li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#is">IS</a></li>
+<li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#nested-or-simple-if">Nested Or Simple IF</a></li>
+<li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#andornot">AND,OR,NOT</a></li>
+<li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#wildcard">wildcard</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#i-3-calculations">I-3: Calculations</a><ul>
+<li>
+<a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#sum">SUM</a><ul>
+<li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#practice-question-find-sum-of-last-borrowed-books">Practice Question: find sum of last borrowed books</a></li>
+</ul>
+</li>
+<li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#sumifssum_range-criteria_range1-criteria1-criteria_range2-criteria2-multiple-filter-criteria">SUMIFS(sum_range, criteria_range1, criteria1, criteria_range2, criteria2, ...) - multiple filter criteria</a></li>
+<li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#average">AVERAGE</a></li>
+<li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#count">COUNT</a></li>
+<li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#countifscriteria_range1-criteria1-criteria_range2-criteria2">COUNTIFS(criteria_range1, criteria1, [criteria_range2, criteria2]…)</a></li>
+<li>
+<a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#delete-extra-digits">Delete Extra Digits</a><ul>
+<li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#round">ROUND</a></li>
+<li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#roundupnumber-num_digits-and-rounddownnumber-num_digits">ROUNDUP(number, num_digits) and ROUNDDOWN(number, num_digits)</a></li>
+<li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#delete-parts-after-decimal-point">Delete parts after decimal point</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#i-5-texts">I-5: Texts</a><ul>
+<li>
+<a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#strings">Strings</a><ul>
+<li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#combine-string">Combine String</a></li>
+<li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#string-length">String Length</a></li>
+<li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#compare-string">Compare String</a></li>
+<li>
+<a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#find-location">Find Location</a><ul>
+<li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#practice-question">Practice Question</a></li>
+</ul>
+</li>
+<li>
+<a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#substring">Substring</a><ul>
+<li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#practice-question_1">Practice Question</a></li>
+</ul>
+</li>
+<li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#find-and-substract-characters-before">Find and Substract Characters Before</a></li>
+<li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#substitute-in-string">Substitute in String</a></li>
+</ul>
+</li>
+<li>
+<a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#text-function">Text Function</a><ul>
+<li>
+<a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#second-parameter-normal-format">Second Parameter - Normal Format</a><ul>
+<li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#value-error">Value! Error</a></li>
+</ul>
+</li>
+<li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#second-parameter-self-defined-format">Second Parameter - Self-Defined Format</a></li>
+<li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#second-parameter-pre-defined-format">Second Parameter - Pre-Defined Format</a></li>
+<li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#common-cases">Common Cases</a></li>
+</ul>
+</li>
+<li>
+<a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#transfer-between-numbers-and-text">Transfer between Numbers and Text</a><ul>
+<li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#number-to-text">Number to Text</a></li>
+<li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#sum-problem">SUM Problem</a></li>
+<li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#text-to-number">Text to Number</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#i-6-search-by-using-formulas">I-6: Search by Using Formulas</a><ul>
+<li>
+<a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#vlookup">VLOOKUP</a><ul>
+<li>
+<a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#common-usage">Common Usage</a><ul>
+<li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#replace-if-to-find-value-providing-range">Replace IF to find value providing range</a></li>
+<li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#return-multiple-columns-in-one-row">Return Multiple Columns in One Row</a></li>
+<li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#return-multiple-record">Return Multiple Record</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<hr>
+<h3 id="i-2-formulas">I-2: Formulas</h3>
+<blockquote>
+<p>Use Formulas tab to find formula if we need</p>
+</blockquote>
+<h4 id="auto-fill-formula">Auto Fill Formula</h4>
+<ul>
+<li>Use <code>tab</code> to auto-fill formula name when typing</li>
+<li>Use <code>Ctrl + Shift + A</code> to pre-fill all parts of formula</li>
+</ul>
+<h4 id="format-cell-for-formula">Format Cell for Formula</h4>
+<ol>
+<li>Make sure cell has <strong>general</strong> format：right cell then <code>Format Cells</code>
+</li>
+<li>Many such text cells: Data -&gt; Text to Columns -&gt; Delimited -&gt; Uncheck Delimited Character -&gt; Set Regular Column Format</li>
+</ol>
+<blockquote>
+<p>For non-calculating numbers (such as IDs), it is proper to convert cells to text format. Otherwise ending 0s will be eliminated and there is no way to restore it</p>
+</blockquote>
+<h4 id="copy-formulas-to-other-cells">Copy Formulas to Other Cells</h4>
+<ol>
+<li>
+<code>Ctrl + Alt + V</code>: paste with selection</li>
+<li>Curse to extend current cell</li>
+</ol>
+<h4 id="variables-and-values">Variables and Values</h4>
+<h5 id="compare-values-in-excel">Compare Values in Excel</h5>
+<ul>
+<li>smallest: number</li>
+<li>largest: boolean</li>
+<li>Date: transfer to number then compare</li>
+</ul>
+<p><img alt="excel_compare" src="../../../images/2018/business/excel_compare.png"></p>
+<h5 id="special-characters">Special Characters</h5>
+<ul>
+<li>
+<code>&amp;</code>: combine two data to a next text</li>
+<li>A range<code>single space</code>B range: <em>common</em> cells of A and B</li>
+<li>A range<code>,</code>B range: <em>all</em> cells of A and B</li>
+</ul>
+<h4 id="reference">Reference</h4>
+<blockquote>
+<p>F4 (Fn + F4) is used to switch reference style</p>
+</blockquote>
+<ul>
+<li>
+<code>A1</code> format：relative reference</li>
+<li>
+<code>$A$1</code> format: <em>absolute</em> reference. Used for any fixed value cell</li>
+<li>
+<code>$A1</code> or <code>A$1</code> format： <em>absolute</em> in row or column only</li>
+<li>
+<code>Worksheet!A1</code> format：define name of <em>worksheet</em> to cell</li>
+<li>
+<code>' &amp;a'</code> format: <code>''</code> is used to quote special characters in formula</li>
+</ul>
+<h4 id="basic-formulas">Basic Formulas</h4>
+<blockquote>
+<p>Use "" to wrap criteria</p>
+</blockquote>
+<h5 id="is"><code>IS</code></h5>
+<p><code>ISTEXT</code>, <code>ISERR</code>... format: check format of cell</p>
+<h5 id="nested-or-simple-if">Nested Or Simple <code>IF</code>
+</h5>
+<ul>
+<li>
+<code>=IF(compare2, true_result, IF(compare1_formula, true_result, false_result))</code>- A <em>tree map</em> will help nested IF formula</li>
+<li>
+<code>IF</code> + <code>SUBSTITUTE</code>: transfer cell format: <code>=IF(ISNUMBER(B2),B2, SUBSTITUTE(B2, "'$'", ""))</code>
+</li>
+<li>
+<code>IFERROR</code>: Eliminate error values, such as <em>divide by 0</em>. <code>=IFERROR(A1/B1,0)</code>
+</li>
+</ul>
+<h5 id="andornot">
+<code>AND</code>,<code>OR</code>,<code>NOT</code>
+</h5>
+<p>Can be combined with IF to avoid too nested IF functions</p>
+<h5 id="wildcard">wildcard</h5>
+<ul>
+<li>
+<code>?</code>: <em>one</em> random character</li>
+<li>
+<code>*</code>: <em>any</em> random characters (<strong>0</strong> - many)</li>
+<li>
+<code>~</code>: escape <code>?</code> and <code>*</code>
+</li>
+</ul>
+<hr>
+<h3 id="i-3-calculations">I-3: Calculations</h3>
+<h4 id="sum">SUM</h4>
+<p><code>SUMIF(filter_range, criteria, sum_range)</code></p>
+<blockquote>
+<p>Excel will search position in filter_range, then sum the same portion in sum_range</p>
+</blockquote>
+<ul>
+<li>
+<code>sum_range</code> can be eliminated if it is the same as <code>filter_range</code>
+</li>
+<li>
+<code>sum_range</code> can cover columns with different type of cells. Excel will automatically filter the cell</li>
+<li>Sum <em>without any error cells</em>: <code>SUMIF(range1, "&lt;=9E+307", range2)</code>
+</li>
+<li>Filtering based on cell: <code>SUMIF(range1, "&gt;="&amp;A1, range2)</code>
+</li>
+</ul>
+<h5 id="practice-question-find-sum-of-last-borrowed-books">Practice Question: find sum of last borrowed books</h5>
+<p><img alt="excel_last_borrow_book" src="../../../images/2018/business/excel_last_borrow_book.png"></p>
+<h4 id="sumifssum_range-criteria_range1-criteria1-criteria_range2-criteria2-multiple-filter-criteria">
+<code>SUMIFS(sum_range, criteria_range1, criteria1, criteria_range2, criteria2, ...)</code> - multiple filter criteria</h4>
+<p>Total of sum_range should equal to total of each criteria_range</p>
+<h4 id="average">AVERAGE</h4>
+<p><code>AVERAGEIF(range, criteria, [average_range])</code> and <code>AVERAGEIFS(average_range, criteria_range1, criteria1, [criteria_range2, criteria2], ...)</code></p>
+<blockquote>
+<p>Might need to use absolute in criteria</p>
+</blockquote>
+<h4 id="count">COUNT</h4>
+<p><code>=COUNTIF(Where do you want to look?, What do you want to look for?)</code></p>
+<p>Count Number of Cells based on criteria</p>
+<ul>
+<li>Count number of cells in range: <code>=COUNT(range, criteria)</code> or <code>=COUNTIF(range, "&lt;&gt;"")</code>
+</li>
+<li>Count empty cells (<code>null</code> as content): <code>=COUNTIF(range,"=")</code>
+</li>
+<li>Count non-empty cells(including <code>""</code> as content):<code>=COUNTA(range, [criteria])</code> or <code>=COUNTIF(range,"&lt;&gt;")</code>
+</li>
+<li>Count non-empty cells(excluding <code>""</code> as content):<code>=COUNTIF(range,"*")</code>
+</li>
+<li>Count all empty cells(including <code>""</code> as content): <code>=COUNTBLANK(range)</code> or <code>=COUNTIF(range,"")</code>
+</li>
+</ul>
+<h4 id="countifscriteria_range1-criteria1-criteria_range2-criteria2"><code>COUNTIFS(criteria_range1, criteria1, [criteria_range2, criteria2]…)</code></h4>
+<p>Similar rule as above</p>
+<h4 id="delete-extra-digits">Delete Extra Digits</h4>
+<h5 id="round">ROUND</h5>
+<p><code>ROUND(number, keep_digits)</code> for Number Cell and <code>FIXED(number, [decimals], [no_commas])</code> for Text Cell</p>
+<p><code>keep_digits</code> can be positive, 0 (integer) or negative (0s in integer)</p>
+<h5 id="roundupnumber-num_digits-and-rounddownnumber-num_digits">
+<code>ROUNDUP(number, num_digits)</code> and <code>ROUNDDOWN(number, num_digits)</code>
+</h5>
+<h5 id="delete-parts-after-decimal-point">Delete parts after decimal point</h5>
+<ul>
+<li>
+<code>TRUNC(range, [digits_after_decimal_point])</code>: no round, just delete</li>
+<li>
+<code>INT(number)</code>: always <em>round down</em> to an integer</li>
+</ul>
+<hr>
+<h3 id="i-5-texts">I-5: Texts</h3>
+<h4 id="strings">Strings</h4>
+<h5 id="combine-string">Combine String</h5>
+<ul>
+<li>
+<code>CONCATENATE(text1, [text2], ...)</code>: no range, just cells</li>
+<li>
+<code>&amp;</code>: no range, just cells</li>
+</ul>
+<h5 id="string-length">String Length</h5>
+<blockquote>
+<p>DBCS include Japanese, Chinese (Simplified), Chinese (Traditional), and Korean. </p>
+</blockquote>
+<ul>
+<li>
+<code>LEN(cell)</code>: count character length</li>
+<li>
+<code>LENB(cell)</code>: count bytes. <strong>Only when a DBCS language is set as the default language</strong>-&gt;2 for Asian Characters</li>
+</ul>
+<h5 id="compare-string">Compare String</h5>
+<ul>
+<li>
+<code>=</code>: not case sensitive. Compare text type ("25" != 25)</li>
+<li>
+<code>EXACT(text1, text2)</code>: no compare text type ("25"=25), case sensitive</li>
+</ul>
+<h5 id="find-location">Find Location</h5>
+<ul>
+<li>
+<code>FIND(find_text, within_text, [start_num])</code>:  case sensitive. don't allow wildcard characters.</li>
+<li>
+<code>SEARCH(find_text,within_text,start_num)</code>: not case sensitive. Allow wild card</li>
+<li>
+<code>FINDB(same)</code> and <code>SEARCHB(same)</code>: return bytes</li>
+</ul>
+<p><code>SEARCHB("?",cell)</code>: find first singe-byte character in cell</p>
+<h6 id="practice-question">Practice Question</h6>
+<p>subtract Chinese characters from <em>ChineseEnglish</em> formatted string: <code>=LEFTB(cell, SEARCHB("?",cell)-1))</code></p>
+<h5 id="substring">Substring</h5>
+<ul>
+<li>
+<code>LEFT(text, [length_of_chars_to_substract])</code>: first <em>length</em> of characters. from most left</li>
+<li>
+<code>RIGHT(text, [length_of_chars_to_substract])</code>: last <em>length</em> of characters. from most right</li>
+<li>
+<code>MID(text, start_num, length_of_chars_to_substract)</code>: start from left</li>
+</ul>
+<h6 id="practice-question_1">Practice Question</h6>
+<p>Split money amount to difference cells</p>
+<p><img alt="excel_split_cell" src="../../../images/2018/business/excel_split_cell.png"></p>
+<p><img alt="excel_split_cell2" src="../../../images/2018/business/excel_split_cell2.png"></p>
+<h5 id="find-and-substract-characters-before">Find and Substract Characters Before</h5>
+<ul>
+<li><code>LEFT(cell, FIND(find_text, within_text, [start_num])-1)</code></li>
+<li><code>RIGHT(cell, LEN(cell)-FIND(find_text, within_text, [start_num]))</code></li>
+</ul>
+<h5 id="substitute-in-string">Substitute in String</h5>
+<p>-<code>SUBSTITUTE(cell, old_text, new_text, [the index of occurrence])</code>: by text: one-to-one
+-<code>SUBSTITUTE(SUBSTITUTE(text, old_text, new_text, index1</code>), old_text, new_text, index2): by text: one-to-many
+- <code>REPLACE(cell, start_num, num_chars, new_text)</code>: by position: find position/length of characters and replace it</p>
+<h4 id="text-function">
+<code>Text</code> Function</h4>
+<blockquote>
+<p>Shortcut:  Ctrl+1 ( Command+1 on the Mac) -&gt; Not change data itself</p>
+</blockquote>
+<p><code>=TEXT(Value you want to format, "Format code you want to apply")</code>: <em>change</em> the data in cell. Always return <em>text</em> format. Always start from <strong>right</strong>.</p>
+<h5 id="second-parameter-normal-format">Second Parameter - Normal Format</h5>
+<p>Example: <code>=TEXT(C4, "z;$;128;t")</code></p>
+<ol>
+<li>
+<code>format_for_positive_number; format_for_negative_number; format_for_0; format_for_text</code>: cell will be modified based on its correspondence. </li>
+<li>Skip the last few criteria will make format only apply to criteria appearing. For example <code>=TEXT(C4, "z;$")</code> will only apply to non-negative and negative number</li>
+</ol>
+<h6 id="value-error">Value! Error</h6>
+<blockquote>
+<p>Use <code>!</code> or <code>\</code> to escape special characters!</p>
+</blockquote>
+<ol>
+<li>when special characters are used to format a string, such as a,m,y, etc. </li>
+<li>if special format like <code>yyyy</code> is used to too large/small number, Value! error will appear</li>
+</ol>
+<h5 id="second-parameter-self-defined-format">Second Parameter - Self-Defined Format</h5>
+<ul>
+<li>Still no more than four criteria</li>
+<li>
+<code>[judge1]format1;[judge2]format2;format_for_not_satisfy_judge1_and_judge2 ;format_for_text</code>: <code>=TEXT(B2, "[&gt;1000]z;[&lt;-9000]$&amp;TT;128;t")</code>
+</li>
+<li><code>[judge1]format1; format_for_not_satisfy_judge1</code></li>
+<li><code>[judge1]format1; [judge2]format2;format_for_not_satisfy_judge1_and_judge2</code></li>
+</ul>
+<h5 id="second-parameter-pre-defined-format">Second Parameter - Pre-Defined Format</h5>
+<ul>
+<li>
+<code>0</code>: 1 digit. If number has less length than 0s, number will be automatically add 0s from most left digit</li>
+<li>
+<code>0.000</code>: define how many digits after decimal point</li>
+<li>
+<code>?</code>: 1 digit, but no 0s showing on most left digits and non-used 0s after decimal point. <code>Space</code> will be used to make up empty slots after decimal point. </li>
+<li>
+<code>#</code>: 1 digit. No make up empty slots</li>
+<li>
+<code>,</code>: automatically add <code>,</code> for thousands. <em>To make numbers larger than 1000 only show before 1000 part</em>: <code>=TEXT(A1,"0,")</code>
+</li>
+<li>dates: <code>yyyy</code>, <code>mm</code>...</li>
+<li>texts: string from <strong>right</strong>. if a cell is <code>11507</code>, <code>=TEXT(C3,"0\y\e\a\r0\m\o\n\t\h0\d\a\y")</code> will output <code>115year0month7day</code>
+</li>
+</ul>
+<h5 id="common-cases">Common Cases</h5>
+<ul>
+<li>decimal to fraction: <code>= TEXT(B3, "# #/#")</code>
+</li>
+<li>show number in million: <code>=TEXT(B3, "0.0#,,")</code>
+</li>
+</ul>
+<h4 id="transfer-between-numbers-and-text">Transfer between Numbers and Text</h4>
+<ul>
+<li>Number cell: left assign</li>
+<li>Text cell: right assign</li>
+</ul>
+<h5 id="number-to-text">Number to Text</h5>
+<blockquote>
+<p>following functions in Excel 2016 (Windows/Mac) seems not change format showing in tool bar anymore. I need more investigation</p>
+</blockquote>
+<ul>
+<li><code>= TEXT(D3, "@")</code></li>
+<li><code>=D3&amp;""</code></li>
+<li>
+<code>'ddddd</code>: add <code>'</code> before number will transfer cell to text without showing <code>'</code>
+</li>
+</ul>
+<h5 id="sum-problem">SUM Problem</h5>
+<p>To make SUM function work:
+1. cell is in <code>number</code> format
+2. content in cell are pure numerical</p>
+<h5 id="text-to-number">Text to Number</h5>
+<ul>
+<li>
+<code>VALUE(cell)</code>: transfer cell directly</li>
+<li>
+<code>cell+0</code> or <code>--cell</code>
+</li>
+</ul>
+<hr>
+<h3 id="i-6-search-by-using-formulas">I-6: Search by Using Formulas</h3>
+<h4 id="vlookup">VLOOKUP</h4>
+<p><code>=VLOOKUP(Value_to_look up, range_to_lookup, column_number_in_range_containing_return_value, Approximate Match – 0/FALSE or 1/TRUE)</code></p>
+<ul>
+<li>If no result found, return <code>#N/A</code>
+</li>
+<li>If eliminate last criteria, make sure to add last <code>,</code> for exact match. Otherwise Excel will do approximate match</li>
+<li>Approximate search using number <em>smaller or equal to</em> search value</li>
+<li>Can use wildcard</li>
+</ul>
+<h5 id="common-usage">Common Usage</h5>
+<h6 id="replace-if-to-find-value-providing-range">Replace IF to find value providing range</h6>
+<ol>
+<li>enter the lowest value in new column</li>
+<li>using approximate VLOOKUP: <code>=VLOOKUP(cell_to_look_up, absolute_range_of_lowest_and_matching_value, 2, 1)</code>
+</li>
+</ol>
+<p><img alt="excel_vlookup_1" src="../../../images/2018/business/excel_vlookup_1.png"></p>
+<h6 id="return-multiple-columns-in-one-row">Return Multiple Columns in One Row</h6>
+<p><code>= VLOOKUP($E$10, $A$2:$C$5, COLUMN(B:B), 0)</code>: use absolute value to look up and use <code>COLUMN()</code> to automatically update column number</p>
+<h6 id="return-multiple-record">Return Multiple Record</h6>
+<blockquote>
+<p>Be creative and flexible about COLUMN and ROW function!</p>
+</blockquote>
+<ol>
+<li>Add a new column, then count occurrence of each record matching the lookup value using <code>$look_up_cell&amp;COUNTIF(range_of_names, $_look_up_cell&amp;"*")</code>. <code>A1</code> is the start of name</li>
+</ol>
+<p><img alt="excel_vlookup_2" src="../../../images/2018/business/excel_vlookup_2.png"></p>
+<ol>
+<li>Using <code>IFERROR(VLOOKUP($absolute_look_up_cell&amp;(ROW(A1)-row_number),range_of_all,COLUMN(M:M),0),"")</code> to find match with new column</li>
+</ol>
+<p><img alt="excel_vlookup_3" src="../../../images/2018/business/excel_vlookup_3.png"></p>
+</div>
+        </div>
+                <ul class="pager hidden-print">
+<li class="previous">
+                <a href="../consulting/case-practice-sample-case-interview-walkthrough-mc.html" rel="prev" title="Case Practice - Sample Case Interview Walkthrough from Management Consulted">Previous post</a>
+            </li>
+        </ul>
+<div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="pengyinsnotes",
+            disqus_url="http://pengyin-shan.com/posts/2018/business/reading-notes-for-excel-hanshu-hen-jian-dan.html",
+        disqus_title="(In Process)Reading Notes for \"\u522b\u6015, Excel\u51fd\u6570\u5176\u5b9e\u5f88\u7b80\u5355I\" Written by Excel Home",
+        disqus_identifier="cache/posts/2018/business/reading-notes-for-excel-hanshu-hen-jian-dan.html",
+        disqus_config = function () {
+            this.language = "en";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+    </div>
+                     <footer id="footer"><p>Contents © 2018         <a href="mailto:pengyin.shan@outlook.com">Pengyin Shan</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         </p>
+            
+        </footer>
+</div>
+    </section><script src="../../../assets/js/all-nocdn.js" type="text/javascript"></script><script type="text/javascript">
+            $(function(){
+                $('.timeago').timeago();
+            });
+        </script>
+</body>
+</html>

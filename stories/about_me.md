@@ -30,7 +30,7 @@
                 <li>Economics/Finance</li>
             </p>
             <hr/>
-            <p>I enjoy learning anything from anyone. I'm in Toronto, Canada.</p>
+            <p>I enjoy learning anything from anyone. I'm a first-year MBA student in Toronto, Canada.</p>
             <hr/>
             <a href="/Pengyin Shan.pdf" target="_blank">View My Resume</a>
         </td>

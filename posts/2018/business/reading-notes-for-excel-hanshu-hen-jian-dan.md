@@ -270,9 +270,12 @@ ___
 
 ## I-6: Search by Using Formulas
 
-### VLOOKUP
+### VLOOKUP - Vertical Search
 
 `=VLOOKUP(Value_to_look up, range_to_lookup, column_number_in_range_containing_return_value, Approximate Match – 0/FALSE or 1/TRUE)`
+
+> Rule1: Matching data in column has to be unique!
+> Rule2: VLOOKUP will automatically search from left to right => The helper column should be on the most left if no more adjustment. 
 
 - If no result found, return `#N/A`
 - If eliminate last criteria, make sure to add last `,` for exact match. Otherwise Excel will do approximate match
@@ -304,6 +307,70 @@ ___
 
 ![excel_vlookup_3](/images/2018/business/excel_vlookup_3.png)
 
+#####Lookup by Multiple Criteria
 
+*IDEA: combine multiple search to one helper column. To avoid combination mistake, add special character "@" in the middle*
 
+1. Adding helper column on most left: `=$D10&"@"&$E10&ROW(10:10)`
+2. VLOOKUP Function with error prevention:`=IFERROR(VLOOKUP($H$14&"@"&$I$14&(ROW(14:14)-4), $B:$F, 2,0),"")`
+
+####Possible Errors
+
+1. Cell may include hidden space or invisible character at the end of string: use `LEN()` to judge
+2. Target cell has different format from target range
+
+###HLOOKUP - Horizontal Search
+
+`HLOOKUP(lookup_value, table_array, row_index_num, [range_lookup])`
+
+Same as VLOOKUP, the **helper row should be the first row**
+
+###MATCH
+
+`MATCH(lookup_value, lookup_array, [match_type])`: return *relative* position of look_up_value *in* lookup_array. If the cell is repeated in column/row, MATCH function will **only return the position of its first appearance**.
+
+####lookup_array
+
+Has to be *one row* or *one column*
+
+####match_type
+
+- `1`: default. Find smaller or equal to look_up_value. The look_up_array *has to be ascended sorted.*
+- `0`: the first value equal to look_up_value
+- `-1`: Find larger than or equal to look_up_value. The look_up_array *has to be descended sorted.*
+
+####Common Usage
+
+#####Find Repeated Cell in Two Rows/Columns
+
+Use `ISNA` to judge `N/A`value: `=IF(ISNA(MATCH(I10,$C$10:$C$19,0)),"FALSE","TRUE")`
+
+####Retrieve the First Record of All
+
+> The result of match is equal to the row number if the cell is the first appearance
+
+1. Helper Column/Row to show the *first appearance* of all cells: `=MATCH(C10,$C$10:$C$19,1)=(ROW(C10)-9)`. *The row number might need adjustment!*
+2. Output cells with `TRUE` in helper column/row: `= IF(G11 = TRUE, C11)`
+3. Filter all non-FALSE value
+
+#####Get the Record that Only Showing Once
+
+`=IF((MATCH(I10,$C$10:$C19,0)=MATCH(I10,$C$10:$C19,1)), "UNIQUE", "NOT UNIQUE")`
+
+### INDEX - Find Cell by Relative Position
+
+- `AREAS(cell)`: return how many cell is **referenced**
+
+#### Return a reference to the cell
+
+- `INDEX(array, row_num, [column_num])`： with row number and/or column number
+- `INDEX(row_array or column_array, number)`: the nth cell in a row or a column
+
+#### Return Real Data
+
+- `INDEX({"array","in","text"}, number)`: return real data in array
+
+### Use of MATCH & INDEX
+
+#### Reverse Order Search
 

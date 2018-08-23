@@ -1,6 +1,6 @@
 .. title: (Chinese) Highlights for “The Minto Pyramid Principle: Logic in Writing, Thinking, & Problem Solving/金字塔原理” by Barbara Minto
 .. date: 2018-03-18
-.. category: Book Highlight
+.. category: Business
 .. tags: Chinese, Reading Notes, Writing
 .. slug: hightlights-for-the-minto-pyramid-principle
 .. authors: Pengyin Shan

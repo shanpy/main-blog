@@ -2,7 +2,7 @@
 .. slug: reading-map-for-say-it-with-chartspresentations
 .. date: 2018-07-12 09:59:58 UTC-07:00
 .. tags: Reading Notes, Self-Improvement
-.. category: Book Highlight
+.. category: Business
 .. link: 
 .. description: My reading map for the two great books: "Say It with Charts" and "Say It with Presentations", written by Gene Zelazny
 .. type: text

@@ -156,14 +156,44 @@ MathJax.Hub.Config({
 <li>
 <a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#i-6-search-by-using-formulas">I-6: Search by Using Formulas</a><ul>
 <li>
-<a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#vlookup">VLOOKUP</a><ul>
+<a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#vlookup-vertical-search">VLOOKUP - Vertical Search</a><ul>
 <li>
 <a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#common-usage">Common Usage</a><ul>
 <li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#replace-if-to-find-value-providing-range">Replace IF to find value providing range</a></li>
 <li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#return-multiple-columns-in-one-row">Return Multiple Columns in One Row</a></li>
 <li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#return-multiple-record">Return Multiple Record</a></li>
+<li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#lookup-by-multiple-criteria">Lookup by Multiple Criteria</a></li>
 </ul>
 </li>
+<li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#possible-errors">Possible Errors</a></li>
+</ul>
+</li>
+<li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#hlookup-horizontal-search">HLOOKUP - Horizontal Search</a></li>
+<li>
+<a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#match">MATCH</a><ul>
+<li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#lookup_array">lookup_array</a></li>
+<li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#match_type">match_type</a></li>
+<li>
+<a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#common-usage_1">Common Usage</a><ul>
+<li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#find-repeated-cell-in-two-rowscolumns">Find Repeated Cell in Two Rows/Columns</a></li>
+</ul>
+</li>
+<li>
+<a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#retrieve-the-first-record-of-all">Retrieve the First Record of All</a><ul>
+<li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#get-the-record-that-only-showing-once">Get the Record that Only Showing Once</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#index-find-cell-by-relative-position">INDEX - Find Cell by Relative Position</a><ul>
+<li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#return-a-reference-to-the-cell">Return a reference to the cell</a></li>
+<li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#return-real-data">Return Real Data</a></li>
+</ul>
+</li>
+<li>
+<a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#use-of-match-index">Use of MATCH &amp; INDEX</a><ul>
+<li><a href="reading-notes-for-excel-hanshu-hen-jian-dan.html#reverse-order-search">Reverse Order Search</a></li>
 </ul>
 </li>
 </ul>
@@ -462,8 +492,12 @@ MathJax.Hub.Config({
 </ul>
 <hr>
 <h3 id="i-6-search-by-using-formulas">I-6: Search by Using Formulas</h3>
-<h4 id="vlookup">VLOOKUP</h4>
+<h4 id="vlookup-vertical-search">VLOOKUP - Vertical Search</h4>
 <p><code>=VLOOKUP(Value_to_look up, range_to_lookup, column_number_in_range_containing_return_value, Approximate Match – 0/FALSE or 1/TRUE)</code></p>
+<blockquote>
+<p>Rule1: Matching data in column has to be unique!
+Rule2: VLOOKUP will automatically search from left to right =&gt; The helper column should be on the most left if no more adjustment. </p>
+</blockquote>
 <ul>
 <li>If no result found, return <code>#N/A</code>
 </li>
@@ -493,6 +527,73 @@ MathJax.Hub.Config({
 <li>Using <code>IFERROR(VLOOKUP($absolute_look_up_cell&amp;(ROW(A1)-row_number),range_of_all,COLUMN(M:M),0),"")</code> to find match with new column</li>
 </ol>
 <p><img alt="excel_vlookup_3" src="../../../images/2018/business/excel_vlookup_3.png"></p>
+<h6 id="lookup-by-multiple-criteria">Lookup by Multiple Criteria</h6>
+<p><em>IDEA: combine multiple search to one helper column. To avoid combination mistake, add special character "@" in the middle</em></p>
+<ol>
+<li>Adding helper column on most left: <code>=$D10&amp;"@"&amp;$E10&amp;ROW(10:10)</code>
+</li>
+<li>VLOOKUP Function with error prevention:<code>=IFERROR(VLOOKUP($H$14&amp;"@"&amp;$I$14&amp;(ROW(14:14)-4), $B:$F, 2,0),"")</code>
+</li>
+</ol>
+<h5 id="possible-errors">Possible Errors</h5>
+<ol>
+<li>Cell may include hidden space or invisible character at the end of string: use <code>LEN()</code> to judge</li>
+<li>Target cell has different format from target range</li>
+</ol>
+<h4 id="hlookup-horizontal-search">HLOOKUP - Horizontal Search</h4>
+<p><code>HLOOKUP(lookup_value, table_array, row_index_num, [range_lookup])</code></p>
+<p>Same as VLOOKUP, the <strong>helper row should be the first row</strong></p>
+<h4 id="match">MATCH</h4>
+<p><code>MATCH(lookup_value, lookup_array, [match_type])</code>: return <em>relative</em> position of look_up_value <em>in</em> lookup_array. If the cell is repeated in column/row, MATCH function will <strong>only return the position of its first appearance</strong>.</p>
+<h5 id="lookup_array">lookup_array</h5>
+<p>Has to be <em>one row</em> or <em>one column</em></p>
+<h5 id="match_type">match_type</h5>
+<ul>
+<li>
+<code>1</code>: default. Find smaller or equal to look_up_value. The look_up_array <em>has to be ascended sorted.</em>
+</li>
+<li>
+<code>0</code>: the first value equal to look_up_value</li>
+<li>
+<code>-1</code>: Find larger than or equal to look_up_value. The look_up_array <em>has to be descended sorted.</em>
+</li>
+</ul>
+<h5 id="common-usage_1">Common Usage</h5>
+<h6 id="find-repeated-cell-in-two-rowscolumns">Find Repeated Cell in Two Rows/Columns</h6>
+<p>Use <code>ISNA</code> to judge <code>N/A</code>value: <code>=IF(ISNA(MATCH(I10,$C$10:$C$19,0)),"FALSE","TRUE")</code></p>
+<h5 id="retrieve-the-first-record-of-all">Retrieve the First Record of All</h5>
+<blockquote>
+<p>The result of match is equal to the row number if the cell is the first appearance</p>
+</blockquote>
+<ol>
+<li>Helper Column/Row to show the <em>first appearance</em> of all cells: <code>=MATCH(C10,$C$10:$C$19,1)=(ROW(C10)-9)</code>. <em>The row number might need adjustment!</em>
+</li>
+<li>Output cells with <code>TRUE</code> in helper column/row: <code>= IF(G11 = TRUE, C11)</code>
+</li>
+<li>Filter all non-FALSE value</li>
+</ol>
+<h6 id="get-the-record-that-only-showing-once">Get the Record that Only Showing Once</h6>
+<p><code>=IF((MATCH(I10,$C$10:$C19,0)=MATCH(I10,$C$10:$C19,1)), "UNIQUE", "NOT UNIQUE")</code></p>
+<h4 id="index-find-cell-by-relative-position">INDEX - Find Cell by Relative Position</h4>
+<ul>
+<li>
+<code>AREAS(cell)</code>: return how many cell is <strong>referenced</strong>
+</li>
+</ul>
+<h5 id="return-a-reference-to-the-cell">Return a reference to the cell</h5>
+<ul>
+<li>
+<code>INDEX(array, row_num, [column_num])</code>： with row number and/or column number</li>
+<li>
+<code>INDEX(row_array or column_array, number)</code>: the nth cell in a row or a column</li>
+</ul>
+<h5 id="return-real-data">Return Real Data</h5>
+<ul>
+<li>
+<code>INDEX({"array","in","text"}, number)</code>: return real data in array</li>
+</ul>
+<h4 id="use-of-match-index">Use of MATCH &amp; INDEX</h4>
+<h5 id="reverse-order-search">Reverse Order Search</h5>
 </div>
         </div>
                 <ul class="pager hidden-print">

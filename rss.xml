@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>I'm Pengyin (Wendy)</title><link>http://pengyin-shan.com/</link><description>This is Pengyin Shan's Blog</description><atom:link rel="self" type="application/rss+xml" href="http://pengyin-shan.com/rss.xml"></atom:link><language>en</language><lastBuildDate>Tue, 28 Aug 2018 01:56:31 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Reading Notes for "The McKinsey Mind" written by Ethan M. Rasiel and Paul N. Friga</title><link>http://pengyin-shan.com/posts/2018/consulting/reading-note-for-the-mckinsey-way.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;div class="toc"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>I'm Pengyin (Wendy)</title><link>http://pengyin-shan.com/</link><description>This is Pengyin Shan's Blog</description><atom:link type="application/rss+xml" rel="self" href="http://pengyin-shan.com/rss.xml"></atom:link><language>en</language><lastBuildDate>Thu, 30 Aug 2018 01:28:31 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Chapter 2 of Case in Point: Graph Analysis for Consulting and Case Interviews, written by Marc P. Cosentino Mukund Jain</title><link>http://pengyin-shan.com/posts/2018/consulting/chapter-2-of-case-in-point-graph-analysis.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;div class="toc"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://pengyin-shan.com/posts/2018/consulting/chapter-2-of-case-in-point-graph-analysis.html#steps"&gt;Steps&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://pengyin-shan.com/posts/2018/consulting/chapter-2-of-case-in-point-graph-analysis.html#line-bar-pie"&gt;LINE, BAR, PIE&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://pengyin-shan.com/posts/2018/consulting/chapter-2-of-case-in-point-graph-analysis.html#area-scatter-bubble-redar"&gt;AREA, SCATTER, BUBBLE, REDAR&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://pengyin-shan.com/posts/2018/consulting/chapter-2-of-case-in-point-graph-analysis.html#box-waterfall-histogram-marimekko"&gt;BOX, WATERFALL, HISTOGRAM, MARIMEKKO&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;h3 id="steps"&gt;Steps&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;SCAN&lt;/li&gt;
+&lt;li&gt;EXTRACT&lt;/li&gt;
+&lt;li&gt;APPLY&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="line-bar-pie"&gt;LINE, BAR, PIE&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="Case-in-Point-Graph-1" src="http://pengyin-shan.com/images/2018/consulting/Case-in-Point-Graphpage1.jpg"&gt;&lt;/p&gt;
+&lt;h3 id="area-scatter-bubble-redar"&gt;AREA, SCATTER, BUBBLE, REDAR&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="Case-in-Point-Graph-2" src="http://pengyin-shan.com/images/2018/consulting/Case-in-Point-Graphpage2.jpg"&gt;&lt;/p&gt;
+&lt;h3 id="box-waterfall-histogram-marimekko"&gt;BOX, WATERFALL, HISTOGRAM, MARIMEKKO&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="Case-in-Point-Graph-3" src="http://pengyin-shan.com/images/2018/consulting/Case-in-Point-Graphpage3.jpg"&gt;&lt;/p&gt;&lt;/div&gt;</description><category>Reading Notes</category><guid>http://pengyin-shan.com/posts/2018/consulting/chapter-2-of-case-in-point-graph-analysis.html</guid><pubDate>Wed, 29 Aug 2018 07:00:00 GMT</pubDate></item><item><title>Reading Notes for "The McKinsey Mind" written by Ethan M. Rasiel and Paul N. Friga</title><link>http://pengyin-shan.com/posts/2018/consulting/reading-note-for-the-mckinsey-way.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;div class="toc"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://pengyin-shan.com/posts/2018/consulting/reading-note-for-the-mckinsey-way.html#main-frame"&gt;Main Frame&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://pengyin-shan.com/posts/2018/consulting/reading-note-for-the-mckinsey-way.html#analyzing"&gt;Analyzing&lt;/a&gt;&lt;/li&gt;
@@ -1095,6 +1114,4 @@ Rule2: VLOOKUP will automatically search from left to right =&amp;gt; The helper
 &lt;li&gt;先不要急着马上投入课本！&lt;/li&gt;
 &lt;li&gt;制定更短期的&lt;strong&gt;学习-复习&lt;/strong&gt;计划（结合上一篇笔记）与 找工作计划&lt;/li&gt;
 &lt;li&gt;在制定这些计划的时候，留出充足的&lt;strong&gt;强制&lt;/strong&gt;备用时间&lt;/li&gt;
-&lt;/ol&gt;&lt;/div&gt;</description><category>Chinese</category><category>Reading Notes</category><category>Self-Improvement</category><guid>http://pengyin-shan.com/posts/2018/book/highlights-for-scarcity.html</guid><pubDate>Fri, 06 Jul 2018 07:00:00 GMT</pubDate></item><item><title>Reading Map for WHAT SMART STUDENT KNOW by Aadam Robinson &amp; MIND MAP BOOK by Tony Buzan</title><link>http://pengyin-shan.com/posts/2018/business/reading-map-for-what-smart-student-know-and-mind-map-book.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;em&gt;To view full content, right-click on image and choose 'open image in new tab' option&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="What_Smart_Student_Know1" src="http://pengyin-shan.com/images/2018/reading/what-smart-student-know1.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="What_Smart_Student_Know2" src="http://pengyin-shan.com/images/2018/reading/what-smart-student-know2.jpg"&gt;&lt;/p&gt;&lt;/div&gt;</description><category>Self-Improvement</category><guid>http://pengyin-shan.com/posts/2018/business/reading-map-for-what-smart-student-know-and-mind-map-book.html</guid><pubDate>Thu, 05 Jul 2018 07:00:00 GMT</pubDate></item></channel></rss>
+&lt;/ol&gt;&lt;/div&gt;</description><category>Chinese</category><category>Reading Notes</category><category>Self-Improvement</category><guid>http://pengyin-shan.com/posts/2018/book/highlights-for-scarcity.html</guid><pubDate>Fri, 06 Jul 2018 07:00:00 GMT</pubDate></item></channel></rss>

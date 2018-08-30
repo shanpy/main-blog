@@ -23,11 +23,11 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/2018/index.html</loc>
-  <lastmod>2018-08-28T01:56:00Z</lastmod>
+  <lastmod>2018-08-30T01:28:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/archive.html</loc>
-  <lastmod>2018-08-28T01:44:00Z</lastmod>
+  <lastmod>2018-08-30T01:28:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/ajax.html</loc>
@@ -79,7 +79,7 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/cat_consulting.html</loc>
-  <lastmod>2018-08-28T01:56:00Z</lastmod>
+  <lastmod>2018-08-30T01:28:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/cat_data-science.html</loc>
@@ -223,7 +223,7 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/index.html</loc>
-  <lastmod>2018-08-28T01:44:00Z</lastmod>
+  <lastmod>2018-08-30T01:28:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/ipython.html</loc>
@@ -295,7 +295,7 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/reading-notes.html</loc>
-  <lastmod>2018-08-28T01:56:00Z</lastmod>
+  <lastmod>2018-08-30T01:28:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/categories/recursion.html</loc>
@@ -391,7 +391,7 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/index-10.html</loc>
-  <lastmod>2018-08-28T01:44:00Z</lastmod>
+  <lastmod>2018-08-30T01:28:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/index-2.html</loc>
@@ -427,7 +427,7 @@
  </url>
  <url>
   <loc>http://pengyin-shan.com/index.html</loc>
-  <lastmod>2018-08-28T01:56:00Z</lastmod>
+  <lastmod>2018-08-30T01:28:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/posts/2014/benefit-of-hosting-content-library-with-CDN.html</loc>
@@ -838,12 +838,16 @@
   <lastmod>2018-08-22T16:05:00Z</lastmod>
  </url>
  <url>
+  <loc>http://pengyin-shan.com/posts/2018/consulting/chapter-2-of-case-in-point-graph-analysis.html</loc>
+  <lastmod>2018-08-30T01:28:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://pengyin-shan.com/posts/2018/consulting/reading-map-for-case-in-point-chapter-1-to-5.html</loc>
   <lastmod>2018-08-23T22:22:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/posts/2018/consulting/reading-note-for-the-mckinsey-way.html</loc>
-  <lastmod>2018-08-28T01:56:00Z</lastmod>
+  <lastmod>2018-08-30T01:28:00Z</lastmod>
  </url>
  <url>
   <loc>http://pengyin-shan.com/posts/2018/finance/book-highlights-for-learn-to-earn.html</loc>

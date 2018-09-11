@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>I'm Pengyin (Wendy) (Posts about SQL)</title><link>http://pengyin-shan.com/</link><description></description><atom:link rel="self" href="http://pengyin-shan.com/categories/sql.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 11 Sep 2018 19:32:26 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>SQL Tips</title><link>http://pengyin-shan.com/posts/2015/Data%20Science/sql-tips.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h4 id="using-sqlprocessor-in-java"&gt;Using SQLProcessor in Java&lt;/h4&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>I'm Pengyin (Wendy) (Posts about SQL)</title><link>https://pengyin-shan.com/</link><description></description><atom:link rel="self" href="https://pengyin-shan.com/categories/sql.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 11 Sep 2018 20:08:01 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>SQL Tips</title><link>https://pengyin-shan.com/posts/2015/Data%20Science/sql-tips.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h4 id="using-sqlprocessor-in-java"&gt;Using SQLProcessor in Java&lt;/h4&gt;
 &lt;p&gt;My current job requires me to work on some old Java web application, which involves in connecting to Oracle SQL database using &lt;code&gt;SQLProcesoor&lt;/code&gt;.&lt;/p&gt;
 &lt;h5 id="basic-syntax"&gt;Basic Syntax&lt;/h5&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;//Assume you want to return an ArrayList of 'Course' objects&lt;/span&gt;
@@ -45,7 +45,7 @@
 String sql = "select * from table_test a, table_test2 b" +
             "where id = 1";
 //Notice this sql doesn't have white_space between 'b' and 'where', which will cause trouble
-&lt;/pre&gt;&lt;/div&gt;</description><category>Database</category><category>SQL</category><guid>http://pengyin-shan.com/posts/2015/Data%20Science/sql-tips.html</guid><pubDate>Thu, 30 Jul 2015 07:00:00 GMT</pubDate></item><item><title>SQL Basics</title><link>http://pengyin-shan.com/posts/2015/Data%20Science/sql-basics.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h4 id="reference-list"&gt;Reference List&lt;/h4&gt;
+&lt;/pre&gt;&lt;/div&gt;</description><category>Database</category><category>SQL</category><guid>https://pengyin-shan.com/posts/2015/Data%20Science/sql-tips.html</guid><pubDate>Thu, 30 Jul 2015 07:00:00 GMT</pubDate></item><item><title>SQL Basics</title><link>https://pengyin-shan.com/posts/2015/Data%20Science/sql-basics.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h4 id="reference-list"&gt;Reference List&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href="https://en.wikibooks.org/wiki/Oracle_Programming/SQL_Cheatsheet"&gt;Oracle Programming/SQL Cheatsheet&lt;/a&gt;&lt;/p&gt;
@@ -965,4 +965,4 @@ table using this technique:&lt;/p&gt;
 &lt;li&gt;
 &lt;p&gt;SQL &lt;code&gt;String&lt;/code&gt; Functions - Complete list of SQL functions required to manipulate strings in SQL.&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;</description><category>Database</category><category>SQL</category><guid>http://pengyin-shan.com/posts/2015/Data%20Science/sql-basics.html</guid><pubDate>Sun, 21 Jun 2015 07:00:00 GMT</pubDate></item></channel></rss>
+&lt;/ul&gt;&lt;/div&gt;</description><category>Database</category><category>SQL</category><guid>https://pengyin-shan.com/posts/2015/Data%20Science/sql-basics.html</guid><pubDate>Sun, 21 Jun 2015 07:00:00 GMT</pubDate></item></channel></rss>

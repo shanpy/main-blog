@@ -21,12 +21,12 @@ BLOG_AUTHOR = "Pengyin Shan"  # (translatable)
 BLOG_TITLE = "I'm Pengyin (Wendy)"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
-SITE_URL = "http://pengyin-shan.com/"
+SITE_URL = "https://pengyin-shan.com/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://pengyin-shan.com/"
 BLOG_EMAIL = "pengyin.shan@outlook.com"
-BLOG_DESCRIPTION = "This is Pengyin Shan's Blog"  # (translatable)
+BLOG_DESCRIPTION = "Glad to meet you"  # (translatable)
 
 # Nikola is multilingual!
 #
@@ -146,7 +146,7 @@ THEME = "zen-ipython"
 
 # Primary color of your theme. This will be used to customize your theme and
 # auto-generate related colors in POSTS_SECTION_COLORS. Must be a HEX value.
-THEME_COLOR = '#ff4040'
+THEME_COLOR = '#607D8B'
 
 # POSTS and PAGES contains (wildcard, destination, template) tuples.
 #

@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>I'm Pengyin (Wendy) (Posts about Reading Notes)</title><link>http://pengyin-shan.com/</link><description></description><atom:link type="application/rss+xml" rel="self" href="http://pengyin-shan.com/categories/reading-notes.xml"></atom:link><language>en</language><lastBuildDate>Thu, 30 Aug 2018 01:28:31 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Chapter 2 of Case in Point: Graph Analysis for Consulting and Case Interviews, written by Marc P. Cosentino Mukund Jain</title><link>http://pengyin-shan.com/posts/2018/consulting/chapter-2-of-case-in-point-graph-analysis.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;div class="toc"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>I'm Pengyin (Wendy) (Posts about Reading Notes)</title><link>http://pengyin-shan.com/</link><description></description><atom:link type="application/rss+xml" href="http://pengyin-shan.com/categories/reading-notes.xml" rel="self"></atom:link><language>en</language><lastBuildDate>Tue, 11 Sep 2018 19:34:01 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Reading Notes for Case Interview Secrets Part 3/4</title><link>http://pengyin-shan.com/posts/2018/consulting/notes-for-case-interview-secrets-3-4.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;hr&gt;
+&lt;p&gt;&lt;img alt="CaseSecret34-1" src="http://pengyin-shan.com/images/2018/consulting/CaseSecret3&amp;amp;4-1.jpg"&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img alt="CaseSecret34-2" src="http://pengyin-shan.com/images/2018/consulting/CaseSecret3&amp;amp;4-2.jpg"&gt;&lt;/p&gt;&lt;/div&gt;</description><category>Reading Notes</category><guid>http://pengyin-shan.com/posts/2018/consulting/notes-for-case-interview-secrets-3-4.html</guid><pubDate>Tue, 11 Sep 2018 07:00:00 GMT</pubDate></item><item><title>Chapter 2 of Case in Point: Graph Analysis for Consulting and Case Interviews, written by Marc P. Cosentino Mukund Jain</title><link>http://pengyin-shan.com/posts/2018/consulting/chapter-2-of-case-in-point-graph-analysis.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;div class="toc"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://pengyin-shan.com/posts/2018/consulting/chapter-2-of-case-in-point-graph-analysis.html#steps"&gt;Steps&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://pengyin-shan.com/posts/2018/consulting/chapter-2-of-case-in-point-graph-analysis.html#line-bar-pie"&gt;LINE, BAR, PIE&lt;/a&gt;&lt;/li&gt;
@@ -1087,43 +1090,4 @@ Rule2: VLOOKUP will automatically search from left to right =&amp;gt; The helper
 &lt;li&gt;先不要急着马上投入课本！&lt;/li&gt;
 &lt;li&gt;制定更短期的&lt;strong&gt;学习-复习&lt;/strong&gt;计划（结合上一篇笔记）与 找工作计划&lt;/li&gt;
 &lt;li&gt;在制定这些计划的时候，留出充足的&lt;strong&gt;强制&lt;/strong&gt;备用时间&lt;/li&gt;
-&lt;/ol&gt;&lt;/div&gt;</description><category>Chinese</category><category>Reading Notes</category><category>Self-Improvement</category><guid>http://pengyin-shan.com/posts/2018/book/highlights-for-scarcity.html</guid><pubDate>Fri, 06 Jul 2018 07:00:00 GMT</pubDate></item><item><title>Reading Notes for CFA1 Program Curriculum Volume 1 - QUANTITATIVE METHODS part</title><link>http://pengyin-shan.com/posts/2018/finance/cfa-reading-notes-1.html</link><dc:creator>Pengyin Shan</dc:creator><description>&lt;div&gt;&lt;h4 id="reading-notes-for-cfa1-program-curriculum-volume-1-quantitative-methods-part"&gt;Reading Notes for CFA1 Program Curriculum Volume 1 - QUANTITATIVE METHODS part&lt;/h4&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;img alt="quantity 1" src="http://pengyin-shan.com/images/2018/finance/CFA1/Quantity1.jpg"&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;img alt="quantity 2" src="http://pengyin-shan.com/images/2018/finance/CFA1/Quantity2.jpg"&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;img alt="quantity 3" src="http://pengyin-shan.com/images/2018/finance/CFA1/Quantity3.jpg"&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;img alt="quantity 4" src="http://pengyin-shan.com/images/2018/finance/CFA1/Quantity4.jpg"&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;img alt="quantity 5" src="http://pengyin-shan.com/images/2018/finance/CFA1/Quantity5.jpg"&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;img alt="quantity 6" src="http://pengyin-shan.com/images/2018/finance/CFA1/Quantity6.jpg"&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;img alt="quantity 7" src="http://pengyin-shan.com/images/2018/finance/CFA1/Quantity7.jpg"&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;img alt="quantity 8" src="http://pengyin-shan.com/images/2018/finance/CFA1/Quantity8.jpg"&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;img alt="quantity 9" src="http://pengyin-shan.com/images/2018/finance/CFA1/Quantity9.jpg"&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;img alt="quantity 10" src="http://pengyin-shan.com/images/2018/finance/CFA1/Quantity10.jpg"&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;img alt="quantity 11" src="http://pengyin-shan.com/images/2018/finance/CFA1/Quantity11.jpg"&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;img alt="quantity 12" src="http://pengyin-shan.com/images/2018/finance/CFA1/Quantity12.jpg"&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;img alt="quantity 13" src="http://pengyin-shan.com/images/2018/finance/CFA1/Quantity13.jpg"&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;img alt="quantity 14" src="http://pengyin-shan.com/images/2018/finance/CFA1/Quantity14.jpg"&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;img alt="quantity 15" src="http://pengyin-shan.com/images/2018/finance/CFA1/Quantity15.jpg"&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;img alt="quantity 16" src="http://pengyin-shan.com/images/2018/finance/CFA1/Quantity16.jpg"&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;img alt="quantity 17" src="http://pengyin-shan.com/images/2018/finance/CFA1/Quantity17.jpg"&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;img alt="quantity 18" src="http://pengyin-shan.com/images/2018/finance/CFA1/Quantity18.jpg"&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;img alt="quantity 19" src="http://pengyin-shan.com/images/2018/finance/CFA1/Quantity19.jpg"&gt;&lt;/p&gt;
-&lt;hr&gt;&lt;/div&gt;</description><category>Reading Notes</category><guid>http://pengyin-shan.com/posts/2018/finance/cfa-reading-notes-1.html</guid><pubDate>Tue, 17 Apr 2018 07:00:00 GMT</pubDate></item></channel></rss>
+&lt;/ol&gt;&lt;/div&gt;</description><category>Chinese</category><category>Reading Notes</category><category>Self-Improvement</category><guid>http://pengyin-shan.com/posts/2018/book/highlights-for-scarcity.html</guid><pubDate>Fri, 06 Jul 2018 07:00:00 GMT</pubDate></item></channel></rss>

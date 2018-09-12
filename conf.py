@@ -185,10 +185,9 @@ POSTS = (
 )
 
 PAGES = (
-    ("pages/*.md", "stories", "story.tmpl"),
-    ("pages/*.ipynb", "stories", "story.tmpl"),
-    ("pages/*.txt", "stories", "story.tmpl"),
-    ("pages/*.rst", "stories", "story.tmpl"),
+    ("pages/*.rst", "", "page.tmpl"),
+    ("pages/*.txt", "", "page.tmpl"),
+    ("pages/*.html", "", "page.tmpl"),
 )
 
 # Below this point, everything is optional
@@ -200,7 +199,7 @@ PAGES = (
 # (e.g. 'Europe/Zurich')
 # Also, if you want to use a different time zone in some of your posts,
 # you can use the ISO 8601/RFC 3339 format (ex. 2012-03-30T23:00:00+02:00)
-TIMEZONE = "America/Vancouver"
+TIMEZONE = "US/Eastern"
 
 # If you want to use ISO 8601 (also valid RFC 3339) throughout Nikola
 # (especially in new_post), set this to True.
@@ -477,7 +476,7 @@ HIDDEN_AUTHORS = ['Guest']
 
 # Final location for the main blog page and sibling paginated pages is
 # output / TRANSLATION[lang] / INDEX_PATH / index-*.html
-# INDEX_PATH = ""
+INDEX_PATH = "blog"
 
 # Optional HTML that displayed on “main” blog index.html files.
 # May be used for a greeting. (translatable)

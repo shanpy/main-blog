@@ -262,7 +262,7 @@ section {
   float: left;
   min-height: 100%;
   /*background: url('../images/blue-mocha-grunge.jpg') #192029;*/
-  background: #be9b7b;
+  background: #607D8B;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -2119,7 +2119,7 @@ body {
   color: #333333;
 }
 a {
-  color: #854442;
+  color: #607D8B;
   text-decoration: none;
 }
 a:hover,
@@ -2379,7 +2379,7 @@ address {
 }
 a.thumbnail:hover,
 a.thumbnail:focus {
-  border-color: #854442;
+  border-color: #607D8B;
   -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
